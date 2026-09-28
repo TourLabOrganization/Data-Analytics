@@ -1,0 +1,10 @@
+{
+  "document": "docs/Tour_Navigator_Cosine_Specification.docx",
+  "pages": 40,
+  "chapters": 38,
+  "tables": 47,
+  "native_equations": 38,
+  "figures": 3,
+  "visual_review": "Completed, including all repaired equations; no clipped text or parser-error glyphs in final render.",
+  "render_for_review_only": true
+}

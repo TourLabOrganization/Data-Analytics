@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "checks": [
+    "41 PNG / 92 CSV and no S or sector outputs",
+    "Notebook and command-line analysis code are identical",
+    "Unchanged non-sector result: G_cosine_assignments.csv",
+    "Unchanged non-sector result: T_cosine_assignments.csv",
+    "Unchanged non-sector result: cosine_course_rankings_all.csv",
+    "Unchanged non-sector result: spend_regression_metrics.csv",
+    "Session cosine matches documented 98.019606 and component sum",
+    "No preference, unmatched region and invalid survey range paths",
+    "Reusing session output folder without cosine survey removes obsolete cosine CSV files"
+  ],
+  "notebook_execution": {
+    "method": "All code cells executed sequentially in one fresh Python process with captured tables and plots; not a socket-backed Jupyter kernel test",
+    "python": "3.12.14",
+    "code_cells": 19,
+    "elapsed_seconds": 23.73
+  },
+  "analysis_run": "run_20260928_062724_468322",
+  "scope": "computational reproduction; not satisfaction or live availability validation"
+}

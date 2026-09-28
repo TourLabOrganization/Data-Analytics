@@ -1,0 +1,412 @@
+[
+  {
+    "file": "analysis/tour-places.csv",
+    "rows": 3118,
+    "columns": [
+      "id",
+      "권역",
+      "지역",
+      "이름(한국어)",
+      "English",
+      "中文",
+      "日本語",
+      "카테고리",
+      "카테고리명",
+      "위도",
+      "경도",
+      "추천 체류(분)",
+      "유네스코",
+      "지정구역",
+      "출처",
+      "설명",
+      "링크"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "f795d16aa192f9a1e771b27f2eca3483b3342826db925c6ee20038b30a0f79c7"
+  },
+  {
+    "file": "analysis/citytour.csv",
+    "rows": 280,
+    "columns": [
+      "지역",
+      "투어명",
+      "유형",
+      "탑승 장소",
+      "코스(경유지)",
+      "운행 시작",
+      "운행 종료",
+      "배차 간격(분)",
+      "요금",
+      "전화",
+      "홈페이지",
+      "운행 요일·비고",
+      "데이터 기준일"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324"
+  },
+  {
+    "file": "analysis/spending_csv/spend_region.csv",
+    "rows": 233,
+    "columns": [
+      "광역지자체 명",
+      "기초지자체 명",
+      "광역지자체 지출액 비율(%)",
+      "기초지자체 지출액 비율(%)"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "b57eaea72fa6b060347393748e00676c160326921375b048af2486e6d632a31c"
+  },
+  {
+    "file": "analysis/marine_csv/marine_heatmap.csv",
+    "rows": 3564,
+    "columns": [
+      "지역명",
+      "방문자수",
+      "구분"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "b98acc36b7d8b59d9daf6c79adf5a22129eabc9f8f49f9eb5aba3d63e8884ff3"
+  },
+  {
+    "file": "analysis/marine_csv/marine_monthly.csv",
+    "rows": 60,
+    "columns": [
+      "기준년월",
+      "구분",
+      "지자체건수",
+      "방문자수(평균)"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "d418cdaf056050fed1268cd7805d7a362227c8adee4592337b2ef6f4493afa44"
+  },
+  {
+    "file": "analysis/marine_csv/marine_search_rank.csv",
+    "rows": 100,
+    "columns": [
+      "순위",
+      "관광지명",
+      "도로명",
+      "분류",
+      "검색 건수"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "bdcc97daefa6cbd4083617999a6299dd356cba3a7c66d8bf1595f0a5da6dc3d6"
+  },
+  {
+    "file": "analysis/marine_csv/marine_top5.csv",
+    "rows": 5,
+    "columns": [
+      "순위",
+      "읍면동",
+      "방문자 수",
+      "전년동기 방문자 수",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "b82e6ad2155897014d6a275ba6f82042e3c0ea3bf79f5395ffebc6da0f13d197"
+  },
+  {
+    "file": "age_upgrade/data/raw/20260927150125_세대별 인기관광지(20대).csv",
+    "rows": 30,
+    "columns": [
+      "순위",
+      "관광지ID",
+      "관심지점명",
+      "구분",
+      "연령대",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "0960628ff41b6039434d48c11686f92316899f49d22133cff99fba1dadbe94a2"
+  },
+  {
+    "file": "age_upgrade/data/raw/20260927150125_세대별 인기관광지(30대).csv",
+    "rows": 30,
+    "columns": [
+      "순위",
+      "관광지ID",
+      "관심지점명",
+      "구분",
+      "연령대",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "66d7eb0551730e822e577a3ff1aba5c653f0b4c5acb5c5cfa360743e740d5f59"
+  },
+  {
+    "file": "age_upgrade/data/raw/20260927150125_세대별 인기관광지(40대).csv",
+    "rows": 30,
+    "columns": [
+      "순위",
+      "관광지ID",
+      "관심지점명",
+      "구분",
+      "연령대",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "0f1eba2318cd4131d9bb3c429434fb4623e8527553e7c911de9b6e13925768a5"
+  },
+  {
+    "file": "age_upgrade/data/raw/20260927150125_세대별 인기관광지(50대).csv",
+    "rows": 30,
+    "columns": [
+      "순위",
+      "관광지ID",
+      "관심지점명",
+      "구분",
+      "연령대",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "5adb09c67bffa21aa80714557b0f8d1c7400d0843746837c69abd36d3a48b34d"
+  },
+  {
+    "file": "age_upgrade/data/raw/20260927150125_세대별 인기관광지(60대이상).csv",
+    "rows": 30,
+    "columns": [
+      "순위",
+      "관광지ID",
+      "관심지점명",
+      "구분",
+      "연령대",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "f788d71ead92adc050cc6eb17f330893acf0a064d20520fc9d4df122a1d7ce9e"
+  },
+  {
+    "file": "age_upgrade/data/raw/20260927150125_세대별 인기관광지(전체).csv",
+    "rows": 30,
+    "columns": [
+      "순위",
+      "관광지ID",
+      "관심지점명",
+      "구분",
+      "연령대",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "5bd1770ad0810f005d6a46272544b05a2e2fe909217d023c7cc763bc560be5ff"
+  },
+  {
+    "file": "demographic_upgrade/data/raw/20260927163120_구성비 순위.csv",
+    "rows": 100,
+    "columns": [
+      "순위",
+      "시도",
+      "시군구",
+      "성별",
+      "연령",
+      "구성비"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "ee573530a473cc381e9c76802775b64ec945c694d9e31815f82efa171dca2a56"
+  },
+  {
+    "file": "demographic_upgrade/data/raw/20260927163120_구성비 히트맵.csv",
+    "rows": 242,
+    "columns": [
+      "순위",
+      "시도",
+      "시군구",
+      "성별",
+      "연령",
+      "구성비"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "23bb54059adc4f1e3b1ea0a18c53d3e1e8bd632113688c73b64ad6ad2de18349"
+  },
+  {
+    "file": "demographic_upgrade/data/raw/20260927163120_성별 방문자 구성비.csv",
+    "rows": 220,
+    "columns": [
+      "순위",
+      "시도",
+      "시군구",
+      "성별",
+      "연령",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "a7ae50185f0dadc85e43e4d3b2a559e6f7a99047c09e8210f317672298a0d02b"
+  },
+  {
+    "file": "demographic_upgrade/data/raw/20260927163120_연령별 방문자 구성비.csv",
+    "rows": 880,
+    "columns": [
+      "순위",
+      "시도",
+      "시군구",
+      "성별",
+      "연령",
+      "비율"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "999b3d408130434d92357e9222db7519727a7a7418b10c9b0fff3e38d193b9d3"
+  },
+  {
+    "file": "hallyu_preprocessed_csv/hallyu_2026_country_scope.csv",
+    "rows": 30,
+    "columns": [
+      "residence_area_iso2",
+      "country_or_area_name_ko",
+      "macro_region",
+      "in_eligibility_allowlist",
+      "content_rate_geography",
+      "source_pdf_page",
+      "source_printed_pages",
+      "code_field",
+      "interpretation"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "a90f3e7829231957592eddf3fd5263766cb13e28814195360a3c565e1c7cb3fb"
+  },
+  {
+    "file": "hallyu_preprocessed_csv/hallyu_2026_data_dictionary.csv",
+    "rows": 75,
+    "columns": [
+      "file_name",
+      "column",
+      "description_ko",
+      "example"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "eb8f43524daaa55ddf886ffeca4202f0766e07669a5f253b7f58ceabe0001bfd"
+  },
+  {
+    "file": "hallyu_preprocessed_csv/hallyu_2026_design_parameters.csv",
+    "rows": 5,
+    "columns": [
+      "parameter",
+      "value",
+      "meaning",
+      "origin",
+      "formula_or_function"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "1702043249372483ac94ffa2cac262448f300dac3b0c4d42d34e00041d567aa6"
+  },
+  {
+    "file": "hallyu_preprocessed_csv/hallyu_2026_eligibility_rules.csv",
+    "rows": 6,
+    "columns": [
+      "rule_id",
+      "survey_question",
+      "input_field",
+      "condition",
+      "meaning",
+      "when_not_met"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "87deb67571887af13dc73fc6896f8c73427263ea89a029380df3c3366a097eef"
+  },
+  {
+    "file": "hallyu_preprocessed_csv/hallyu_2026_reference_only.csv",
+    "rows": 11,
+    "columns": [
+      "indicator",
+      "category",
+      "reference_year",
+      "source_value",
+      "unit",
+      "source_pdf_page",
+      "source_printed_page",
+      "source_ref",
+      "usage_status",
+      "usage_note"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "2fa403aa76da27ba3d0139638d22c5152086a385b8392a5f390408a93eb7b791"
+  },
+  {
+    "file": "hallyu_preprocessed_csv/hallyu_2026_scoring_inputs.csv",
+    "rows": 4,
+    "columns": [
+      "content_key",
+      "content_name_ko",
+      "source_value_pct",
+      "ratio_r",
+      "neutral_value",
+      "prior_strength_design",
+      "prior_z_if_eligible_and_unanswered",
+      "prior_centered_z_minus_half",
+      "score_scale_design",
+      "single_tag_M_assumption",
+      "single_tag_H_if_eligible_unanswered",
+      "z_if_ineligible_unanswered",
+      "H_if_ineligible_unanswered",
+      "direct_answer_rule",
+      "source_pdf_page",
+      "source_printed_page",
+      "eligibility_rule_id",
+      "runtime_function",
+      "assumption_note"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "761be4597263dd135d3e2ff997bfb2f589c20b52ef2c6b1bc64e3bf6ad962891"
+  },
+  {
+    "file": "hallyu_preprocessed_csv/hallyu_2026_source_indicators.csv",
+    "rows": 12,
+    "columns": [
+      "content_key",
+      "content_name_ko",
+      "source_title",
+      "source_file",
+      "publication_year",
+      "reference_year",
+      "source_pdf_page",
+      "source_printed_page",
+      "source_figure",
+      "indicator",
+      "base_population",
+      "geography_level",
+      "sex_scope",
+      "age_scope",
+      "source_unit",
+      "config_version",
+      "source_value_pct",
+      "ratio_r",
+      "runtime_status",
+      "numeric_prior_enabled",
+      "used_in_pca",
+      "content_specific_sample_n",
+      "availability_note"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "f99fea85000beb0825a44cb3253c43cc462cba2e0699efbca4fd42dd2bb5da3f"
+  },
+  {
+    "file": "hallyu_preprocessed_csv/hallyu_2026_source_metadata.csv",
+    "rows": 12,
+    "columns": [
+      "field",
+      "value",
+      "interpretation"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "4308222a0e43122f67d0d7db3e720ee42c2b4b97eb2f6abd8e8dee79d91ac52f"
+  },
+  {
+    "file": "reference_calc/eligible_courses.csv",
+    "rows": 179,
+    "columns": [
+      "analysis_course_id",
+      "analysis_region",
+      "analysis_name",
+      "analysis_category_coverage",
+      "analysis_share_herit",
+      "analysis_share_heal",
+      "analysis_share_activity",
+      "analysis_share_food",
+      "analysis_share_sea",
+      "코스(경유지)",
+      "analysis_T_cluster",
+      "analysis_operational_flags"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "efeb6660ced79271e1de8bff97d664ab151e98e86a71cda49870ec11a71c1dd2"
+  }
+]

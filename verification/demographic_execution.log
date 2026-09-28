@@ -1,0 +1,23 @@
+{
+  "n_regions": 90,
+  "input_columns": 10,
+  "block_weights": {
+    "age": 0.75,
+    "sex": 0.25
+  },
+  "selected": {
+    "mode": "raw",
+    "k": 2,
+    "components": 10,
+    "silhouette": 0.31652850719121717,
+    "min_seed_ari": 1.0,
+    "min_cluster_size": 40
+  },
+  "pca_two_axis_variance": 0.8320584223008657,
+  "age_only_sensitivity_ari": 0.9555551814881523,
+  "cluster_sizes": {
+    "R01": 40,
+    "R02": 50
+  },
+  "scope": "90 selected regions only; no inference to national visitor personas"
+}

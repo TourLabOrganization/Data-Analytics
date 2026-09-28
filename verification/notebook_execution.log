@@ -1,0 +1,433 @@
+Executed code cell 1: 0.0s, 0 outputs
+Executed code cell 2: 0.8s, 1 outputs
+places: 3,118행 × 17열 / utf-8-sig
+citytour: 280행 × 13열 / utf-8-sig
+Python 3.12.14 | scikit-learn 1.8.0
+저장 폴더: /workspace/scratch/6640d64d17c6/deliverables/integrated_release/Tour_Navigator_Codebook/analysis/outputs_cosine/run_20260928_062724_468322
+
+Executed code cell 3: 0.2s, 2 outputs
+Executed code cell 4: 0.0s, 0 outputs
+Executed code cell 5: 3.9s, 9 outputs
+G {
+  "rows": 2549,
+  "features": [
+    "cat_herit",
+    "cat_heal",
+    "cat_activity",
+    "cat_food",
+    "cat_sea",
+    "log_stay_robust",
+    "unesco_mark"
+  ],
+  "removed_constant_features": [],
+  "pca_components": 5,
+  "pca_retained_variance": 0.9938328397309512,
+  "plot_2pc_variance": 0.6410566545500307,
+  "k": 10,
+  "silhouette_mean": 0.7189323946808236,
+  "seed_ari_min": 0.8659235807860657,
+  "passes_gates": true,
+  "silhouette_sample_size": 1200,
+  "numbering": "run-specific, no persona assignment"
+}
+PC1 negative: {'cat_food': -0.1543, 'cat_sea': -0.1075} positive: {'cat_activity': 0.2512, 'log_stay_robust': 0.9395}
+PC2 negative: {'cat_herit': -0.6076, 'cat_activity': -0.1902} positive: {'cat_food': 0.0177, 'cat_heal': 0.7653}
+축 해석: PC1 계수의 절댓값이 가장 큰 변수는 log_stay_robust입니다. 단일 변수의 영향이 크므로 테마 성향이나 여행자 유형으로 바로 해석하지 마세요.
+군집 수 해석: k=10는 이번 탐색의 상한입니다. 전역 최적 군집 수가 확정된 것은 아닙니다.
+
+Executed code cell 6: 0.4s, 2 outputs
+코스 / 분석 가능: 280 / 179
+잠정 장소 후보 연결 슬롯: 521 | 확인된 장소 연결: 0
+
+Executed code cell 7: 3.1s, 9 outputs
+T {
+  "rows": 179,
+  "features": [
+    "share_herit",
+    "share_heal",
+    "share_activity",
+    "share_food",
+    "share_sea",
+    "log_visit_count_robust",
+    "night_flag"
+  ],
+  "removed_constant_features": [],
+  "pca_components": 5,
+  "pca_retained_variance": 0.9672826279557725,
+  "plot_2pc_variance": 0.8223107696071333,
+  "k": 2,
+  "silhouette_mean": 0.3796307930887635,
+  "seed_ari_min": 1.0,
+  "passes_gates": true,
+  "silhouette_sample_size": 179,
+  "numbering": "run-specific, no persona assignment"
+}
+PC1 negative: {'share_heal': -0.0399, 'share_herit': -0.03} positive: {'share_sea': 0.021, 'log_visit_count_robust': 0.9984}
+PC2 negative: {'share_heal': -0.4006, 'share_sea': -0.1712} positive: {'log_visit_count_robust': 0.0147, 'share_herit': 0.8764}
+축 해석: PC1 계수의 절댓값이 가장 큰 변수는 log_visit_count_robust입니다. 단일 변수의 영향이 크므로 테마 성향이나 여행자 유형으로 바로 해석하지 마세요.
+
+Executed code cell 8: 0.0s, 1 outputs
+{
+  "region_rows": 233,
+  "province_labels": 16,
+  "regional_amount_estimation_enabled": false,
+  "population_label": "내국인 지출로 제공됨; CSV에 대상집단 확인 열 없음",
+  "period_status": "지역 CSV에 기간 열 없음; 다른 파일의 기간을 자동 적용하지 않음",
+  "region_share_denominator": "hierarchical denominator inferred from sums; not verified from UI metadata"
+}
+
+Executed code cell 9: 0.5s, 2 outputs
+Executed code cell 10: 1.7s, 5 outputs
+지역 설명 모델 OOF 결과
+
+Executed code cell 11: 0.0s, 1 outputs
+지출 확장 완료: {
+  "n_regions": 111,
+  "n_province_groups": 8,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "features": [
+    "log_n_catalog_places",
+    "log_n_lodging",
+    "log_n_citytours",
+    "log_median_base_minutes",
+    "share_heal",
+    "share_activity",
+    "share_food",
+    "share_sea",
+    "unesco_mark_rate"
+  ],
+  "metrics": [
+    {
+      "model": "M0_mean",
+      "n_regions": 111,
+      "mae_log": 1.0041903937305299,
+      "rmse_log": 1.231169778772649,
+      "r2_log": -0.13978556614299142,
+      "mae_share_pp": 0.25678852211857417
+    },
+    {
+      "model": "M1_catalog_count",
+      "n_regions": 111,
+      "mae_log": 0.8617415547470375,
+      "rmse_log": 1.0792184944838519,
+      "r2_log": 0.1241978269228935,
+      "mae_share_pp": 0.2318124422257654
+    },
+    {
+      "model": "M2_composition",
+      "n_regions": 111,
+      "mae_log": 0.8396957244624829,
+      "rmse_log": 1.0718437553423688,
+      "r2_log": 0.13612635622739788,
+      "mae_share_pp": 0.2327004216806318
+    }
+  ],
+  "final_alpha": 10.0,
+  "added_features_improve_mae": true,
+  "all_target_region_values_are_derived_shares": true,
+  "future_forecast_validated": false
+}
+
+Executed code cell 12: 0.1s, 2 outputs
+해양 입력과 검증 {
+  "method_version": "marine-input-context-2.1",
+  "period_start": "202509",
+  "period_end": "202608",
+  "months": 12,
+  "heatmap_rows": 3564,
+  "heatmap_municipalities": [
+    "가평군",
+    "강남구",
+    "강동구",
+    "강릉시",
+    "강북구",
+    "강서구",
+    "강진군",
+    "강화군",
+    "거제시",
+    "거창군",
+    "검단구",
+    "경산시",
+    "경주시",
+    "계룡시",
+    "계양구",
+    "고령군",
+    "고성군",
+    "고양시 덕양구",
+    "고양시 일산동구",
+    "고양시 일산서구",
+    "고창군",
+    "고흥군",
+    "곡성군",
+    "공주시",
+    "과천시",
+    "관악구",
+    "광명시",
+    "광산구",
+    "광양시",
+    "광주시",
+    "광진구",
+    "괴산군",
+    "구례군",
+    "구로구",
+    "구리시",
+    "구미시",
+    "군산시",
+    "군위군",
+    "군포시",
+    "금산군",
+    "금정구",
+    "금천구",
+    "기장군",
+    "김제시",
+    "김천시",
+    "김포시",
+    "김해시",
+    "나주시",
+    "남구",
+    "남동구",
+    "남양주시",
+    "남원시",
+    "남해군",
+    "노원구",
+    "논산시",
+    "단양군",
+    "달서구",
+    "달성군",
+    "담양군",
+    "당진시",
+    "대덕구",
+    "도봉구",
+    "동구",
+    "동대문구",
+    "동두천시",
+    "동래구",
+    "동작구",
+    "동해시",
+    "마포구",
+    "목포시",
+    "무안군",
+    "무주군",
+    "문경시",
+    "미추홀구",
+    "밀양시",
+    "보령시",
+    "보성군",
+    "보은군",
+    "봉화군",
+    "부산진구",
+    "부안군",
+    "부여군",
+    "부천시 소사구",
+    "부천시 오정구",
+    "부천시 원미구",
+    "부평구",
+    "북구",
+    "사상구",
+    "사천시",
+    "사하구",
+    "산청군",
+    "삼척시",
+    "상주시",
+    "서구",
+    "서귀포시",
+    "서대문구",
+    "서산시",
+    "서천군",
+    "서초구"
+Executed code cell 13: 2.7s, 7 outputs
+Executed code cell 14: 0.6s, 2 outputs
+Executed code cell 15: 1.6s, 4 outputs
+검색순위 적용 {
+  "status": "loaded",
+  "score_bonus": 0.0,
+  "stay_multiplier": 1.0,
+  "rows": 100,
+  "source_categories": 16,
+  "source_rank_min": 1,
+  "source_rank_max": 100,
+  "listed_search_count": 20536923,
+  "scope": "연안 전체 선택 검색순위",
+  "period_in_csv": false,
+  "is_visit_count": false,
+  "nonlisted_values_imputed": false,
+  "matched_catalogue_places": 53,
+  "rank_status_counts": {
+    "NAME_REGION_CANDIDATE": 53,
+    "NO_EXACT_NAME": 44,
+    "NAME_FOUND_REGION_REJECTED": 3
+  },
+  "unlinked_catalogue_rows": 3065,
+  "course_candidates": 20,
+  "course_stop_candidate_rows": 23
+}
+
+Executed code cell 16: 0.0s, 1 outputs
+해양 확장 완료 {
+  "method_version": "marine-input-context-2.1",
+  "period_start": "202509",
+  "period_end": "202608",
+  "months": 12,
+  "heatmap_rows": 3564,
+  "heatmap_municipalities": [
+    "가평군",
+    "강남구",
+    "강동구",
+    "강릉시",
+    "강북구",
+    "강서구",
+    "강진군",
+    "강화군",
+    "거제시",
+    "거창군",
+    "검단구",
+    "경산시",
+    "경주시",
+    "계룡시",
+    "계양구",
+    "고령군",
+    "고성군",
+    "고양시 덕양구",
+    "고양시 일산동구",
+    "고양시 일산서구",
+    "고창군",
+    "고흥군",
+    "곡성군",
+    "공주시",
+    "과천시",
+    "관악구",
+    "광명시",
+    "광산구",
+    "광양시",
+    "광주시",
+    "광진구",
+    "괴산군",
+    "구례군",
+    "구로구",
+    "구리시",
+    "구미시",
+    "군산시",
+    "군위군",
+    "군포시",
+    "금산군",
+    "금정구",
+    "금천구",
+    "기장군",
+    "김제시",
+    "김천시",
+    "김포시",
+    "김해시",
+    "나주시",
+    "남구",
+    "남동구",
+    "남양주시",
+    "남원시",
+    "남해군",
+    "노원구",
+    "논산시",
+    "단양군",
+    "달서구",
+    "달성군",
+    "담양군",
+    "당진시",
+    "대덕구",
+    "도봉구",
+    "동구",
+    "동대문구",
+    "동두천시",
+    "동래구",
+    "동작구",
+    "동해시",
+    "마포구",
+    "목포시",
+    "무안군",
+    "무주군",
+    "문경시",
+    "미추홀구",
+    "밀양시",
+    "보령시",
+    "보성군",
+    "보은군",
+    "봉화군",
+    "부산진구",
+    "부안군",
+    "부여군",
+    "부천시 소사구",
+    "부천시 오정구",
+    "부천시 원미구",
+    "부평구",
+    "북구",
+    "사상구",
+    "사천시",
+    "사하구",
+    "산청군",
+    "삼척시",
+    "상주시",
+    "서구",
+    "서귀포시",
+    "서대문구",
+    "서산시",
+    "서천군",
+    "서초구",
+Executed code cell 17: 7.6s, 13 outputs
+G {
+  "rows": 2549,
+  "excluded_zero_vectors": 0,
+  "features": [
+    "cat_herit",
+    "cat_heal",
+    "cat_activity",
+    "cat_food",
+    "cat_sea",
+    "log_stay_robust",
+    "unesco_mark"
+  ],
+  "k": 10,
+  "search_max_k": 10,
+  "at_search_upper_bound": true,
+  "cosine_silhouette_mean": 0.829579482096141,
+  "cosine_silhouette_final_seed": 0.8342157070246453,
+  "negative_silhouette_share": 0.0,
+  "seed_ari_min": 0.9781027633160397,
+  "min_cluster_share_across_seeds": 0.023538642604943115,
+  "passes_gates": true,
+  "min_share_required": 0.02,
+  "sample_n": 1200,
+  "ari_vs_baseline": 0.8315432423494977,
+  "mean_assigned_cosine": 0.9738419589306415,
+  "mean_assignment_margin": 0.32008738794016794,
+  "iterations": 3,
+  "final_seed": 42,
+  "fit_space": "L2-normalized baseline weighted features; no PCA centering",
+  "status": "QUALIFIED_EXPLORATORY"
+}
+T {
+  "rows": 179,
+  "excluded_zero_vectors": 0,
+  "features": [
+    "share_herit",
+    "share_heal",
+    "share_activity",
+    "share_food",
+    "share_sea",
+    "log_visit_count_robust",
+    "night_flag"
+  ],
+  "k": 2,
+  "search_max_k": 10,
+  "at_search_upper_bound": false,
+  "cosine_silhouette_mean": 0.6065515399562812,
+  "cosine_silhouette_final_seed": 0.6065515399562812,
+  "negative_silhouette_share": 0.0,
+  "seed_ari_min": 1.0,
+  "
+Executed code cell 18: 0.3s, 3 outputs
+실제 설문 CSV 없음: 명시적 가상 응답 4개로 계산 구조만 시연합니다.
+코사인 수학·수렴·영벡터·설문 범위·기여도 합 검증 완료
+
+Executed code cell 19: 0.0s, 2 outputs
+완료: /workspace/scratch/6640d64d17c6/deliverables/integrated_release/Tour_Navigator_Codebook/analysis/outputs_cosine/run_20260928_062724_468322
+PNG 41 개 / CSV 92 개
+
+SAVED /workspace/scratch/6640d64d17c6/deliverables/integrated_release/Tour_Navigator_Codebook/analysis/Tour_Navigator_Integrated.ipynb seconds 23.7

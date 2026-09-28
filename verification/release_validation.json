@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-28T22:30:51.311856+00:00",
+  "survey": {
+    "status": "passed",
+    "fixed_options": 60,
+    "common_questions": 6,
+    "branch_questions": 7,
+    "base_paths": 47628,
+    "completed_paths_including_clarification": 141833,
+    "answer_counts": [
+      7,
+      8
+    ],
+    "single_result_reachable": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "max_mixed_types_observed": 9,
+    "checks": [
+      "Common and branch A/B/C choices add to eligible types",
+      "Every branch D is answered with zero contribution and leaves all previous scores unchanged",
+      "Branch A/B/C contribute 4 points; D contributes zero without redistribution",
+      "All routes finish in 7 or 8 answers",
+      "Every type can be a sole result",
+      "Stale branch and invalid answers rejected",
+      "Score ledger and relative weights consistent"
+    ],
+    "interpretation": "Exhaustive combinatorial checks; not accuracy, user distribution, or survey validity evidence."
+  },
+  "reference_recommendation": {
+    "status": "passed",
+    "mixed_types": [
+      "C4",
+      "C5"
+    ],
+    "course_count": 179,
+    "distinct_region_count": 5,
+    "type_profile_L1": 1.0,
+    "D_preserves_previous_scores": true,
+    "empirical_validation": false,
+    "deployment": false
+  },
+  "legacy_node_tests": {
+    "status": "passed",
+    "log": "verification/release_node_tests.log"
+  },
+  "python_syntax": "passed",
+  "notebook_code_cells": 19,
+  "notebook_code_unchanged_from_delivered_package": true,
+  "notebook_previous_execution": {
+    "method": "All code cells executed sequentially in one fresh Python process with captured tables and plots; not a socket-backed Jupyter kernel test",
+    "python": "3.12.14",
+    "code_cells": 19,
+    "elapsed_seconds": 23.73
+  },
+  "full_training_rerun_for_this_import": false,
+  "latest_spec_preserved_byte_for_byte": true,
+  "survey_and_reference_engine_and_config_identical": true,
+  "analysis_snapshot_preserved_byte_for_byte": true,
+  "sector_inputs_excluded": true,
+  "main_analysis_plot_count": 41,
+  "main_analysis_result_csv_count": 92,
+  "respondent_survey_png_count": 6,
+  "secret_pattern_scan": "no_matches",
+  "empirical_accuracy_validation": false,
+  "production_deployment": false
+}
