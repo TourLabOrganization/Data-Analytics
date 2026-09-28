@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-09-27",
+  "casesPerVersion": 305,
+  "comparisons": 610,
+  "successes": 491,
+  "expectedSourceErrors": 119,
+  "cityTourComparisons": 186,
+  "checks": [
+    "Q10~Q14 변경은 테마 순위에 영향을 주지 않음",
+    "APP.zip 외래객 fr 누락 오류 재현",
+    "설명용 모듈의 추가 입력 검증 통과"
+  ]
+}

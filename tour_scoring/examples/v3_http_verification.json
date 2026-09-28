@@ -1,0 +1,9 @@
+{
+  "syntax": "PASS",
+  "questions": 14,
+  "domesticAgeBonusCount": 21,
+  "strictAgeBonusCount": 0,
+  "foreignAgeBonusCount": 0,
+  "invalidInputStatus": 400,
+  "visualBrowserQA": "not performed; no browser available"
+}

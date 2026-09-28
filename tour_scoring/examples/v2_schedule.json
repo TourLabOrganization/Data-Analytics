@@ -1,0 +1,26 @@
+{
+  "days": [
+    {
+      "date": "2026-10-01",
+      "origin": "예시 출발지",
+      "transportVerified": true,
+      "start": 540,
+      "end": 1080,
+      "stops": [
+        {
+          "id": "가상 장소",
+          "moveMinutes": 30,
+          "walkMinutes": 10,
+          "stayMinutes": 80,
+          "openMinute": 600,
+          "closeMinute": 1020,
+          "features": {
+            "pets": true,
+            "accessible": true,
+            "indoor": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "result": {
+    "p": 6,
+    "s2": 0,
+    "pts": 16,
+    "pts2": 13,
+    "pr": 69,
+    "pr2": 25,
+    "mix": false,
+    "picks": [
+      {
+        "k": "kdh",
+        "fit": 0.21354,
+        "bonus": 0,
+        "reg": 0.016,
+        "score": 0.22954000000000002
+      },
+      {
+        "k": "busan",
+        "fit": 0.18928999999999999,
+        "bonus": 0,
+        "reg": -0.023,
+        "score": 0.16629
+      },
+      {
+        "k": "warden",
+        "fit": 0.19,
+        "bonus": 0,
+        "reg": -0.038,
+        "score": 0.152
+      }
+    ],
+    "filters": [
+      "이번 주말",
+      "1박 2일",
+      "대중교통",
+      "1~3시간"
+    ]
+  },
+  "trace": {
+    "version": "github",
+    "browserLanguage": "en-US",
+    "contributions": [
+      {
+        "reason": "Q1",
+        "scores": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "reason": "Q2",
+        "scores": [
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "reason": "Q3",
+        "scores": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "reason": "Q5",
+        "scores": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "reason": "Q8",
+        "scores": [
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "reason": "Q9",
+        "scores": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "reason": "Q4 선택 0",
+        "scores": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "reason": "Q4 선택 1",
+        "scores": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "reason": "Q7 해외",
+        "scores": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "reason": "해외 방문 기본 가산",
+        "scores": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "reason": "브라우저 en 또는 es",
+        "scores": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      }
+    ],
+    "totalScores": [
+      13,
+      5,
+      0,
+      0,
+      3,
+      0,
+      16,
+      3,
+      3,
+      5
+    ],
+    "candidateClusters": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "clusterRanking": [
+      {
+        "cluster": "C7",
+        "index": 6,
+        "score": 16,
+        "q2TieBreak": 1,
+        "weight": 256,
+        "probability": 0.693187106632929
+      },
+      {
+        "cluster": "C1",
+        "index": 0,
+        "score": 13,
+        "q2TieBreak": 1,
+        "weight": 90.50966799187809,
+        "probability": 0.2450786518656133
+      },
+      {
+        "cluster": "C2",
+        "index": 1,
+        "score": 5,
+        "q2TieBreak": 0,
+        "weight": 5.656854249492381,
+        "probability": 0.015317415741600832
+      },
+      {
+        "cluster": "C10",
+        "index": 9,
+        "score": 5,
+        "q2TieBreak": 0,
+        "weight": 5.656854249492381,
+        "probability": 0.015317415741600832
+      },
+      {
+        "cluster": "C5",
+        "index": 4,
+        "score": 3,
+        "q2TieBreak": 3,
+        "weight": 2.8284271247461903,
+        "probability": 0.007658707870800416
+      },
+      {
+        "cluster": "C8",
+        "index": 7,
+        "score": 3,
+        "q2TieBreak": 1,
+        "weight": 2.8284271247461903,
+        "probability": 0.007658707870800416
+      },
+      {
+        "cluster": "C9",
+        "index": 8,
+        "score": 3,
+        "q2TieBreak": 0,
+        "weight": 2.8284271247461903,
+        "probability": 0.007658707870800416
+      },
+      {
+        "cluster": "C3",
+        "index": 2,
+        "score": 0,
+        "q2TieBreak": 0,
+        "weight": 1,
+        "probability": 0.002707762135284879
+      },
+      {
+        "cluster": "C4",
+        "index": 3,
+        "score": 0,
+        "q2TieBreak": 0,
+        "weight": 1,
+        "probability": 0.002707762135284879
+      },
+      {
+        "cluster": "C6",
+        "index": 5,
+        "score": 0,
+        "q2TieBreak": 0,
+        "weight": 1,
+        "probability": 0.002707762135284879
+      }
+    ],
+    "interestCategories": [],
+    "allThemes": [
+      {
+        "k": "kdh",
+        "fit": 0.21354,
+        "bonus": 0,
+        "reg": 0.016,
+        "score": 0.22954000000000002
+      },
+      {
+        "k": "busan",
+        "fit": 0.18928999999999999,
+        "bonus": 0,
+        "reg": -0.023,
+        "score": 0.16629
+      },
+      {
+        "k": "warden",
+        "fit": 0.19,
+        "bonus": 0,
+        "reg": -0.038,
+        "score": 0.152
+      },
+      {
+        "k": "rescene",
+        "fit": 0.1972,
+        "bonus": 0,
+        "reg": -0.05,
+        "score": 0.1472
+      },
+      {
+        "k": "jeju",
+        "fit": 0.12788,
+        "bonus": 0,
+        "reg": -0.05,
+        "score": 0.07787999999999999
+      }
+    ]
+  }
+}

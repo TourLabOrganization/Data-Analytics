@@ -1,0 +1,17 @@
+{
+  "name": "tour-navigator-scoring-explained",
+  "version": "4.0.0",
+  "private": true,
+  "description": "2026-09-27 GitHub 및 APP.zip 추천 산식 재현",
+  "scripts": {
+    "test": "node tests/parity.cjs && node tests/v2.cjs && node tests/v3.cjs && node tests/v4.cjs",
+    "demo": "node src/cli.cjs examples/domestic.json",
+    "demo:v2": "node src/cli-v2.cjs examples/v2_domestic.json",
+    "start": "node src/server.cjs",
+    "demo:v3": "node src/cli-v3.cjs examples/v3_domestic20.json",
+    "demo:v4": "node src/cli-v4.cjs examples/v4_domestic30female.json"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

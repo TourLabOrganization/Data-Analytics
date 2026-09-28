@@ -1,0 +1,48 @@
+{
+  "repository": "https://github.com/TourLabOrganization/Tour-Navigator-App",
+  "commit": "96db458ed63b3e34a1c3d63a8ad444ea67ab6b77",
+  "checkedDate": "2026-09-27",
+  "scope": "현재 구현의 추출 및 설명용 실행 모듈. 배포 앱 수정 아님.",
+  "appZipSha256": "46f8bffd0eadf52316ac87d4f75b0fafd32b843158492e326ed6266d8635fe45",
+  "cityTourRows": 280,
+  "cityTourMatchesGithub": true,
+  "v2": {
+    "version": "2.0.0",
+    "statistics": "2026 해외한류실태조사 요약본 / 2025 기준 / 그림 2-1-12",
+    "theme_source": "github.json (fr present)",
+    "city_source": "citytour_app_zip.json; 280 rows",
+    "production_media_mapping": false,
+    "deployed": false
+  },
+  "v3": {
+    "version": "3.0.0",
+    "source": "user-uploaded 20260927150125_전국_202509-202608_데이터랩_다운로드.zip",
+    "source_sha256": "afbff5c4b4e5cf8eeba18fa1b52c0ce93cd5d4f2ed3f7f90e9bdc168ef1b6302",
+    "public_context_url": "https://datalab.visitkorea.or.kr/datalab/portal/loc/getPopuTourAttrac.do?callYn=Y&tabDiv=3",
+    "period_from_filename": [
+      "2025-09",
+      "2026-08"
+    ],
+    "csv_rows": 180,
+    "distinct_source_places": 70,
+    "provisional_name_links": 44,
+    "verified_links": 0,
+    "default_beta": 0.03,
+    "default_link_weight": 0.5,
+    "coefficients": "design choices, not fitted estimates",
+    "deployed": false
+  },
+  "v4": {
+    "source_upload": "20260927163120_전국_202509-202608_데이터랩_다운로드.zip",
+    "sha256": "2ed3a351b370818822ec75d166c0d2d31059518e6f43044c7f937fd5c549a720",
+    "source_url": "https://datalab.visitkorea.or.kr/datalab/portal/bda/getInquiryBySexAndAge.do",
+    "valid_regions": 90,
+    "mapped_app_regions": 54,
+    "mapped_places": 952,
+    "mapped_courses": 127,
+    "joint_sex_age_available": false,
+    "selection_bias": "male share Top100 detailed list",
+    "prototype": true,
+    "deployed": false
+  }
+}
