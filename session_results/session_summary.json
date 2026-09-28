@@ -1,0 +1,50 @@
+{
+  "status": "SCORED_CANDIDATES_NOT_BOOKING_CONFIRMATION",
+  "cosine_candidates": 179,
+  "cosine_distinct_regions": 5,
+  "legacy_theme_picks": [
+    {
+      "key": "warden",
+      "score": 0.6718500000000001
+    },
+    {
+      "key": "jeju",
+      "score": 0.5376
+    },
+    {
+      "key": "kdh",
+      "score": 0.5283864532019704
+    }
+  ],
+  "legacy_city_picks": [
+    {
+      "region": "대구",
+      "name": "테마-전통5일장-현풍백년도깨비시장",
+      "score": 2
+    },
+    {
+      "region": "제주",
+      "name": "순환형코스",
+      "score": 1.9500000000000002
+    },
+    {
+      "region": "시흥",
+      "name": "테마형 수시코스",
+      "score": 1.8521485100646764
+    },
+    {
+      "region": "정선",
+      "name": "와와정선 2층 투어버스",
+      "score": 1.2000377768791866
+    },
+    {
+      "region": "세종",
+      "name": "역사산책투어",
+      "score": 1.17
+    }
+  ],
+  "score_fusion": false,
+  "input": "/workspace/scratch/6640d64d17c6/deliverables/integrated_release/Tour_Navigator_Codebook/examples/full_session.json",
+  "analysis_run": "/workspace/scratch/6640d64d17c6/deliverables/integrated_release/Tour_Navigator_Codebook/analysis/outputs_cosine/run_20260928_062724_468322",
+  "data_status": "SYNTHETIC_DEMONSTRATION"
+}
