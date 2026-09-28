@@ -1,0 +1,7 @@
+﻿rule_id,survey_question,input_field,condition,meaning,when_not_met
+E1,Q6,answers[5],1,해외 방문 모드,통계 보조 제외; 직접 답변은 사용
+E2,H1,hallyu.residenceArea,country_scope 30개 코드 중 하나,조사 대상 거주지역,통계 보조 제외; 언어로 보완하지 않음
+E3,Q1 및 H2,"answers[0], hallyu.age15to19",Q1=20·30·40·50대 또는 Q1=10대이고 H2=true,만15~59세에 대응,60대 이상 또는15세 여부 미확인 시 통계 보조 제외
+E4,H3,hallyu.experienced,true,한국 문화콘텐츠 경험 있음,통계 보조 제외
+E5,H4 콘텐츠별,hallyu.contentPreference[k].answered,false 또는 미제공,해당 콘텐츠 문항 미응답,answered=true이면 e를 사용
+M1,장소·코스 태그,"profile.verified, profile.source, media[k]","verified=true 및 출처 기재, M 합계≤1",H에 실제 영향을 주려면 검증된 미디어 태그 필요,미매핑이면 H=0; source/검증 누락 프로필은 오류

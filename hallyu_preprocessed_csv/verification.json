@@ -1,0 +1,8 @@
+{
+  "source_config_sha256": "ad6e354af3b8556d5cb02b0b0d935e9d4af064b993d1db75fdbe0a43fbb15671",
+  "source_engine_sha256": "b448d743eb8ecc06c6b6fe55a16ec61660235261693cd908ed8107c86df6672a",
+  "active_rows": 4,
+  "source_indicator_rows": 12,
+  "country_rows": 30,
+  "all_four_priors_match_executed_JS": true
+}

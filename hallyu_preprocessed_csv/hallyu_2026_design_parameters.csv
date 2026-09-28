@@ -1,0 +1,6 @@
+﻿parameter,value,meaning,origin,formula_or_function
+neutral_preference,0.5,선호 무응답 중립값,설계값,resolveContentPreference
+prior_strength,0.2,조사 응답률을 중립값 쪽으로 완화하는 계수,설계값,z=0.5+0.2*(r-0.5)
+content_score_scale,0.1,콘텐츠 선호의 추천점수 변환 계수,설계값,H=0.1*sum(M*(z-0.5))
+prior_strength_outside_population,0,통계 적용대상 밖에서의 보조 강도,설계값,z=0.5
+stay_interest_scale,0.2,관심도 I가 기본 체류분에 미치는 계수,설계값,B*(1+0.2*(I-0.5))*P+extraMinutes

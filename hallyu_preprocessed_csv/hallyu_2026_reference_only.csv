@@ -1,0 +1,12 @@
+﻿indicator,category,reference_year,source_value,unit,source_pdf_page,source_printed_page,source_ref,usage_status,usage_note
+한국산 서비스별 구매의향 있음(4+5),음식점 식사,2025,64.9,percent,56,111,그림 2-5-4,reference_only_not_scoring,후보 서비스 구성 참고. 지역이나 개인별 추천 가산 계수로 사용하지 않음
+한국산 서비스별 구매의향 있음(4+5),한국 관광,2025,64.4,percent,56,111,그림 2-5-4,reference_only_not_scoring,후보 서비스 구성 참고. 지역이나 개인별 추천 가산 계수로 사용하지 않음
+한국산 서비스별 구매의향 있음(4+5),전통문화 체험,2025,55.2,percent,56,111,그림 2-5-4,reference_only_not_scoring,후보 서비스 구성 참고. 지역이나 개인별 추천 가산 계수로 사용하지 않음
+한국산 서비스별 구매의향 있음(4+5),한국어 학습,2025,47.5,percent,56,111,그림 2-5-4,reference_only_not_scoring,후보 서비스 구성 참고. 지역이나 개인별 추천 가산 계수로 사용하지 않음
+한국산 서비스별 구매의향 있음(4+5),태권도 학습,2025,41.2,percent,56,111,그림 2-5-4,reference_only_not_scoring,후보 서비스 구성 참고. 지역이나 개인별 추천 가산 계수로 사용하지 않음
+한국산 서비스별 구매의향 있음(4+5),병원 의료,2025,39.0,percent,56,111,그림 2-5-4,reference_only_not_scoring,후보 서비스 구성 참고. 지역이나 개인별 추천 가산 계수로 사용하지 않음
+한국 문화콘텐츠 소비량,전체 월평균 콘텐츠 소비시간,2025,14.7,hours_per_month,42,82-83,그림 2-3-1 및 본문,reference_only_not_scoring,관광지 체류시간 직접 환산에서 제외. 콘텐츠 소비시간과 현장 체류시간의 관측 단위가 다름
+한국 문화콘텐츠 소비량,전체 월평균 콘텐츠 지출액,2025,16.6,USD_per_month,42,82-83,그림 2-3-1 및 본문,reference_only_not_scoring,관광지 체류시간 직접 환산에서 제외. 콘텐츠 소비시간과 현장 체류시간의 관측 단위가 다름
+한국 문화콘텐츠 소비량,전체 평균 콘텐츠 소비비중,2025,24.9,percent,42,82-83,그림 2-3-1 및 본문,reference_only_not_scoring,관광지 체류시간 직접 환산에서 제외. 콘텐츠 소비시간과 현장 체류시간의 관측 단위가 다름
+한국 문화콘텐츠 소비량,드라마 월평균 소비시간,2025,18.3,hours_per_month,42,82-83,그림 2-3-1 및 본문,reference_only_not_scoring,관광지 체류시간 직접 환산에서 제외. 콘텐츠 소비시간과 현장 체류시간의 관측 단위가 다름
+한국 문화콘텐츠 소비량,예능 월평균 소비시간,2025,17.7,hours_per_month,42,82-83,그림 2-3-1 및 본문,reference_only_not_scoring,관광지 체류시간 직접 환산에서 제외. 콘텐츠 소비시간과 현장 체류시간의 관측 단위가 다름

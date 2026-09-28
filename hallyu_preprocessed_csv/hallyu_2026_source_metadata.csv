@@ -1,0 +1,13 @@
+﻿field,value,interpretation
+source_title,2026 해외한류실태조사,첨부 원문 표제
+reference_year,2025,2026은 발간연도
+fieldwork_start,2025-11-13,PDF12쪽 인쇄22~23쪽
+fieldwork_end,2025-12-12,PDF12쪽 인쇄22~23쪽
+overall_sample_n,27400,전체 조사 표본; 콘텐츠별 분모로 재사용하지 않음
+countries_and_areas,30,대상 범위 확인
+respondent_age_range,15-59,해외 현지 한국 문화콘텐츠 경험자
+method,해외 온라인 패널 자기기입식 조사,국민 또는 실제 방한 관광객 전수조사 아님
+post_stratification,국가·세부지역·성별·연령 목표표본에 맞춰 사후가중,발표된 집계값 사용; 원응답자 가중치 재추정 안 함
+respondent_microdata_available,false,첨부 요약본에서 사용 지표를 추출
+used_in_current_PCA,false,현재 PCA는 별도 관광데이터랩 지역비율/관광지 특성 사용
+default_real_course_media_mapping,not_mapped,기본280코스 미디어 태그 미구축으로 H=0; 필요 태그 공급 시 보조값 반영

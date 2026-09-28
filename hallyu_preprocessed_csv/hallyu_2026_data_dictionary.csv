@@ -1,0 +1,76 @@
+﻿file_name,column,description_ko,example
+hallyu_2026_source_indicators.csv,content_key,엔진 콘텐츠 키,drama
+hallyu_2026_source_indicators.csv,content_name_ko,콘텐츠명,드라마
+hallyu_2026_source_indicators.csv,source_title,열 이름 및 각 행의 설명 참조,2026 해외한류실태조사
+hallyu_2026_source_indicators.csv,source_file,열 이름 및 각 행의 설명 참조,20260330185020707.pdf
+hallyu_2026_source_indicators.csv,publication_year,발간연도,2026
+hallyu_2026_source_indicators.csv,reference_year,통계 기준연도,2025
+hallyu_2026_source_indicators.csv,source_pdf_page,첨부 PDF의1부터 세는 페이지,32
+hallyu_2026_source_indicators.csv,source_printed_page,PDF 지면에 인쇄된 쪽번호,63
+hallyu_2026_source_indicators.csv,source_figure,열 이름 및 각 행의 설명 참조,그림 2-1-12
+hallyu_2026_source_indicators.csv,indicator,열 이름 및 각 행의 설명 참조,한국 문화콘텐츠별 추천의향 있음(4+5) 응답률
+hallyu_2026_source_indicators.csv,base_population,열 이름 및 각 행의 설명 참조,각 콘텐츠별 경험자
+hallyu_2026_source_indicators.csv,geography_level,통계 집계 지리 범위,조사 전체
+hallyu_2026_source_indicators.csv,sex_scope,통계 성별 집계 범위,전체
+hallyu_2026_source_indicators.csv,age_scope,통계 연령 집계 범위,조사 대상 만15~59세 전체
+hallyu_2026_source_indicators.csv,source_unit,원문 단위,percent
+hallyu_2026_source_indicators.csv,config_version,실행 코드 통계 사전 버전,2026-summary-2025-v1
+hallyu_2026_source_indicators.csv,source_value_pct,원문 백분율; 74.1은74.1%,74.1
+hallyu_2026_source_indicators.csv,ratio_r,원문 백분율/100,0.741
+hallyu_2026_source_indicators.csv,runtime_status,active 4종 또는 inactive 8종,active
+hallyu_2026_source_indicators.csv,numeric_prior_enabled,현재 코드 통계보조 대상 여부 1/0,1
+hallyu_2026_source_indicators.csv,used_in_pca,현재 PCA에는 사용하지 않음 0,0
+hallyu_2026_source_indicators.csv,content_specific_sample_n,콘텐츠별 분모 미수록: 빈칸은0이 아님,
+hallyu_2026_source_indicators.csv,availability_note,열 이름 및 각 행의 설명 참조,4종 콘텐츠 태그의 H4 미응답 보조
+hallyu_2026_scoring_inputs.csv,content_key,엔진 콘텐츠 키,drama
+hallyu_2026_scoring_inputs.csv,content_name_ko,콘텐츠명,드라마
+hallyu_2026_scoring_inputs.csv,source_value_pct,원문 백분율; 74.1은74.1%,74.1
+hallyu_2026_scoring_inputs.csv,ratio_r,원문 백분율/100,0.741
+hallyu_2026_scoring_inputs.csv,neutral_value,중립 선호값,0.5
+hallyu_2026_scoring_inputs.csv,prior_strength_design,통계보조 강도 설계값 .2,0.2
+hallyu_2026_scoring_inputs.csv,prior_z_if_eligible_and_unanswered,적용조건 충족 및 H4 미응답일 때 .5+.2*(r-.5),0.5482
+hallyu_2026_scoring_inputs.csv,prior_centered_z_minus_half,열 이름 및 각 행의 설명 참조,0.0482
+hallyu_2026_scoring_inputs.csv,score_scale_design,추천점수 변환 설계값 .1,0.1
+hallyu_2026_scoring_inputs.csv,single_tag_M_assumption,열 이름 및 각 행의 설명 참조,1
+hallyu_2026_scoring_inputs.csv,single_tag_H_if_eligible_unanswered,검증된 단일 태그 M=1 가정 .1*(z-.5),0.00482
+hallyu_2026_scoring_inputs.csv,z_if_ineligible_unanswered,열 이름 및 각 행의 설명 참조,0.5
+hallyu_2026_scoring_inputs.csv,H_if_ineligible_unanswered,열 이름 및 각 행의 설명 참조,0
+hallyu_2026_scoring_inputs.csv,direct_answer_rule,열 이름 및 각 행의 설명 참조,H4 응답 시 직접값 e 사용; 통계 보조 중복 없음
+hallyu_2026_scoring_inputs.csv,source_pdf_page,첨부 PDF의1부터 세는 페이지,32
+hallyu_2026_scoring_inputs.csv,source_printed_page,PDF 지면에 인쇄된 쪽번호,63
+hallyu_2026_scoring_inputs.csv,eligibility_rule_id,열 이름 및 각 행의 설명 참조,ALL_RULES_E1_TO_E5
+hallyu_2026_scoring_inputs.csv,runtime_function,열 이름 및 각 행의 설명 참조,resolveContentPreference / contentAdjustment
+hallyu_2026_scoring_inputs.csv,assumption_note,열 이름 및 각 행의 설명 참조,H값은 검증된 단일 콘텐츠 태그 M=1일 때 계산한 예시; 실제 코스 공통 가산값이 아님
+hallyu_2026_country_scope.csv,residence_area_iso2,열 이름 및 각 행의 설명 참조,CN
+hallyu_2026_country_scope.csv,country_or_area_name_ko,열 이름 및 각 행의 설명 참조,중국
+hallyu_2026_country_scope.csv,macro_region,열 이름 및 각 행의 설명 참조,아시아·태평양
+hallyu_2026_country_scope.csv,in_eligibility_allowlist,열 이름 및 각 행의 설명 참조,1
+hallyu_2026_country_scope.csv,content_rate_geography,전체 공통값; 국가별 성연령별로 값 복제 후 관측치라고 해석 금지,전체 공통 r 사용; 국가별 추천의향을 별도로 투입하지 않음
+hallyu_2026_country_scope.csv,source_pdf_page,첨부 PDF의1부터 세는 페이지,12
+hallyu_2026_country_scope.csv,source_printed_pages,PDF 지면에 인쇄된 쪽번호 범위,22-23
+hallyu_2026_country_scope.csv,code_field,열 이름 및 각 행의 설명 참조,hallyu.residenceArea
+hallyu_2026_country_scope.csv,interpretation,열 이름 및 각 행의 설명 참조,거주 국가·지역 직접 응답; 브라우저 언어나 국적으로 추정하지 않음
+hallyu_2026_eligibility_rules.csv,rule_id,열 이름 및 각 행의 설명 참조,E1
+hallyu_2026_eligibility_rules.csv,survey_question,열 이름 및 각 행의 설명 참조,Q6
+hallyu_2026_eligibility_rules.csv,input_field,열 이름 및 각 행의 설명 참조,answers[5]
+hallyu_2026_eligibility_rules.csv,condition,열 이름 및 각 행의 설명 참조,1
+hallyu_2026_eligibility_rules.csv,meaning,열 이름 및 각 행의 설명 참조,해외 방문 모드
+hallyu_2026_eligibility_rules.csv,when_not_met,열 이름 및 각 행의 설명 참조,통계 보조 제외; 직접 답변은 사용
+hallyu_2026_design_parameters.csv,parameter,열 이름 및 각 행의 설명 참조,neutral_preference
+hallyu_2026_design_parameters.csv,value,열 이름 및 각 행의 설명 참조,0.5
+hallyu_2026_design_parameters.csv,meaning,열 이름 및 각 행의 설명 참조,선호 무응답 중립값
+hallyu_2026_design_parameters.csv,origin,설계값은 조사 원문 측정값이 아님,설계값
+hallyu_2026_design_parameters.csv,formula_or_function,열 이름 및 각 행의 설명 참조,resolveContentPreference
+hallyu_2026_reference_only.csv,indicator,열 이름 및 각 행의 설명 참조,한국산 서비스별 구매의향 있음(4+5)
+hallyu_2026_reference_only.csv,category,열 이름 및 각 행의 설명 참조,음식점 식사
+hallyu_2026_reference_only.csv,reference_year,통계 기준연도,2025
+hallyu_2026_reference_only.csv,source_value,열 이름 및 각 행의 설명 참조,64.9
+hallyu_2026_reference_only.csv,unit,열 이름 및 각 행의 설명 참조,percent
+hallyu_2026_reference_only.csv,source_pdf_page,첨부 PDF의1부터 세는 페이지,56
+hallyu_2026_reference_only.csv,source_printed_page,PDF 지면에 인쇄된 쪽번호,111
+hallyu_2026_reference_only.csv,source_ref,열 이름 및 각 행의 설명 참조,그림 2-5-4
+hallyu_2026_reference_only.csv,usage_status,reference_only_not_scoring=명세 참고만 했고 실제 점수 미사용,reference_only_not_scoring
+hallyu_2026_reference_only.csv,usage_note,열 이름 및 각 행의 설명 참조,후보 서비스 구성 참고. 지역이나 개인별 추천 가산 계수로 사용하지 않음
+hallyu_2026_source_metadata.csv,field,열 이름 및 각 행의 설명 참조,source_title
+hallyu_2026_source_metadata.csv,value,열 이름 및 각 행의 설명 참조,2026 해외한류실태조사
+hallyu_2026_source_metadata.csv,interpretation,열 이름 및 각 행의 설명 참조,첨부 원문 표제
