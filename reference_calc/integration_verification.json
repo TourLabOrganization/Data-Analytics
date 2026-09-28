@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "mixed_types": [
+    "C4",
+    "C5"
+  ],
+  "course_count": 179,
+  "distinct_region_count": 5,
+  "type_profile_L1": 1.0,
+  "D_preserves_previous_scores": true,
+  "empirical_validation": false,
+  "deployment": false
+}
