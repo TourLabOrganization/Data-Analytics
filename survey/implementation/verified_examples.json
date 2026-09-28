@@ -1,0 +1,248 @@
+{
+  "single": {
+    "answers": {
+      "S1": "A",
+      "S2": "A",
+      "S3": "A",
+      "S4": "A",
+      "S5": "A",
+      "S6": "A",
+      "B1": "A"
+    },
+    "result": {
+      "version": "branch-survey-6.1-proposal",
+      "status": "complete",
+      "answered_count": 7,
+      "scores": {
+        "C1": 9.0,
+        "C2": 1.0,
+        "C3": 0.0,
+        "C4": 2.0,
+        "C5": 4.0,
+        "C6": 0.0,
+        "C7": 13.0,
+        "C8": 1.0,
+        "C9": 0.0,
+        "C10": 0.0
+      },
+      "ledger": [
+        {
+          "node": "S1",
+          "option": "A",
+          "contribution": {
+            "C1": 1,
+            "C7": 2
+          }
+        },
+        {
+          "node": "S2",
+          "option": "A",
+          "contribution": {
+            "C1": 1,
+            "C5": 3,
+            "C7": 1,
+            "C8": 1
+          }
+        },
+        {
+          "node": "S3",
+          "option": "A",
+          "contribution": {
+            "C1": 2,
+            "C7": 2
+          }
+        },
+        {
+          "node": "S4",
+          "option": "A",
+          "contribution": {
+            "C1": 2,
+            "C2": 1,
+            "C7": 3
+          }
+        },
+        {
+          "node": "S5",
+          "option": "A",
+          "contribution": {
+            "C1": 3,
+            "C7": 1
+          }
+        },
+        {
+          "node": "S6",
+          "option": "A",
+          "contribution": {
+            "C4": 2,
+            "C5": 1
+          }
+        },
+        {
+          "node": "B1",
+          "option": "A",
+          "contribution": {
+            "C7": 4
+          }
+        }
+      ],
+      "mode": "single",
+      "result_types": [
+        "C7"
+      ],
+      "relative_weights": {
+        "C1": 0.17963184222507528,
+        "C2": 0.011226990139067205,
+        "C3": 0.007938680859648922,
+        "C4": 0.015877361719297843,
+        "C5": 0.031754723438595686,
+        "C6": 0.007938680859648922,
+        "C7": 0.7185273689003011,
+        "C8": 0.011226990139067205,
+        "C9": 0.007938680859648922,
+        "C10": 0.007938680859648922
+      },
+      "ranking": [
+        "C7",
+        "C1",
+        "C5",
+        "C4",
+        "C2",
+        "C8",
+        "C3",
+        "C6",
+        "C9",
+        "C10"
+      ],
+      "base_gap": 4.0,
+      "interpretation": "Rule-based relative weights, not probability or cosine scores"
+    }
+  },
+  "mixed": {
+    "answers": {
+      "S1": "A",
+      "S2": "A",
+      "S3": "A",
+      "S4": "A",
+      "S5": "A",
+      "S6": "A",
+      "B1": "B",
+      "F1": "C7"
+    },
+    "result": {
+      "version": "branch-survey-6.1-proposal",
+      "status": "complete",
+      "answered_count": 8,
+      "scores": {
+        "C1": 12.0,
+        "C2": 1.0,
+        "C3": 0.0,
+        "C4": 2.0,
+        "C5": 4.0,
+        "C6": 0.0,
+        "C7": 14.0,
+        "C8": 1.0,
+        "C9": 0.0,
+        "C10": 0.0
+      },
+      "ledger": [
+        {
+          "node": "S1",
+          "option": "A",
+          "contribution": {
+            "C1": 1,
+            "C7": 2
+          }
+        },
+        {
+          "node": "S2",
+          "option": "A",
+          "contribution": {
+            "C1": 1,
+            "C5": 3,
+            "C7": 1,
+            "C8": 1
+          }
+        },
+        {
+          "node": "S3",
+          "option": "A",
+          "contribution": {
+            "C1": 2,
+            "C7": 2
+          }
+        },
+        {
+          "node": "S4",
+          "option": "A",
+          "contribution": {
+            "C1": 2,
+            "C2": 1,
+            "C7": 3
+          }
+        },
+        {
+          "node": "S5",
+          "option": "A",
+          "contribution": {
+            "C1": 3,
+            "C7": 1
+          }
+        },
+        {
+          "node": "S6",
+          "option": "A",
+          "contribution": {
+            "C4": 2,
+            "C5": 1
+          }
+        },
+        {
+          "node": "B1",
+          "option": "B",
+          "contribution": {
+            "C1": 3,
+            "C7": 1
+          }
+        },
+        {
+          "node": "F1",
+          "option": "C7",
+          "contribution": {
+            "C7": 4
+          }
+        }
+      ],
+      "mode": "mixed",
+      "result_types": [
+        "C7",
+        "C1"
+      ],
+      "relative_weights": {
+        "C1": 0.3124566296699736,
+        "C2": 0.00690438130207288,
+        "C3": 0.004882134838593338,
+        "C4": 0.009764269677186676,
+        "C5": 0.01952853935437335,
+        "C6": 0.004882134838593338,
+        "C7": 0.6249132593399472,
+        "C8": 0.00690438130207288,
+        "C9": 0.004882134838593338,
+        "C10": 0.004882134838593338
+      },
+      "ranking": [
+        "C7",
+        "C1",
+        "C5",
+        "C4",
+        "C2",
+        "C8",
+        "C3",
+        "C6",
+        "C9",
+        "C10"
+      ],
+      "base_gap": 2.0,
+      "interpretation": "Rule-based relative weights, not probability or cosine scores"
+    }
+  }
+}

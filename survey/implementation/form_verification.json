@@ -1,0 +1,14 @@
+{
+  "version": "branch-survey-6.1-proposal",
+  "word_pages": 10,
+  "form_pages": 6,
+  "png_pixels": [
+    2550,
+    3300
+  ],
+  "dpi": 300,
+  "visual_review": "all pages reviewed; no clipping or broken text",
+  "D_none_options": 7,
+  "names_unchanged": true,
+  "form_contains_scoring_explanations": false
+}

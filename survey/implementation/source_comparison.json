@@ -1,0 +1,58 @@
+{
+  "source": "integrated 5.0 legacy_questions_and_profiles.json",
+  "common_score_mapping": [
+    {
+      "new_node": "S1",
+      "old_node": "Q1",
+      "all_option_scores_preserved": true
+    },
+    {
+      "new_node": "S2",
+      "old_node": "Q2",
+      "all_option_scores_preserved": true
+    },
+    {
+      "new_node": "S3",
+      "old_node": "Q3",
+      "all_option_scores_preserved": true
+    },
+    {
+      "new_node": "S4",
+      "old_node": "Q4",
+      "all_option_scores_preserved": true
+    },
+    {
+      "new_node": "S5",
+      "old_node": "Q5",
+      "all_option_scores_preserved": true
+    },
+    {
+      "new_node": "S6",
+      "old_node": "Q8",
+      "all_option_scores_preserved": true
+    }
+  ],
+  "new_design": [
+    "Single primary interest",
+    "All ten candidate types",
+    "Experience-focused labels",
+    "Branch and clarification scores",
+    "Final mixed margin of two points"
+  ],
+  "legacy_file_sha256": "f95ef143df1b12a9c7130f816dfd467275a743382cfb480b3996b295be5b4167",
+  "version_6_1_changes": {
+    "type_names_unchanged": true,
+    "common_options_unchanged": true,
+    "branch_A_B_C_unchanged": true,
+    "added_D_none_to": [
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7"
+    ],
+    "D_contribution": 0
+  }
+}

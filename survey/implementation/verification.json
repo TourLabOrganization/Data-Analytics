@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "fixed_options": 60,
+  "common_questions": 6,
+  "branch_questions": 7,
+  "base_paths": 47628,
+  "completed_paths_including_clarification": 141833,
+  "answer_counts": [
+    7,
+    8
+  ],
+  "single_result_reachable": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10"
+  ],
+  "max_mixed_types_observed": 9,
+  "checks": [
+    "Common and branch A/B/C choices add to eligible types",
+    "Every branch D is answered with zero contribution and leaves all previous scores unchanged",
+    "Branch A/B/C contribute 4 points; D contributes zero without redistribution",
+    "All routes finish in 7 or 8 answers",
+    "Every type can be a sole result",
+    "Stale branch and invalid answers rejected",
+    "Score ledger and relative weights consistent"
+  ],
+  "interpretation": "Exhaustive combinatorial checks; not accuracy, user distribution, or survey validity evidence."
+}
