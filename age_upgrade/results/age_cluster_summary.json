@@ -1,0 +1,16 @@
+{
+  "rows": 70,
+  "fit_rows": 70,
+  "excluded_no_age_rows": 0,
+  "selected": {
+    "mode": "raw",
+    "k": 3,
+    "components": 5,
+    "silhouette_original_mean": 0.3948608240552245,
+    "seed_ari_min": 1.0,
+    "min_cluster_size": 11
+  },
+  "ratio_feature_sensitivity_ari": 0.1732402818766202,
+  "pca_first2_variance": 0.7343875384320597,
+  "semantics": "top30_listing_exposure_not_visits_or_personas"
+}

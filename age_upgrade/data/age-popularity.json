@@ -1,0 +1,920 @@
+{
+  "version": "datalab-202509-202608-top30-v1",
+  "beta": 0.03,
+  "period": [
+    "2025-09",
+    "2026-08"
+  ],
+  "ageBands": [
+    "20",
+    "30",
+    "40",
+    "50",
+    "60plus"
+  ],
+  "byPlace": {
+    "nax288": {
+      "datalabId": "3f73bffa7c6d98063eebe1ecd3305da6",
+      "name": "에버랜드",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 2,
+          "sharePct": 6.7,
+          "relativeIntensity": 0.7204301075268816
+        },
+        "30": {
+          "rank": 1,
+          "sharePct": 10.5,
+          "relativeIntensity": 1.0
+        },
+        "40": {
+          "rank": 1,
+          "sharePct": 10.7,
+          "relativeIntensity": 1.0
+        },
+        "50": {
+          "rank": 3,
+          "sharePct": 4.3,
+          "relativeIntensity": 0.5657894736842105
+        }
+      }
+    },
+    "ro17": {
+      "datalabId": "aa6be6a4f5997ab91804f3b6be58e878",
+      "name": "코엑스",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 4,
+          "sharePct": 5.4,
+          "relativeIntensity": 0.5806451612903226
+        },
+        "30": {
+          "rank": 2,
+          "sharePct": 8.7,
+          "relativeIntensity": 0.8285714285714285
+        },
+        "40": {
+          "rank": 2,
+          "sharePct": 7.3,
+          "relativeIntensity": 0.6822429906542057
+        },
+        "50": {
+          "rank": 1,
+          "sharePct": 7.6,
+          "relativeIntensity": 1.0
+        },
+        "60plus": {
+          "rank": 1,
+          "sharePct": 5.5,
+          "relativeIntensity": 1.0
+        }
+      }
+    },
+    "kdx6": {
+      "datalabId": "d6e7d2e0ef86a25cce60aac5332b28dc",
+      "name": "국립중앙박물관",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 13,
+          "sharePct": 2.7,
+          "relativeIntensity": 0.2571428571428572
+        },
+        "40": {
+          "rank": 4,
+          "sharePct": 4.9,
+          "relativeIntensity": 0.4579439252336449
+        },
+        "50": {
+          "rank": 10,
+          "sharePct": 3.8,
+          "relativeIntensity": 0.5
+        },
+        "60plus": {
+          "rank": 23,
+          "sharePct": 2.8,
+          "relativeIntensity": 0.509090909090909
+        }
+      }
+    },
+    "kdx24": {
+      "datalabId": "94b37da181384604e8bdf68b3217008e",
+      "name": "여의도한강공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 1,
+          "sharePct": 9.3,
+          "relativeIntensity": 1.0
+        },
+        "30": {
+          "rank": 5,
+          "sharePct": 4.6,
+          "relativeIntensity": 0.43809523809523804
+        },
+        "40": {
+          "rank": 15,
+          "sharePct": 2.7,
+          "relativeIntensity": 0.25233644859813087
+        }
+      }
+    },
+    "gjx1": {
+      "datalabId": "a7a30e65493f93bc02b9eb6dafc15230",
+      "name": "불국사",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "40": {
+          "rank": 7,
+          "sharePct": 3.5,
+          "relativeIntensity": 0.3271028037383178
+        },
+        "50": {
+          "rank": 8,
+          "sharePct": 4.0,
+          "relativeIntensity": 0.5263157894736842
+        },
+        "60plus": {
+          "rank": 3,
+          "sharePct": 4.4,
+          "relativeIntensity": 0.8
+        }
+      }
+    },
+    "nax172": {
+      "datalabId": "38a26a16270ce8f2cf503ba9650b6c94",
+      "name": "을왕리해수욕장",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 3,
+          "sharePct": 5.7,
+          "relativeIntensity": 0.6129032258064516
+        },
+        "30": {
+          "rank": 12,
+          "sharePct": 2.8,
+          "relativeIntensity": 0.26666666666666666
+        },
+        "40": {
+          "rank": 27,
+          "sharePct": 2.2,
+          "relativeIntensity": 0.20560747663551404
+        },
+        "50": {
+          "rank": 12,
+          "sharePct": 3.2,
+          "relativeIntensity": 0.4210526315789474
+        },
+        "60plus": {
+          "rank": 11,
+          "sharePct": 3.5,
+          "relativeIntensity": 0.6363636363636364
+        }
+      }
+    },
+    "kdx43": {
+      "datalabId": "b605a838036e13947e8dd11697cdd276",
+      "name": "예술의전당",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 27,
+          "sharePct": 2.2,
+          "relativeIntensity": 0.20952380952380953
+        },
+        "40": {
+          "rank": 10,
+          "sharePct": 3.0,
+          "relativeIntensity": 0.28037383177570097
+        },
+        "50": {
+          "rank": 5,
+          "sharePct": 4.1,
+          "relativeIntensity": 0.5394736842105263
+        },
+        "60plus": {
+          "rank": 12,
+          "sharePct": 3.5,
+          "relativeIntensity": 0.6363636363636364
+        }
+      }
+    },
+    "nax704": {
+      "datalabId": "ede5898c7b76ed7fbd8ec451ec4dbf83",
+      "name": "서울대공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 6,
+          "sharePct": 4.1,
+          "relativeIntensity": 0.3904761904761904
+        },
+        "40": {
+          "rank": 8,
+          "sharePct": 3.3,
+          "relativeIntensity": 0.308411214953271
+        }
+      }
+    },
+    "nax621": {
+      "datalabId": "8cce89feb1f76fc7cb1078812e964a94",
+      "name": "낙산사",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "40": {
+          "rank": 17,
+          "sharePct": 2.7,
+          "relativeIntensity": 0.25233644859813087
+        },
+        "50": {
+          "rank": 4,
+          "sharePct": 4.2,
+          "relativeIntensity": 0.5526315789473685
+        },
+        "60plus": {
+          "rank": 7,
+          "sharePct": 3.7,
+          "relativeIntensity": 0.6727272727272727
+        }
+      }
+    },
+    "nax167": {
+      "datalabId": "0d584d8e5e5d47817494c2f73ef30908",
+      "name": "월미도",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 7,
+          "sharePct": 4.3,
+          "relativeIntensity": 0.4623655913978494
+        },
+        "30": {
+          "rank": 9,
+          "sharePct": 3.0,
+          "relativeIntensity": 0.2857142857142857
+        },
+        "40": {
+          "rank": 21,
+          "sharePct": 2.5,
+          "relativeIntensity": 0.23364485981308414
+        }
+      }
+    },
+    "nax109": {
+      "datalabId": "511bb5c2dc7ee740a2df2fa25c4cd231",
+      "name": "전주한옥마을",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 20,
+          "sharePct": 2.2,
+          "relativeIntensity": 0.23655913978494625
+        },
+        "30": {
+          "rank": 18,
+          "sharePct": 2.6,
+          "relativeIntensity": 0.24761904761904763
+        },
+        "40": {
+          "rank": 13,
+          "sharePct": 2.8,
+          "relativeIntensity": 0.2616822429906542
+        },
+        "50": {
+          "rank": 14,
+          "sharePct": 3.1,
+          "relativeIntensity": 0.4078947368421053
+        },
+        "60plus": {
+          "rank": 28,
+          "sharePct": 2.6,
+          "relativeIntensity": 0.4727272727272727
+        }
+      }
+    },
+    "ro929": {
+      "datalabId": "c42f4fdc51ef1e5b896e680979ec3ecc",
+      "name": "오이도빨강등대",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 9,
+          "sharePct": 3.7,
+          "relativeIntensity": 0.3978494623655914
+        },
+        "30": {
+          "rank": 20,
+          "sharePct": 2.4,
+          "relativeIntensity": 0.22857142857142856
+        },
+        "50": {
+          "rank": 15,
+          "sharePct": 3.0,
+          "relativeIntensity": 0.39473684210526316
+        },
+        "60plus": {
+          "rank": 14,
+          "sharePct": 3.3,
+          "relativeIntensity": 0.6
+        }
+      }
+    },
+    "nax649": {
+      "datalabId": "b9231d0c3387a56154e033c670363024",
+      "name": "대천해수욕장",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 14,
+          "sharePct": 2.9,
+          "relativeIntensity": 0.31182795698924726
+        },
+        "40": {
+          "rank": 22,
+          "sharePct": 2.5,
+          "relativeIntensity": 0.23364485981308414
+        },
+        "50": {
+          "rank": 13,
+          "sharePct": 3.2,
+          "relativeIntensity": 0.4210526315789474
+        },
+        "60plus": {
+          "rank": 20,
+          "sharePct": 2.9,
+          "relativeIntensity": 0.5272727272727272
+        }
+      }
+    },
+    "nax401": {
+      "datalabId": "72c38469b443dcd14b3a2c8a954e11de",
+      "name": "통도사",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "40": {
+          "rank": 30,
+          "sharePct": 2.1,
+          "relativeIntensity": 0.19626168224299068
+        },
+        "50": {
+          "rank": 6,
+          "sharePct": 4.1,
+          "relativeIntensity": 0.5394736842105263
+        },
+        "60plus": {
+          "rank": 2,
+          "sharePct": 4.7,
+          "relativeIntensity": 0.8545454545454546
+        }
+      }
+    },
+    "kdx30": {
+      "datalabId": "97c0a1427be208a8ca50e879baa895c4",
+      "name": "올림픽공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 11,
+          "sharePct": 2.8,
+          "relativeIntensity": 0.26666666666666666
+        },
+        "40": {
+          "rank": 24,
+          "sharePct": 2.3,
+          "relativeIntensity": 0.21495327102803738
+        },
+        "60plus": {
+          "rank": 30,
+          "sharePct": 2.6,
+          "relativeIntensity": 0.4727272727272727
+        }
+      }
+    },
+    "nax287": {
+      "datalabId": "3c42855b11fcc918539180683df819a3",
+      "name": "한국민속촌",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 22,
+          "sharePct": 2.4,
+          "relativeIntensity": 0.22857142857142856
+        },
+        "40": {
+          "rank": 14,
+          "sharePct": 2.8,
+          "relativeIntensity": 0.2616822429906542
+        }
+      }
+    },
+    "nax705": {
+      "datalabId": "84642c0e4bdc2f34c4ba1fca7c0937ae",
+      "name": "서울랜드",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 17,
+          "sharePct": 2.7,
+          "relativeIntensity": 0.2571428571428572
+        },
+        "40": {
+          "rank": 6,
+          "sharePct": 3.5,
+          "relativeIntensity": 0.3271028037383178
+        }
+      }
+    },
+    "gjx4": {
+      "datalabId": "9aaf6c471f653b9f7f48f1bf52c02fad",
+      "name": "국립경주박물관",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "40": {
+          "rank": 11,
+          "sharePct": 3.0,
+          "relativeIntensity": 0.28037383177570097
+        },
+        "50": {
+          "rank": 27,
+          "sharePct": 2.4,
+          "relativeIntensity": 0.3157894736842105
+        }
+      }
+    },
+    "ro553": {
+      "datalabId": "8ae23fba3b339ba52d411e548e8dcbbe",
+      "name": "송도컨벤시아",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 26,
+          "sharePct": 2.2,
+          "relativeIntensity": 0.20952380952380953
+        },
+        "40": {
+          "rank": 29,
+          "sharePct": 2.1,
+          "relativeIntensity": 0.19626168224299068
+        },
+        "50": {
+          "rank": 24,
+          "sharePct": 2.5,
+          "relativeIntensity": 0.32894736842105265
+        }
+      }
+    },
+    "ro4": {
+      "datalabId": "c63b5b337225ae746ba52eb7f398aac1",
+      "name": "광안리해수욕장",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 6,
+          "sharePct": 4.6,
+          "relativeIntensity": 0.49462365591397844
+        },
+        "30": {
+          "rank": 25,
+          "sharePct": 2.3,
+          "relativeIntensity": 0.21904761904761902
+        }
+      }
+    },
+    "bcx22": {
+      "datalabId": "d68c2c6af7cf6cb1092154f35a52c1c7",
+      "name": "해동용궁사",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "40": {
+          "rank": 26,
+          "sharePct": 2.2,
+          "relativeIntensity": 0.20560747663551404
+        },
+        "50": {
+          "rank": 16,
+          "sharePct": 2.9,
+          "relativeIntensity": 0.3815789473684211
+        }
+      }
+    },
+    "nax181": {
+      "datalabId": "5deaf67168dab528b8659e4ccbacc3b2",
+      "name": "인천대공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 23,
+          "sharePct": 2.4,
+          "relativeIntensity": 0.22857142857142856
+        },
+        "60plus": {
+          "rank": 10,
+          "sharePct": 3.5,
+          "relativeIntensity": 0.6363636363636364
+        }
+      }
+    },
+    "nax423": {
+      "datalabId": "8d94308013411d55408018a58c07cbb3",
+      "name": "화담숲",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 28,
+          "sharePct": 2.2,
+          "relativeIntensity": 0.20952380952380953
+        },
+        "50": {
+          "rank": 28,
+          "sharePct": 2.4,
+          "relativeIntensity": 0.3157894736842105
+        },
+        "60plus": {
+          "rank": 19,
+          "sharePct": 3.1,
+          "relativeIntensity": 0.5636363636363636
+        }
+      }
+    },
+    "ro19": {
+      "datalabId": "eae638a0117eda42a27a586f77cc0cd3",
+      "name": "반포한강공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 5,
+          "sharePct": 5.2,
+          "relativeIntensity": 0.5591397849462365
+        },
+        "30": {
+          "rank": 10,
+          "sharePct": 2.9,
+          "relativeIntensity": 0.2761904761904762
+        }
+      }
+    },
+    "kd11": {
+      "datalabId": "b2e840beb2fcb66bb33d988c822656ad",
+      "name": "뚝섬한강공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 8,
+          "sharePct": 4.0,
+          "relativeIntensity": 0.4301075268817204
+        },
+        "30": {
+          "rank": 30,
+          "sharePct": 2.1,
+          "relativeIntensity": 0.2
+        }
+      }
+    },
+    "nax1": {
+      "datalabId": "72dfb0b0526f0b49c2b9190b49887e87",
+      "name": "광교호수공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 12,
+          "sharePct": 3.2,
+          "relativeIntensity": 0.3440860215053763
+        },
+        "30": {
+          "rank": 21,
+          "sharePct": 2.4,
+          "relativeIntensity": 0.22857142857142856
+        }
+      }
+    },
+    "nax117": {
+      "datalabId": "1597d21403f63da1bb0539592597a525",
+      "name": "경포해변",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 17,
+          "sharePct": 2.4,
+          "relativeIntensity": 0.25806451612903225
+        },
+        "50": {
+          "rank": 22,
+          "sharePct": 2.6,
+          "relativeIntensity": 0.34210526315789475
+        }
+      }
+    },
+    "gj5": {
+      "datalabId": "48b5bea0295c5fe3512af1398026226d",
+      "name": "경주월드",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 18,
+          "sharePct": 2.3,
+          "relativeIntensity": 0.24731182795698922
+        }
+      }
+    },
+    "nax225": {
+      "datalabId": "5e600bdb00a78e59c75e74d05dd3caa0",
+      "name": "영일대해수욕장",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 19,
+          "sharePct": 2.3,
+          "relativeIntensity": 0.24731182795698922
+        }
+      }
+    },
+    "nax23": {
+      "datalabId": "c081c885d5b5476d1207c3872ae6985c",
+      "name": "화성행궁",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 21,
+          "sharePct": 2.2,
+          "relativeIntensity": 0.23655913978494625
+        }
+      }
+    },
+    "ro5": {
+      "datalabId": "241a42aa4e1d329ae60189e9679e2866",
+      "name": "안목해변",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 22,
+          "sharePct": 2.2,
+          "relativeIntensity": 0.23655913978494625
+        }
+      }
+    },
+    "nax108": {
+      "datalabId": "26128ba4320cb4a31dbb4a693a9f4f34",
+      "name": "수성못",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 23,
+          "sharePct": 2.1,
+          "relativeIntensity": 0.22580645161290322
+        }
+      }
+    },
+    "nax606": {
+      "datalabId": "0d39edb44207993a9bb92de2bfb03365",
+      "name": "일산호수공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 25,
+          "sharePct": 2.1,
+          "relativeIntensity": 0.22580645161290322
+        },
+        "30": {
+          "rank": 24,
+          "sharePct": 2.3,
+          "relativeIntensity": 0.21904761904761902
+        },
+        "60plus": {
+          "rank": 27,
+          "sharePct": 2.6,
+          "relativeIntensity": 0.4727272727272727
+        }
+      }
+    },
+    "ro513": {
+      "datalabId": "9d58042af96868b01de11722f6a2975f",
+      "name": "망원한강공원",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 27,
+          "sharePct": 2.0,
+          "relativeIntensity": 0.2150537634408602
+        }
+      }
+    },
+    "bc3": {
+      "datalabId": "88222e7e5f8172698373086e65c1fad1",
+      "name": "해운대해수욕장",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "20": {
+          "rank": 28,
+          "sharePct": 2.0,
+          "relativeIntensity": 0.2150537634408602
+        },
+        "50": {
+          "rank": 25,
+          "sharePct": 2.5,
+          "relativeIntensity": 0.32894736842105265
+        }
+      }
+    },
+    "ro614": {
+      "datalabId": "292387c8ba7110adca0f8ccf867ecaa3",
+      "name": "수원컨벤션센터",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "30": {
+          "rank": 29,
+          "sharePct": 2.1,
+          "relativeIntensity": 0.2
+        }
+      }
+    },
+    "ro411": {
+      "datalabId": "c9be92f2483770779b3c963fe8946c29",
+      "name": "레고랜드코리아리조트",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "40": {
+          "rank": 23,
+          "sharePct": 2.5,
+          "relativeIntensity": 0.23364485981308414
+        }
+      }
+    },
+    "rs478": {
+      "datalabId": "01dffbc242ba6dd5672bde92ac2b93b4",
+      "name": "휘닉스 파크",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "40": {
+          "rank": 25,
+          "sharePct": 2.3,
+          "relativeIntensity": 0.21495327102803738
+        }
+      }
+    },
+    "nax169": {
+      "datalabId": "f7a7a4fbfde355e7e635e8bbb1e07b53",
+      "name": "소래포구",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "60plus": {
+          "rank": 8,
+          "sharePct": 3.7,
+          "relativeIntensity": 0.6727272727272727
+        }
+      }
+    },
+    "nax123": {
+      "datalabId": "3abbc4295f8f464f3e4527cbd7254c53",
+      "name": "주문진항",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "60plus": {
+          "rank": 15,
+          "sharePct": 3.3,
+          "relativeIntensity": 0.6
+        }
+      }
+    },
+    "nax422": {
+      "datalabId": "864b1d08573642d8a9cf9c5b22556a17",
+      "name": "남한산성",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "60plus": {
+          "rank": 17,
+          "sharePct": 3.2,
+          "relativeIntensity": 0.5818181818181819
+        }
+      }
+    },
+    "nax611": {
+      "datalabId": "fde3c07733ea24446563afd36ed34d7c",
+      "name": "산정호수",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "60plus": {
+          "rank": 18,
+          "sharePct": 3.1,
+          "relativeIntensity": 0.5636363636363636
+        }
+      }
+    },
+    "ro31": {
+      "datalabId": "776e7e89353e146a00645ecb2456c971",
+      "name": "월정사",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "60plus": {
+          "rank": 22,
+          "sharePct": 2.8,
+          "relativeIntensity": 0.509090909090909
+        }
+      }
+    },
+    "ctt197": {
+      "datalabId": "d7e4f4a3f8e8e1fcb0e2a317ba7973f3",
+      "name": "물왕호수",
+      "matchStatus": "name_unique_provisional",
+      "matchWeight": 0.5,
+      "verified": false,
+      "ages": {
+        "60plus": {
+          "rank": 24,
+          "sharePct": 2.8,
+          "relativeIntensity": 0.509090909090909
+        }
+      }
+    }
+  },
+  "scope": "top30_exposure_only",
+  "defaultMatchMode": "provisional_damped"
+}

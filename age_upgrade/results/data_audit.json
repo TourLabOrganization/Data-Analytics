@@ -1,0 +1,31 @@
+{
+  "rows": 180,
+  "unique_datalab_places": 70,
+  "rows_per_age": {
+    "20": 30,
+    "30": 30,
+    "40": 30,
+    "50": 30,
+    "60plus": 30,
+    "all": 30
+  },
+  "share_sums": {
+    "20": 100.10000000000001,
+    "30": 100.0,
+    "40": 100.3,
+    "50": 100.1,
+    "60plus": 100.1,
+    "all": 100.1
+  },
+  "match_counts": {
+    "name_unique_provisional": 44,
+    "unmatched": 24,
+    "blocked_homonym": 2
+  },
+  "app_matched_places": 44,
+  "app_coverage_pct": 1.4111610006414368,
+  "complete_age_profiles": 5,
+  "period_from_filename": true,
+  "share_denominator": "not specified in CSV; each top30 sum about 100",
+  "verified_crosswalk": 0
+}
