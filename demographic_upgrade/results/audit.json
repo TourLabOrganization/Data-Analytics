@@ -1,0 +1,73 @@
+{
+  "구성비 히트맵": {
+    "rows": 242,
+    "regions": 230,
+    "sex_values": [
+      "남성"
+    ],
+    "age_values": [
+      "전체"
+    ]
+  },
+  "구성비 순위": {
+    "rows": 100,
+    "regions": 94,
+    "sex_values": [
+      "남성"
+    ],
+    "age_values": [
+      "전체"
+    ]
+  },
+  "연령별 방문자 구성비": {
+    "rows": 880,
+    "regions": 94,
+    "sex_values": [
+      "전체"
+    ],
+    "age_values": [
+      "10대 미만",
+      "10대",
+      "20대",
+      "30대",
+      "40대",
+      "50대",
+      "60대",
+      "70대"
+    ]
+  },
+  "성별 방문자 구성비": {
+    "rows": 220,
+    "regions": 94,
+    "sex_values": [
+      "남성",
+      "여성"
+    ],
+    "age_values": [
+      "전체"
+    ]
+  },
+  "valid_regions": 90,
+  "excluded_conflicting_regions": 4,
+  "detail_regions": 94,
+  "detail_duplicated_age_rows_removed": 96,
+  "detail_duplicated_sex_rows_removed": 24,
+  "app_regions_mapped": 54,
+  "app_places_with_region_proxy": 952,
+  "city_courses_with_region_proxy": 127,
+  "age_benchmarks": {
+    "10대 미만": 0.0085,
+    "10대": 0.0455477202279772,
+    "20대": 0.1273,
+    "30대": 0.15825785578557855,
+    "40대": 0.16163383323335334,
+    "50대": 0.2174891660833917,
+    "60대": 0.19655979597959794,
+    "70대": 0.07515
+  },
+  "sex_benchmarks": {
+    "male": 0.6106,
+    "female": 0.38939999999999997
+  },
+  "joint_sex_age_available": false
+}

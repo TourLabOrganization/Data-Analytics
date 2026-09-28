@@ -1,0 +1,509 @@
+[
+  {
+    "index": 10,
+    "region": "대구",
+    "name": "테마-전통5일장-현풍백년도깨비시장",
+    "route": "동대구역⇒청라언덕역⇒현풍백년도깨비시장(청년몰)⇒도동서원⇒국립대구과학관⇒송해공원(하계)/비슬산자연휴양림(동계)⇒청라언덕역⇒동대구역",
+    "fit": 1,
+    "bonus": 1,
+    "stopBonus": 0,
+    "score": 2,
+    "profile": {
+      "v": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "night": 0,
+      "stops": 1
+    },
+    "raw": [
+      "대구",
+      "테마-전통5일장-현풍백년도깨비시장",
+      "고정형",
+      "동대구역 승강장",
+      "동대구역⇒청라언덕역⇒현풍백년도깨비시장(청년몰)⇒도동서원⇒국립대구과학관⇒송해공원(하계)/비슬산자연휴양림(동계)⇒청라언덕역⇒동대구역",
+      "10:00",
+      "18:00",
+      "0",
+      "성인 10000원+중고등 8000원+어린이경로장애인 6000원",
+      "053-627-8900",
+      "www.daegucitytour.com",
+      "매주 화~일",
+      "2026-07-30"
+    ],
+    "legacyScore": 2,
+    "content": {
+      "score": 0,
+      "parts": {
+        "drama": 0,
+        "film": 0,
+        "variety": 0,
+        "music": 0
+      },
+      "media": {},
+      "warning": "MEDIA_NOT_MAPPED"
+    },
+    "scoreBeforeAge": 2,
+    "age": {
+      "score": 0,
+      "scope": "route_token_proxy_not_verified_visits",
+      "denominator": 6,
+      "linkedSlots": 0,
+      "reason": "BOUNDED_AGE_EVIDENCE_AVERAGE",
+      "parts": [
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": "ctt13",
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0.5,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": "ro401",
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0.5,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        }
+      ],
+      "effectiveBonus": 0
+    },
+    "scoreBeforeRegional": 2,
+    "regionalDemographics": {
+      "score": 0,
+      "reason": "NO_USABLE_REGION_PROFILE",
+      "appRegion": "대구",
+      "ageBand": "30대",
+      "sex": "female",
+      "sourceVersion": "regional-marginals-v1",
+      "effectiveBonus": 0,
+      "combinedDemographicBonus": 0
+    }
+  },
+  {
+    "index": 7,
+    "region": "제주",
+    "name": "순환형코스",
+    "route": "01 제주항국제여객터미널 02 제주항연안여객터미널 03 김만덕기념관 04 동문시장 05 관덕정(제주목관아) 06 용연구름다리(용두암) 07 제주국제공항 08 용담레포츠공원 09 어영공원(어영마을) 10 도두봉(무지개해안도로) 11 이호목마등대(이호테우해수욕장) 12 제주시민속오일시장 13 연동한일시티파크(롯데시티호텔) 14 월랑마을(베스트웨스턴호텔) 15 한라수목원 16 노형오거리(드림타워) 17 메종글래드호텔(신라면세점) 18 삼무공원(에어시티호텔) 19 제주시버스터미널 20 제주민속자연사박물관 21 사라봉(이화아파트)",
+    "fit": 0.9500000000000001,
+    "bonus": 1,
+    "stopBonus": 0,
+    "score": 1.9500000000000002,
+    "profile": {
+      "v": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "night": 0,
+      "stops": 1
+    },
+    "raw": [
+      "제주",
+      "순환형코스",
+      "순환형",
+      "제주항국제여객터미널",
+      "01 제주항국제여객터미널 02 제주항연안여객터미널 03 김만덕기념관 04 동문시장 05 관덕정(제주목관아) 06 용연구름다리(용두암) 07 제주국제공항 08 용담레포츠공원 09 어영공원(어영마을) 10 도두봉(무지개해안도로) 11 이호목마등대(이호테우해수욕장) 12 제주시민속오일시장 13 연동한일시티파크(롯데시티호텔) 14 월랑마을(베스트웨스턴호텔) 15 한라수목원 16 노형오거리(드림타워) 17 메종글래드호텔(신라면세점) 18 삼무공원(에어시티호텔) 19 제주시버스터미널 20 제주민속자연사박물관 21 사라봉(이화아파트)",
+      "09:00",
+      "19:30",
+      "60",
+      "1일 이용권 성인 12000원+소인 및 청소년 8000원+장애인 및 국가유공자 6000원 / 1회 이용권 5000원",
+      "064-741-8784",
+      "http://www.jejucitybus.com/",
+      "1일권 구입 시 자유로운 승하차(재탑승) 가능",
+      "2026-07-31"
+    ],
+    "legacyScore": 1.9500000000000002,
+    "content": {
+      "score": 0,
+      "parts": {
+        "drama": 0,
+        "film": 0,
+        "variety": 0,
+        "music": 0
+      },
+      "media": {},
+      "warning": "MEDIA_NOT_MAPPED"
+    },
+    "scoreBeforeAge": 1.9500000000000002,
+    "age": {
+      "score": 0,
+      "reason": "PROFILE_NOT_SUPPORTED",
+      "denominator": 0,
+      "parts": [],
+      "effectiveBonus": 0
+    },
+    "scoreBeforeRegional": 1.9500000000000002,
+    "regionalDemographics": {
+      "score": 0,
+      "reason": "NO_USABLE_REGION_PROFILE",
+      "appRegion": "제주",
+      "ageBand": "30대",
+      "sex": "female",
+      "sourceVersion": "regional-marginals-v1",
+      "effectiveBonus": 0,
+      "combinedDemographicBonus": 0
+    }
+  },
+  {
+    "index": 122,
+    "region": "시흥",
+    "name": "테마형 수시코스",
+    "route": "연꽃테마파크/관곡지/물왕호수/오이도/거북섬/배곧/갯골생태공원 등 단체 맞춤형 코스구성",
+    "fit": 0.8500000000000001,
+    "bonus": 1,
+    "stopBonus": 0,
+    "score": 1.8521485100646764,
+    "profile": {
+      "v": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "night": 0,
+      "stops": 1
+    },
+    "raw": [
+      "시흥",
+      "테마형 수시코스",
+      "고정형",
+      "단체지정장소",
+      "연꽃테마파크/관곡지/물왕호수/오이도/거북섬/배곧/갯골생태공원 등 단체 맞춤형 코스구성",
+      "09:00",
+      "17:00",
+      "0",
+      "맞춤형30000+1박2일형180000",
+      "031-314-9055",
+      "https://www.siheung.go.kr/citytour",
+      "코스 및 연계체험은 계절+시기에 따라 변동될 수 있음(15인 이상 출발)",
+      "2026-04-07"
+    ],
+    "legacyScore": 1.85,
+    "content": {
+      "score": 0,
+      "parts": {
+        "drama": 0,
+        "film": 0,
+        "variety": 0,
+        "music": 0
+      },
+      "media": {},
+      "warning": "MEDIA_NOT_MAPPED"
+    },
+    "scoreBeforeAge": 1.85,
+    "age": {
+      "score": 0,
+      "reason": "PROFILE_NOT_SUPPORTED",
+      "denominator": 0,
+      "parts": [],
+      "effectiveBonus": 0
+    },
+    "scoreBeforeRegional": 1.85,
+    "regionalDemographics": {
+      "score": 0.0021485100646763166,
+      "reason": "SEPARATE_REGIONAL_MARGINALS",
+      "appRegion": "시흥",
+      "regionKey": "경기도|시흥시",
+      "ageBand": "30대",
+      "sex": "female",
+      "ageShare": 0.19301930193019304,
+      "ageBenchmark": 0.15825785578557855,
+      "sexShare": 0.3665,
+      "sexBenchmark": 0.38939999999999997,
+      "ageEvidence": 0.28646800862350885,
+      "sexEvidence": 0,
+      "agePart": 0.002148510064676316,
+      "sexPart": 0,
+      "ageReason": "SUPPORTED",
+      "sexReason": "ANSWERED",
+      "gamma": 0.02,
+      "regionWeight": 0.5,
+      "sourceVersion": "regional-marginals-v1",
+      "jointSexAgeUsed": false,
+      "effectiveBonus": 0.0021485100646763166,
+      "combinedDemographicBonus": 0.0021485100646763166
+    }
+  },
+  {
+    "index": 112,
+    "region": "정선",
+    "name": "와와정선 2층 투어버스",
+    "route": "정선역 > 정선아리랑시장(농업인회관) > 정선아리랑센터&아라리촌 > 가리왕산케이블카 > 아우라지역 > 정선역",
+    "fit": 0.7000000000000001,
+    "bonus": 0.5,
+    "stopBonus": 0,
+    "score": 1.2000377768791866,
+    "profile": {
+      "v": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "night": 0,
+      "stops": 1
+    },
+    "raw": [
+      "정선",
+      "와와정선 2층 투어버스",
+      "순환형",
+      "정선역",
+      "정선역 > 정선아리랑시장(농업인회관) > 정선아리랑센터&아라리촌 > 가리왕산케이블카 > 아우라지역 > 정선역",
+      "11:20",
+      "17:20",
+      "0",
+      "일일 1만원",
+      "033-563-3122",
+      "www.정선시티투어.com",
+      "관광가이드 탑승 해설",
+      "2026-06-19"
+    ],
+    "legacyScore": 1.2000000000000002,
+    "content": {
+      "score": 0,
+      "parts": {
+        "drama": 0,
+        "film": 0,
+        "variety": 0,
+        "music": 0
+      },
+      "media": {},
+      "warning": "MEDIA_NOT_MAPPED"
+    },
+    "scoreBeforeAge": 1.2000000000000002,
+    "age": {
+      "score": 0,
+      "scope": "route_token_proxy_not_verified_visits",
+      "denominator": 5,
+      "linkedSlots": 0,
+      "reason": "BOUNDED_AGE_EVIDENCE_AVERAGE",
+      "parts": [
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": "nax2",
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0.5,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        }
+      ],
+      "effectiveBonus": 0
+    },
+    "scoreBeforeRegional": 1.2000000000000002,
+    "regionalDemographics": {
+      "score": 0.00003777687918638546,
+      "reason": "SEPARATE_REGIONAL_MARGINALS",
+      "appRegion": "정선",
+      "regionKey": "강원특별자치도|정선군",
+      "ageBand": "30대",
+      "sex": "female",
+      "ageShare": 0.12960000000000002,
+      "ageBenchmark": 0.15825785578557855,
+      "sexShare": 0.3935,
+      "sexBenchmark": 0.38939999999999997,
+      "ageEvidence": 0,
+      "sexEvidence": 0.015110751674554184,
+      "agePart": 0,
+      "sexPart": 0.00003777687918638546,
+      "ageReason": "SUPPORTED",
+      "sexReason": "ANSWERED",
+      "gamma": 0.02,
+      "regionWeight": 0.5,
+      "sourceVersion": "regional-marginals-v1",
+      "jointSexAgeUsed": false,
+      "effectiveBonus": 0.00003777687918638546,
+      "combinedDemographicBonus": 0.00003777687918638546
+    }
+  },
+  {
+    "index": 156,
+    "region": "세종",
+    "name": "역사산책투어",
+    "route": "초려역사공원 → 백제고분역사공원 → 정부세종청사 → 세종컨벤션센터",
+    "fit": 0.525,
+    "bonus": 0.625,
+    "stopBonus": 0.02,
+    "score": 1.17,
+    "profile": {
+      "v": [
+        0.75,
+        0.5,
+        0,
+        0,
+        0
+      ],
+      "night": 0,
+      "stops": 4
+    },
+    "raw": [
+      "세종",
+      "역사산책투어",
+      "고정형",
+      "세종버스터미널+세종호수공원",
+      "초려역사공원 → 백제고분역사공원 → 정부세종청사 → 세종컨벤션센터",
+      "14:00",
+      "16:40",
+      "0",
+      "성인5000원+청소년2000원+미취학아동 및 취약계층 0원",
+      "044-850-0164",
+      "http://sejongct.com",
+      "모객형(목)",
+      "2026-03-27"
+    ],
+    "legacyScore": 1.17,
+    "content": {
+      "score": 0,
+      "parts": {
+        "drama": 0,
+        "film": 0,
+        "variety": 0,
+        "music": 0
+      },
+      "media": {},
+      "warning": "MEDIA_NOT_MAPPED"
+    },
+    "scoreBeforeAge": 1.17,
+    "age": {
+      "score": 0,
+      "scope": "route_token_proxy_not_verified_visits",
+      "denominator": 4,
+      "linkedSlots": 0,
+      "reason": "BOUNDED_AGE_EVIDENCE_AVERAGE",
+      "parts": [
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": "ctt223",
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0.5,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        },
+        {
+          "score": 0,
+          "band": "30",
+          "reason": "NO_LINKED_DATA",
+          "placeId": null,
+          "sourceVersion": "datalab-202509-202608-top30-v1",
+          "routeOrThemeLinkWeight": 0,
+          "weightedScore": 0
+        }
+      ],
+      "effectiveBonus": 0
+    },
+    "scoreBeforeRegional": 1.17,
+    "regionalDemographics": {
+      "score": 0,
+      "reason": "NO_USABLE_REGION_PROFILE",
+      "appRegion": "세종",
+      "ageBand": "30대",
+      "sex": "female",
+      "sourceVersion": "regional-marginals-v1",
+      "effectiveBonus": 0,
+      "combinedDemographicBonus": 0
+    }
+  }
+]
