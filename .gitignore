@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+analysis/outputs_cosine/run_*/
+!analysis/outputs_cosine/run_20260928_062724_468322/
+analysis/survey_responses.csv
+verification/local_*/
