@@ -1,0 +1,55 @@
+{
+  "region_rows": 233,
+  "province_labels": 16,
+  "regional_amount_estimation_enabled": false,
+  "population_label": "내국인 지출로 제공됨; CSV에 대상집단 확인 열 없음",
+  "period_status": "지역 CSV에 기간 열 없음; 다른 파일의 기간을 자동 적용하지 않음",
+  "region_share_denominator": "hierarchical denominator inferred from sums; not verified from UI metadata",
+  "regression": {
+    "n_regions": 111,
+    "n_province_groups": 8,
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "features": [
+      "log_n_catalog_places",
+      "log_n_lodging",
+      "log_n_citytours",
+      "log_median_base_minutes",
+      "share_heal",
+      "share_activity",
+      "share_food",
+      "share_sea",
+      "unesco_mark_rate"
+    ],
+    "metrics": [
+      {
+        "model": "M0_mean",
+        "n_regions": 111,
+        "mae_log": 1.0041903937305299,
+        "rmse_log": 1.231169778772649,
+        "r2_log": -0.13978556614299142,
+        "mae_share_pp": 0.25678852211857417
+      },
+      {
+        "model": "M1_catalog_count",
+        "n_regions": 111,
+        "mae_log": 0.8617415547470375,
+        "rmse_log": 1.0792184944838519,
+        "r2_log": 0.1241978269228935,
+        "mae_share_pp": 0.2318124422257654
+      },
+      {
+        "model": "M2_composition",
+        "n_regions": 111,
+        "mae_log": 0.8396957244624829,
+        "rmse_log": 1.0718437553423688,
+        "r2_log": 0.13612635622739788,
+        "mae_share_pp": 0.2327004216806318
+      }
+    ],
+    "final_alpha": 10.0,
+    "added_features_improve_mae": true,
+    "all_target_region_values_are_derived_shares": true,
+    "future_forecast_validated": false
+  }
+}
