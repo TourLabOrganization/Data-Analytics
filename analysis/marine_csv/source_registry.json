@@ -1,0 +1,34 @@
+{
+  "heatmap": {
+    "original_filename": "20260927235420_방문자 수 히트맵.csv",
+    "filename": "marine_heatmap.csv",
+    "sha256": "b98acc36b7d8b59d9daf6c79adf5a22129eabc9f8f49f9eb5aba3d63e8884ff3",
+    "declared_scope": "전국 조회",
+    "declared_population": "미기재",
+    "declaration_evidence": "uploaded_filename_and_user_scope; not a CSV metadata column"
+  },
+  "monthly": {
+    "original_filename": "20260927235420_방문자 수 추이 비교 [외지인방문자].csv",
+    "filename": "marine_monthly.csv",
+    "sha256": "d418cdaf056050fed1268cd7805d7a362227c8adee4592337b2ef6f4493afa44",
+    "declared_scope": "전국 및 연안 집계군",
+    "declared_population": "외지인방문자",
+    "declaration_evidence": "uploaded_filename_and_user_scope; not a CSV metadata column"
+  },
+  "top5": {
+    "original_filename": "20260927235420_방문자 증가율 Top5 [연안 전체].csv",
+    "filename": "marine_top5.csv",
+    "sha256": "b82e6ad2155897014d6a275ba6f82042e3c0ea3bf79f5395ffebc6da0f13d197",
+    "declared_scope": "연안 전체 Top5",
+    "declared_population": "미기재",
+    "declaration_evidence": "uploaded_filename_and_user_scope; not a CSV metadata column"
+  },
+  "search_rank": {
+    "original_filename": "20260927235420_관광지 검색순위 [연안 전체].csv",
+    "filename": "marine_search_rank.csv",
+    "sha256": "bdcc97daefa6cbd4083617999a6299dd356cba3a7c66d8bf1595f0a5da6dc3d6",
+    "declared_scope": "연안 전체 선택 검색순위",
+    "declared_population": "검색 건수",
+    "declaration_evidence": "uploaded_filename_and_user_scope; not a CSV metadata column"
+  }
+}
