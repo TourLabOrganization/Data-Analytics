@@ -1,0 +1,12 @@
+﻿check,status,detail
+heatmap_scope,national_snapshot,"전국 조회 원본 3564행, 방문값 유효 3563행; CSV에 기간·방문자 조건·행정코드 열 없음"
+top5_selection,limited,상위 5곳의 선택 표본; 미등재 지역의 성장률을 0으로 채우지 않음
+ratio_denominator,review,원본 비율을 보존하고 전년 분모 증가율을 별도 계산
+area_count_changes,review,집계구역 수 변화가 있는 월을 표시; 고정 경계 전년비로 해석하지 않음
+visit_count_interpretation,limited,읍면동/월 방문 추정값; 지역·기간을 더한 고유 방문자 총수 아님
+spend_link,limited,소비와 방문자의 대상·공간 단위 불일치; 1인당 지출 계산 안 함
+pca_sample,not_fitted,단일 시점 방문값과 연안 구분으로 신규 다변량 군집을 학습하지 않음; 월별 파일은 중복 집계군 평균
+search_scope,selected_list_context_only,선택 검색순위 100행; 검색 건수는 방문자 수 아님; 미등재는 0으로 대체하지 않음
+heatmap_missing_visitors,preserved,결측 1행 보존; 방문자 수 0 대체 없음
+admin_labels,review,원본 광역·시군구 표기를 보존하고 미검증 개편 명칭은 자동 치환하지 않음; 충돌 후보는 audit에 기록
+admin_link,candidate_only,출처 주소의 시군구·읍면동 토큰 후보 연결; 행정동 코드·경계 검증 미완료

@@ -1,0 +1,101 @@
+﻿search_id,source_rank,source_name,source_address,exact_name_candidates,eligible_region_candidates,candidate_place_ids,rejected_candidates,status,identity_verified
+MSR0001,1,인천국제공항제1여객터미널,인천 영종구 공항로 272-0,0,0,,[],NO_EXACT_NAME,False
+MSR0002,2,인천국제공항제2여객터미널,인천 영종구 제2터미널대로 446-0,0,0,,[],NO_EXACT_NAME,False
+MSR0003,3,속초관광수산시장,강원 속초시 중앙로147번길 16-0,1,1,nax141,[],NAME_REGION_CANDIDATE,False
+MSR0004,4,현대프리미엄아울렛송도점,인천 연수구 송도국제대로 123-0,0,0,,[],NO_EXACT_NAME,False
+MSR0005,5,신세계프리미엄아울렛시흥점,경기 시흥시 서해안로 699-0,0,0,,[],NO_EXACT_NAME,False
+MSR0006,6,신세계백화점센텀시티점,부산 해운대구 센텀남대로 35-0,1,1,bcx61,[],NAME_REGION_CANDIDATE,False
+MSR0007,7,제주국제공항,제주 제주시 공항로 2-0,0,0,,[],NO_EXACT_NAME,False
+MSR0008,8,롯데프리미엄아울렛동부산점,부산 기장군 기장해안로 147-0,0,0,,[],NO_EXACT_NAME,False
+MSR0009,9,인스파이어엔터테인먼트리조트,인천 영종구 공항문화로 127-0,1,1,rs14,[],NAME_REGION_CANDIDATE,False
+MSR0010,10,신세계사이먼부산프리미엄아울렛,부산 기장군 정관로 1133-0,0,0,,[],NO_EXACT_NAME,False
+MSR0011,11,을왕리해수욕장,인천 영종구 용유서로302번길 16-15,1,0,,"[{""place_id"": ""nax172"", ""reason"": ""MUNICIPALITY_CONFLICT""}]",NAME_FOUND_REGION_REJECTED,False
+MSR0012,12,오이도빨강등대,경기 시흥시 오이도로 170-0,1,1,ro929,[],NAME_REGION_CANDIDATE,False
+MSR0013,13,대천해수욕장,충남 보령시,1,1,nax649,[],NAME_REGION_CANDIDATE,False
+MSR0014,14,월미도,인천 제물포구,1,0,,"[{""place_id"": ""nax167"", ""reason"": ""MUNICIPALITY_CONFLICT""}]",NAME_FOUND_REGION_REJECTED,False
+MSR0015,15,인천종합어시장,인천 제물포구 연안부두로33번길 37-0,1,1,ro154,[],NAME_REGION_CANDIDATE,False
+MSR0016,16,낙산사,강원 양양군 낙산사로 100-0,1,1,nax621,[],NAME_REGION_CANDIDATE,False
+MSR0017,17,부산역,부산 동구 중앙대로 206-0,0,0,,[],NO_EXACT_NAME,False
+MSR0018,18,속초해변,강원 속초시 해오름로 186-0,0,0,,[],NO_EXACT_NAME,False
+MSR0019,19,광안리해수욕장,부산 수영구 광안해변로 219-0,1,1,ro4,[],NAME_REGION_CANDIDATE,False
+MSR0020,20,롯데백화점광복점,부산 중구 중앙대로 2-0,0,0,,[],NO_EXACT_NAME,False
+MSR0021,21,궁평항,경기 화성시 만세구 궁평항로 1049-24,0,0,,[],NO_EXACT_NAME,False
+MSR0022,22,해운대해수욕장,부산 해운대구 해운대해변로 264-0,1,1,bc3,[],NAME_REGION_CANDIDATE,False
+MSR0023,23,경포해변,강원 강릉시,1,1,nax117,[],NAME_REGION_CANDIDATE,False
+MSR0024,24,포항역,경북 포항시 북구 포항역로 1-0,0,0,,[],NO_EXACT_NAME,False
+MSR0025,25,해동용궁사,부산 기장군 용궁길 86-0,1,1,bcx22,[],NAME_REGION_CANDIDATE,False
+MSR0026,26,삽교호관광지,충남 당진시 삽교천3길 100-0,0,0,,[],NO_EXACT_NAME,False
+MSR0027,27,송정해수욕장,부산 해운대구 송정해변로 62-0,1,1,bcx27,[],NAME_REGION_CANDIDATE,False
+MSR0028,28,벡스코제1전시장,부산 해운대구 APEC로 55-0,0,0,,[],NO_EXACT_NAME,False
+MSR0029,29,소래포구종합어시장,인천 남동구 소래역로 12-0,1,1,ro314,[],NAME_REGION_CANDIDATE,False
+MSR0030,30,송도컨벤시아,인천 연수구 센트럴로 123-0,1,1,ro553,[],NAME_REGION_CANDIDATE,False
+MSR0031,31,쏠비치삼척,강원 삼척시 수로부인길 453-0,1,1,rs1,[],NAME_REGION_CANDIDATE,False
+MSR0032,32,강화풍물시장,인천 강화군 중앙로 17-9,1,1,ro12,[],NAME_REGION_CANDIDATE,False
+MSR0033,33,소래포구,인천 남동구 포구로 2-9,1,1,nax169,[],NAME_REGION_CANDIDATE,False
+MSR0034,34,설악케이블카,강원 속초시 설악산로 1085-0,0,0,,[],NO_EXACT_NAME,False
+MSR0035,35,통영중앙전통시장,경남 통영시 중앙시장1길 14-16,1,1,ro2,[],NAME_REGION_CANDIDATE,False
+MSR0036,36,연안부두,인천 제물포구 연안부두로 0-0,0,0,,[],NO_EXACT_NAME,False
+MSR0037,37,주문진항,강원 강릉시 해안로 1758-14,1,1,nax123,[],NAME_REGION_CANDIDATE,False
+MSR0038,38,세인트존스호텔,강원 강릉시 창해로 307-0,0,0,,[],NO_EXACT_NAME,False
+MSR0039,39,주문진수산시장,강원 강릉시 시장길 38-0,1,1,ro1,[],NAME_REGION_CANDIDATE,False
+MSR0040,40,신라모노그램강릉,강원 강릉시 해안로 210-0,0,0,,[],NO_EXACT_NAME,False
+MSR0041,41,동막해수욕장,인천 강화군 해안남로 1481-0,0,0,,[],NO_EXACT_NAME,False
+MSR0042,42,파라다이스시티호텔,인천 영종구 영종해안남로321번길 186-0,0,0,,[],NO_EXACT_NAME,False
+MSR0043,43,안목해변,강원 강릉시 창해로14번길 20-1,1,1,ro5,[],NAME_REGION_CANDIDATE,False
+MSR0044,44,대명포구,경기 김포시,0,0,,[],NO_EXACT_NAME,False
+MSR0045,45,모다아울렛인천점,인천 서해구 북항로32번안길 50-0,0,0,,[],NO_EXACT_NAME,False
+MSR0046,46,보문사,인천 강화군 삼산남로828번길 44-0,1,0,,"[{""place_id"": ""ro38"", ""reason"": ""PROVINCE_CONFLICT""}]",NAME_FOUND_REGION_REJECTED,False
+MSR0047,47,방아머리해변,경기 안산시 단원구,1,1,ctt219,[],NAME_REGION_CANDIDATE,False
+MSR0048,48,완도항여객선터미널,전남광주 완도군 장보고대로 339-0,0,0,,[],NO_EXACT_NAME,False
+MSR0049,49,스타필드시티명지,부산 강서구 명지국제6로 168-0,1,1,bcx56,[],NAME_REGION_CANDIDATE,False
+MSR0050,50,강구항,경북 영덕군,1,1,nax681,[],NAME_REGION_CANDIDATE,False
+MSR0051,51,베르힐컨트리클럽영종,인천 영종구 한상중앙로 66-0,0,0,,[],NO_EXACT_NAME,False
+MSR0052,52,쏠비치양양,강원 양양군 선사유적로 678-0,1,1,rs7,[],NAME_REGION_CANDIDATE,False
+MSR0053,53,독일마을,경남 남해군 독일로 92-0,0,0,,[],NO_EXACT_NAME,False
+MSR0054,54,대룡시장,인천 강화군 대룡안길 60-0,0,0,,[],NO_EXACT_NAME,False
+MSR0055,55,신세계센텀시티몰,부산 해운대구 센텀4로 15-0,0,0,,[],NO_EXACT_NAME,False
+MSR0056,56,다대포해수욕장,부산 사하구 몰운대1길 14-0,1,1,nax763,[],NAME_REGION_CANDIDATE,False
+MSR0057,57,낙산해수욕장,강원 양양군 해맞이길 59-0,1,1,ro7,[],NAME_REGION_CANDIDATE,False
+MSR0058,58,영일대해수욕장,경북 포항시 북구,1,1,nax225,[],NAME_REGION_CANDIDATE,False
+MSR0059,59,부산항국제여객터미널,부산 동구 충장대로 206-0,0,0,,[],NO_EXACT_NAME,False
+MSR0060,60,한화리조트설악쏘라노,강원 속초시 미시령로2983번길 111-0,1,1,rs4,[],NAME_REGION_CANDIDATE,False
+MSR0061,61,삼길포항,충남 서산시,1,1,ctu32,[],NAME_REGION_CANDIDATE,False
+MSR0062,62,LF스퀘어광양점,전남광주 광양시 순광로 466-0,0,0,,[],NO_EXACT_NAME,False
+MSR0063,63,묵호항,강원 동해시,1,1,nax10,[],NAME_REGION_CANDIDATE,False
+MSR0064,64,기장시장,부산 기장군 읍내로104번길 16-0,1,1,ro72,[],NAME_REGION_CANDIDATE,False
+MSR0065,65,성산일출봉,제주 서귀포시 일출로 284-12,1,1,jd1,[],NAME_REGION_CANDIDATE,False
+MSR0066,66,롯데리조트속초,강원 속초시 대포항길 186-0,1,1,rs19,[],NAME_REGION_CANDIDATE,False
+MSR0067,67,전등사,인천 강화군 전등사로 37-41,1,1,ro35,[],NAME_REGION_CANDIDATE,False
+MSR0068,68,꽃지해수욕장,충남 태안군 꽃지해안로 400-0,1,1,nax313,[],NAME_REGION_CANDIDATE,False
+MSR0069,69,제부도,경기 화성시 만세구,1,1,ctt74,[],NAME_REGION_CANDIDATE,False
+MSR0070,70,자갈치시장,부산 중구 자갈치해안로 52-0,1,1,bc2,[],NAME_REGION_CANDIDATE,False
+MSR0071,71,하나개해수욕장,인천 영종구,1,1,ro121,[],NAME_REGION_CANDIDATE,False
+MSR0072,72,휴휴암,강원 양양군 광진2길 3-16,1,1,nax912,[],NAME_REGION_CANDIDATE,False
+MSR0073,73,함덕해수욕장,제주 제주시 조함해안로 525-0,1,1,jd11,[],NAME_REGION_CANDIDATE,False
+MSR0074,74,대부도,경기 안산시 단원구 감나무길 0-0,0,0,,[],NO_EXACT_NAME,False
+MSR0075,75,신선대부두,부산 남구,0,0,,[],NO_EXACT_NAME,False
+MSR0076,76,대포항,강원 속초시,1,1,nax147,[],NAME_REGION_CANDIDATE,False
+MSR0077,77,체스터톤스속초,강원 속초시 엑스포로 109-0,1,1,rs6,[],NAME_REGION_CANDIDATE,False
+MSR0078,78,신진항,충남 태안군 신진부두길 35-26,0,0,,[],NO_EXACT_NAME,False
+MSR0079,79,트리플스트리트A동,인천 연수구 송도과학로16번길 33-1,0,0,,[],NO_EXACT_NAME,False
+MSR0080,80,송도해수욕장,부산 서구,0,0,,[],NO_EXACT_NAME,False
+MSR0081,81,보리암,경남 남해군 보리암로 665-0,1,1,nax253,[],NAME_REGION_CANDIDATE,False
+MSR0082,82,아난티앳부산코브,부산 기장군 기장해안로 268-32,0,0,,[],NO_EXACT_NAME,False
+MSR0083,83,카시아속초호텔앤리조트,강원 속초시 대포항희망길 120-0,0,0,,[],NO_EXACT_NAME,False
+MSR0084,84,협재해수욕장,제주 제주시,1,1,jd5,[],NAME_REGION_CANDIDATE,False
+MSR0085,85,선유도해수욕장,전북 군산시 선유도1길 235-0,1,1,nax285,[],NAME_REGION_CANDIDATE,False
+MSR0086,86,남당항,충남 홍성군 남당항로213번길 1-0,1,1,nax908,[],NAME_REGION_CANDIDATE,False
+MSR0087,87,매미성,경남 거제시 복항길 29-0,1,1,gz2,[],NAME_REGION_CANDIDATE,False
+MSR0088,88,롯데백화점센텀시티점,부산 해운대구 센텀남대로 59-0,0,0,,[],NO_EXACT_NAME,False
+MSR0089,89,소노캄델피노,강원 고성군 미시령옛길 1153-0,1,1,rs2,[],NAME_REGION_CANDIDATE,False
+MSR0090,90,인천항연안여객터미널,인천 제물포구 연안부두로 70-0,0,0,,[],NO_EXACT_NAME,False
+MSR0091,91,쏠비치진도,전남광주 진도군 송군길 30-40,0,0,,[],NO_EXACT_NAME,False
+MSR0092,92,고성통일전망대,강원 고성군 금강산로 481-0,1,1,nax914,[],NAME_REGION_CANDIDATE,False
+MSR0093,93,파라다이스호텔부산,부산 해운대구 해운대해변로 296-0,0,0,,[],NO_EXACT_NAME,False
+MSR0094,94,속초아이파크스위트호텔앤리조트,강원 속초시 중앙로 266-0,1,1,rs10,[],NAME_REGION_CANDIDATE,False
+MSR0095,95,바람의언덕,경남 거제시,1,1,gz4,[],NAME_REGION_CANDIDATE,False
+MSR0096,96,쏠비치남해,경남 남해군 쏠비치길 21-0,0,0,,[],NO_EXACT_NAME,False
+MSR0097,97,경포대,강원 강릉시 경포로 365-0,0,0,,[],NO_EXACT_NAME,False
+MSR0098,98,아야진해수욕장,강원 고성군,0,0,,[],NO_EXACT_NAME,False
+MSR0099,99,소노캄거제,경남 거제시 거제대로 2660-0,0,0,,[],NO_EXACT_NAME,False
+MSR0100,100,태종대,부산 영도구 전망로 24-0,1,1,bc12,[],NAME_REGION_CANDIDATE,False

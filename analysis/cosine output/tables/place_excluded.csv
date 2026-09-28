@@ -1,0 +1,570 @@
+﻿place_id,region,name,category,base_minutes,lat,lon,unesco_raw,unesco_mark,quality_reason,base_time_missing_or_invalid,cluster_eligible,coordinate_valid
+gj1,경주,효우당,stay,180.0,35.8923,129.1786,,0,LODGING_EXCLUDED,False,False,True
+gjx19,경주,힐튼 경주,stay,,35.84,129.286,,0,LODGING_EXCLUDED,True,False,True
+rs383,서울,힐튼가든인 서울강남,stay,30.0,37.48593,127.03277,,0,LODGING_EXCLUDED,False,False,True
+rs1,삼척,쏠비치 삼척,stay,30.0,37.47143,129.16413,,0,LODGING_EXCLUDED,False,False,True
+rs2,고성(강원),소노캄 델피노,stay,30.0,38.21059,128.49384,,0,LODGING_EXCLUDED,False,False,True
+rs3,고성(강원),소노벨 델피노,stay,30.0,38.21196,128.49459,,0,LODGING_EXCLUDED,False,False,True
+rs4,속초,한화리조트 설악 쏘라노,stay,30.0,38.21062,128.52861,,0,LODGING_EXCLUDED,False,False,True
+rs5,속초,현대수리조트,stay,30.0,38.19977,128.54504,,0,LODGING_EXCLUDED,False,False,True
+rs6,속초,체스터톤스속초,stay,30.0,38.19418,128.58053,,0,LODGING_EXCLUDED,False,False,True
+rs7,양양,쏠비치 양양,stay,30.0,38.08698,128.66567,,0,LODGING_EXCLUDED,False,False,True
+rs8,통영,금호리조트 통영마리나,stay,30.0,34.82745,128.44016,,0,LODGING_EXCLUDED,False,False,True
+rs9,속초,금호리조트 설악,stay,30.0,38.18181,128.54954,,0,LODGING_EXCLUDED,False,False,True
+rs10,속초,속초 아이파크스위트 호텔앤리조트,stay,30.0,38.21348,128.59668,,0,LODGING_EXCLUDED,False,False,True
+rs11,고성(강원),소노펠리체 빌리지 델피노,stay,30.0,38.21061,128.49084,,0,LODGING_EXCLUDED,False,False,True
+rs12,고성(강원),켄싱턴리조트 설악비치,stay,30.0,38.24291,128.57251,,0,LODGING_EXCLUDED,False,False,True
+rs13,여수,소노캄 여수,stay,30.0,34.74237,127.75455,,0,LODGING_EXCLUDED,False,False,True
+rs14,인천,인스파이어 엔터테인먼트 리조트,stay,30.0,37.46551,126.38866,,0,LODGING_EXCLUDED,False,False,True
+rs15,강릉,썬크루즈호텔&리조트,stay,30.0,37.68345,129.04393,,0,LODGING_EXCLUDED,False,False,True
+rs16,경주,한화리조트 경주 에톤,stay,30.0,35.8608,129.27023,,0,LODGING_EXCLUDED,False,False,True
+rs17,영덕,파나크 영덕 바이소노벨,stay,30.0,36.3484,129.3868,,0,LODGING_EXCLUDED,False,False,True
+rs18,속초,라마다호텔 속초,stay,30.0,38.17424,128.61014,,0,LODGING_EXCLUDED,False,False,True
+rs19,속초,롯데리조트 속초,stay,30.0,38.18072,128.6132,,0,LODGING_EXCLUDED,False,False,True
+rs20,경주,소노캄 경주,stay,30.0,35.84677,129.28183,,0,LODGING_EXCLUDED,False,False,True
+rs21,강릉,SL호텔 강릉,stay,30.0,37.88921,128.82544,,0,LODGING_EXCLUDED,False,False,True
+rs22,여수,신라스테이 여수,stay,30.0,34.74406,127.74876,,0,LODGING_EXCLUDED,False,False,True
+rs23,부산,한화리조트 해운대,stay,30.0,35.15438,129.14496,,0,LODGING_EXCLUDED,False,False,True
+rs24,강릉,라카이샌드파인,stay,30.0,37.80611,128.9045,,0,LODGING_EXCLUDED,False,False,True
+rs25,태안,서초휴양소 태안점,stay,30.0,36.69898,126.28797,,0,LODGING_EXCLUDED,False,False,True
+rs26,강릉,탑스텐호텔,stay,30.0,37.65466,129.05292,,0,LODGING_EXCLUDED,False,False,True
+rs27,여수,라마다프라자바이윈덤 여수,stay,30.0,34.71701,127.74828,,0,LODGING_EXCLUDED,False,False,True
+rs28,고성(강원),켄싱턴리조트 설악밸리,stay,30.0,38.22819,128.49348,,0,LODGING_EXCLUDED,False,False,True
+rs29,여수,유탑마리나호텔&리조트,stay,30.0,34.74443,127.75062,,0,LODGING_EXCLUDED,False,False,True
+rs30,제주,소노벨 제주,stay,30.0,33.54138,126.67167,,0,LODGING_EXCLUDED,False,False,True
+rs31,부안,소노벨 변산,stay,30.0,35.63162,126.47027,,0,LODGING_EXCLUDED,False,False,True
+rs32,서울,그랜드 하얏트 서울,stay,30.0,37.53944,126.99708,,0,LODGING_EXCLUDED,False,False,True
+rs33,경주,라한셀렉트 경주,stay,30.0,35.85032,129.27702,,0,LODGING_EXCLUDED,False,False,True
+rs34,통영,스탠포드호텔앤리조트 통영,stay,30.0,34.82438,128.43941,,0,LODGING_EXCLUDED,False,False,True
+rs35,영월,탑스텐리조트 동강시스타,stay,30.0,37.21776,128.51874,,0,LODGING_EXCLUDED,False,False,True
+rs36,양양,더앤리조트,stay,30.0,37.94213,128.76959,,0,LODGING_EXCLUDED,False,False,True
+rs37,동해,동해보양온천컨벤션호텔,stay,30.0,37.59267,129.08712,,0,LODGING_EXCLUDED,False,False,True
+rs38,강릉,스카이베이호텔 경포,stay,30.0,37.80431,128.90774,,0,LODGING_EXCLUDED,False,False,True
+rs39,여수,디오션리조트,stay,30.0,34.73339,127.64342,,0,LODGING_EXCLUDED,False,False,True
+rs40,속초,리센오션파크속초A동,stay,30.0,38.18898,128.60334,,0,LODGING_EXCLUDED,False,False,True
+rs41,여수,여수베네치아호텔앤스위트,stay,30.0,34.74579,127.75188,,0,LODGING_EXCLUDED,False,False,True
+rs42,경주,켄싱턴리조트 경주,stay,30.0,35.86073,129.2684,,0,LODGING_EXCLUDED,False,False,True
+rs43,정선,메이힐스리조트,stay,30.0,37.21127,128.83541,,0,LODGING_EXCLUDED,False,False,True
+rs44,삼척,씨스포빌,stay,30.0,37.396,129.22083,,0,LODGING_EXCLUDED,False,False,True
+rs45,경주,경주 코오롱호텔,stay,30.0,35.78793,129.32185,,0,LODGING_EXCLUDED,False,False,True
+rs46,정선,하이원리조트 힐콘도,stay,30.0,37.20682,128.83772,,0,LODGING_EXCLUDED,False,False,True
+rs47,여수,오션힐호텔,stay,30.0,34.7187,127.74639,,0,LODGING_EXCLUDED,False,False,True
+rs48,여수,히든베이호텔,stay,30.0,34.72142,127.6989,,0,LODGING_EXCLUDED,False,False,True
+rs49,여수,호텔헤이븐,stay,30.0,34.73239,127.74909,,0,LODGING_EXCLUDED,False,False,True
+rs50,제주,휘닉스 아일랜드,stay,30.0,33.43032,126.92937,,0,LODGING_EXCLUDED,False,False,True
+rs51,예산,스플라스 리솜,stay,30.0,36.69394,126.65638,,0,LODGING_EXCLUDED,False,False,True
+rs52,속초,씨크루즈호텔속초,stay,30.0,38.20132,128.58707,,0,LODGING_EXCLUDED,False,False,True
+rs53,양평,소노벨 양평,stay,30.0,37.46923,127.53267,,0,LODGING_EXCLUDED,False,False,True
+rs54,양양,디그니티호텔,stay,30.0,38.10853,128.64053,,0,LODGING_EXCLUDED,False,False,True
+rs55,여수,라테라스리조트앤스파,stay,30.0,34.70873,127.75648,,0,LODGING_EXCLUDED,False,False,True
+rs56,속초,더블루테라호텔,stay,30.0,38.18485,128.60147,,0,LODGING_EXCLUDED,False,False,True
+rs57,울진,덕구온천호텔,stay,30.0,37.07875,129.28357,,0,LODGING_EXCLUDED,False,False,True
+rs58,부여,롯데리조트 부여,stay,30.0,36.30403,126.90083,,0,LODGING_EXCLUDED,False,False,True
+rs59,서울,포시즌스 호텔 서울,stay,30.0,37.57068,126.9754,,0,LODGING_EXCLUDED,False,False,True
+rs60,경주,힐튼호텔 경주,stay,30.0,35.83998,129.28576,,0,LODGING_EXCLUDED,False,False,True
+rs61,평창,스테이1538 평창,stay,30.0,37.66133,128.67197,,0,LODGING_EXCLUDED,False,False,True
+rs62,속초,속초마리비스타호텔,stay,30.0,38.18955,128.5938,,0,LODGING_EXCLUDED,False,False,True
+rs63,화순,금호화순스파리조트,stay,30.0,35.16347,127.08384,,0,LODGING_EXCLUDED,False,False,True
+rs64,정선,JS그랜드팰리스,stay,30.0,37.22663,128.81242,,0,LODGING_EXCLUDED,False,False,True
+rs65,목포,신안비치호텔,stay,30.0,34.78551,126.36922,,0,LODGING_EXCLUDED,False,False,True
+rs66,양평,블룸비스타 호텔앤컨퍼런스,stay,30.0,37.50037,127.42192,,0,LODGING_EXCLUDED,False,False,True
+rs67,거제,호텔리베라 거제,stay,30.0,34.81138,128.70416,,0,LODGING_EXCLUDED,False,False,True
+rs68,통영,클럽ES통영리조트,stay,30.0,34.76514,128.40972,,0,LODGING_EXCLUDED,False,False,True
+rs69,속초,썬라이즈호텔,stay,30.0,38.20178,128.58891,,0,LODGING_EXCLUDED,False,False,True
+rs70,태백,태백호텔,stay,30.0,37.13232,128.96021,,0,LODGING_EXCLUDED,False,False,True
+rs71,제주,그랜드조선 제주,stay,30.0,33.25236,126.408,,0,LODGING_EXCLUDED,False,False,True
+rs72,강릉,컨피네스 오션스위트,stay,30.0,37.83659,128.87467,,0,LODGING_EXCLUDED,False,False,True
+rs73,인천,강화씨사이드리조트,stay,30.0,37.61715,126.49817,,0,LODGING_EXCLUDED,False,False,True
+rs74,동해,동해오션시티레지던스호텔,stay,30.0,37.52084,129.11921,,0,LODGING_EXCLUDED,False,False,True
+rs75,정선,하이원리조트 마운틴콘도,stay,30.0,37.20812,128.82597,,0,LODGING_EXCLUDED,False,False,True
+rs76,여수,여수벨메르,stay,30.0,34.74277,127.67231,,0,LODGING_EXCLUDED,False,False,True
+rs77,부안,모항해나루가족호텔,stay,30.0,35.58097,126.5078,,0,LODGING_EXCLUDED,False,False,True
+rs78,안동,스탠포드호텔 안동,stay,30.0,36.56848,128.50913,,0,LODGING_EXCLUDED,False,False,True
+rs79,사천,사천아르떼리조트 풀빌라,stay,30.0,34.94927,128.0378,,0,LODGING_EXCLUDED,False,False,True
+rs80,서울,이비스 앰배서더 서울 인사동,stay,30.0,37.57441,126.98939,,0,LODGING_EXCLUDED,False,False,True
+rs81,단양,소노벨 단양,stay,30.0,36.97781,128.36412,,0,LODGING_EXCLUDED,False,False,True
+rs82,양양,설해원,stay,30.0,38.05352,128.66224,,0,LODGING_EXCLUDED,False,False,True
+rs83,대전,계룡스파텔,stay,30.0,36.35569,127.34832,,0,LODGING_EXCLUDED,False,False,True
+rs84,속초,속초마리나베이,stay,30.0,38.19074,128.592,,0,LODGING_EXCLUDED,False,False,True
+rs85,강릉,씨마크호텔,stay,30.0,37.79715,128.91519,,0,LODGING_EXCLUDED,False,False,True
+rs86,평창,켄싱턴호텔 평창,stay,30.0,37.68882,128.59762,,0,LODGING_EXCLUDED,False,False,True
+rs87,해남,해남126호텔,stay,30.0,34.66642,126.25697,,0,LODGING_EXCLUDED,False,False,True
+rs88,목포,목포오션호텔,stay,30.0,34.78834,126.39072,,0,LODGING_EXCLUDED,False,False,True
+rs89,진주,골든튤립 호텔남강,stay,30.0,35.19162,128.08656,,0,LODGING_EXCLUDED,False,False,True
+rs90,서울,JW 메리어트 호텔 서울,stay,30.0,37.50404,127.00469,,0,LODGING_EXCLUDED,False,False,True
+rs91,춘천,벨라스테이호텔 춘천,stay,30.0,37.88472,127.74985,,0,LODGING_EXCLUDED,False,False,True
+rs92,제주,소노캄 제주,stay,30.0,33.30553,126.79208,,0,LODGING_EXCLUDED,False,False,True
+rs93,부산,해운대센텀호텔,stay,30.0,35.1678,129.13283,,0,LODGING_EXCLUDED,False,False,True
+rs94,부산,시그니엘 부산,stay,30.0,35.16029,129.16922,,0,LODGING_EXCLUDED,False,False,True
+rs95,동해,망상오토캠핑리조트,stay,30.0,37.60042,129.07846,,0,LODGING_EXCLUDED,False,False,True
+rs96,양양,센텀마크호텔 양양,stay,30.0,38.07903,128.61521,,0,LODGING_EXCLUDED,False,False,True
+rs97,김해,롯데호텔앤리조트 김해,stay,30.0,35.18106,128.82562,,0,LODGING_EXCLUDED,False,False,True
+rs98,부산,해운대부민병원,stay,30.0,35.16142,129.15565,,0,LODGING_EXCLUDED,False,False,True
+rs99,천안,소노벨 천안,stay,30.0,36.7574,127.22408,,0,LODGING_EXCLUDED,False,False,True
+rs100,하동,하동야생차박물관,stay,30.0,35.22774,127.64271,,0,LODGING_EXCLUDED,False,False,True
+rs101,제주,더포그레이스호텔앤리조트,stay,30.0,33.47366,126.91043,,0,LODGING_EXCLUDED,False,False,True
+rs102,서울,스위스 그랜드 호텔,stay,30.0,37.58882,126.93413,,0,LODGING_EXCLUDED,False,False,True
+rs103,서울,해밀톤호텔,stay,30.0,37.53482,126.99356,,0,LODGING_EXCLUDED,False,False,True
+rs104,경주,코모도호텔 경주,stay,30.0,35.84432,129.28533,,0,LODGING_EXCLUDED,False,False,True
+rs105,동해,동해현진관광호텔,stay,30.0,37.51942,129.11791,,0,LODGING_EXCLUDED,False,False,True
+rs106,강릉,호텔위더스,stay,30.0,37.68253,129.04246,,0,LODGING_EXCLUDED,False,False,True
+rs107,통영,한산호텔,stay,30.0,34.83968,128.42213,,0,LODGING_EXCLUDED,False,False,True
+rs108,여주,썬밸리호텔,stay,30.0,37.29313,127.66105,,0,LODGING_EXCLUDED,False,False,True
+rs109,해남,호텔써던힐,stay,30.0,34.56803,126.60851,,0,LODGING_EXCLUDED,False,False,True
+rs110,보성,춘운서옥,stay,30.0,34.77459,127.08278,,0,LODGING_EXCLUDED,False,False,True
+rs111,창원,그랜드머큐어앰배서더 창원 창원호텔,stay,30.0,35.23929,128.65529,,0,LODGING_EXCLUDED,False,False,True
+rs112,군산,라마다바이윈덤 군산,stay,30.0,35.95885,126.68992,,0,LODGING_EXCLUDED,False,False,True
+rs113,울진,덕구온천콘도,stay,30.0,37.07866,129.28094,,0,LODGING_EXCLUDED,False,False,True
+rs114,서울,콘래드 서울,stay,30.0,37.52542,126.92674,,0,LODGING_EXCLUDED,False,False,True
+rs115,제주,켄싱턴리조트 서귀포,stay,30.0,33.23378,126.48907,,0,LODGING_EXCLUDED,False,False,True
+rs116,제주,더베스트 제주 성산 호텔,stay,30.0,33.44977,126.917,,0,LODGING_EXCLUDED,False,False,True
+rs117,제주,한화리조트 제주,stay,30.0,33.449,126.63736,,0,LODGING_EXCLUDED,False,False,True
+rs118,경주,더케이호텔 경주,stay,30.0,35.83752,129.29203,,0,LODGING_EXCLUDED,False,False,True
+rs119,정선,정선랜드,stay,30.0,37.20597,128.81397,,0,LODGING_EXCLUDED,False,False,True
+rs120,통영,포르투나호텔,stay,30.0,34.83295,128.414,,0,LODGING_EXCLUDED,False,False,True
+rs121,대전,롯데시티호텔 대전,stay,30.0,36.37619,127.39303,,0,LODGING_EXCLUDED,False,False,True
+rs122,동해,뉴동해관광호텔,stay,30.0,37.52661,129.10308,,0,LODGING_EXCLUDED,False,False,True
+rs123,전주,신라스테이 전주,stay,30.0,35.81969,127.14854,,0,LODGING_EXCLUDED,False,False,True
+rs124,태백,오투리조트 타워콘도,stay,30.0,37.17077,128.9482,,0,LODGING_EXCLUDED,False,False,True
+rs125,순천,호텔라움,stay,30.0,34.94091,127.5084,,0,LODGING_EXCLUDED,False,False,True
+rs126,목포,이음호텔 목포평화광장점,stay,30.0,34.80435,126.42936,,0,LODGING_EXCLUDED,False,False,True
+rs127,부안,태왕리조트,stay,30.0,35.60789,126.46621,,0,LODGING_EXCLUDED,False,False,True
+rs128,제천,클럽이에스 제천리조트,stay,30.0,36.99035,128.19511,,0,LODGING_EXCLUDED,False,False,True
+rs129,군산,에이본호텔 군산,stay,30.0,35.97635,126.72446,,0,LODGING_EXCLUDED,False,False,True
+rs130,포천,한화리조트 산정호수,stay,30.0,38.0662,127.31396,,0,LODGING_EXCLUDED,False,False,True
+rs131,가평,켄싱턴리조트 가평,stay,30.0,37.75972,127.3956,,0,LODGING_EXCLUDED,False,False,True
+rs132,서울,롯데호텔 월드,stay,30.0,37.51147,127.10034,,0,LODGING_EXCLUDED,False,False,True
+rs133,영덕,고래불국민야영장,stay,30.0,36.57152,129.41901,,0,LODGING_EXCLUDED,False,False,True
+rs134,부산,롯데호텔 부산,stay,30.0,35.15679,129.05642,,0,LODGING_EXCLUDED,False,False,True
+rs135,영월,어라연 별관,stay,30.0,37.18031,128.46447,,0,LODGING_EXCLUDED,False,False,True
+rs136,제주,파르나스호텔 제주,stay,30.0,33.24459,126.40576,,0,LODGING_EXCLUDED,False,False,True
+rs137,부산,신라스테이 서부산,stay,30.0,35.09668,128.90515,,0,LODGING_EXCLUDED,False,False,True
+rs138,정선,하이원리조트 밸리콘도,stay,30.0,37.20539,128.84031,,0,LODGING_EXCLUDED,False,False,True
+rs139,정선,파크로쉬리조트앤웰니스,stay,30.0,37.47474,128.61113,,0,LODGING_EXCLUDED,False,False,True
+rs140,정선,파인포레스트 정선알파인리조트,stay,30.0,37.47563,128.6124,,0,LODGING_EXCLUDED,False,False,True
+rs141,대전,라마다바이윈덤 대전,stay,30.0,36.35318,127.3447,,0,LODGING_EXCLUDED,False,False,True
+rs142,통영,통영관광호텔,stay,30.0,34.84604,128.43037,,0,LODGING_EXCLUDED,False,False,True
+rs143,춘천,에스턴호텔 춘천,stay,30.0,37.87376,127.71413,,0,LODGING_EXCLUDED,False,False,True
+rs144,창원,토요코인호텔 창원점,stay,30.0,35.22328,128.67889,,0,LODGING_EXCLUDED,False,False,True
+rs145,보령,환상의바다리조트,stay,30.0,36.32379,126.50721,,0,LODGING_EXCLUDED,False,False,True
+rs146,서울,호텔 베르누이 서울,stay,30.0,37.49744,126.84597,,0,LODGING_EXCLUDED,False,False,True
+rs147,울진,라벨르호텔앤스파,stay,30.0,36.98402,129.39804,,0,LODGING_EXCLUDED,False,False,True
+rs148,서울,켄싱턴호텔 여의도,stay,30.0,37.53026,126.92193,,0,LODGING_EXCLUDED,False,False,True
+rs149,서울,시그니엘 서울,stay,30.0,37.51245,127.10287,,0,LODGING_EXCLUDED,False,False,True
+rs150,서울,서울올림픽파크텔,stay,30.0,37.52233,127.11655,,0,LODGING_EXCLUDED,False,False,True
+rs151,제주,성산마리나호텔,stay,30.0,33.4521,126.91453,,0,LODGING_EXCLUDED,False,False,True
+rs152,서울,이비스 스타일 앰배서더 서울 용산,stay,30.0,37.53208,126.96176,,0,LODGING_EXCLUDED,False,False,True
+rs153,제주,서귀포KAL호텔,stay,30.0,33.24648,126.58176,,0,LODGING_EXCLUDED,False,False,True
+rs154,서울,웨스틴 서울 파르나스,stay,30.0,37.51277,127.05729,,0,LODGING_EXCLUDED,False,False,True
+rs155,대전,호텔인터시티,stay,30.0,36.3543,127.34787,,0,LODGING_EXCLUDED,False,False,True
+rs156,강릉,연곡해변 솔향기 캠핑장,stay,30.0,37.85893,128.85329,,0,LODGING_EXCLUDED,False,False,True
+rs157,대전,호텔오노마 대전 오토그래프컬렉션,stay,30.0,36.37497,127.38339,,0,LODGING_EXCLUDED,False,False,True
+rs158,정선,하이원그랜드호텔,stay,30.0,37.21241,128.8218,,0,LODGING_EXCLUDED,False,False,True
+rs159,철원,한탄리버스파호텔,stay,30.0,38.18628,127.29014,,0,LODGING_EXCLUDED,False,False,True
+rs160,순천,호텔지뜨,stay,30.0,34.9337,127.51928,,0,LODGING_EXCLUDED,False,False,True
+rs161,남해,남해스포츠파크호텔,stay,30.0,34.80416,127.83568,,0,LODGING_EXCLUDED,False,False,True
+rs162,천안,신라스테이 천안,stay,30.0,36.82575,127.14319,,0,LODGING_EXCLUDED,False,False,True
+rs163,영주,소백산풍기온천리조트,stay,30.0,36.88825,128.47915,,0,LODGING_EXCLUDED,False,False,True
+rs164,군산,군산스테이호텔,stay,30.0,36.01515,126.7627,,0,LODGING_EXCLUDED,False,False,True
+rs165,서산,베니키아호텔 서산,stay,30.0,36.78447,126.43851,,0,LODGING_EXCLUDED,False,False,True
+rs166,양평,더힐하우스호텔 양평,stay,30.0,37.50558,127.44003,,0,LODGING_EXCLUDED,False,False,True
+rs167,익산,탑클라우드호텔 익산점,stay,30.0,35.93027,126.94976,,0,LODGING_EXCLUDED,False,False,True
+rs168,아산,온양관광호텔,stay,30.0,36.78342,126.99991,,0,LODGING_EXCLUDED,False,False,True
+rs169,부안,모항레저타운,stay,30.0,35.58346,126.5042,,0,LODGING_EXCLUDED,False,False,True
+rs170,서울,글래드 여의도,stay,30.0,37.52741,126.91727,,0,LODGING_EXCLUDED,False,False,True
+rs171,보령,토모노야 호텔&료칸 대천점,stay,30.0,36.34866,126.55613,,0,LODGING_EXCLUDED,False,False,True
+rs172,서울,그랜드인터컨티넨탈 서울파르나스,stay,30.0,37.50919,127.06081,,0,LODGING_EXCLUDED,False,False,True
+rs173,경기광주,곤지암리조트,stay,30.0,37.33798,127.29409,,0,LODGING_EXCLUDED,False,False,True
+rs174,서울,삼정호텔,stay,30.0,37.50589,127.03116,,0,LODGING_EXCLUDED,False,False,True
+rs175,서울,오라카이 인사동 스위츠,stay,30.0,37.57311,126.98735,,0,LODGING_EXCLUDED,False,False,True
+rs176,서울,머큐어 서울 마곡,stay,30.0,37.56647,126.82586,,0,LODGING_EXCLUDED,False,False,True
+rs177,부산,해운대센트럴호텔,stay,30.0,35.16095,129.16719,,0,LODGING_EXCLUDED,False,False,True
+rs178,부산,그랜드조선 부산,stay,30.0,35.15993,129.16318,,0,LODGING_EXCLUDED,False,False,True
+rs179,부산,코오롱씨클라우드호텔,stay,30.0,35.16045,129.16224,,0,LODGING_EXCLUDED,False,False,True
+rs180,부산,동부산온천호텔,stay,30.0,35.34334,129.25319,,0,LODGING_EXCLUDED,False,False,True
+rs181,부산,웨스틴조선 부산,stay,30.0,35.15611,129.15402,,0,LODGING_EXCLUDED,False,False,True
+rs182,제주,봄그리고가을 리조트,stay,30.0,33.47414,126.91102,,0,LODGING_EXCLUDED,False,False,True
+rs183,제천,레스트리리솜,stay,30.0,37.1578,128.04789,,0,LODGING_EXCLUDED,False,False,True
+rs184,경주,강동리조트,stay,30.0,35.8268,129.28834,,0,LODGING_EXCLUDED,False,False,True
+rs185,충주,수안보상록호텔,stay,30.0,36.84785,127.98905,,0,LODGING_EXCLUDED,False,False,True
+rs186,거제,바람의언덕 호텔&리조트,stay,30.0,34.73979,128.66345,,0,LODGING_EXCLUDED,False,False,True
+rs187,동해,코스모스호텔,stay,30.0,37.52027,129.117,,0,LODGING_EXCLUDED,False,False,True
+rs188,정선,하이원팰리스호텔,stay,30.0,37.17333,128.84308,,0,LODGING_EXCLUDED,False,False,True
+rs189,전주,글로스터호텔 전주,stay,30.0,35.82229,127.14489,,0,LODGING_EXCLUDED,False,False,True
+rs190,양양,세인트더스위트 양양,stay,30.0,38.11828,128.63216,,0,LODGING_EXCLUDED,False,False,True
+rs191,강릉,베니키아호텔 산과바다주문진리조트,stay,30.0,37.9088,128.82001,,0,LODGING_EXCLUDED,False,False,True
+rs192,속초,호텔마레몬스,stay,30.0,38.16693,128.60651,,0,LODGING_EXCLUDED,False,False,True
+rs193,태백,태백산국립공원 소도야영장,stay,30.0,37.11808,128.95174,,0,LODGING_EXCLUDED,False,False,True
+rs194,여수,하이락리조트,stay,30.0,34.71027,127.76841,,0,LODGING_EXCLUDED,False,False,True
+rs195,청주,엔포드호텔,stay,30.0,36.66656,127.49507,,0,LODGING_EXCLUDED,False,False,True
+rs196,안동,안동그랜드호텔,stay,30.0,36.56726,128.78052,,0,LODGING_EXCLUDED,False,False,True
+rs197,인천,글로스터호텔 인천,stay,30.0,37.40031,126.73546,,0,LODGING_EXCLUDED,False,False,True
+rs198,인천,하버파크호텔,stay,30.0,37.47215,126.61961,,0,LODGING_EXCLUDED,False,False,True
+rs199,안동,월영호텔 바이 뉴시즈,stay,30.0,36.56627,128.71497,,0,LODGING_EXCLUDED,False,False,True
+rs200,춘천,엘리시안강촌,stay,30.0,37.82215,127.58992,,0,LODGING_EXCLUDED,False,False,True
+rs201,춘천,더잭슨나인스호텔,stay,30.0,37.87375,127.71413,,0,LODGING_EXCLUDED,False,False,True
+rs202,울릉,코스모스 울릉도,stay,30.0,37.5337,130.85801,,0,LODGING_EXCLUDED,False,False,True
+rs203,울릉,학포야영장,stay,30.0,37.50356,130.80639,,0,LODGING_EXCLUDED,False,False,True
+rs204,태안,캐시미르,stay,30.0,36.74146,126.29345,,0,LODGING_EXCLUDED,False,False,True
+rs205,공주,파크오브드림,stay,30.0,36.36874,127.25802,,0,LODGING_EXCLUDED,False,False,True
+rs206,남해,이제 남해,stay,30.0,34.82354,128.04132,,0,LODGING_EXCLUDED,False,False,True
+rs207,보령,호텔쏠레르,stay,30.0,36.31375,126.51215,,0,LODGING_EXCLUDED,False,False,True
+rs208,울진,울진그랜드호텔,stay,30.0,36.99177,129.40982,,0,LODGING_EXCLUDED,False,False,True
+rs209,서울,신라스테이 역삼,stay,30.0,37.50498,127.04131,,0,LODGING_EXCLUDED,False,False,True
+rs210,서울,노보텔 앰배서더 서울 강남,stay,30.0,37.50529,127.02891,,0,LODGING_EXCLUDED,False,False,True
+rs211,부산,L7 해운대바이롯데,stay,30.0,35.16023,129.16007,,0,LODGING_EXCLUDED,False,False,True
+rs212,부산,해운대영무파라드호텔,stay,30.0,35.1609,129.16648,,0,LODGING_EXCLUDED,False,False,True
+rs213,부산,하단 레이어스호텔점,stay,30.0,35.10656,128.96436,,0,LODGING_EXCLUDED,False,False,True
+rs214,제주,호텔골든데이지 서귀포오션,stay,30.0,33.24935,126.56745,,0,LODGING_EXCLUDED,False,False,True
+rs215,인제,인제스피디움 호텔,stay,30.0,38.00285,128.29536,,0,LODGING_EXCLUDED,False,False,True
+rs216,제주,서귀포월드컵리조트,stay,30.0,33.2446,126.51201,,0,LODGING_EXCLUDED,False,False,True
+rs217,제주,그랜드하얏트 제주,stay,30.0,33.48524,126.48141,,0,LODGING_EXCLUDED,False,False,True
+rs218,서울,몬드리안 서울이태원,stay,30.0,37.52856,126.99311,,0,LODGING_EXCLUDED,False,False,True
+rs219,제주,탐라스테이호텔제주,stay,30.0,33.48697,126.39119,,0,LODGING_EXCLUDED,False,False,True
+rs220,당진,어반스테이 당진터미널,stay,30.0,36.89975,126.64686,,0,LODGING_EXCLUDED,False,False,True
+rs221,제주,호텔더본 제주,stay,30.0,33.25962,126.40647,,0,LODGING_EXCLUDED,False,False,True
+rs222,제주,더 시에나 리조트,stay,30.0,33.26484,126.48433,,0,LODGING_EXCLUDED,False,False,True
+rs223,서울,호텔파크하비오,stay,30.0,37.48182,127.12351,,0,LODGING_EXCLUDED,False,False,True
+rs224,하동,비바체리조트,stay,30.0,35.16255,127.78281,,0,LODGING_EXCLUDED,False,False,True
+rs225,거제,스터번호텔,stay,30.0,34.7777,128.64369,,0,LODGING_EXCLUDED,False,False,True
+rs226,정선,하이원그랜드호텔 컨벤션타워,stay,30.0,37.21354,128.82162,,0,LODGING_EXCLUDED,False,False,True
+rs227,경주,경주시티호텔,stay,30.0,35.84744,129.21568,,0,LODGING_EXCLUDED,False,False,True
+rs228,정선,트라움밸리호텔,stay,30.0,37.22668,128.8124,,0,LODGING_EXCLUDED,False,False,True
+rs229,전주,베스트웨스턴플러스 전주호텔,stay,30.0,35.82226,127.14682,,0,LODGING_EXCLUDED,False,False,True
+rs230,태백,매봉산 천상의 숲,stay,30.0,37.22759,128.97726,,0,LODGING_EXCLUDED,False,False,True
+rs231,양양,E7양양죽도호텔,stay,30.0,37.97789,128.75897,,0,LODGING_EXCLUDED,False,False,True
+rs232,인천,라마다송도호텔,stay,30.0,37.41399,126.6553,,0,LODGING_EXCLUDED,False,False,True
+rs233,진주,아시아레이크사이드호텔,stay,30.0,35.17613,128.03376,,0,LODGING_EXCLUDED,False,False,True
+rs234,속초,팜파스호텔&리조트,stay,30.0,38.1888,128.60073,,0,LODGING_EXCLUDED,False,False,True
+rs235,양양,다이아메르호텔 속초 양양 바이 스테이네오,stay,30.0,38.15847,128.60778,,0,LODGING_EXCLUDED,False,False,True
+rs236,강릉,스테이안목을담다,stay,30.0,37.77289,128.94688,,0,LODGING_EXCLUDED,False,False,True
+rs237,인천,오션파크나인호텔,stay,30.0,37.49275,126.57921,,0,LODGING_EXCLUDED,False,False,True
+rs238,안동,브라운도트호텔 안동태화점,stay,30.0,36.56517,128.71625,,0,LODGING_EXCLUDED,False,False,True
+rs239,안동,브라운도트 안동문화의거리점,stay,30.0,36.56388,128.73117,,0,LODGING_EXCLUDED,False,False,True
+rs240,안동,브라운도트 풍산점,stay,30.0,36.57913,128.57093,,0,LODGING_EXCLUDED,False,False,True
+rs241,부여,부여파크아트빌라스,stay,30.0,36.3166,126.89715,,0,LODGING_EXCLUDED,False,False,True
+rs242,군산,베스트웨스턴호텔 군산,stay,30.0,35.94846,126.58384,,0,LODGING_EXCLUDED,False,False,True
+rs243,상주,브라운도트호텔 상주점,stay,30.0,36.41971,128.16348,,0,LODGING_EXCLUDED,False,False,True
+rs244,남원,산리지호텔,stay,30.0,35.40654,127.38988,,0,LODGING_EXCLUDED,False,False,True
+rs245,가평,아난티 코드,stay,30.0,37.62549,127.48022,,0,LODGING_EXCLUDED,False,False,True
+rs246,군산,노을바다펜션,stay,30.0,35.82029,126.41996,,0,LODGING_EXCLUDED,False,False,True
+rs247,양평,데이지호텔 양평,stay,30.0,37.48394,127.57558,,0,LODGING_EXCLUDED,False,False,True
+rs248,공주,공주호텔,stay,30.0,36.46994,127.12981,,0,LODGING_EXCLUDED,False,False,True
+rs249,아산,아산온천호텔,stay,30.0,36.85438,126.98011,,0,LODGING_EXCLUDED,False,False,True
+rs250,창원,호텔인터내셔널,stay,30.0,35.22173,128.67693,,0,LODGING_EXCLUDED,False,False,True
+rs251,태안,호텔마리스테이 태안,stay,30.0,36.74838,126.30234,,0,LODGING_EXCLUDED,False,False,True
+rs252,가평,자라섬캠핑장,stay,30.0,37.82088,127.52106,,0,LODGING_EXCLUDED,False,False,True
+rs253,아산,베스트웨스턴 아산호텔,stay,30.0,36.79616,127.05341,,0,LODGING_EXCLUDED,False,False,True
+rs254,단양,한국호텔관광고등학교,stay,30.0,36.92755,128.33732,,0,LODGING_EXCLUDED,False,False,True
+rs255,보령,국군대천콘도,stay,30.0,36.30134,126.52217,,0,LODGING_EXCLUDED,False,False,True
+rs256,서울,안토 서울,stay,30.0,37.66382,127.00917,,0,LODGING_EXCLUDED,False,False,True
+rs257,영덕,호텔글로리엘,stay,30.0,36.34502,129.38225,,0,LODGING_EXCLUDED,False,False,True
+rs258,보령,엘리스테이 보령,stay,30.0,36.23387,126.53636,,0,LODGING_EXCLUDED,False,False,True
+rs259,서울,신라스테이 서대문,stay,30.0,37.56519,126.9668,,0,LODGING_EXCLUDED,False,False,True
+rs260,서울,서울가든호텔,stay,30.0,37.54068,126.94836,,0,LODGING_EXCLUDED,False,False,True
+rs261,서울,그랜드 머큐어 앰배서더 호텔 앤 레지던스 서울 용산,stay,30.0,37.53218,126.96094,,0,LODGING_EXCLUDED,False,False,True
+rs262,서울,인터시티서울호텔,stay,30.0,37.55972,126.83579,,0,LODGING_EXCLUDED,False,False,True
+rs263,부산,부산도시공사 아르피나,stay,30.0,35.16466,129.13827,,0,LODGING_EXCLUDED,False,False,True
+rs264,부산,호텔아쿠아펠리스,stay,30.0,35.15408,129.11881,,0,LODGING_EXCLUDED,False,False,True
+rs265,부산,팔라티움 해운대 바이 소노펠리체,stay,30.0,35.16114,129.1596,,0,LODGING_EXCLUDED,False,False,True
+rs266,부산,신라스테이 해운대,stay,30.0,35.1598,129.15874,,0,LODGING_EXCLUDED,False,False,True
+rs267,평창,알펜시아 홀리데이인리조트호텔,stay,30.0,37.65694,128.67374,,0,LODGING_EXCLUDED,False,False,True
+rs268,밀양,호텔아리나,stay,30.0,35.47897,128.75382,,0,LODGING_EXCLUDED,False,False,True
+rs269,서울,나인트리 프리미어 로카우스 호텔 서울 용산,stay,30.0,37.52747,126.96439,,0,LODGING_EXCLUDED,False,False,True
+rs270,제주,켄싱턴리조트 제주중문,stay,30.0,33.24752,126.41266,,0,LODGING_EXCLUDED,False,False,True
+rs271,제주,스위트호텔 제주점,stay,30.0,33.24904,126.40843,,0,LODGING_EXCLUDED,False,False,True
+rs272,서울,서머셋팰리스 서울,stay,30.0,37.57495,126.98108,,0,LODGING_EXCLUDED,False,False,True
+rs273,경주,체스터톤스 경주,stay,30.0,35.87931,129.22442,,0,LODGING_EXCLUDED,False,False,True
+rs274,충주,보훈휴양원,stay,30.0,37.05785,127.83154,,0,LODGING_EXCLUDED,False,False,True
+rs275,경주,교원프라퍼티 키녹,stay,30.0,35.8538,129.2774,,0,LODGING_EXCLUDED,False,False,True
+rs276,경주,신라레거시호텔,stay,30.0,35.84203,129.20249,,0,LODGING_EXCLUDED,False,False,True
+rs277,용인,선봉레스텔,stay,30.0,37.24233,127.19009,,0,LODGING_EXCLUDED,False,False,True
+rs278,거제,프래밀리풀빌라호텔,stay,30.0,34.8181,128.70467,,0,LODGING_EXCLUDED,False,False,True
+rs279,정선,마이애미정선호텔,stay,30.0,37.20755,128.8442,,0,LODGING_EXCLUDED,False,False,True
+rs280,정선,하이원리조트 마운틴콘도 아테나키친,stay,30.0,37.20814,128.82595,,0,LODGING_EXCLUDED,False,False,True
+rs281,여수,해미리온풀빌라&리조트,stay,30.0,34.69768,127.75451,,0,LODGING_EXCLUDED,False,False,True
+rs282,인천,쉐라톤그랜드 인천호텔,stay,30.0,37.3902,126.64539,,0,LODGING_EXCLUDED,False,False,True
+rs283,여수,호텔케니 여수,stay,30.0,34.74127,127.73166,,0,LODGING_EXCLUDED,False,False,True
+rs284,청송,주왕산관광호텔,stay,30.0,36.43625,129.06254,,0,LODGING_EXCLUDED,False,False,True
+rs285,수원,노보텔 앰배서더 수원,stay,30.0,37.26848,126.9991,,0,LODGING_EXCLUDED,False,False,True
+rs286,여수,깔라까따 호텔&리조트,stay,30.0,34.70721,127.75706,,0,LODGING_EXCLUDED,False,False,True
+rs287,안동,CM파크호텔,stay,30.0,36.57564,128.49524,,0,LODGING_EXCLUDED,False,False,True
+rs288,안동,하운드호텔 안동문화의거리점,stay,30.0,36.56434,128.73626,,0,LODGING_EXCLUDED,False,False,True
+rs289,통영,통영갤러리호텔,stay,30.0,34.8292,128.43223,,0,LODGING_EXCLUDED,False,False,True
+rs290,김해,아이스퀘어호텔,stay,30.0,35.22602,128.88508,,0,LODGING_EXCLUDED,False,False,True
+rs291,울릉,대아울릉리조트 울릉지점,stay,30.0,37.47657,130.89176,,0,LODGING_EXCLUDED,False,False,True
+rs292,남해,엘림마리나앤리조트,stay,30.0,34.80096,128.05272,,0,LODGING_EXCLUDED,False,False,True
+rs293,양주,호텔그리다,stay,30.0,37.77909,126.95727,,0,LODGING_EXCLUDED,False,False,True
+rs294,양양,웨이블런트 양양,stay,30.0,37.97746,128.75864,,0,LODGING_EXCLUDED,False,False,True
+rs295,서울,더 리버사이드호텔,stay,30.0,37.51857,127.01809,,0,LODGING_EXCLUDED,False,False,True
+rs296,목포,클라우드인호텔 평화광장점,stay,30.0,34.80032,126.42983,,0,LODGING_EXCLUDED,False,False,True
+rs297,인천,오크우드프리미어 인천,stay,30.0,37.38914,126.64422,,0,LODGING_EXCLUDED,False,False,True
+rs298,울릉,울릉아일랜드펜션,stay,30.0,37.53429,130.85564,,0,LODGING_EXCLUDED,False,False,True
+rs299,울릉,시에스타펜션,stay,30.0,37.5058,130.91352,,0,LODGING_EXCLUDED,False,False,True
+rs300,울릉,스테이22,stay,30.0,37.47308,130.881,,0,LODGING_EXCLUDED,False,False,True
+rs301,남해,호텔 어반아일랜드,stay,30.0,34.91932,128.02543,,0,LODGING_EXCLUDED,False,False,True
+rs302,남해,상주비치유스호스텔&펜션,stay,30.0,34.721,127.98333,,0,LODGING_EXCLUDED,False,False,True
+rs303,영덕,씨아일랜드펜션,stay,30.0,36.34035,129.38178,,0,LODGING_EXCLUDED,False,False,True
+rs304,창원,AT비지니스호텔,stay,30.0,35.22435,128.67843,,0,LODGING_EXCLUDED,False,False,True
+rs305,태안,태안비치리조텔,stay,30.0,36.68226,126.13654,,0,LODGING_EXCLUDED,False,False,True
+rs306,논산,더 시티 호텔,stay,30.0,36.20345,127.08914,,0,LODGING_EXCLUDED,False,False,True
+rs307,고창,상하농원 파머스빌리지,stay,30.0,35.44522,126.4529,,0,LODGING_EXCLUDED,False,False,True
+rs308,여주,일성남한강콘도&리조트,stay,30.0,37.30133,127.65079,,0,LODGING_EXCLUDED,False,False,True
+rs309,양양,오색그린야드호텔,stay,30.0,38.08022,128.44751,,0,LODGING_EXCLUDED,False,False,True
+rs310,아산,호텔라그라스 아산점,stay,30.0,36.78139,127.00651,,0,LODGING_EXCLUDED,False,False,True
+rs311,예산,스파뷰호텔,stay,30.0,36.68875,126.66213,,0,LODGING_EXCLUDED,False,False,True
+rs312,인제,만해마을,stay,30.0,38.18636,128.31629,,0,LODGING_EXCLUDED,False,False,True
+rs313,서울,신라스테이 삼성,stay,30.0,37.50991,127.06318,,0,LODGING_EXCLUDED,False,False,True
+rs314,구미,라마다바이윈덤 구미호텔,stay,30.0,36.10983,128.41832,,0,LODGING_EXCLUDED,False,False,True
+rs315,서울,페어필드 바이 메리어트 서울,stay,30.0,37.51699,126.90928,,0,LODGING_EXCLUDED,False,False,True
+rs316,서울,하이서울유스호스텔,stay,30.0,37.52561,126.90325,,0,LODGING_EXCLUDED,False,False,True
+rs317,서울,아미드호텔서울,stay,30.0,37.57257,126.98424,,0,LODGING_EXCLUDED,False,False,True
+rs318,서울,레이크호텔,stay,30.0,37.50687,127.10099,,0,LODGING_EXCLUDED,False,False,True
+rs319,서울,메이필드호텔 서울,stay,30.0,37.54714,126.8191,,0,LODGING_EXCLUDED,False,False,True
+rs320,제주,호텔브릿지 서귀포,stay,30.0,33.24549,126.56662,,0,LODGING_EXCLUDED,False,False,True
+rs321,제주,JW 메리어트 제주 리조트 & 스파,stay,30.0,33.2438,126.53854,,0,LODGING_EXCLUDED,False,False,True
+rs322,제주,더그랜드섬오름,stay,30.0,33.23283,126.50972,,0,LODGING_EXCLUDED,False,False,True
+rs323,제주,롯데시티호텔 제주,stay,30.0,33.49069,126.48648,,0,LODGING_EXCLUDED,False,False,True
+rs324,제주,롯데리조트 제주아트빌라스,stay,30.0,33.28795,126.41603,,0,LODGING_EXCLUDED,False,False,True
+rs325,영월,김삿갓계곡캠핑장,stay,30.0,37.07951,128.6023,,0,LODGING_EXCLUDED,False,False,True
+rs326,태백,태백눈꽃야영장,stay,30.0,37.13208,128.9614,,0,LODGING_EXCLUDED,False,False,True
+rs327,인천,골든튤립 호텔&스위트,stay,30.0,37.49226,126.49241,,0,LODGING_EXCLUDED,False,False,True
+rs328,안동,안동케이스호텔,stay,30.0,36.5514,128.73551,,0,LODGING_EXCLUDED,False,False,True
+rs329,공주,공주관광호텔잉크,stay,30.0,36.46975,127.13012,,0,LODGING_EXCLUDED,False,False,True
+rs330,고창,동호비치호텔,stay,30.0,35.51969,126.48489,,0,LODGING_EXCLUDED,False,False,True
+rs331,양양,연화문호텔 양양,stay,30.0,38.04338,128.66207,,0,LODGING_EXCLUDED,False,False,True
+rs332,아산,더위트도고,stay,30.0,36.76118,126.88813,,0,LODGING_EXCLUDED,False,False,True
+rs333,단양,오무아무아 풀빌라,stay,30.0,36.91018,128.34612,,0,LODGING_EXCLUDED,False,False,True
+rs334,부산,더클럽호텔 연화리점,stay,30.0,35.22044,129.22709,,0,LODGING_EXCLUDED,False,False,True
+rs335,원주,원주 센트럴호텔,stay,30.0,37.34034,127.92397,,0,LODGING_EXCLUDED,False,False,True
+rs336,영월,산골초가펜션,stay,30.0,37.3167,128.45162,,0,LODGING_EXCLUDED,False,False,True
+rs337,서울,JW 메리어트 동대문 스퀘어 서울,stay,30.0,37.57023,127.00875,,0,LODGING_EXCLUDED,False,False,True
+rs338,충주,라마다 바이윈덤 호텔 충주 수안보,stay,30.0,36.84569,127.99399,,0,LODGING_EXCLUDED,False,False,True
+rs339,경주,마우나오션리조트,stay,30.0,35.68652,129.37001,,0,LODGING_EXCLUDED,False,False,True
+rs340,영덕,옥계계곡 야영장,stay,30.0,36.33273,129.27022,,0,LODGING_EXCLUDED,False,False,True
+rs341,용인,더트리니 어반스위트,stay,30.0,37.23754,127.18074,,0,LODGING_EXCLUDED,False,False,True
+rs342,철원,브라운도트호텔 동송점,stay,30.0,38.20728,127.21676,,0,LODGING_EXCLUDED,False,False,True
+rs343,인천,오라카이 송도파크호텔 BW 프리미어 컬렉션,stay,30.0,37.38812,126.6408,,0,LODGING_EXCLUDED,False,False,True
+rs344,담양,브라운도트 전남담양점,stay,30.0,35.30937,126.98358,,0,LODGING_EXCLUDED,False,False,True
+rs345,인천,골드코스트인천오피스텔,stay,30.0,37.40243,126.70795,,0,LODGING_EXCLUDED,False,False,True
+rs346,여수,여수스테이호텔,stay,30.0,34.73182,127.7238,,0,LODGING_EXCLUDED,False,False,True
+rs347,인천,웨스턴그레이스호텔,stay,30.0,37.49026,126.58147,,0,LODGING_EXCLUDED,False,False,True
+rs348,목포,호텔더시티,stay,30.0,34.81127,126.44762,,0,LODGING_EXCLUDED,False,False,True
+rs349,진주,라온스테이인페를라,stay,30.0,35.17808,128.13957,,0,LODGING_EXCLUDED,False,False,True
+rs350,인천,브라운도트호텔 공항신도시점,stay,30.0,37.49451,126.48889,,0,LODGING_EXCLUDED,False,False,True
+rs351,영주,영주온천관광호텔,stay,30.0,36.81663,128.60572,,0,LODGING_EXCLUDED,False,False,True
+rs352,인천,어반스테이 인천차이나타운,stay,30.0,37.46368,126.63208,,0,LODGING_EXCLUDED,False,False,True
+rs353,울릉,다온프라임호텔,stay,30.0,37.49463,130.90881,,0,LODGING_EXCLUDED,False,False,True
+rs354,울릉,추산노을빛펜션,stay,30.0,37.5342,130.84972,,0,LODGING_EXCLUDED,False,False,True
+rs355,울릉,비치온관광호텔,stay,30.0,37.46191,130.87583,,0,LODGING_EXCLUDED,False,False,True
+rs356,울릉,웅포야영장,stay,30.0,37.52599,130.82002,,0,LODGING_EXCLUDED,False,False,True
+rs357,순천,브라운도트호텔 순천역점,stay,30.0,34.9445,127.50489,,0,LODGING_EXCLUDED,False,False,True
+rs358,순천,에코그라드호텔,stay,30.0,34.95402,127.5217,,0,LODGING_EXCLUDED,False,False,True
+rs359,용인,얼레이호텔,stay,30.0,37.2885,127.09776,,0,LODGING_EXCLUDED,False,False,True
+rs360,남원,일성지리산콘도&리조트,stay,30.0,35.42306,127.62071,,0,LODGING_EXCLUDED,False,False,True
+rs361,아산,온양제일호텔,stay,30.0,36.78213,126.99965,,0,LODGING_EXCLUDED,False,False,True
+rs362,군산,탑클라우드호텔 군산점,stay,30.0,35.96475,126.73577,,0,LODGING_EXCLUDED,False,False,True
+rs363,군산,브라운도트호텔 군산터미널점,stay,30.0,35.97701,126.72308,,0,LODGING_EXCLUDED,False,False,True
+rs364,군산,베니키아아리울호텔,stay,30.0,35.9463,126.56159,,0,LODGING_EXCLUDED,False,False,True
+rs365,태안,골든비치펜션,stay,30.0,36.83677,126.18426,,0,LODGING_EXCLUDED,False,False,True
+rs366,창원,그랜드시티 호텔 창원,stay,30.0,35.22149,128.67908,,0,LODGING_EXCLUDED,False,False,True
+rs367,태안,말리오션스파펜션,stay,30.0,36.78657,126.14504,,0,LODGING_EXCLUDED,False,False,True
+rs368,가평,연인산리조트,stay,30.0,37.90308,127.50236,,0,LODGING_EXCLUDED,False,False,True
+rs369,가평,농업회사법인 산들애파크 188다산트라,stay,30.0,37.85852,127.34471,,0,LODGING_EXCLUDED,False,False,True
+rs370,함양,용추계곡제2야영장,stay,30.0,35.68419,127.76564,,0,LODGING_EXCLUDED,False,False,True
+rs371,부안,연화문호텔 변산,stay,30.0,35.66776,126.51626,,0,LODGING_EXCLUDED,False,False,True
+rs372,김해,파인그로브호텔,stay,30.0,35.19296,128.79785,,0,LODGING_EXCLUDED,False,False,True
+rs373,영덕,풀빌라식스,stay,30.0,36.31098,129.3793,,0,LODGING_EXCLUDED,False,False,True
+rs374,밀양,밀양댐오토캠핑장,stay,30.0,35.49311,128.92847,,0,LODGING_EXCLUDED,False,False,True
+rs375,세종,베스트웨스턴 플러스 호텔세종,stay,30.0,36.50008,127.25843,,0,LODGING_EXCLUDED,False,False,True
+rs376,서울,토요코인호텔 서울강남점,stay,30.0,37.49188,127.02997,,0,LODGING_EXCLUDED,False,False,True
+rs377,서울,로이넷호텔 서울마포,stay,30.0,37.54185,126.94829,,0,LODGING_EXCLUDED,False,False,True
+rs378,서울,강동그린웨이 가족캠핑장,stay,30.0,37.53587,127.15409,,0,LODGING_EXCLUDED,False,False,True
+rs379,서울,오라카이대학로호텔 BW시그니처컬렉션,stay,30.0,37.57557,126.99872,,0,LODGING_EXCLUDED,False,False,True
+rs380,서울,로얄스퀘어호텔,stay,30.0,37.5607,126.81029,,0,LODGING_EXCLUDED,False,False,True
+rs381,서울,코트야드 바이메리어트 서울보타닉파크,stay,30.0,37.56695,126.82939,,0,LODGING_EXCLUDED,False,False,True
+rs382,서울,신라스테이 마포,stay,30.0,37.54278,126.94968,,0,LODGING_EXCLUDED,False,False,True
+rs384,평창,모나용평 빌라콘도,stay,30.0,37.64259,128.68311,,0,LODGING_EXCLUDED,False,False,True
+rs385,평창,모나용평 그린피아콘도,stay,30.0,37.64307,128.67705,,0,LODGING_EXCLUDED,False,False,True
+rs386,부산,하운드호텔 기장오시리아점,stay,30.0,35.23485,129.21528,,0,LODGING_EXCLUDED,False,False,True
+rs387,제주,베스트웨스턴 제주호텔,stay,30.0,33.48783,126.48185,,0,LODGING_EXCLUDED,False,False,True
+rs388,부산,라마다 앙코르바이윈덤 부산 해운대,stay,30.0,35.16328,129.1596,,0,LODGING_EXCLUDED,False,False,True
+rs389,제주,다인리조트,stay,30.0,33.47152,126.35111,,0,LODGING_EXCLUDED,False,False,True
+rs390,제주,다인오세아노호텔,stay,30.0,33.47249,126.35047,,0,LODGING_EXCLUDED,False,False,True
+rs391,제주,호텔시리우스,stay,30.0,33.4934,126.49102,,0,LODGING_EXCLUDED,False,False,True
+rs392,제주,엠버 퓨어힐 호텔 앤 리조트 제주,stay,30.0,33.42647,126.4873,,0,LODGING_EXCLUDED,False,False,True
+rs393,제주,메종 글래드 제주,stay,30.0,33.48521,126.48853,,0,LODGING_EXCLUDED,False,False,True
+rs394,제주,해비치 호텔&리조트 제주,stay,30.0,33.32144,126.84467,,0,LODGING_EXCLUDED,False,False,True
+rs395,제주,오션스타콘도,stay,30.0,33.42734,126.92655,,0,LODGING_EXCLUDED,False,False,True
+rs396,제주,포도호텔,stay,30.0,33.31745,126.38754,,0,LODGING_EXCLUDED,False,False,True
+rs397,제주,야크마을,stay,30.0,33.26971,126.41772,,0,LODGING_EXCLUDED,False,False,True
+rs398,제주,제주디아일랜드블루호텔,stay,30.0,33.24582,126.56577,,0,LODGING_EXCLUDED,False,False,True
+rs399,제주,블룸호텔,stay,30.0,33.24987,126.40811,,0,LODGING_EXCLUDED,False,False,True
+rs400,제주,벨룸리조트,stay,30.0,33.27935,126.58144,,0,LODGING_EXCLUDED,False,False,True
+rs401,제주,WE호텔 제주,stay,30.0,33.2862,126.44408,,0,LODGING_EXCLUDED,False,False,True
+rs402,대구,아리아나호텔,stay,30.0,35.83269,128.62289,,0,LODGING_EXCLUDED,False,False,True
+rs403,통영,통영767,stay,30.0,34.77017,128.40746,,0,LODGING_EXCLUDED,False,False,True
+rs404,목포,바반트 관광호텔,stay,30.0,34.80191,126.36832,,0,LODGING_EXCLUDED,False,False,True
+rs405,가평,환타지콜라보,stay,30.0,37.82418,127.4944,,0,LODGING_EXCLUDED,False,False,True
+rs406,서울,메이플레이스호텔 서울동대문,stay,30.0,37.5761,126.99875,,0,LODGING_EXCLUDED,False,False,True
+rs407,파주,브라운도트호텔 파주헤이리점,stay,30.0,37.77703,126.68767,,0,LODGING_EXCLUDED,False,False,True
+rs408,제주,빠레브호텔 제주,stay,30.0,33.25229,126.50663,,0,LODGING_EXCLUDED,False,False,True
+rs409,제주,디아넥스호텔,stay,30.0,33.30299,126.39282,,0,LODGING_EXCLUDED,False,False,True
+rs410,영월,내리계곡솔밭캠핑장,stay,30.0,37.1022,128.68282,,0,LODGING_EXCLUDED,False,False,True
+rs411,대전,호텔ICC,stay,30.0,36.37706,127.39282,,0,LODGING_EXCLUDED,False,False,True
+rs412,제천,월악산국립공원 덕주야영장 피크닉전용영지,stay,30.0,36.86652,128.08802,,0,LODGING_EXCLUDED,False,False,True
+rs413,대전,호텔 스카이파크 대전1호점,stay,30.0,36.42474,127.39806,,0,LODGING_EXCLUDED,False,False,True
+rs414,경주,강동리조트 패밀리콘도,stay,30.0,35.82614,129.28787,,0,LODGING_EXCLUDED,False,False,True
+rs415,경주,강동프라이빗콘도,stay,30.0,35.82316,129.28897,,0,LODGING_EXCLUDED,False,False,True
+rs416,동해,망상제2오토캠핑장,stay,30.0,37.59142,129.09264,,0,LODGING_EXCLUDED,False,False,True
+rs417,거제,거제돔관광호텔,stay,30.0,34.82245,128.70996,,0,LODGING_EXCLUDED,False,False,True
+rs418,동해,동해무릉건강숲,stay,30.0,37.46511,129.03124,,0,LODGING_EXCLUDED,False,False,True
+rs419,정선,정선아리아리호텔,stay,30.0,37.22687,128.81172,,0,LODGING_EXCLUDED,False,False,True
+rs420,전주,메종드온유호텔 전주한옥마을점,stay,30.0,35.83034,127.17439,,0,LODGING_EXCLUDED,False,False,True
+rs421,통영,아스트로펜션,stay,30.0,34.87912,128.46521,,0,LODGING_EXCLUDED,False,False,True
+rs422,통영,브룩스호텔,stay,30.0,34.84584,128.43093,,0,LODGING_EXCLUDED,False,False,True
+rs423,통영,통영마티스비치스파펜션,stay,30.0,34.83494,128.39234,,0,LODGING_EXCLUDED,False,False,True
+rs424,강릉,파인아트라벨,stay,30.0,37.77574,128.94196,,0,LODGING_EXCLUDED,False,False,True
+rs425,속초,호텔리츠,stay,30.0,38.21273,128.59956,,0,LODGING_EXCLUDED,False,False,True
+rs426,평창,오리엔트리조트 평창본점,stay,30.0,37.58698,128.31878,,0,LODGING_EXCLUDED,False,False,True
+rs427,여수,르그랑블루리조트,stay,30.0,34.68745,127.77776,,0,LODGING_EXCLUDED,False,False,True
+rs428,안동,고려호텔,stay,30.0,36.56443,128.73276,,0,LODGING_EXCLUDED,False,False,True
+rs429,양산,베니키아 양산호텔,stay,30.0,35.3148,129.02606,,0,LODGING_EXCLUDED,False,False,True
+rs430,영주,소백산국립공원 삼가야영장,stay,30.0,36.92656,128.50199,,0,LODGING_EXCLUDED,False,False,True
+rs431,영주,알토호텔,stay,30.0,36.81116,128.6231,,0,LODGING_EXCLUDED,False,False,True
+rs432,목포,하운드호텔 목포평화광장점,stay,30.0,34.79799,126.4287,,0,LODGING_EXCLUDED,False,False,True
+rs433,울릉,울릉도일등펜션,stay,30.0,37.46908,130.88147,,0,LODGING_EXCLUDED,False,False,True
+rs434,울릉,호텔울릉드림,stay,30.0,37.48121,130.88846,,0,LODGING_EXCLUDED,False,False,True
+rs435,군산,맨션브릿지호텔 군산,stay,30.0,35.97686,126.72568,,0,LODGING_EXCLUDED,False,False,True
+rs436,담양,담양리조트,stay,30.0,35.36549,127.02563,,0,LODGING_EXCLUDED,False,False,True
+rs437,군산,브라운도트호텔 근대화거리점,stay,30.0,35.98779,126.71767,,0,LODGING_EXCLUDED,False,False,True
+rs438,태안,파도와노을캠핑장,stay,30.0,36.73352,126.13093,,0,LODGING_EXCLUDED,False,False,True
+rs439,가평,더스테이힐링파크,stay,30.0,37.66182,127.52435,,0,LODGING_EXCLUDED,False,False,True
+rs440,김해,아세라빌라드아쿠아호텔,stay,30.0,35.22885,128.88418,,0,LODGING_EXCLUDED,False,False,True
+rs441,포천,신북온심재,stay,30.0,37.97427,127.10438,,0,LODGING_EXCLUDED,False,False,True
+rs442,울진,동해바다펜션,stay,30.0,37.05058,129.41285,,0,LODGING_EXCLUDED,False,False,True
+rs443,부안,스테이80,stay,30.0,35.6546,126.5096,,0,LODGING_EXCLUDED,False,False,True
+rs444,부안,가온리조트,stay,30.0,35.6781,126.53149,,0,LODGING_EXCLUDED,False,False,True
+rs445,양양,코게러지 호텔,stay,30.0,38.00549,128.72927,,0,LODGING_EXCLUDED,False,False,True
+rs446,양양,서프리조트인더시티 양양,stay,30.0,37.97162,128.76086,,0,LODGING_EXCLUDED,False,False,True
+rs447,보령,동백관,stay,30.0,36.26193,126.54881,,0,LODGING_EXCLUDED,False,False,True
+rs448,영덕,연화문호텔 영덕,stay,30.0,36.27179,129.37691,,0,LODGING_EXCLUDED,False,False,True
+rs449,서울,조선호텔 포포인츠바이쉐라톤 서울역,stay,30.0,37.55106,126.97292,,0,LODGING_EXCLUDED,False,False,True
+rs450,부산,브라운도트호텔 엄궁점,stay,30.0,35.12866,128.96882,,0,LODGING_EXCLUDED,False,False,True
+rs451,부산,하얏트 플레이스 부산 연산,stay,30.0,35.1877,129.0806,,0,LODGING_EXCLUDED,False,False,True
+rs452,부산,케니스테이 기장,stay,30.0,35.24259,129.2158,,0,LODGING_EXCLUDED,False,False,True
+rs453,부산,소노문 해운대,stay,30.0,35.15992,129.15797,,0,LODGING_EXCLUDED,False,False,True
+rs454,부산,썬클라우드호텔,stay,30.0,35.16044,129.16225,,0,LODGING_EXCLUDED,False,False,True
+rs455,부산,해운대블루스토리호텔,stay,30.0,35.15991,129.15748,,0,LODGING_EXCLUDED,False,False,True
+rs456,제주,호텔난타,stay,30.0,33.44583,126.54791,,0,LODGING_EXCLUDED,False,False,True
+rs457,제주,더스테이센추리호텔,stay,30.0,33.48491,126.40893,,0,LODGING_EXCLUDED,False,False,True
+rs458,제주,베니키아호텔 제주,stay,30.0,33.47763,126.36223,,0,LODGING_EXCLUDED,False,False,True
+rs459,제주,신라스테이 플러스 이호테우,stay,30.0,33.49268,126.423,,0,LODGING_EXCLUDED,False,False,True
+rs460,제주,제주리조트,stay,30.0,33.48292,126.39306,,0,LODGING_EXCLUDED,False,False,True
+rs461,제주,몽돌스테이1119,stay,30.0,33.41282,126.26537,,0,LODGING_EXCLUDED,False,False,True
+rs462,제주,코업시티호텔 성산,stay,30.0,33.46599,126.93189,,0,LODGING_EXCLUDED,False,False,True
+rs463,제주,신라스테이 제주,stay,30.0,33.48554,126.4909,,0,LODGING_EXCLUDED,False,False,True
+rs464,당진,모든날펜션,stay,30.0,37.03347,126.55612,,0,LODGING_EXCLUDED,False,False,True
+rs465,서산,저스트슬립호텔 서산대산점,stay,30.0,36.94033,126.43033,,0,LODGING_EXCLUDED,False,False,True
+rs466,제천,휴가 게스트하우스,stay,30.0,37.1557,128.2184,,0,LODGING_EXCLUDED,False,False,True
+rs467,서울,난지캠핑장,stay,30.0,37.57,126.87217,,0,LODGING_EXCLUDED,False,False,True
+rs468,서울,호텔씨에스에비뉴,stay,30.0,37.59908,126.9365,,0,LODGING_EXCLUDED,False,False,True
+rs469,하동,소소화개,stay,30.0,35.20252,127.63461,,0,LODGING_EXCLUDED,False,False,True
+rs470,강릉,망상비치호텔,stay,30.0,37.60647,129.06895,,0,LODGING_EXCLUDED,False,False,True
+rs471,통영,데이지호텔,stay,30.0,34.8857,128.42141,,0,LODGING_EXCLUDED,False,False,True
+rs472,통영,통영 한산마리나호텔&리조트,stay,30.0,34.80486,128.43458,,0,LODGING_EXCLUDED,False,False,True
+rs473,울릉,섬바디관광호텔,stay,30.0,37.48415,130.9053,,0,LODGING_EXCLUDED,False,False,True
+rs474,인천,제이앤파크호텔,stay,30.0,37.44501,126.3793,,0,LODGING_EXCLUDED,False,False,True
+rs475,태안,리틀베이 풀빌라,stay,30.0,36.64298,126.30165,,0,LODGING_EXCLUDED,False,False,True
+rs476,포천,유식물원캠핑장,stay,30.0,37.97403,127.15023,,0,LODGING_EXCLUDED,False,False,True
+rs477,구미,스테이더공단호텔,stay,30.0,36.10998,128.37715,,0,LODGING_EXCLUDED,False,False,True
+rs478,평창,휘닉스파크,stay,30.0,37.58135,128.32741,,0,LODGING_EXCLUDED,False,False,True
+rs479,제주,팜파스호텔 제주,stay,30.0,33.51156,126.48499,,0,LODGING_EXCLUDED,False,False,True
+rs480,서산,서라온,stay,30.0,36.78535,126.5315,,0,LODGING_EXCLUDED,False,False,True
+rs481,서울,머큐어 앰배서더 서울 홍대,stay,30.0,37.55519,126.92247,,0,LODGING_EXCLUDED,False,False,True
+rs482,제천,닷돈재4색야영장,stay,30.0,36.84317,128.09379,,0,LODGING_EXCLUDED,False,False,True
+rs483,경주,경주화랑마을 오토캠핑장,stay,30.0,35.85883,129.18223,,0,LODGING_EXCLUDED,False,False,True
+rs484,경주,황남관,stay,30.0,35.8336,129.2097,,0,LODGING_EXCLUDED,False,False,True
+rs485,경주,신라부티크호텔,stay,30.0,35.84207,129.20199,,0,LODGING_EXCLUDED,False,False,True
+rs486,경주,덴바스타호텔 헤리티지 경주점,stay,30.0,35.83904,129.20409,,0,LODGING_EXCLUDED,False,False,True
+rs487,거제,흑진주마리나리조트,stay,30.0,34.77765,128.65325,,0,LODGING_EXCLUDED,False,False,True
+rs488,거제,까사델문도,stay,30.0,34.81358,128.67915,,0,LODGING_EXCLUDED,False,False,True
+rs489,거제,브라운도트 거제근 포항점,stay,30.0,34.71535,128.59063,,0,LODGING_EXCLUDED,False,False,True
+rs490,거제,포시즌펜션,stay,30.0,34.97999,128.69402,,0,LODGING_EXCLUDED,False,False,True
+rs491,청주,천경대키즈풀빌라,stay,30.0,36.6141,127.70115,,0,LODGING_EXCLUDED,False,False,True
+rs492,거제,거제로펜션,stay,30.0,34.77795,128.64174,,0,LODGING_EXCLUDED,False,False,True
+rs493,삼척,덕풍계곡 제2야영장,stay,30.0,37.1039,129.17833,,0,LODGING_EXCLUDED,False,False,True
+rs494,통영,물개스테이,stay,30.0,34.76894,128.42149,,0,LODGING_EXCLUDED,False,False,True
+rs495,통영,바다52스파펜션,stay,30.0,34.83511,128.39205,,0,LODGING_EXCLUDED,False,False,True
+rs496,여수,호텔더엘,stay,30.0,34.73788,127.7388,,0,LODGING_EXCLUDED,False,False,True
+rs497,여수,여수 디아크리조트,stay,30.0,34.70177,127.75755,,0,LODGING_EXCLUDED,False,False,True
+rs498,안동,리첼호텔,stay,30.0,36.5683,128.78228,,0,LODGING_EXCLUDED,False,False,True
+rs499,안동,전통리조트 구름에,stay,30.0,36.57337,128.76881,,0,LODGING_EXCLUDED,False,False,True
+rs500,진주,브라운도트호텔,stay,30.0,35.17856,128.14029,,0,LODGING_EXCLUDED,False,False,True
+rs501,남해,슬로우남해,stay,30.0,34.83946,127.98205,,0,LODGING_EXCLUDED,False,False,True
+rs502,영주,풍기관광호텔,stay,30.0,36.86978,128.5248,,0,LODGING_EXCLUDED,False,False,True
+rs503,목포,호텔야자 목포평화광장점,stay,30.0,34.80054,126.43026,,0,LODGING_EXCLUDED,False,False,True
+rs504,울릉,가고싶다펜션,stay,30.0,37.49142,130.90929,,0,LODGING_EXCLUDED,False,False,True
+rs505,울릉,학포다이브리조트,stay,30.0,37.50143,130.80782,,0,LODGING_EXCLUDED,False,False,True
+rs506,합천,마노아워터캠핑장,stay,30.0,35.6426,128.05778,,0,LODGING_EXCLUDED,False,False,True
+rs507,남해,여여담,stay,30.0,34.88408,127.90997,,0,LODGING_EXCLUDED,False,False,True
+rs508,남해,상주은모래비치 오토캠핑장,stay,30.0,34.71992,127.98536,,0,LODGING_EXCLUDED,False,False,True
+rs509,울산,삼성산장,stay,30.0,35.55955,129.06776,,0,LODGING_EXCLUDED,False,False,True
+rs510,울산,온더웨이브호텔,stay,30.0,35.3561,129.35036,,0,LODGING_EXCLUDED,False,False,True
+rs511,창원,CNN호텔,stay,30.0,35.22347,128.68312,,0,LODGING_EXCLUDED,False,False,True
+rs512,태안,무이림,stay,30.0,36.75743,126.17055,,0,LODGING_EXCLUDED,False,False,True
+rs513,태안,나문재카페,stay,30.0,36.5866,126.37431,,0,LODGING_EXCLUDED,False,False,True
+rs514,창원,호텔에비뉴,stay,30.0,35.23012,128.68152,,0,LODGING_EXCLUDED,False,False,True
+rs515,가평,호텔하우스,stay,30.0,37.69797,127.48978,,0,LODGING_EXCLUDED,False,False,True
+rs516,상주,객주촌한옥펜션,stay,30.0,36.44342,128.26555,,0,LODGING_EXCLUDED,False,False,True
+rs517,김해,덴바스타 테마 키즈호텔,stay,30.0,35.27536,128.88914,,0,LODGING_EXCLUDED,False,False,True
+rs518,김해,잠101호텔,stay,30.0,35.17056,128.82324,,0,LODGING_EXCLUDED,False,False,True
+rs519,익산,한옥펜션 수수헌,stay,30.0,35.99236,127.05024,,0,LODGING_EXCLUDED,False,False,True
+rs520,전주,전주관광호텔,stay,30.0,35.82042,127.14541,,0,LODGING_EXCLUDED,False,False,True
+rs521,울진,불영계곡캠핑장,stay,30.0,36.96603,129.32047,,0,LODGING_EXCLUDED,False,False,True
+rs522,고창,선운산유스호스텔,stay,30.0,35.50348,126.58311,,0,LODGING_EXCLUDED,False,False,True
+rs523,고양,밀레니엄호텔,stay,30.0,37.67497,126.74834,,0,LODGING_EXCLUDED,False,False,True
+rs524,고양,호텔 클라움,stay,30.0,37.67509,126.74799,,0,LODGING_EXCLUDED,False,False,True
+rs525,고양,글로스터호텔 킨텍스,stay,30.0,37.66842,126.74807,,0,LODGING_EXCLUDED,False,False,True
+rs526,담양,퀸즈캐슬,stay,30.0,35.19191,126.99417,,0,LODGING_EXCLUDED,False,False,True
+rs527,인제,아침뜨락황토마을,stay,30.0,37.95519,128.34152,,0,LODGING_EXCLUDED,False,False,True
+rs528,양양,브리드호텔 양양,stay,30.0,37.97094,128.76209,,0,LODGING_EXCLUDED,False,False,True
+rs529,청송,송소고택펜션,stay,30.0,36.43621,129.0264,,0,LODGING_EXCLUDED,False,False,True
+rs530,영덕,클라우드나인호텔모텔,stay,30.0,36.35734,129.38668,,0,LODGING_EXCLUDED,False,False,True
+rs531,보령,대천사과나무펜션,stay,30.0,36.31118,126.51629,,0,LODGING_EXCLUDED,False,False,True
+rs532,보령,더반힐글램핑&리조트펜션,stay,30.0,36.42511,126.50392,,0,LODGING_EXCLUDED,False,False,True
+rs533,영덕,영덕프라다호텔,stay,30.0,36.34328,129.38176,,0,LODGING_EXCLUDED,False,False,True
+rs534,영덕,영덕바다펜션,stay,30.0,36.32999,129.37917,,0,LODGING_EXCLUDED,False,False,True
+rs535,부산,브라운도트호텔 다대포해수욕장점,stay,30.0,35.0574,128.97273,,0,LODGING_EXCLUDED,False,False,True
+rs536,부산,에이치에비뉴 정관점,stay,30.0,35.31617,129.18322,,0,LODGING_EXCLUDED,False,False,True
+rs537,고양,호텔더윈,stay,30.0,37.64766,126.87513,,0,LODGING_EXCLUDED,False,False,True
+rs538,부산,더블유레지던스호텔,stay,30.0,35.16761,129.13284,,0,LODGING_EXCLUDED,False,False,True
+rs539,거창,덕유공방펜션,stay,30.0,35.74538,127.82456,,0,LODGING_EXCLUDED,False,False,True
+rs540,부산,베니키아 프리미어 호텔 해운대,stay,30.0,35.16224,129.16481,,0,LODGING_EXCLUDED,False,False,True
+rs541,거창,패밀리관광호텔,stay,30.0,35.69893,128.02547,,0,LODGING_EXCLUDED,False,False,True
+rs542,거창,거창국민여가캠핑장 미리내숲,stay,30.0,35.7612,127.724,,0,LODGING_EXCLUDED,False,False,True
+rs543,부산,광수호텔,stay,30.0,35.16027,129.15653,,0,LODGING_EXCLUDED,False,False,True
+rs544,제주,까사로마호텔,stay,30.0,33.24681,126.55811,,0,LODGING_EXCLUDED,False,False,True
+rs545,제주,제주노블레스관광호텔,stay,30.0,33.50117,126.50345,,0,LODGING_EXCLUDED,False,False,True
+rs546,제주,제주항공우주호텔,stay,30.0,33.30253,126.29471,,0,LODGING_EXCLUDED,False,False,True
+rs547,제주,일성제주비치콘도&리조트,stay,30.0,33.38568,126.22129,,0,LODGING_EXCLUDED,False,False,True
+rs548,제주,소노벨제주 신관,stay,30.0,33.54052,126.67082,,0,LODGING_EXCLUDED,False,False,True
+rs549,제주,제주해군호텔,stay,30.0,33.45899,126.44865,,0,LODGING_EXCLUDED,False,False,True
+rs550,제주,머큐어 앰배서더 제주,stay,30.0,33.2937,126.3487,,0,LODGING_EXCLUDED,False,False,True
+rs551,영월,느티나무캠핑장,stay,30.0,37.10401,128.67849,,0,LODGING_EXCLUDED,False,False,True
+rs552,영월,영월키즈캠핑장,stay,30.0,37.36411,128.2734,,0,LODGING_EXCLUDED,False,False,True
+rs553,제주,천지연크리스탈호텔,stay,30.0,33.24232,126.56206,,0,LODGING_EXCLUDED,False,False,True
+rs554,홍성,브라운도트호텔 홍성내포점,stay,30.0,36.59897,126.66365,,0,LODGING_EXCLUDED,False,False,True
+rs555,제천,하운드호텔,stay,30.0,37.13137,128.20681,,0,LODGING_EXCLUDED,False,False,True
+rs556,보성,보성여관,stay,30.0,34.84394,127.34342,,0,LODGING_EXCLUDED,False,False,True
+rs557,서울,글래드 강남 코엑스센터,stay,30.0,37.50882,127.06454,,0,LODGING_EXCLUDED,False,False,True
+rs558,서울,크라운호텔,stay,30.0,37.57406,126.98819,,0,LODGING_EXCLUDED,False,False,True
+rs559,서울,노을공원 노을캠핑장,stay,30.0,37.5734,126.87367,,0,LODGING_EXCLUDED,False,False,True
+rs560,부산,호텔이목,stay,30.0,35.20458,129.08328,,0,LODGING_EXCLUDED,False,False,True
+rs561,서울,홀리데이 인 익스프레스 서울 홍대,stay,30.0,37.55756,126.92673,,0,LODGING_EXCLUDED,False,False,True
+rs562,삼척,코아페바다,stay,30.0,37.29065,129.30078,,0,LODGING_EXCLUDED,False,False,True
+rs563,양주,장흥수목원펜션,stay,30.0,37.74439,126.94923,,0,LODGING_EXCLUDED,False,False,True
+rs564,하동,3층사진관펜션,stay,30.0,35.22233,127.64225,,0,LODGING_EXCLUDED,False,False,True
+na5,정선,하이원 리조트 (동물농장 / 알파인코스터),stay,180.0,37.2053,128.8402,,0,LODGING_EXCLUDED,False,False,True
+na11,동해,동해망상해변한옥촌,stay,180.0,37.5927,129.0908,,0,LODGING_EXCLUDED,False,False,True
+nax1417,춘천,박사마을 어린이 글램핑장,stay,180.0,37.9012,127.6618,,0,LODGING_EXCLUDED,False,False,True

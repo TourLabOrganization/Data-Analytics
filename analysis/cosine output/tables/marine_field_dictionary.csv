@@ -1,0 +1,11 @@
+﻿field,formula_or_source,unit,interpretation
+period_mean_index,100 × 해당 월 평균 / 관측 기간 월평균의 평균,지수,반복 계절성·미래값 아님
+relative_to_noncoastal_index,100 × 해당 집계군 월평균 / 같은 월 비연안 평균,지수,지역 총량이나 1인당 소비 아님
+standard_yoy_pct,100 × (현재−전년) / 전년,%,전년 값 0이면 결측
+current_denominator_pct,100 × (현재−전년) / 현재,%,원본 비율의 분모 검증용
+marine_admin_name,출처 주소에서 찾은 시군구+읍면동 후보,이름,행정 경계 확인 전 잠정
+marine_area_visitors,히트맵 원본 읍면동 방문 추정값,방문 추정값,장소 자체 방문자 수 아님
+search_count,검색순위 CSV의 검색 건수,검색 건수,방문자 수·미등재 0점으로 해석하지 않음
+best_listed_source_rank,연결된 검색 목록 경유지 중 원본 순위 최솟값,순위,코스 인기 순위가 아니며 미연결은 결측
+marine_recommendation_bonus,0,점,검증 전 개인 적합도에 미반영
+marine_stay_multiplier,1,배,체류시간 관측값 없음

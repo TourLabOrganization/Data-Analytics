@@ -1,0 +1,4 @@
+﻿marine_class,source_rows,valid_visitor_rows,missing_visitor_rows,median_visitors,mean_visitors,p75_visitors
+비연안,3071,3070,1,1859592.0,3053604.609446254,3661571.0
+연안 도시,211,211,0,2857522.0,4322863.4549763035,5072645.0
+연안 어촌,282,282,0,1335845.0,2157442.9078014186,2638585.25

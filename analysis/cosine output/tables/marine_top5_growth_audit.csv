@@ -1,0 +1,6 @@
+﻿source_rank,admin_name,current_visitors,previous_visitors,source_ratio_pct,province,municipality,township,standard_yoy_pct,current_denominator_pct,source_matches_current_denominator,source_matches_previous_denominator,source_minus_standard_pp,marine_class,class_evidence,selection_bias
+1,부산광역시 강서구 신호동,1136156.0,672003.0,40.85,부산광역시,강서구,신호동,69.07007855619692,40.852928647122404,True,False,-28.220078556196917,연안 도시,matched_heatmap_source_label,top5_only_not_a_national_training_sample
+2,인천광역시 옹진군 북도면,902261.0,547144.0,39.36,인천광역시,옹진군,북도면,64.90375477022504,39.35856697784787,True,False,-25.543754770225036,연안 어촌,matched_heatmap_source_label,top5_only_not_a_national_training_sample
+3,경기도 평택시 현덕면,4966850.0,3202720.0,35.52,경기도,평택시,현덕면,55.082242593795286,35.51808490290627,True,False,-19.562242593795283,연안 어촌,matched_heatmap_source_label,top5_only_not_a_national_training_sample
+4,강원특별자치도 속초시 동명동,3625202.0,2446311.0,32.52,강원특별자치도,속초시,동명동,48.19056121646022,32.51931892346964,True,False,-15.670561216460214,연안 도시,matched_heatmap_source_label,top5_only_not_a_national_training_sample
+5,제주특별자치도 서귀포시 송산동,2827723.0,1968235.0,30.4,제주특별자치도,서귀포시,송산동,43.66795631619191,30.39505637574826,True,False,-13.267956316191913,연안 도시,matched_heatmap_source_label,top5_only_not_a_national_training_sample

@@ -1,0 +1,54 @@
+﻿search_id,place_id,search_match_status,source_rank,source_name,source_address,source_category,search_count,name_key,scope,period_status,is_visit_count,source_province,source_municipality,road_address_detail_present,region,name,category,cluster_eligible,address_source,search_identity_verified
+MSR0003,nax141,NAME_REGION_CANDIDATE,3,속초관광수산시장,강원 속초시 중앙로147번길 16-0,시장,670006,속초관광수산시장,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,속초시,True,속초,속초관광수산시장,food,True,속초시 중앙로147번길 16 구글 지오코딩,False
+MSR0006,bcx61,NAME_REGION_CANDIDATE,6,신세계백화점센텀시티점,부산 해운대구 센텀남대로 35-0,백화점,617731,신세계백화점센텀시티점,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,해운대구,True,부산,신세계백화점 센텀시티점,food,True,해운대구 센텀남대로 35 구글 지오코딩,False
+MSR0009,rs14,NAME_REGION_CANDIDATE,9,인스파이어엔터테인먼트리조트,인천 영종구 공항문화로 127-0,콘도미니엄,435699,인스파이어엔터테인먼트리조트,연안 전체 선택 검색순위,not_encoded_in_csv,False,인천광역시,영종구,True,인천,인스파이어 엔터테인먼트 리조트,stay,False,인천 영종구 공항문화로 127 · 한국관광공사 연관 관광지(숙박) · 카카오 좌표,False
+MSR0012,ro929,NAME_REGION_CANDIDATE,12,오이도빨강등대,경기 시흥시 오이도로 170-0,랜드마크관광,278580,오이도빨강등대,연안 전체 선택 검색순위,not_encoded_in_csv,False,경기도,시흥시,True,시흥,오이도 빨강등대,activity,True,경기 시흥시 오이도로 170 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0013,nax649,NAME_REGION_CANDIDATE,13,대천해수욕장,충남 보령시,자연경관(하천/해양),275989,대천해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,충청남도,보령시,False,보령,대천해수욕장,sea,True,보령시 신흑동 구글 지오코딩,False
+MSR0015,ro154,NAME_REGION_CANDIDATE,15,인천종합어시장,인천 제물포구 연안부두로33번길 37-0,시장,254653,인천종합어시장,연안 전체 선택 검색순위,not_encoded_in_csv,False,인천광역시,제물포구,True,인천,인천종합어시장,food,True,인천 제물포구 연안부두로33번길 37 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0016,nax621,NAME_REGION_CANDIDATE,16,낙산사,강원 양양군 낙산사로 100-0,종교성지,246116,낙산사,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,양양군,True,양양,낙산사,herit,True,양양군 강현면 낙산사로 100 구글 지오코딩,False
+MSR0019,ro4,NAME_REGION_CANDIDATE,19,광안리해수욕장,부산 수영구 광안해변로 219-0,자연경관(하천/해양),225174,광안리해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,수영구,True,부산,광안리해수욕장,sea,True,부산 수영구 광안해변로 219 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0022,bc3,NAME_REGION_CANDIDATE,22,해운대해수욕장,부산 해운대구 해운대해변로 264-0,자연경관(하천/해양),206656,해운대해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,해운대구,True,부산,해운대해수욕장,heal,True,해운대구 우동 해운대해변로 주소 기반 좌표,False
+MSR0023,nax117,NAME_REGION_CANDIDATE,23,경포해변,강원 강릉시,자연경관(하천/해양),197179,경포해변,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,강릉시,False,강릉,경포해변,sea,True,강릉시 경포로 구글 지오코딩,False
+MSR0025,bcx22,NAME_REGION_CANDIDATE,25,해동용궁사,부산 기장군 용궁길 86-0,종교성지,191195,해동용궁사,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,기장군,True,부산,해동용궁사,herit,True,기장군 기장읍 용궁길 86 주소 기반 좌표,False
+MSR0027,bcx27,NAME_REGION_CANDIDATE,27,송정해수욕장,부산 해운대구 송정해변로 62-0,자연경관(하천/해양),189557,송정해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,해운대구,True,부산,송정해수욕장,heal,True,해운대구 송정해변로 주소 기반 좌표,False
+MSR0029,ro314,NAME_REGION_CANDIDATE,29,소래포구종합어시장,인천 남동구 소래역로 12-0,시장,186062,소래포구종합어시장,연안 전체 선택 검색순위,not_encoded_in_csv,False,인천광역시,남동구,True,인천,소래포구종합어시장,food,True,인천 남동구 소래역로 12 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0030,ro553,NAME_REGION_CANDIDATE,30,송도컨벤시아,인천 연수구 센트럴로 123-0,전시시설,183547,송도컨벤시아,연안 전체 선택 검색순위,not_encoded_in_csv,False,인천광역시,연수구,True,인천,송도컨벤시아,herit,True,인천 연수구 센트럴로 123 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0031,rs1,NAME_REGION_CANDIDATE,31,쏠비치삼척,강원 삼척시 수로부인길 453-0,콘도미니엄,180658,쏠비치삼척,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,삼척시,True,삼척,쏠비치 삼척,stay,False,강원특별자치도 삼척시 수로부인길 453 · 한국관광공사 연관 관광지(숙박) · 카카오 좌표,False
+MSR0032,ro12,NAME_REGION_CANDIDATE,32,강화풍물시장,인천 강화군 중앙로 17-9,시장,175437,강화풍물시장,연안 전체 선택 검색순위,not_encoded_in_csv,False,인천광역시,강화군,True,인천,강화풍물시장,food,True,인천 강화군 강화읍 중앙로 17-9 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0033,nax169,NAME_REGION_CANDIDATE,33,소래포구,인천 남동구 포구로 2-9,자연경관(하천/해양),173105,소래포구,연안 전체 선택 검색순위,not_encoded_in_csv,False,인천광역시,남동구,True,인천,소래포구,food,True,남동구 장도로 86-17 구글 지오코딩,False
+MSR0035,ro2,NAME_REGION_CANDIDATE,35,통영중앙전통시장,경남 통영시 중앙시장1길 14-16,시장,156875,통영중앙전통시장,연안 전체 선택 검색순위,not_encoded_in_csv,False,경상남도,통영시,True,통영,통영중앙전통시장,food,True,경남 통영시 중앙동 38-5 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0037,nax123,NAME_REGION_CANDIDATE,37,주문진항,강원 강릉시 해안로 1758-14,자연경관(하천/해양),146975,주문진항,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,강릉시,True,강릉,주문진항,food,True,주문진읍 주문진항 구글 지오코딩,False
+MSR0039,ro1,NAME_REGION_CANDIDATE,39,주문진수산시장,강원 강릉시 시장길 38-0,시장,144416,주문진수산시장,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,강릉시,True,강릉,주문진수산시장,food,True,강원특별자치도 강릉시 주문진읍 시장길 38 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0043,ro5,NAME_REGION_CANDIDATE,43,안목해변,강원 강릉시 창해로14번길 20-1,자연경관(하천/해양),138120,안목해변,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,강릉시,True,강릉,안목해변,sea,True,강원특별자치도 강릉시 창해로14번길 51-26 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0047,ctt219,NAME_REGION_CANDIDATE,47,방아머리해변,경기 안산시 단원구,자연경관(하천/해양),132747,방아머리해변,연안 전체 선택 검색순위,not_encoded_in_csv,False,경기도,안산시 단원구,False,안산,방아머리해변,sea,True,경기 안산시 단원구 대부북동 · 전국시티투어 경유지 · 카카오 좌표,False
+MSR0049,bcx56,NAME_REGION_CANDIDATE,49,스타필드시티명지,부산 강서구 명지국제6로 168-0,쇼핑몰,130857,스타필드시티명지,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,강서구,True,부산,스타필드 시티 명지,food,True,강서구 명지국제6로 168 구글 지오코딩,False
+MSR0050,nax681,NAME_REGION_CANDIDATE,50,강구항,경북 영덕군,자연경관(하천/해양),129023,강구항,연안 전체 선택 검색순위,not_encoded_in_csv,False,경상북도,영덕군,False,영덕,강구항,food,True,영덕군 강구면 강구리 구글 지오코딩,False
+MSR0052,rs7,NAME_REGION_CANDIDATE,52,쏠비치양양,강원 양양군 선사유적로 678-0,콘도미니엄,127345,쏠비치양양,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,양양군,True,양양,쏠비치 양양,stay,False,강원특별자치도 양양군 손양면 선사유적로 678 · 한국관광공사 연관 관광지(숙박) · 카카오 좌표,False
+MSR0056,nax763,NAME_REGION_CANDIDATE,56,다대포해수욕장,부산 사하구 몰운대1길 14-0,자연경관(하천/해양),122831,다대포해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,사하구,True,부산,다대포해수욕장,sea,True,사하구 몰운대1길 14 구글 지오코딩,False
+MSR0057,ro7,NAME_REGION_CANDIDATE,57,낙산해수욕장,강원 양양군 해맞이길 59-0,자연경관(하천/해양),121062,낙산해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,양양군,True,양양,낙산해수욕장,sea,True,강원특별자치도 양양군 강현면 전진리 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0058,nax225,NAME_REGION_CANDIDATE,58,영일대해수욕장,경북 포항시 북구,자연경관(하천/해양),120071,영일대해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,경상북도,포항시 북구,False,포항,영일대해수욕장,sea,True,포항시 북구 두호동 구글 지오코딩,False
+MSR0060,rs4,NAME_REGION_CANDIDATE,60,한화리조트설악쏘라노,강원 속초시 미시령로2983번길 111-0,콘도미니엄,118632,한화리조트설악쏘라노,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,속초시,True,속초,한화리조트 설악 쏘라노,stay,False,강원특별자치도 속초시 미시령로2983번길 111 · 한국관광공사 연관 관광지(숙박) · 카카오 좌표,False
+MSR0061,ctu32,NAME_REGION_CANDIDATE,61,삼길포항,충남 서산시,자연경관(하천/해양),115715,삼길포항,연안 전체 선택 검색순위,not_encoded_in_csv,False,충청남도,서산시,False,서산,삼길포항,sea,True,충남 서산시 대산읍 화곡리 1891 · 전국시티투어 경유지 · 카카오 좌표,False
+MSR0063,nax10,NAME_REGION_CANDIDATE,63,묵호항,강원 동해시,자연경관(하천/해양),115274,묵호항,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,동해시,False,동해,묵호항,sea,True,동해시 관광 안내 · 묵호진동 묵호항 지오코딩 확인,False
+MSR0064,ro72,NAME_REGION_CANDIDATE,64,기장시장,부산 기장군 읍내로104번길 16-0,시장,113441,기장시장,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,기장군,True,부산,기장시장,food,True,부산 기장군 기장읍 읍내로104번길 16 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0065,jd1,NAME_REGION_CANDIDATE,65,성산일출봉,제주 서귀포시 일출로 284-12,자연경관(산),112992,성산일출봉,연안 전체 선택 검색순위,not_encoded_in_csv,False,제주특별자치도,서귀포시,True,제주,성산일출봉,herit,True,서귀포시 성산읍 일출로 284-12 주소 기반 좌표,False
+MSR0066,rs19,NAME_REGION_CANDIDATE,66,롯데리조트속초,강원 속초시 대포항길 186-0,콘도미니엄,111778,롯데리조트속초,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,속초시,True,속초,롯데리조트 속초,stay,False,강원특별자치도 속초시 대포항길 186 · 한국관광공사 연관 관광지(숙박) · 카카오 좌표,False
+MSR0067,ro35,NAME_REGION_CANDIDATE,67,전등사,인천 강화군 전등사로 37-41,종교성지,111390,전등사,연안 전체 선택 검색순위,not_encoded_in_csv,False,인천광역시,강화군,True,인천,전등사,herit,True,인천 강화군 길상면 전등사로 37-41 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0068,nax313,NAME_REGION_CANDIDATE,68,꽃지해수욕장,충남 태안군 꽃지해안로 400-0,자연경관(하천/해양),111296,꽃지해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,충청남도,태안군,True,태안,꽃지해수욕장,sea,True,태안군 안면읍 승언리 구글 지오코딩,False
+MSR0069,ctt74,NAME_REGION_CANDIDATE,69,제부도,경기 화성시 만세구,자연경관(하천/해양),110103,제부도,연안 전체 선택 검색순위,not_encoded_in_csv,False,경기도,화성시 만세구,False,화성,제부도,sea,True,경기 화성시 만세구 서신면 제부리 · 전국시티투어 경유지 · 카카오 좌표,False
+MSR0070,bc2,NAME_REGION_CANDIDATE,70,자갈치시장,부산 중구 자갈치해안로 52-0,시장,104893,자갈치시장,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,중구,True,부산,자갈치시장,food,True,중구 자갈치해안로 52 주소 기반 좌표,False
+MSR0071,ro121,NAME_REGION_CANDIDATE,71,하나개해수욕장,인천 영종구,자연경관(하천/해양),104723,하나개해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,인천광역시,영종구,False,인천,하나개해수욕장,sea,True,인천 영종구 무의동 산 189 · 한국관광공사 연관 관광지 · 카카오 좌표,False
+MSR0072,nax912,NAME_REGION_CANDIDATE,72,휴휴암,강원 양양군 광진2길 3-16,종교성지,104494,휴휴암,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,양양군,True,양양,휴휴암,herit,True,양양군 현남면 광진2길 3-16 구글 지오코딩,False
+MSR0073,jd11,NAME_REGION_CANDIDATE,73,함덕해수욕장,제주 제주시 조함해안로 525-0,자연경관(하천/해양),103889,함덕해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,제주특별자치도,제주시,True,제주,함덕해수욕장,heal,True,제주시 조천읍 조함해안로 519 주소 기반 좌표,False
+MSR0076,nax147,NAME_REGION_CANDIDATE,76,대포항,강원 속초시,자연경관(하천/해양),102177,대포항,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,속초시,False,속초,대포항,food,True,속초시 대포동 421-6 구글 지오코딩,False
+MSR0077,rs6,NAME_REGION_CANDIDATE,77,체스터톤스속초,강원 속초시 엑스포로 109-0,호텔,101287,체스터톤스속초,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,속초시,True,속초,체스터톤스속초,stay,False,강원특별자치도 속초시 엑스포로 109 · 한국관광공사 연관 관광지(숙박) · 카카오 좌표,False
+MSR0081,nax253,NAME_REGION_CANDIDATE,81,보리암,경남 남해군 보리암로 665-0,종교성지,95375,보리암,연안 전체 선택 검색순위,not_encoded_in_csv,False,경상남도,남해군,True,남해,보리암,herit,True,남해군 상주면 보리암로 665 구글 지오코딩,False
+MSR0084,jd5,NAME_REGION_CANDIDATE,84,협재해수욕장,제주 제주시,자연경관(하천/해양),94576,협재해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,제주특별자치도,제주시,False,제주,협재해수욕장,heal,True,제주시 한림읍 한림로 329-10 주소 기반 좌표,False
+MSR0085,nax285,NAME_REGION_CANDIDATE,85,선유도해수욕장,전북 군산시 선유도1길 235-0,자연경관(하천/해양),94245,선유도해수욕장,연안 전체 선택 검색순위,not_encoded_in_csv,False,전북특별자치도,군산시,True,군산,선유도해수욕장,sea,True,군산시 옥도면 선유도리 구글 지오코딩,False
+MSR0086,nax908,NAME_REGION_CANDIDATE,86,남당항,충남 홍성군 남당항로213번길 1-0,자연경관(하천/해양),93996,남당항,연안 전체 선택 검색순위,not_encoded_in_csv,False,충청남도,홍성군,True,홍성,남당항,food,True,홍성군 서부면 남당항로 구글 지오코딩,False
+MSR0087,gz2,NAME_REGION_CANDIDATE,87,매미성,경남 거제시 복항길 29-0,역사유적지,93656,매미성,연안 전체 선택 검색순위,not_encoded_in_csv,False,경상남도,거제시,True,거제,매미성,sea,True,한국관광공사 좌표,False
+MSR0089,rs2,NAME_REGION_CANDIDATE,89,소노캄델피노,강원 고성군 미시령옛길 1153-0,콘도미니엄,91567,소노캄델피노,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,고성군,True,고성(강원),소노캄 델피노,stay,False,강원특별자치도 고성군 토성면 미시령옛길 1153 · 한국관광공사 연관 관광지(숙박) · 카카오 좌표,False
+MSR0092,nax914,NAME_REGION_CANDIDATE,92,고성통일전망대,강원 고성군 금강산로 481-0,랜드마크관광,90944,고성통일전망대,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,고성군,True,고성(강원),고성 통일전망대,herit,True,고성군 현내면 통일전망대로 481 구글 지오코딩,False
+MSR0094,rs10,NAME_REGION_CANDIDATE,94,속초아이파크스위트호텔앤리조트,강원 속초시 중앙로 266-0,호텔,90483,속초아이파크스위트호텔앤리조트,연안 전체 선택 검색순위,not_encoded_in_csv,False,강원특별자치도,속초시,True,속초,속초 아이파크스위트 호텔앤리조트,stay,False,강원특별자치도 속초시 중앙로 266 · 한국관광공사 연관 관광지(숙박) · 카카오 좌표,False
+MSR0095,gz4,NAME_REGION_CANDIDATE,95,바람의언덕,경남 거제시,기타문화관광지,89983,바람의언덕,연안 전체 선택 검색순위,not_encoded_in_csv,False,경상남도,거제시,False,거제,바람의 언덕,sea,True,한국관광공사 좌표,False
+MSR0100,bc12,NAME_REGION_CANDIDATE,100,태종대,부산 영도구 전망로 24-0,역사유적지,83080,태종대,연안 전체 선택 검색순위,not_encoded_in_csv,False,부산광역시,영도구,True,부산,태종대,heal,True,영도구 전망로 24 주소 기반 좌표,False
