@@ -1,0 +1,421 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tour Navigator integrated session",
+  "type": "object",
+  "required": [
+    "answers"
+  ],
+  "properties": {
+    "answers": {
+      "type": "object",
+      "properties": {
+        "0": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        },
+        "1": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        },
+        "2": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "3": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "uniqueItems": true,
+          "maxItems": 2
+        },
+        "4": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "5": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "6": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "7": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "8": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "9": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "10": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "11": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "12": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "13": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "uniqueItems": true,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "0",
+        "1",
+        "2",
+        "5"
+      ],
+      "additionalProperties": false
+    },
+    "browserLanguage": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string"
+    },
+    "demographics": {
+      "type": "object",
+      "properties": {
+        "sex": {
+          "enum": [
+            "male",
+            "female",
+            "unspecified",
+            null
+          ]
+        },
+        "enabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "cosineSurvey": {
+      "type": "object",
+      "required": [
+        "respondent_id",
+        "q_herit",
+        "q_heal",
+        "q_activity",
+        "q_food",
+        "q_sea"
+      ],
+      "properties": {
+        "respondent_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "desired_region": {
+          "type": "string"
+        },
+        "data_status": {
+          "type": "string"
+        },
+        "q_herit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "q_heal": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "q_activity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "q_food": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "q_sea": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    },
+    "hallyu": {
+      "type": "object",
+      "properties": {
+        "residenceArea": {
+          "type": "string"
+        },
+        "age15to19": {
+          "type": "boolean"
+        },
+        "experienced": {
+          "type": "boolean"
+        },
+        "contentPreference": {
+          "type": "object",
+          "properties": {
+            "drama": {
+              "type": "object",
+              "required": [
+                "answered"
+              ],
+              "properties": {
+                "answered": {
+                  "type": "boolean"
+                },
+                "rating": {
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    0.75,
+                    1,
+                    null
+                  ]
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "answered": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "rating"
+                    ],
+                    "properties": {
+                      "rating": {
+                        "enum": [
+                          0,
+                          0.25,
+                          0.5,
+                          0.75,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "else": {
+                    "properties": {
+                      "rating": {
+                        "const": null
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "film": {
+              "type": "object",
+              "required": [
+                "answered"
+              ],
+              "properties": {
+                "answered": {
+                  "type": "boolean"
+                },
+                "rating": {
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    0.75,
+                    1,
+                    null
+                  ]
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "answered": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "rating"
+                    ],
+                    "properties": {
+                      "rating": {
+                        "enum": [
+                          0,
+                          0.25,
+                          0.5,
+                          0.75,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "else": {
+                    "properties": {
+                      "rating": {
+                        "const": null
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "variety": {
+              "type": "object",
+              "required": [
+                "answered"
+              ],
+              "properties": {
+                "answered": {
+                  "type": "boolean"
+                },
+                "rating": {
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    0.75,
+                    1,
+                    null
+                  ]
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "answered": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "rating"
+                    ],
+                    "properties": {
+                      "rating": {
+                        "enum": [
+                          0,
+                          0.25,
+                          0.5,
+                          0.75,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "else": {
+                    "properties": {
+                      "rating": {
+                        "const": null
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "music": {
+              "type": "object",
+              "required": [
+                "answered"
+              ],
+              "properties": {
+                "answered": {
+                  "type": "boolean"
+                },
+                "rating": {
+                  "enum": [
+                    0,
+                    0.25,
+                    0.5,
+                    0.75,
+                    1,
+                    null
+                  ]
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "answered": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "rating"
+                    ],
+                    "properties": {
+                      "rating": {
+                        "enum": [
+                          0,
+                          0.25,
+                          0.5,
+                          0.75,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "else": {
+                    "properties": {
+                      "rating": {
+                        "const": null
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "stayExamples": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "timeline": {
+      "type": "object"
+    }
+  },
+  "$comment": "stayExamples와 timeline의 분 단위 상세 검사 및 교차 필드 검사는 scoring-v2.cjs 런타임 검증을 따른다."
+}
