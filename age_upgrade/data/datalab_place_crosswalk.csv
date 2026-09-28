@@ -1,0 +1,71 @@
+﻿datalab_id,datalab_name,candidate_place_ids,place_id,match_status,match_weight,verified,review_note
+3f73bffa7c6d98063eebe1ecd3305da6,에버랜드,nax288,nax288,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+aa6be6a4f5997ab91804f3b6be58e878,코엑스,ro17,ro17,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+276874ccf43c6c5c48e4cfaf7841a223,킨텍스제2전시장,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+f4cb0345c02d72995cc67111ef093ead,롯데월드잠실점,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+d6e7d2e0ef86a25cce60aac5332b28dc,국립중앙박물관,kdx6,kdx6,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+94b37da181384604e8bdf68b3217008e,여의도한강공원,kdx24,kdx24,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+a7a30e65493f93bc02b9eb6dafc15230,불국사,gjx1,gjx1,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+e871c31f2d8767492bd2063733a23ec3,킨텍스제1전시장,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+38a26a16270ce8f2cf503ba9650b6c94,을왕리해수욕장,nax172,nax172,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+b605a838036e13947e8dd11697cdd276,예술의전당,kdx43,kdx43,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+ede5898c7b76ed7fbd8ec451ec4dbf83,서울대공원,nax704,nax704,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+8cce89feb1f76fc7cb1078812e964a94,낙산사,nax621,nax621,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+b9dc3865498d79141065bc74ea791de7,CGV아이파크몰용산점,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+0d584d8e5e5d47817494c2f73ef30908,월미도,nax167,nax167,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+511bb5c2dc7ee740a2df2fa25c4cd231,전주한옥마을,nax109,nax109,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+817c4a3902258090a27aca081b01743f,속초해변,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+c42f4fdc51ef1e5b896e680979ec3ecc,오이도빨강등대,ro929,ro929,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+b9231d0c3387a56154e033c670363024,대천해수욕장,nax649,nax649,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+6a4932d3f2787d25a04b758ba68e9db2,어린이대공원,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+72c38469b443dcd14b3a2c8a954e11de,통도사,nax401,nax401,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+97c0a1427be208a8ca50e879baa895c4,올림픽공원,kdx30,kdx30,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+3c42855b11fcc918539180683df819a3,한국민속촌,nax287,nax287,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+84642c0e4bdc2f34c4ba1fca7c0937ae,서울랜드,nax705,nax705,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+9aaf6c471f653b9f7f48f1bf52c02fad,국립경주박물관,gjx4,gjx4,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+664bcb8aaae12fcedf6b388e569532d8,벡스코제1전시장,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+8ae23fba3b339ba52d411e548e8dcbbe,송도컨벤시아,ro553,ro553,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+c63b5b337225ae746ba52eb7f398aac1,광안리해수욕장,ro4,ro4,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+d68c2c6af7cf6cb1092154f35a52c1c7,해동용궁사,bcx22,bcx22,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+5deaf67168dab528b8659e4ccbacc3b2,인천대공원,nax181,nax181,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+8d94308013411d55408018a58c07cbb3,화담숲,nax423,nax423,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+eae638a0117eda42a27a586f77cc0cd3,반포한강공원,ro19,ro19,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+b2e840beb2fcb66bb33d988c822656ad,뚝섬한강공원,kd11,kd11,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+bf44234f9b63729e0fe62962a5188523,송정해수욕장,bcx27,,blocked_homonym,0.0,False,부산 울산 등 동명이소 위험 및 원자료 지역 누락
+72dfb0b0526f0b49c2b9190b49887e87,광교호수공원,nax1,nax1,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+1597d21403f63da1bb0539592597a525,경포해변,nax117,nax117,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+48b5bea0295c5fe3512af1398026226d,경주월드,gj5,gj5,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+5e600bdb00a78e59c75e74d05dd3caa0,영일대해수욕장,nax225,nax225,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+c081c885d5b5476d1207c3872ae6985c,화성행궁,nax23,nax23,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+241a42aa4e1d329ae60189e9679e2866,안목해변,ro5,ro5,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+26128ba4320cb4a31dbb4a693a9f4f34,수성못,nax108,nax108,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+70b3b798148b1dfbcd408b556514cc23,삽교호관광지,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+0d39edb44207993a9bb92de2bfb03365,일산호수공원,nax606,nax606,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+8f19cf8b3a92c6b0f45f06a9536c7b6c,동탄호수공원,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+9d58042af96868b01de11722f6a2975f,망원한강공원,ro513,ro513,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+88222e7e5f8172698373086e65c1fad1,해운대해수욕장,bc3,bc3,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+9dac72fa7ebfaa2eca0d9f9e4e8ddcff,팔각정북악스카이,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+ac50c8b01e74f605a64ac86543f58c2a,헌릉과 인릉,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+292387c8ba7110adca0f8ccf867ecaa3,수원컨벤션센터,ro614,ro614,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+1332e6356160a74e4937405aae31a198,국립과천과학관,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+6f86adae03cf1c59fd5964461f603f73,비발디파크 오션월드,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+c9be92f2483770779b3c963fe8946c29,레고랜드코리아리조트,ro411,ro411,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+01dffbc242ba6dd5672bde92ac2b93b4,휘닉스 파크,rs478,rs478,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+6d162daa5d414b4c04f4dfd53017c652,강원랜드카지노,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+fd1c176dd1547450fde2d49fdd201d97,레이크사이드CC,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+48316cd2819d17d5a464e3eb5fdc5b88,베르힐컨트리클럽영종,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+2f22e7b6f8130dd4b52b664af487c401,궁평항,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+6a5c7672f1af7dc1878bc66abadf4726,비에이비스타CC,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+04bdb27729c4b7841aabe7665b964ad2,클럽72CC바다코스,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+975055552ce7abb4c1a82d967434850e,보문사,ro38,,blocked_homonym,0.0,False,동명이소 위험 및 원자료 지역 누락
+da534dc2b8e676a0e00a4e2be6d28f86,리베라CC,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+e1a30f9e7254555ab8502aece514d7f5,서원힐스CC,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+db7c316c379c8e5a2eadef8648aeaa9f,대명포구,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+f7a7a4fbfde355e7e635e8bbb1e07b53,소래포구,nax169,nax169,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+3abbc4295f8f464f3e4527cbd7254c53,주문진항,nax123,nax123,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+98208837d388bedf7689ff65b59cff90,연안부두,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
+864b1d08573642d8a9cf9c5b22556a17,남한산성,nax422,nax422,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+fde3c07733ea24446563afd36ed34d7c,산정호수,nax611,nax611,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+776e7e89353e146a00645ecb2456c971,월정사,ro31,ro31,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+d7e4f4a3f8e8e1fcb0e2a317ba7973f3,물왕호수,ctt197,ctt197,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+61d37e87ec160394e32a41dd674a3b91,국립수목원,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요

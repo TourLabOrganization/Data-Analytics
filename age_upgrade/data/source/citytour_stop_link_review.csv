@@ -1,0 +1,1668 @@
+﻿course_id,stop_sequence,stop_raw,name_candidate,parser_status,candidate_place_ids,match_status,verified_place_id,verified_visit_stop,review_required
+ct_f9bc3d869f139f,1,부산역(출발),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_f9bc3d869f139f,2,광안리해수욕장,광안리해수욕장,ARROW_SPLIT,ro4,NAME_REGION_CANDIDATE,,,1
+ct_f9bc3d869f139f,3,해운대(미포),해운대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_f9bc3d869f139f,4,용궁사(국립수산과학원),용궁사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_f9bc3d869f139f,5,대변항,대변항,ARROW_SPLIT,ctu1,NAME_REGION_CANDIDATE,,,1
+ct_f9bc3d869f139f,6,임랑해수욕장,임랑해수욕장,ARROW_SPLIT,nax764,NAME_REGION_CANDIDATE,,,1
+ct_f9bc3d869f139f,7,부산역(도착),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd075eab972564,1,부산역(출발),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd075eab972564,2,감천문화마을,감천문화마을,ARROW_SPLIT,bc1,NAME_REGION_CANDIDATE,,,1
+ct_bd075eab972564,3,국회부산도서관,국회부산도서관,ARROW_SPLIT,ctu2,NAME_REGION_CANDIDATE,,,1
+ct_bd075eab972564,4,중식(행복마을),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd075eab972564,5,낙동강에코센터,낙동강에코센터,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd075eab972564,6,낙동강생태탐방선(11~3월은 근현대역사관 대체),낙동강생태탐방선,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd075eab972564,7,부산현대미술관,부산현대미술관,ARROW_SPLIT,bcx8,NAME_REGION_CANDIDATE,,,1
+ct_bd075eab972564,8,부산역(도착),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_42e1f0d4ac4545,1,부산역(출발),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_42e1f0d4ac4545,2,광안리해수욕장(포토타임10분),광안리해수욕장,ARROW_SPLIT,ro4,NAME_REGION_CANDIDATE,,,1
+ct_42e1f0d4ac4545,3,송도구름산책로(포토타임10분),송도구름산책로,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_42e1f0d4ac4545,4,부산역(도착),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b91630fbc219c9,1,부산역(출발),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b91630fbc219c9,2,송도구름산책로,송도구름산책로,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b91630fbc219c9,3,암남공원(용궁구름다리),암남공원,ARROW_SPLIT,ctt3,NAME_REGION_CANDIDATE,,,1
+ct_b91630fbc219c9,4,감천문화마을(감천사거리),감천문화마을,ARROW_SPLIT,bc1,NAME_REGION_CANDIDATE,,,1
+ct_b91630fbc219c9,5,다대포해수욕장(몰운대),다대포해수욕장,ARROW_SPLIT,nax763,NAME_REGION_CANDIDATE,,,1
+ct_b91630fbc219c9,6,아미산전망대,아미산전망대,ARROW_SPLIT,bcx11,NAME_REGION_CANDIDATE,,,1
+ct_b91630fbc219c9,7,부네치아(장림포구),부네치아,ARROW_SPLIT,bcx47,NAME_REGION_CANDIDATE,,,1
+ct_b91630fbc219c9,8,부산현대미술관(을숙도),부산현대미술관,ARROW_SPLIT,bcx8,NAME_REGION_CANDIDATE,,,1
+ct_b91630fbc219c9,9,낙동강하구에코센터,낙동강하구에코센터,ARROW_SPLIT,ctt1,NAME_REGION_CANDIDATE,,,1
+ct_b91630fbc219c9,10,석당박물관(부산임시수도청사),석당박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b91630fbc219c9,11,국제시장(보수동책방골목),국제시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b91630fbc219c9,12,용두산공원(부산근대역사박물관),용두산공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b91630fbc219c9,13,부산역(도착),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d48bf18eb34313,1,부산역(출발),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d48bf18eb34313,2,영도대교(유라리광장),영도대교,ARROW_SPLIT,bc7,NAME_REGION_CANDIDATE,,,1
+ct_d48bf18eb34313,3,흰여울 문화마을,흰여울 문화마을,ARROW_SPLIT,bc6,NAME_REGION_CANDIDATE,,,1
+ct_d48bf18eb34313,4,하늘전망대,하늘전망대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d48bf18eb34313,5,영도해녀촌(노을전망대),영도해녀촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d48bf18eb34313,6,태종대,태종대,ARROW_SPLIT,bc12,NAME_REGION_CANDIDATE,,,1
+ct_d48bf18eb34313,7,국립해양막물관,국립해양막물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d48bf18eb34313,8,오륙도스카이워크,오륙도스카이워크,ARROW_SPLIT,bcx4,NAME_REGION_CANDIDATE,,,1
+ct_d48bf18eb34313,9,용호만유람선터미널,용호만유람선터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d48bf18eb34313,10,평화공원,평화공원,ARROW_SPLIT,ctt6,NAME_REGION_CANDIDATE,,,1
+ct_d48bf18eb34313,11,송도구름산책로,송도구름산책로,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d48bf18eb34313,12,자갈치BIFF광장(용두산공원),자갈치BIFF광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d48bf18eb34313,13,부산역(도착),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_10d6ec28fd1c1f,1,부산역(출발),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_10d6ec28fd1c1f,2,UN기념공원,UN기념공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_10d6ec28fd1c1f,3,부산박물관,부산박물관,ARROW_SPLIT,bcx17,NAME_REGION_CANDIDATE,,,1
+ct_10d6ec28fd1c1f,4,용호만유람선터미널,용호만유람선터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_10d6ec28fd1c1f,5,광안리해수욕장,광안리해수욕장,ARROW_SPLIT,ro4,NAME_REGION_CANDIDATE,,,1
+ct_10d6ec28fd1c1f,6,마린시티(수영만요트경기장),마린시티,ARROW_SPLIT,bcx43,NAME_REGION_CANDIDATE,,,1
+ct_10d6ec28fd1c1f,7,동백섬,동백섬,ARROW_SPLIT,ro177,NAME_REGION_CANDIDATE,,,1
+ct_10d6ec28fd1c1f,8,해운대해수욕장,해운대해수욕장,ARROW_SPLIT,bc3,NAME_REGION_CANDIDATE,,,1
+ct_10d6ec28fd1c1f,9,센텀시티(영화의전당),센텀시티,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_10d6ec28fd1c1f,10,시립미술관벡스코,시립미술관벡스코,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_10d6ec28fd1c1f,11,평화공원,평화공원,ARROW_SPLIT,ctt6,NAME_REGION_CANDIDATE,,,1
+ct_10d6ec28fd1c1f,12,광복로,광복로,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_10d6ec28fd1c1f,13,부산역(도착),부산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0e43f7e07490a3,1,① 제주공항,① 제주공항,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0e43f7e07490a3,2,② 이호목마등대(포토존/10분),② 이호목마등대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0e43f7e07490a3,3,③ 도두봉& 오래물광장(해녀공연/25분),③ 도두봉& 오래물광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0e43f7e07490a3,4,"④ 동문시장&산지천(야시장,분수쇼/40분)",④ 동문시장&산지천,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0e43f7e07490a3,5,⑤ 관덕정(야간개장),⑤ 관덕정,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0e43f7e07490a3,6,제주공항,제주공항,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_483c56fda90c09,1,01 제주항국제여객터미널 02 제주항연안여객터미널 03 김만덕기념관 04 동문시장 05 관덕정(제주목관아) 06 용연구름다리(용두암) 07 제주국제공항 08 용담레포츠공원 09 어영공원(어영마을) 10 도두봉(무지개해안도로) 11 이호목마등대(이호테우해수욕장) 12 제주시민속오일시장 13 연동한일시티파크(롯데시티호텔) 14 월랑마을(베스트웨스턴호텔) 15 한라수목원 16 노형오거리(드림타워) 17 메종글래드호텔(신라면세점) 18 삼무공원(에어시티호텔) 19 제주시버스터미널 20 제주민속자연사박물관 21 사라봉(이화아파트),01 제주항국제여객터미널 02 제주항연안여객터미널 03 김만덕기념관 04 동문시장 05 관덕정 06 용연구름다리 07 제주국제공항 08 용담레포츠공원 09 어영공원 10 도두봉 11 이호목마등대 12 제주시민속오일시장 13 연동한일시티파크 14 월랑마을 15 한라수목원 16 노형오거리 17 메종글래드호텔 18 삼무공원 19 제주시버스터미널 20 제주민속자연사박물관 21 사라봉,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_083c79c7177549,1,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_083c79c7177549,2,김광석다시그리기길,김광석다시그리기길,ARROW_SPLIT,nax103,NAME_REGION_CANDIDATE,,,1
+ct_083c79c7177549,3,앞산전망대(케이블카),앞산전망대,ARROW_SPLIT,nax104,NAME_REGION_CANDIDATE,,,1
+ct_083c79c7177549,4,수성못,수성못,ARROW_SPLIT,nax108,NAME_REGION_CANDIDATE,,,1
+ct_083c79c7177549,5,서문시장(야시장),서문시장,ARROW_SPLIT,nax101,NAME_REGION_CANDIDATE,,,1
+ct_083c79c7177549,6,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b5834cf42abb98,1,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b5834cf42abb98,2,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b5834cf42abb98,3,한밤마을(봄·가을)/군위댐(여름·겨울),한밤마을/군위댐,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b5834cf42abb98,4,삼국유사테마파크(하차),삼국유사테마파크,ARROW_SPLIT,ctt10,NAME_REGION_CANDIDATE,,,1
+ct_b5834cf42abb98,5,군위전통시장,군위전통시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b5834cf42abb98,6,사라온이야기마을,사라온이야기마을,ARROW_SPLIT,ctt11,NAME_REGION_CANDIDATE,,,1
+ct_b5834cf42abb98,7,혜원의 집(영화 ’리틀포레스트’ 촬영지),혜원의 집,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b5834cf42abb98,8,삼국유사테마파크(승차),삼국유사테마파크,ARROW_SPLIT,ctt10,NAME_REGION_CANDIDATE,,,1
+ct_b5834cf42abb98,9,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b5834cf42abb98,10,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbf6d182700062,1,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbf6d182700062,2,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbf6d182700062,3,현풍백년도깨비시장(청년몰),현풍백년도깨비시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbf6d182700062,4,도동서원,도동서원,ARROW_SPLIT,ctt13,NAME_REGION_CANDIDATE,,,1
+ct_bbf6d182700062,5,국립대구과학관,국립대구과학관,ARROW_SPLIT,ro401,NAME_REGION_CANDIDATE,,,1
+ct_bbf6d182700062,6,송해공원(하계)/비슬산자연휴양림(동계),송해공원/비슬산자연휴양림,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbf6d182700062,7,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbf6d182700062,8,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c3aa95e24359c7,1,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c3aa95e24359c7,2,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c3aa95e24359c7,3,대구수목원,대구수목원,ARROW_SPLIT,ctt16,NAME_REGION_CANDIDATE,,,1
+ct_c3aa95e24359c7,4,마비정벽화마을,마비정벽화마을,ARROW_SPLIT,ctt17,NAME_REGION_CANDIDATE,,,1
+ct_c3aa95e24359c7,5,화원자연휴양림,화원자연휴양림,ARROW_SPLIT,ctt18,NAME_REGION_CANDIDATE,,,1
+ct_c3aa95e24359c7,6,인흥마을,인흥마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c3aa95e24359c7,7,대명유수지,대명유수지,ARROW_SPLIT,ctt19,NAME_REGION_CANDIDATE,,,1
+ct_c3aa95e24359c7,8,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c3aa95e24359c7,9,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c6dd8a8393441,1,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c6dd8a8393441,2,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c6dd8a8393441,3,군위삼존석굴,군위삼존석굴,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c6dd8a8393441,4,부계면,부계면,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c6dd8a8393441,5,사유원(하차),사유원,ARROW_SPLIT,nax1520,NAME_REGION_CANDIDATE,,,1
+ct_6c6dd8a8393441,6,김수환추기경사랑과나눔공원,김수환추기경사랑과나눔공원,ARROW_SPLIT,ctt21,NAME_REGION_CANDIDATE,,,1
+ct_6c6dd8a8393441,7,화본역&엄마아빠어렸을적에,화본역&엄마아빠어렸을적에,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c6dd8a8393441,8,사유원(승차),사유원,ARROW_SPLIT,nax1520,NAME_REGION_CANDIDATE,,,1
+ct_6c6dd8a8393441,9,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c6dd8a8393441,10,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fa372645543056,1,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fa372645543056,2,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fa372645543056,3,화원동산/사문진나루,화원동산/사문진나루,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fa372645543056,4,달성습지,달성습지,ARROW_SPLIT,ctt24,NAME_REGION_CANDIDATE,,,1
+ct_fa372645543056,5,디아크,디아크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fa372645543056,6,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fa372645543056,7,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,1,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,2,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,3,대구국제공항,대구국제공항,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,4,봉무공원(나비생태원),봉무공원,ARROW_SPLIT,ctt26,NAME_REGION_CANDIDATE,,,1
+ct_1d93fc4c104294,5,팔공산자생식물원,팔공산자생식물원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,6,동화사,동화사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,7,동화사시설지구(시민안전테마파크 또는 케이블카 선택),동화사시설지구,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,8,방짜유기박물관,방짜유기박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,9,대구국제공항,대구국제공항,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,10,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1d93fc4c104294,11,청라언덕역,청라언덕역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,1,①동대구역(출발),①동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,2,②김광석다시그리기길,②김광석다시그리기길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,3,③동성로/중앙로역,③동성로/중앙로역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,4,④근대문화골목,④근대문화골목,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,5,⑤서문시장,⑤서문시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,6,⑥두류공원/이월드,⑥두류공원/이월드,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,7,⑦앞산해넘이전망대,⑦앞산해넘이전망대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,8,⑧앞산공원/앞산전망대,⑧앞산공원/앞산전망대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,9,⑨고산골공룡공원/메타세콰이어길,⑨고산골공룡공원/메타세콰이어길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,10,⑩수성못,⑩수성못,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,11,⑪대구미술관,⑪대구미술관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,12,⑫동촌유원지,⑫동촌유원지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3cfb7222ee01d9,13,①동대구역(도착),①동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_77b8bf9eb45be5,1,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_77b8bf9eb45be5,2,김광석다시그리기길,김광석다시그리기길,ARROW_SPLIT,nax103,NAME_REGION_CANDIDATE,,,1
+ct_77b8bf9eb45be5,3,83타워,83타워,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_77b8bf9eb45be5,4,수성못,수성못,ARROW_SPLIT,nax108,NAME_REGION_CANDIDATE,,,1
+ct_77b8bf9eb45be5,5,범어역,범어역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_77b8bf9eb45be5,6,동대구역,동대구역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4ba6bbca902508,1,일요일코스(산이정원,일요일코스(산이정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4ba6bbca902508,2,대흥사),대흥사),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,1,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,2,광양읍터미널,광양읍터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,3,광양역사문화원＆광양향교,광양역사문화원＆광양향교,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,4,김시식지,김시식지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,5,망덕포구 먹거리타운(중식),망덕포구 먹거리타운,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,6,배알도섬정원＆윤동주유고보존 정병욱가옥,배알도섬정원＆윤동주유고보존 정병욱가옥,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,7,진월 조선 수군지 선소 기념관,진월 조선 수군지 선소 기념관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,8,광양읍터미널,광양읍터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd7f4551af740c,9,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e4a34293f07395,1,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e4a34293f07395,2,광양읍터미널,광양읍터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e4a34293f07395,3,"백운산자연휴양림, 산림박물관","백운산자연휴양림, 산림박물관",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e4a34293f07395,4,불고기특화거리(중식),불고기특화거리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e4a34293f07395,5,서울대학교 남부연습림 관사,서울대학교 남부연습림 관사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e4a34293f07395,6,전남도립미술관＆예술창고,전남도립미술관＆예술창고,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e4a34293f07395,7,광양읍터미널,광양읍터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e4a34293f07395,8,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5e689ed3e531a,1,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5e689ed3e531a,2,중마관광안내소,중마관광안내소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5e689ed3e531a,3,이순신대교홍보관(묘도),이순신대교홍보관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5e689ed3e531a,4,이순신대교 먹거리타운(석식),이순신대교 먹거리타운,ARROW_SPLIT,ctt43,NAME_REGION_CANDIDATE,,,1
+ct_e5e689ed3e531a,5,배알도섬정원＆윤동주유고보존 정병욱 가옥,배알도섬정원＆윤동주유고보존 정병욱 가옥,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5e689ed3e531a,6,해비치로일원＆해오름육교,해비치로일원＆해오름육교,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5e689ed3e531a,7,중마관광안내소,중마관광안내소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5e689ed3e531a,8,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aede5fa62a4404,1,이순신광장,이순신광장,ARROW_SPLIT,nax128,NAME_REGION_CANDIDATE,,,1
+ct_aede5fa62a4404,2,국동어항단지,국동어항단지,ARROW_SPLIT,ctu12,NAME_REGION_CANDIDATE,,,1
+ct_aede5fa62a4404,3,여수시청,여수시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aede5fa62a4404,4,소호동동다리,소호동동다리,ARROW_SPLIT,ctt44,NAME_REGION_CANDIDATE,,,1
+ct_aede5fa62a4404,5,선소,선소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aede5fa62a4404,6,히든베이호텔,히든베이호텔,ARROW_SPLIT,rs48,NAME_REGION_CANDIDATE,,,1
+ct_aede5fa62a4404,7,돌산대교,돌산대교,ARROW_SPLIT,ctu13,NAME_REGION_CANDIDATE,,,1
+ct_aede5fa62a4404,8,거북선대교,거북선대교,ARROW_SPLIT,ctu14,NAME_REGION_CANDIDATE,,,1
+ct_aede5fa62a4404,9,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aede5fa62a4404,10,종포해양공원,종포해양공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aede5fa62a4404,11,이순신광장,이순신광장,ARROW_SPLIT,nax128,NAME_REGION_CANDIDATE,,,1
+ct_02c5b46ec0c7ca,1,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_02c5b46ec0c7ca,2,돌산공원,돌산공원,ARROW_SPLIT,nax130,NAME_REGION_CANDIDATE,,,1
+ct_02c5b46ec0c7ca,3,소호동동다리,소호동동다리,ARROW_SPLIT,ctt44,NAME_REGION_CANDIDATE,,,1
+ct_02c5b46ec0c7ca,4,히든베이호텔,히든베이호텔,ARROW_SPLIT,rs48,NAME_REGION_CANDIDATE,,,1
+ct_02c5b46ec0c7ca,5,이순신광장,이순신광장,ARROW_SPLIT,nax128,NAME_REGION_CANDIDATE,,,1
+ct_02c5b46ec0c7ca,6,종포해양공원,종포해양공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_02c5b46ec0c7ca,7,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_52454541f8bf45,1,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_52454541f8bf45,2,아쿠아플라넷,아쿠아플라넷,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_52454541f8bf45,3,케이블카주차타워,케이블카주차타워,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_52454541f8bf45,4,오동도,오동도,ARROW_SPLIT,nax125,NAME_REGION_CANDIDATE,,,1
+ct_52454541f8bf45,5,소노캄 여수,소노캄 여수,ARROW_SPLIT,rs13,NAME_REGION_CANDIDATE,,,1
+ct_52454541f8bf45,6,하멜전시관,하멜전시관,ARROW_SPLIT,ctt46,NAME_REGION_CANDIDATE,,,1
+ct_52454541f8bf45,7,이순신광장,이순신광장,ARROW_SPLIT,nax128,NAME_REGION_CANDIDATE,,,1
+ct_52454541f8bf45,8,여객선터미널(수산물특화시장 입구),여객선터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_52454541f8bf45,9,돌산공원 입구,돌산공원 입구,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_52454541f8bf45,10,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_51e1103afcf734,1,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_51e1103afcf734,2,오동도,오동도,ARROW_SPLIT,nax125,NAME_REGION_CANDIDATE,,,1
+ct_51e1103afcf734,3,국가산단,국가산단,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_51e1103afcf734,4,돌산공원,돌산공원,ARROW_SPLIT,nax130,NAME_REGION_CANDIDATE,,,1
+ct_51e1103afcf734,5,돌산갓김치거리,돌산갓김치거리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_51e1103afcf734,6,이순신광장,이순신광장,ARROW_SPLIT,nax128,NAME_REGION_CANDIDATE,,,1
+ct_51e1103afcf734,7,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_96260a505df28a,1,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_96260a505df28a,2,충민사,충민사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_96260a505df28a,3,진남관,진남관,ARROW_SPLIT,nax129,NAME_REGION_CANDIDATE,,,1
+ct_96260a505df28a,4,고소대,고소대,ARROW_SPLIT,ctt49,NAME_REGION_CANDIDATE,,,1
+ct_96260a505df28a,5,이순신광장,이순신광장,ARROW_SPLIT,nax128,NAME_REGION_CANDIDATE,,,1
+ct_96260a505df28a,6,이충무공어머니사시던곳,이충무공어머니사시던곳,ARROW_SPLIT,ctt50,NAME_REGION_CANDIDATE,,,1
+ct_96260a505df28a,7,선소,선소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_96260a505df28a,8,흥국사,흥국사,ARROW_SPLIT,nax1155,NAME_REGION_CANDIDATE,,,1
+ct_96260a505df28a,9,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e891d23fd3b4d1,1,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e891d23fd3b4d1,2,14연대 주둔지,14연대 주둔지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e891d23fd3b4d1,3,여순사건기념관,여순사건기념관,ARROW_SPLIT,ctt51,NAME_REGION_CANDIDATE,,,1
+ct_e891d23fd3b4d1,4,이순신광장,이순신광장,ARROW_SPLIT,nax128,NAME_REGION_CANDIDATE,,,1
+ct_e891d23fd3b4d1,5,손양원목사순교지,손양원목사순교지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e891d23fd3b4d1,6,형제묘+위령비,형제묘+위령비,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e891d23fd3b4d1,7,엑스포역,엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4edd1e45e8df6e,1,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4edd1e45e8df6e,2,여수시청,여수시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4edd1e45e8df6e,3,소호동동다리,소호동동다리,ARROW_SPLIT,ctt44,NAME_REGION_CANDIDATE,,,1
+ct_4edd1e45e8df6e,4,조발도해오름언덕,조발도해오름언덕,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4edd1e45e8df6e,5,"둔병, 낭도, 적금, 팔영대교","둔병, 낭도, 적금, 팔영대교",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4edd1e45e8df6e,6,적금공원,적금공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4edd1e45e8df6e,7,가사리생태공원,가사리생태공원,ARROW_SPLIT,ctt55,NAME_REGION_CANDIDATE,,,1
+ct_4edd1e45e8df6e,8,서틀러다육식물원,서틀러다육식물원,ARROW_SPLIT,ctu19,NAME_REGION_CANDIDATE,,,1
+ct_4edd1e45e8df6e,9,여수시청,여수시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4edd1e45e8df6e,10,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_30d2f4d1e703a8,1,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_30d2f4d1e703a8,2,오동도,오동도,ARROW_SPLIT,nax125,NAME_REGION_CANDIDATE,,,1
+ct_30d2f4d1e703a8,3,진남관,진남관,ARROW_SPLIT,nax129,NAME_REGION_CANDIDATE,,,1
+ct_30d2f4d1e703a8,4,해양수산과학관,해양수산과학관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_30d2f4d1e703a8,5,향일암,향일암,ARROW_SPLIT,nax126,NAME_REGION_CANDIDATE,,,1
+ct_30d2f4d1e703a8,6,수산시장,수산시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_30d2f4d1e703a8,7,여수엑스포역,여수엑스포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_39e68762848759,1,목포역(승차),목포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_39e68762848759,2,유달산노적봉,유달산노적봉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_39e68762848759,3,유달유원지,유달유원지,ARROW_SPLIT,ctt57,NAME_REGION_CANDIDATE,,,1
+ct_39e68762848759,4,평화광장,평화광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_39e68762848759,5,갓바위 해상보행교,갓바위 해상보행교,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_39e68762848759,6,목포항구포차,목포항구포차,ARROW_SPLIT,nax218,NAME_REGION_CANDIDATE,,,1
+ct_39e68762848759,7,목포역(하차),목포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,1,목포역(승차),목포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,2,연희네슈퍼(서산동 시화골목),연희네슈퍼,ARROW_SPLIT,ro171,NAME_REGION_CANDIDATE,,,1
+ct_4daaed71951e42,3,스카이워크,스카이워크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,4,유달산(노적봉),유달산,ARROW_SPLIT,nax214,NAME_REGION_CANDIDATE,,,1
+ct_4daaed71951e42,5,근대역사관 1관,근대역사관 1관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,6,가톨릭성지,가톨릭성지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,7,갓바위 해상보행교,갓바위 해상보행교,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,8,김대중노벨평화상기념관,김대중노벨평화상기념관,ARROW_SPLIT,ctt60,NAME_REGION_CANDIDATE,,,1
+ct_4daaed71951e42,9,자연사박물관,자연사박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,10,목포종합수산시장,목포종합수산시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,11,목포역(하차),목포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4daaed71951e42,12,목포해상케이블카,목포해상케이블카,ARROW_SPLIT,nax215,NAME_REGION_CANDIDATE,,,1
+ct_18b66359cd3476,1,화성요트,화성요트,ARROW_SPLIT,ctt62,NAME_REGION_CANDIDATE,,,1
+ct_18b66359cd3476,2,전곡항해양아카데미,전곡항해양아카데미,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_18b66359cd3476,3,보물섬모험레져,보물섬모험레져,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_18b66359cd3476,4,계절별체험지(총1,계절별체험지(총1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_18b66359cd3476,5,2곳),2곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b96bd2df3519c5,1,민들레연극마을,민들레연극마을,ARROW_SPLIT,ctu20,NAME_REGION_CANDIDATE,,,1
+ct_b96bd2df3519c5,2,화성시공예문화관,화성시공예문화관,ARROW_SPLIT,ctt63,NAME_REGION_CANDIDATE,,,1
+ct_b96bd2df3519c5,3,예랑도예원,예랑도예원,ARROW_SPLIT,ctt64,NAME_REGION_CANDIDATE,,,1
+ct_b96bd2df3519c5,4,소다미술관,소다미술관,ARROW_SPLIT,ctt65,NAME_REGION_CANDIDATE,,,1
+ct_b96bd2df3519c5,5,계절별체험지(총2,계절별체험지(총2,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b96bd2df3519c5,6,3곳),3곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_36916505242d03,1,진주목장,진주목장,ARROW_SPLIT,ctt66,NAME_REGION_CANDIDATE,,,1
+ct_36916505242d03,2,신하늘목장,신하늘목장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_36916505242d03,3,라바팜스토리,라바팜스토리,ARROW_SPLIT,ctt67,NAME_REGION_CANDIDATE,,,1
+ct_36916505242d03,4,계절별체험지(총1,계절별체험지(총1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_36916505242d03,5,2곳),2곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_839f41c45052cc,1,백미리어촌체험마을,백미리어촌체험마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_839f41c45052cc,2,연꽃농원등,연꽃농원등,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_839f41c45052cc,3,계절별체험지(총1,계절별체험지(총1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_839f41c45052cc,4,2곳),2곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_457500adc3bf7a,1,백미리어촌체험마을,백미리어촌체험마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_457500adc3bf7a,2,연꽃농원,연꽃농원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_457500adc3bf7a,3,계절별체험지(총1,계절별체험지(총1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_457500adc3bf7a,4,2곳) 등,2곳) 등,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_80ee2fe82392f3,1,서부해안 일대,서부해안 일대,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_670e22c1179014,1,서부해안 일대,서부해안 일대,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_a3449e24f6e3c0,1,"제부, 궁평, 전곡항, 백미리, 어촌체험","제부, 궁평, 전곡항, 백미리, 어촌체험",REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_c9b8c69ebdeaab,1,코레일,코레일,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c9b8c69ebdeaab,2,융릉건릉,융릉건릉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c9b8c69ebdeaab,3,제부도,제부도,ARROW_SPLIT,ctt74,NAME_REGION_CANDIDATE,,,1
+ct_c9b8c69ebdeaab,4,전곡항,전곡항,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c9b8c69ebdeaab,5,공룡알화석산지,공룡알화석산지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c9b8c69ebdeaab,6,계절별체험지,계절별체험지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a178e8ddcc4e86,1,서해랑해상케이블카,서해랑해상케이블카,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a178e8ddcc4e86,2,우리꽃식물원,우리꽃식물원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a178e8ddcc4e86,3,융릉건릉,융릉건릉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a178e8ddcc4e86,4,계절별체험지(총1,계절별체험지(총1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a178e8ddcc4e86,5,2곳),2곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cdb440b01ade67,1,매향리,매향리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cdb440b01ade67,2,발안만세시장,발안만세시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cdb440b01ade67,3,남양성모성지,남양성모성지,ARROW_SPLIT,ctt79,NAME_REGION_CANDIDATE,,,1
+ct_cdb440b01ade67,4,계절별체험지(총1,계절별체험지(총1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cdb440b01ade67,5,2곳),2곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f3165052d521,1,용주사,용주사,ARROW_SPLIT,ctt80,NAME_REGION_CANDIDATE,,,1
+ct_06f3165052d521,2,융건릉,융건릉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f3165052d521,3,화성독립운동기념관,화성독립운동기념관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f3165052d521,4,계절별체험지(총1,계절별체험지(총1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f3165052d521,5,2곳),2곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e7bd8e036ac952,1,우리꽃식물원,우리꽃식물원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e7bd8e036ac952,2,제부도또는비봉습지,제부도또는비봉습지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e7bd8e036ac952,3,계절별체험지(총1,계절별체험지(총1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e7bd8e036ac952,4,2곳),2곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_31c980d8b732be,1,국화도(또는)입파도,국화도입파도,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_aa670302e23f04,1,민들레연극마을축제,민들레연극마을축제,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aa670302e23f04,2,송산포도축제,송산포도축제,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aa670302e23f04,3,정조효문화제,정조효문화제,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aa670302e23f04,4,화성뱃놀이축제,화성뱃놀이축제,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aa670302e23f04,5,계절별체험지(총2,계절별체험지(총2,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_aa670302e23f04,6,3곳),3곳),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9cbfb8e4f5e419,1,해인사,해인사,ARROW_SPLIT,nax256,NAME_REGION_CANDIDATE,,,1
+ct_9cbfb8e4f5e419,2,핫들생태공원,핫들생태공원,ARROW_SPLIT,ctt83,NAME_REGION_CANDIDATE,,,1
+ct_9cbfb8e4f5e419,3,영상테마파크 등,영상테마파크 등,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9c01ad0adbeeed,1,삼랑진역,삼랑진역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9c01ad0adbeeed,2,여여정사,여여정사,ARROW_SPLIT,ro428,NAME_REGION_CANDIDATE,,,1
+ct_9c01ad0adbeeed,3,만어사,만어사,ARROW_SPLIT,ctt84,NAME_REGION_CANDIDATE,,,1
+ct_9c01ad0adbeeed,4,중식(송지시장),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9c01ad0adbeeed,5,트윈터널,트윈터널,ARROW_SPLIT,nax857,NAME_REGION_CANDIDATE,,,1
+ct_9c01ad0adbeeed,6,명례성지,명례성지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9c01ad0adbeeed,7,수산제역사공원,수산제역사공원,ARROW_SPLIT,ctt85,NAME_REGION_CANDIDATE,,,1
+ct_9c01ad0adbeeed,8,삼랑진역,삼랑진역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c997c44d777d3,1,밀양역,밀양역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c997c44d777d3,2,선샤인밀양테마파크,선샤인밀양테마파크,ARROW_SPLIT,ro433,NAME_REGION_CANDIDATE,,,1
+ct_6c997c44d777d3,3,중식(창마터널 인근 식당),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c997c44d777d3,4,밀양 꿈의 정원,밀양 꿈의 정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c997c44d777d3,5,표충사,표충사,ARROW_SPLIT,nax675,NAME_REGION_CANDIDATE,,,1
+ct_6c997c44d777d3,6,얼음골축음기소리박물관,얼음골축음기소리박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c997c44d777d3,7,얼음골 케이블카 및 트래킹,얼음골 케이블카 및 트래킹,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c997c44d777d3,8,밀양역,밀양역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_79a5e6f9c5071e,1,밀양역,밀양역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_79a5e6f9c5071e,2,영남루,영남루,ARROW_SPLIT,nax673,NAME_REGION_CANDIDATE,,,1
+ct_79a5e6f9c5071e,3,시내권 도보탐방(영남루~밀양관아~해천상상루~의열기념관),시내권 도보탐방,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_79a5e6f9c5071e,4,중식(아리랑시장),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_79a5e6f9c5071e,5,밀양아리랑 우주천문대,밀양아리랑 우주천문대,ARROW_SPLIT,ctt86,NAME_REGION_CANDIDATE,,,1
+ct_79a5e6f9c5071e,6,"볕뉘, 향교","볕뉘, 향교",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_79a5e6f9c5071e,7,공연관람(선비풍류),공연관람,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_79a5e6f9c5071e,8,위양지,위양지,ARROW_SPLIT,nax856,NAME_REGION_CANDIDATE,,,1
+ct_79a5e6f9c5071e,9,밀양역,밀양역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4a5dd0f0cb923a,1,"KAEMS,KAI","KAEMS,KAI",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4a5dd0f0cb923a,2,"항공우주과학관,항공우주박물관","항공우주과학관,항공우주박물관",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4a5dd0f0cb923a,3,우주항공청(외부) 및 무지갯빛해안도로,우주항공청 및 무지갯빛해안도로,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4a5dd0f0cb923a,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4a5dd0f0cb923a,5,"사천바다케이블카,아라마루 아쿠아리움, 삼천포대교공원","사천바다케이블카,아라마루 아쿠아리움, 삼천포대교공원",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b0914a5a460cd,1,체험시설(와인갤러리) or 항공우주박물관,체험시설 or 항공우주박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b0914a5a460cd,2,"다솔사, 세종단종태실지","다솔사, 세종단종태실지",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b0914a5a460cd,3,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b0914a5a460cd,4,"사천바다케이블카, 아라마루 아쿠아리움 or 와인족욕체험","사천바다케이블카, 아라마루 아쿠아리움 or 와인족욕체험",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a38b0174fa3dd9,1,"선진거북선공원(선진리성,사천 조명군총)",선진거북선공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a38b0174fa3dd9,2,"무지갯빛해안도로,대포항(그리움이 물들면)","무지갯빛해안도로,대포항",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a38b0174fa3dd9,3,대방진굴항,대방진굴항,ARROW_SPLIT,ctu27,NAME_REGION_CANDIDATE,,,1
+ct_a38b0174fa3dd9,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a38b0174fa3dd9,5,승전길 요트체험 or 거북선 체험마을,승전길 요트체험 or 거북선 체험마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a38b0174fa3dd9,6,모충공원,모충공원,ARROW_SPLIT,ctt93,NAME_REGION_CANDIDATE,,,1
+ct_98f136bc29acf3,1,"무지갯빛해안도로,대포항(그리움이 물들면)","무지갯빛해안도로,대포항",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98f136bc29acf3,2,사천바다케이블카 및 아라마루 아쿠아리움,사천바다케이블카 및 아라마루 아쿠아리움,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98f136bc29acf3,3,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98f136bc29acf3,4,"사천케이블카 자연휴양림, 노을전망교, 모충공원","사천케이블카 자연휴양림, 노을전망교, 모충공원",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e09500799e6b59,1,"(1일차) KAEMS,KAI","KAEMS,KAI",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e09500799e6b59,2,"항공우주과학관,항공우주박물관","항공우주과학관,항공우주박물관",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e09500799e6b59,3,우주항공청(외부) 및 무지갯빛해안도로,우주항공청 및 무지갯빛해안도로,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e09500799e6b59,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e09500799e6b59,5,"사천바다케이블카,아라마루 아쿠아리움, 삼천포대교공원 (2일차) 사천케이블카 자연휴양림","사천바다케이블카,아라마루 아쿠아리움, 삼천포대교공원  사천케이블카 자연휴양림",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e09500799e6b59,6,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e09500799e6b59,7,남일대해수욕장(코끼리바위),남일대해수욕장,ARROW_SPLIT,ro82,NAME_REGION_CANDIDATE,,,1
+ct_07e9c76475016b,1,"단체관광객(20명이상)이 운행 요청 시, 원하는 일정에 물돌이코스 또는 선비코스로 별도 운행","단체관광객이 운행 요청 시, 원하는 일정에 물돌이코스 또는 선비코스로 별도 운행",REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_d03367ac6ed4b6,1,영주역,영주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d03367ac6ed4b6,2,영주시외버스터미널,영주시외버스터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d03367ac6ed4b6,3,부석사,부석사,ARROW_SPLIT,nax219,NAME_REGION_CANDIDATE,,,1
+ct_d03367ac6ed4b6,4,"금성대군신단, 소수서원, 선비촌","금성대군신단, 소수서원, 선비촌",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d03367ac6ed4b6,5,죽계구곡 걷기,죽계구곡 걷기,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d03367ac6ed4b6,6,특산물시장(전통시장),특산물시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d03367ac6ed4b6,7,영주시외버스터미널,영주시외버스터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d03367ac6ed4b6,8,영주역,영주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_556fa05c4c025e,1,영주역,영주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_556fa05c4c025e,2,영주시외버스터미널,영주시외버스터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_556fa05c4c025e,3,"부용대, 관사골","부용대, 관사골",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_556fa05c4c025e,4,영주중앙시장(전통시장),영주중앙시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_556fa05c4c025e,5,"영주댐관광지, 용마루공원","영주댐관광지, 용마루공원",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_556fa05c4c025e,6,무섬마을,무섬마을,ARROW_SPLIT,nax221,NAME_REGION_CANDIDATE,,,1
+ct_556fa05c4c025e,7,영주시외버스터미널,영주시외버스터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_556fa05c4c025e,8,영주역,영주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_adcaa692a6bc31,1,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_adcaa692a6bc31,2,원불교총부,원불교총부,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_adcaa692a6bc31,3,고스락,고스락,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_adcaa692a6bc31,4,교도소세트장,교도소세트장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_adcaa692a6bc31,5,미륵사지(국립익산박물관),미륵사지,ARROW_SPLIT,nax425,NAME_REGION_CANDIDATE,,,1
+ct_adcaa692a6bc31,6,왕궁리유적(백제왕궁),왕궁리유적,ARROW_SPLIT,nax426,NAME_REGION_CANDIDATE,,,1
+ct_adcaa692a6bc31,7,보석박물관,보석박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_adcaa692a6bc31,8,중앙동 빛들로 일원,중앙동 빛들로 일원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b508df31fc411,1,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b508df31fc411,2,원불교총부,원불교총부,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b508df31fc411,3,고스락,고스락,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b508df31fc411,4,교도소세트장,교도소세트장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b508df31fc411,5,미륵사지(국립익산박물관),미륵사지,ARROW_SPLIT,nax425,NAME_REGION_CANDIDATE,,,1
+ct_3b508df31fc411,6,왕궁리유적(백제왕궁),왕궁리유적,ARROW_SPLIT,nax426,NAME_REGION_CANDIDATE,,,1
+ct_3b508df31fc411,7,보석박물관,보석박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3b508df31fc411,8,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_846f28074fa011,1,익산관광지 3곳이상(자유선택),익산관광지 3곳이상,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_5b151e8ee28f3e,1,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5b151e8ee28f3e,2,익산쌍릉,익산쌍릉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5b151e8ee28f3e,3,왕궁리유적(백제왕궁),왕궁리유적,ARROW_SPLIT,nax426,NAME_REGION_CANDIDATE,,,1
+ct_5b151e8ee28f3e,4,미륵사지(국립익산박물관),미륵사지,ARROW_SPLIT,nax425,NAME_REGION_CANDIDATE,,,1
+ct_5b151e8ee28f3e,5,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_292c393dc83166,1,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_292c393dc83166,2,나바위성지,나바위성지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_292c393dc83166,3,고스락,고스락,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_292c393dc83166,4,교도소세트장,교도소세트장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_292c393dc83166,5,보석박물관,보석박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_292c393dc83166,6,익산문화예술의 거리,익산문화예술의 거리,ARROW_SPLIT,ctt101,NAME_REGION_CANDIDATE,,,1
+ct_292c393dc83166,7,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ffd1e4db30d221,1,홍성역,홍성역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ffd1e4db30d221,2,남당항,남당항,ARROW_SPLIT,nax908,NAME_REGION_CANDIDATE,,,1
+ct_ffd1e4db30d221,3,죽도,죽도,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ffd1e4db30d221,4,죽도둘레길,죽도둘레길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ffd1e4db30d221,5,홍성스카이타워,홍성스카이타워,ARROW_SPLIT,ro290,NAME_REGION_CANDIDATE,,,1
+ct_ffd1e4db30d221,6,홍성역,홍성역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1b8455a8dc0bf2,1,홍성역,홍성역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1b8455a8dc0bf2,2,홍주읍성,홍주읍성,ARROW_SPLIT,nax909,NAME_REGION_CANDIDATE,,,1
+ct_1b8455a8dc0bf2,3,홍성전통시장,홍성전통시장,ARROW_SPLIT,ro717,NAME_REGION_CANDIDATE,,,1
+ct_1b8455a8dc0bf2,4,식물온실 들빛,식물온실 들빛,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1b8455a8dc0bf2,5,홍성역,홍성역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ba6d5b87112fdf,1,홍성역,홍성역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ba6d5b87112fdf,2,광천토굴새우젓전시관,광천토굴새우젓전시관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ba6d5b87112fdf,3,새우젓 토굴,새우젓 토굴,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ba6d5b87112fdf,4,그림같은 수목원,그림같은 수목원,ARROW_SPLIT,ctt104,NAME_REGION_CANDIDATE,,,1
+ct_ba6d5b87112fdf,5,광천전통시장,광천전통시장,ARROW_SPLIT,ro812,NAME_REGION_CANDIDATE,,,1
+ct_ba6d5b87112fdf,6,홍성역,홍성역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7c46362225f113,1,홍성역,홍성역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7c46362225f113,2,남당항 해양분수공원,남당항 해양분수공원,ARROW_SPLIT,ro368,NAME_REGION_CANDIDATE,,,1
+ct_7c46362225f113,3,노을전망대,노을전망대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7c46362225f113,4,어사리노을공원,어사리노을공원,ARROW_SPLIT,ctt106,NAME_REGION_CANDIDATE,,,1
+ct_7c46362225f113,5,홍성스카이타워,홍성스카이타워,ARROW_SPLIT,ro290,NAME_REGION_CANDIDATE,,,1
+ct_7c46362225f113,6,광천역(홍성역),광천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0b37241b568c53,1,홍성역,홍성역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0b37241b568c53,2,홍주읍성,홍주읍성,ARROW_SPLIT,nax909,NAME_REGION_CANDIDATE,,,1
+ct_0b37241b568c53,3,이응노기념관,이응노기념관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0b37241b568c53,4,김좌진·한용운 생가,김좌진·한용운 생가,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0b37241b568c53,5,광천역(홍성역),광천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cf899ff1e64f42,1,서산시청(10:00),서산시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cf899ff1e64f42,2,서산 버드랜드(10:40),서산 버드랜드,ARROW_SPLIT,ctt108,NAME_REGION_CANDIDATE,,,1
+ct_cf899ff1e64f42,3,간월도(중식)(12:00),간월도,ARROW_SPLIT,ctu31,NAME_REGION_CANDIDATE,,,1
+ct_cf899ff1e64f42,4,자원회수시설(13:50),자원회수시설,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cf899ff1e64f42,5,해미읍성(15:00),해미읍성,ARROW_SPLIT,nax905,NAME_REGION_CANDIDATE,,,1
+ct_cf899ff1e64f42,6,동부시장(16:20),동부시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cf899ff1e64f42,7,서산시청(17:00),서산시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a673d0dabf72e8,1,서산시청(10:00),서산시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a673d0dabf72e8,2,황금산(10:40),황금산,ARROW_SPLIT,ctt112,NAME_REGION_CANDIDATE,,,1
+ct_a673d0dabf72e8,3,삼길포항(중식)(12:00),삼길포항,ARROW_SPLIT,ctu32,NAME_REGION_CANDIDATE,,,1
+ct_a673d0dabf72e8,4,안견기념관(13:50),안견기념관,ARROW_SPLIT,ctt113,NAME_REGION_CANDIDATE,,,1
+ct_a673d0dabf72e8,5,자원회수시설(14:50),자원회수시설,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a673d0dabf72e8,6,동부시장(16:20),동부시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a673d0dabf72e8,7,서산시청(17:00),서산시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_da7217ca97e3fe,1,서산시청(10:00),서산시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_da7217ca97e3fe,2,마애여래삼존상(10:30),마애여래삼존상,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_da7217ca97e3fe,3,여미오미(중식)(11:30),여미오미,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_da7217ca97e3fe,4,서산한우목장길(13:20),서산한우목장길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_da7217ca97e3fe,5,개심사(14:30),개심사,ARROW_SPLIT,nax906,NAME_REGION_CANDIDATE,,,1
+ct_da7217ca97e3fe,6,해미국제성지(16:00),해미국제성지,ARROW_SPLIT,ctt114,NAME_REGION_CANDIDATE,,,1
+ct_da7217ca97e3fe,7,서산시청(17:00),서산시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_038840989446ae,1,빵돌가마마을,빵돌가마마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_038840989446ae,2,중식(아우내장터),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_038840989446ae,3,홍대용과학관,홍대용과학관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_038840989446ae,4,충남안전체험관,충남안전체험관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1c5a9958b21022,1,태조산공원,태조산공원,ARROW_SPLIT,ctt116,NAME_REGION_CANDIDATE,,,1
+ct_1c5a9958b21022,2,중식(유량동),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1c5a9958b21022,3,호두과자만들기,호두과자만들기,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1c5a9958b21022,4,독립기념관,독립기념관,ARROW_SPLIT,nax267,NAME_REGION_CANDIDATE,,,1
+ct_f759b963594bf5,1,태학산 치유의 숲,태학산 치유의 숲,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_f759b963594bf5,2,점심(아우내장터),점심,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_f759b963594bf5,3,유관순열사사적지,유관순열사사적지,ARROW_SPLIT,ctt117,NAME_REGION_CANDIDATE,,,1
+ct_f759b963594bf5,4,독립기념관,독립기념관,ARROW_SPLIT,nax267,NAME_REGION_CANDIDATE,,,1
+ct_bc40a6ceb7ef7f,1,각원사,각원사,ARROW_SPLIT,nax268,NAME_REGION_CANDIDATE,,,1
+ct_bc40a6ceb7ef7f,2,점심(유량동),점심,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bc40a6ceb7ef7f,3,충남안전체험관,충남안전체험관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bc40a6ceb7ef7f,4,삼거리공원 및 천안박물관,삼거리공원 및 천안박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c7a903f1171d7e,1,충주역/수안보온천역 출발,충주역/수안보온천역 출발,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c7a903f1171d7e,2,관광지1,관광지1,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c7a903f1171d7e,3,관광지 2,관광지 2,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c7a903f1171d7e,4,충주역/수안보온천역 도착,충주역/수안보온천역 도착,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_60bcbacca48123,1,태백역,태백역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_60bcbacca48123,2,용연동굴,용연동굴,ARROW_SPLIT,ro190,NAME_REGION_CANDIDATE,,,1
+ct_60bcbacca48123,3,태백역,태백역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_60bcbacca48123,4,통리장,통리장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_60bcbacca48123,5,철암역사촌,철암역사촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_60bcbacca48123,6,구문소,구문소,ARROW_SPLIT,nax635,NAME_REGION_CANDIDATE,,,1
+ct_60bcbacca48123,7,365세이프타운,365세이프타운,ARROW_SPLIT,ro397,NAME_REGION_CANDIDATE,,,1
+ct_60bcbacca48123,8,태백역,태백역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1fd10fe8b4c616,1,태백역,태백역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1fd10fe8b4c616,2,용연동굴,용연동굴,ARROW_SPLIT,ro190,NAME_REGION_CANDIDATE,,,1
+ct_1fd10fe8b4c616,3,태백역,태백역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1fd10fe8b4c616,4,황지자유시장/황지연못,황지자유시장/황지연못,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1fd10fe8b4c616,5,철암역사촌,철암역사촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1fd10fe8b4c616,6,구문소,구문소,ARROW_SPLIT,nax635,NAME_REGION_CANDIDATE,,,1
+ct_1fd10fe8b4c616,7,365세이프타운,365세이프타운,ARROW_SPLIT,ro397,NAME_REGION_CANDIDATE,,,1
+ct_1fd10fe8b4c616,8,태백역,태백역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,1,원주역(출발),원주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,2,원주종합버스터미널,원주종합버스터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,3,만종역,만종역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,4,서원주역,서원주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,5,소금산그랜드밸리(건너편),소금산그랜드밸리,ARROW_SPLIT,nax516,NAME_REGION_CANDIDATE,,,1
+ct_06f7c378ade1c5,6,빙하미술관,빙하미술관,ARROW_SPLIT,ctt121,NAME_REGION_CANDIDATE,,,1
+ct_06f7c378ade1c5,7,오크밸리(조각공원),오크밸리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,8,뮤지엄산,뮤지엄산,ARROW_SPLIT,nax517,NAME_REGION_CANDIDATE,,,1
+ct_06f7c378ade1c5,9,오크밸리(잔디운동장),오크밸리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,10,소금산그랜드밸리,소금산그랜드밸리,ARROW_SPLIT,nax516,NAME_REGION_CANDIDATE,,,1
+ct_06f7c378ade1c5,11,서원주역(시내방향),서원주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,12,대보APT정류장(만종역),대보APT정류장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,13,원주종합버스터미널(건너편),원주종합버스터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,14,강원감영(전통시장문화공유플랫폼),강원감영,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06f7c378ade1c5,15,원주역(도착),원주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_621bc74649ab69,1,연천역,연천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_621bc74649ab69,2,숭의전,숭의전,ARROW_SPLIT,ctt122,NAME_REGION_CANDIDATE,,,1
+ct_621bc74649ab69,3,전곡시장,전곡시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_621bc74649ab69,4,은대리 문화벽돌공장,은대리 문화벽돌공장,ARROW_SPLIT,ctt123,NAME_REGION_CANDIDATE,,,1
+ct_621bc74649ab69,5,재인폭포,재인폭포,ARROW_SPLIT,ctt124,NAME_REGION_CANDIDATE,,,1
+ct_621bc74649ab69,6,연천역,연천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6fd72f50d14b4d,1,연천역,연천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6fd72f50d14b4d,2,태풍전망대,태풍전망대,ARROW_SPLIT,ctt125,NAME_REGION_CANDIDATE,,,1
+ct_6fd72f50d14b4d,3,연천먹자골목,연천먹자골목,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6fd72f50d14b4d,4,베개용암 출렁다리,베개용암 출렁다리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6fd72f50d14b4d,5,재인폭포,재인폭포,ARROW_SPLIT,ctt124,NAME_REGION_CANDIDATE,,,1
+ct_6fd72f50d14b4d,6,연천역,연천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_829b9d95028681,1,연천역,연천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_829b9d95028681,2,임진강 자연센터,임진강 자연센터,ARROW_SPLIT,ctt127,NAME_REGION_CANDIDATE,,,1
+ct_829b9d95028681,3,백학광장,백학광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_829b9d95028681,4,경순왕릉,경순왕릉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_829b9d95028681,5,고랑포구 역사공원,고랑포구 역사공원,ARROW_SPLIT,ctt129,NAME_REGION_CANDIDATE,,,1
+ct_829b9d95028681,6,호로고루,호로고루,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_829b9d95028681,7,연천역,연천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_675fadd3a4b784,1,"승마체험(솔밭승마클럽, 청초원승마클럽 중 택1)",승마체험,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_675fadd3a4b784,2,이천쌀밥거리,이천쌀밥거리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_675fadd3a4b784,3,이천관광지,이천관광지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c42d7c2c7e00b7,1,산수유마을,산수유마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c42d7c2c7e00b7,2,농촌체험농장,농촌체험농장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c42d7c2c7e00b7,3,이천관광지,이천관광지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_61c72c23455ecc,1,"농촌체험마을(도니울, 서경들, 자채방아마을)",농촌체험마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_61c72c23455ecc,2,농촌체험농장,농촌체험농장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_61c72c23455ecc,3,이천관광지,이천관광지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e9478eac8407b6,1,"농촌체험마을(부래미, 우무실마을 중 택1)",농촌체험마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e9478eac8407b6,2,농촌체험농장,농촌체험농장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e9478eac8407b6,3,이천관광지,이천관광지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,1,문화유산코스,문화유산코스,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,2,북부: 진위향교,북부: 진위향교,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,3,원릉군,원릉군,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,4,정도전 사당,정도전 사당,ARROW_SPLIT,ctt137,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,5,원릉군기념관,원릉군기념관,ARROW_SPLIT,ctt136,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,6,만기사,만기사,ARROW_SPLIT,ctt138,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,7,남부: 평택향교,남부: 평택향교,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,8,팽성읍객사,팽성읍객사,ARROW_SPLIT,ctu35,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,9,농성,농성,ARROW_SPLIT,ctt140,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,10,서부: 수도사,서부: 수도사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,11,심복사,심복사,ARROW_SPLIT,ctt142,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,12,이대원장군묘,이대원장군묘,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,13,수도사 + 관광코스,수도사 + 관광코스,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,14,북부: 오썸플렉스,북부: 오썸플렉스,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,15,평택항홍보관,평택항홍보관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,16,웃다리문화촌,웃다리문화촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,17,남부: 팽성생활사박물관,남부: 팽성생활사박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,18,원평나루,원평나루,ARROW_SPLIT,ctt148,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,19,내리문화공원,내리문화공원,ARROW_SPLIT,ctt149,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,20,안정리예술인광장,안정리예술인광장,ARROW_SPLIT,ctt150,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,21,서부: 농업생태원,서부: 농업생태원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,22,평택호관광단지,평택호관광단지,ARROW_SPLIT,ctt152,NAME_REGION_CANDIDATE,,,1
+ct_191b415504291d,23,평택항홍보관 +무장애코스: 평택호관광단지,평택항홍보관 +무장애코스: 평택호관광단지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,24,농업생태원,농업생태원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_191b415504291d,25,"오썸플렉스+기획코스: 계절, 지역 축제에 따라 코스 상이","오썸플렉스+기획코스: 계절, 지역 축제에 따라 코스 상이",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_33647170db51f5,1,자일산림욕장+제일시장+백영수미술관+특화도서관+관내대형카페,자일산림욕장+제일시장+백영수미술관+특화도서관+관내대형카페,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_d87621b9914326,1,관광수요자 요구반영 자율코스 가능(주요 관광지 2개 이상 포함),관광수요자 요구반영 자율코스 가능,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_3850565c5ca37b,1,가경터미널,가경터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3850565c5ca37b,2,청주체육관,청주체육관,ARROW_SPLIT,ctt153,NAME_REGION_CANDIDATE,,,1
+ct_3850565c5ca37b,3,옥화 치유의숲 치유센터 및 산림치유숲길,옥화 치유의숲 치유센터 및 산림치유숲길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3850565c5ca37b,4,미동산수목원(중식),미동산수목원,ARROW_SPLIT,nax834,NAME_REGION_CANDIDATE,,,1
+ct_3850565c5ca37b,5,미동산수목원,미동산수목원,ARROW_SPLIT,nax834,NAME_REGION_CANDIDATE,,,1
+ct_3850565c5ca37b,6,청석굴,청석굴,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3850565c5ca37b,7,청주체육관,청주체육관,ARROW_SPLIT,ctt153,NAME_REGION_CANDIDATE,,,1
+ct_3850565c5ca37b,8,가경터미널,가경터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ef9847ceda63e7,1,가경터미널,가경터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ef9847ceda63e7,2,청주체육관,청주체육관,ARROW_SPLIT,ctt153,NAME_REGION_CANDIDATE,,,1
+ct_ef9847ceda63e7,3,상당산성(중식),상당산성,ARROW_SPLIT,nax637,NAME_REGION_CANDIDATE,,,1
+ct_ef9847ceda63e7,4,옥화자연휴양림 짚트랙 및 숲체험,옥화자연휴양림 짚트랙 및 숲체험,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ef9847ceda63e7,5,성안길,성안길,ARROW_SPLIT,ctt155,NAME_REGION_CANDIDATE,,,1
+ct_ef9847ceda63e7,6,청주체육관,청주체육관,ARROW_SPLIT,ctt153,NAME_REGION_CANDIDATE,,,1
+ct_ef9847ceda63e7,7,가경터미널,가경터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5691e595f603ac,1,청주체육관,청주체육관,ARROW_SPLIT,ctt153,NAME_REGION_CANDIDATE,,,1
+ct_5691e595f603ac,2,가경터미널,가경터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5691e595f603ac,3,운보의 집,운보의 집,ARROW_SPLIT,ro930,NAME_REGION_CANDIDATE,,,1
+ct_5691e595f603ac,4,초정리(중식),초정리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5691e595f603ac,5,초정행궁,초정행궁,ARROW_SPLIT,ro869,NAME_REGION_CANDIDATE,,,1
+ct_5691e595f603ac,6,성안길,성안길,ARROW_SPLIT,ctt155,NAME_REGION_CANDIDATE,,,1
+ct_5691e595f603ac,7,청주체육관,청주체육관,ARROW_SPLIT,ctt153,NAME_REGION_CANDIDATE,,,1
+ct_5691e595f603ac,8,가경터미널,가경터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6e02ed9f2dd24,1,청주체육관,청주체육관,ARROW_SPLIT,ctt153,NAME_REGION_CANDIDATE,,,1
+ct_b6e02ed9f2dd24,2,가경터미널,가경터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6e02ed9f2dd24,3,KTX오송역,KTX오송역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6e02ed9f2dd24,4,문의문화재단지(중식),문의문화재단지,ARROW_SPLIT,nax833,NAME_REGION_CANDIDATE,,,1
+ct_b6e02ed9f2dd24,5,청남대,청남대,ARROW_SPLIT,nax638,NAME_REGION_CANDIDATE,,,1
+ct_b6e02ed9f2dd24,6,성안길,성안길,ARROW_SPLIT,ctt155,NAME_REGION_CANDIDATE,,,1
+ct_b6e02ed9f2dd24,7,청주체육관,청주체육관,ARROW_SPLIT,ctt153,NAME_REGION_CANDIDATE,,,1
+ct_b6e02ed9f2dd24,8,가경터미널,가경터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6e02ed9f2dd24,9,KTX오송역,KTX오송역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e3d9bea5034360,1,여주역,여주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e3d9bea5034360,2,신륵사관광지(출렁다리 북단),신륵사관광지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e3d9bea5034360,3,강천섬,강천섬,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e3d9bea5034360,4,신륵사관광지(출렁다리 북단),신륵사관광지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e3d9bea5034360,5,대신섬(당남리섬),대신섬,ARROW_SPLIT,ctt156,NAME_REGION_CANDIDATE,,,1
+ct_e3d9bea5034360,6,"이포보전망대, 파사성","이포보전망대, 파사성",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e3d9bea5034360,7,신륵사관광지(출렁다리 북단),신륵사관광지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e3d9bea5034360,8,여주역,여주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06b3798d41496a,1,여주역,여주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06b3798d41496a,2,신륵사관광지(출렁다리 북단),신륵사관광지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06b3798d41496a,3,세종대왕릉,세종대왕릉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06b3798d41496a,4,"세종시장, 대로사","세종시장, 대로사",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06b3798d41496a,5,한글시장,한글시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06b3798d41496a,6,출렁다리 남단,출렁다리 남단,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06b3798d41496a,7,금은모래캠핑장,금은모래캠핑장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_06b3798d41496a,8,황학산수목원,황학산수목원,ARROW_SPLIT,nax1197,NAME_REGION_CANDIDATE,,,1
+ct_06b3798d41496a,9,명성황후생가,명성황후생가,ARROW_SPLIT,nax325,NAME_REGION_CANDIDATE,,,1
+ct_06b3798d41496a,10,여주역,여주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_162666cc443b43,1,양산역,양산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_162666cc443b43,2,목화당1944,목화당1944,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_162666cc443b43,3,남부시장,남부시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_162666cc443b43,4,황산공원(물금벚꽃길),황산공원,ARROW_SPLIT,nax403,NAME_REGION_CANDIDATE,,,1
+ct_162666cc443b43,5,양산타워,양산타워,ARROW_SPLIT,ro615,NAME_REGION_CANDIDATE,,,1
+ct_162666cc443b43,6,양산역,양산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c69eb9216fea4c,1,양산역,양산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c69eb9216fea4c,2,양산시립박물관,양산시립박물관,ARROW_SPLIT,nax976,NAME_REGION_CANDIDATE,,,1
+ct_c69eb9216fea4c,3,남부시장,남부시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c69eb9216fea4c,4,통도사,통도사,ARROW_SPLIT,nax401,NAME_REGION_CANDIDATE,,,1
+ct_c69eb9216fea4c,5,황산공원,황산공원,ARROW_SPLIT,nax403,NAME_REGION_CANDIDATE,,,1
+ct_c69eb9216fea4c,6,양산역,양산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8cff61808a99ab,1,양산역,양산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8cff61808a99ab,2,창기마을체험휴양관,창기마을체험휴양관,ARROW_SPLIT,ctt161,NAME_REGION_CANDIDATE,,,1
+ct_8cff61808a99ab,3,덕계시장,덕계시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8cff61808a99ab,4,한국궁중꽃박물관,한국궁중꽃박물관,ARROW_SPLIT,ctt162,NAME_REGION_CANDIDATE,,,1
+ct_8cff61808a99ab,5,법기수원지,법기수원지,ARROW_SPLIT,ctt163,NAME_REGION_CANDIDATE,,,1
+ct_8cff61808a99ab,6,양산역,양산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0a7d1f16d097b4,1,양산역,양산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0a7d1f16d097b4,2,목화당1944,목화당1944,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0a7d1f16d097b4,3,남부시장,남부시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0a7d1f16d097b4,4,황산공원,황산공원,ARROW_SPLIT,nax403,NAME_REGION_CANDIDATE,,,1
+ct_0a7d1f16d097b4,5,양산역,양산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ddbc6fbc7fc9aa,1,계서당,계서당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ddbc6fbc7fc9aa,2,닭실마을,닭실마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ddbc6fbc7fc9aa,3,"목재문화체험장, 국립백두대간수목원","목재문화체험장, 국립백두대간수목원",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ddbc6fbc7fc9aa,4,오전약수관광지,오전약수관광지,ARROW_SPLIT,ctu41,NAME_REGION_CANDIDATE,,,1
+ct_bc3e7716c4e78d,1,계서당,계서당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bc3e7716c4e78d,2,닭실마을,닭실마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bc3e7716c4e78d,3,"목재문화체험장, 국립백두대간수목원","목재문화체험장, 국립백두대간수목원",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bc3e7716c4e78d,4,오전약수관광지,오전약수관광지,ARROW_SPLIT,ctu41,NAME_REGION_CANDIDATE,,,1
+ct_241fc2ea0cf3b6,1,새마을운동발상지,새마을운동발상지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_241fc2ea0cf3b6,2,청도시장,청도시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_241fc2ea0cf3b6,3,소싸움미디어체험관,소싸움미디어체험관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_241fc2ea0cf3b6,4,농협로컬푸드직매장,농협로컬푸드직매장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_241fc2ea0cf3b6,5,와인터널,와인터널,ARROW_SPLIT,ctt170,NAME_REGION_CANDIDATE,,,1
+ct_751844a324dc11,1,[10:50](구)안동역),[10:50]안동역),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_751844a324dc11,2,[11:30] KTX 안동역(터미널),[11:30] KTX 안동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_751844a324dc11,3,만휴정,만휴정,ARROW_SPLIT,nax822,NAME_REGION_CANDIDATE,,,1
+ct_751844a324dc11,4,월영교(중식),월영교,ARROW_SPLIT,nax159,NAME_REGION_CANDIDATE,,,1
+ct_751844a324dc11,5,안동민속박물관,안동민속박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_751844a324dc11,6,안동댐 정상,안동댐 정상,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_751844a324dc11,7,이천동석불상 또는 까치와 호랑이,이천동석불상 또는 까치와 호랑이,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_751844a324dc11,8,봉정사,봉정사,ARROW_SPLIT,nax821,NAME_REGION_CANDIDATE,,,1
+ct_751844a324dc11,9,"[17:50]KTX 안동역 & 전통시장, 원도심, 구)안동역 하차가능","[17:50]KTX 안동역 & 전통시장, 원도심, 구)안동역 하차가능",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1adac70d937db0,1,[10:50](구)안동역),[10:50]안동역),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1adac70d937db0,2,[11:30] KTX 안동역(터미널),[11:30] KTX 안동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1adac70d937db0,3,"선성현문화단지(중식)·예끼마을, 선성수상길","선성현문화단지·예끼마을, 선성수상길",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1adac70d937db0,4,도산서원,도산서원,ARROW_SPLIT,nax160,NAME_REGION_CANDIDATE,,,1
+ct_1adac70d937db0,5,이육사문학관&이육사청포도와인,이육사문학관&이육사청포도와인,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1adac70d937db0,6,"[17:50]KTX 안동역 & 전통시장, 원도심, 구)안동역 하차가능","[17:50]KTX 안동역 & 전통시장, 원도심, 구)안동역 하차가능",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0fd9d16f64b71b,1,[10:50](구)안동역),[10:50]안동역),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0fd9d16f64b71b,2,[11:30] KTX 안동역(터미널),[11:30] KTX 안동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0fd9d16f64b71b,3,부용대,부용대,ARROW_SPLIT,nax158,NAME_REGION_CANDIDATE,,,1
+ct_0fd9d16f64b71b,4,"하회장터(중식),세계탈박물관","하회장터,세계탈박물관",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0fd9d16f64b71b,5,[14:00] 하회별신굿탈놀이관람,[14:00] 하회별신굿탈놀이관람,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0fd9d16f64b71b,6,하회마을,하회마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0fd9d16f64b71b,7,병산서원,병산서원,ARROW_SPLIT,nax162,NAME_REGION_CANDIDATE,,,1
+ct_0fd9d16f64b71b,8,"[17:50]KTX 안동역 & 전통시장, 원도심, 구)안동역 하차가능","[17:50]KTX 안동역 & 전통시장, 원도심, 구)안동역 하차가능",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_24ab32cdef2d81,1,[18:45] KTX 안동역(터미널),[18:45] KTX 안동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_24ab32cdef2d81,2,(구)안동역 19:20,안동역 19:20,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_24ab32cdef2d81,3,영호루,영호루,ARROW_SPLIT,ctt173,NAME_REGION_CANDIDATE,,,1
+ct_24ab32cdef2d81,4,낙동강음악분수,낙동강음악분수,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_24ab32cdef2d81,5,월영교,월영교,ARROW_SPLIT,nax159,NAME_REGION_CANDIDATE,,,1
+ct_24ab32cdef2d81,6,웅부공원,웅부공원,ARROW_SPLIT,ctt174,NAME_REGION_CANDIDATE,,,1
+ct_24ab32cdef2d81,7,[21:10] (구)안동역),[21:10] 안동역),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00f57af068a339,1,[11:25]KTX 안동역,[11:25]KTX 안동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00f57af068a339,2,구 안동역,구 안동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00f57af068a339,3,월영교,월영교,ARROW_SPLIT,nax159,NAME_REGION_CANDIDATE,,,1
+ct_00f57af068a339,4,안동민속박물관&안동댐 정상,안동민속박물관&안동댐 정상,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00f57af068a339,5,한자마을(구름애)&해상촬영장,한자마을&해상촬영장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00f57af068a339,6,"웅부공원, 임청각, 찜닭골목","웅부공원, 임청각, 찜닭골목",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00f57af068a339,7,[17:40] KTX 안동역,[17:40] KTX 안동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_24a203574abc9a,1,예산역,예산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_24a203574abc9a,2,수덕사,수덕사,ARROW_SPLIT,nax910,NAME_REGION_CANDIDATE,,,1
+ct_24a203574abc9a,3,충의사,충의사,ARROW_SPLIT,ro850,NAME_REGION_CANDIDATE,,,1
+ct_24a203574abc9a,4,덕산메타세쿼이아길&덕산온천족욕장,덕산메타세쿼이아길&덕산온천족욕장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_24a203574abc9a,5,예당관광지,예당관광지,ARROW_SPLIT,nax1311,NAME_REGION_CANDIDATE,,,1
+ct_24a203574abc9a,6,예산상설시장,예산상설시장,ARROW_SPLIT,nax1213,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,1,<6,<6,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,2,8월,8월,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,3,충남종합관광안내소(집결),충남종합관광안내소,ARROW_SPLIT,ctt178,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,4,궁남지,궁남지,ARROW_SPLIT,nax279,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,5,부소산성(황포돛배),부소산성,ARROW_SPLIT,nax277,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,6,점심 식사,점심 식사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,7,국립부여박물관,국립부여박물관,ARROW_SPLIT,nax280,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,8,신동엽문학관,신동엽문학관,ARROW_SPLIT,ctt179,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,9,정림사지,정림사지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,10,백강문화관,백강문화관,ARROW_SPLIT,ctt180,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,11,"충남종합관광안내소(해산), <9","충남종합관광안내소, <9",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,12,11월,11월,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,13,충남종합관광안내소(집결),충남종합관광안내소,ARROW_SPLIT,ctt178,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,14,부여왕릉원과 부여나성,부여왕릉원과 부여나성,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,15,점심 식사,점심 식사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,16,무량사,무량사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,17,반교마을 돌담길,반교마을 돌담길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_00fceda2c92934,18,국립부여박물관,국립부여박물관,ARROW_SPLIT,nax280,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,19,백강문화관,백강문화관,ARROW_SPLIT,ctt180,NAME_REGION_CANDIDATE,,,1
+ct_00fceda2c92934,20,충남종합관광안내소(해산),충남종합관광안내소,ARROW_SPLIT,ctt178,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,1,<금요일 코스,<금요일 코스,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6d0daf1b1ff817,2,롯데리조트부여(접수 및 출발),롯데리조트부여,ARROW_SPLIT,rs58,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,3,충남종합관광안내소(접수 및 출발),충남종합관광안내소,ARROW_SPLIT,ctt178,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,4,국립부여박물관,국립부여박물관,ARROW_SPLIT,nax280,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,5,저녁 식사,저녁 식사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6d0daf1b1ff817,6,궁남지,궁남지,ARROW_SPLIT,nax279,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,7,정림사지,정림사지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6d0daf1b1ff817,8,"백마강 달밤야시장 또는 관북리유적, 부여관아","백마강 달밤야시장 또는 관북리유적, 부여관아",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6d0daf1b1ff817,9,롯데리조트부여(해산),롯데리조트부여,ARROW_SPLIT,rs58,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,10,백강문화관(해산),백강문화관,ARROW_SPLIT,ctt180,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,11,충남종합관광안내소(해산) <토요일 코스,충남종합관광안내소 <토요일 코스,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6d0daf1b1ff817,12,롯데리조트부여(접수 및 출발),롯데리조트부여,ARROW_SPLIT,rs58,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,13,충남종합관광안내소(접수 및 출발),충남종합관광안내소,ARROW_SPLIT,ctt178,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,14,신동엽문학관,신동엽문학관,ARROW_SPLIT,ctt179,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,15,석식,석식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6d0daf1b1ff817,16,궁남지,궁남지,ARROW_SPLIT,nax279,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,17,백제문화단지,백제문화단지,ARROW_SPLIT,nax281,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,18,롯데리조트부여(해산),롯데리조트부여,ARROW_SPLIT,rs58,NAME_REGION_CANDIDATE,,,1
+ct_6d0daf1b1ff817,19,충남종합관광안내소(해산),충남종합관광안내소,ARROW_SPLIT,ctt178,NAME_REGION_CANDIDATE,,,1
+ct_a561cb7cfea7d3,1,정선역,정선역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a561cb7cfea7d3,2,정선아리랑시장(농업인회관),정선아리랑시장,ARROW_SPLIT,nax2,NAME_REGION_CANDIDATE,,,1
+ct_a561cb7cfea7d3,3,정선아리랑센터&아라리촌,정선아리랑센터&아라리촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a561cb7cfea7d3,4,화암동굴,화암동굴,ARROW_SPLIT,nax30,NAME_REGION_CANDIDATE,,,1
+ct_a561cb7cfea7d3,5,화암약수,화암약수,ARROW_SPLIT,ro398,NAME_REGION_CANDIDATE,,,1
+ct_a561cb7cfea7d3,6,정선역,정선역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_89cafab2081f3a,1,정선역,정선역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_89cafab2081f3a,2,정선아리랑시장(농업인회관),정선아리랑시장,ARROW_SPLIT,nax2,NAME_REGION_CANDIDATE,,,1
+ct_89cafab2081f3a,3,구절리역,구절리역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_89cafab2081f3a,4,아우라지역,아우라지역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_89cafab2081f3a,5,정선역,정선역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_716a7176101bb7,1,정선역,정선역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_716a7176101bb7,2,정선아리랑시장(농업인회관),정선아리랑시장,ARROW_SPLIT,nax2,NAME_REGION_CANDIDATE,,,1
+ct_716a7176101bb7,3,정선아리랑센터&아라리촌,정선아리랑센터&아라리촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_716a7176101bb7,4,가리왕산케이블카,가리왕산케이블카,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_716a7176101bb7,5,아우라지역,아우라지역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_716a7176101bb7,6,정선역,정선역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7bb8e45d132cab,1,쁘띠프랑스,쁘띠프랑스,ARROW_SPLIT,nax329,NAME_REGION_CANDIDATE,,,1
+ct_7bb8e45d132cab,2,청평터미널,청평터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7bb8e45d132cab,3,청평역,청평역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7bb8e45d132cab,4,술지움,술지움,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7bb8e45d132cab,5,임초2리 입구⇔ 비령이,임초2리 입구⇔ 비령이,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7bb8e45d132cab,6,아침고요수목원,아침고요수목원,ARROW_SPLIT,nax328,NAME_REGION_CANDIDATE,,,1
+ct_8105d7bd79546e,1,가평터미널,가평터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8105d7bd79546e,2,레일바이크,레일바이크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8105d7bd79546e,3,자라섬,자라섬,ARROW_SPLIT,nax330,NAME_REGION_CANDIDATE,,,1
+ct_8105d7bd79546e,4,가평역,가평역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8105d7bd79546e,5,남이섬,남이섬,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8105d7bd79546e,6,쁘띠프랑스,쁘띠프랑스,ARROW_SPLIT,nax329,NAME_REGION_CANDIDATE,,,1
+ct_8105d7bd79546e,7,"가평크루즈, 베고니아 새정원, 신비동물원","가평크루즈, 베고니아 새정원, 신비동물원",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0f7e7de9e67dc9,1,감악산출렁다리,감악산출렁다리,ARROW_SPLIT,nax726,NAME_REGION_CANDIDATE,,,1
+ct_0f7e7de9e67dc9,2,이이유적지,이이유적지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0f7e7de9e67dc9,3,헤이리,헤이리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0f7e7de9e67dc9,4,오두산통일전망대,오두산통일전망대,ARROW_SPLIT,nax727,NAME_REGION_CANDIDATE,,,1
+ct_0f7e7de9e67dc9,5,DMZ평화관광,DMZ평화관광,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0f7e7de9e67dc9,6,율곡수목원,율곡수목원,ARROW_SPLIT,ro434,NAME_REGION_CANDIDATE,,,1
+ct_8b46478e575ced,1,마장호수 출렁다리,마장호수 출렁다리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8b46478e575ced,2,보광사,보광사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8b46478e575ced,3,혜음원지,혜음원지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e8ca89b26475ed,1,오두산통일전망대,오두산통일전망대,ARROW_SPLIT,nax727,NAME_REGION_CANDIDATE,,,1
+ct_e8ca89b26475ed,2,국립민속박물관 파주,국립민속박물관 파주,ARROW_SPLIT,ctt189,NAME_REGION_CANDIDATE,,,1
+ct_e8ca89b26475ed,3,장단콩웰빙마루,장단콩웰빙마루,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d6a57ce21f62e0,1,임진각평화곤돌라,임진각평화곤돌라,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d6a57ce21f62e0,2,임진각관광지,임진각관광지,ARROW_SPLIT,ctt192,NAME_REGION_CANDIDATE,,,1
+ct_d6a57ce21f62e0,3,DMZ평화관광,DMZ평화관광,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4eff7978f0204c,1,황희선생유적지,황희선생유적지,ARROW_SPLIT,ctt193,NAME_REGION_CANDIDATE,,,1
+ct_4eff7978f0204c,2,황포돛배,황포돛배,ARROW_SPLIT,ctt194,NAME_REGION_CANDIDATE,,,1
+ct_4eff7978f0204c,3,산머루농원,산머루농원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_de2fedfcab3078,1,마장호수 출렁다리,마장호수 출렁다리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_de2fedfcab3078,2,보광사,보광사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_de2fedfcab3078,3,벽초지수목원,벽초지수목원,ARROW_SPLIT,nax728,NAME_REGION_CANDIDATE,,,1
+ct_6db1d8dc78ac5b,1,감악산출렁다리,감악산출렁다리,ARROW_SPLIT,nax726,NAME_REGION_CANDIDATE,,,1
+ct_6db1d8dc78ac5b,2,율곡수목원,율곡수목원,ARROW_SPLIT,ro434,NAME_REGION_CANDIDATE,,,1
+ct_6db1d8dc78ac5b,3,국립극장 무대예술지원센터,국립극장 무대예술지원센터,ARROW_SPLIT,ctt195,NAME_REGION_CANDIDATE,,,1
+ct_3119169a3481d9,1,연꽃테마파크/관곡지/물왕호수/오이도/거북섬/배곧/갯골생태공원 등 단체 맞춤형 코스구성,연꽃테마파크/관곡지/물왕호수/오이도/거북섬/배곧/갯골생태공원 등 단체 맞춤형 코스구성,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_51f96361051771,1,사당(서울)역,사당역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_51f96361051771,2,시흥시청역,시흥시청역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_51f96361051771,3,연꽃테마파크/관곡지/물왕호수/오이도/거북섬/배곧/갯골생태공원 등,연꽃테마파크/관곡지/물왕호수/오이도/거북섬/배곧/갯골생태공원 등,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_51f96361051771,4,시흥시청역,시흥시청역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_51f96361051771,5,사당(서울)역,사당역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9d7c29faf596ba,1,거북섬홍보관,거북섬홍보관,ARROW_SPLIT,ctt200,NAME_REGION_CANDIDATE,,,1
+ct_9d7c29faf596ba,2,해양생태과학관,해양생태과학관,ARROW_SPLIT,ctt201,NAME_REGION_CANDIDATE,,,1
+ct_9d7c29faf596ba,3,배다리선착장,배다리선착장,ARROW_SPLIT,ctu47,NAME_REGION_CANDIDATE,,,1
+ct_9d7c29faf596ba,4,시흥오이도박물관,시흥오이도박물관,ARROW_SPLIT,ctt202,NAME_REGION_CANDIDATE,,,1
+ct_9d7c29faf596ba,5,거북섬마리나,거북섬마리나,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6cf48b66ea1462,1,정규코스(계절별 코스 변경하여 운영)+ 특별코스(부천페스타 통합 축제 연계 등),정규코스+ 특별코스,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_59939571d3144d,1,도동서원,도동서원,ARROW_SPLIT,ctt13,NAME_REGION_CANDIDATE,,,1
+ct_59939571d3144d,2,현풍도깨비시장,현풍도깨비시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_59939571d3144d,3,유가사,유가사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_59939571d3144d,4,사문진주막촌,사문진주막촌,ARROW_SPLIT,nax1331,NAME_REGION_CANDIDATE,,,1
+ct_81d027a80909ad,1,송해공원,송해공원,ARROW_SPLIT,ctt14,NAME_REGION_CANDIDATE,,,1
+ct_81d027a80909ad,2,마비정벽화마을,마비정벽화마을,ARROW_SPLIT,ctt17,NAME_REGION_CANDIDATE,,,1
+ct_81d027a80909ad,3,비슬산자연휴양림,비슬산자연휴양림,ARROW_SPLIT,ctt15,NAME_REGION_CANDIDATE,,,1
+ct_81d027a80909ad,4,화석박물관,화석박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_81d027a80909ad,5,사문진주막촌,사문진주막촌,ARROW_SPLIT,nax1331,NAME_REGION_CANDIDATE,,,1
+ct_2fd6da3e9c05f1,1,현풍휴게소,현풍휴게소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2fd6da3e9c05f1,2,석빙고,석빙고,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2fd6da3e9c05f1,3,현풍향교,현풍향교,ARROW_SPLIT,ctt206,NAME_REGION_CANDIDATE,,,1
+ct_2fd6da3e9c05f1,4,현풍도깨비시장,현풍도깨비시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2fd6da3e9c05f1,5,솔례마을,솔례마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2fd6da3e9c05f1,6,한훤당고택,한훤당고택,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2fd6da3e9c05f1,7,도동서원,도동서원,ARROW_SPLIT,ctt13,NAME_REGION_CANDIDATE,,,1
+ct_ea874684b8f5eb,1,인천종합관광안내소(송도센트럴파크)+인천대교 경유+을왕리 해변+인천대교 경유+인천종합관광안내소(송도센트럴파크),인천종합관광안내소+인천대교 경유+을왕리 해변+인천대교 경유+인천종합관광안내소,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_ef373fe068c00a,1,인천종합관광안내소(송도센트럴파크)+보문사+석모도수목원+외포항 젓갈수산시장+인천종합관광안내소(송도센트럴파크),인천종합관광안내소+보문사+석모도수목원+외포항 젓갈수산시장+인천종합관광안내소,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_f57520ed18c777,1,인천역+화개정원+대룡시장+교동제비집+강화평화전망대+인천역,인천역+화개정원+대룡시장+교동제비집+강화평화전망대+인천역,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_f52e5c7ace058c,1,인천역+선재도 목섬+진두선착장+십리포해수욕장+인천역,인천역+선재도 목섬+진두선착장+십리포해수욕장+인천역,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_64817a37134c4c,1,인천역+수도권매립지관광공사(드림파크 야생화 단지)+청라 호수공원+국립생활자원관+경인아라뱃길 아라타워 전망대+인천역,인천역+수도권매립지관광공사+청라 호수공원+국립생활자원관+경인아라뱃길 아라타워 전망대+인천역,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_3b7fb17b94bb3e,1,인천역+하나개해수욕장+광명항+소무의도+인천역,인천역+하나개해수욕장+광명항+소무의도+인천역,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_1d006fbc77670b,1,인천종합관광안내소(송도센트럴파크)+송도컨벤시아+공항여객터미널(T2)+인스파이어 엔터테인먼트 리조트+을왕리해수욕장+무의도 입구+파라다이스시티+G타워+인천종합관광안내소(송도센트럴파크),인천종합관광안내소+송도컨벤시아+공항여객터미널+인스파이어 엔터테인먼트 리조트+을왕리해수욕장+무의도 입구+파라다이스시티+G타워+인천종합관광안내소,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_92fa62b01fe134,1,인천종합관광안내소(송도센트럴파크)+신포국제시장(답동성당)+화평동 냉면거리(자유공원)+인천역(차이나타운)+상상플랫폼+아트플랫폼(하버파크호텔)+송도컨벤시아+현대프리미엄아울렛 송도점+인천종합관광안내소(센트럴파크역),인천종합관광안내소+신포국제시장+화평동 냉면거리+인천역+상상플랫폼+아트플랫폼+송도컨벤시아+현대프리미엄아울렛 송도점+인천종합관광안내소,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_6a70ad6756af12,1,전주시청,전주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6a70ad6756af12,2,옥정호 붕어섬,옥정호 붕어섬,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6a70ad6756af12,3,임실 전통시장,임실 전통시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6a70ad6756af12,4,임실치즈테마파크,임실치즈테마파크,ARROW_SPLIT,nax1321,NAME_REGION_CANDIDATE,,,1
+ct_6a70ad6756af12,5,전주시청,전주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8e44eb3beb425d,1,근대역사박물관 주차장,근대역사박물관 주차장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8e44eb3beb425d,2,고군산군도,고군산군도,ARROW_SPLIT,ro322,NAME_REGION_CANDIDATE,,,1
+ct_8e44eb3beb425d,3,근대역사박물관 주차장,근대역사박물관 주차장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ebdaf87ea590,1,익산역 버스정류장,익산역 버스정류장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ebdaf87ea590,2,고군산군도,고군산군도,ARROW_SPLIT,ro322,NAME_REGION_CANDIDATE,,,1
+ct_71ebdaf87ea590,3,점심식사,점심식사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ebdaf87ea590,4,동국사,동국사,ARROW_SPLIT,ctt207,NAME_REGION_CANDIDATE,,,1
+ct_71ebdaf87ea590,5,신흥동일본식가옥,신흥동일본식가옥,ARROW_SPLIT,ctt208,NAME_REGION_CANDIDATE,,,1
+ct_71ebdaf87ea590,6,초원사진관,초원사진관,ARROW_SPLIT,nax284,NAME_REGION_CANDIDATE,,,1
+ct_71ebdaf87ea590,7,시간여행마을 일원,시간여행마을 일원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ebdaf87ea590,8,익산역 버스정류장,익산역 버스정류장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_340b5457f858e1,1,시외버스터미널,시외버스터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_340b5457f858e1,2,군산역,군산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_340b5457f858e1,3,고군산군도,고군산군도,ARROW_SPLIT,ro322,NAME_REGION_CANDIDATE,,,1
+ct_340b5457f858e1,4,점심식사,점심식사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_340b5457f858e1,5,시간여행마을 일원,시간여행마을 일원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_340b5457f858e1,6,군산역,군산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_340b5457f858e1,7,시외버스터미널,시외버스터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b8c412162dc068,1,자유코스,자유코스,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_90ceaa7f061a65,1,의림지,의림지,ARROW_SPLIT,nax642,NAME_REGION_CANDIDATE,,,1
+ct_90ceaa7f061a65,2,전통시장,전통시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_90ceaa7f061a65,3,청풍호반케이블카,청풍호반케이블카,ARROW_SPLIT,nax641,NAME_REGION_CANDIDATE,,,1
+ct_90ceaa7f061a65,4,제천 옥순봉 출렁다리,제천 옥순봉 출렁다리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dbdc09f194a40f,1,묵호역,묵호역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dbdc09f194a40f,2,동쪽바다중앙시장(묵호항 여객터미널),동쪽바다중앙시장,ARROW_SPLIT,nax11,NAME_REGION_CANDIDATE,,,1
+ct_dbdc09f194a40f,3,묵호시장(수변공원),묵호시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dbdc09f194a40f,4,망상해변정류장(보양온천맞은편),망상해변정류장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dbdc09f194a40f,5,동해시 종합 버스 터미널,동해시 종합 버스 터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dbdc09f194a40f,6,천곡로터리(삼성아파트정류장),천곡로터리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dbdc09f194a40f,7,천곡황금박쥐동굴,천곡황금박쥐동굴,ARROW_SPLIT,nax14,NAME_REGION_CANDIDATE,,,1
+ct_dbdc09f194a40f,8,무릉별유천지,무릉별유천지,ARROW_SPLIT,nax890,NAME_REGION_CANDIDATE,,,1
+ct_dbdc09f194a40f,9,무릉계곡,무릉계곡,ARROW_SPLIT,nax9,NAME_REGION_CANDIDATE,,,1
+ct_dbdc09f194a40f,10,추암해변정류장,추암해변정류장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dbdc09f194a40f,11,감추사주차장,감추사주차장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dbdc09f194a40f,12,묵호역,묵호역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ac56eddb7e59fc,1,광화문역,광화문역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ac56eddb7e59fc,2,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ac56eddb7e59fc,3,갈대습지,갈대습지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ac56eddb7e59fc,4,산업역사박물관,산업역사박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ac56eddb7e59fc,5,안산식물원,안산식물원,ARROW_SPLIT,ctt212,NAME_REGION_CANDIDATE,,,1
+ct_ac56eddb7e59fc,6,성혹박물관,성혹박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ac56eddb7e59fc,7,안산읍성수압마을,안산읍성수압마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ac56eddb7e59fc,8,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93314efa72282,1,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93314efa72282,2,갈대습지,갈대습지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93314efa72282,3,다문화거리,다문화거리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93314efa72282,4,산업역사박물관,산업역사박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93314efa72282,5,안산식물원,안산식물원,ARROW_SPLIT,ctt212,NAME_REGION_CANDIDATE,,,1
+ct_e93314efa72282,6,성혹박물관,성혹박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93314efa72282,7,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_078e955afe7fe0,1,광화문역,광화문역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_078e955afe7fe0,2,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_078e955afe7fe0,3,조력문화관,조력문화관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_078e955afe7fe0,4,종이미술관/유리섬,종이미술관/유리섬,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_078e955afe7fe0,5,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9b37526d2e5c41,1,광화문역,광화문역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9b37526d2e5c41,2,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9b37526d2e5c41,3,탄도누에섬,탄도누에섬,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9b37526d2e5c41,4,바다향기수목원,바다향기수목원,ARROW_SPLIT,ctt217,NAME_REGION_CANDIDATE,,,1
+ct_9b37526d2e5c41,5,퇴적암층,퇴적암층,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9b37526d2e5c41,6,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eaba693970a089,1,광화문역,광화문역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eaba693970a089,2,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eaba693970a089,3,조력문화관,조력문화관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eaba693970a089,4,방아머리해변,방아머리해변,ARROW_SPLIT,ctt219,NAME_REGION_CANDIDATE,,,1
+ct_eaba693970a089,5,바다향기수목원,바다향기수목원,ARROW_SPLIT,ctt217,NAME_REGION_CANDIDATE,,,1
+ct_eaba693970a089,6,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0490c8ba74a6b9,1,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0490c8ba74a6b9,2,종이미술관/유리섬,종이미술관/유리섬,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0490c8ba74a6b9,3,방아머리해변,방아머리해변,ARROW_SPLIT,ctt219,NAME_REGION_CANDIDATE,,,1
+ct_0490c8ba74a6b9,4,방아머리선착장,방아머리선착장,ARROW_SPLIT,ctu49,NAME_REGION_CANDIDATE,,,1
+ct_0490c8ba74a6b9,5,반달섬,반달섬,ARROW_SPLIT,ctt220,NAME_REGION_CANDIDATE,,,1
+ct_0490c8ba74a6b9,6,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b581316446a287,1,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b581316446a287,2,와이너리,와이너리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b581316446a287,3,방아머리해변,방아머리해변,ARROW_SPLIT,ctt219,NAME_REGION_CANDIDATE,,,1
+ct_b581316446a287,4,방아머리선착장,방아머리선착장,ARROW_SPLIT,ctu49,NAME_REGION_CANDIDATE,,,1
+ct_b581316446a287,5,반달섬,반달섬,ARROW_SPLIT,ctt220,NAME_REGION_CANDIDATE,,,1
+ct_b581316446a287,6,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_49d5233ff18a2c,1,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_49d5233ff18a2c,2,갈대습지,갈대습지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_49d5233ff18a2c,3,반달섬,반달섬,ARROW_SPLIT,ctt220,NAME_REGION_CANDIDATE,,,1
+ct_49d5233ff18a2c,4,방아머리해변,방아머리해변,ARROW_SPLIT,ctt219,NAME_REGION_CANDIDATE,,,1
+ct_49d5233ff18a2c,5,반달섬,반달섬,ARROW_SPLIT,ctt220,NAME_REGION_CANDIDATE,,,1
+ct_49d5233ff18a2c,6,방아머리선착장,방아머리선착장,ARROW_SPLIT,ctu49,NAME_REGION_CANDIDATE,,,1
+ct_49d5233ff18a2c,7,구봉도카페거리해솔길,구봉도카페거리해솔길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_49d5233ff18a2c,8,조력문화관,조력문화관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_49d5233ff18a2c,9,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_858411599d42cb,1,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_858411599d42cb,2,갈대습지,갈대습지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_858411599d42cb,3,반달섬,반달섬,ARROW_SPLIT,ctt220,NAME_REGION_CANDIDATE,,,1
+ct_858411599d42cb,4,방아머리해변,방아머리해변,ARROW_SPLIT,ctt219,NAME_REGION_CANDIDATE,,,1
+ct_858411599d42cb,5,반달섬,반달섬,ARROW_SPLIT,ctt220,NAME_REGION_CANDIDATE,,,1
+ct_858411599d42cb,6,방아머리선착장,방아머리선착장,ARROW_SPLIT,ctu49,NAME_REGION_CANDIDATE,,,1
+ct_858411599d42cb,7,방아머리해변,방아머리해변,ARROW_SPLIT,ctt219,NAME_REGION_CANDIDATE,,,1
+ct_858411599d42cb,8,조력문화관,조력문화관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_858411599d42cb,9,중앙역,중앙역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0650ec43f538e8,1,대통령기록관,대통령기록관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0650ec43f538e8,2,국립세종수목원,국립세종수목원,ARROW_SPLIT,nax690,NAME_REGION_CANDIDATE,,,1
+ct_0650ec43f538e8,3,이응다리,이응다리,ARROW_SPLIT,nax1218,NAME_REGION_CANDIDATE,,,1
+ct_4f962bba7caecf,1,이응다리,이응다리,ARROW_SPLIT,nax1218,NAME_REGION_CANDIDATE,,,1
+ct_4f962bba7caecf,2,나성동 도시상징광장,나성동 도시상징광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4f962bba7caecf,3,정부세종청사,정부세종청사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4f962bba7caecf,4,세종컨벤션센터,세종컨벤션센터,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4f962bba7caecf,5,방축천 음악분수,방축천 음악분수,ARROW_SPLIT,ctt222,NAME_REGION_CANDIDATE,,,1
+ct_7a7f12f653bd56,1,이응다리,이응다리,ARROW_SPLIT,nax1218,NAME_REGION_CANDIDATE,,,1
+ct_7a7f12f653bd56,2,나성동 도시상징광장,나성동 도시상징광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7a7f12f653bd56,3,정부세종청사,정부세종청사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7a7f12f653bd56,4,세종컨벤션센터,세종컨벤션센터,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7a7f12f653bd56,5,정부세종청사 옥상정원,정부세종청사 옥상정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d7dc9fccdf89ed,1,초려역사공원,초려역사공원,ARROW_SPLIT,ctt223,NAME_REGION_CANDIDATE,,,1
+ct_d7dc9fccdf89ed,2,백제고분역사공원,백제고분역사공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d7dc9fccdf89ed,3,정부세종청사,정부세종청사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d7dc9fccdf89ed,4,세종컨벤션센터,세종컨벤션센터,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd500b9fb145f6,1,세종전통문화체험관,세종전통문화체험관,ARROW_SPLIT,ctt225,NAME_REGION_CANDIDATE,,,1
+ct_cd500b9fb145f6,2,이응다리,이응다리,ARROW_SPLIT,nax1218,NAME_REGION_CANDIDATE,,,1
+ct_cd500b9fb145f6,3,나성동 도시상징광장,나성동 도시상징광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd500b9fb145f6,4,정부세종청사,정부세종청사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_cd500b9fb145f6,5,세종컨벤션센터,세종컨벤션센터,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f2f602d02706c,1,교과서박물관,교과서박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f2f602d02706c,2,세종 홍판서댁,세종 홍판서댁,ARROW_SPLIT,ctt227,NAME_REGION_CANDIDATE,,,1
+ct_8f2f602d02706c,3,숭모각,숭모각,ARROW_SPLIT,ctt228,NAME_REGION_CANDIDATE,,,1
+ct_3619e6ebd7996c,1,고복자연공원,고복자연공원,ARROW_SPLIT,nax692,NAME_REGION_CANDIDATE,,,1
+ct_3619e6ebd7996c,2,세종전통시장(조치원),세종전통시장,ARROW_SPLIT,ro948,NAME_REGION_CANDIDATE,,,1
+ct_3619e6ebd7996c,3,조천 벚꽃길,조천 벚꽃길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b82e38bb34c163,1,고복자연공원,고복자연공원,ARROW_SPLIT,nax692,NAME_REGION_CANDIDATE,,,1
+ct_b82e38bb34c163,2,세종전통시장(조치원),세종전통시장,ARROW_SPLIT,ro948,NAME_REGION_CANDIDATE,,,1
+ct_b82e38bb34c163,3,조천 벚꽃길,조천 벚꽃길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_63211eb4afc4fd,1,"세종호수공원,대통령기록관","세종호수공원,대통령기록관",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_63211eb4afc4fd,2,천안독립기념관,천안독립기념관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_63211eb4afc4fd,3,뚜쥬르과자점,뚜쥬르과자점,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fd8da726080f86,1,베어트리파트,베어트리파트,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fd8da726080f86,2,세종전통시장(조치원),세종전통시장,ARROW_SPLIT,ro948,NAME_REGION_CANDIDATE,,,1
+ct_fd8da726080f86,3,조치원 영화·드라마 촬영지 및 우수건축자산,조치원 영화·드라마 촬영지 및 우수건축자산,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c4612c64409760,1,국립세종수목원,국립세종수목원,ARROW_SPLIT,nax690,NAME_REGION_CANDIDATE,,,1
+ct_c4612c64409760,2,대통령기록관,대통령기록관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c4612c64409760,3,세종호수공원,세종호수공원,ARROW_SPLIT,nax689,NAME_REGION_CANDIDATE,,,1
+ct_c4612c64409760,4,정부세종청사 옥상정원,정부세종청사 옥상정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c4612c64409760,5,도시상징광장,도시상징광장,ARROW_SPLIT,ctt221,NAME_REGION_CANDIDATE,,,1
+ct_c4612c64409760,6,이응다리,이응다리,ARROW_SPLIT,nax1218,NAME_REGION_CANDIDATE,,,1
+ct_4fce0ac24a202a,1,화순온천주차장,화순온천주차장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4fce0ac24a202a,2,이서커뮤니티센터,이서커뮤니티센터,ARROW_SPLIT,ctu52,NAME_REGION_CANDIDATE,,,1
+ct_4fce0ac24a202a,3,화순적벽입구,화순적벽입구,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4fce0ac24a202a,4,"화순적벽(망향정, 망미정)",화순적벽,ARROW_SPLIT,nax433,NAME_REGION_CANDIDATE,,,1
+ct_4fce0ac24a202a,5,화순적벽입구,화순적벽입구,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4fce0ac24a202a,6,이서커뮤니티센터,이서커뮤니티센터,ARROW_SPLIT,ctu52,NAME_REGION_CANDIDATE,,,1
+ct_4fce0ac24a202a,7,화순온천주차장,화순온천주차장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b129e248ad44e7,1,화순읍(이용대체육관앞),화순읍,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b129e248ad44e7,2,"화순적벽(망향정, 망미정)",화순적벽,ARROW_SPLIT,nax433,NAME_REGION_CANDIDATE,,,1
+ct_b129e248ad44e7,3,이용대체육관앞(화순읍),이용대체육관앞,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b7b8a9f9666926,1,만리포&유류피해극복기념관,만리포&유류피해극복기념관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b7b8a9f9666926,2,팜카밀레허브농원,팜카밀레허브농원,ARROW_SPLIT,ctt232,NAME_REGION_CANDIDATE,,,1
+ct_b7b8a9f9666926,3,꽃지해수욕장,꽃지해수욕장,ARROW_SPLIT,nax313,NAME_REGION_CANDIDATE,,,1
+ct_b7b8a9f9666926,4,로컬푸드직매장,로컬푸드직매장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_063b366c968b23,1,팜카밀레허브농원,팜카밀레허브농원,ARROW_SPLIT,ctt232,NAME_REGION_CANDIDATE,,,1
+ct_063b366c968b23,2,안면암,안면암,ARROW_SPLIT,ro27,NAME_REGION_CANDIDATE,,,1
+ct_063b366c968b23,3,백사장항 수산시장,백사장항 수산시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_063b366c968b23,4,안면도수목원,안면도수목원,ARROW_SPLIT,ctt233,NAME_REGION_CANDIDATE,,,1
+ct_063b366c968b23,5,꽃지해수욕장,꽃지해수욕장,ARROW_SPLIT,nax313,NAME_REGION_CANDIDATE,,,1
+ct_063b366c968b23,6,로컬푸드직매장,로컬푸드직매장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5382e38e9c7596,1,국립태안해양유물전시관,국립태안해양유물전시관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5382e38e9c7596,2,만리포해변,만리포해변,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5382e38e9c7596,3,천리포수목원,천리포수목원,ARROW_SPLIT,nax315,NAME_REGION_CANDIDATE,,,1
+ct_5382e38e9c7596,4,신두리해안사구,신두리해안사구,ARROW_SPLIT,nax314,NAME_REGION_CANDIDATE,,,1
+ct_e5a72de0ad868e,1,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5a72de0ad868e,2,공지천,공지천,ARROW_SPLIT,ctt235,NAME_REGION_CANDIDATE,,,1
+ct_e5a72de0ad868e,3,춘천삼악산호수케이블카,춘천삼악산호수케이블카,ARROW_SPLIT,ctt236,NAME_REGION_CANDIDATE,,,1
+ct_e5a72de0ad868e,4,애니메이션박물관,애니메이션박물관,ARROW_SPLIT,nax737,NAME_REGION_CANDIDATE,,,1
+ct_e5a72de0ad868e,5,강원특별자치도립화목원,강원특별자치도립화목원,ARROW_SPLIT,ctt237,NAME_REGION_CANDIDATE,,,1
+ct_e5a72de0ad868e,6,춘천막국수체험박물관,춘천막국수체험박물관,ARROW_SPLIT,ro357,NAME_REGION_CANDIDATE,,,1
+ct_e5a72de0ad868e,7,소양강댐 닭갈비촌,소양강댐 닭갈비촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5a72de0ad868e,8,소양강댐,소양강댐,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5a72de0ad868e,9,소양아트서클&소양강스카이워크,소양아트서클&소양강스카이워크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e5a72de0ad868e,10,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_14dc841262bcbc,1,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_14dc841262bcbc,2,공지천,공지천,ARROW_SPLIT,ctt235,NAME_REGION_CANDIDATE,,,1
+ct_14dc841262bcbc,3,춘천삼악산호수케이블카,춘천삼악산호수케이블카,ARROW_SPLIT,ctt236,NAME_REGION_CANDIDATE,,,1
+ct_14dc841262bcbc,4,애니메이션박물관,애니메이션박물관,ARROW_SPLIT,nax737,NAME_REGION_CANDIDATE,,,1
+ct_14dc841262bcbc,5,강원특별자치도립화목원,강원특별자치도립화목원,ARROW_SPLIT,ctt237,NAME_REGION_CANDIDATE,,,1
+ct_14dc841262bcbc,6,춘천막국수체험박물관,춘천막국수체험박물관,ARROW_SPLIT,ro357,NAME_REGION_CANDIDATE,,,1
+ct_14dc841262bcbc,7,소양강댐 닭갈비촌,소양강댐 닭갈비촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_14dc841262bcbc,8,소양강댐,소양강댐,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_14dc841262bcbc,9,소양아트서클&소양강스카이워크,소양아트서클&소양강스카이워크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_14dc841262bcbc,10,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_901bb487790e2e,1,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_901bb487790e2e,2,공지천,공지천,ARROW_SPLIT,ctt235,NAME_REGION_CANDIDATE,,,1
+ct_901bb487790e2e,3,KT&G상상마당,KT&G상상마당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_901bb487790e2e,4,춘천삼악산 호수케이블카,춘천삼악산 호수케이블카,ARROW_SPLIT,ctt236,NAME_REGION_CANDIDATE,,,1
+ct_901bb487790e2e,5,남이섬,남이섬,ARROW_SPLIT,nax230,NAME_REGION_CANDIDATE,,,1
+ct_901bb487790e2e,6,김유정문학촌,김유정문학촌,ARROW_SPLIT,nax233,NAME_REGION_CANDIDATE,,,1
+ct_901bb487790e2e,7,세계주류마켓,세계주류마켓,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_901bb487790e2e,8,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ff52c6884c5db1,1,소양강댐,소양강댐,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ff52c6884c5db1,2,청평사,청평사,ARROW_SPLIT,nax232,NAME_REGION_CANDIDATE,,,1
+ct_ff52c6884c5db1,3,중도물레길카누/물레길 산책,중도물레길카누/물레길 산책,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4663a620e3a55a,1,국립춘천박물관,국립춘천박물관,ARROW_SPLIT,ro561,NAME_REGION_CANDIDATE,,,1
+ct_4663a620e3a55a,2,김유정문학촌/책과인쇄박물관,김유정문학촌/책과인쇄박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4663a620e3a55a,3,장절공 신숭겸묘,장절공 신숭겸묘,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c4479f1056ca0b,1,제이드가든,제이드가든,ARROW_SPLIT,nax735,NAME_REGION_CANDIDATE,,,1
+ct_c4479f1056ca0b,2,온의동 닭갈비촌 근처,온의동 닭갈비촌 근처,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c4479f1056ca0b,3,공지천&사이로248,공지천&사이로248,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c4479f1056ca0b,4,춘천막국수체험박물관,춘천막국수체험박물관,ARROW_SPLIT,ro357,NAME_REGION_CANDIDATE,,,1
+ct_0b37b012beb8e3,1,춘천 삼악산 호수케이블카,춘천 삼악산 호수케이블카,ARROW_SPLIT,ctt236,NAME_REGION_CANDIDATE,,,1
+ct_0b37b012beb8e3,2,소양강댐 닭갈비촌 근처,소양강댐 닭갈비촌 근처,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0b37b012beb8e3,3,구봉산 카페거리,구봉산 카페거리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0b37b012beb8e3,4,소양아트서클/소양강 스카이워크,소양아트서클/소양강 스카이워크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6ddbbb9235764,1,만남의광장,만남의광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6ddbbb9235764,2,가로수길,가로수길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6ddbbb9235764,3,창원의집,창원의집,ARROW_SPLIT,ctt244,NAME_REGION_CANDIDATE,,,1
+ct_b6ddbbb9235764,4,마산역,마산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6ddbbb9235764,5,창원NC파크,창원NC파크,ARROW_SPLIT,ro176,NAME_REGION_CANDIDATE,,,1
+ct_b6ddbbb9235764,6,"마산상상길,창동예술촌","마산상상길,창동예술촌",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6ddbbb9235764,7,마산어시장,마산어시장,ARROW_SPLIT,nax303,NAME_REGION_CANDIDATE,,,1
+ct_b6ddbbb9235764,8,3.15해양누리공원,3.15해양누리공원,ARROW_SPLIT,ro570,NAME_REGION_CANDIDATE,,,1
+ct_b6ddbbb9235764,9,장복산(내수면),장복산,ARROW_SPLIT,ctt246,NAME_REGION_CANDIDATE,,,1
+ct_b6ddbbb9235764,10,제황산공원,제황산공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b6ddbbb9235764,11,진해루,진해루,ARROW_SPLIT,nax952,NAME_REGION_CANDIDATE,,,1
+ct_b6ddbbb9235764,12,경화역공원,경화역공원,ARROW_SPLIT,nax951,NAME_REGION_CANDIDATE,,,1
+ct_b6ddbbb9235764,13,만남의광장,만남의광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2b5d87fb80494c,1,남한산성,남한산성,ARROW_SPLIT,nax422,NAME_REGION_CANDIDATE,,,1
+ct_2b5d87fb80494c,2,경안천습지생태공원,경안천습지생태공원,ARROW_SPLIT,ro898,NAME_REGION_CANDIDATE,,,1
+ct_2b5d87fb80494c,3,영은미술관,영은미술관,ARROW_SPLIT,ctt247,NAME_REGION_CANDIDATE,,,1
+ct_2b5d87fb80494c,4,경기도자박물관,경기도자박물관,ARROW_SPLIT,ro827,NAME_REGION_CANDIDATE,,,1
+ct_2b5d87fb80494c,5,화담숲,화담숲,ARROW_SPLIT,nax423,NAME_REGION_CANDIDATE,,,1
+ct_2b5d87fb80494c,6,신익희생가,신익희생가,ARROW_SPLIT,ctt248,NAME_REGION_CANDIDATE,,,1
+ct_2b5d87fb80494c,7,율봄식물원,율봄식물원,ARROW_SPLIT,ro899,NAME_REGION_CANDIDATE,,,1
+ct_312257a4376567,1,김해분청도자박물관,김해분청도자박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_312257a4376567,2,클레이아크김해미술관,클레이아크김해미술관,ARROW_SPLIT,nax936,NAME_REGION_CANDIDATE,,,1
+ct_312257a4376567,3,"김해탄소중립체험관,김해목재문화박물관(택1)","김해탄소중립체험관,김해목재문화박물관",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_312257a4376567,4,율하유적전시관,율하유적전시관,ARROW_SPLIT,ctt251,NAME_REGION_CANDIDATE,,,1
+ct_4f5df39346fc84,1,수로왕비릉,수로왕비릉,ARROW_SPLIT,ctt252,NAME_REGION_CANDIDATE,,,1
+ct_4f5df39346fc84,2,구지봉,구지봉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4f5df39346fc84,3,국립김해박물관,국립김해박물관,ARROW_SPLIT,nax930,NAME_REGION_CANDIDATE,,,1
+ct_4f5df39346fc84,4,대성동고분군,대성동고분군,ARROW_SPLIT,nax434,NAME_REGION_CANDIDATE,,,1
+ct_4f5df39346fc84,5,수로왕릉,수로왕릉,ARROW_SPLIT,nax435,NAME_REGION_CANDIDATE,,,1
+ct_4f5df39346fc84,6,봉황동유적,봉황동유적,ARROW_SPLIT,nax931,NAME_REGION_CANDIDATE,,,1
+ct_71a7cb59c4b4eb,1,진영역사공원,진영역사공원,ARROW_SPLIT,ctt254,NAME_REGION_CANDIDATE,,,1
+ct_71a7cb59c4b4eb,2,봉하마을,봉하마을,ARROW_SPLIT,nax852,NAME_REGION_CANDIDATE,,,1
+ct_71a7cb59c4b4eb,3,"화포천습지과학관,김해수도박물관(택1)","화포천습지과학관,김해수도박물관",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71a7cb59c4b4eb,4,화포천습지,화포천습지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71a7cb59c4b4eb,5,김해낙동강레일파크,김해낙동강레일파크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_34c413d7d7e1b4,1,(오전1)봉황동유적,봉황동유적,ARROW_SPLIT,nax931,NAME_REGION_CANDIDATE,,,1
+ct_34c413d7d7e1b4,2,수로왕릉,수로왕릉,ARROW_SPLIT,nax435,NAME_REGION_CANDIDATE,,,1
+ct_34c413d7d7e1b4,3,대성동고분박물관/(오전2)수로왕비릉,대성동고분박물관/수로왕비릉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_34c413d7d7e1b4,4,구지봉,구지봉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_34c413d7d7e1b4,5,국립김해박물관/(오후1)봉하마을,국립김해박물관/봉하마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_34c413d7d7e1b4,6,화포천습지/(오후2)클레이아크김해미술관,화포천습지/클레이아크김해미술관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_34c413d7d7e1b4,7,분청도자박물관/(오후3)가야테마파크/(오후4)김해낙동강레일파크,분청도자박물관/가야테마파크/김해낙동강레일파크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_48901cf4a65790,1,포항역(A)_죽도시장_시외버스터미널(B)_죽도시장_영일대해수욕장_스페이스워크_시외버스터미널_포항역,포항역_죽도시장_시외버스터미널_죽도시장_영일대해수욕장_스페이스워크_시외버스터미널_포항역,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_3b4c8c4807a678,1,시외버스터미널_포항역_스페이스워크_청하시장(오윤카페)_보경사_이가리닻전망대_사방기념공원_시외버스터미널_포항역,시외버스터미널_포항역_스페이스워크_청하시장_보경사_이가리닻전망대_사방기념공원_시외버스터미널_포항역,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_276690b13793b5,1,포항역_시외버스터미널_구룡포일본인가옥거리_호미곶광장_선바위둘레길_죽도시장_스페이스워크_시외버스터미널_포항역,포항역_시외버스터미널_구룡포일본인가옥거리_호미곶광장_선바위둘레길_죽도시장_스페이스워크_시외버스터미널_포항역,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_2f0fc9a5ffc249,1,포항역_시외버스터미널_구룡포일본인가옥거리(중식별도)_과메기문화관_호미곶광장_호미반도둘레길(선바위)_죽도시장_영일대해수욕장(석식별도),포항역_시외버스터미널_구룡포일본인가옥거리_과메기문화관_호미곶광장_호미반도둘레길_죽도시장_영일대해수욕장,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_86a531f6ef070f,1,국립생태원,국립생태원,ARROW_SPLIT,nax450,NAME_REGION_CANDIDATE,,,1
+ct_86a531f6ef070f,2,장항 6080음식골목 맛나로(중식),장항 6080음식골목 맛나로,ARROW_SPLIT,ctt257,NAME_REGION_CANDIDATE,,,1
+ct_86a531f6ef070f,3,장항도시탐험역,장항도시탐험역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_86a531f6ef070f,4,장항송림자연휴양림/스카이워크,장항송림자연휴양림/스카이워크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_86a531f6ef070f,5,조류생태전시관,조류생태전시관,ARROW_SPLIT,ctt259,NAME_REGION_CANDIDATE,,,1
+ct_86a531f6ef070f,6,금강하구둑 관광지,금강하구둑 관광지,ARROW_SPLIT,ctt260,NAME_REGION_CANDIDATE,,,1
+ct_2f638e22997346,1,문헌서원,문헌서원,ARROW_SPLIT,ctt261,NAME_REGION_CANDIDATE,,,1
+ct_2f638e22997346,2,봉선저수지,봉선저수지,ARROW_SPLIT,ctt262,NAME_REGION_CANDIDATE,,,1
+ct_2f638e22997346,3,한산면 일원(중식),한산면 일원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2f638e22997346,4,이상재 생가,이상재 생가,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2f638e22997346,5,신성리갈대숲,신성리갈대숲,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2f638e22997346,6,한산모시관,한산모시관,ARROW_SPLIT,ctt264,NAME_REGION_CANDIDATE,,,1
+ct_2f638e22997346,7,이하복 고택,이하복 고택,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98e500ccd418dd,1,판교근대역사문화공간,판교근대역사문화공간,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98e500ccd418dd,2,한국최초성경전래지기념관,한국최초성경전래지기념관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98e500ccd418dd,3,마량진항 일원(중식),마량진항 일원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98e500ccd418dd,4,마량진 동백나무숲,마량진 동백나무숲,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98e500ccd418dd,5,치유의 숲,치유의 숲,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_98e500ccd418dd,6,서천특화시장,서천특화시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dd85abcf67dc91,1,국립생태원,국립생태원,ARROW_SPLIT,nax450,NAME_REGION_CANDIDATE,,,1
+ct_dd85abcf67dc91,2,장항6080음식골목 맛나로(중식),장항6080음식골목 맛나로,ARROW_SPLIT,ctt257,NAME_REGION_CANDIDATE,,,1
+ct_dd85abcf67dc91,3,장항도시탐험역,장항도시탐험역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_dd85abcf67dc91,4,장항송림자연휴양림,장항송림자연휴양림,ARROW_SPLIT,ctt258,NAME_REGION_CANDIDATE,,,1
+ct_dd85abcf67dc91,5,국립해양생물자원관,국립해양생물자원관,ARROW_SPLIT,ctt268,NAME_REGION_CANDIDATE,,,1
+ct_dd85abcf67dc91,6,조류생태전시관,조류생태전시관,ARROW_SPLIT,ctt259,NAME_REGION_CANDIDATE,,,1
+ct_dd85abcf67dc91,7,서천특화시장,서천특화시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_50924c646993fd,1,A코스(바다야): 숲쟁이공원(백제불교최초도래지),A코스: 숲쟁이공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_50924c646993fd,2,중식(영광굴비 한정식),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_50924c646993fd,3,백수해안도로,백수해안도로,ARROW_SPLIT,ctt269,NAME_REGION_CANDIDATE,,,1
+ct_50924c646993fd,4,백수 풍력발전단지,백수 풍력발전단지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_50924c646993fd,5,영광칠산타워B코스(행복숲): 물무산행복숲 황톳길,영광칠산타워B코스: 물무산행복숲 황톳길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_50924c646993fd,6,중식(영광굴비한정식),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_50924c646993fd,7,원불교영산성지,원불교영산성지,ARROW_SPLIT,ctt270,NAME_REGION_CANDIDATE,,,1
+ct_50924c646993fd,8,매간당고택,매간당고택,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_50924c646993fd,9,불갑사,불갑사,ARROW_SPLIT,ctt272,NAME_REGION_CANDIDATE,,,1
+ct_7eef7a266fdb9e,1,서울역,서울역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7eef7a266fdb9e,2,평창역,평창역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7eef7a266fdb9e,3,광천선굴,광천선굴,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7eef7a266fdb9e,4,청옥산 육백마지기,청옥산 육백마지기,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7eef7a266fdb9e,5,깨비마을(산나물 도시락 체험),깨비마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7eef7a266fdb9e,6,평창돌문화체험관,평창돌문화체험관,ARROW_SPLIT,ctt273,NAME_REGION_CANDIDATE,,,1
+ct_7eef7a266fdb9e,7,평창역,평창역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7eef7a266fdb9e,8,서울역,서울역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eac349cb201ae4,1,(금.토) 해양레일바이크,해양레일바이크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eac349cb201ae4,2,해상케이블카,해상케이블카,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eac349cb201ae4,3,삼척중앙시장 청년몰(일) 대금굴,삼척중앙시장 청년몰 대금굴,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eac349cb201ae4,4,활기치유의숲,활기치유의숲,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eac349cb201ae4,5,삼척중앙시장 청년몰,삼척중앙시장 청년몰,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91f725960f06ee,1,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91f725960f06ee,2,삼례문화예술촌,삼례문화예술촌,ARROW_SPLIT,nax1317,NAME_REGION_CANDIDATE,,,1
+ct_91f725960f06ee,3,"오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을","오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91f725960f06ee,4,"위봉산성,위봉폭포","위봉산성,위봉폭포",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91f725960f06ee,5,익산역,익산역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5d0095b233c20e,1,서울시청,서울시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5d0095b233c20e,2,삼례문화예술촌,삼례문화예술촌,ARROW_SPLIT,nax1317,NAME_REGION_CANDIDATE,,,1
+ct_5d0095b233c20e,3,"오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을","오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5d0095b233c20e,4,"위봉산성,위봉폭포","위봉산성,위봉폭포",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5d0095b233c20e,5,용진로컬푸드직매장,용진로컬푸드직매장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5d0095b233c20e,6,서울시청,서울시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26775e0ab47331,1,전주종합경기장,전주종합경기장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26775e0ab47331,2,전주역,전주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26775e0ab47331,3,전주한옥마을,전주한옥마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26775e0ab47331,4,공기마을 편백숲,공기마을 편백숲,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26775e0ab47331,5,전북도립미술관,전북도립미술관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26775e0ab47331,6,대한민국술테마박물관,대한민국술테마박물관,ARROW_SPLIT,ctt282,NAME_REGION_CANDIDATE,,,1
+ct_26775e0ab47331,7,전주한옥마을,전주한옥마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26775e0ab47331,8,전주종합경기장,전주종합경기장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26775e0ab47331,9,전주역,전주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e1e83cf453f86e,1,전주종합경기장,전주종합경기장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e1e83cf453f86e,2,전주역,전주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e1e83cf453f86e,3,전주한옥마을,전주한옥마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e1e83cf453f86e,4,,,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e1e83cf453f86e,5,삼례문화예술촌,삼례문화예술촌,ARROW_SPLIT,nax1317,NAME_REGION_CANDIDATE,,,1
+ct_e1e83cf453f86e,6,"오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을","오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e1e83cf453f86e,7,전주역,전주역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e1e83cf453f86e,8,전주종합경기장,전주종합경기장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e1e83cf453f86e,9,전주한옥마을,전주한옥마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4b0365eb6f322e,1,서울역(금요일),서울역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4b0365eb6f322e,2,청량리역(토요일),청량리역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4b0365eb6f322e,3,진부역,진부역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4b0365eb6f322e,4,월정사,월정사,ARROW_SPLIT,ro31,NAME_REGION_CANDIDATE,,,1
+ct_4b0365eb6f322e,5,발왕산케이블카,발왕산케이블카,ARROW_SPLIT,nax524,NAME_REGION_CANDIDATE,,,1
+ct_4b0365eb6f322e,6,2018평창동계올림픽기념관,2018평창동계올림픽기념관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4b0365eb6f322e,7,진부역,진부역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4b0365eb6f322e,8,서울역/청량리역,서울역/청량리역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fcc0d169185b98,1,중식 이후 축제장 관람,중식 이후 축제장 관람,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,1,수서역 출발,수서역 출발,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,2,송정역 도착,송정역 도착,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,3,완도항여객선터미널,완도항여객선터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,4,완도타워,완도타워,ARROW_SPLIT,nax670,NAME_REGION_CANDIDATE,,,1
+ct_37cc72cb777c4e,5,중식(완도),중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,6,장보고기념관,장보고기념관,ARROW_SPLIT,ctt284,NAME_REGION_CANDIDATE,,,1
+ct_37cc72cb777c4e,7,장보고유적지,장보고유적지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,8,완도수목원,완도수목원,ARROW_SPLIT,nax672,NAME_REGION_CANDIDATE,,,1
+ct_37cc72cb777c4e,9,정도리 구계등,정도리 구계등,ARROW_SPLIT,nax1330,NAME_REGION_CANDIDATE,,,1
+ct_37cc72cb777c4e,10,특산품 전시장,특산품 전시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,11,완도항여객선터미널,완도항여객선터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,12,석식(완도),석식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,13,송정역 탑승,송정역 탑승,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_37cc72cb777c4e,14,수서역 도착,수서역 도착,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,1,토요일: 하당,토요일: 하당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,2,목포역,목포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,3,진도휴게소,진도휴게소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,4,진도개테마파크,진도개테마파크,ARROW_SPLIT,ctt285,NAME_REGION_CANDIDATE,,,1
+ct_3265d22b795970,5,운림산방,운림산방,ARROW_SPLIT,ctt286,NAME_REGION_CANDIDATE,,,1
+ct_3265d22b795970,6,토요민속공연,토요민속공연,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,7,명품관,명품관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,8,"진도타워, 울돌목 물살체험장","진도타워, 울돌목 물살체험장",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,9,케이블카,케이블카,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,10,울돌목 주말장터,울돌목 주말장터,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,11,진도휴게소,진도휴게소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,12,목포역,목포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,13,하당 / 일요일: 하당,하당 / 일요일: 하당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,14,목포역,목포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,15,진도휴게소,진도휴게소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,16,진도개테마파크,진도개테마파크,ARROW_SPLIT,ctt285,NAME_REGION_CANDIDATE,,,1
+ct_3265d22b795970,17,명품관,명품관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,18,운림산방,운림산방,ARROW_SPLIT,ctt286,NAME_REGION_CANDIDATE,,,1
+ct_3265d22b795970,19,쏠비치 진도 산책로,쏠비치 진도 산책로,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,20,용장성,용장성,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,21,"진도타워, 울돌목 물살체험장","진도타워, 울돌목 물살체험장",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,22,케이블카,케이블카,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,23,울돌목 주말장터,울돌목 주말장터,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,24,진도휴게소,진도휴게소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,25,목포역,목포역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_3265d22b795970,26,하당,하당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4910d417e99af9,1,서울 교대역(용산역 경유),서울 교대역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4910d417e99af9,2,양주역 경유,양주역 경유,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4910d417e99af9,3,초록지기 마을,초록지기 마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4910d417e99af9,4,조소앙 기념관·수변산책,조소앙 기념관·수변산책,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4910d417e99af9,5,양주역/장암역/창동역,양주역/장암역/창동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_03a3ba58184784,1,서울 교대역(용산역 경유),서울 교대역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_03a3ba58184784,2,양주역 경유,양주역 경유,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_03a3ba58184784,3,회암사지 및 박물관,회암사지 및 박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_03a3ba58184784,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_03a3ba58184784,5,서울우유 견학 홍보관,서울우유 견학 홍보관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_03a3ba58184784,6,관아지.향교,관아지.향교,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_03a3ba58184784,7,양주역/장암역/창동역,양주역/장암역/창동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93496a3b42983,1,서울 교대역(용산역 경유),서울 교대역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93496a3b42983,2,양주역 경유,양주역 경유,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93496a3b42983,3,회암사지 및 박물관,회암사지 및 박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93496a3b42983,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93496a3b42983,5,필룩스조명박물관,필룩스조명박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93496a3b42983,6,청암민속박물관,청암민속박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e93496a3b42983,7,양주역/장암역/창동역,양주역/장암역/창동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_140490894f4b6c,1,서울 교대역(용산역 경유),서울 교대역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_140490894f4b6c,2,양주역 경유,양주역 경유,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_140490894f4b6c,3,회암사지 및 박물관,회암사지 및 박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_140490894f4b6c,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_140490894f4b6c,5,관아지·향교,관아지·향교,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_140490894f4b6c,6,온릉,온릉,ARROW_SPLIT,ctt292,NAME_REGION_CANDIDATE,,,1
+ct_140490894f4b6c,7,양주역/장암역/창동역,양주역/장암역/창동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c30be944270d7,1,서울 교대역(용산역 경유),서울 교대역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c30be944270d7,2,양주역 경유,양주역 경유,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c30be944270d7,3,회암사지 및 박물관,회암사지 및 박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c30be944270d7,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c30be944270d7,5,온릉,온릉,ARROW_SPLIT,ctt292,NAME_REGION_CANDIDATE,,,1
+ct_6c30be944270d7,6,장욱진·민복진미술관·조각공원,장욱진·민복진미술관·조각공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6c30be944270d7,7,양주역/장암역/창동역,양주역/장암역/창동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6b67c2c214b786,1,춘천역(여행자쉼터),춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6b67c2c214b786,2,DMZ펀치볼둘레길,DMZ펀치볼둘레길,ARROW_SPLIT,ctt293,NAME_REGION_CANDIDATE,,,1
+ct_6b67c2c214b786,3,DMZ자생식물권,DMZ자생식물권,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6b67c2c214b786,4,을지전망대,을지전망대,ARROW_SPLIT,ctt294,NAME_REGION_CANDIDATE,,,1
+ct_6b67c2c214b786,5,양구명품관,양구명품관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6b67c2c214b786,6,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_56851528f7d946,1,춘천역(여행자쉼터),춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_56851528f7d946,2,한반도섬,한반도섬,ARROW_SPLIT,ctt295,NAME_REGION_CANDIDATE,,,1
+ct_56851528f7d946,3,양구수목원,양구수목원,ARROW_SPLIT,ctt296,NAME_REGION_CANDIDATE,,,1
+ct_56851528f7d946,4,양구군립박수근미술관,양구군립박수근미술관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_56851528f7d946,5,양구명품관,양구명품관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_56851528f7d946,6,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_82d1e25af38dad,1,춘천역(여행자쉼터),춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_82d1e25af38dad,2,한반도섬,한반도섬,ARROW_SPLIT,ctt295,NAME_REGION_CANDIDATE,,,1
+ct_82d1e25af38dad,3,두타연,두타연,ARROW_SPLIT,ctt297,NAME_REGION_CANDIDATE,,,1
+ct_82d1e25af38dad,4,양구백자박물관,양구백자박물관,ARROW_SPLIT,ctt298,NAME_REGION_CANDIDATE,,,1
+ct_82d1e25af38dad,5,양구명품관,양구명품관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_82d1e25af38dad,6,춘천역,춘천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b301361d97abe5,1,섬진강기차마을,섬진강기차마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b301361d97abe5,2,가정역&레일바이크,가정역&레일바이크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b301361d97abe5,3,압록상상스쿨,압록상상스쿨,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b301361d97abe5,4,가정역&레일바이크,가정역&레일바이크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b301361d97abe5,5,섬진강기차마을,섬진강기차마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbe098dbabf001,1,섬진강기차마을,섬진강기차마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbe098dbabf001,2,6070청춘공작소&낭만공방,6070청춘공작소&낭만공방,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbe098dbabf001,3,감성충전길,감성충전길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbe098dbabf001,4,갤러리107,갤러리107,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbe098dbabf001,5,곡성성당,곡성성당,ARROW_SPLIT,ctt303,NAME_REGION_CANDIDATE,,,1
+ct_bbe098dbabf001,6,기차마을전통시장,기차마을전통시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbe098dbabf001,7,뚝방마켓,뚝방마켓,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bbe098dbabf001,8,섬진강기차마을,섬진강기차마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a033e87051966f,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a033e87051966f,2,대전복합터미널(경유),대전복합터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a033e87051966f,3,계족산황톳길 걷기(뻔뻔한 클래식음악회),계족산황톳길 걷기,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a033e87051966f,4,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6605c793b92ef0,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6605c793b92ef0,2,대동하늘공원(벽화마을) / 낙조 및 대전시내 야경,대동하늘공원 / 낙조 및 대전시내 야경,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6605c793b92ef0,3,효월드(뿌리공원),효월드,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6605c793b92ef0,4,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1a001a2b131a37,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1a001a2b131a37,2,카리용(대전과학기술대),카리용,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1a001a2b131a37,3,장태산자연휴양림,장태산자연휴양림,ARROW_SPLIT,nax830,NAME_REGION_CANDIDATE,,,1
+ct_1a001a2b131a37,4,"(으능정이, 스카이로드 경유) 대전역",대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c0566a05c47d19,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_c0566a05c47d19,2,만인산자연휴양림,만인산자연휴양림,ARROW_SPLIT,ctt306,NAME_REGION_CANDIDATE,,,1
+ct_c0566a05c47d19,3,대동하늘공원(벽화마을),대동하늘공원,ARROW_SPLIT,ctt305,NAME_REGION_CANDIDATE,,,1
+ct_c0566a05c47d19,4,(중앙시장 경유) 대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9fd248f66a015e,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9fd248f66a015e,2,대전복합터미널(경유),대전복합터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9fd248f66a015e,3,동춘당,동춘당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9fd248f66a015e,4,우암사적공원(남간정사),우암사적공원,ARROW_SPLIT,ctt307,NAME_REGION_CANDIDATE,,,1
+ct_9fd248f66a015e,5,옛충남도청(근현대사전시관),옛충남도청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9fd248f66a015e,6,(으능정이거리 경유) 대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a78c7388791f00,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a78c7388791f00,2,무수천하마을(유회당),무수천하마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a78c7388791f00,3,"효월드(효문화진흥원, 뿌리공원, 족보박물관)",효월드,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a78c7388791f00,4,대전시립박물관,대전시립박물관,ARROW_SPLIT,ro697,NAME_REGION_CANDIDATE,,,1
+ct_a78c7388791f00,5,(성심당 본점 경유) 대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_45e3db7967e0d6,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_45e3db7967e0d6,2,지질박물관,지질박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_45e3db7967e0d6,3,대전시민천문대(우천시 솔로몬로파크),대전시민천문대,ARROW_SPLIT,ctt310,NAME_REGION_CANDIDATE,,,1
+ct_45e3db7967e0d6,4,엑스포과학공원(미래에너지움),엑스포과학공원,ARROW_SPLIT,ro542,NAME_REGION_CANDIDATE,,,1
+ct_45e3db7967e0d6,5,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_22d1e9408c3c72,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_22d1e9408c3c72,2,대전복합터미널(경유),대전복합터미널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_22d1e9408c3c72,3,대청호(대청댐물문화관),대청호,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_22d1e9408c3c72,4,대청호자연생태관(대청호자연수변생태공원),대청호자연생태관,ARROW_SPLIT,ctt311,NAME_REGION_CANDIDATE,,,1
+ct_22d1e9408c3c72,5,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eb58640f2cea0c,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eb58640f2cea0c,2,구 대전형무소,구 대전형무소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eb58640f2cea0c,3,목동성당 / 거룩한 말씀의수녀회 / 애국지사총 터,목동성당 / 거룩한 말씀의수녀회 / 애국지사총 터,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eb58640f2cea0c,4,국립대전현충원,국립대전현충원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_eb58640f2cea0c,5,대전역(호국철도광장),대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8ff728ddab7948,1,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8ff728ddab7948,2,공세리성당,공세리성당,ARROW_SPLIT,nax900,NAME_REGION_CANDIDATE,,,1
+ct_8ff728ddab7948,3,피나클랜드,피나클랜드,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8ff728ddab7948,4,영인산자연휴양림,영인산자연휴양림,ARROW_SPLIT,ctt316,NAME_REGION_CANDIDATE,,,1
+ct_8ff728ddab7948,5,아산온천,아산온천,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8ff728ddab7948,6,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8fd84fbcfd5dfe,1,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8fd84fbcfd5dfe,2,신정호정원,신정호정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8fd84fbcfd5dfe,3,외암민속마을,외암민속마을,ARROW_SPLIT,nax653,NAME_REGION_CANDIDATE,,,1
+ct_8fd84fbcfd5dfe,4,맹씨행단,맹씨행단,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8fd84fbcfd5dfe,5,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9546f52bb6716e,1,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9546f52bb6716e,2,온양민속박물관,온양민속박물관,ARROW_SPLIT,ctt319,NAME_REGION_CANDIDATE,,,1
+ct_9546f52bb6716e,3,은행나무길,은행나무길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9546f52bb6716e,4,현충사,현충사,ARROW_SPLIT,nax654,NAME_REGION_CANDIDATE,,,1
+ct_9546f52bb6716e,5,신정호정원,신정호정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9546f52bb6716e,6,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b292c6f84029fc,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b292c6f84029fc,2,대전시립박물관,대전시립박물관,ARROW_SPLIT,ro697,NAME_REGION_CANDIDATE,,,1
+ct_b292c6f84029fc,3,공산성 / 자율중식,공산성 / 자율중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b292c6f84029fc,4,무령왕릉,무령왕릉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b292c6f84029fc,5,국립공주박물관,국립공주박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b292c6f84029fc,6,유성온천족욕체험장,유성온천족욕체험장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_b292c6f84029fc,7,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5687d8e8d87f2d,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5687d8e8d87f2d,2,만인산자연휴양림,만인산자연휴양림,ARROW_SPLIT,ctt306,NAME_REGION_CANDIDATE,,,1
+ct_5687d8e8d87f2d,3,금산인삼시장 / 자율중식,금산인삼시장 / 자율중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5687d8e8d87f2d,4,개삼터(인삼발원지) / 보석사,개삼터 / 보석사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5687d8e8d87f2d,5,칠백의총,칠백의총,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5687d8e8d87f2d,6,하늘물빛정원,하늘물빛정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5687d8e8d87f2d,7,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a5262a8f85f8b0,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a5262a8f85f8b0,2,한밭교육박물관,한밭교육박물관,ARROW_SPLIT,ctt321,NAME_REGION_CANDIDATE,,,1
+ct_a5262a8f85f8b0,3,세종호수공원(대통령기록관)/자율중식,세종호수공원/자율중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a5262a8f85f8b0,4,베어트리파크,베어트리파크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a5262a8f85f8b0,5,금강수목원,금강수목원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a5262a8f85f8b0,6,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_219260f85ea226,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_219260f85ea226,2,대청호오백리길(암석식물원∼대청댐물문화관),대청호오백리길,ARROW_SPLIT,nax20,NAME_REGION_CANDIDATE,,,1
+ct_219260f85ea226,3,문의 시내(자율중식),문의 시내,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_219260f85ea226,4,청남대,청남대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_219260f85ea226,5,청주고인쇄박물관(유네스코 기록문화유산 직지),청주고인쇄박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_219260f85ea226,6,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_160420cadfd77c,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_160420cadfd77c,2,우암사적공원(남간정사),우암사적공원,ARROW_SPLIT,ctt307,NAME_REGION_CANDIDATE,,,1
+ct_160420cadfd77c,3,관촉사(은진미륵),관촉사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_160420cadfd77c,4,강경 젓갈시장/자율중식,강경 젓갈시장/자율중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_160420cadfd77c,5,탑정호(수변생태공원),탑정호,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_160420cadfd77c,6,계백장군유적지 (백제군사박물관),계백장군유적지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_160420cadfd77c,7,돈암서원,돈암서원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_160420cadfd77c,8,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ec90d760842e,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ec90d760842e,2,우암사적공원,우암사적공원,ARROW_SPLIT,ctt307,NAME_REGION_CANDIDATE,,,1
+ct_71ec90d760842e,3,부소담악(추소정),부소담악,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ec90d760842e,4,"자율중식/향수길탐방(정지용 생가, 정지용문학관, 육영수 생가)",자율중식/향수길탐방,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ec90d760842e,5,둔주봉(한반도 전망대),둔주봉,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_71ec90d760842e,6,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8830d724628bcb,1,대전역 ↔ 판암역 ↔ 세천근린공원 ↔ 신상교 ↔ 대청호자연생태관 ↔ 슬픈연가촬영지 ↔ 찬샘마을 ↔ 두메마을 ↔ 삼정동생태공원 ↔ 대청댐물문화관 ↔ 신탄진역,대전역 ↔ 판암역 ↔ 세천근린공원 ↔ 신상교 ↔ 대청호자연생태관 ↔ 슬픈연가촬영지 ↔ 찬샘마을 ↔ 두메마을 ↔ 삼정동생태공원 ↔ 대청댐물문화관 ↔ 신탄진역,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_713b2d75c3e637,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_713b2d75c3e637,2,서대전역,서대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_713b2d75c3e637,3,옛충남도청사,옛충남도청사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_713b2d75c3e637,4,테미오래,테미오래,ARROW_SPLIT,ctt323,NAME_REGION_CANDIDATE,,,1
+ct_713b2d75c3e637,5,대전아쿠아리움,대전아쿠아리움,ARROW_SPLIT,ctt324,NAME_REGION_CANDIDATE,,,1
+ct_713b2d75c3e637,6,대전오월드,대전오월드,ARROW_SPLIT,nax5,NAME_REGION_CANDIDATE,,,1
+ct_713b2d75c3e637,7,효월드 후문,효월드 후문,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_713b2d75c3e637,8,장태산자연휴양림,장태산자연휴양림,ARROW_SPLIT,nax830,NAME_REGION_CANDIDATE,,,1
+ct_713b2d75c3e637,9,대흥동성당(성심당 본점),대흥동성당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_713b2d75c3e637,10,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_f0254824a9df9a,1,홈페이지 및 리플릿 참조,홈페이지 및 리플릿 참조,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_44df2180ab46ed,1,국립생태원,국립생태원,ARROW_SPLIT,nax450,NAME_REGION_CANDIDATE,,,1
+ct_44df2180ab46ed,2,장항6080음식골목 맛나로,장항6080음식골목 맛나로,ARROW_SPLIT,ctt257,NAME_REGION_CANDIDATE,,,1
+ct_44df2180ab46ed,3,솔바람길,솔바람길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_44df2180ab46ed,4,장항스카이워크,장항스카이워크,ARROW_SPLIT,ro173,NAME_REGION_CANDIDATE,,,1
+ct_44df2180ab46ed,5,한산모시관,한산모시관,ARROW_SPLIT,ctt264,NAME_REGION_CANDIDATE,,,1
+ct_44df2180ab46ed,6,서천특화시장,서천특화시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5ab8b1ed4da272,1,국립생태원,국립생태원,ARROW_SPLIT,nax450,NAME_REGION_CANDIDATE,,,1
+ct_5ab8b1ed4da272,2,장항6080음식골목 맛나로,장항6080음식골목 맛나로,ARROW_SPLIT,ctt257,NAME_REGION_CANDIDATE,,,1
+ct_5ab8b1ed4da272,3,솔바람길,솔바람길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5ab8b1ed4da272,4,장항스카이워크,장항스카이워크,ARROW_SPLIT,ro173,NAME_REGION_CANDIDATE,,,1
+ct_5ab8b1ed4da272,5,국립해양생물자원관,국립해양생물자원관,ARROW_SPLIT,ctt268,NAME_REGION_CANDIDATE,,,1
+ct_5ab8b1ed4da272,6,근대역사박물관(군산),근대역사박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_5ab8b1ed4da272,7,서천특화시장,서천특화시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_002382920ea63d,1,한국최초성경전래지기념관,한국최초성경전래지기념관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_002382920ea63d,2,마량리동백나무숲,마량리동백나무숲,ARROW_SPLIT,ctt328,NAME_REGION_CANDIDATE,,,1
+ct_002382920ea63d,3,춘장대해수욕장,춘장대해수욕장,ARROW_SPLIT,ro67,NAME_REGION_CANDIDATE,,,1
+ct_002382920ea63d,4,장항문화예술창작공간,장항문화예술창작공간,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_002382920ea63d,5,솔바람길,솔바람길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_002382920ea63d,6,장항스카이워크,장항스카이워크,ARROW_SPLIT,ro173,NAME_REGION_CANDIDATE,,,1
+ct_002382920ea63d,7,서천특화시장,서천특화시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91fb627e325238,1,척야산수목원,척야산수목원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91fb627e325238,2,홍천전통시장,홍천전통시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91fb627e325238,3,수타사+가령폭포,수타사+가령폭포,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91fb627e325238,4,농촌체험관련마을,농촌체험관련마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91fb627e325238,5,수타사농촌테마파크,수타사농촌테마파크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91fb627e325238,6,무궁화수목원+관내 축제 참가,무궁화수목원+관내 축제 참가,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91fb627e325238,7,농산물판매장,농산물판매장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91fb627e325238,8,수타사,수타사,ARROW_SPLIT,ctt332,NAME_REGION_CANDIDATE,,,1
+ct_91fb627e325238,9,수타사농촌테마파크,수타사농촌테마파크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_acad4c3e99d0b7,1,백암산케이블카코스(백암산케이블카,백암산케이블카코스(백암산케이블카,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_acad4c3e99d0b7,2,화천시장,화천시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_acad4c3e99d0b7,3,산타우체국&커피박물관,산타우체국&커피박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_acad4c3e99d0b7,4,화천박물관),화천박물관),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91a016b2a1d6de,1,평화누리호코스(평화누리호,평화누리호코스(평화누리호,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91a016b2a1d6de,2,평화의댐,평화의댐,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91a016b2a1d6de,3,화천시장,화천시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91a016b2a1d6de,4,산천어커피박물관&산타우체국,산천어커피박물관&산타우체국,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_91a016b2a1d6de,5,화천박물관),화천박물관),ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2d10eca16ba9a6,1,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2d10eca16ba9a6,2,송광사,송광사,ARROW_SPLIT,nax798,NAME_REGION_CANDIDATE,,,1
+ct_2d10eca16ba9a6,3,선암사,선암사,ARROW_SPLIT,nax210,NAME_REGION_CANDIDATE,,,1
+ct_2d10eca16ba9a6,4,상사호,상사호,ARROW_SPLIT,ctt336,NAME_REGION_CANDIDATE,,,1
+ct_2d10eca16ba9a6,5,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_23af43dc03f403,1,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_23af43dc03f403,2,낙안읍성&뿌리깊은나무박물관,낙안읍성&뿌리깊은나무박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_23af43dc03f403,3,선암사&야생차체험관,선암사&야생차체험관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_23af43dc03f403,4,드라마촬영장,드라마촬영장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_23af43dc03f403,5,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26ef5b20f07baf,1,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26ef5b20f07baf,2,낙안읍성&뿌리깊은나무박물관,낙안읍성&뿌리깊은나무박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26ef5b20f07baf,3,정유재란역사체험학습장&순천왜성,정유재란역사체험학습장&순천왜성,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_26ef5b20f07baf,4,와온해변,와온해변,ARROW_SPLIT,nax212,NAME_REGION_CANDIDATE,,,1
+ct_26ef5b20f07baf,5,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_02bdc275133569,1,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_02bdc275133569,2,송광사,송광사,ARROW_SPLIT,nax798,NAME_REGION_CANDIDATE,,,1
+ct_02bdc275133569,3,순천만습지,순천만습지,ARROW_SPLIT,nax207,NAME_REGION_CANDIDATE,,,1
+ct_02bdc275133569,4,순천만국가정원,순천만국가정원,ARROW_SPLIT,nax208,NAME_REGION_CANDIDATE,,,1
+ct_02bdc275133569,5,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e36a720d5f6db0,1,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e36a720d5f6db0,2,철도관사마을,철도관사마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e36a720d5f6db0,3,"순천만국가정원(시크릿어드벤처, 정원드림호, 스페이스브릿지)",순천만국가정원,ARROW_SPLIT,nax208,NAME_REGION_CANDIDATE,,,1
+ct_e36a720d5f6db0,4,순천역,순천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0551fedbd5823b,1,읍성권,읍성권,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0551fedbd5823b,2,점심 및 휴식,점심 및 휴식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0551fedbd5823b,3,황포돛배,황포돛배,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0551fedbd5823b,4,국립나주박물관,국립나주박물관,ARROW_SPLIT,ctt340,NAME_REGION_CANDIDATE,,,1
+ct_0551fedbd5823b,5,산림자원연구소,산림자원연구소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_598214e6c2b466,1,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_598214e6c2b466,2,옹기발효음식전시체험관,옹기발효음식전시체험관,ARROW_SPLIT,ctt342,NAME_REGION_CANDIDATE,,,1
+ct_598214e6c2b466,3,도고아트홀,도고아트홀,ARROW_SPLIT,ctt343,NAME_REGION_CANDIDATE,,,1
+ct_598214e6c2b466,4,세계꽃식물원,세계꽃식물원,ARROW_SPLIT,ctt344,NAME_REGION_CANDIDATE,,,1
+ct_598214e6c2b466,5,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7fca0c8fe5431c,1,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7fca0c8fe5431c,2,온양민속박물관,온양민속박물관,ARROW_SPLIT,ctt319,NAME_REGION_CANDIDATE,,,1
+ct_7fca0c8fe5431c,3,신정호정원,신정호정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7fca0c8fe5431c,4,현충사은행나무길,현충사은행나무길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_7fca0c8fe5431c,5,온양온천역,온양온천역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_97d9c2e90bd208,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_97d9c2e90bd208,2,동춘당,동춘당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_97d9c2e90bd208,3,계족산황톳길(장동산림욕장),계족산황톳길,ARROW_SPLIT,nax19,NAME_REGION_CANDIDATE,,,1
+ct_97d9c2e90bd208,4,유성온천족욕체험장,유성온천족욕체험장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_97d9c2e90bd208,5,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2ee6fbf7af53ff,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2ee6fbf7af53ff,2,한밭수목원,한밭수목원,ARROW_SPLIT,nax4,NAME_REGION_CANDIDATE,,,1
+ct_2ee6fbf7af53ff,3,국립대전현충원,국립대전현충원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2ee6fbf7af53ff,4,유림공원,유림공원,ARROW_SPLIT,ctt345,NAME_REGION_CANDIDATE,,,1
+ct_2ee6fbf7af53ff,5,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f10222e94792e,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f10222e94792e,2,계룡산(동학사) 탐방,계룡산 탐방,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f10222e94792e,3,계룡산동학지구 자율중식,계룡산동학지구 자율중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f10222e94792e,4,계룡산 도예촌,계룡산 도예촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f10222e94792e,5,사계고택(은농재),사계고택,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f10222e94792e,6,진잠향교,진잠향교,ARROW_SPLIT,ctt346,NAME_REGION_CANDIDATE,,,1
+ct_8f10222e94792e,7,유성온천족욕체험장,유성온천족욕체험장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8f10222e94792e,8,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_80c470bc93d261,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_80c470bc93d261,2,대청호자연생태관,대청호자연생태관,ARROW_SPLIT,ctt311,NAME_REGION_CANDIDATE,,,1
+ct_80c470bc93d261,3,"영동전통시장, 와인삼겹살거리/ 자율중식","영동전통시장, 와인삼겹살거리/ 자율중식",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_80c470bc93d261,4,노근리평화공원,노근리평화공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_80c470bc93d261,5,영동와인터널,영동와인터널,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_80c470bc93d261,6,난계국악박물관(토요상설국악공연),난계국악박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_80c470bc93d261,7,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6380fe7c6318f5,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6380fe7c6318f5,2,동춘당,동춘당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6380fe7c6318f5,3,정이품송,정이품송,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6380fe7c6318f5,4,속리산국립공원(법주사)/자율중식,속리산국립공원/자율중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6380fe7c6318f5,5,솔향공원,솔향공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6380fe7c6318f5,6,보은 선병국가옥,보은 선병국가옥,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_6380fe7c6318f5,7,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d254ab1cd4d570,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d254ab1cd4d570,2,"부소산성(백마강 황포돛배 이용 고산사, 낙화암)",부소산성,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d254ab1cd4d570,3,자율중식(굿뜨래 음식특화거리),자율중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d254ab1cd4d570,4,국악의전당(부여군충남국악단),국악의전당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d254ab1cd4d570,5,백제문화단지,백제문화단지,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d254ab1cd4d570,6,동춘당,동춘당,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_d254ab1cd4d570,7,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8ae731ba6b8f8a,1,안성맞춤박물관,안성맞춤박물관,ARROW_SPLIT,ctt347,NAME_REGION_CANDIDATE,,,1
+ct_8ae731ba6b8f8a,2,안성팜랜드,안성팜랜드,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8ae731ba6b8f8a,3,안성맞춤랜드,안성맞춤랜드,ARROW_SPLIT,ctt349,NAME_REGION_CANDIDATE,,,1
+ct_8ae731ba6b8f8a,4,남사당놀이 공연관람,남사당놀이 공연관람,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_8ae731ba6b8f8a,5,청룡사,청룡사,ARROW_SPLIT,ctt350,NAME_REGION_CANDIDATE,,,1
+ct_178058dbe2e9f3,1,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_178058dbe2e9f3,2,만인산자연휴양림,만인산자연휴양림,ARROW_SPLIT,ctt306,NAME_REGION_CANDIDATE,,,1
+ct_178058dbe2e9f3,3,식장산문화공원,식장산문화공원,ARROW_SPLIT,ctt351,NAME_REGION_CANDIDATE,,,1
+ct_178058dbe2e9f3,4,대전역,대전역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a991b8a1f0ef4b,1,"소원성취코스 : 갓바위, 삽살개육종연구소,샘이깊은물 삼성현명품투어 : 임당동고분군, 시립박물관, 삼성현역사문화공원, 동의한방촌,반곡지","소원성취코스 : 갓바위, 삽살개육종연구소,샘이깊은물 삼성현명품투어 : 임당동고분군, 시립박물관, 삼성현역사문화공원, 동의한방촌,반곡지",REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_1b192936714db2,1,태화강역,태화강역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1b192936714db2,2,스타즈호텔,스타즈호텔,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1b192936714db2,3,롯데광장,롯데광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1b192936714db2,4,고래박물관,고래박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1b192936714db2,5,대교전망대 입구,대교전망대 입구,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_1b192936714db2,6,대왕암공원,대왕암공원,ARROW_SPLIT,nax307,NAME_REGION_CANDIDATE,,,1
+ct_1b192936714db2,7,태화강역,태화강역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,1,태화강역,태화강역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,2,스타즈호텔,스타즈호텔,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,3,롯데광장,롯데광장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,4,롯데시티호텔,롯데시티호텔,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,5,현대백화점,현대백화점,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,6,태화교정류장,태화교정류장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,7,태화강전망대,태화강전망대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,8,삼호대숲(철새홍보관),삼호대숲,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,9,태화강국가정원(오산광장),태화강국가정원,ARROW_SPLIT,nax308,NAME_REGION_CANDIDATE,,,1
+ct_af11b68a2c01c9,10,태화강국가정원(회전교차로),태화강국가정원,ARROW_SPLIT,nax308,NAME_REGION_CANDIDATE,,,1
+ct_af11b68a2c01c9,11,태화루,태화루,ARROW_SPLIT,nax999,NAME_REGION_CANDIDATE,,,1
+ct_af11b68a2c01c9,12,시계탑사거리,시계탑사거리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,13,중앙전통시장,중앙전통시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,14,문화예술회관,문화예술회관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,15,롯데시티호텔,롯데시티호텔,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,16,롯데호텔,롯데호텔,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,17,스타즈호텔,스타즈호텔,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_af11b68a2c01c9,18,태화강역,태화강역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2b8272a97a896d,1,서울 교대역(용산역 경유),서울 교대역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2b8272a97a896d,2,양주역 경유,양주역 경유,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2b8272a97a896d,3,회암사지 및 박물관,회암사지 및 박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2b8272a97a896d,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2b8272a97a896d,5,천일홍 축제장(나리농원),천일홍 축제장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2b8272a97a896d,6,조소앙 기념관·수변산책,조소앙 기념관·수변산책,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_2b8272a97a896d,7,양주역/장암역/창동역,양주역/장암역/창동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fec9787dc180b6,1,서울 교대역(용산역 경유),서울 교대역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fec9787dc180b6,2,양주역 경유,양주역 경유,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fec9787dc180b6,3,조소앙 기념관·수변산책,조소앙 기념관·수변산책,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fec9787dc180b6,4,중식,중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fec9787dc180b6,5,왕실 축제장,왕실 축제장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fec9787dc180b6,6,회암사지 및 박물관,회암사지 및 박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fec9787dc180b6,7,양주역/장암역/창동역,양주역/장암역/창동역,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ccd1b723be41d9,1,A코스,A코스,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_798ad1e369d6fb,1,문헌서원,문헌서원,ARROW_SPLIT,ctt261,NAME_REGION_CANDIDATE,,,1
+ct_798ad1e369d6fb,2,장항6080음식골목 맛나로,장항6080음식골목 맛나로,ARROW_SPLIT,ctt257,NAME_REGION_CANDIDATE,,,1
+ct_798ad1e369d6fb,3,솔바람길,솔바람길,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_798ad1e369d6fb,4,장항스카이워크,장항스카이워크,ARROW_SPLIT,ro173,NAME_REGION_CANDIDATE,,,1
+ct_798ad1e369d6fb,5,국립해양생물자원관,국립해양생물자원관,ARROW_SPLIT,ctt268,NAME_REGION_CANDIDATE,,,1
+ct_798ad1e369d6fb,6,"한산모시관(수,금,일/1~6)",한산모시관,ARROW_SPLIT,ctt264,NAME_REGION_CANDIDATE,,,1
+ct_798ad1e369d6fb,7,"신성리갈대밭(수,금,일/7~12)",신성리갈대밭,ARROW_SPLIT,nax1215,NAME_REGION_CANDIDATE,,,1
+ct_798ad1e369d6fb,8,"서천특화시장(화,목,토)",서천특화시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_798ad1e369d6fb,9,국립생태원,국립생태원,ARROW_SPLIT,nax450,NAME_REGION_CANDIDATE,,,1
+ct_4e40c69e669e72,1,홈페이지 및 리플릿 참조,홈페이지 및 리플릿 참조,REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_823517e112d91a,1,"무령왕릉, 공산성, 국립공주박물관, 마곡사, 도예체험, 알밤줍기 체험 등","무령왕릉, 공산성, 국립공주박물관, 마곡사, 도예체험, 알밤줍기 체험 등",REVIEW_UNSPLIT,,UNRESOLVED,,,1
+ct_76b3c31714b997,1,공주역·공주시청,공주역·공주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_76b3c31714b997,2,마곡사,마곡사,ARROW_SPLIT,nax275,NAME_REGION_CANDIDATE,,,1
+ct_76b3c31714b997,3,공주무령왕릉과왕릉원,공주무령왕릉과왕릉원,ARROW_SPLIT,ro360,NAME_REGION_CANDIDATE,,,1
+ct_76b3c31714b997,4,"알밤줍기체험(9~10월) or 공산성, 연미산자연미술공원(10,11월) or 공산성","알밤줍기체험 or 공산성, 연미산자연미술공원 or 공산성",ARROW_SPLIT,,UNRESOLVED,,,1
+ct_76b3c31714b997,5,공주역·공주시청,공주역·공주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a3635d1750c8cb,1,공주역·공주시청,공주역·공주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a3635d1750c8cb,2,공주무령왕릉과왕릉원,공주무령왕릉과왕릉원,ARROW_SPLIT,ro360,NAME_REGION_CANDIDATE,,,1
+ct_a3635d1750c8cb,3,공산성,공산성,ARROW_SPLIT,nax272,NAME_REGION_CANDIDATE,,,1
+ct_a3635d1750c8cb,4,"중식(백미고을, 산성시장)",중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a3635d1750c8cb,5,석장리박물관,석장리박물관,ARROW_SPLIT,ro365,NAME_REGION_CANDIDATE,,,1
+ct_a3635d1750c8cb,6,산림휴양마을,산림휴양마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a3635d1750c8cb,7,공주역·공주시청,공주역·공주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4dde5af65254ff,1,공주역·공주시청,공주역·공주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4dde5af65254ff,2,공주무령왕릉과왕릉원,공주무령왕릉과왕릉원,ARROW_SPLIT,ro360,NAME_REGION_CANDIDATE,,,1
+ct_4dde5af65254ff,3,공산성,공산성,ARROW_SPLIT,nax272,NAME_REGION_CANDIDATE,,,1
+ct_4dde5af65254ff,4,"중식(백미고을, 산성시장)",중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4dde5af65254ff,5,유구색동수국정원,유구색동수국정원,ARROW_SPLIT,ro122,NAME_REGION_CANDIDATE,,,1
+ct_4dde5af65254ff,6,유구전통시장,유구전통시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_4dde5af65254ff,7,공주역·공주시청,공주역·공주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_884cb2a9ccb39b,1,공주역·공주시청,공주역·공주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_884cb2a9ccb39b,2,충남역사박물관,충남역사박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_884cb2a9ccb39b,3,반죽동당간지주,반죽동당간지주,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_884cb2a9ccb39b,4,하숙마을,하숙마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_884cb2a9ccb39b,5,나태주풀꽃문학관,나태주풀꽃문학관,ARROW_SPLIT,ro282,NAME_REGION_CANDIDATE,,,1
+ct_884cb2a9ccb39b,6,옛공주읍사무소,옛공주읍사무소,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_884cb2a9ccb39b,7,"중식(백미고을, 산성시장)",중식,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_884cb2a9ccb39b,8,공산성,공산성,ARROW_SPLIT,nax272,NAME_REGION_CANDIDATE,,,1
+ct_884cb2a9ccb39b,9,공주무령왕릉과왕릉원,공주무령왕릉과왕릉원,ARROW_SPLIT,ro360,NAME_REGION_CANDIDATE,,,1
+ct_884cb2a9ccb39b,10,산림휴양마을,산림휴양마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_884cb2a9ccb39b,11,공주역·공주시청,공주역·공주시청,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_27f4b2d12a8cb7,1,공산성,공산성,ARROW_SPLIT,nax272,NAME_REGION_CANDIDATE,,,1
+ct_27f4b2d12a8cb7,2,무령왕릉과 왕릉원,무령왕릉과 왕릉원,ARROW_SPLIT,nax273,NAME_REGION_CANDIDATE,,,1
+ct_27f4b2d12a8cb7,3,백제오감체험관,백제오감체험관,ARROW_SPLIT,ctt365,NAME_REGION_CANDIDATE,,,1
+ct_27f4b2d12a8cb7,4,국립공주박물관,국립공주박물관,ARROW_SPLIT,nax274,NAME_REGION_CANDIDATE,,,1
+ct_27f4b2d12a8cb7,5,공산성,공산성,ARROW_SPLIT,nax272,NAME_REGION_CANDIDATE,,,1
+ct_9c0d0306424a79,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9c0d0306424a79,2,대부도 동춘서커스,대부도 동춘서커스,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9c0d0306424a79,3,서해랑케이블카,서해랑케이블카,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9c0d0306424a79,4,대부도 저녁식사,대부도 저녁식사,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_9c0d0306424a79,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e9a747156c3c1a,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e9a747156c3c1a,2,DMZ투어(곤돌라),DMZ투어,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e9a747156c3c1a,3,오두산 통일전망대,오두산 통일전망대,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e9a747156c3c1a,4,JSA투어,JSA투어,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_e9a747156c3c1a,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd5d1abcfc55d2,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd5d1abcfc55d2,2,김포라베니체,김포라베니체,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd5d1abcfc55d2,3,김포국제조각공원,김포국제조각공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd5d1abcfc55d2,4,애기봉평화생태공원,애기봉평화생태공원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bd5d1abcfc55d2,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fce9de6901ef3e,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fce9de6901ef3e,2,시흥 프리미엄아울렛,시흥 프리미엄아울렛,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fce9de6901ef3e,3,서해랑 케이블카,서해랑 케이블카,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fce9de6901ef3e,4,율암온천 (or 그랑꼬또 와이너리),율암온천,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_fce9de6901ef3e,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ece86e31ecc1ba,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ece86e31ecc1ba,2,부천중동 사랑시장,부천중동 사랑시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ece86e31ecc1ba,3,부천한옥마을,부천한옥마을,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ece86e31ecc1ba,4,한국만화박물관,한국만화박물관,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ece86e31ecc1ba,5,부천아트벙커B39,부천아트벙커B39,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_ece86e31ecc1ba,6,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_495161964cdfc2,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_495161964cdfc2,2,시흥프리미엄아울렛,시흥프리미엄아울렛,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_495161964cdfc2,3,웨이브파크,웨이브파크,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_495161964cdfc2,4,전곡항 요트투어,전곡항 요트투어,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_495161964cdfc2,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bebfce01f97d9d,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bebfce01f97d9d,2,광명동굴,광명동굴,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bebfce01f97d9d,3,IKEA&롯데아울렛,IKEA&롯데아울렛,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bebfce01f97d9d,4,광명 전통시장,광명 전통시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bebfce01f97d9d,5,도덕산 출렁다리,도덕산 출렁다리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_bebfce01f97d9d,6,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a835a9031e5392,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a835a9031e5392,2,양떼목장,양떼목장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a835a9031e5392,3,더그림 카페,더그림 카페,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a835a9031e5392,4,양서농협 로컬푸드직판장,양서농협 로컬푸드직판장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a835a9031e5392,5,두물머리,두물머리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a835a9031e5392,6,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0ce1ff342b87a2,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0ce1ff342b87a2,2,포천아트밸리,포천아트밸리,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0ce1ff342b87a2,3,허브아일랜드,허브아일랜드,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0ce1ff342b87a2,4,농장체험,농장체험,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_0ce1ff342b87a2,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_581ed2fb896384,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_581ed2fb896384,2,한국민속촌,한국민속촌,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_581ed2fb896384,3,수원화성,수원화성,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_581ed2fb896384,4,수원 남문시장,수원 남문시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_581ed2fb896384,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_938c7e5a4ff633,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_938c7e5a4ff633,2,평택 소풍정원,평택 소풍정원,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_938c7e5a4ff633,3,신리쌀면(중식),신리쌀면,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_938c7e5a4ff633,4,광명동굴,광명동굴,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_938c7e5a4ff633,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a8d29494a563e7,1,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a8d29494a563e7,2,봉녕사 템플스테이,봉녕사 템플스테이,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a8d29494a563e7,3,남문시장,남문시장,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a8d29494a563e7,4,화성행궁,화성행궁,ARROW_SPLIT,,UNRESOLVED,,,1
+ct_a8d29494a563e7,5,서울,서울,ARROW_SPLIT,,UNRESOLVED,,,1
