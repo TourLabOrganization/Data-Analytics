@@ -79,3 +79,9 @@ CSV 입력, 처리 결과, 학습 모델, 노트북 출력, PNG, 설정 JSON, Wo
 - 노트북 설명 셀: 0장의 버전 표기를 설문 6.3·추천 6.4로, 5장의 경유지 규칙 설명을 탈락 코스 재점검 뒤 규칙("/" 나눔, 조건부 표현, 이동·식사 지점 제외, 괄호 안 경로, 쉼표 목록, 키워드 보강)으로, 16장의 최신 경로 안내를 100점 환산에 맞게 고쳤다. 코드 셀은 바뀌지 않아 재실행하지 않았다.
 - `run_session.py`: 세션 입력에 `branchSurvey`가 있으면 `reference_calc`의 설문 6.3 추천을 함께 실행해 `session_results/branch_survey_recommendation.json`과 요약의 `branch_survey`에 저장한다. 응답이 없거나 덜 채워지면 상태만 기록한다. 요약의 입력·분석 경로는 저장소 기준 상대 경로로 쓴다. 기존 v4·직접 평점 결과는 그대로다.
 - `examples/full_session.json`에 가상 `branchSurvey` 응답(reference_calc 데모와 같은 답)을 추가했다.
+
+## 2026-09-29 README 정리
+
+- 최근 개정 다섯 가지를 한 표로 요약하고, 처리 흐름도에 유형별 100점 환산 단계를 넣었다.
+- 설문 유형 쏠림 보정 그림(`docs/spec_assets/survey_type_balance.png`)과 그 생성 코드(`plot_survey_type_balance.py`)를 추가했다. 수치는 `verification/release_validation.json`에서 읽는다.
+- 해석 주의점에 유형 프로필의 한계(C1·C7, C2·C8 코사인 유사도 0.95·0.94)와 파일럿 응답으로 프로필·배점을 다시 추정하는 절차를 적었다.
