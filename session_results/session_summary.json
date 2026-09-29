@@ -1,6 +1,6 @@
 {
   "status": "SCORED_CANDIDATES_NOT_BOOKING_CONFIRMATION",
-  "cosine_candidates": 229,
+  "cosine_candidates": 223,
   "cosine_distinct_regions": 5,
   "legacy_theme_picks": [
     {
@@ -75,6 +75,11 @@
         "score": 81.179956
       },
       {
+        "region": "아산",
+        "name": "休캉스 코스",
+        "score": 80.51904
+      },
+      {
         "region": "천안",
         "name": "목요일",
         "score": 80.51904
@@ -88,16 +93,11 @@
         "region": "평창",
         "name": "북부권 코스",
         "score": 80.51904
-      },
-      {
-        "region": "대구",
-        "name": "송해코스",
-        "score": 78.900736
       }
     ]
   },
   "score_fusion": false,
   "input": "examples/full_session.json",
-  "analysis_run": "analysis/outputs_cosine/run_20260929_021855_281961",
+  "analysis_run": "analysis/outputs_cosine/run_20260929_034626_310365",
   "data_status": "SYNTHETIC_DEMONSTRATION"
 }

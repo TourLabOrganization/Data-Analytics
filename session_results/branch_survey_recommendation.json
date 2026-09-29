@@ -200,6 +200,18 @@
       "route_text": "일요일코스(산이정원 → 대흥사)"
     },
     {
+      "course_id": "ct_1b0e0fd1157aaa",
+      "region": "아산",
+      "name": "休캉스 코스",
+      "category_fit_score": 85.49713141970781,
+      "bonus_points": {
+        "interest": 20.83333333333333,
+        "pace": 6.25
+      },
+      "adjusted_score": 80.51904047065071,
+      "route_text": "온양온천역 → 신정호정원 → 외암민속마을 → 맹씨행단 → 온양온천역"
+    },
+    {
       "course_id": "ct_6bfb1cb10f19bb",
       "region": "천안",
       "name": "목요일",
@@ -234,18 +246,6 @@
       },
       "adjusted_score": 80.51904047065071,
       "route_text": "서울역(금요일) → 청량리역(토요일) → 진부역 → 월정사 → 발왕산케이블카 → 2018평창동계올림픽기념관 → 진부역 → 서울역/청량리역"
-    },
-    {
-      "course_id": "ct_0e4d7f0c7de8e2",
-      "region": "대구",
-      "name": "송해코스",
-      "category_fit_score": 90.24117801790436,
-      "bonus_points": {
-        "interest": 18.75,
-        "pace": 3.75
-      },
-      "adjusted_score": 78.90073626119022,
-      "route_text": "송해공원 → 마비정벽화마을 → 비슬산자연휴양림 → 화석박물관 → 사문진주막촌"
     }
   ],
   "q_source": "type_profile_prior",
