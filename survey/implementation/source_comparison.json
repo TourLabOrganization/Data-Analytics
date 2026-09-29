@@ -49,7 +49,7 @@
     }
   ],
   "new_design": [
-    "Single primary interest",
+    "Two interests in S4 (exactly two, equal weight; single primary interest until 6.3)",
     "All ten candidate types",
     "Experience-focused labels",
     "Branch and clarification scores",
@@ -124,5 +124,54 @@
     },
     "version": "branch-survey-6.3-proposal",
     "reason": "유형별 최대 원점수 차이로 결과가 몇몇 유형에 몰리던 문제 완화"
+  },
+  "version_6_4_changes": {
+    "version": "branch-survey-6.4-proposal",
+    "option_raw_points_unchanged": true,
+    "type_names_unchanged": true,
+    "S4": {
+      "old": "single choice",
+      "new": "exactly two different options; both options' raw points are added"
+    },
+    "branches": "every branch linked to the two interests is asked once, in B order (1 or 2 branch questions)",
+    "answer_counts": {
+      "old": [
+        7,
+        8
+      ],
+      "new": [
+        7,
+        8,
+        9
+      ]
+    },
+    "type_max_raw": {
+      "old": {
+        "C1": 18,
+        "C2": 15,
+        "C3": 16,
+        "C4": 17,
+        "C5": 18,
+        "C6": 10,
+        "C7": 14,
+        "C8": 11,
+        "C9": 9,
+        "C10": 9
+      },
+      "new": {
+        "C1": 23,
+        "C2": 19,
+        "C3": 20,
+        "C4": 19,
+        "C5": 22,
+        "C6": 10,
+        "C7": 17,
+        "C8": 11,
+        "C9": 11,
+        "C10": 15
+      }
+    },
+    "unchanged": "100-point scale, margin 12, F1 +20, weights 2^(score/12)",
+    "reason": "여행 관심사를 하나로 좁히기 어렵다는 요청을 반영해 두 가지 관심사를 같은 비중으로 받음"
   }
 }

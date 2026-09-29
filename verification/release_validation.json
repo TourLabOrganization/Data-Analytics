@@ -6,16 +6,16 @@
     "score_unit": "type_percent",
     "type_full_score": 100,
     "type_max_raw": {
-      "C1": 18,
-      "C2": 15,
-      "C3": 16,
-      "C4": 17,
-      "C5": 18,
+      "C1": 23,
+      "C2": 19,
+      "C3": 20,
+      "C4": 19,
+      "C5": 22,
       "C6": 10,
-      "C7": 14,
+      "C7": 17,
       "C8": 11,
-      "C9": 9,
-      "C10": 9
+      "C9": 11,
+      "C10": 15
     },
     "clarification_margin": 12,
     "clarification_points": 20,
@@ -24,12 +24,15 @@
     "fixed_options": 60,
     "common_questions": 6,
     "branch_questions": 7,
-    "base_paths": 47628,
-    "clarification_paths": 23409,
-    "completed_paths_including_clarification": 109552,
+    "s4_select_count": 2,
+    "s4_pairs": 36,
+    "base_paths": 730296,
+    "clarification_paths": 379544,
+    "completed_paths_including_clarification": 1756396,
     "answer_counts": [
       7,
-      8
+      8,
+      9
     ],
     "single_result_reachable": [
       "C1",
@@ -43,13 +46,14 @@
       "C9",
       "C10"
     ],
-    "max_mixed_types_observed": 9,
+    "max_mixed_types_observed": 10,
     "checks": [
       "Common and branch A/B/C choices add to eligible types",
       "Every branch D is answered with zero contribution and leaves all previous scores unchanged",
       "Branch A/B/C contribute 4 raw points; D contributes zero without redistribution",
       "Each raw point becomes 100/type_max_raw points; every type reaches 100 on its best route and never exceeds it before F1",
-      "All routes finish in 7 or 8 answers",
+      "S4 takes two different options; each opens its branch, a shared branch is asked once",
+      "All routes finish in 7 to 9 answers (S4 counts as one)",
       "Every type can be a sole result",
       "Stale branch and invalid answers rejected",
       "Score ledger and relative weights consistent"
@@ -64,8 +68,8 @@
       "C5"
     ],
     "mix_weights": {
-      "C4": 0.5517248216535149,
-      "C5": 0.44827517834648506
+      "C4": 0.5686571547181998,
+      "C5": 0.4313428452818003
     },
     "course_count": 234,
     "distinct_region_count": 5,
@@ -795,5 +799,75 @@
     "unchanged": "all other result CSVs, models and plots byte-identical to the previous run; reference_calc outputs unchanged",
     "script": "verification/audit_cosine_csvs.py",
     "report": "verification/cosine_csv_audit.json"
+  },
+  "survey_6_4_recommendation_6_5_revision": {
+    "date": "2026-09-29",
+    "survey_version": "branch-survey-6.4-proposal",
+    "recommendation_version": "integrated-6.5-reference",
+    "changes": [
+      "S4 takes exactly two different interests with equal weight; both options' raw points are added",
+      "every branch linked to the two interests is asked once in B order (1-2 branch questions, 7-9 answers)",
+      "type_max_raw recomputed over S4 pairs and their branches",
+      "interest term (theme and course) = mean over chosen interests with data; none -> no interest term",
+      "night bonus only when H is not among the interests",
+      "regional top 5 reserves one slot per interest with data (course whose largest category, ties included, is the interest; night course for H), then fills by rank"
+    ],
+    "method": "every complete survey path, uniform over options; structural check, not user distribution",
+    "paths": {
+      "s4_pairs": 36,
+      "base": 730296,
+      "complete": 1756396,
+      "answer_share": {
+        "7": 0.004,
+        "8": 0.201,
+        "9": 0.795
+      },
+      "f1_base_rate": 0.52,
+      "mixed_rate": 0.355
+    },
+    "type_share": {
+      "C4": 0.138,
+      "C7": 0.124,
+      "C1": 0.114,
+      "C9": 0.113,
+      "C6": 0.104,
+      "C8": 0.103,
+      "C2": 0.095,
+      "C10": 0.076,
+      "C5": 0.072,
+      "C3": 0.061
+    },
+    "max_min_ratio": {
+      "before": 2.53,
+      "after": 2.26
+    },
+    "C9_in_result_when_sea_chosen": {
+      "before": 0.8,
+      "after": 0.567
+    },
+    "interest_top1": {
+      "C": 0.717,
+      "D": 0.515,
+      "E": 0.357,
+      "F": 0.596,
+      "G": 0.343
+    },
+    "top1_matches_any_chosen": 0.659,
+    "both_interests_in_top5": {
+      "without_reserved_slots": 0.249,
+      "with_reserved_slots": 1.0
+    },
+    "pace_mean_visits_top5": {
+      "A": 6.42,
+      "B": 5.17,
+      "C": 4.21
+    },
+    "night_share_top5": {
+      "H": 0.855,
+      "S6C": 0.322,
+      "other": 0.082
+    },
+    "simulation_matches_recommend_reference": "400/400 random paths",
+    "type_course_matching_unchanged": true
   }
 }

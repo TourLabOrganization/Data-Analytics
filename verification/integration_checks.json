@@ -378,5 +378,15 @@
     "unchanged": "all other result CSVs, models and plots byte-identical to the previous run; reference_calc outputs unchanged",
     "script": "verification/audit_cosine_csvs.py",
     "report": "verification/cosine_csv_audit.json"
+  },
+  "survey_6_4_recommendation_6_5_revision": {
+    "date": "2026-09-29",
+    "checks": [
+      "verify_survey.py exhaustive over 36 S4 pairs: 1,756,396 complete paths, 7-9 answers",
+      "verify_reference.py demo and interest cases (plain A+I, night A+H, sea D+E) pass",
+      "audit_cosine_csvs.py 94 checks pass",
+      "legacy Node tests pass",
+      "spec MD/JSON/Word text consistent"
+    ]
   }
 }
