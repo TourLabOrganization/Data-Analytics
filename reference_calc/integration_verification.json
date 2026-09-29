@@ -1,9 +1,14 @@
 {
   "status": "passed",
+  "survey_score_unit": "type_percent",
   "mixed_types": [
     "C4",
     "C5"
   ],
+  "mix_weights": {
+    "C4": 0.5517248216535149,
+    "C5": 0.44827517834648506
+  },
   "course_count": 229,
   "distinct_region_count": 5,
   "course_bonus_terms_demo": [
@@ -12,7 +17,7 @@
   ],
   "no_bonus_equals_category_fit": true,
   "night_interest_top3_night_courses": true,
-  "type_profile_L1": 1.0,
+  "type_profile_L1": 0.9999999999999999,
   "D_preserves_previous_scores": true,
   "empirical_validation": false,
   "deployment": false

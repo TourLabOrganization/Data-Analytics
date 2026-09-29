@@ -1,4 +1,4 @@
-# 신규 설문 추천 참조 계산 — integrated 6.3
+# 신규 설문 추천 참조 계산 — integrated 6.4
 
 Python 3.10 이상 표준 라이브러리만 사용합니다. 저장소 최상위에서:
 
@@ -8,7 +8,7 @@ python reference_calc/recommend_reference.py reference_calc/demo_answers.json
 python reference_calc/verify_reference.py
 ```
 
-설문 6.2의 S1~S6, 해당 B 하나, 필요한 경우 F1을 입력합니다. B1~B7의 D 없음은 0점이며 기존 점수를 유지합니다. 미완료 입력은 다음 문항을 반환합니다.
+설문 6.3의 S1~S6, 해당 B 하나, 필요한 경우 F1을 입력합니다. B1~B7의 D 없음은 0점이며 기존 점수를 유지합니다. 미완료 입력은 다음 문항을 반환합니다. 유형 점수는 유형마다 `원점수 × 100 / 최대 원점수`로 환산한 100점 만점 점수이고(`survey_config.json`의 `scoring.type_max_raw`), 결과 원장에는 원점수(`raw_points`)와 환산 점수(`contribution`)가 함께 남습니다. 추천의 유형 혼합 비중은 설문 결과의 상대 가중치(12점 차이마다 2배)를 결과 유형 안에서 다시 정규화한 값입니다.
 
 `survey_config.json`은 문항과 선택지별 점수, `recommendation_config.json`은 유형별 5범주 프로필과 테마 정보를 담습니다. `recommendation_config.json`의 `course_score`에는 코스 가산 설정이 있습니다. `eligible_courses.csv`는 주 분석에서 가져온 적격 229코스 스냅숏이며(2026-09-29 코스 재점검 반영), 6.3에서 방문 후보 수와 야경 표식 열을 추가했습니다. `input_provenance.json`에 출처가 있습니다. 예제 응답·결과는 가상 검증 자료입니다.
 

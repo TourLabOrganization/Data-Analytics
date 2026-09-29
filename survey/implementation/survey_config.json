@@ -1,5 +1,5 @@
 {
-  "version": "branch-survey-6.2-proposal",
+  "version": "branch-survey-6.3-proposal",
   "types": {
     "C1": {
       "name": "트렌드 탐색형",
@@ -651,10 +651,26 @@
       "D": 0
     },
     "none_option_semantics": "Answered with no extra preference; zero contribution to every C type, no redistribution, no change to earlier answers",
-    "clarification_margin": 2,
-    "clarification_points": 4,
-    "clarification_balanced": "4 divided equally among all candidates within 2 points of maximum",
-    "final_mixed_margin": 2
+    "score_unit": "type_percent",
+    "type_full_score": 100,
+    "type_max_raw": {
+      "C1": 18,
+      "C2": 15,
+      "C3": 16,
+      "C4": 17,
+      "C5": 18,
+      "C6": 10,
+      "C7": 14,
+      "C8": 11,
+      "C9": 9,
+      "C10": 9
+    },
+    "type_score_rule": "Each option point for type C adds 100 / type_max_raw[C]; a type scores 100 when it takes the best option for itself on every question of one route",
+    "clarification_margin": 12,
+    "clarification_points": 20,
+    "clarification_balanced": "20 points divided equally among all candidates within 12 points of the maximum",
+    "final_mixed_margin": 12,
+    "weight_halving_points": 12
   },
   "compatibility": "Standalone proposed survey classifier; not a drop-in input to legacy recommendV4; C codes must be interpreted with this version."
 }

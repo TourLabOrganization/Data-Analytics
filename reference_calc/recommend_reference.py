@@ -1,4 +1,4 @@
-"""Integrated 6.3 reference calculation; not a production deployment.
+"""Integrated 6.4 reference calculation; not a production deployment.
 Type profiles are inherited design priors, not measured personal preferences.
 Python 3.10+, standard library only. python recommend_reference.py demo_answers.json
 """
@@ -17,8 +17,9 @@ def recommend(answers):
     classification=evaluate(answers)
     if classification['status']!='complete':
         return {'status':'incomplete','survey':classification}
-    selected=classification['result_types'];s=classification['scores'];top=max(s.values())
-    a={c:2**((s[c]-top)/2) for c in selected};den=sum(a.values());a={c:w/den for c,w in a.items()}
+    # Mix the result types by the survey's relative weights (halving per weight_halving_points on the 100-point scale).
+    selected=classification['result_types'];rw=classification['relative_weights']
+    den=sum(rw[c] for c in selected);a={c:rw[c]/den for c in selected}
     u=[sum(a[c]*normalize(CFG['profiles'][c])[j] for c in a) for j in range(5)]
     interest=answers['S4'];mapped={'C':0,'D':1,'E':4,'F':3,'G':2}
     themes=[]
