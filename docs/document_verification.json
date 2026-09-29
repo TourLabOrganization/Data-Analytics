@@ -1,5 +1,5 @@
 {
-  "docx_pages": 44,
+  "docx_pages": 45,
   "sections": 41,
   "tables": 50,
   "native_equations": 38,
@@ -7,5 +7,6 @@
   "visual_review": "All 44 rendered pages reviewed; no clipping, missing glyphs, or unintended blank pages observed.",
   "reference_checks": "passed",
   "new_empirical_validation": false,
-  "production_deployment": false
+  "production_deployment": false,
+  "t_model_revision": "Sections 18, 22, 25, 40, 41 and the C_all_metrics_comparison figure updated for the block-variance-balanced T model; LibreOffice 24.2 render of the changed pages reviewed (45 pages, original renders at 44)."
 }

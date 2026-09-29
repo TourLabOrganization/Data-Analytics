@@ -262,7 +262,7 @@
         0.0
       ],
       "route_text": "연천역 → 숭의전 → 전곡시장 → 은대리 문화벽돌공장 → 재인폭포 → 연천역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -288,7 +288,7 @@
         0.0
       ],
       "route_text": "마장호수 출렁다리 → 보광사 → 벽초지수목원",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -314,7 +314,7 @@
         0.0
       ],
       "route_text": "황희선생유적지 → 황포돛배 → 산머루농원",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -340,7 +340,7 @@
         0.0
       ],
       "route_text": "순천역 → 송광사 → 순천만습지 → 순천만국가정원 → 순천역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -366,7 +366,7 @@
         0.0
       ],
       "route_text": "대전역 → 지질박물관 → 대전시민천문대(우천시 솔로몬로파크) → 엑스포과학공원(미래에너지움) → 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -392,7 +392,7 @@
         0.0909090909090909
       ],
       "route_text": "부산역(출발) → 송도구름산책로 → 암남공원(용궁구름다리) → 감천문화마을(감천사거리) → 다대포해수욕장(몰운대) → 아미산전망대 → 부네치아(장림포구) → 부산현대미술관(을숙도) → 낙동강하구에코센터 → 석당박물관(부산임시수도청사) → 국제시장(보수동책방골목) → 용두산공원(부산근대역사박물관) → 부산역(도착)",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -418,7 +418,7 @@
         0.0
       ],
       "route_text": "인천종합관광안내소(송도센트럴파크)+보문사+석모도수목원+외포항 젓갈수산시장+인천종합관광안내소(송도센트럴파크)",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -444,7 +444,7 @@
         0.0
       ],
       "route_text": "송해공원 → 마비정벽화마을 → 비슬산자연휴양림 → 화석박물관 → 사문진주막촌",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -470,7 +470,7 @@
         0.0
       ],
       "route_text": "진영역사공원 → 봉하마을 → 화포천습지과학관,김해수도박물관(택1) → 화포천습지 → 김해낙동강레일파크",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -496,7 +496,7 @@
         0.0
       ],
       "route_text": "양산역 → 양산시립박물관 → 남부시장 → 통도사 → 황산공원 → 양산역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -522,7 +522,7 @@
         0.0
       ],
       "route_text": "순천역 → 송광사 → 선암사 → 상사호 → 순천역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -548,7 +548,7 @@
         0.4
       ],
       "route_text": "거북섬홍보관 → 해양생태과학관 → 배다리선착장 → 시흥오이도박물관 → 거북섬마리나",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -574,7 +574,7 @@
         0.0
       ],
       "route_text": "판교근대역사문화공간 → 한국최초성경전래지기념관 → 마량진항 일원(중식) → 마량진 동백나무숲 → 치유의 숲 → 서천특화시장",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -600,7 +600,7 @@
         0.0
       ],
       "route_text": "양산역 → 창기마을체험휴양관 → 덕계시장 → 한국궁중꽃박물관 → 법기수원지 → 양산역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -626,7 +626,7 @@
         0.0
       ],
       "route_text": "대전역 → 만인산자연휴양림 → 대동하늘공원(벽화마을) → (중앙시장 경유) 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -652,7 +652,7 @@
         0.0
       ],
       "route_text": "대전역 → 만인산자연휴양림 → 식장산문화공원 → 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -678,7 +678,7 @@
         0.1666666666666666
       ],
       "route_text": "팜카밀레허브농원 → 안면암 → 백사장항 수산시장 → 안면도수목원 → 꽃지해수욕장 → 로컬푸드직매장",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -704,7 +704,7 @@
         0.0
       ],
       "route_text": "해인사 → 핫들생태공원 → 영상테마파크 등",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -782,7 +782,7 @@
         0.2
       ],
       "route_text": "[11:25]KTX 안동역 → 구 안동역 → 월영교 → 안동민속박물관&안동댐 정상 → 한자마을(구름애)&해상촬영장 → 웅부공원, 임청각, 찜닭골목 → [17:40] KTX 안동역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -808,7 +808,7 @@
         0.0
       ],
       "route_text": "중앙역 → 갈대습지 → 다문화거리 → 산업역사박물관 → 안산식물원 → 성혹박물관 → 중앙역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -834,7 +834,7 @@
         0.0
       ],
       "route_text": "광화문역 → 중앙역 → 갈대습지 → 산업역사박물관 → 안산식물원 → 성혹박물관 → 안산읍성수압마을 → 중앙역",
-      "T_cluster": "T01",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -860,7 +860,7 @@
         0.1363636363636363
       ],
       "route_text": "만남의광장 → 가로수길 → 창원의집 → 마산역 → 창원NC파크 → 마산상상길,창동예술촌 → 마산어시장 → 3.15해양누리공원 → 장복산(내수면) → 제황산공원 → 진해루 → 경화역공원 → 만남의광장",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -886,7 +886,7 @@
         0.0
       ],
       "route_text": "초려역사공원 → 백제고분역사공원 → 정부세종청사 → 세종컨벤션센터",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -912,7 +912,7 @@
         0.1
       ],
       "route_text": "01 제주항국제여객터미널 02 제주항연안여객터미널 03 김만덕기념관 04 동문시장 05 관덕정(제주목관아) 06 용연구름다리(용두암) 07 제주국제공항 08 용담레포츠공원 09 어영공원(어영마을) 10 도두봉(무지개해안도로) 11 이호목마등대(이호테우해수욕장) 12 제주시민속오일시장 13 연동한일시티파크(롯데시티호텔) 14 월랑마을(베스트웨스턴호텔) 15 한라수목원 16 노형오거리(드림타워) 17 메종글래드호텔(신라면세점) 18 삼무공원(에어시티호텔) 19 제주시버스터미널 20 제주민속자연사박물관 21 사라봉(이화아파트)",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -938,7 +938,7 @@
         0.2
       ],
       "route_text": "서산시청(10:00) → 황금산(10:40) → 삼길포항(중식)(12:00) → 안견기념관(13:50) → 자원회수시설(14:50) → 동부시장(16:20) → 서산시청(17:00)",
-      "T_cluster": "T02",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -964,7 +964,7 @@
         0.2
       ],
       "route_text": "서산시청(10:00) → 서산 버드랜드(10:40) → 간월도(중식)(12:00) → 자원회수시설(13:50) → 해미읍성(15:00) → 동부시장(16:20) → 서산시청(17:00)",
-      "T_cluster": "T02",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -990,7 +990,7 @@
         0.5
       ],
       "route_text": "국립태안해양유물전시관 → 만리포해변 → 천리포수목원 → 신두리해안사구",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1016,7 +1016,7 @@
         0.0
       ],
       "route_text": "예산역 → 수덕사 → 충의사 → 덕산메타세쿼이아길&덕산온천족욕장 → 예당관광지 → 예산상설시장",
-      "T_cluster": "T02",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1042,7 +1042,7 @@
         0.0
       ],
       "route_text": "<6 → 8월>충남종합관광안내소(집결) → 궁남지 → 부소산성(황포돛배) → 점심 식사 → 국립부여박물관 → 신동엽문학관 → 정림사지 → 백강문화관 → 충남종합관광안내소(해산), <9 → 11월>충남종합관광안내소(집결) → 부여왕릉원과 부여나성 → 점심 식사 → 무량사 → 반교마을 돌담길 → 국립부여박물관 → 백강문화관 → 충남종합관광안내소(해산)",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1068,7 +1068,7 @@
         0.0
       ],
       "route_text": "익산역 → 삼례문화예술촌 → 오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을 → 위봉산성,위봉폭포 → 익산역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1094,7 +1094,7 @@
         0.1666666666666666
       ],
       "route_text": "익산역 버스정류장 → 고군산군도 → 점심식사 → 동국사 → 신흥동일본식가옥 → 초원사진관 → 시간여행마을 일원 → 익산역 버스정류장",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1120,7 +1120,7 @@
         0.0
       ],
       "route_text": "국립세종수목원 → 대통령기록관 → 세종호수공원 → 정부세종청사 옥상정원 → 도시상징광장 → 이응다리",
-      "T_cluster": "T01",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1146,7 +1146,7 @@
         0.0
       ],
       "route_text": "공주역·공주시청 → 공주무령왕릉과왕릉원 → 공산성 → 중식(백미고을, 산성시장) → 유구색동수국정원 → 유구전통시장 → 공주역·공주시청",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1172,7 +1172,7 @@
         0.25
       ],
       "route_text": "만리포&유류피해극복기념관 → 팜카밀레허브농원 → 꽃지해수욕장 → 로컬푸드직매장",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1198,7 +1198,7 @@
         0.25
       ],
       "route_text": "춘천역(여행자쉼터) → 한반도섬 → 두타연 → 양구백자박물관 → 양구명품관 → 춘천역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1224,7 +1224,7 @@
         0.0
       ],
       "route_text": "공주역·공주시청 → 마곡사 → 공주무령왕릉과왕릉원 → 알밤줍기체험(9~10월) or 공산성, 연미산자연미술공원(10,11월) or 공산성 → 공주역·공주시청",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1250,7 +1250,7 @@
         0.1818181818181818
       ],
       "route_text": "부산역(출발) → UN기념공원 → 부산박물관 → 용호만유람선터미널 → 광안리해수욕장 → 마린시티(수영만요트경기장) → 동백섬 → 해운대해수욕장 → 센텀시티(영화의전당) → 시립미술관벡스코 → 평화공원 → 광복로 → 부산역(도착)",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1276,7 +1276,7 @@
         0.0
       ],
       "route_text": "척야산수목원 → 홍천전통시장 → 수타사+가령폭포 → 농촌체험관련마을 → 수타사농촌테마파크 → 무궁화수목원+관내 축제 참가 → 농산물판매장 → 수타사 → 수타사농촌테마파크",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1302,7 +1302,7 @@
         0.0
       ],
       "route_text": "세종호수공원,대통령기록관 → 천안독립기념관 → 뚜쥬르과자점",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1328,7 +1328,7 @@
         0.0
       ],
       "route_text": "온양온천역 → 신정호정원 → 외암민속마을 → 맹씨행단 → 온양온천역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1354,7 +1354,7 @@
         0.0
       ],
       "route_text": "마장호수 출렁다리 → 보광사 → 혜음원지",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1380,7 +1380,7 @@
         0.0
       ],
       "route_text": "온양온천역 → 온양민속박물관 → 신정호정원 → 현충사은행나무길 → 온양온천역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1406,7 +1406,7 @@
         0.0
       ],
       "route_text": "태학산 치유의 숲 → 점심(아우내장터) → 유관순열사사적지 → 독립기념관",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1432,7 +1432,7 @@
         0.0
       ],
       "route_text": "온양온천역 → 온양민속박물관 → 은행나무길 → 현충사 → 신정호정원 → 온양온천역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1458,7 +1458,7 @@
         0.1428571428571428
       ],
       "route_text": "한국최초성경전래지기념관 → 마량리동백나무숲 → 춘장대해수욕장 → 장항문화예술창작공간 → 솔바람길 → 장항스카이워크 → 서천특화시장",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1484,7 +1484,7 @@
         0.0
       ],
       "route_text": "홍성역 → 남당항 해양분수공원 → 노을전망대 → 어사리노을공원 → 홍성스카이타워 → 광천역(홍성역)",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1510,7 +1510,7 @@
         0.0
       ],
       "route_text": "인천역+수도권매립지관광공사(드림파크 야생화 단지)+청라 호수공원+국립생활자원관+경인아라뱃길 아라타워 전망대+인천역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1536,7 +1536,7 @@
         0.0
       ],
       "route_text": "온양온천역 → 공세리성당 → 피나클랜드 → 영인산자연휴양림 → 아산온천 → 온양온천역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1562,7 +1562,7 @@
         0.0
       ],
       "route_text": "태백역 → 용연동굴 → 태백역 → 통리장 → 철암역사촌 → 구문소 → 365세이프타운 → 태백역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1588,7 +1588,7 @@
         0.0
       ],
       "route_text": "춘천역 → 공지천 → KT&G상상마당 → 춘천삼악산 호수케이블카 → 남이섬 → 김유정문학촌 → 세계주류마켓 → 춘천역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1614,7 +1614,7 @@
         0.0
       ],
       "route_text": "의림지 → 전통시장 → 청풍호반케이블카 → 제천 옥순봉 출렁다리",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1640,7 +1640,7 @@
         0.0909090909090909
       ],
       "route_text": "부산역(출발) → 영도대교(유라리광장) → 흰여울 문화마을 → 하늘전망대 → 영도해녀촌(노을전망대) → 태종대 → 국립해양막물관 → 오륙도스카이워크 → 용호만유람선터미널 → 평화공원 → 송도구름산책로 → 자갈치BIFF광장(용두산공원) → 부산역(도착)",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1666,7 +1666,7 @@
         0.0
       ],
       "route_text": "도동서원 → 현풍도깨비시장 → 유가사 → 사문진주막촌",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1692,7 +1692,7 @@
         0.3
       ],
       "route_text": "여수엑스포역 → 오동도 → 진남관 → 해양수산과학관 → 향일암 → 수산시장 → 여수엑스포역",
-      "T_cluster": "T02",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1718,7 +1718,7 @@
         0.0
       ],
       "route_text": "가경터미널 → 청주체육관 → 옥화 치유의숲 치유센터 및 산림치유숲길 → 미동산수목원(중식) → 미동산수목원 → 청석굴 → 청주체육관 → 가경터미널",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1744,7 +1744,7 @@
         0.0
       ],
       "route_text": "연천역 → 임진강 자연센터 → 백학광장 → 경순왕릉 → 고랑포구 역사공원 → 호로고루 → 연천역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1770,7 +1770,7 @@
         0.0909090909090909
       ],
       "route_text": "목포역(승차) → 연희네슈퍼(서산동 시화골목) → 스카이워크 → 유달산(노적봉) → 근대역사관 1관 → 가톨릭성지 → 갓바위 해상보행교 → 김대중노벨평화상기념관 → 자연사박물관 → 목포종합수산시장 → 목포역(하차) → 목포해상케이블카",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1796,7 +1796,7 @@
         0.0
       ],
       "route_text": "문헌서원 → 장항6080음식골목 맛나로 → 솔바람길 → 장항스카이워크 → 국립해양생물자원관 → 한산모시관(수,금,일/1~6) → 신성리갈대밭(수,금,일/7~12) → 서천특화시장(화,목,토) → 국립생태원",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1822,7 +1822,7 @@
         0.0
       ],
       "route_text": "전주종합경기장 → 전주역 → 전주한옥마을 → 공기마을 편백숲 → 전북도립미술관 → 대한민국술테마박물관 → 전주한옥마을 → 전주종합경기장 → 전주역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1848,7 +1848,7 @@
         0.0
       ],
       "route_text": "서울 교대역(용산역 경유) → 양주역 경유 → 회암사지 및 박물관 → 중식 → 온릉 → 장욱진·민복진미술관·조각공원 → 양주역/장암역/창동역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1900,7 +1900,7 @@
         0.2
       ],
       "route_text": "(금.토) 해양레일바이크 → 해상케이블카 → 삼척중앙시장 청년몰(일) 대금굴 → 활기치유의숲 → 삼척중앙시장 청년몰",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1926,7 +1926,7 @@
         0.0
       ],
       "route_text": "밀양역 → 선샤인밀양테마파크 → 중식(창마터널 인근 식당) → 밀양 꿈의 정원 → 표충사 → 얼음골축음기소리박물관 → 얼음골 케이블카 및 트래킹 → 밀양역",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1952,7 +1952,7 @@
         0.0
       ],
       "route_text": "밀양역 → 영남루 → 시내권 도보탐방(영남루~밀양관아~해천상상루~의열기념관) → 중식(아리랑시장) → 밀양아리랑 우주천문대 → 볕뉘, 향교 → 공연관람(선비풍류) → 위양지 → 밀양역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -1978,7 +1978,7 @@
         0.3333333333333333
       ],
       "route_text": "순천역 → 낙안읍성&뿌리깊은나무박물관 → 정유재란역사체험학습장&순천왜성 → 와온해변 → 순천역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2004,7 +2004,7 @@
         0.0
       ],
       "route_text": "A코스(바다야): 숲쟁이공원(백제불교최초도래지) → 중식(영광굴비 한정식) → 백수해안도로 → 백수 풍력발전단지 → 영광칠산타워B코스(행복숲): 물무산행복숲 황톳길 → 중식(영광굴비한정식) → 원불교영산성지 → 매간당고택 → 불갑사",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2030,7 +2030,7 @@
         0.0
       ],
       "route_text": "교과서박물관 → 세종 홍판서댁 → 숭모각",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2056,7 +2056,7 @@
         0.0
       ],
       "route_text": "익산역 → 익산쌍릉 → 왕궁리유적(백제왕궁) → 미륵사지(국립익산박물관) → 익산역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2082,7 +2082,7 @@
         0.0
       ],
       "route_text": "대전역 → 한밭수목원 → 국립대전현충원 → 유림공원 → 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2108,7 +2108,7 @@
         0.0
       ],
       "route_text": "동대구역⇒청라언덕역⇒대구수목원⇒마비정벽화마을⇒화원자연휴양림⇒인흥마을⇒대명유수지⇒청라언덕역⇒동대구역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2134,7 +2134,7 @@
         0.0909090909090909
       ],
       "route_text": "수서역 출발 → 송정역 도착 → 완도항여객선터미널 → 완도타워 → 중식(완도) → 장보고기념관 → 장보고유적지 → 완도수목원 → 정도리 구계등 → 특산품 전시장 → 완도항여객선터미널 → 석식(완도) → 송정역 탑승 → 수서역 도착",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2160,7 +2160,7 @@
         0.0
       ],
       "route_text": "국립생태원 → 장항6080음식골목 맛나로(중식) → 장항도시탐험역 → 장항송림자연휴양림 → 국립해양생물자원관 → 조류생태전시관 → 서천특화시장",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2212,7 +2212,7 @@
         0.0
       ],
       "route_text": "삼랑진역 → 여여정사 → 만어사 → 중식(송지시장) → 트윈터널 → 명례성지 → 수산제역사공원 → 삼랑진역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2238,7 +2238,7 @@
         0.0
       ],
       "route_text": "부산역(출발) → 감천문화마을 → 국회부산도서관 → 중식(행복마을) → 낙동강에코센터 → 낙동강생태탐방선(11~3월은 근현대역사관 대체) → 부산현대미술관 → 부산역(도착)",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2264,7 +2264,7 @@
         0.25
       ],
       "route_text": "정선역 > 정선아리랑시장(농업인회관) > 정선아리랑센터&아라리촌 > 화암동굴 > 화암약수 > 정선역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2290,7 +2290,7 @@
         0.25
       ],
       "route_text": "춘천역(여행자쉼터) → 한반도섬 → 양구수목원 → 양구군립박수근미술관 → 양구명품관 → 춘천역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2316,7 +2316,7 @@
         0.1666666666666666
       ],
       "route_text": "가평터미널 → 레일바이크 → 자라섬 → 가평역 → 남이섬 → 쁘띠프랑스 → 가평크루즈, 베고니아 새정원, 신비동물원",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2342,7 +2342,7 @@
         0.0
       ],
       "route_text": "문헌서원 → 봉선저수지 → 한산면 일원(중식) → 이상재 생가 → 신성리갈대숲 → 한산모시관 → 이하복 고택",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2368,7 +2368,7 @@
         0.0
       ],
       "route_text": "국립생태원 → 장항6080음식골목 맛나로 → 솔바람길 → 장항스카이워크 → 국립해양생물자원관 → 근대역사박물관(군산) → 서천특화시장",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2394,7 +2394,7 @@
         0.0
       ],
       "route_text": "여주역 → 신륵사관광지(출렁다리 북단) → 세종대왕릉 → 세종시장, 대로사 → 한글시장 → 출렁다리 남단 → 금은모래캠핑장 → 황학산수목원 → 명성황후생가 → 여주역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2420,7 +2420,7 @@
         0.0
       ],
       "route_text": "각원사 → 점심(유량동) → 충남안전체험관 → 삼거리공원 및 천안박물관",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2446,7 +2446,7 @@
         0.0
       ],
       "route_text": "공산성 → 무령왕릉과 왕릉원 → 백제오감체험관 → 국립공주박물관 → 공산성",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2472,7 +2472,7 @@
         0.1428571428571428
       ],
       "route_text": "시외버스터미널_포항역_스페이스워크_청하시장(오윤카페)_보경사_이가리닻전망대_사방기념공원_시외버스터미널_포항역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2498,7 +2498,7 @@
         0.1428571428571428
       ],
       "route_text": "포항역_시외버스터미널_구룡포일본인가옥거리(중식별도)_과메기문화관_호미곶광장_호미반도둘레길(선바위)_죽도시장_영일대해수욕장(석식별도)",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2524,7 +2524,7 @@
         0.0
       ],
       "route_text": "[10:50](구)안동역) → [11:30] KTX 안동역(터미널) → 부용대 → 하회장터(중식),세계탈박물관 → [14:00] 하회별신굿탈놀이관람 → 하회마을 → 병산서원 → [17:50]KTX 안동역 & 전통시장, 원도심, 구)안동역 하차가능",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2550,7 +2550,7 @@
         0.0
       ],
       "route_text": "고복자연공원 → 세종전통시장(조치원) → 조천 벚꽃길",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2576,7 +2576,7 @@
         0.0
       ],
       "route_text": "고복자연공원 → 세종전통시장(조치원) → 조천 벚꽃길",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2602,7 +2602,7 @@
         0.0
       ],
       "route_text": "양산역 → 목화당1944 → 남부시장 → 황산공원 → 양산역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2628,7 +2628,7 @@
         0.0
       ],
       "route_text": "베어트리파트 → 세종전통시장(조치원) → 조치원 영화·드라마 촬영지 및 우수건축자산",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2654,7 +2654,7 @@
         0.0
       ],
       "route_text": "화순온천주차장 → 이서커뮤니티센터 → 화순적벽입구 → 화순적벽(망향정, 망미정) → 화순적벽입구 → 이서커뮤니티센터 → 화순온천주차장",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2706,7 +2706,7 @@
         0.0
       ],
       "route_text": "세종전통문화체험관 → 이응다리 → 나성동 도시상징광장 → 정부세종청사 → 세종컨벤션센터",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2732,7 +2732,7 @@
         0.0
       ],
       "route_text": "이응다리 → 나성동 도시상징광장 → 정부세종청사 → 세종컨벤션센터 → 정부세종청사 옥상정원",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2758,7 +2758,7 @@
         0.0
       ],
       "route_text": "[18:45] KTX 안동역(터미널) → (구)안동역 19:20 → 영호루 → 낙동강음악분수 → 월영교 → 웅부공원 → [21:10] (구)안동역)",
-      "T_cluster": "T01",
+      "T_cluster": "T02",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2784,7 +2784,7 @@
         0.2
       ],
       "route_text": "묵호역 → 동쪽바다중앙시장(묵호항 여객터미널) → 묵호시장(수변공원) → 망상해변정류장(보양온천맞은편) → 동해시 종합 버스 터미널 → 천곡로터리(삼성아파트정류장) → 천곡황금박쥐동굴 → 무릉별유천지 → 무릉계곡 → 추암해변정류장 → 감추사주차장 → 묵호역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2810,7 +2810,7 @@
         0.0
       ],
       "route_text": "제이드가든 → 온의동 닭갈비촌 근처 → 공지천&사이로248 → 춘천막국수체험박물관",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2836,7 +2836,7 @@
         0.0
       ],
       "route_text": "태조산공원 → 중식(유량동) → 호두과자만들기 → 독립기념관",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2862,7 +2862,7 @@
         0.0
       ],
       "route_text": "대전역 → 대청호오백리길(암석식물원∼대청댐물문화관) → 문의 시내(자율중식) → 청남대 → 청주고인쇄박물관(유네스코 기록문화유산 직지) → 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2888,7 +2888,7 @@
         0.0
       ],
       "route_text": "서울 교대역(용산역 경유) → 양주역 경유 → 초록지기 마을 → 조소앙 기념관·수변산책 → 양주역/장암역/창동역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2914,7 +2914,7 @@
         0.0
       ],
       "route_text": "인천역+화개정원+대룡시장+교동제비집+강화평화전망대+인천역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2940,7 +2940,7 @@
         0.0
       ],
       "route_text": "홍성역 → 남당항 → 죽도 → 죽도둘레길 → 홍성스카이타워 → 홍성역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2966,7 +2966,7 @@
         0.0
       ],
       "route_text": "양산역 → 목화당1944 → 남부시장 → 황산공원(물금벚꽃길) → 양산타워 → 양산역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -2992,7 +2992,7 @@
         0.0
       ],
       "route_text": "여수엑스포역 → 충민사 → 진남관 → 고소대 → 이순신광장 → 이충무공어머니사시던곳 → 선소 → 흥국사 → 여수엑스포역",
-      "T_cluster": "T01",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3018,7 +3018,7 @@
         0.0
       ],
       "route_text": "춘천역 → 공지천 → 춘천삼악산호수케이블카 → 애니메이션박물관 → 강원특별자치도립화목원 → 춘천막국수체험박물관 → 소양강댐 닭갈비촌 → 소양강댐 → 소양아트서클&소양강스카이워크 → 춘천역",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3044,7 +3044,7 @@
         0.0
       ],
       "route_text": "춘천역 → 공지천 → 춘천삼악산호수케이블카 → 애니메이션박물관 → 강원특별자치도립화목원 → 춘천막국수체험박물관 → 소양강댐 닭갈비촌 → 소양강댐 → 소양아트서클&소양강스카이워크 → 춘천역",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3070,7 +3070,7 @@
         0.0
       ],
       "route_text": "대전역 → 서대전역 → 옛충남도청사 → 테미오래 → 대전아쿠아리움 → 대전오월드 → 효월드 후문 → 장태산자연휴양림 → 대흥동성당(성심당 본점) → 대전역",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3096,7 +3096,7 @@
         0.0
       ],
       "route_text": "영주역 → 영주시외버스터미널 → 부용대, 관사골 → 영주중앙시장(전통시장) → 영주댐관광지, 용마루공원 → 무섬마을 → 영주시외버스터미널 → 영주역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3122,7 +3122,7 @@
         0.0
       ],
       "route_text": "수로왕비릉 → 구지봉 → 국립김해박물관 → 대성동고분군 → 수로왕릉 → 봉황동유적",
-      "T_cluster": "T01",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3148,7 +3148,7 @@
         0.0
       ],
       "route_text": "가경터미널 → 청주체육관 → 상당산성(중식) → 옥화자연휴양림 짚트랙 및 숲체험 → 성안길 → 청주체육관 → 가경터미널",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3174,7 +3174,7 @@
         0.1428571428571428
       ],
       "route_text": "순천역 → 광양읍터미널 → 광양역사문화원＆광양향교 → 김시식지 → 망덕포구 먹거리타운(중식) → 배알도섬정원＆윤동주유고보존 정병욱가옥 → 진월 조선 수군지 선소 기념관 → 광양읍터미널 → 순천역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3200,7 +3200,7 @@
         0.0
       ],
       "route_text": "자일산림욕장+제일시장+백영수미술관+특화도서관+관내대형카페",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3252,7 +3252,7 @@
         0.0
       ],
       "route_text": "서울 교대역(용산역 경유) → 양주역 경유 → 회암사지 및 박물관 → 중식 → 관아지·향교 → 온릉 → 양주역/장암역/창동역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3278,7 +3278,7 @@
         0.0
       ],
       "route_text": "서울 교대역(용산역 경유) → 양주역 경유 → 회암사지 및 박물관 → 중식 → 필룩스조명박물관 → 청암민속박물관 → 양주역/장암역/창동역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3304,7 +3304,7 @@
         0.0
       ],
       "route_text": "대전역 → 카리용(대전과학기술대) → 장태산자연휴양림 → (으능정이, 스카이로드 경유) 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3356,7 +3356,7 @@
         0.0
       ],
       "route_text": "대통령기록관 → 국립세종수목원 → 이응다리",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3382,7 +3382,7 @@
         0.0
       ],
       "route_text": "대전역 → 동춘당 → 계족산황톳길(장동산림욕장) → 유성온천족욕체험장 → 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3408,7 +3408,7 @@
         0.0
       ],
       "route_text": "온양온천역 → 옹기발효음식전시체험관 → 도고아트홀 → 세계꽃식물원 → 온양온천역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3434,7 +3434,7 @@
         0.0
       ],
       "route_text": "감악산출렁다리 → 율곡수목원 → 국립극장 무대예술지원센터",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3460,7 +3460,7 @@
         0.0
       ],
       "route_text": "청주체육관 → 가경터미널 → KTX오송역 → 문의문화재단지(중식) → 청남대 → 성안길 → 청주체육관 → 가경터미널 → KTX오송역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3486,7 +3486,7 @@
         0.0
       ],
       "route_text": "계서당 → 닭실마을 → 목재문화체험장, 국립백두대간수목원 → 오전약수관광지",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3512,7 +3512,7 @@
         0.0
       ],
       "route_text": "계서당 → 닭실마을 → 목재문화체험장, 국립백두대간수목원 → 오전약수관광지",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3538,7 +3538,7 @@
         0.0
       ],
       "route_text": "여수엑스포역 → 여수시청 → 소호동동다리 → 조발도해오름언덕 → 둔병, 낭도, 적금, 팔영대교 → 적금공원 → 가사리생태공원 → 서틀러다육식물원 → 여수시청 → 여수엑스포역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3564,7 +3564,7 @@
         0.2777777777777778
       ],
       "route_text": "이순신광장 → 국동어항단지 → 여수시청 → 소호동동다리 → 선소 → 히든베이호텔 → 돌산대교 → 거북선대교 → 여수엑스포역 → 종포해양공원 → 이순신광장",
-      "T_cluster": "T01",
+      "T_cluster": "T02",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3590,7 +3590,7 @@
         0.0
       ],
       "route_text": "순천역 → 광양읍터미널 → 백운산자연휴양림, 산림박물관 → 불고기특화거리(중식) → 서울대학교 남부연습림 관사 → 전남도립미술관＆예술창고 → 광양읍터미널 → 순천역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3616,7 +3616,7 @@
         0.0
       ],
       "route_text": "서울 교대역(용산역 경유) → 양주역 경유 → 회암사지 및 박물관 → 중식 → 천일홍 축제장(나리농원) → 조소앙 기념관·수변산책 → 양주역/장암역/창동역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3642,7 +3642,7 @@
         0.0
       ],
       "route_text": "서울 교대역(용산역 경유) → 양주역 경유 → 조소앙 기념관·수변산책 → 중식 → 왕실 축제장 → 회암사지 및 박물관 → 양주역/장암역/창동역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3668,7 +3668,7 @@
         0.125
       ],
       "route_text": "여수엑스포역 → 아쿠아플라넷 → 케이블카주차타워 → 오동도 → 소노캄 여수 → 하멜전시관 → 이순신광장 → 여객선터미널(수산물특화시장 입구) → 돌산공원 입구 → 여수엑스포역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3694,7 +3694,7 @@
         0.0
       ],
       "route_text": "국립생태원 → 장항6080음식골목 맛나로 → 솔바람길 → 장항스카이워크 → 한산모시관 → 서천특화시장",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3720,7 +3720,7 @@
         0.0
       ],
       "route_text": "새마을운동발상지 → 청도시장 → 소싸움미디어체험관 → 농협로컬푸드직매장 → 와인터널",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3746,7 +3746,7 @@
         0.0
       ],
       "route_text": "홍성역 → 광천토굴새우젓전시관 → 새우젓 토굴 → 그림같은 수목원 → 광천전통시장 → 홍성역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3772,7 +3772,7 @@
         0.0
       ],
       "route_text": "홍성역 → 홍주읍성 → 홍성전통시장 → 식물온실 들빛 → 홍성역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3798,7 +3798,7 @@
         0.0
       ],
       "route_text": "오두산통일전망대 → 국립민속박물관 파주 → 장단콩웰빙마루",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3824,7 +3824,7 @@
         0.0
       ],
       "route_text": "홍성역 → 홍주읍성 → 이응노기념관 → 김좌진·한용운 생가 → 광천역(홍성역)",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3876,7 +3876,7 @@
         0.25
       ],
       "route_text": "광화문역 → 중앙역 → 조력문화관 → 방아머리해변 → 바다향기수목원 → 중앙역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3902,7 +3902,7 @@
         0.25
       ],
       "route_text": "광화문역 → 중앙역 → 탄도누에섬 → 바다향기수목원 → 퇴적암층 → 중앙역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3928,7 +3928,7 @@
         0.0
       ],
       "route_text": "서울시청 → 삼례문화예술촌 → 오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을 → 위봉산성,위봉폭포 → 용진로컬푸드직매장 → 서울시청",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3954,7 +3954,7 @@
         0.0
       ],
       "route_text": "청주체육관 → 가경터미널 → 운보의 집 → 초정리(중식) → 초정행궁 → 성안길 → 청주체육관 → 가경터미널",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -3980,7 +3980,7 @@
         0.5
       ],
       "route_text": "① 제주공항 → ② 이호목마등대(포토존/10분) → ③ 도두봉& 오래물광장(해녀공연/25분) → ④ 동문시장&산지천(야시장,분수쇼/40분) → ⑤ 관덕정(야간개장) → 제주공항",
-      "T_cluster": "T01",
+      "T_cluster": "T02",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4006,7 +4006,7 @@
         0.0
       ],
       "route_text": "공주역·공주시청 → 공주무령왕릉과왕릉원 → 공산성 → 중식(백미고을, 산성시장) → 석장리박물관 → 산림휴양마을 → 공주역·공주시청",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4032,7 +4032,7 @@
         0.0
       ],
       "route_text": "김해분청도자박물관 → 클레이아크김해미술관 → 김해탄소중립체험관,김해목재문화박물관(택1) → 율하유적전시관",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4058,7 +4058,7 @@
         0.0
       ],
       "route_text": "춘천역(여행자쉼터) → DMZ펀치볼둘레길 → DMZ자생식물권 → 을지전망대 → 양구명품관 → 춘천역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4110,7 +4110,7 @@
         0.0
       ],
       "route_text": "연천역 → 태풍전망대 → 연천먹자골목 → 베개용암 출렁다리 → 재인폭포 → 연천역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4136,7 +4136,7 @@
         0.0
       ],
       "route_text": "서산시청(10:00) → 마애여래삼존상(10:30) → 여미오미(중식)(11:30) → 서산한우목장길(13:20) → 개심사(14:30) → 해미국제성지(16:00) → 서산시청(17:00)",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4162,7 +4162,7 @@
         0.0
       ],
       "route_text": "전주종합경기장 → 전주역 → 전주한옥마을 →  → 삼례문화예술촌 → 오성제,오성한옥문화센터,아원고택,소양고택,플리커책방,오성한옥마을 → 전주역 → 전주종합경기장 → 전주한옥마을",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4188,7 +4188,7 @@
         0.0
       ],
       "route_text": "서울 → 부천중동 사랑시장 → 부천한옥마을 → 한국만화박물관 → 부천아트벙커B39 → 서울",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4214,7 +4214,7 @@
         0.0
       ],
       "route_text": "영주역 → 영주시외버스터미널 → 부석사 → 금성대군신단, 소수서원, 선비촌 → 죽계구곡 걷기 → 특산물시장(전통시장) → 영주시외버스터미널 → 영주역",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4240,7 +4240,7 @@
         0.2666666666666666
       ],
       "route_text": "KAEMS,KAI → 항공우주과학관,항공우주박물관 → 우주항공청(외부) 및 무지갯빛해안도로 → 중식 → 사천바다케이블카,아라마루 아쿠아리움, 삼천포대교공원",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4266,7 +4266,7 @@
         0.375
       ],
       "route_text": "무지갯빛해안도로,대포항(그리움이 물들면) → 사천바다케이블카 및 아라마루 아쿠아리움 → 중식 → 사천케이블카 자연휴양림, 노을전망교, 모충공원",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4318,7 +4318,7 @@
         0.0
       ],
       "route_text": "대전역 → 무수천하마을(유회당) → 효월드(효문화진흥원, 뿌리공원, 족보박물관) → 대전시립박물관 → (성심당 본점 경유) 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4344,7 +4344,7 @@
         0.0
       ],
       "route_text": "순천역 → 낙안읍성&뿌리깊은나무박물관 → 선암사&야생차체험관 → 드라마촬영장 → 순천역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4370,7 +4370,7 @@
         0.0
       ],
       "route_text": "감악산출렁다리 → 이이유적지 → 헤이리 → 오두산통일전망대 → DMZ평화관광 → 율곡수목원",
-      "T_cluster": "T01",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4396,7 +4396,7 @@
         0.6
       ],
       "route_text": "부산역(출발) → 광안리해수욕장 → 해운대(미포) → 용궁사(국립수산과학원) → 대변항 → 임랑해수욕장 → 부산역(도착)",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4422,7 +4422,7 @@
         0.0
       ],
       "route_text": "익산역 → 원불교총부 → 고스락 → 교도소세트장 → 미륵사지(국립익산박물관) → 왕궁리유적(백제왕궁) → 보석박물관 → 익산역",
-      "T_cluster": "T01",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4448,7 +4448,7 @@
         0.0
       ],
       "route_text": "대전역 → 대전복합터미널(경유) → 대청호(대청댐물문화관) → 대청호자연생태관(대청호자연수변생태공원) → 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4474,7 +4474,7 @@
         0.0
       ],
       "route_text": "서울 교대역(용산역 경유) → 양주역 경유 → 회암사지 및 박물관 → 중식 → 서울우유 견학 홍보관 → 관아지.향교 → 양주역/장암역/창동역",
-      "T_cluster": "T02",
+      "T_cluster": "T06",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4500,7 +4500,7 @@
         0.2
       ],
       "route_text": "태화강역 → 스타즈호텔 → 롯데광장 → 고래박물관 → 대교전망대 입구 → 대왕암공원 → 태화강역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4526,7 +4526,7 @@
         0.25
       ],
       "route_text": "섬진강기차마을 → 6070청춘공작소&낭만공방 → 감성충전길 → 갤러리107 → 곡성성당 → 기차마을전통시장 → 뚝방마켓 → 섬진강기차마을",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4552,7 +4552,7 @@
         0.75
       ],
       "route_text": "중앙역 → 와이너리 → 방아머리해변 → 방아머리선착장 → 반달섬 → 중앙역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4578,7 +4578,7 @@
         0.2
       ],
       "route_text": "전주시청 → 옥정호 붕어섬 → 임실 전통시장 → 임실치즈테마파크 → 전주시청",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4604,7 +4604,7 @@
         0.3333333333333333
       ],
       "route_text": "(1일차) KAEMS,KAI → 항공우주과학관,항공우주박물관 → 우주항공청(외부) 및 무지갯빛해안도로 → 중식 → 사천바다케이블카,아라마루 아쿠아리움, 삼천포대교공원 (2일차) 사천케이블카 자연휴양림 → 중식 → 남일대해수욕장(코끼리바위)",
-      "T_cluster": "T01",
+      "T_cluster": "T02",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4630,7 +4630,7 @@
         0.125
       ],
       "route_text": "체험시설(와인갤러리) or 항공우주박물관 → 다솔사, 세종단종태실지 → 중식 → 사천바다케이블카, 아라마루 아쿠아리움 or 와인족욕체험",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4682,7 +4682,7 @@
         0.4
       ],
       "route_text": "섬진강기차마을 → 가정역&레일바이크 → 압록상상스쿨 → 가정역&레일바이크 → 섬진강기차마을",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4708,7 +4708,7 @@
         0.6666666666666666
       ],
       "route_text": "인천역+하나개해수욕장+광명항+소무의도+인천역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4734,7 +4734,7 @@
         0.6666666666666666
       ],
       "route_text": "인천역+선재도 목섬+진두선착장+십리포해수욕장+인천역",
-      "T_cluster": "T02",
+      "T_cluster": "T01",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4760,7 +4760,7 @@
         0.0
       ],
       "route_text": "빵돌가마마을 → 중식(아우내장터) → 홍대용과학관 → 충남안전체험관",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4786,7 +4786,7 @@
         0.0
       ],
       "route_text": "정선역 > 정선아리랑시장(농업인회관) > 정선아리랑센터&아라리촌 > 가리왕산케이블카 > 아우라지역 > 정선역",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4864,7 +4864,7 @@
         0.0
       ],
       "route_text": "농촌체험마을(부래미, 우무실마을 중 택1) → 농촌체험농장 → 이천관광지",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4890,7 +4890,7 @@
         0.0
       ],
       "route_text": "농촌체험마을(도니울, 서경들, 자채방아마을) → 농촌체험농장 → 이천관광지",
-      "T_cluster": "T02",
+      "T_cluster": "T03",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     }
@@ -4918,7 +4918,7 @@
         0.0
       ],
       "route_text": "연천역 → 숭의전 → 전곡시장 → 은대리 문화벽돌공장 → 재인폭포 → 연천역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4944,7 +4944,7 @@
         0.0
       ],
       "route_text": "마장호수 출렁다리 → 보광사 → 벽초지수목원",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4970,7 +4970,7 @@
         0.0
       ],
       "route_text": "순천역 → 송광사 → 순천만습지 → 순천만국가정원 → 순천역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -4996,7 +4996,7 @@
         0.0
       ],
       "route_text": "대전역 → 지질박물관 → 대전시민천문대(우천시 솔로몬로파크) → 엑스포과학공원(미래에너지움) → 대전역",
-      "T_cluster": "T02",
+      "T_cluster": "T04",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     },
@@ -5022,7 +5022,7 @@
         0.0909090909090909
       ],
       "route_text": "부산역(출발) → 송도구름산책로 → 암남공원(용궁구름다리) → 감천문화마을(감천사거리) → 다대포해수욕장(몰운대) → 아미산전망대 → 부네치아(장림포구) → 부산현대미술관(을숙도) → 낙동강하구에코센터 → 석당박물관(부산임시수도청사) → 국제시장(보수동책방골목) → 용두산공원(부산근대역사박물관) → 부산역(도착)",
-      "T_cluster": "T01",
+      "T_cluster": "T05",
       "q_source": "type_profile_prior",
       "operational_availability_verified": false
     }
