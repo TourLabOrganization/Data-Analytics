@@ -315,12 +315,23 @@ if places is not None:
     for i,c in enumerate(CATEGORIES):ax.bar(shares.index,shares[c],bottom=bottom,label=CAT_LABELS[c],color=PALETTE[i]);bottom+=shares[c].to_numpy()
     ax.set(title="G 군집별 범주 구성",ylabel="비중",ylim=(0,1));ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False);finish(fig,"07_G_category_profiles")
     valid=eligible_places[eligible_places.coordinate_valid]
-    fig,ax=plt.subplots(figsize=(7,8))
-    for i,g in enumerate(sorted(eligible_places.G_cluster.unique())):
-        q=valid[valid.G_cluster.eq(g)];ax.scatter(q.lon,q.lat,s=10,alpha=.45,color=PALETTE[i%len(PALETTE)],label=g)
-    if len(valid):ax.set_aspect(1/max(.1,np.cos(np.deg2rad(valid.lat.mean()))))
-    ax.set(title="G clusters at source coordinates",xlabel="Longitude",ylabel="Latitude")
-    ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False);finish(fig,"08_G_coordinate_scatter")
+    # One small map per cluster: all places in grey, the cluster in the colour of its main category (same colours as 07).
+    # Places east of 130.0 (Ulleung, Dokdo) fall outside the frame and are counted in the footnote.
+    frame=valid[valid.lon.between(124.5,130.0)&valid.lat.between(33.0,38.7)]
+    cluster_ids=list(profile.index);ncol=5;nrow=int(np.ceil(len(cluster_ids)/ncol))
+    fig,axs=plt.subplots(nrow,ncol,figsize=(3.0*ncol,3.6*nrow),squeeze=False)
+    for ax,g in zip(axs.flat,cluster_ids):
+        main=[c for c in CATEGORIES if shares.loc[g,c]>=0.2];lead=shares.loc[g].idxmax()
+        ax.scatter(frame.lon,frame.lat,s=2,color="#dddddd",linewidths=0)
+        q=frame[frame.G_cluster.eq(g)]
+        ax.scatter(q.lon,q.lat,s=6,color=PALETTE[CATEGORIES.index(lead)],alpha=.8,linewidths=0)
+        ax.set_title(f"{g} {'·'.join(CAT_LABELS[c] for c in main)} · {profile.loc[g,'base_minutes_median']:.0f}분 · {int(profile.loc[g,'n'])}곳",fontsize=9)
+        ax.set(xlim=(124.5,130.0),ylim=(33.0,38.7),xticks=[],yticks=[]);ax.set_aspect(1/np.cos(np.deg2rad(36)))
+        for side in ax.spines.values():side.set_visible(False)
+    for ax in list(axs.flat)[len(cluster_ids):]:ax.axis("off")
+    fig.suptitle("G 군집별 관광지 위치 (원자료 위경도)",fontsize=12)
+    fig.text(.01,.005,f"회색: 좌표가 있는 전체 관광지. 색: 해당 군집(주 범주 색). 체류시간은 군집 중앙값. 표시 범위 밖(울릉·독도 등) {len(valid)-len(frame)}곳",fontsize=8,color="#666")
+    finish(fig,"08_G_coordinate_scatter")
 
 
 def norm_name(text):
