@@ -509,6 +509,32 @@ if city is not None:
             ax.bar(profile.index,1-bottom,bottom=bottom,label="범주 미확인",color="#DDDDDD")
             ax.set(title="T 군집별 평균 범주 구성",ylabel="비중",ylim=(0,1));ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False)
             finish(fig,"13_T_category_profiles")
+            if places is not None:
+                # Map position only (not a feature): mean of the course's linked stop candidates, else the mean of its region's places.
+                pts=places[places.coordinate_valid]
+                link_xy=stops[stops.place_id_candidate.ne("")].merge(pts[["place_id","lat","lon"]],left_on="place_id_candidate",right_on="place_id").groupby("course_id")[["lat","lon"]].mean()
+                region_xy=pts.groupby("region")[["lat","lon"]].mean()
+                pos=city_eligible[["course_id","region","T_cluster"]].join(link_xy,on="course_id")
+                by_region=pos.lat.isna();pos.loc[by_region,["lat","lon"]]=region_xy.reindex(pos.loc[by_region,"region"]).to_numpy()
+                pos=pos.dropna(subset=["lat","lon"]);frame=pos[pos.lon.between(124.5,130.0)&pos.lat.between(33.0,38.7)]
+                base=pts[pts.lon.between(124.5,130.0)&pts.lat.between(33.0,38.7)]  # all places as a light backdrop outlining the country
+                cluster_ids=list(profile.index);ncol=4;nrow=int(np.ceil(len(cluster_ids)/ncol))
+                fig,axs=plt.subplots(nrow,ncol,figsize=(3.2*ncol,3.8*nrow),squeeze=False)
+                for ax,t in zip(axs.flat,cluster_ids):
+                    lead=profile.loc[t,[f"share_{c}" for c in CATEGORIES]].astype(float).idxmax().removeprefix("share_")
+                    if profile.loc[t,"night_flag"]>=0.5:desc,color="야경","#2B3A67"
+                    elif profile.loc[t,"visit_candidate_count"]>=7:desc,color="긴 혼합",PALETTE[9]
+                    else:desc,color=f"{CAT_LABELS[lead]} {profile.loc[t,'share_'+lead]:.2f}",PALETTE[CATEGORIES.index(lead)]
+                    ax.scatter(base.lon,base.lat,s=1.5,color="#e4e4e4",linewidths=0)
+                    q=frame[frame.T_cluster.eq(t)];ax.scatter(q.lon,q.lat,s=22,color=color,alpha=.8,edgecolor="white",linewidths=.4)
+                    ax.set_title(f"{t} {desc} · {int(profile.loc[t,'n'])}코스 · 방문지 {profile.loc[t,'visit_candidate_count']:.1f}곳",fontsize=9)
+                    ax.set(xlim=(124.5,130.0),ylim=(33.0,38.7),xticks=[],yticks=[]);ax.set_aspect(1/np.cos(np.deg2rad(36)))
+                    for side in ax.spines.values():side.set_visible(False)
+                for ax in list(axs.flat)[len(cluster_ids):]:ax.axis("off")
+                fig.suptitle("T 군집별 시티투어 코스 위치",fontsize=12)
+                fig.text(.01,.005,f"회색: 전체 관광지. 위치는 잠정: 연결된 경유지 후보 좌표 평균 {int((~by_region).sum())}코스, 연결이 없으면 같은 지역 관광지 평균 {int(by_region.sum())}코스. "
+                         f"같은 지역 코스는 겹쳐 보임. 범주 비중은 군집 평균. 표시 범위 밖 {len(pos)-len(frame)}코스",fontsize=8,color="#666")
+                finish(fig,"16_T_course_map")
         else:print("코스의 서로 다른 특성 조합이 3개 미만이어서 T PCA·군집은 생략합니다.")
     else:print("유효 코스가 4개 미만이어서 T PCA·군집은 생략합니다. 품질표는 저장합니다.")
     save_csv(pd.concat([cities_raw,course_table.add_prefix("analysis_")],axis=1),"T_citytour_assignments_all")

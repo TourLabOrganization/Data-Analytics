@@ -98,7 +98,7 @@
   "survey_and_reference_engine_and_config_identical": true,
   "analysis_snapshot_preserved_byte_for_byte": true,
   "sector_inputs_excluded": true,
-  "main_analysis_plot_count": 41,
+  "main_analysis_plot_count": 42,
   "main_analysis_result_csv_count": 92,
   "respondent_survey_png_count": 6,
   "secret_pattern_scan": "no_matches",
@@ -412,5 +412,13 @@
     "recommendation_scores_changed": true,
     "theme_scores_changed": true,
     "option_raw_points_changed": false
+  },
+  "plot_revisions_2026_09_29": {
+    "kept_run": "run_20260929_021855_281961",
+    "changed_plots": [
+      "plots/08_G_coordinate_scatter.png (per-cluster small maps)",
+      "plots/16_T_course_map.png (new T course map)"
+    ],
+    "method": "notebook rerun in the pinned Python 3.12 environment, compared file by file with the kept run; tables and models byte-identical; only these plots, the run file_manifest.csv rows and run_summary.json (created_at, plot_count) differed; the kept run gets the new plots, its manifest rows and plot_count 42 (created_at unchanged)"
   }
 }
