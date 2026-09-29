@@ -6,6 +6,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 |---|---:|---:|---|
 | [analysis/tour-places.csv](../analysis/tour-places.csv) | 3,118 | 17 | `f795d16aa192f9a1e771b27f2eca3483b3342826db925c6ee20038b30a0f79c7` |
 | [analysis/citytour.csv](../analysis/citytour.csv) | 280 | 13 | `cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324` |
+| [analysis/stop_category_review.csv](../analysis/stop_category_review.csv) | 30 | 4 | `3cd2219d4290dcac5204adb865a4677f030182ae05e020778dbe4785f45dc70b` |
 | [analysis/spending_csv/spend_region.csv](../analysis/spending_csv/spend_region.csv) | 233 | 4 | `b57eaea72fa6b060347393748e00676c160326921375b048af2486e6d632a31c` |
 | [analysis/marine_csv/marine_heatmap.csv](../analysis/marine_csv/marine_heatmap.csv) | 3,564 | 3 | `b98acc36b7d8b59d9daf6c79adf5a22129eabc9f8f49f9eb5aba3d63e8884ff3` |
 | [analysis/marine_csv/marine_monthly.csv](../analysis/marine_csv/marine_monthly.csv) | 60 | 4 | `d418cdaf056050fed1268cd7805d7a362227c8adee4592337b2ef6f4493afa44` |
@@ -29,13 +30,14 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [hallyu_preprocessed_csv/hallyu_2026_scoring_inputs.csv](../hallyu_preprocessed_csv/hallyu_2026_scoring_inputs.csv) | 4 | 19 | `761be4597263dd135d3e2ff997bfb2f589c20b52ef2c6b1bc64e3bf6ad962891` |
 | [hallyu_preprocessed_csv/hallyu_2026_source_indicators.csv](../hallyu_preprocessed_csv/hallyu_2026_source_indicators.csv) | 12 | 23 | `f99fea85000beb0825a44cb3253c43cc462cba2e0699efbca4fd42dd2bb5da3f` |
 | [hallyu_preprocessed_csv/hallyu_2026_source_metadata.csv](../hallyu_preprocessed_csv/hallyu_2026_source_metadata.csv) | 12 | 3 | `4308222a0e43122f67d0d7db3e720ee42c2b4b97eb2f6abd8e8dee79d91ac52f` |
-| [reference_calc/eligible_courses.csv](../reference_calc/eligible_courses.csv) | 234 | 14 | `3e9c227066f14d61e8a63e7b82d01c8235433b6d343e64925af116aed9e38b90` |
+| [reference_calc/eligible_courses.csv](../reference_calc/eligible_courses.csv) | 234 | 14 | `2ae3d5ff26b3a6d431c66c3963e15aa76951f8e4d815e77471c603258b03f7d4` |
 
 ## 입력 구분
 
 - 전국 장소·시티투어, 관광데이터랩 연령·성연령·지역 지출·해양 CSV를 포함합니다. 원본 다운로드 ZIP이 전처리 스크립트에서 필요하면 해당 모듈의 data/source 경로에 보존했습니다.
 - 한류 8개 CSV는 원문 발표 집계치와 설계값의 구분을 포함하며 개인 응답 원자료가 아닙니다.
-- `eligible_courses.csv`는 280개 코스 중 분류 조건을 통과한 234개 처리 결과입니다(2026-09-29 범주 미확인 경유지 재분류 후. 코스 재점검 전 179개, 연결 재점검 전 229개, 재분류 전 223개). 6.3에서 코스 가산에 쓰는 방문 후보 수와 야경 표식 열을 추가했습니다.
+- `eligible_courses.csv`는 280개 코스 중 분류 조건을 통과한 234개 처리 결과입니다(2026-09-29 범주 미확인 경유지 2차 재분류 후. 코스 재점검 전 179개, 연결 재점검 전 229개, 1차 재분류 전 223개. 2차 재분류는 코스 수를 바꾸지 않았고 화성 "바다와 하루"가 들어오고 화순 적벽 코스 하나가 빠졌다). 6.3에서 코스 가산에 쓰는 방문 후보 수와 야경 표식 열을 추가했습니다.
+- `analysis/stop_category_review.csv`는 이름만으로 범주를 정할 수 없는 시티투어 경유지의 검토 범주와 판단 근거입니다(30행). 범주는 5범주, NON_VISIT, UNKNOWN만 허용하며 `run_analysis.py`가 읽을 때 검사합니다.
 - `analysis/survey_responses_template.csv`는 헤더만 있는 선택적 직접 코사인 평가 입력 양식입니다. 최신 분기 설문은 `survey/implementation/example_answers.json`과 `reference_calc/demo_answers.json`을 사용합니다.
 - 실제 이용자 응답은 포함하지 않았습니다. 제공 예제는 가상 응답입니다.
 - 성별과 연령 비율은 각각의 주변분포이며 성×연령 결합 분포가 아닙니다.

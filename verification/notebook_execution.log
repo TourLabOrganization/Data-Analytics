@@ -1,13 +1,14 @@
 Executed code cell 1: 0.0s, 0 outputs
-Executed code cell 2: 1.5s, 1 outputs
+Executed code cell 2: 1.4s, 1 outputs
 places: 3,118행 × 17열 / utf-8-sig
 citytour: 280행 × 13열 / utf-8-sig
+stop_category_review: 30행 × 4열 / utf-8-sig
 Python 3.12.3 | scikit-learn 1.8.0
-저장 폴더: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_040247_185905
+저장 폴더: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_041803_474997
 
 Executed code cell 3: 0.5s, 2 outputs
 Executed code cell 4: 0.0s, 0 outputs
-Executed code cell 5: 10.1s, 9 outputs
+Executed code cell 5: 10.8s, 9 outputs
 G {
   "rows": 2549,
   "features": [
@@ -35,12 +36,12 @@ PC2 negative: {'cat_herit': -0.6076, 'cat_activity': -0.1902} positive: {'cat_fo
 축 해석: PC1 계수의 절댓값이 가장 큰 변수는 log_stay_robust입니다. 단일 변수의 영향이 크므로 테마 성향이나 여행자 유형으로 바로 해석하지 마세요.
 군집 수 해석: k=10는 이번 탐색의 상한입니다. 전역 최적 군집 수가 확정된 것은 아닙니다.
 
-Executed code cell 6: 1.1s, 2 outputs
+Executed code cell 6: 2.1s, 2 outputs
 코스 / 분석 가능: 280 / 234
-잠정 장소 후보 연결 슬롯: 750 | 확인된 장소 연결: 0
+잠정 장소 후보 연결 슬롯: 749 | 확인된 장소 연결: 0
 
 Executed code cell 7: 9.5s, 10 outputs
-T 묶음 총표준편차: {'category': 0.456153, 'stop_count': 1.029461, 'night': 0.23717} | 분산 기여: {'category': 0.75, 'stop_count': 0.15, 'night': 0.1}
+T 묶음 총표준편차: {'category': 0.466868, 'stop_count': 1.008398, 'night': 0.23717} | 분산 기여: {'category': 0.75, 'stop_count': 0.15, 'night': 0.1}
 T {
   "rows": 234,
   "features": [
@@ -54,17 +55,17 @@ T {
   ],
   "removed_constant_features": [],
   "pca_components": 6,
-  "pca_retained_variance": 0.9916445945840606,
-  "plot_2pc_variance": 0.5557180238854111,
+  "pca_retained_variance": 0.9990312043548704,
+  "plot_2pc_variance": 0.5561397576538566,
   "k": 7,
-  "silhouette_mean": 0.2467607381848577,
-  "seed_ari_min": 0.807012254932631,
+  "silhouette_mean": 0.2602532591416793,
+  "seed_ari_min": 0.8654851377953507,
   "passes_gates": true,
   "silhouette_sample_size": 234,
   "numbering": "run-specific, no persona assignment"
 }
-PC1 negative: {'share_activity': -0.3268, 'share_heal': -0.3171} positive: {'log_visit_count_robust': 0.0084, 'share_herit': 0.8734}
-PC2 negative: {'share_heal': -0.6891, 'night_flag': -0.1383} positive: {'log_visit_count_robust': 0.1595, 'share_activity': 0.6932}
+PC1 negative: {'share_activity': -0.3727, 'share_heal': -0.2994} positive: {'log_visit_count_robust': -0.0098, 'share_herit': 0.8615}
+PC2 negative: {'share_activity': -0.6566, 'log_visit_count_robust': -0.2236} positive: {'night_flag': 0.1404, 'share_heal': 0.7056}
 
 Executed code cell 8: 0.0s, 1 outputs
 {
@@ -76,8 +77,8 @@ Executed code cell 8: 0.0s, 1 outputs
   "region_share_denominator": "hierarchical denominator inferred from sums; not verified from UI metadata"
 }
 
-Executed code cell 9: 1.0s, 2 outputs
-Executed code cell 10: 3.8s, 5 outputs
+Executed code cell 9: 0.9s, 2 outputs
+Executed code cell 10: 3.3s, 5 outputs
 지역 설명 모델 OOF 결과
 
 Executed code cell 11: 0.0s, 1 outputs
@@ -236,9 +237,9 @@ Executed code cell 12: 0.1s, 2 outputs
     "서산시",
     "서천군",
     "서초구"
-Executed code cell 13: 6.9s, 7 outputs
+Executed code cell 13: 6.1s, 7 outputs
 Executed code cell 14: 0.9s, 2 outputs
-Executed code cell 15: 3.6s, 4 outputs
+Executed code cell 15: 3.7s, 4 outputs
 검색순위 적용 {
   "status": "loaded",
   "score_bonus": 0.0,
@@ -370,7 +371,7 @@ Executed code cell 16: 0.0s, 1 outputs
     "서산시",
     "서천군",
     "서초구",
-Executed code cell 17: 20.1s, 15 outputs
+Executed code cell 17: 21.2s, 15 outputs
 G {
   "rows": 2549,
   "excluded_zero_vectors": 0,
@@ -417,16 +418,16 @@ T {
   "k": 7,
   "search_max_k": 10,
   "at_search_upper_bound": false,
-  "cosine_silhouette_mean": 0.4496530610466081,
-  "cosine_silhouette_final_seed": 0.45011118891385343,
-  "negative_silhouette_share": 0.021367521367521368,
-  "seed_
-Executed code cell 18: 0.7s, 3 outputs
+  "cosine_silhouette_mean": 0.450283306467012,
+  "cosine_silhouette_final_seed": 0.4528177944467696,
+  "negative_silhouette_share": 0.029914529914529916,
+  "seed_ar
+Executed code cell 18: 0.6s, 3 outputs
 실제 설문 CSV 없음: 명시적 가상 응답 4개로 계산 구조만 시연합니다.
 코사인 수학·수렴·영벡터·설문 범위·기여도 합 검증 완료
 
 Executed code cell 19: 0.1s, 2 outputs
-완료: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_040247_185905
+완료: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_041803_474997
 PNG 44 개 / CSV 92 개
 
-SAVED /home/user/Data-Analytics/analysis/_exec_copy.ipynb seconds 60.0
+SAVED /home/user/Data-Analytics/analysis/_exec_copy.ipynb seconds 61.3

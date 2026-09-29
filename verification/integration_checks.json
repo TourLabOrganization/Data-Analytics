@@ -15,9 +15,9 @@
     "method": "All code cells executed sequentially in one fresh Python process with captured tables and plots; not a socket-backed Jupyter kernel test",
     "python": "3.12.3",
     "code_cells": 19,
-    "elapsed_seconds": 60.0
+    "elapsed_seconds": 61.3
   },
-  "analysis_run": "run_20260929_040247_185905",
+  "analysis_run": "run_20260929_041803_474997",
   "scope": "computational reproduction; not satisfaction or live availability validation",
   "t_block_balance_revision": {
     "date": "2026-09-29",
@@ -248,5 +248,102 @@
       "negative_silhouette_share": 0.0214
     },
     "unchanged": "G/GC, spending and marine regional outputs byte-identical to the previous run"
+  },
+  "category_reclassification_second_pass": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_041803_474997",
+    "previous_run": "run_20260929_040247_185905",
+    "scope": "second pass over the 77 non-conditional visit stops still without a category, using citytour.csv, the place catalogue and a reviewed table",
+    "input_added": "analysis/stop_category_review.csv (region, name, category, basis; 30 rows; categories limited to the five categories, NON_VISIT and UNKNOWN)",
+    "rules": [
+      "already classified stops are not changed; only non-conditional visit stops without a category are reconsidered",
+      "non-visit: stop linked to a stay place, parenthesised (중식)/(자율중식)/(석식), parenthesised note ending in 호텔 or 앞",
+      "keyword additions: heal 에코, herit 발원지/나루, activity 문화제/창작/돛배/유람선, food 농산물",
+      "keywords applied to parenthesised notes (e.g. 대청호(대청댐물문화관) -> heal)",
+      "catalogue consensus: all non-stay places in the region whose name contains the stop name (2+ characters) share one category",
+      "reviewed table lookup by region and name"
+    ],
+    "resolved_by_rule": {
+      "non_visit_by_note_or_stay": 9,
+      "keyword_added": 6,
+      "keyword_in_note": 9,
+      "catalogue_consensus": 15,
+      "manual_review_category": 24,
+      "manual_review_non_visit": 6
+    },
+    "unknown_visit_stops_non_conditional": {
+      "before": 77,
+      "after": 8
+    },
+    "mean_category_coverage_eligible": {
+      "before": 0.946,
+      "after": 0.993
+    },
+    "eligible_courses": {
+      "before": 234,
+      "after": 234,
+      "newly_eligible": [
+        "화성 바다와 하루"
+      ],
+      "dropped": [
+        "화순 화순적벽 버스투어(적벽투어): boarding point became non-visit, one visit left"
+      ]
+    },
+    "exclusions_after": {
+      "CONDITIONAL_STOPS": 25,
+      "ROUTE_UNRESOLVED": 14,
+      "TOO_FEW_VISITS": 7
+    },
+    "share_ge_0_3_courses": {
+      "herit": [
+        99,
+        102
+      ],
+      "heal": [
+        108,
+        116
+      ],
+      "activity": [
+        73,
+        81
+      ],
+      "food": [
+        24,
+        24
+      ],
+      "sea": [
+        21,
+        22
+      ]
+    },
+    "stop_status_counts": {
+      "EXACT_NAME_REGION_CANDIDATE": 551,
+      "PAREN_ALIAS_CANDIDATE": 81,
+      "QUALIFIED_NAME_CANDIDATE": 95,
+      "NEARBY_REGION_CANDIDATE": 22,
+      "UNMATCHED": 562,
+      "NON_VISIT_STOP": 579,
+      "ROUTE_UNRESOLVED_STOP": 25,
+      "CONDITIONAL_STOP_REVIEW": 27,
+      "AMBIGUOUS_NAME": 2
+    },
+    "visit_stop_link_rate": "749/1340",
+    "T_model": {
+      "k": 7,
+      "silhouette_mean": 0.2603,
+      "seed_ari_min": 0.8655,
+      "note": "k=6 also passes the gates (silhouette 0.2552, seed ARI 0.920)"
+    },
+    "TC_model": {
+      "k": 7,
+      "cosine_silhouette_mean": 0.4503,
+      "ari_vs_T": 0.7493,
+      "negative_silhouette_share": 0.0299
+    },
+    "common_cosine_silhouette_T": {
+      "baseline": 0.4193,
+      "cosine": 0.4528
+    },
+    "unchanged": "G/GC, spending and marine regional outputs byte-identical to the previous run; marine course links 163 courses / 378 slots"
   }
 }
