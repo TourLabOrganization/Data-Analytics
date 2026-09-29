@@ -391,7 +391,7 @@
   },
   {
     "file": "reference_calc/eligible_courses.csv",
-    "rows": 223,
+    "rows": 234,
     "columns": [
       "analysis_course_id",
       "analysis_region",
@@ -409,6 +409,6 @@
       "analysis_night_flag"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "ead53419a085f4d9e85da904cea47be1b83ce3874279c5037f747a11ae9294df"
+    "sha256": "3e9c227066f14d61e8a63e7b82d01c8235433b6d343e64925af116aed9e38b90"
   }
 ]

@@ -1,6 +1,6 @@
 {
   "status": "SCORED_CANDIDATES_NOT_BOOKING_CONFIRMATION",
-  "cosine_candidates": 223,
+  "cosine_candidates": 234,
   "cosine_distinct_regions": 5,
   "legacy_theme_picks": [
     {
@@ -76,28 +76,28 @@
       },
       {
         "region": "아산",
-        "name": "休캉스 코스",
+        "name": "역사기행 코스",
+        "score": 81.179956
+      },
+      {
+        "region": "순천",
+        "name": "(기획투어)나이트가든투어",
+        "score": 81.179956
+      },
+      {
+        "region": "대전",
+        "name": "역사문화(동춘당)",
         "score": 80.51904
       },
       {
         "region": "천안",
         "name": "목요일",
         "score": 80.51904
-      },
-      {
-        "region": "순천",
-        "name": "(테마투어)산사투어",
-        "score": 80.51904
-      },
-      {
-        "region": "평창",
-        "name": "북부권 코스",
-        "score": 80.51904
       }
     ]
   },
   "score_fusion": false,
   "input": "examples/full_session.json",
-  "analysis_run": "analysis/outputs_cosine/run_20260929_034626_310365",
+  "analysis_run": "analysis/outputs_cosine/run_20260929_040247_185905",
   "data_status": "SYNTHETIC_DEMONSTRATION"
 }

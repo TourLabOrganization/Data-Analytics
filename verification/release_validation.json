@@ -67,7 +67,7 @@
       "C4": 0.5517248216535149,
       "C5": 0.44827517834648506
     },
-    "course_count": 223,
+    "course_count": 234,
     "distinct_region_count": 5,
     "course_bonus_terms_demo": [
       "interest",
@@ -530,6 +530,112 @@
         "E": 0.749,
         "F": 0.792,
         "G": 0.505
+      }
+    },
+    "simulation_matches_recommend_top5_on_400_random_paths": true
+  },
+  "category_reclassification_revision": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_040247_185905",
+    "previous_run": "run_20260929_034626_310365",
+    "scope": "reclassification of visit stops with unknown category, using only the supplied citytour.csv",
+    "rules": [
+      "non-visit points: city halls, 오거리/로터리/주차장, \"○○앞\", text ending in 코스, \"<6\"/\"8월\" leftovers, station times, 탑승, 석식",
+      "keyword additions for herit, heal, activity, food and sea (see run_analysis.py KW); 문화관 excludes 물문화관, 당 excludes 식당"
+    ],
+    "unknown_visit_stops": {
+      "before": 285,
+      "after": 104,
+      "conditional_included": {
+        "before": 28,
+        "after": 27
+      }
+    },
+    "moved_to_non_visit": 25,
+    "already_classified_with_extra_category": 13,
+    "mean_category_coverage_eligible": {
+      "before": 0.84,
+      "after": 0.946
+    },
+    "eligible_courses": {
+      "before": 223,
+      "after": 234,
+      "newly_eligible": 11,
+      "dropped": 0
+    },
+    "exclusions_after": {
+      "CONDITIONAL_STOPS": 25,
+      "ROUTE_UNRESOLVED": 14,
+      "TOO_FEW_VISITS": 6,
+      "LOW_CATEGORY_COVERAGE": 1
+    },
+    "share_ge_0_3_courses": {
+      "herit": [
+        84,
+        99
+      ],
+      "heal": [
+        91,
+        108
+      ],
+      "activity": [
+        50,
+        73
+      ],
+      "food": [
+        21,
+        24
+      ],
+      "sea": [
+        20,
+        21
+      ]
+    },
+    "T_model": {
+      "k": 7,
+      "silhouette_mean": 0.2468,
+      "seed_ari_min": 0.807
+    },
+    "TC_model": {
+      "k": 7,
+      "cosine_silhouette_mean": 0.4497,
+      "ari_vs_T": 0.6326,
+      "negative_silhouette_share": 0.0214
+    },
+    "unchanged": "G/GC, spending and marine regional outputs byte-identical to the previous run",
+    "alignment_after": {
+      "interest_top1": {
+        "C": 0.911,
+        "D": 0.735,
+        "E": 0.678,
+        "F": 0.805,
+        "G": 0.545
+      },
+      "interest_top5share": {
+        "C": 0.752,
+        "D": 0.527,
+        "E": 0.501,
+        "F": 0.434,
+        "G": 0.513
+      },
+      "pace_mean_visits": {
+        "A": 5.92,
+        "B": 4.85,
+        "C": 3.99
+      },
+      "night_share_top5": {
+        "H": 1.0,
+        "S6C": 0.32,
+        "other": 0.096
+      }
+    },
+    "alignment_before": {
+      "interest_top1": {
+        "C": 0.92,
+        "D": 0.789,
+        "E": 0.702,
+        "F": 0.633,
+        "G": 0.556
       }
     },
     "simulation_matches_recommend_top5_on_400_random_paths": true

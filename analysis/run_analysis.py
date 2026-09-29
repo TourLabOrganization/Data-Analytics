@@ -388,11 +388,11 @@ def parse_route(text):
 def strip_number(text):
     return re.sub(r"^\s*(?:[①-⑳]|\d{1,2}[.)])\s*","",text).strip()
 
-KW={"herit":r"궁$|궁궐|왕궁|성곽|읍성|산성|사찰|[가-힣]사$(?<!공사)(?<!청사)(?<!회사)(?<!식사)|향교|서원|박물관|유적|고분|릉|역사|문화재|한옥|민속|전통|사지|기념관|고택|석굴|석빙고|석불|성지|성당|문학관|생가|당간지주|감영|근현대|국악|순교|위령",
-    "heal":r"산$|숲|수목원|공원|호수|저수지|계곡|습지|정원|폭포|자연|생태|휴양림|둘레길|농원|수변|동산|산림|댐|물문화관|두물머리|온천",
-    "activity":r"체험|테마파크|랜드|케이블카|(?<!코)레일|짚|루지|월드|과학관|전망대|스카이|목장|놀이|곤돌라|출렁다리|아울렛|서커스|요트|웨이브파크|동굴|아트밸리|미술관|세트장|촬영지|도예|카누|워크$|템플스테이|공연|문화단지|기차마을",
-    "food":r"시장|먹거리|맛|음식|카페|막걸리|와이너리|양조|빵|맥주|(?<![예미기])술|냉면|쌀밥|쌀면|로컬푸드|와인|젓갈",
-    "sea":r"해수욕장|해변|[가-힣]항$(?<!공항)|바다|섬(?!진강)|포구|해안|등대|해상|해양|방조제|대교|곶|해비치|해오름|[가-힣]{1,3}도(?:\s*입구)?$|군도|갯벌|갯골|어촌|요트"}
+KW={"herit":r"궁$|궁궐|왕궁|성곽|읍성|산성|사찰|[가-힣]사$(?<!공사)(?<!청사)(?<!회사)(?<!식사)|향교|서원|박물관|유적|고분|릉|역사|문화재|한옥|민속|전통|사지|기념관|고택|석굴|석빙고|석불|성지|성당|문학관|생가|당간지주|감영|근현대|국악|순교|위령|현충원|현충사|[가-힣]총$|총 터|묘$|묘역|가옥|형무소|옛[가-힣]|원도심|시간여행|관사마을|하숙마을|기록관|태실|선소|주둔지|발상지|원불교|수녀회|DMZ|JSA|[가-힣]{2}당$(?<!식당)",
+    "heal":r"산$|숲|수목원|공원|호수|저수지|계곡|습지|정원|폭포|자연|생태|휴양림|둘레길|농원|수변|동산|산림|댐|물문화관|두물머리|온천|식물원|식물권|온실|걷기|산책|트래킹|트레킹|[가-힣]길$|구곡|적벽|담악|육백마지기|캠핑|화석산지|[가-힣]봉$",
+    "activity":r"체험|테마파크|랜드|케이블카|(?<!코)레일|짚|루지|월드|과학관|전망대|스카이|목장|놀이|곤돌라|출렁다리|아울렛|서커스|요트|웨이브파크|동굴|아트밸리|미술관|세트장|촬영지|도예|카누|워크$|템플스테이|공연|문화단지|기차마을|홍보관|전시관|체험관|견학|(?<!물)문화관|아트벙커|갤러리|공방|책방|도서관|상상|플렉스|엔터테인먼트|리조트|파라다이스|백화점|IKEA|아쿠아|관광지$|관광단지|광장$|분수|축제|투어$|컨벤션|명품관|체육관|경기장|카리용|G타워|산업|산단|발전소|발전단지|회수시설|매립지|만들기|라베니체|우체국",
+    "food":r"시장|먹거리|맛|음식|카페|막걸리|와이너리|양조|빵|맥주|(?<![예미기])술|냉면|쌀밥|쌀면|로컬푸드|와인|젓갈|장터|마켓|먹자골목|갓김치|새우젓|과메기|닭갈비|과자|김치|주류",
+    "sea":r"해수욕장|해변|[가-힣]항$(?<!공항)|바다|섬(?!진강)|포구|해안|등대|해상|해양|방조제|대교|곶|해비치|해오름|[가-힣]{1,3}도(?:\s*입구)?$|군도|갯벌|갯골|어촌|요트|선착장|해녀|[가-힣]리포$|울돌목"}
 # Explicit alternatives only; "/" lists stops that are all visited and is split below
 CONDITIONAL_RE=r"또는|선택|택\s*1|계절별|상이|\(or |\sor\s|\([^)]*(?:봄|여름|가을|겨울|하계|동계|계절)[^)]*\)"
 full_index,base_index,qualified_index,name_index=defaultdict(set),defaultdict(set),defaultdict(set),defaultdict(set)
@@ -462,9 +462,10 @@ if cities_raw is not None:
             name=re.sub(r"^\[\d{1,2}:\d{2}\]\s*","",strip_number(raw));base=no_parentheses(name).strip(" )")
             conditional=bool(re.search(CONDITIONAL_RE,name))
             role="VISIT_CANDIDATE"
-            if re.search(r"출발|도착|승차|하차",name):role="BOARDING_OR_RETURN"
-            elif re.search(r"자율중식|^중식|점심|휴식$|식사$",base):role="MEAL_BREAK"
-            elif re.search(r"정류장|정류소|터미널|안내소$|호텔$|사거리$|APT|휴게소$|역$|공항",base) or re.fullmatch(r"관광지\s*\d+",base):role="TRANSPORT_OR_PLACEHOLDER"
+            if re.search(r"출발|도착|승차|하차|탑승",name):role="BOARDING_OR_RETURN"
+            elif re.search(r"자율중식|^중식|점심|석식|휴식$|식사$",base):role="MEAL_BREAK"
+            # Transport points, city halls, junctions and leftovers of the route text ("관광코스", "<6", "8월", "안동역 19:20") are not visits
+            elif re.search(r"정류장|정류소|터미널|안내소$|호텔$|사거리$|오거리$|로터리$|주차장$|시청$|[가-힣]앞$|APT|휴게소$|역$|역\s*\d{1,2}:\d{2}$|공항|코스$|^<",base) or re.fullmatch(r"관광지\s*\d+|\d{1,2}월",base):role="TRANSPORT_OR_PLACEHOLDER"
             elif re.search(r"차창|경유|통과",name):role="PASS_BY"
             elif seq in [1,len(parts)] and (norm_name(base)==norm_name(no_parentheses(r.boarding)) or norm_name(base)==norm_name(r.region) or re.search(r"역$|터미널$|주차장$",base)):role="ENDPOINT_TRANSPORT"
             if not parsed:role="UNRESOLVED_ROUTE"

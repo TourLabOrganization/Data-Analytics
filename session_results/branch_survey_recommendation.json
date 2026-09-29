@@ -200,16 +200,40 @@
       "route_text": "일요일코스(산이정원 → 대흥사)"
     },
     {
-      "course_id": "ct_1b0e0fd1157aaa",
+      "course_id": "ct_f558345dd00dbf",
       "region": "아산",
-      "name": "休캉스 코스",
+      "name": "역사기행 코스",
+      "category_fit_score": 94.88792947293629,
+      "bonus_points": {
+        "interest": 15.625,
+        "pace": 6.25
+      },
+      "adjusted_score": 81.17995592058519,
+      "route_text": "온양온천역 → 온양민속박물관 → 신정호정원 → 현충사은행나무길 → 온양온천역"
+    },
+    {
+      "course_id": "ct_f8bd00d4bc40b3",
+      "region": "순천",
+      "name": "(기획투어)나이트가든투어",
+      "category_fit_score": 94.88792947293629,
+      "bonus_points": {
+        "interest": 15.625,
+        "pace": 6.25
+      },
+      "adjusted_score": 81.17995592058519,
+      "route_text": "순천역 → 철도관사마을 → 순천만국가정원(시크릿어드벤처, 정원드림호, 스페이스브릿지) → 순천역"
+    },
+    {
+      "course_id": "ct_0d96bb8740671d",
+      "region": "대전",
+      "name": "역사문화(동춘당)",
       "category_fit_score": 85.49713141970781,
       "bonus_points": {
         "interest": 20.83333333333333,
         "pace": 6.25
       },
       "adjusted_score": 80.51904047065071,
-      "route_text": "온양온천역 → 신정호정원 → 외암민속마을 → 맹씨행단 → 온양온천역"
+      "route_text": "대전역 → 대전복합터미널(경유) → 동춘당 → 우암사적공원(남간정사) → 옛충남도청(근현대사전시관) → (으능정이거리 경유) 대전역"
     },
     {
       "course_id": "ct_6bfb1cb10f19bb",
@@ -222,30 +246,6 @@
       },
       "adjusted_score": 80.51904047065071,
       "route_text": "태학산 치유의 숲 → 점심(아우내장터) → 유관순열사사적지 → 독립기념관"
-    },
-    {
-      "course_id": "ct_a33d720535a1e1",
-      "region": "순천",
-      "name": "(테마투어)산사투어",
-      "category_fit_score": 85.49713141970781,
-      "bonus_points": {
-        "interest": 20.83333333333333,
-        "pace": 6.25
-      },
-      "adjusted_score": 80.51904047065071,
-      "route_text": "순천역 → 송광사 → 선암사 → 상사호 → 순천역"
-    },
-    {
-      "course_id": "ct_e588b4efe19ef3",
-      "region": "평창",
-      "name": "북부권 코스",
-      "category_fit_score": 85.49713141970781,
-      "bonus_points": {
-        "interest": 20.83333333333333,
-        "pace": 6.25
-      },
-      "adjusted_score": 80.51904047065071,
-      "route_text": "서울역(금요일) → 청량리역(토요일) → 진부역 → 월정사 → 발왕산케이블카 → 2018평창동계올림픽기념관 → 진부역 → 서울역/청량리역"
     }
   ],
   "q_source": "type_profile_prior",
