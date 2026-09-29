@@ -1,6 +1,6 @@
 {
-  "analysis_run": "run_20260929_000435_315309",
+  "analysis_run": "run_20260929_015104_463809",
   "course_rows": 179,
-  "source_file": "analysis/outputs_cosine/run_20260929_000435_315309/tables/T_citytour_assignments_all.csv",
+  "source_file": "analysis/outputs_cosine/run_20260929_015104_463809/tables/T_citytour_assignments_all.csv",
   "status": "retrained_T_block_variance_balanced; only analysis_T_cluster changed, course shares and coverage unchanged"
 }

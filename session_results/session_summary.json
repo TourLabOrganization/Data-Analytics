@@ -45,6 +45,6 @@
   ],
   "score_fusion": false,
   "input": "examples/full_session.json",
-  "analysis_run": "analysis/outputs_cosine/run_20260929_000435_315309",
+  "analysis_run": "analysis/outputs_cosine/run_20260929_015104_463809",
   "data_status": "SYNTHETIC_DEMONSTRATION"
 }

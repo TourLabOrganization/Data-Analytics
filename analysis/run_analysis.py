@@ -71,7 +71,14 @@ plt.rcParams.update({"font.family":font, "axes.unicode_minus":False, "font.size"
                      "figure.facecolor":"white", "axes.titleweight":"bold"})
 PALETTE = ["#D8A900", "#3475B5", "#C9495B", "#7B60A3", "#B97991", "#758B7C", "#899BB0", "#9A6C4C", "#D9A6BA", "#50555A"]
 CATEGORIES = ["herit", "heal", "activity", "food", "sea"]
-CAT_LABELS = {"herit":"Heritage", "heal":"Nature", "activity":"Activity", "food":"Food", "sea":"Coast", "stay":"Lodging"}
+CAT_LABELS = {"herit":"역사", "heal":"자연", "activity":"체험", "food":"음식", "sea":"바다", "stay":"숙박"}
+COURSE_STATUS_LABELS = {"ELIGIBLE":"적격", "CONDITIONAL_STOPS":"조건부 경유지", "LOW_CATEGORY_COVERAGE":"범주 커버리지 부족",
+                        "ROUTE_UNRESOLVED":"경로 해석 불가", "TOO_FEW_VISITS":"방문지 부족"}
+STOP_STATUS_LABELS = {"UNMATCHED":"연결 후보 없음", "EXACT_NAME_REGION_CANDIDATE":"지역·이름 일치 후보", "NON_VISIT_OR_UNRESOLVED":"비방문·미확인 경유지",
+                      "PAREN_ALIAS_CANDIDATE":"괄호 별칭 일치 후보", "CONDITIONAL_STOP_REVIEW":"조건부 경유지(검토)", "AMBIGUOUS_NAME":"이름 중복(모호)"}
+SPEND_FEATURE_LABELS = {"log_n_catalog_places":"관광지 수(로그)", "log_n_lodging":"숙박시설 수(로그)", "log_n_citytours":"시티투어 코스 수(로그)",
+                        "log_median_base_minutes":"기준 체류시간 중앙값(로그)", "share_herit":"역사 비중", "share_heal":"자연 비중",
+                        "share_activity":"체험 비중", "share_food":"음식 비중", "share_sea":"바다 비중", "unesco_mark_rate":"유네스코 표식 비율"}
 INPUT_META, PLOT_FILES, RUN_SUMMARY = {}, [], {}
 
 def show_table(df, n=12):
@@ -273,8 +280,8 @@ def plot_diagnostics(result, start):
         q=grouped[grouped.cluster.eq(label)];ax.scatter(q.PC1,q.PC2,s=18+q["count"]*2,alpha=.72,color=PALETTE[i%len(PALETTE)],label=label,edgecolor="white",linewidth=.35)
     vr=result["pca"].explained_variance_ratio_
     ax.set(xlabel=f"PC1 ({vr[0]:.1%})",ylabel=f"PC2 ({vr[1] if len(vr)>1 else 0:.1%})",
-           title=f"{prefix}: PCA projection, k={s['k']} (model uses {s['pca_components']} PCs)")
-    ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False,title="Cluster");ax.text(0,-.15,"Marker area = 18 + 2 × coincident records; no jitter",transform=ax.transAxes,fontsize=9,color="#555")
+           title=f"{prefix}: PCA 투영, k={s['k']} (모델은 주성분 {s['pca_components']}개 사용)")
+    ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False,title="군집");ax.text(0,-.15,"점 크기 = 18 + 2 × 같은 좌표에 겹친 기록 수 (위치 흩뜨림 없음)",transform=ax.transAxes,fontsize=9,color="#555")
     finish(fig,f"{start+2:02d}_{prefix}_pca_clusters")
     axes=result["axes"].iloc[:,:min(5,len(result["axes"].columns))]
     fig,ax=plt.subplots(figsize=(8,5));im=ax.imshow(axes,cmap="RdBu_r",vmin=-1,vmax=1,aspect="auto")
@@ -298,15 +305,15 @@ if places is not None:
     shares=pd.crosstab(eligible_places.G_cluster,eligible_places.category,normalize="index").reindex(columns=CATEGORIES,fill_value=0)
     save_csv(profile.join(shares).reset_index(),"G_cluster_profiles");show_table(profile.reset_index())
     fig,axs=plt.subplots(1,2,figsize=(11,4));colors=[PALETTE[i%len(PALETTE)] for i in range(len(profile))]
-    axs[0].bar(profile.index,profile.n,color=colors);axs[0].set(title="Places in each cluster",ylabel="Records")
+    axs[0].bar(profile.index,profile.n,color=colors);axs[0].set(title="군집별 장소 수",ylabel="장소 수")
     axs[1].boxplot([groups.get_group(g).base_minutes.to_numpy() for g in profile.index],showfliers=True)
     axs[1].set_xticks(np.arange(1,len(profile)+1),profile.index)
-    axs[1].set(title="Source base stay time by cluster",ylabel="Minutes (source values)")
+    axs[1].set(title="군집별 기준 체류시간",ylabel="체류시간(분, 원자료)")
     for ax in axs:ax.tick_params(axis="x",rotation=45)
     finish(fig,"06_G_sizes_and_stay")
     fig,ax=plt.subplots(figsize=(9,4));bottom=np.zeros(len(shares))
     for i,c in enumerate(CATEGORIES):ax.bar(shares.index,shares[c],bottom=bottom,label=CAT_LABELS[c],color=PALETTE[i]);bottom+=shares[c].to_numpy()
-    ax.set(title="G cluster category composition",ylabel="Share",ylim=(0,1));ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False);finish(fig,"07_G_category_profiles")
+    ax.set(title="G 군집별 범주 구성",ylabel="비중",ylim=(0,1));ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False);finish(fig,"07_G_category_profiles")
     valid=eligible_places[eligible_places.coordinate_valid]
     fig,ax=plt.subplots(figsize=(7,8))
     for i,g in enumerate(sorted(eligible_places.G_cluster.unique())):
@@ -480,17 +487,17 @@ if city is not None:
             fig,ax=plt.subplots(figsize=(9,4));bottom=np.zeros(len(profile))
             for i,c in enumerate(CATEGORIES):
                 values=profile[f"share_{c}"];ax.bar(profile.index,values,bottom=bottom,label=CAT_LABELS[c],color=PALETTE[i]);bottom+=values.to_numpy()
-            ax.bar(profile.index,1-bottom,bottom=bottom,label="Unknown",color="#DDDDDD")
-            ax.set(title="T cluster mean category composition",ylabel="Share",ylim=(0,1));ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False)
+            ax.bar(profile.index,1-bottom,bottom=bottom,label="범주 미확인",color="#DDDDDD")
+            ax.set(title="T 군집별 평균 범주 구성",ylabel="비중",ylim=(0,1));ax.legend(bbox_to_anchor=(1.02,1),loc="upper left",frameon=False)
             finish(fig,"13_T_category_profiles")
         else:print("코스의 서로 다른 특성 조합이 3개 미만이어서 T PCA·군집은 생략합니다.")
     else:print("유효 코스가 4개 미만이어서 T PCA·군집은 생략합니다. 품질표는 저장합니다.")
     save_csv(pd.concat([cities_raw,course_table.add_prefix("analysis_")],axis=1),"T_citytour_assignments_all")
     fig,axs=plt.subplots(1,2,figsize=(12,5))
-    count=course_table.cluster_status.value_counts();axs[0].barh(count.index,count.values,color="#9F718B");axs[0].invert_yaxis();axs[0].set(title="Course modeling eligibility",xlabel="Courses")
-    count=stops.match_status.value_counts();axs[1].barh(count.index,count.values,color="#77658D");axs[1].invert_yaxis();axs[1].set(title="Stop identity linking status",xlabel="Parsed records")
+    count=course_table.cluster_status.value_counts();axs[0].barh([COURSE_STATUS_LABELS.get(k,k) for k in count.index],count.values,color="#9F718B");axs[0].invert_yaxis();axs[0].set(title="코스 분석 적격성",xlabel="코스 수")
+    count=stops.match_status.value_counts();axs[1].barh([STOP_STATUS_LABELS.get(k,k) for k in count.index],count.values,color="#77658D");axs[1].invert_yaxis();axs[1].set(title="경유지-관광지 연결 상태",xlabel="경유지 기록 수")
     for ax in axs:
-        ax.tick_params(axis="y",labelsize=8)
+        ax.tick_params(axis="y",labelsize=9)
         for bar in ax.patches:ax.text(bar.get_width()+.5,bar.get_y()+bar.get_height()/2,str(int(bar.get_width())),va="center",fontsize=9)
     finish(fig,"14_citytour_quality_and_linking")
     if places is not None and stops.G_cluster.ne("").any():
@@ -673,8 +680,8 @@ if SPEND and places is not None:
         axs[1].scatter(sp_y,sp_oof['M2_composition'],color='#AF7891',s=28,alpha=.75);lo=min(sp_y.min(),sp_oof['M2_composition'].min());hi=max(sp_y.max(),sp_oof['M2_composition'].max());axs[1].plot([lo,hi],[lo,hi],'--',color='#555')
         axs[1].set(xlabel='Observed derived log share',ylabel='Out-of-fold predicted log share',title=f'M2 pooled R2 = {sp_metrics.set_index("model").loc["M2_composition","r2_log"]:.3f}')
         finish(fig,'25_spend_regression_oof')
-        sp_c=sp_finalcoef.sort_values('standardized_beta');fig,ax=plt.subplots(figsize=(10,5));ax.barh(sp_c.feature,sp_c.standardized_beta,color=np.where(sp_c.standardized_beta>=0,'#AF7891','#78618E'));ax.axvline(0,color='#555',lw=1)
-        ax.set(title='Full-fit standardized Ridge coefficients (associations)',xlabel='Change in log share per training SD');finish(fig,'26_spend_regression_coefficients')
+        sp_c=sp_finalcoef.sort_values('standardized_beta');fig,ax=plt.subplots(figsize=(10,5));ax.barh([SPEND_FEATURE_LABELS.get(f,f) for f in sp_c.feature],sp_c.standardized_beta,color=np.where(sp_c.standardized_beta>=0,'#AF7891','#78618E'));ax.axvline(0,color='#555',lw=1)
+        ax.set(title='지역 지출 회귀의 표준화 계수 (연관 관계)',xlabel='특징 1 표준편차 증가당 로그 지출 비중 변화');finish(fig,'26_spend_regression_coefficients')
         fig,ax=plt.subplots(figsize=(9,4));sp_cp=sp_coefs.pivot(index='feature',columns='fold',values='standardized_beta');lim=max(.01,float(np.abs(sp_cp.to_numpy()).max()));im=ax.imshow(sp_cp,aspect='auto',cmap='RdBu_r',vmin=-lim,vmax=lim)
         ax.set(xticks=np.arange(len(sp_cp.columns)),xticklabels=sp_cp.columns,yticks=np.arange(len(sp_cp)),yticklabels=sp_cp.index,title='Coefficient sensitivity across held-out provinces',xlabel='Outer fold');fig.colorbar(im,ax=ax,label='Standardized coefficient');finish(fig,'27_spend_coefficient_stability')
     else:print('지역 설명 회귀는 연결 지역 20개 및 광역 집단 5개 이상일 때 실행합니다. 연결표와 기술통계는 저장합니다.')
@@ -702,7 +709,7 @@ MARINE_HEADERS = {
 }
 MARINE_GROUPS = ['전국','연안 도시','연안 어촌','연안 전체','비연안']
 MARINE_PRIMARY = ['연안 도시','연안 어촌','비연안']
-MARINE_LABELS = {'전국':'National','연안 도시':'Coastal urban','연안 어촌':'Coastal rural','연안 전체':'All coastal','비연안':'Non-coastal'}
+MARINE_LABELS = {'전국':'전국','연안 도시':'연안 도시','연안 어촌':'연안 어촌','연안 전체':'연안 전체','비연안':'비연안'}
 MARINE_COLORS = {'전국':'#555555','연안 도시':'#A25F86','연안 어촌':'#78618E','연안 전체':'#3475B5','비연안':'#909090'}
 marine_info = {}; marine_flags = []; marine_places = None; marine_courses = None; marine_stop_links = None
 
@@ -846,7 +853,7 @@ if MARINE:
     fig,ax=plt.subplots(figsize=(11,4.4))
     for g in MARINE_PRIMARY+['전국','연안 전체']:
         ax.plot(expected,mvalue[g],marker='o',label=MARINE_LABELS[g],color=MARINE_COLORS[g],lw=2 if g in MARINE_PRIMARY else 1,ls='-' if g in MARINE_PRIMARY else '--')
-    ax.set(title='Marine tourism: mean visitors per administrative area',ylabel='Source mean visitor estimate',xlabel='Month');ax.tick_params(axis='x',rotation=45);ax.legend(bbox_to_anchor=(1.01,1));finish(fig,'28_marine_monthly_means')
+    ax.set(title='해양 관광: 행정구역당 평균 방문자',ylabel='평균 방문자 추정치(원자료)',xlabel='기준 월');ax.tick_params(axis='x',rotation=45);ax.legend(bbox_to_anchor=(1.01,1));finish(fig,'28_marine_monthly_means')
     fig,ax=plt.subplots(figsize=(11,4))
     for g in MARINE_PRIMARY:
         a=mi[mi.group.eq(g)];ax.plot(a.month,a.period_mean_index,'o-',color=MARINE_COLORS[g],label=MARINE_LABELS[g])
@@ -894,12 +901,12 @@ if MARINE:
     cmap=plt.get_cmap('Purples').copy();cmap.set_bad('#E8E8E8')
     im=ax.imshow(np.ma.masked_invalid(arr),aspect='auto',cmap=cmap,vmin=0)
     ax.set(yticks=np.arange(len(pivot)),yticklabels=pivot.index,xticks=range(3),
-           xticklabels=[MARINE_LABELS[g] for g in MARINE_PRIMARY],title='Province labels by coastal class: median area visitors')
+           xticklabels=[MARINE_LABELS[g] for g in MARINE_PRIMARY],title='시도·연안 구분별 읍면동 방문자 중앙값')
     for i in range(len(pivot)):
         for j in range(3):
             v=arr[i,j];ax.text(j,i,f'{v:.2f}' if np.isfinite(v) else 'N/A',ha='center',va='center',fontsize=9,
                              color='white' if np.isfinite(v) and v>np.nanmax(arr)*.55 else 'black')
-    fig.colorbar(im,ax=ax,label='Median source area visitor estimate / million')
+    fig.colorbar(im,ax=ax,label='방문자 추정치 중앙값(백만 명)')
     finish(fig,'36_marine_province_class_heatmap')
     fig,ax=plt.subplots(figsize=(9,5));a=mg.sort_values('source_rank',ascending=False);y=np.arange(len(a))
     ax.barh(y-.18,a.source_ratio_pct,height=.34,label='CSV (current denominator)',color='#8F809B')
@@ -1413,10 +1420,10 @@ def fit_cosine_extension(base, prefix, k_max=10, min_share=.02):
     finish(fig,f'C_{prefix}_03_silhouette')
     fig,ax=plt.subplots(figsize=(8,5));im=ax.imshow(cross,cmap='Purples',aspect='auto')
     ax.set(xticks=np.arange(len(cross.columns)),xticklabels=cross.columns,yticks=np.arange(len(cross)),yticklabels=cross.index,
-           xlabel='Cosine cluster',ylabel='Baseline cluster',title=f'{prefix}: assignment transition (counts)')
+           xlabel='코사인 군집',ylabel='기존 군집',title=f'{prefix}: 기존 군집에서 코사인 군집으로의 배정 이동 (건수)')
     for i in range(len(cross)):
         for j in range(len(cross.columns)):ax.text(j,i,str(cross.iloc[i,j]),ha='center',va='center',fontsize=8,color='white' if cross.iloc[i,j]>cross.to_numpy().max()*.55 else 'black')
-    fig.colorbar(im,ax=ax,label='Records');finish(fig,f'C_{prefix}_04_transition')
+    fig.colorbar(im,ax=ax,label='건수');finish(fig,f'C_{prefix}_04_transition')
     fig,ax=plt.subplots(figsize=(9,5));im=ax.imshow(centers,cmap='RdBu_r',vmin=-1,vmax=1,aspect='auto')
     ax.set(xticks=np.arange(len(F.columns)),xticklabels=F.columns,yticks=np.arange(k),yticklabels=[label_map[j] for j in order],title=f'{prefix}: unit centroid coordinates')
     ax.tick_params(axis='x',rotation=45);fig.colorbar(im,ax=ax,label='Weighted direction coordinate');finish(fig,f'C_{prefix}_05_centroids')
@@ -1453,9 +1460,9 @@ cosine_comparison=pd.DataFrame(COSINE_COMPARISONS)
 if len(cosine_comparison):
     save_csv(cosine_comparison,'cosine_baseline_comparison');show_table(cosine_comparison,20)
     fig,axs=plt.subplots(1,2,figsize=(10,4))
-    for ax,metric,title in [(axs[0],'cosine_silhouette','Common cosine distances'),(axs[1],'euclidean_silhouette','Common Euclidean distances')]:
+    for ax,metric,title in [(axs[0],'cosine_silhouette','공통 코사인 거리'),(axs[1],'euclidean_silhouette','공통 유클리드 거리')]:
         pivot=cosine_comparison.pivot(index='dataset',columns='model',values=metric)
-        pivot.plot.bar(ax=ax,color=['#78618E','#AD4772']);ax.set(title=title,ylabel='Silhouette',xlabel='Dataset');ax.tick_params(axis='x',rotation=0);ax.legend(['Baseline selected','Cosine selected'],fontsize=8,frameon=False)
+        pivot.plot.bar(ax=ax,color=['#78618E','#AD4772']);ax.set(title=title,ylabel='실루엣',xlabel='데이터셋');ax.tick_params(axis='x',rotation=0);ax.legend(['기존 선택 모델','코사인 선택 모델'],fontsize=8,frameon=False)
     finish(fig,'C_all_metrics_comparison')
 RUN_SUMMARY['cosine']={k:v['summary'] for k,v in COSINE_RESULTS.items()}
 
@@ -1545,7 +1552,7 @@ if city is not None:
         for j,c in enumerate(CATEGORIES):
             values=first[f'contribution_{c}_points'];ax.barh(np.arange(len(first)),values,left=left,label=CAT_LABELS[c],color=PALETTE[j]);left+=values.to_numpy()
         ax.set(yticks=np.arange(len(first)),yticklabels=[f'{r.region} {r["name"][:30]}' for _,r in first.iterrows()],
-               xlabel='Coverage-adjusted component points',xlim=(0,105),title=f'{first.respondent_id.iloc[0]}: top 5 course score contributions')
+               xlabel='커버리지 반영 범주별 점수',xlim=(0,105),title=f'{first.respondent_id.iloc[0]}: 상위 5개 코스의 점수 구성')
         ax.legend(frameon=False,ncol=5,loc='lower right',fontsize=8);finish(fig,'C_survey_course_contributions')
         assert rankings.coverage_adjusted_score.between(0,100+1e-8).all()
     RUN_SUMMARY['cosine_survey']={'respondents':len(survey),'status_counts':{str(k):int(v) for k,v in survey.data_status.value_counts().items()},

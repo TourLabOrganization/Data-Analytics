@@ -15,9 +15,9 @@
     "method": "All code cells executed sequentially in one fresh Python process with captured tables and plots; not a socket-backed Jupyter kernel test",
     "python": "3.12.3",
     "code_cells": 19,
-    "elapsed_seconds": 52.72
+    "elapsed_seconds": 67.7
   },
-  "analysis_run": "run_20260929_000435_315309",
+  "analysis_run": "run_20260929_015104_463809",
   "scope": "computational reproduction; not satisfaction or live availability validation",
   "t_block_balance_revision": {
     "date": "2026-09-29",
@@ -55,5 +55,15 @@
       "seed_ari_min": 0.8777,
       "ari_vs_baseline": 0.5846
     }
+  },
+  "plot_relabel_revision": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_015104_463809",
+    "previous_run": "run_20260929_000435_315309",
+    "change": "README plot labels use descriptive Korean names instead of raw column/status codes; shared category and marine display names switched to Korean",
+    "checks": [
+      "All result CSVs, JSON summaries except created_at, and models byte-identical to previous_run",
+      "17 of 41 plots changed (label text only); 24 byte-identical"
+    ]
   }
 }
