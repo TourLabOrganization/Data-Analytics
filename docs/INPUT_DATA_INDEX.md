@@ -29,13 +29,13 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [hallyu_preprocessed_csv/hallyu_2026_scoring_inputs.csv](../hallyu_preprocessed_csv/hallyu_2026_scoring_inputs.csv) | 4 | 19 | `761be4597263dd135d3e2ff997bfb2f589c20b52ef2c6b1bc64e3bf6ad962891` |
 | [hallyu_preprocessed_csv/hallyu_2026_source_indicators.csv](../hallyu_preprocessed_csv/hallyu_2026_source_indicators.csv) | 12 | 23 | `f99fea85000beb0825a44cb3253c43cc462cba2e0699efbca4fd42dd2bb5da3f` |
 | [hallyu_preprocessed_csv/hallyu_2026_source_metadata.csv](../hallyu_preprocessed_csv/hallyu_2026_source_metadata.csv) | 12 | 3 | `4308222a0e43122f67d0d7db3e720ee42c2b4b97eb2f6abd8e8dee79d91ac52f` |
-| [reference_calc/eligible_courses.csv](../reference_calc/eligible_courses.csv) | 179 | 12 | `efeb6660ced79271e1de8bff97d664ab151e98e86a71cda49870ec11a71c1dd2` |
+| [reference_calc/eligible_courses.csv](../reference_calc/eligible_courses.csv) | 179 | 14 | `e37f59fdd458ce56995d5790f24b82470757763a9320176c084851f8b1f13087` |
 
 ## 입력 구분
 
 - 전국 장소·시티투어, 관광데이터랩 연령·성연령·지역 지출·해양 CSV를 포함합니다. 원본 다운로드 ZIP이 전처리 스크립트에서 필요하면 해당 모듈의 data/source 경로에 보존했습니다.
 - 한류 8개 CSV는 원문 발표 집계치와 설계값의 구분을 포함하며 개인 응답 원자료가 아닙니다.
-- `eligible_courses.csv`는 280개 코스 중 분류 조건을 통과한 179개 처리 결과입니다.
+- `eligible_courses.csv`는 280개 코스 중 분류 조건을 통과한 179개 처리 결과입니다. 6.3에서 코스 가산에 쓰는 방문 후보 수와 야경 표식 열을 추가했습니다.
 - `analysis/survey_responses_template.csv`는 헤더만 있는 선택적 직접 코사인 평가 입력 양식입니다. 최신 분기 설문은 `survey/implementation/example_answers.json`과 `reference_calc/demo_answers.json`을 사용합니다.
 - 실제 이용자 응답은 포함하지 않았습니다. 제공 예제는 가상 응답입니다.
 - 성별과 연령 비율은 각각의 주변분포이며 성×연령 결합 분포가 아닙니다.
