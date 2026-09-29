@@ -71,7 +71,7 @@ A=rd('T_cosine_assignments').set_index('source_index'); pr=rd('T_cosine_profiles
 m=Q.loc[A.index].assign(c=A.cosine_cluster).groupby('c')[[f'share_{c}' for c in CATS]+['visit_candidate_count','category_coverage','night_flag']].mean()
 check('T profile means',np.allclose(m.loc[pr.index].to_numpy(float),pr[m.columns].to_numpy(float),atol=1e-9))
 # with_cosine_all tables
-for P,f,n in [('G','G_places_with_cosine_all',3118),('T','T_citytours_with_cosine_all',280)]:
+for P,f,n in [('G','G_places_with_cosine_all',3109),('T','T_citytours_with_cosine_all',280)]:
     W=rd(f); A=rd(f'{P}_cosine_assignments').set_index('source_index')
     check(f'{P} with_cosine_all rows',len(W)==n,str(len(W)))
     got=W['cosine_cosine_cluster'].dropna(); check(f'{P} with_cosine_all assigned count',len(got)==len(A),f'{len(got)}')

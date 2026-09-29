@@ -4,8 +4,8 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 
 2026-09-29: 앱 장소 원본(Tour-Navigator-App)에서 맥도날드 드라이브스루 9곳(`ro466` · `ro467` · `ro524` · `ro532` · `ro536` · `ro540` · `ro684` · `ro780` · `ro857`, 모두 `food`)을 삭제한 데 맞춰
 `analysis/tour-places.csv`와 `age_upgrade/data/source/nationwide_places_all_3118.csv`(파일 이름은 스크립트 경로 때문에 그대로)에서도 뺐습니다(3,118 → 3,109행).
-커밋된 분석 결과(`analysis/outputs_cosine/run_20260929_052711_993598/` · `age_upgrade/results/` · `demographic_upgrade/results/` · `tour_scoring/data/region-demographics.json` 등)는
-삭제 전 3,118행으로 만든 스냅숏이라 9곳이 남아 있습니다. 다음에 분석을 다시 돌리면 3,109행으로 계산됩니다(9곳은 시티투어 경유지가 아니라 시티투어 점수 · 테마 추천 결과에는 영향이 없습니다).
+분석 결과(`analysis/outputs_cosine/run_20260929_234547_706228/` · `age_upgrade/results/` · `demographic_upgrade/results/` · `tour_scoring/data/region-demographics.json` 등)는
+3,109행으로 다시 계산했습니다. 관광지 군집은 G 10 → 8군집, GC 10 → 7군집으로 바뀌었고, 9곳은 시티투어 경유지가 아니라 T·TC 군집 · 적격 234코스 · 시티투어 점수 · 테마 추천 결과는 그대로입니다(자세한 내용은 [이관 기록](RELEASE_NOTES.md)).
 
 | 파일 | 행 수 | 열 수 | SHA256 |
 |---|---:|---:|---|

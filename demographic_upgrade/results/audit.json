@@ -53,7 +53,7 @@
   "detail_duplicated_age_rows_removed": 96,
   "detail_duplicated_sex_rows_removed": 24,
   "app_regions_mapped": 54,
-  "app_places_with_region_proxy": 952,
+  "app_places_with_region_proxy": 951,
   "city_courses_with_region_proxy": 127,
   "age_benchmarks": {
     "10대 미만": 0.0085,
