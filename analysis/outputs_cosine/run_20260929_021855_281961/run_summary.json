@@ -645,7 +645,7 @@
     "sklearn": "1.8.0",
     "matplotlib": "3.10.8"
   },
-  "plot_count": 42,
+  "plot_count": 44,
   "verified_stop_links": 0,
   "scope": "Baseline and spherical cosine clusters, survey-to-course candidate scoring, regional spending and marine context; no production deployment or validated satisfaction inference."
 }
