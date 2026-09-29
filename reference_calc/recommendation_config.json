@@ -147,7 +147,7 @@
   ],
   "source_commit": "96db458ed63b3e34a1c3d63a8ad444ea67ab6b77",
   "profile_status": "legacy_design_prior_not_reestimated; C9 revised 2026-09-29 (sea 0.36->0.50, heal 0.33->0.30, food 0.21->0.11)",
-  "version": "integrated-6.4-reference",
+  "version": "integrated-6.5-reference",
   "course_score": {
     "interest_weight": 0.5,
     "night_weight": 0.1,
@@ -160,12 +160,14 @@
       "G": "activity",
       "H": "night_flag"
     },
-    "night_trigger": "S6 == C and S4 != H",
+    "night_trigger": "S6 == C and H not in S4",
     "pace_trigger": {
       "A": "length",
       "C": "1 - length"
     },
     "length_rule": "clip((visit_candidate_count - 3) / 5, 0, 1)",
-    "formula": "100 * (cos*coverage + sum(active_weight * bonus)) / (1 + sum(active_weight))"
+    "formula": "100 * (cos*coverage + sum(active_weight * bonus)) / (1 + sum(active_weight))",
+    "interest_rule": "S4 has two interests; interest bonus = mean over the chosen interests that have data (five-category share or night flag); 드라마·공연·쇼핑 have no column and are left out; no interest term when neither has data",
+    "region_top5_rule": "one course per region, 5 regions; first one slot per chosen interest with data (best-ranked course whose largest category share is that interest, ties serve every tied category; 야경: a night course), then the rest by ranking; shown in ranking order"
   }
 }

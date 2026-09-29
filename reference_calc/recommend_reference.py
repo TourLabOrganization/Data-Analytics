@@ -22,19 +22,24 @@ def recommend(answers):
     selected=classification['result_types'];rw=classification['relative_weights']
     den=sum(rw[c] for c in selected);a={c:rw[c]/den for c in selected}
     u=[sum(a[c]*normalize(CFG['profiles'][c])[j] for c in a) for j in range(5)]
-    interest=answers['S4'];mapped={'C':0,'D':1,'E':4,'F':3,'G':2}
+    # S4 has two interests with equal weight. The interest term is the mean over the interests that have data:
+    # a five-category interest uses that category share, 야경(H) uses the night share/flag, and 드라마·공연·쇼핑 have no column.
+    interests=classification['interests'];mapped={'C':0,'D':1,'E':4,'F':3,'G':2}
+    with_data=[i for i in interests if i in mapped or i=='H']
+    def interest_base(p,night):
+        return sum(p[mapped[i]] if i in mapped else night for i in with_data)/len(with_data) if with_data else None
     themes=[]
     for t in CFG['themes']:
         p=normalize(t['proportions']);fit=sum(x*y for x,y in zip(u,p))
-        bonus_base=p[mapped[interest]] if interest in mapped else t['night'] if interest=='H' else 0.0
+        base=interest_base(p,t['night']); bonus_base=0.0 if base is None else base
         themes.append({'theme_id':t['id'],'name':t['name'],'region':t['region'],'profile_fit':fit,
             'primary_bonus':.5*bonus_base,'theme_index':100*(fit+.5*bonus_base)/1.5,
-            'interest_support':'five_category' if interest in mapped else 'night_metadata' if interest=='H' else 'additional_metadata_required',
+            'interest_support':['five_category' if i in mapped else 'night_metadata' if i=='H' else 'additional_metadata_required' for i in interests],
             'G':0.0,'H':0.0,'A':0.0,'D':0.0})
     themes.sort(key=lambda x:(-x['theme_index'],x['theme_id']))
     # Course bonuses: S4 interest (same 0.5 weight as themes), S6 evening/night and S3 pace (0.1 each).
     # Only active terms enter the denominator, so the index stays 0~100 and equals 100*cos*coverage when none apply.
-    cw=CFG['course_score'];night_active=answers['S6']=='C' and interest!='H';pace=answers['S3'] if answers['S3'] in ('A','C') else None
+    cw=CFG['course_score'];night_active=answers['S6']=='C' and 'H' not in interests;pace=answers['S3'] if answers['S3'] in ('A','C') else None
     courses=[];normu=math.sqrt(sum(x*x for x in u))
     with (ROOT/'eligible_courses.csv').open(encoding='utf-8-sig',newline='') as f:
         for row in csv.DictReader(f):
@@ -45,8 +50,8 @@ def recommend(answers):
             cosine=sum(x*y for x,y in zip(u,p))/denom
             length=min(max((n-3)/5,0.0),1.0)
             terms={}
-            if interest in mapped:terms['interest']=(cw['interest_weight'],p[mapped[interest]])
-            elif interest=='H':terms['interest']=(cw['interest_weight'],night)
+            base=interest_base(p,night)
+            if base is not None:terms['interest']=(cw['interest_weight'],base)
             if night_active:terms['night']=(cw['night_weight'],night)
             if pace:terms['pace']=(cw['pace_weight'],length if pace=='A' else 1-length)
             scale=1+sum(w for w,_ in terms.values())
@@ -58,10 +63,20 @@ def recommend(answers):
                  'proportions':p,'route_text':row['코스(경유지)'],'T_cluster':row['analysis_T_cluster'],
                  'q_source':'type_profile_prior','operational_availability_verified':False})
     courses.sort(key=lambda x:(-x['adjusted_score'],-x['cosine_similarity'],-x['coverage'],x['course_id']))
-    distinct=[];seen=set()
+    # One regional top-5 slot per chosen interest with data: the best-ranked course whose largest category share is that
+    # interest (ties serve every tied category; 야경: a night course), from a region not taken yet.
+    # The other slots follow the ranking. Shown in ranking order.
+    rank={c['course_id']:i for i,c in enumerate(courses)}
+    def serves(c,i):
+        return c['night_flag']==1 if i=='H' else c['proportions'][mapped[i]]>=max(c['proportions'])-1e-12
+    picked=[];seen=set()
+    for i in with_data:
+        c=next((c for c in courses if c['region'] not in seen and serves(c,i)),None)
+        if c is not None:picked.append({**c,'reserved_for_interest':i});seen.add(c['region'])
     for c in courses:
-        if c['region'] not in seen:distinct.append(c);seen.add(c['region'])
-        if len(distinct)==5:break
+        if len(picked)>=5:break
+        if c['region'] not in seen:picked.append({**c,'reserved_for_interest':None});seen.add(c['region'])
+    distinct=sorted(picked,key=lambda c:rank[c['course_id']])
     return {'version':CFG['version'],'status':'complete','survey':classification,'mix_weights':a,'preference_vector':u,
         'q_source':'type_profile_prior','theme_rankings':themes,'theme_top3':themes[:3],
         'course_bonus_terms':sorted(courses[0]['bonus_points']) if courses else [],

@@ -1,5 +1,5 @@
 {
-  "version": "branch-survey-6.3-proposal",
+  "version": "branch-survey-6.4-proposal",
   "types": {
     "C1": {
       "name": "트렌드 탐색형",
@@ -212,9 +212,9 @@
     },
     {
       "id": "S4",
-      "title": "이번 여행에서 가장 하고 싶은 한 가지는 무엇인가요",
+      "title": "이번 여행에서 가장 하고 싶은 것 두 가지는 무엇인가요",
       "source": "legacy Q4",
-      "selection": "single",
+      "selection": "multiple",
       "options": [
         {
           "id": "A",
@@ -303,7 +303,9 @@
           },
           "branch": "B7"
         }
-      ]
+      ],
+      "select_count": 2,
+      "note": "서로 다른 두 가지를 고른다. 두 선택은 같은 비중으로 가산하고, 각 선택의 후속 문항을 묻는다(같은 후속 문항이면 한 번)."
     },
     {
       "id": "S5",
@@ -654,16 +656,16 @@
     "score_unit": "type_percent",
     "type_full_score": 100,
     "type_max_raw": {
-      "C1": 18,
-      "C2": 15,
-      "C3": 16,
-      "C4": 17,
-      "C5": 18,
+      "C1": 23,
+      "C2": 19,
+      "C3": 20,
+      "C4": 19,
+      "C5": 22,
       "C6": 10,
-      "C7": 14,
+      "C7": 17,
       "C8": 11,
-      "C9": 9,
-      "C10": 9
+      "C9": 11,
+      "C10": 15
     },
     "type_score_rule": "Each option point for type C adds 100 / type_max_raw[C]; a type scores 100 when it takes the best option for itself on every question of one route",
     "clarification_margin": 12,
