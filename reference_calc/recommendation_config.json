@@ -65,10 +65,10 @@
     ],
     "C9": [
       0.02,
-      0.33,
+      0.3,
       0.07,
-      0.21,
-      0.36
+      0.11,
+      0.5
     ],
     "C10": [
       0.31,
@@ -146,6 +146,26 @@
     }
   ],
   "source_commit": "96db458ed63b3e34a1c3d63a8ad444ea67ab6b77",
-  "profile_status": "legacy_design_prior_not_reestimated",
-  "version": "integrated-6.2-reference"
+  "profile_status": "legacy_design_prior_not_reestimated; C9 revised 2026-09-29 (sea 0.36->0.50, heal 0.33->0.30, food 0.21->0.11)",
+  "version": "integrated-6.3-reference",
+  "course_score": {
+    "interest_weight": 0.5,
+    "night_weight": 0.1,
+    "pace_weight": 0.1,
+    "interest_map": {
+      "C": "herit",
+      "D": "heal",
+      "E": "sea",
+      "F": "food",
+      "G": "activity",
+      "H": "night_flag"
+    },
+    "night_trigger": "S6 == C and S4 != H",
+    "pace_trigger": {
+      "A": "length",
+      "C": "1 - length"
+    },
+    "length_rule": "clip((visit_candidate_count - 3) / 5, 0, 1)",
+    "formula": "100 * (cos*coverage + sum(active_weight * bonus)) / (1 + sum(active_weight))"
+  }
 }

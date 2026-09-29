@@ -7,7 +7,7 @@
     "common_questions": 6,
     "branch_questions": 7,
     "base_paths": 47628,
-    "completed_paths_including_clarification": 141833,
+    "completed_paths_including_clarification": 141897,
     "answer_counts": [
       7,
       8
@@ -44,6 +44,12 @@
     ],
     "course_count": 179,
     "distinct_region_count": 5,
+    "course_bonus_terms_demo": [
+      "interest",
+      "pace"
+    ],
+    "no_bonus_equals_category_fit": true,
+    "night_interest_top3_night_courses": true,
     "type_profile_L1": 1.0,
     "D_preserves_previous_scores": true,
     "empirical_validation": false,
@@ -79,5 +85,75 @@
     "notebook_execution_log": "verification/notebook_execution.log",
     "changed_outputs": "T/TC only; see verification/integration_checks.json",
     "reference_recommendation_scores_changed": false
+  },
+  "survey_6_2_recommendation_6_3_revision": {
+    "date": "2026-09-29",
+    "survey_version": "branch-survey-6.2-proposal",
+    "recommendation_version": "integrated-6.3-reference",
+    "changes": [
+      "S4.E scores C2+2/C3+2/C9+2 -> C2+1/C3+1/C9+4",
+      "C9 profile [0.02,0.33,0.07,0.21,0.36] -> [0.02,0.30,0.07,0.11,0.50]",
+      "course score: 100*(fit + sum w*b)/(1 + sum w); interest 0.5, night 0.1, pace 0.1"
+    ],
+    "method": "every complete survey path, uniform over options; structural check, not user distribution",
+    "before": {
+      "paths": 141833,
+      "C9_in_S4E": 0.188,
+      "interest_top1": {
+        "C": 0.683,
+        "D": 0.492,
+        "E": 0.0,
+        "F": 0.544,
+        "G": 0.327
+      },
+      "interest_top5share": {
+        "C": 0.385,
+        "D": 0.393,
+        "E": 0.139,
+        "F": 0.24,
+        "G": 0.289
+      },
+      "pace_mean_visits": {
+        "A": 4.62,
+        "B": 4.54,
+        "C": 4.32
+      },
+      "night_share_top5": {
+        "H": 0.036,
+        "S6C": 0.033,
+        "other": 0.046
+      }
+    },
+    "after": {
+      "paths": 141897,
+      "C9_in_S4E": 0.401,
+      "interest_top1": {
+        "C": 0.811,
+        "D": 0.69,
+        "E": 0.375,
+        "F": 0.598,
+        "G": 0.615
+      },
+      "interest_top5share": {
+        "C": 0.631,
+        "D": 0.534,
+        "E": 0.326,
+        "F": 0.278,
+        "G": 0.432
+      },
+      "pace_mean_visits": {
+        "A": 5.25,
+        "B": 4.4,
+        "C": 3.94
+      },
+      "night_share_top5": {
+        "H": 0.839,
+        "S6C": 0.142,
+        "other": 0.045
+      }
+    },
+    "simulation_matches_recommend_top5_on_400_random_paths": true,
+    "recommendation_scores_changed": true,
+    "theme_scores_changed": false
   }
 }

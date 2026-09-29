@@ -6,6 +6,12 @@
   ],
   "course_count": 179,
   "distinct_region_count": 5,
+  "course_bonus_terms_demo": [
+    "interest",
+    "pace"
+  ],
+  "no_bonus_equals_category_fit": true,
+  "night_interest_top3_night_courses": true,
   "type_profile_L1": 1.0,
   "D_preserves_previous_scores": true,
   "empirical_validation": false,

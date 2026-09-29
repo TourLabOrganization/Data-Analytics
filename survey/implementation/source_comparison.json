@@ -19,7 +19,23 @@
     {
       "new_node": "S4",
       "old_node": "Q4",
-      "all_option_scores_preserved": true
+      "all_option_scores_preserved": false,
+      "changed_options": {
+        "E": {
+          "old": {
+            "C2": 2,
+            "C3": 2,
+            "C9": 2
+          },
+          "new": {
+            "C2": 1,
+            "C3": 1,
+            "C9": 4
+          },
+          "version": "branch-survey-6.2-proposal",
+          "reason": "바다 관심사를 자연 해양형(C9)으로 연결"
+        }
+      }
     },
     {
       "new_node": "S5",
@@ -54,5 +70,24 @@
       "B7"
     ],
     "D_contribution": 0
+  },
+  "version_6_2_changes": {
+    "type_names_unchanged": true,
+    "changed_common_options": {
+      "S4.E": {
+        "old": {
+          "C2": 2,
+          "C3": 2,
+          "C9": 2
+        },
+        "new": {
+          "C2": 1,
+          "C3": 1,
+          "C9": 4
+        }
+      }
+    },
+    "option_total_points_unchanged": true,
+    "branch_options_unchanged": true
   }
 }
