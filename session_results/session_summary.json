@@ -43,6 +43,59 @@
       "score": 1.17
     }
   ],
+  "branch_survey": {
+    "status": "COMPLETE",
+    "survey_version": "branch-survey-6.3-proposal",
+    "result_types": [
+      "C4",
+      "C5"
+    ],
+    "mix_weights": {
+      "C4": 0.551725,
+      "C5": 0.448275
+    },
+    "theme_top3": [
+      {
+        "name": "왕과 사는 남자",
+        "score": 31.798165
+      },
+      {
+        "name": "RESCENE Route",
+        "score": 25.70552
+      },
+      {
+        "name": "케이팝 데몬 헌터스",
+        "score": 25.263197
+      }
+    ],
+    "city_picks": [
+      {
+        "region": "해남",
+        "name": "해남시티투어",
+        "score": 81.179956
+      },
+      {
+        "region": "천안",
+        "name": "목요일",
+        "score": 80.51904
+      },
+      {
+        "region": "순천",
+        "name": "(테마투어)산사투어",
+        "score": 80.51904
+      },
+      {
+        "region": "평창",
+        "name": "북부권 코스",
+        "score": 80.51904
+      },
+      {
+        "region": "대구",
+        "name": "송해코스",
+        "score": 78.900736
+      }
+    ]
+  },
   "score_fusion": false,
   "input": "examples/full_session.json",
   "analysis_run": "analysis/outputs_cosine/run_20260929_021855_281961",

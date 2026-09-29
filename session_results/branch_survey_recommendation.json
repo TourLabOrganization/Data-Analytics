@@ -1,0 +1,253 @@
+{
+  "version": "integrated-6.4-reference",
+  "survey_version": "branch-survey-6.3-proposal",
+  "answers": {
+    "S1": "C",
+    "S2": "A",
+    "S3": "C",
+    "S4": "C",
+    "S5": "C",
+    "S6": "A",
+    "B2": "A",
+    "F1": "BALANCED"
+  },
+  "scores": {
+    "C1": 5.555555555555555,
+    "C2": 13.333333333333334,
+    "C3": 6.25,
+    "C4": 74.70588235294119,
+    "C5": 71.11111111111111,
+    "C6": 10.0,
+    "C7": 7.142857142857143,
+    "C8": 9.090909090909092,
+    "C9": 0.0,
+    "C10": 44.44444444444444
+  },
+  "ledger": [
+    {
+      "node": "S1",
+      "option": "C",
+      "contribution": {
+        "C2": 13.333333333333334,
+        "C5": 5.555555555555555
+      },
+      "raw_points": {
+        "C2": 2,
+        "C5": 1
+      }
+    },
+    {
+      "node": "S2",
+      "option": "A",
+      "contribution": {
+        "C1": 5.555555555555555,
+        "C5": 16.666666666666664,
+        "C7": 7.142857142857143,
+        "C8": 9.090909090909092
+      },
+      "raw_points": {
+        "C1": 1,
+        "C5": 3,
+        "C7": 1,
+        "C8": 1
+      }
+    },
+    {
+      "node": "S3",
+      "option": "C",
+      "contribution": {
+        "C4": 11.764705882352942,
+        "C5": 16.666666666666664
+      },
+      "raw_points": {
+        "C4": 2,
+        "C5": 3
+      }
+    },
+    {
+      "node": "S4",
+      "option": "C",
+      "contribution": {
+        "C3": 6.25,
+        "C4": 17.647058823529413,
+        "C10": 33.33333333333333
+      },
+      "raw_points": {
+        "C3": 1,
+        "C4": 3,
+        "C10": 3
+      }
+    },
+    {
+      "node": "S5",
+      "option": "C",
+      "contribution": {
+        "C4": 5.882352941176471,
+        "C5": 16.666666666666664,
+        "C6": 10.0
+      },
+      "raw_points": {
+        "C4": 1,
+        "C5": 3,
+        "C6": 1
+      }
+    },
+    {
+      "node": "S6",
+      "option": "A",
+      "contribution": {
+        "C4": 11.764705882352942,
+        "C5": 5.555555555555555
+      },
+      "raw_points": {
+        "C4": 2,
+        "C5": 1
+      }
+    },
+    {
+      "node": "B2",
+      "option": "A",
+      "contribution": {
+        "C4": 17.647058823529413,
+        "C10": 11.11111111111111
+      },
+      "raw_points": {
+        "C4": 3,
+        "C10": 1
+      }
+    },
+    {
+      "node": "F1",
+      "option": "BALANCED",
+      "contribution": {
+        "C4": 10.0,
+        "C5": 10.0
+      }
+    }
+  ],
+  "result_types": [
+    "C4",
+    "C5"
+  ],
+  "mode": "mixed",
+  "mix_weights": {
+    "C4": 0.5517248216535149,
+    "C5": 0.44827517834648506
+  },
+  "preference_vector": [
+    0.32068992866140594,
+    0.4344825535039455,
+    0.027586241082675746,
+    0.12758624108267574,
+    0.08965503566929701
+  ],
+  "theme_top3": [
+    {
+      "theme_id": "warden",
+      "name": "왕과 사는 남자",
+      "region": "영월",
+      "profile_fit": 0.2769724692771827,
+      "primary_bonus": 0.2,
+      "theme_index": 31.79816461847885,
+      "interest_support": "five_category",
+      "G": 0.0,
+      "H": 0.0,
+      "A": 0.0,
+      "D": 0.0
+    },
+    {
+      "theme_id": "rescene",
+      "name": "RESCENE Route",
+      "region": "경주·거제",
+      "profile_fit": 0.22158280036194708,
+      "primary_bonus": 0.164,
+      "theme_index": 25.705520024129807,
+      "interest_support": "five_category",
+      "G": 0.0,
+      "H": 0.0,
+      "A": 0.0,
+      "D": 0.0
+    },
+    {
+      "theme_id": "kdh",
+      "name": "케이팝 데몬 헌터스",
+      "region": "서울",
+      "profile_fit": 0.23230131500049062,
+      "primary_bonus": 0.14664664664664664,
+      "theme_index": 25.263197443142488,
+      "interest_support": "five_category",
+      "G": 0.0,
+      "H": 0.0,
+      "A": 0.0,
+      "D": 0.0
+    }
+  ],
+  "course_bonus_terms": [
+    "interest",
+    "pace"
+  ],
+  "course_distinct_region_top5": [
+    {
+      "course_id": "ct_4b24fed6566e54",
+      "region": "해남",
+      "name": "해남시티투어",
+      "category_fit_score": 94.88792947293629,
+      "bonus_points": {
+        "interest": 15.625,
+        "pace": 6.25
+      },
+      "adjusted_score": 81.17995592058519,
+      "route_text": "일요일코스(산이정원 → 대흥사)"
+    },
+    {
+      "course_id": "ct_6bfb1cb10f19bb",
+      "region": "천안",
+      "name": "목요일",
+      "category_fit_score": 85.49713141970781,
+      "bonus_points": {
+        "interest": 20.83333333333333,
+        "pace": 6.25
+      },
+      "adjusted_score": 80.51904047065071,
+      "route_text": "태학산 치유의 숲 → 점심(아우내장터) → 유관순열사사적지 → 독립기념관"
+    },
+    {
+      "course_id": "ct_a33d720535a1e1",
+      "region": "순천",
+      "name": "(테마투어)산사투어",
+      "category_fit_score": 85.49713141970781,
+      "bonus_points": {
+        "interest": 20.83333333333333,
+        "pace": 6.25
+      },
+      "adjusted_score": 80.51904047065071,
+      "route_text": "순천역 → 송광사 → 선암사 → 상사호 → 순천역"
+    },
+    {
+      "course_id": "ct_e588b4efe19ef3",
+      "region": "평창",
+      "name": "북부권 코스",
+      "category_fit_score": 85.49713141970781,
+      "bonus_points": {
+        "interest": 20.83333333333333,
+        "pace": 6.25
+      },
+      "adjusted_score": 80.51904047065071,
+      "route_text": "서울역(금요일) → 청량리역(토요일) → 진부역 → 월정사 → 발왕산케이블카 → 2018평창동계올림픽기념관 → 진부역 → 서울역/청량리역"
+    },
+    {
+      "course_id": "ct_0e4d7f0c7de8e2",
+      "region": "대구",
+      "name": "송해코스",
+      "category_fit_score": 90.24117801790436,
+      "bonus_points": {
+        "interest": 18.75,
+        "pace": 3.75
+      },
+      "adjusted_score": 78.90073626119022,
+      "route_text": "송해공원 → 마비정벽화마을 → 비슬산자연휴양림 → 화석박물관 → 사문진주막촌"
+    }
+  ],
+  "q_source": "type_profile_prior",
+  "model_status": "reference_calculation_not_empirically_validated_or_deployed"
+}
