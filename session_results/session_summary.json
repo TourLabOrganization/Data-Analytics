@@ -44,7 +44,7 @@
     }
   ],
   "score_fusion": false,
-  "input": "/workspace/scratch/6640d64d17c6/deliverables/integrated_release/Tour_Navigator_Codebook/examples/full_session.json",
-  "analysis_run": "/workspace/scratch/6640d64d17c6/deliverables/integrated_release/Tour_Navigator_Codebook/analysis/outputs_cosine/run_20260928_062724_468322",
+  "input": "examples/full_session.json",
+  "analysis_run": "analysis/outputs_cosine/run_20260929_000435_315309",
   "data_status": "SYNTHETIC_DEMONSTRATION"
 }

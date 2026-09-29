@@ -13,7 +13,7 @@
 | 응답자용 설문지 | [Word](survey/Tour_Navigator_Survey_Form.docx) · [PNG 6장](survey/survey_png/) |
 | CSV → PCA·코사인 군집·표·그림 | [Jupyter Notebook](analysis/Tour_Navigator_Integrated.ipynb) · [동일 분석 Python](analysis/run_analysis.py) |
 | 신규 설문 → 유형 → 테마·지역 시티투어 | [추천 코드](reference_calc/recommend_reference.py) · [설문 엔진](reference_calc/score_survey.py) |
-| 주 분석 PNG 41개·결과 CSV 92개 | [결과 폴더](analysis/outputs_cosine/run_20260928_062724_468322/) |
+| 주 분석 PNG 41개·결과 CSV 92개 | [결과 폴더](analysis/outputs_cosine/run_20260929_000435_315309/) |
 | 입력 데이터의 위치·행 수·해시 | [입력 목록](docs/INPUT_DATA_INDEX.md) · [전체 파일 SHA256](verification/release_manifest.csv) |
 | 기존 앱·확장 산식 비교와 체류 코드 | [Node.js 코드집](tour_scoring/) · [원본 추적 정보](tour_scoring/PROVENANCE.json) |
 
@@ -61,7 +61,7 @@ Jupyter에서는 `analysis` 폴더에서 [Tour_Navigator_Integrated.ipynb](analy
 
 주 노트북의 직접 5범주 평점 CSV는 코사인 계산을 검증하는 별도 선택 입력이며 최신 분기 설문에 포함되지 않습니다. 파일이 없으면 `SYNTHETIC_DEMONSTRATION`으로 표시한 가상 응답 4개로 계산을 시연합니다.
 
-분석 스냅숏: 장소 3,118행 중 숙박 569행 제외 후 2,549행, 코스 280행 중 적격 179행, G/GC 10군집·T/TC 2군집. PCA 축은 학습된 성분이며 설문 유형과 다릅니다. 식·실루엣·ARI 해석은 통합 명세서를 참조하세요.
+분석 스냅숏: 장소 3,118행 중 숙박 569행 제외 후 2,549행, 코스 280행 중 적격 179행, G/GC 10군집, T 6군집·TC 7군집. T는 범주 비중·방문 후보 수·야경 세 묶음의 분산을 맞춘 뒤 가중치 0.75·0.15·0.10을 적용합니다(명세서 22장). PCA 축은 학습된 성분이며 설문 유형과 다릅니다. 식·실루엣·ARI 해석은 통합 명세서를 참조하세요.
 
 ## 3. 연령·성연령 및 기존 산식 비교
 

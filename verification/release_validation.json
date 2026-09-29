@@ -72,5 +72,12 @@
   "respondent_survey_png_count": 6,
   "secret_pattern_scan": "no_matches",
   "empirical_accuracy_validation": false,
-  "production_deployment": false
+  "production_deployment": false,
+  "t_block_balance_revision": {
+    "full_training_rerun": true,
+    "analysis_run": "run_20260929_000435_315309",
+    "notebook_execution_log": "verification/notebook_execution.log",
+    "changed_outputs": "T/TC only; see verification/integration_checks.json",
+    "reference_recommendation_scores_changed": false
+  }
 }

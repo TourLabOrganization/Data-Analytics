@@ -452,12 +452,23 @@ if cities_raw is not None:
 if city is not None:
     city_eligible=course_table.loc[course_table.cluster_eligible].copy()
     if len(city_eligible)>=4:
-        city_features=city_eligible[[f"share_{c}" for c in CATEGORIES]]*np.sqrt(CITY_WEIGHTS["category"]/2)
         scaled_count,count_params=robust_log(city_eligible.visit_candidate_count)
-        city_features["log_visit_count_robust"]=scaled_count*np.sqrt(CITY_WEIGHTS["stop_count"])
-        city_features["night_flag"]=city_eligible.night_flag*np.sqrt(CITY_WEIGHTS["night"])
+        # 묶음별 분산 균형: 각 묶음의 총분산을 1로 나눈 뒤 √가중치를 곱해 묶음의 분산 기여를 가중치와 같게 맞춤
+        city_blocks={"category":city_eligible[[f"share_{c}" for c in CATEGORIES]].astype(float),
+                     "stop_count":pd.DataFrame({"log_visit_count_robust":scaled_count},index=city_eligible.index),
+                     "night":city_eligible[["night_flag"]].astype(float)}
+        city_block_sd={}
+        for block,frame in city_blocks.items():
+            total_sd=float(np.sqrt(frame.var(ddof=0).sum()))
+            city_block_sd[block]=total_sd if total_sd>1e-12 else 1.0
+        city_features=pd.concat([frame/city_block_sd[block]*np.sqrt(CITY_WEIGHTS[block]) for block,frame in city_blocks.items()],axis=1)
+        city_block_share={block:float(city_features[frame.columns].var(ddof=0).sum()/city_features.var(ddof=0).sum()) for block,frame in city_blocks.items()}
+        print("T 묶음 총표준편차:",{k:round(v,6) for k,v in city_block_sd.items()},"| 분산 기여:",{k:round(v,4) for k,v in city_block_share.items()})
         if len(np.unique(np.round(city_features.to_numpy(),12),axis=0))>=3:
-            city_model=fit_cluster_pipeline(city_features,"T",{"weights":CITY_WEIGHTS,"visit_count":count_params,"keywords":KW,"minimum_category_coverage":MIN_CITY_CATEGORY_COVERAGE})
+            city_model=fit_cluster_pipeline(city_features,"T",{"weights":CITY_WEIGHTS,"block_balance":"block/total_block_sd*sqrt(weight), population variance",
+                                                             "block_total_sd":city_block_sd,"block_variance_share":city_block_share,
+                                                             "visit_count":count_params,"keywords":KW,"minimum_category_coverage":MIN_CITY_CATEGORY_COVERAGE})
+            city_model["summary"]["block_variance_share"]=city_block_share
             RUN_SUMMARY["citytour"]=city_model["summary"]
             city_eligible["T_cluster"]=city_model["labels"]
             city_eligible=city_eligible.join(city_model["pcs"])
