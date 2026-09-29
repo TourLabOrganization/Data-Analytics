@@ -15,9 +15,9 @@
     "method": "All code cells executed sequentially in one fresh Python process with captured tables and plots; not a socket-backed Jupyter kernel test",
     "python": "3.12.3",
     "code_cells": 19,
-    "elapsed_seconds": 67.7
+    "elapsed_seconds": 54.9
   },
-  "analysis_run": "run_20260929_015104_463809",
+  "analysis_run": "run_20260929_021855_281961",
   "scope": "computational reproduction; not satisfaction or live availability validation",
   "t_block_balance_revision": {
     "date": "2026-09-29",
@@ -65,5 +65,44 @@
       "All result CSVs, JSON summaries except created_at, and models byte-identical to previous_run",
       "17 of 41 plots changed (label text only); 24 byte-identical"
     ]
+  },
+  "course_review_revision": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_021855_281961",
+    "previous_run": "run_20260929_015104_463809",
+    "scope": "city tour course parser/classifier review using only the supplied citytour.csv",
+    "rules": [
+      "\"/\" splits co-visited stops; only explicit alternatives (또는/선택/계절별/상이/(or)/parenthesised seasons) are conditional",
+      "stations, terminals, stops, hotels, airports, tourist-information centres and meal breaks are not visit candidates",
+      "labelled routes in parentheses are parsed; \"맞춤\" alone no longer marks a flexible route; plain comma lists accepted as unordered visit lists",
+      "keyword additions (곶/섬/대교/어촌, 고택/석빙고, 곤돌라/출렁다리/기차마을 ...) and fixes (공항, 섬진강, 미술관/예술, 코레일, 청사/공사/식사)"
+    ],
+    "eligible_courses": {
+      "before": 179,
+      "after": 229,
+      "newly_eligible": 53,
+      "dropped": 3
+    },
+    "exclusions_after": {
+      "CONDITIONAL_STOPS": 19,
+      "ROUTE_UNRESOLVED": 14,
+      "LOW_CATEGORY_COVERAGE": 13,
+      "TOO_FEW_VISITS": 5
+    },
+    "sea_share_ge_0_3": {
+      "before": 17,
+      "after": 26
+    },
+    "t_model": {
+      "k": 7,
+      "silhouette_mean": 0.2522,
+      "seed_ari_min": 0.9714
+    },
+    "tc_model": {
+      "k": 7,
+      "cosine_silhouette_final_seed": 0.45,
+      "ari_vs_baseline": 0.8494
+    },
+    "unchanged": "G/GC, spending and marine regional outputs byte-identical; course tables, T/TC models and marine course-link tables changed"
   }
 }

@@ -1,6 +1,6 @@
 {
   "status": "SCORED_CANDIDATES_NOT_BOOKING_CONFIRMATION",
-  "cosine_candidates": 179,
+  "cosine_candidates": 229,
   "cosine_distinct_regions": 5,
   "legacy_theme_picks": [
     {
@@ -45,6 +45,6 @@
   ],
   "score_fusion": false,
   "input": "examples/full_session.json",
-  "analysis_run": "analysis/outputs_cosine/run_20260929_015104_463809",
+  "analysis_run": "analysis/outputs_cosine/run_20260929_021855_281961",
   "data_status": "SYNTHETIC_DEMONSTRATION"
 }

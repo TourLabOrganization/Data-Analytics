@@ -352,7 +352,10 @@ def split_outside(text, separators):
 def parse_route(text):
     text=str(text).strip()
     if not text:return [],"EMPTY"
-    if re.search(r"자유코스|자율코스|맞춤|홈페이지.*참조|리플릿.*참조|운행 요청|원하는 일정|자유선택|요구반영|일대$",text):return [text],"FLEXIBLE_OR_UNSPECIFIED"
+    if re.search(r"자유코스|자율코스|맞춤형|단체 맞춤|홈페이지.*참조|리플릿.*참조|운행 요청|원하는 일정|자유선택|요구반영|일대$",text):return [text],"FLEXIBLE_OR_UNSPECIFIED"
+    # A labelled route such as "일요일코스(산이정원 → 대흥사)": read the ordered route inside the parentheses
+    wrapped=re.fullmatch(r"[^()→>]*\(([^()]*(?:→|->|⇒)[^()]*)\)",text)
+    if wrapped:text=wrapped.group(1).strip()
     numbered=list(re.finditer(r"(?:^|\s)(\d{1,2})\s+(?=\S)",text))
     if len(numbered)>=2 and [int(m.group(1)) for m in numbered]==list(range(1,len(numbered)+1)):
         parts=[text[m.end():numbered[j+1].start() if j+1<len(numbered) else len(text)].strip() for j,m in enumerate(numbered)]
@@ -360,17 +363,19 @@ def parse_route(text):
     parts=split_outside(text,["->","→","⇒","↔",">","+","_"," - "])
     if len(parts)>1:return parts,"EXPLICIT_SEPARATOR"
     comma=split_outside(text,[",","，"])
-    if len(comma)>1:return comma,"UNORDERED_LIST_REVIEW"
+    if len(comma)>1:return comma,"UNORDERED_LIST_REVIEW" if re.search(r"등\s*$|:|코스",text) else "UNORDERED_LIST"
     return [text],"UNSPLIT_REVIEW"
 
 def strip_number(text):
     return re.sub(r"^\s*(?:[①-⑳]|\d{1,2}[.)])\s*","",text).strip()
 
-KW={"herit":r"궁|성곽|읍성|산성|사찰|[가-힣]사$|향교|서원|박물관|유적|고분|릉|역사|문화재|한옥|민속|전통|사지|기념관",
-    "heal":r"산$|숲|수목원|공원|호수|저수지|계곡|습지|정원|폭포|자연|생태|휴양림|둘레길|농원|수변",
-    "activity":r"체험|테마파크|랜드|케이블카|레일|짚|루지|월드|과학관|전망대|스카이|목장|놀이",
-    "food":r"시장|먹거리|맛|음식|카페|막걸리|와이너리|양조|빵|맥주|술",
-    "sea":r"해수욕장|해변|[가-힣]항$|바다|섬|포구|해안|등대|해상|해양|방조제"}
+KW={"herit":r"궁$|궁궐|왕궁|성곽|읍성|산성|사찰|[가-힣]사$(?<!공사)(?<!청사)(?<!회사)(?<!식사)|향교|서원|박물관|유적|고분|릉|역사|문화재|한옥|민속|전통|사지|기념관|고택|석굴|석빙고|석불|성지|성당|문학관|생가|당간지주|감영|근현대|국악|순교|위령",
+    "heal":r"산$|숲|수목원|공원|호수|저수지|계곡|습지|정원|폭포|자연|생태|휴양림|둘레길|농원|수변|동산|산림|댐|물문화관|두물머리|온천",
+    "activity":r"체험|테마파크|랜드|케이블카|(?<!코)레일|짚|루지|월드|과학관|전망대|스카이|목장|놀이|곤돌라|출렁다리|아울렛|서커스|요트|웨이브파크|동굴|아트밸리|미술관|세트장|촬영지|도예|카누|워크$|템플스테이|공연|문화단지|기차마을",
+    "food":r"시장|먹거리|맛|음식|카페|막걸리|와이너리|양조|빵|맥주|(?<![예미기])술|냉면|쌀밥|쌀면|로컬푸드|와인|젓갈",
+    "sea":r"해수욕장|해변|[가-힣]항$(?<!공항)|바다|섬(?!진강)|포구|해안|등대|해상|해양|방조제|대교|곶|해비치|해오름|[가-힣]{1,3}도(?:\s*입구)?$|군도|갯벌|갯골|어촌|요트"}
+# Explicit alternatives only; "/" lists stops that are all visited and is split below
+CONDITIONAL_RE=r"또는|선택|계절별|상이|\(or |\([^)]*(?:봄|여름|가을|겨울|하계|동계|계절)[^)]*\)"
 full_index,base_index=defaultdict(set),defaultdict(set)
 place_lookup={}
 if places is not None:
@@ -401,15 +406,18 @@ if cities_raw is not None:
     city["course_id"]=["ct_"+hashlib.sha256((str(i)+"|"+r.region+"|"+r["name"]+"|"+r.route).encode()).hexdigest()[:14] for i,r in city.iterrows()]
     records=[];course_records=[]
     for index,r in city.iterrows():
-        parts,parser=parse_route(r.route);parsed=parser in ["EXPLICIT_SEPARATOR","NUMBERED_ORDER"]
+        parts,parser=parse_route(r.route);parsed=parser in ["EXPLICIT_SEPARATOR","NUMBERED_ORDER","UNORDERED_LIST"]
+        parts=[q for p in parts for q in ([p] if re.search(CONDITIONAL_RE,p) else split_outside(p,["/"]))] if parsed else parts
         visit_vectors=[];known=0;matched=0;conditional_count=0;cluster_counter=Counter();visit_n=0
         for seq,raw in enumerate(parts,1):
-            name=strip_number(raw);base=no_parentheses(name)
-            conditional=bool(re.search(r"또는|봄|여름|가을|겨울|하계|동계|계절|선택",name) or "/" in base)
+            name=re.sub(r"^\[\d{1,2}:\d{2}\]\s*","",strip_number(raw));base=no_parentheses(name).strip(" )")
+            conditional=bool(re.search(CONDITIONAL_RE,name))
             role="VISIT_CANDIDATE"
-            if re.search(r"출발|도착|승차",name):role="BOARDING_OR_RETURN"
+            if re.search(r"출발|도착|승차|하차",name):role="BOARDING_OR_RETURN"
+            elif re.search(r"자율중식|^중식|점심|휴식$|식사$",base):role="MEAL_BREAK"
+            elif re.search(r"정류장|정류소|터미널|안내소$|호텔$|사거리$|APT|휴게소$|역$|공항",base) or re.fullmatch(r"관광지\s*\d+",base):role="TRANSPORT_OR_PLACEHOLDER"
             elif re.search(r"차창|경유|통과",name):role="PASS_BY"
-            elif seq in [1,len(parts)] and (norm_name(base)==norm_name(no_parentheses(r.boarding)) or re.search(r"역$|터미널$|주차장$",base)):role="ENDPOINT_TRANSPORT"
+            elif seq in [1,len(parts)] and (norm_name(base)==norm_name(no_parentheses(r.boarding)) or norm_name(base)==norm_name(r.region) or re.search(r"역$|터미널$|주차장$",base)):role="ENDPOINT_TRANSPORT"
             if not parsed:role="UNRESOLVED_ROUTE"
             status,pid=match_place(r.region,name,conditional)
             if role!="VISIT_CANDIDATE":status,pid="NON_VISIT_OR_UNRESOLVED",None
