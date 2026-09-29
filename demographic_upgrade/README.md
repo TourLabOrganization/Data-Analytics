@@ -28,4 +28,8 @@ D=0.02×q×(0.75z_age+0.25z_sex), q=0.5 잠정 지역 연결. 계수는 추정�
 
 90개 지역×10변수(8연령+2성별), X=[sqrt(.75)sqrt(p_age),sqrt(.25)sqrt(p_sex)]. raw/PCA95와 k2~6 비교. 대표raw k2, 실루엣0.3165, 시드ARI1, PCA2축83.21%. 연령만 사용한 민감도ARI0.9556. R01 40지역/R02 50지역은 탐색적 지역분포 유형이며 점수에 군집번호를 더하지 않습니다. 기존 C사용자/G장소/A연령목록 군집과 구별합니다.
 
+## 지도
+
+`python plot_regional_map.py`로 `plots/04_regional_cluster_map.png`와 `results/regional_map_matches.csv`를 만듭니다. 시군구 경계는 통계청 센서스용 행정구역경계 2013을 공개한 southkorea-maps(커밋 fe65e05)에서 `data/boundaries/`로 한 번 받아 SHA-256을 확인하며, 저장소에는 넣지 않습니다(인터넷 연결 필요). 2013년 이후 바뀐 광역 이름(강원·전북 특별자치도, 전남광주통합특별시)은 옛 이름으로, 군위군은 경상북도 군위군으로, 구로 나뉜 안산시는 두 구로 대응합니다. 90지역 중 88곳은 이름이 그대로 맞았습니다. 경계는 방향 참고용이며 공식 행정코드 대응을 검증한 것이 아닙니다.
+
 공식 안내 https://datalab.visitkorea.or.kr/datalab/portal/bda/getInquiryBySexAndAge.do
