@@ -74,8 +74,10 @@ CATEGORIES = ["herit", "heal", "activity", "food", "sea"]
 CAT_LABELS = {"herit":"역사", "heal":"자연", "activity":"체험", "food":"음식", "sea":"바다", "stay":"숙박"}
 COURSE_STATUS_LABELS = {"ELIGIBLE":"적격", "CONDITIONAL_STOPS":"조건부 경유지", "LOW_CATEGORY_COVERAGE":"범주 커버리지 부족",
                         "ROUTE_UNRESOLVED":"경로 해석 불가", "TOO_FEW_VISITS":"방문지 부족"}
-STOP_STATUS_LABELS = {"UNMATCHED":"연결 후보 없음", "EXACT_NAME_REGION_CANDIDATE":"지역·이름 일치 후보", "NON_VISIT_OR_UNRESOLVED":"비방문·미확인 경유지",
-                      "PAREN_ALIAS_CANDIDATE":"괄호 별칭 일치 후보", "CONDITIONAL_STOP_REVIEW":"조건부 경유지(검토)", "AMBIGUOUS_NAME":"이름 중복(모호)"}
+STOP_STATUS_LABELS = {"UNMATCHED":"연결 후보 없음", "EXACT_NAME_REGION_CANDIDATE":"지역·이름 일치 후보", "NON_VISIT_STOP":"비방문 지점(이동·식사·출발)",
+                      "ROUTE_UNRESOLVED_STOP":"경로 미해석 코스의 경유지", "PAREN_ALIAS_CANDIDATE":"괄호 별칭 일치 후보",
+                      "QUALIFIED_NAME_CANDIDATE":"지역명·수식어 일치 후보", "NEARBY_REGION_CANDIDATE":"인접 지역 일치 후보",
+                      "CONDITIONAL_STOP_REVIEW":"조건부 경유지(검토)", "AMBIGUOUS_NAME":"이름 중복(모호)"}
 SPEND_FEATURE_LABELS = {"log_n_catalog_places":"관광지 수(로그)", "log_n_lodging":"숙박시설 수(로그)", "log_n_citytours":"시티투어 코스 수(로그)",
                         "log_median_base_minutes":"기준 체류시간 중앙값(로그)", "share_herit":"역사 비중", "share_heal":"자연 비중",
                         "share_activity":"체험 비중", "share_food":"음식 비중", "share_sea":"바다 비중", "unesco_mark_rate":"유네스코 표식 비율"}
@@ -360,6 +362,12 @@ def split_outside(text, separators):
     parts.append("".join(buffer).strip())
     return [p for p in parts if p]
 
+def split_stop_list(text):
+    # Stops listed in one cell ("동문시장&산지천", "A, B", "A 및 B") are all visited; ASCII names such as KT&G stay whole.
+    # "·" is not split because it also joins parts of one name (김좌진·한용운 생가).
+    protected=re.sub(r"(?<=[A-Za-z])&(?=[A-Za-z])","\uE000",text)
+    return [q.replace("\uE000","&") for q in split_outside(protected,["/",",","，","＆","&"," 및 "])]
+
 def parse_route(text):
     text=str(text).strip()
     if not text:return [],"EMPTY"
@@ -386,14 +394,42 @@ KW={"herit":r"궁$|궁궐|왕궁|성곽|읍성|산성|사찰|[가-힣]사$(?<!�
     "food":r"시장|먹거리|맛|음식|카페|막걸리|와이너리|양조|빵|맥주|(?<![예미기])술|냉면|쌀밥|쌀면|로컬푸드|와인|젓갈",
     "sea":r"해수욕장|해변|[가-힣]항$(?<!공항)|바다|섬(?!진강)|포구|해안|등대|해상|해양|방조제|대교|곶|해비치|해오름|[가-힣]{1,3}도(?:\s*입구)?$|군도|갯벌|갯골|어촌|요트"}
 # Explicit alternatives only; "/" lists stops that are all visited and is split below
-CONDITIONAL_RE=r"또는|선택|계절별|상이|\(or |\([^)]*(?:봄|여름|가을|겨울|하계|동계|계절)[^)]*\)"
-full_index,base_index=defaultdict(set),defaultdict(set)
-place_lookup={}
+CONDITIONAL_RE=r"또는|선택|택\s*1|계절별|상이|\(or |\sor\s|\([^)]*(?:봄|여름|가을|겨울|하계|동계|계절)[^)]*\)"
+full_index,base_index,qualified_index,name_index=defaultdict(set),defaultdict(set),defaultdict(set),defaultdict(set)
+place_lookup={};region_centroid={}
+
+def qualified_keys(region,name):
+    # Catalogue names that add the region or a qualifier: "부산 국제시장", "대구앞산공원", "팔공산 동화사" -> 국제시장, 앞산공원, 동화사
+    base=no_parentheses(name).replace("·"," ");full=norm_name(base);keys=set()
+    if full.startswith(region) and len(full)-len(region)>=2:keys.add(full[len(region):])
+    tokens=base.split()
+    if len(tokens)>=2 and len(norm_name(tokens[-1]))>=2:keys.add(norm_name(tokens[-1]))
+    return keys
+
 if places is not None:
     for _,p in places.iterrows():
         region=norm_region(p.region);full_index[(region,norm_name(p["name"]))].add(p.place_id)
         base_index[(region,norm_name(no_parentheses(p["name"])))].add(p.place_id)
+        for key in qualified_keys(region,p["name"]):qualified_index[(region,key)].add(p.place_id)
+        for key in {norm_name(p["name"]),norm_name(no_parentheses(p["name"]))}:name_index[key].add(p.place_id)
         place_lookup[p.place_id]=p
+    located=places[places.coordinate_valid].assign(region_key=lambda d:d.region.map(norm_region))
+    region_centroid={k:(g.lat.mean(),g.lon.mean()) for k,g in located.groupby("region_key")}
+
+def km_between(a,b):
+    la1,lo1,la2,lo2=map(np.radians,[a[0],a[1],b[0],b[1]])
+    return float(6371*2*np.arcsin(np.sqrt(np.sin((la2-la1)/2)**2+np.cos(la1)*np.cos(la2)*np.sin((lo2-lo1)/2)**2)))
+
+def nearby_place(region,name):
+    # A unique catalogue name outside the course region within 50 km of the region's place centroid (courses crossing a border)
+    key=norm_region(region)
+    if places is None or key not in region_centroid:return None
+    ids={pid for k in {norm_name(name),norm_name(no_parentheses(name))} for pid in name_index.get(k,set()) if norm_region(place_lookup[pid].region)!=key}
+    if len(ids)!=1:return None
+    pid=next(iter(ids));p=place_lookup[pid]
+    if not p.coordinate_valid:return None
+    distance=km_between(region_centroid[key],(p.lat,p.lon))
+    return (pid,distance) if distance<=50 else None
 
 def match_place(region,name,conditional=False):
     if conditional:return "CONDITIONAL_STOP_REVIEW",None
@@ -402,6 +438,8 @@ def match_place(region,name,conditional=False):
     ids=full_index.get(key,set());status="EXACT_NAME_REGION_CANDIDATE"
     if not ids:
         ids=base_index.get((norm_region(region),norm_name(no_parentheses(name))),set());status="PAREN_ALIAS_CANDIDATE"
+    if not ids:
+        ids=qualified_index.get((norm_region(region),norm_name(no_parentheses(name))),set());status="QUALIFIED_NAME_CANDIDATE"
     if len(ids)>1:return "AMBIGUOUS_NAME",None
     if len(ids)==1:return status,next(iter(ids))
     return "UNMATCHED",None
@@ -418,8 +456,8 @@ if cities_raw is not None:
     records=[];course_records=[]
     for index,r in city.iterrows():
         parts,parser=parse_route(r.route);parsed=parser in ["EXPLICIT_SEPARATOR","NUMBERED_ORDER","UNORDERED_LIST"]
-        parts=[q for p in parts for q in ([p] if re.search(CONDITIONAL_RE,p) else split_outside(p,["/"]))] if parsed else parts
-        visit_vectors=[];known=0;matched=0;conditional_count=0;cluster_counter=Counter();visit_n=0
+        parts=[q for p in parts for q in ([p] if re.search(CONDITIONAL_RE,p) else split_stop_list(p))] if parsed else parts
+        stop_rows=[];visited=set()
         for seq,raw in enumerate(parts,1):
             name=re.sub(r"^\[\d{1,2}:\d{2}\]\s*","",strip_number(raw));base=no_parentheses(name).strip(" )")
             conditional=bool(re.search(CONDITIONAL_RE,name))
@@ -431,7 +469,23 @@ if cities_raw is not None:
             elif seq in [1,len(parts)] and (norm_name(base)==norm_name(no_parentheses(r.boarding)) or norm_name(base)==norm_name(r.region) or re.search(r"역$|터미널$|주차장$",base)):role="ENDPOINT_TRANSPORT"
             if not parsed:role="UNRESOLVED_ROUTE"
             status,pid=match_place(r.region,name,conditional)
-            if role!="VISIT_CANDIDATE":status,pid="NON_VISIT_OR_UNRESOLVED",None
+            # A catalogued attraction used as a drop-off or start/end point is visited too ("사유원(하차)", 이순신광장 as boarding point); counted once
+            if pid and place_lookup[pid].category!="stay" and base not in visited and (role=="ENDPOINT_TRANSPORT" or (role=="BOARDING_OR_RETURN" and "하차" in name and "승차" not in name)):
+                role="VISIT_CANDIDATE"
+            if role=="VISIT_CANDIDATE":visited.add(base)
+            elif role=="UNRESOLVED_ROUTE":status,pid="ROUTE_UNRESOLVED_STOP",None
+            else:status,pid="NON_VISIT_STOP",None
+            stop_rows.append({"seq":seq,"raw":raw,"name":name,"base":base,"conditional":conditional,"role":role,"status":status,"pid":pid})
+        # Neighbouring regions: accept within 30 km, or up to 50 km when the course has two or more such stops in that region
+        near={s["seq"]:hit for s in stop_rows if s["role"]=="VISIT_CANDIDATE" and s["status"]=="UNMATCHED" and (hit:=nearby_place(r.region,s["name"]))}
+        support=Counter(place_lookup[pid].region for pid,_ in near.values())
+        for s in stop_rows:
+            if s["seq"] in near:
+                pid,distance=near[s["seq"]]
+                if distance<=30 or support[place_lookup[pid].region]>=2:s["status"],s["pid"]="NEARBY_REGION_CANDIDATE",pid
+        visit_vectors=[];known=0;matched=0;conditional_count=0;cluster_counter=Counter();visit_n=0
+        for s in stop_rows:
+            seq,raw,name,base,conditional,role,status,pid=(s[k] for k in ["seq","raw","name","base","conditional","role","status","pid"])
             vector=np.zeros(5);category_source="UNKNOWN";cluster=""
             if role=="VISIT_CANDIDATE":
                 visit_n+=1;conditional_count+=int(conditional)
@@ -469,7 +523,7 @@ if cities_raw is not None:
                                "G_composition_counts":json.dumps(dict(sorted(cluster_counter.items())),ensure_ascii=False)})
     stops=pd.DataFrame(records);course_table=pd.DataFrame(course_records).set_index("source_index")
     save_csv(stops,"citytour_stop_links_review");save_csv(course_table.reset_index(),"citytour_features_and_quality")
-    save_csv(stops[stops.match_status.isin(["UNMATCHED","AMBIGUOUS_NAME","CONDITIONAL_STOP_REVIEW","NON_VISIT_OR_UNRESOLVED"])],"citytour_stop_unresolved")
+    save_csv(stops[stops.match_status.isin(["UNMATCHED","AMBIGUOUS_NAME","CONDITIONAL_STOP_REVIEW","NON_VISIT_STOP","ROUTE_UNRESOLVED_STOP"])],"citytour_stop_unresolved")
     print("코스 / 분석 가능:",len(course_table),"/",int(course_table.cluster_eligible.sum()))
     show_table(course_table.groupby(["parser_status","cluster_status"]).size().reset_index(name="courses"),30)
     print("잠정 장소 후보 연결 슬롯:",int(stops.place_id_candidate.ne("").sum()),"| 확인된 장소 연결: 0")

@@ -67,7 +67,7 @@
       "C4": 0.5517248216535149,
       "C5": 0.44827517834648506
     },
-    "course_count": 229,
+    "course_count": 223,
     "distinct_region_count": 5,
     "course_bonus_terms_demo": [
       "interest",
@@ -421,6 +421,117 @@
       "plots/C_G_06_map.png (new GC cosine-cluster map)",
       "plots/C_T_06_map.png (new TC cosine-cluster map)"
     ],
-    "method": "notebook rerun in the pinned Python 3.12 environment, compared file by file with the kept run; tables and models byte-identical; only these plots, the run file_manifest.csv rows and run_summary.json (created_at, plot_count) differed; the kept run gets the new plots, its manifest rows and plot_count 44 after the cosine maps (42 after the T map) (created_at unchanged)"
+    "method": "notebook rerun in the pinned Python 3.12 environment, compared file by file with the kept run; tables and models byte-identical; only these plots, the run file_manifest.csv rows and run_summary.json (created_at, plot_count) differed; the kept run gets the new plots, its manifest rows and plot_count 44 after the cosine maps (42 after the T map) (created_at unchanged)",
+    "note": "These plots were first added to run_20260929_021855_281961; the current run run_20260929_034626_310365 generates all 44 plots directly."
+  },
+  "link_review_revision": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_034626_310365",
+    "previous_run": "run_20260929_021855_281961",
+    "scope": "stop-place linking review using only the supplied citytour.csv and place catalogue",
+    "rules": [
+      "stops listed in one cell with comma, &, ＆ or \" 및 \" are split; ASCII names such as KT&G and the middle dot \"·\" are kept whole",
+      "\"or\" and \"택1\" are alternatives, treated as conditional stops like 또는/선택",
+      "qualified catalogue names: region prefix removed or last word equal to the stop (부산 국제시장, 팔공산 동화사), unique within the region",
+      "neighbouring regions: unique catalogue name outside the course region within 30 km of the region place centroid, or 30-50 km with two or more such stops in the course",
+      "catalogued non-stay attractions used as start/end or \"(하차)\" points count once as visits",
+      "NON_VISIT_OR_UNRESOLVED split into NON_VISIT_STOP and ROUTE_UNRESOLVED_STOP"
+    ],
+    "stop_status_counts": {
+      "EXACT_NAME_REGION_CANDIDATE": 552,
+      "PAREN_ALIAS_CANDIDATE": 81,
+      "QUALIFIED_NAME_CANDIDATE": 95,
+      "NEARBY_REGION_CANDIDATE": 22,
+      "UNMATCHED": 600,
+      "NON_VISIT_STOP": 539,
+      "ROUTE_UNRESOLVED_STOP": 25,
+      "CONDITIONAL_STOP_REVIEW": 28,
+      "AMBIGUOUS_NAME": 2
+    },
+    "visit_stop_link_rate": {
+      "before": "550/1273",
+      "after": "750/1380"
+    },
+    "eligible_courses": {
+      "before": 229,
+      "after": 223,
+      "dropped_by_alternative_wording": 7,
+      "newly_eligible": 1
+    },
+    "exclusions_after": {
+      "CONDITIONAL_STOPS": 26,
+      "ROUTE_UNRESOLVED": 14,
+      "LOW_CATEGORY_COVERAGE": 12,
+      "TOO_FEW_VISITS": 5
+    },
+    "share_ge_0_3_courses": {
+      "sea": {
+        "before": 26,
+        "after": 20
+      },
+      "food": {
+        "before": 23,
+        "after": 21
+      }
+    },
+    "T_model": {
+      "k": 6,
+      "silhouette_mean": 0.2492,
+      "seed_ari_min": 0.9045,
+      "note": "k=7 silhouette 0.2540 failed the seed-ARI gate (0.659)"
+    },
+    "TC_model": {
+      "k": 8,
+      "cosine_silhouette_mean": 0.4451,
+      "ari_vs_T": 0.6241,
+      "negative_silhouette_share": 0.0314
+    },
+    "unchanged": "G/GC, spending and marine regional outputs byte-identical to the previous run",
+    "marine_course_links": {
+      "before": {
+        "courses": 136,
+        "slots": 276
+      },
+      "after": {
+        "courses": 163,
+        "slots": 378
+      }
+    },
+    "alignment_after": {
+      "interest_top1": {
+        "C": 0.92,
+        "D": 0.789,
+        "E": 0.702,
+        "F": 0.633,
+        "G": 0.556
+      },
+      "interest_top5share": {
+        "C": 0.751,
+        "D": 0.516,
+        "E": 0.496,
+        "F": 0.401,
+        "G": 0.455
+      },
+      "pace_mean_visits": {
+        "A": 5.63,
+        "B": 4.96,
+        "C": 4.16
+      },
+      "night_share_top5": {
+        "H": 0.892,
+        "S6C": 0.112,
+        "other": 0.043
+      }
+    },
+    "alignment_before": {
+      "interest_top1": {
+        "C": 0.948,
+        "D": 0.705,
+        "E": 0.749,
+        "F": 0.792,
+        "G": 0.505
+      }
+    },
+    "simulation_matches_recommend_top5_on_400_random_paths": true
   }
 }

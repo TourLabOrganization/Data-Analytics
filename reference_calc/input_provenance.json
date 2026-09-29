@@ -1,6 +1,6 @@
 {
-  "analysis_run": "run_20260929_021855_281961",
-  "course_rows": 229,
-  "source_file": "analysis/outputs_cosine/run_20260929_021855_281961/tables/T_citytour_assignments_all.csv",
-  "status": "rebuilt after course parser review (2026-09-29): \"/\" lists split, explicit alternatives only as conditional, meal/transport stops excluded, keyword fixes; 229 eligible courses"
+  "analysis_run": "run_20260929_034626_310365",
+  "course_rows": 223,
+  "source_file": "analysis/outputs_cosine/run_20260929_034626_310365/tables/T_citytour_assignments_all.csv",
+  "status": "rebuilt after the stop-place link review (2026-09-29): stops listed in one cell (comma, &, 및) split, \"or\"/\"택1\" treated as alternatives, region-prefixed and qualified catalogue names, neighbouring-region names within 30-50 km, attractions used as start/end or drop-off points; 223 eligible courses. Earlier: course parser review (179 -> 229)."
 }

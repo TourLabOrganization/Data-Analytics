@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "checks": [
-    "41 PNG / 92 CSV and no S or sector outputs",
+    "44 PNG / 92 CSV and no S or sector outputs",
     "Notebook and command-line analysis code are identical",
     "Unchanged non-sector result: G_cosine_assignments.csv",
     "Unchanged non-sector result: T_cosine_assignments.csv (previous_run import check)",
@@ -15,9 +15,9 @@
     "method": "All code cells executed sequentially in one fresh Python process with captured tables and plots; not a socket-backed Jupyter kernel test",
     "python": "3.12.3",
     "code_cells": 19,
-    "elapsed_seconds": 54.9
+    "elapsed_seconds": 60.2
   },
-  "analysis_run": "run_20260929_021855_281961",
+  "analysis_run": "run_20260929_034626_310365",
   "scope": "computational reproduction; not satisfaction or live availability validation",
   "t_block_balance_revision": {
     "date": "2026-09-29",
@@ -104,5 +104,79 @@
       "ari_vs_baseline": 0.8494
     },
     "unchanged": "G/GC, spending and marine regional outputs byte-identical; course tables, T/TC models and marine course-link tables changed"
+  },
+  "link_review_revision": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_034626_310365",
+    "previous_run": "run_20260929_021855_281961",
+    "scope": "stop-place linking review using only the supplied citytour.csv and place catalogue",
+    "rules": [
+      "stops listed in one cell with comma, &, ＆ or \" 및 \" are split; ASCII names such as KT&G and the middle dot \"·\" are kept whole",
+      "\"or\" and \"택1\" are alternatives, treated as conditional stops like 또는/선택",
+      "qualified catalogue names: region prefix removed or last word equal to the stop (부산 국제시장, 팔공산 동화사), unique within the region",
+      "neighbouring regions: unique catalogue name outside the course region within 30 km of the region place centroid, or 30-50 km with two or more such stops in the course",
+      "catalogued non-stay attractions used as start/end or \"(하차)\" points count once as visits",
+      "NON_VISIT_OR_UNRESOLVED split into NON_VISIT_STOP and ROUTE_UNRESOLVED_STOP"
+    ],
+    "stop_status_counts": {
+      "EXACT_NAME_REGION_CANDIDATE": 552,
+      "PAREN_ALIAS_CANDIDATE": 81,
+      "QUALIFIED_NAME_CANDIDATE": 95,
+      "NEARBY_REGION_CANDIDATE": 22,
+      "UNMATCHED": 600,
+      "NON_VISIT_STOP": 539,
+      "ROUTE_UNRESOLVED_STOP": 25,
+      "CONDITIONAL_STOP_REVIEW": 28,
+      "AMBIGUOUS_NAME": 2
+    },
+    "visit_stop_link_rate": {
+      "before": "550/1273",
+      "after": "750/1380"
+    },
+    "eligible_courses": {
+      "before": 229,
+      "after": 223,
+      "dropped_by_alternative_wording": 7,
+      "newly_eligible": 1
+    },
+    "exclusions_after": {
+      "CONDITIONAL_STOPS": 26,
+      "ROUTE_UNRESOLVED": 14,
+      "LOW_CATEGORY_COVERAGE": 12,
+      "TOO_FEW_VISITS": 5
+    },
+    "share_ge_0_3_courses": {
+      "sea": {
+        "before": 26,
+        "after": 20
+      },
+      "food": {
+        "before": 23,
+        "after": 21
+      }
+    },
+    "T_model": {
+      "k": 6,
+      "silhouette_mean": 0.2492,
+      "seed_ari_min": 0.9045,
+      "note": "k=7 silhouette 0.2540 failed the seed-ARI gate (0.659)"
+    },
+    "TC_model": {
+      "k": 8,
+      "cosine_silhouette_mean": 0.4451,
+      "ari_vs_T": 0.6241,
+      "negative_silhouette_share": 0.0314
+    },
+    "unchanged": "G/GC, spending and marine regional outputs byte-identical to the previous run",
+    "marine_course_links": {
+      "before": {
+        "courses": 136,
+        "slots": 276
+      },
+      "after": {
+        "courses": 163,
+        "slots": 378
+      }
+    }
   }
 }

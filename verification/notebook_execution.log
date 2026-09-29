@@ -1,13 +1,13 @@
 Executed code cell 1: 0.0s, 0 outputs
-Executed code cell 2: 1.3s, 1 outputs
+Executed code cell 2: 1.4s, 1 outputs
 places: 3,118행 × 17열 / utf-8-sig
 citytour: 280행 × 13열 / utf-8-sig
 Python 3.12.3 | scikit-learn 1.8.0
-저장 폴더: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_021855_281961
+저장 폴더: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_034626_310365
 
 Executed code cell 3: 0.5s, 2 outputs
 Executed code cell 4: 0.0s, 0 outputs
-Executed code cell 5: 9.0s, 9 outputs
+Executed code cell 5: 9.9s, 9 outputs
 G {
   "rows": 2549,
   "features": [
@@ -35,14 +35,14 @@ PC2 negative: {'cat_herit': -0.6076, 'cat_activity': -0.1902} positive: {'cat_fo
 축 해석: PC1 계수의 절댓값이 가장 큰 변수는 log_stay_robust입니다. 단일 변수의 영향이 크므로 테마 성향이나 여행자 유형으로 바로 해석하지 마세요.
 군집 수 해석: k=10는 이번 탐색의 상한입니다. 전역 최적 군집 수가 확정된 것은 아닙니다.
 
-Executed code cell 6: 0.8s, 2 outputs
-코스 / 분석 가능: 280 / 229
-잠정 장소 후보 연결 슬롯: 550 | 확인된 장소 연결: 0
+Executed code cell 6: 1.1s, 2 outputs
+코스 / 분석 가능: 280 / 223
+잠정 장소 후보 연결 슬롯: 750 | 확인된 장소 연결: 0
 
-Executed code cell 7: 8.2s, 9 outputs
-T 묶음 총표준편차: {'category': 0.432551, 'stop_count': 0.582255, 'night': 0.239578} | 분산 기여: {'category': 0.75, 'stop_count': 0.15, 'night': 0.1}
+Executed code cell 7: 10.0s, 10 outputs
+T 묶음 총표준편차: {'category': 0.433133, 'stop_count': 1.060786, 'night': 0.234302} | 분산 기여: {'category': 0.75, 'stop_count': 0.15, 'night': 0.1}
 T {
-  "rows": 229,
+  "rows": 223,
   "features": [
     "share_herit",
     "share_heal",
@@ -54,17 +54,17 @@ T {
   ],
   "removed_constant_features": [],
   "pca_components": 6,
-  "pca_retained_variance": 0.9790036148482553,
-  "plot_2pc_variance": 0.5102105059162039,
-  "k": 7,
-  "silhouette_mean": 0.252182783914451,
-  "seed_ari_min": 0.9714010254648391,
+  "pca_retained_variance": 0.9818094773922632,
+  "plot_2pc_variance": 0.530295405178014,
+  "k": 6,
+  "silhouette_mean": 0.24920074540105205,
+  "seed_ari_min": 0.9045019432848712,
   "passes_gates": true,
-  "silhouette_sample_size": 229,
+  "silhouette_sample_size": 223,
   "numbering": "run-specific, no persona assignment"
 }
-PC1 negative: {'share_activity': -0.2944, 'share_heal': -0.2455} positive: {'log_visit_count_robust': -0.0196, 'share_herit': 0.8941}
-PC2 negative: {'share_heal': -0.6375, 'night_flag': -0.1542} positive: {'share_food': 0.0466, 'share_activity': 0.7447}
+PC1 negative: {'share_heal': -0.3662, 'share_activity': -0.2434} positive: {'log_visit_count_robust': 0.0215, 'share_herit': 0.8779}
+PC2 negative: {'share_heal': -0.6519, 'night_flag': -0.1587} positive: {'log_visit_count_robust': 0.2401, 'share_activity': 0.6879}
 
 Executed code cell 8: 0.0s, 1 outputs
 {
@@ -76,8 +76,8 @@ Executed code cell 8: 0.0s, 1 outputs
   "region_share_denominator": "hierarchical denominator inferred from sums; not verified from UI metadata"
 }
 
-Executed code cell 9: 1.1s, 2 outputs
-Executed code cell 10: 3.4s, 5 outputs
+Executed code cell 9: 1.0s, 2 outputs
+Executed code cell 10: 3.3s, 5 outputs
 지역 설명 모델 OOF 결과
 
 Executed code cell 11: 0.0s, 1 outputs
@@ -129,7 +129,7 @@ Executed code cell 11: 0.0s, 1 outputs
   "future_forecast_validated": false
 }
 
-Executed code cell 12: 0.1s, 2 outputs
+Executed code cell 12: 0.2s, 2 outputs
 해양 입력과 검증 {
   "method_version": "marine-input-context-2.1",
   "period_start": "202509",
@@ -236,9 +236,9 @@ Executed code cell 12: 0.1s, 2 outputs
     "서산시",
     "서천군",
     "서초구"
-Executed code cell 13: 6.3s, 7 outputs
-Executed code cell 14: 1.0s, 2 outputs
-Executed code cell 15: 3.7s, 4 outputs
+Executed code cell 13: 6.0s, 7 outputs
+Executed code cell 14: 0.9s, 2 outputs
+Executed code cell 15: 3.9s, 4 outputs
 검색순위 적용 {
   "status": "loaded",
   "score_bonus": 0.0,
@@ -370,7 +370,7 @@ Executed code cell 16: 0.0s, 1 outputs
     "서산시",
     "서천군",
     "서초구",
-Executed code cell 17: 18.5s, 13 outputs
+Executed code cell 17: 21.3s, 15 outputs
 G {
   "rows": 2549,
   "excluded_zero_vectors": 0,
@@ -403,7 +403,7 @@ G {
   "status": "QUALIFIED_EXPLORATORY"
 }
 T {
-  "rows": 229,
+  "rows": 223,
   "excluded_zero_vectors": 0,
   "features": [
     "share_herit",
@@ -414,19 +414,19 @@ T {
     "log_visit_count_robust",
     "night_flag"
   ],
-  "k": 7,
+  "k": 8,
   "search_max_k": 10,
   "at_search_upper_bound": false,
-  "cosine_silhouette_mean": 0.4489571168817319,
-  "cosine_silhouette_final_seed": 0.4499939515329184,
-  "negative_silhouette_share": 0.017467248908296942,
+  "cosine_silhouette_mean": 0.44509824914286683,
+  "cosine_silhouette_final_seed": 0.4448428715032144,
+  "negative_silhouette_share": 0.03139013452914798,
   "seed_a
 Executed code cell 18: 0.6s, 3 outputs
 실제 설문 CSV 없음: 명시적 가상 응답 4개로 계산 구조만 시연합니다.
 코사인 수학·수렴·영벡터·설문 범위·기여도 합 검증 완료
 
 Executed code cell 19: 0.1s, 2 outputs
-완료: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_021855_281961
-PNG 41 개 / CSV 92 개
+완료: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_034626_310365
+PNG 44 개 / CSV 92 개
 
-SAVED /home/user/Data-Analytics/analysis/Tour_Navigator_Integrated.ipynb seconds 54.9
+SAVED /home/user/Data-Analytics/analysis/_exec_copy.ipynb seconds 60.2
