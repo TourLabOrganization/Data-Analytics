@@ -517,6 +517,7 @@ if city is not None:
                 pos=city_eligible[["course_id","region","T_cluster"]].join(link_xy,on="course_id")
                 by_region=pos.lat.isna();pos.loc[by_region,["lat","lon"]]=region_xy.reindex(pos.loc[by_region,"region"]).to_numpy()
                 pos=pos.dropna(subset=["lat","lon"]);frame=pos[pos.lon.between(124.5,130.0)&pos.lat.between(33.0,38.7)]
+                course_positions=pos  # reused by the TC cosine map
                 base=pts[pts.lon.between(124.5,130.0)&pts.lat.between(33.0,38.7)]  # all places as a light backdrop outlining the country
                 cluster_ids=list(profile.index);ncol=4;nrow=int(np.ceil(len(cluster_ids)/ncol))
                 fig,axs=plt.subplots(nrow,ncol,figsize=(3.2*ncol,3.8*nrow),squeeze=False)
@@ -1498,6 +1499,35 @@ for prefix,base_raw,clean,name in [('G',places_raw,places,'G_places_with_cosine_
         profiles=interpretation.groupby('cosine_cluster')[[f'share_{c}' for c in CATEGORIES]+['visit_candidate_count','category_coverage','night_flag']].mean()
         profiles.insert(0,'n',interpretation.groupby('cosine_cluster').size())
     save_csv(profiles.reset_index(),prefix+'_cosine_profiles')
+    # Cosine-cluster maps for display only: places at source coordinates, courses at the T-map positions.
+    if prefix=='G':xy=interpretation.loc[interpretation.coordinate_valid,['lat','lon','cosine_cluster']]
+    else:xy=globals()['course_positions'][['lat','lon']].join(a[['cosine_cluster']],how='inner') if 'course_positions' in globals() else None
+    if xy is not None and places is not None:
+        backdrop=places[places.coordinate_valid];backdrop=backdrop[backdrop.lon.between(124.5,130.0)&backdrop.lat.between(33.0,38.7)]
+        frame=xy[xy.lon.between(124.5,130.0)&xy.lat.between(33.0,38.7)]
+        cluster_ids=list(profiles.index);ncol=5 if prefix=='G' else 4;nrow=int(np.ceil(len(cluster_ids)/ncol))
+        fig,axs=plt.subplots(nrow,ncol,figsize=((3.0 if prefix=='G' else 3.2)*ncol,(3.6 if prefix=='G' else 3.8)*nrow),squeeze=False)
+        for ax,g in zip(axs.flat,cluster_ids):
+            row=profiles.loc[g];share=pd.Series({c:float(row[c] if prefix=='G' else row[f'share_{c}']) for c in CATEGORIES});lead=share.idxmax()
+            if prefix=='G':
+                desc,color='·'.join(CAT_LABELS[c] for c in CATEGORIES if share[c]>=0.2),PALETTE[CATEGORIES.index(lead)]
+                title=f"{g} {desc} · {row.base_minutes_median:.0f}분 · {int(row.n)}곳";size=6
+            else:
+                if row.night_flag>=0.5:desc,color="야경","#2B3A67"
+                elif row.visit_candidate_count>=7:desc,color="긴 혼합",PALETTE[9]
+                else:desc,color=f"{CAT_LABELS[lead]} {share[lead]:.2f}",PALETTE[CATEGORIES.index(lead)]
+                title=f"{g} {desc} · {int(row.n)}코스 · 방문지 {row.visit_candidate_count:.1f}곳";size=22
+            ax.scatter(backdrop.lon,backdrop.lat,s=1.5 if prefix=='T' else 2,color="#e4e4e4" if prefix=='T' else "#dddddd",linewidths=0)
+            q=frame[frame.cosine_cluster.eq(g)]
+            ax.scatter(q.lon,q.lat,s=size,color=color,alpha=.8,edgecolor="white" if prefix=='T' else None,linewidths=.4 if prefix=='T' else 0)
+            ax.set_title(title,fontsize=9);ax.set(xlim=(124.5,130.0),ylim=(33.0,38.7),xticks=[],yticks=[]);ax.set_aspect(1/np.cos(np.deg2rad(36)))
+            for side in ax.spines.values():side.set_visible(False)
+        for ax in list(axs.flat)[len(cluster_ids):]:ax.axis("off")
+        fig.suptitle(f"{prefix}C 코사인 군집별 {'관광지' if prefix=='G' else '시티투어 코스'} 위치",fontsize=12)
+        note=("회색: 좌표가 있는 전체 관광지. 색: 해당 군집(주 범주 색). 체류시간은 군집 중앙값" if prefix=='G'
+              else "회색: 전체 관광지. 코스 위치는 T 지도와 같은 잠정 위치(연결 경유지 후보 평균, 없으면 지역 관광지 평균). 범주 비중은 군집 평균")
+        fig.text(.01,.005,f"{note}. 표시 범위 밖 {len(xy)-len(frame)}{'곳' if prefix=='G' else '코스'}",fontsize=8,color="#666")
+        finish(fig,f'C_{prefix}_06_map')
     representative=interpretation.sort_values(['cosine_cluster','assigned_cosine'],ascending=[True,False]).groupby('cosine_cluster').head(3)
     save_csv(representative.reset_index(),prefix+'_cosine_representatives')
 
