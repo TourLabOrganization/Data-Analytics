@@ -1,14 +1,14 @@
 Executed code cell 1: 0.0s, 0 outputs
-Executed code cell 2: 1.4s, 1 outputs
+Executed code cell 2: 2.0s, 1 outputs
 places: 3,118행 × 17열 / utf-8-sig
 citytour: 280행 × 13열 / utf-8-sig
 stop_category_review: 30행 × 4열 / utf-8-sig
 Python 3.12.3 | scikit-learn 1.8.0
-저장 폴더: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_041803_474997
+저장 폴더: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_052711_993598
 
-Executed code cell 3: 0.5s, 2 outputs
+Executed code cell 3: 0.7s, 2 outputs
 Executed code cell 4: 0.0s, 0 outputs
-Executed code cell 5: 10.8s, 9 outputs
+Executed code cell 5: 10.5s, 9 outputs
 G {
   "rows": 2549,
   "features": [
@@ -40,7 +40,7 @@ Executed code cell 6: 2.1s, 2 outputs
 코스 / 분석 가능: 280 / 234
 잠정 장소 후보 연결 슬롯: 749 | 확인된 장소 연결: 0
 
-Executed code cell 7: 9.5s, 10 outputs
+Executed code cell 7: 10.0s, 10 outputs
 T 묶음 총표준편차: {'category': 0.466868, 'stop_count': 1.008398, 'night': 0.23717} | 분산 기여: {'category': 0.75, 'stop_count': 0.15, 'night': 0.1}
 T {
   "rows": 234,
@@ -78,7 +78,7 @@ Executed code cell 8: 0.0s, 1 outputs
 }
 
 Executed code cell 9: 0.9s, 2 outputs
-Executed code cell 10: 3.3s, 5 outputs
+Executed code cell 10: 3.5s, 5 outputs
 지역 설명 모델 OOF 결과
 
 Executed code cell 11: 0.0s, 1 outputs
@@ -237,9 +237,9 @@ Executed code cell 12: 0.1s, 2 outputs
     "서산시",
     "서천군",
     "서초구"
-Executed code cell 13: 6.1s, 7 outputs
-Executed code cell 14: 0.9s, 2 outputs
-Executed code cell 15: 3.7s, 4 outputs
+Executed code cell 13: 6.9s, 7 outputs
+Executed code cell 14: 1.0s, 2 outputs
+Executed code cell 15: 3.8s, 4 outputs
 검색순위 적용 {
   "status": "loaded",
   "score_bonus": 0.0,
@@ -371,7 +371,7 @@ Executed code cell 16: 0.0s, 1 outputs
     "서산시",
     "서천군",
     "서초구",
-Executed code cell 17: 21.2s, 15 outputs
+Executed code cell 17: 21.1s, 15 outputs
 G {
   "rows": 2549,
   "excluded_zero_vectors": 0,
@@ -427,7 +427,7 @@ Executed code cell 18: 0.6s, 3 outputs
 코사인 수학·수렴·영벡터·설문 범위·기여도 합 검증 완료
 
 Executed code cell 19: 0.1s, 2 outputs
-완료: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_041803_474997
+완료: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_052711_993598
 PNG 44 개 / CSV 92 개
 
-SAVED /home/user/Data-Analytics/analysis/_exec_copy.ipynb seconds 61.3
+SAVED /home/user/Data-Analytics/analysis/_exec_copy.ipynb seconds 63.6

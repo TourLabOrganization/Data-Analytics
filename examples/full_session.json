@@ -71,10 +71,11 @@
     "S1": "C",
     "S2": "A",
     "S3": "C",
-    "S4": "C",
+    "S4": ["C", "D"],
     "S5": "C",
     "S6": "A",
     "B2": "A",
+    "B3": "D",
     "F1": "BALANCED"
   },
   "data_status": "SYNTHETIC_DEMONSTRATION"

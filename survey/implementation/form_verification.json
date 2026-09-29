@@ -1,5 +1,5 @@
 {
-  "version": "branch-survey-6.3-proposal",
+  "version": "branch-survey-6.4-proposal",
   "word_pages": 10,
   "form_pages": 6,
   "png_pixels": [
@@ -7,9 +7,10 @@
     3300
   ],
   "dpi": 300,
-  "visual_review": "all pages reviewed; no clipping or broken text",
+  "visual_review": "all pages reviewed at 300 dpi; no clipping or broken text; rendered with the fonts named in the docx",
   "D_none_options": 7,
   "names_unchanged": true,
   "form_contains_scoring_explanations": false,
-  "form_unchanged_since": "branch-survey-6.1-proposal (form shows no scores; 6.2 changed only S4 E scoring, 6.3 changed only the type-score scale and thresholds)"
+  "s4_checkboxes": 9,
+  "form_changes": "6.4: S4 asks for two interests (checkboxes, title '가장 하고 싶은 것 두 가지'), guidance says to answer the B question of each chosen interest (once when shared); 6.2/6.3 changed only scoring, which the form does not show"
 }

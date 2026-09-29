@@ -1,35 +1,39 @@
 {
-  "version": "integrated-6.4-reference",
-  "survey_version": "branch-survey-6.3-proposal",
+  "version": "integrated-6.5-reference",
+  "survey_version": "branch-survey-6.4-proposal",
   "answers": {
     "S1": "C",
     "S2": "A",
     "S3": "C",
-    "S4": "C",
+    "S4": [
+      "C",
+      "D"
+    ],
     "S5": "C",
     "S6": "A",
     "B2": "A",
+    "B3": "D",
     "F1": "BALANCED"
   },
   "scores": {
-    "C1": 5.555555555555555,
-    "C2": 13.333333333333334,
-    "C3": 6.25,
-    "C4": 74.70588235294119,
-    "C5": 71.11111111111111,
+    "C1": 4.3478260869565215,
+    "C2": 10.526315789473685,
+    "C3": 5.0,
+    "C4": 78.42105263157896,
+    "C5": 73.63636363636364,
     "C6": 10.0,
-    "C7": 7.142857142857143,
+    "C7": 5.882352941176471,
     "C8": 9.090909090909092,
-    "C9": 0.0,
-    "C10": 44.44444444444444
+    "C9": 18.181818181818183,
+    "C10": 33.333333333333336
   },
   "ledger": [
     {
       "node": "S1",
       "option": "C",
       "contribution": {
-        "C2": 13.333333333333334,
-        "C5": 5.555555555555555
+        "C2": 10.526315789473685,
+        "C5": 4.545454545454546
       },
       "raw_points": {
         "C2": 2,
@@ -40,9 +44,9 @@
       "node": "S2",
       "option": "A",
       "contribution": {
-        "C1": 5.555555555555555,
-        "C5": 16.666666666666664,
-        "C7": 7.142857142857143,
+        "C1": 4.3478260869565215,
+        "C5": 13.636363636363637,
+        "C7": 5.882352941176471,
         "C8": 9.090909090909092
       },
       "raw_points": {
@@ -56,8 +60,8 @@
       "node": "S3",
       "option": "C",
       "contribution": {
-        "C4": 11.764705882352942,
-        "C5": 16.666666666666664
+        "C4": 10.526315789473685,
+        "C5": 13.636363636363637
       },
       "raw_points": {
         "C4": 2,
@@ -66,24 +70,31 @@
     },
     {
       "node": "S4",
-      "option": "C",
+      "option": [
+        "C",
+        "D"
+      ],
       "contribution": {
-        "C3": 6.25,
-        "C4": 17.647058823529413,
-        "C10": 33.33333333333333
+        "C3": 5.0,
+        "C4": 26.315789473684212,
+        "C10": 26.666666666666668,
+        "C5": 13.636363636363637,
+        "C9": 18.181818181818183
       },
       "raw_points": {
         "C3": 1,
-        "C4": 3,
-        "C10": 3
+        "C4": 5,
+        "C10": 4,
+        "C5": 3,
+        "C9": 2
       }
     },
     {
       "node": "S5",
       "option": "C",
       "contribution": {
-        "C4": 5.882352941176471,
-        "C5": 16.666666666666664,
+        "C4": 5.2631578947368425,
+        "C5": 13.636363636363637,
         "C6": 10.0
       },
       "raw_points": {
@@ -96,8 +107,8 @@
       "node": "S6",
       "option": "A",
       "contribution": {
-        "C4": 11.764705882352942,
-        "C5": 5.555555555555555
+        "C4": 10.526315789473685,
+        "C5": 4.545454545454546
       },
       "raw_points": {
         "C4": 2,
@@ -108,13 +119,19 @@
       "node": "B2",
       "option": "A",
       "contribution": {
-        "C4": 17.647058823529413,
-        "C10": 11.11111111111111
+        "C4": 15.789473684210527,
+        "C10": 6.666666666666667
       },
       "raw_points": {
         "C4": 3,
         "C10": 1
       }
+    },
+    {
+      "node": "B3",
+      "option": "D",
+      "contribution": {},
+      "raw_points": {}
     },
     {
       "node": "F1",
@@ -131,38 +148,44 @@
   ],
   "mode": "mixed",
   "mix_weights": {
-    "C4": 0.5517248216535149,
-    "C5": 0.44827517834648506
+    "C4": 0.5686571547181998,
+    "C5": 0.4313428452818003
   },
   "preference_vector": [
-    0.32068992866140594,
-    0.4344825535039455,
-    0.027586241082675746,
-    0.12758624108267574,
-    0.08965503566929701
+    0.3274628618872799,
+    0.42940285358454006,
+    0.02843285773590999,
+    0.12843285773590998,
+    0.08626856905636006
   ],
   "theme_top3": [
     {
       "theme_id": "warden",
       "name": "왕과 사는 남자",
       "region": "영월",
-      "profile_fit": 0.2769724692771827,
-      "primary_bonus": 0.2,
-      "theme_index": 31.79816461847885,
-      "interest_support": "five_category",
+      "profile_fit": 0.2783465281053819,
+      "primary_bonus": 0.17775000000000002,
+      "theme_index": 30.406435207025464,
+      "interest_support": [
+        "five_category",
+        "five_category"
+      ],
       "G": 0.0,
       "H": 0.0,
       "A": 0.0,
       "D": 0.0
     },
     {
-      "theme_id": "rescene",
-      "name": "RESCENE Route",
-      "region": "경주·거제",
-      "profile_fit": 0.22158280036194708,
-      "primary_bonus": 0.164,
-      "theme_index": 25.705520024129807,
-      "interest_support": "five_category",
+      "theme_id": "jeju",
+      "name": "제주 K-Drama",
+      "region": "제주",
+      "profile_fit": 0.2733496529726953,
+      "primary_bonus": 0.1505,
+      "theme_index": 28.25664353151302,
+      "interest_support": [
+        "five_category",
+        "five_category"
+      ],
       "G": 0.0,
       "H": 0.0,
       "A": 0.0,
@@ -172,10 +195,13 @@
       "theme_id": "kdh",
       "name": "케이팝 데몬 헌터스",
       "region": "서울",
-      "profile_fit": 0.23230131500049062,
-      "primary_bonus": 0.14664664664664664,
-      "theme_index": 25.263197443142488,
-      "interest_support": "five_category",
+      "profile_fit": 0.23349539194183905,
+      "primary_bonus": 0.13038038038038038,
+      "theme_index": 24.258384821481297,
+      "interest_support": [
+        "five_category",
+        "five_category"
+      ],
       "G": 0.0,
       "H": 0.0,
       "A": 0.0,
@@ -191,61 +217,61 @@
       "course_id": "ct_4b24fed6566e54",
       "region": "해남",
       "name": "해남시티투어",
-      "category_fit_score": 94.88792947293629,
+      "category_fit_score": 95.15026710293006,
       "bonus_points": {
         "interest": 15.625,
         "pace": 6.25
       },
-      "adjusted_score": 81.17995592058519,
+      "adjusted_score": 81.34391693933128,
       "route_text": "일요일코스(산이정원 → 대흥사)"
     },
     {
       "course_id": "ct_c59f7d050e72e0",
       "region": "대전",
       "name": "생태교육",
-      "category_fit_score": 94.88792947293629,
+      "category_fit_score": 95.15026710293006,
       "bonus_points": {
         "interest": 15.625,
         "pace": 6.25
       },
-      "adjusted_score": 81.17995592058519,
+      "adjusted_score": 81.34391693933128,
       "route_text": "대전역 → 대전복합터미널(경유) → 대청호(대청댐물문화관) → 대청호자연생태관(대청호자연수변생태공원) → 대전역"
     },
     {
       "course_id": "ct_f558345dd00dbf",
       "region": "아산",
       "name": "역사기행 코스",
-      "category_fit_score": 94.88792947293629,
+      "category_fit_score": 95.15026710293006,
       "bonus_points": {
         "interest": 15.625,
         "pace": 6.25
       },
-      "adjusted_score": 81.17995592058519,
+      "adjusted_score": 81.34391693933128,
       "route_text": "온양온천역 → 온양민속박물관 → 신정호정원 → 현충사은행나무길 → 온양온천역"
     },
     {
       "course_id": "ct_f8bd00d4bc40b3",
       "region": "순천",
       "name": "(기획투어)나이트가든투어",
-      "category_fit_score": 94.88792947293629,
+      "category_fit_score": 95.15026710293006,
       "bonus_points": {
         "interest": 15.625,
         "pace": 6.25
       },
-      "adjusted_score": 81.17995592058519,
+      "adjusted_score": 81.34391693933128,
       "route_text": "순천역 → 철도관사마을 → 순천만국가정원(시크릿어드벤처, 정원드림호, 스페이스브릿지) → 순천역"
     },
     {
-      "course_id": "ct_6bfb1cb10f19bb",
-      "region": "천안",
-      "name": "목요일",
-      "category_fit_score": 85.49713141970781,
+      "course_id": "ct_62dfed5cce4635",
+      "region": "파주",
+      "name": "2026 파주시티투어 당일코스(목요일)",
+      "category_fit_score": 94.32008817231828,
       "bonus_points": {
-        "interest": 20.83333333333333,
+        "interest": 15.625,
         "pace": 6.25
       },
-      "adjusted_score": 80.51904047065071,
-      "route_text": "태학산 치유의 숲 → 점심(아우내장터) → 유관순열사사적지 → 독립기념관"
+      "adjusted_score": 80.82505510769893,
+      "route_text": "황희선생유적지 → 황포돛배 → 산머루농원"
     }
   ],
   "q_source": "type_profile_prior",

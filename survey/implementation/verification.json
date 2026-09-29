@@ -3,16 +3,16 @@
   "score_unit": "type_percent",
   "type_full_score": 100,
   "type_max_raw": {
-    "C1": 18,
-    "C2": 15,
-    "C3": 16,
-    "C4": 17,
-    "C5": 18,
+    "C1": 23,
+    "C2": 19,
+    "C3": 20,
+    "C4": 19,
+    "C5": 22,
     "C6": 10,
-    "C7": 14,
+    "C7": 17,
     "C8": 11,
-    "C9": 9,
-    "C10": 9
+    "C9": 11,
+    "C10": 15
   },
   "clarification_margin": 12,
   "clarification_points": 20,
@@ -21,12 +21,15 @@
   "fixed_options": 60,
   "common_questions": 6,
   "branch_questions": 7,
-  "base_paths": 47628,
-  "clarification_paths": 23409,
-  "completed_paths_including_clarification": 109552,
+  "s4_select_count": 2,
+  "s4_pairs": 36,
+  "base_paths": 730296,
+  "clarification_paths": 379544,
+  "completed_paths_including_clarification": 1756396,
   "answer_counts": [
     7,
-    8
+    8,
+    9
   ],
   "single_result_reachable": [
     "C1",
@@ -40,13 +43,14 @@
     "C9",
     "C10"
   ],
-  "max_mixed_types_observed": 9,
+  "max_mixed_types_observed": 10,
   "checks": [
     "Common and branch A/B/C choices add to eligible types",
     "Every branch D is answered with zero contribution and leaves all previous scores unchanged",
     "Branch A/B/C contribute 4 raw points; D contributes zero without redistribution",
     "Each raw point becomes 100/type_max_raw points; every type reaches 100 on its best route and never exceeds it before F1",
-    "All routes finish in 7 or 8 answers",
+    "S4 takes two different options; each opens its branch, a shared branch is asked once",
+    "All routes finish in 7 to 9 answers (S4 counts as one)",
     "Every type can be a sole result",
     "Stale branch and invalid answers rejected",
     "Score ledger and relative weights consistent"

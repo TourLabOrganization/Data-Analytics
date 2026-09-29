@@ -9,7 +9,7 @@ Thumbs.db
 .env
 .env.*
 analysis/outputs_cosine/run_*/
-!analysis/outputs_cosine/run_20260929_041803_474997/
+!analysis/outputs_cosine/run_20260929_052711_993598/
 analysis/survey_responses.csv
 verification/local_*/
 demographic_upgrade/data/boundaries/

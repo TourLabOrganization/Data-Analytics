@@ -35,9 +35,12 @@ def rank_courses_cosine(response, courses, top_n=None):
     candidates['respondent_id']=str(response['respondent_id'])
     candidates['data_status']=str(response.get('data_status','USER_INPUT'))
     candidates['operational_availability_verified']=False
-    candidates=candidates.sort_values(['coverage_adjusted_score','cosine_similarity','category_coverage','course_id'],ascending=[False,False,False,True])
+    # Order and rank on rounded keys so mathematically equal scores (float noise ~1e-14) tie.
+    keys=pd.DataFrame({'s':candidates.coverage_adjusted_score.round(9),'c':candidates.cosine_similarity.round(12),
+                       'v':candidates.category_coverage.round(12),'id':candidates.course_id},index=candidates.index)
+    candidates=candidates.loc[keys.sort_values(['s','c','v','id'],ascending=[False,False,False,True]).index]
     # Equal component scores share a rank. course_id is only deterministic display order.
-    candidates['score_rank']=candidates.coverage_adjusted_score.rank(method='min',ascending=False).astype(int)
+    candidates['score_rank']=keys.s.reindex(candidates.index).rank(method='min',ascending=False).astype(int)
     candidates['display_order']=np.arange(1,len(candidates)+1)
     keep=['respondent_id','data_status','score_rank','display_order','course_id','region','name','cosine_cluster',
           'cosine_similarity','cosine_fit_score','coverage_factor','coverage_adjusted_score',
