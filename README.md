@@ -228,7 +228,7 @@ npm test --prefix tour_scoring
 python run_session.py examples/full_session.json
 ```
 
-마지막 두 명령과 `tour_scoring`, `survey_legacy`, `session_results`는 **기존 v1~v4 비교용**입니다. 최신 설문은 `reference_calc`를 사용합니다. 성별·연령 구성비는 교차분포가 아닌 주변비율입니다. 한류 자료는 개인 응답 원자료가 아닌 집계 통계입니다.
+마지막 두 명령과 `tour_scoring`, `survey_legacy`, `session_results`는 **기존 v1~v4 비교용**입니다. 최신 설문은 `reference_calc`를 사용합니다. `run_session.py`는 세션 입력에 `branchSurvey`(설문 6.3 응답)가 있으면 `reference_calc`의 추천도 실행해 `session_results/branch_survey_recommendation.json`에 나란히 저장합니다. 세 결과의 점수는 서로 더하지 않습니다. 성별·연령 구성비는 교차분포가 아닌 주변비율입니다. 한류 자료는 개인 응답 원자료가 아닌 집계 통계입니다.
 
 체류·일정 코드는 `tour_scoring/src/scoring-v2.cjs`, `citytour.cjs`, `session.cjs`와 명세서에 있습니다. 신규 설문의 체류 연결은 명세에 포함되어 있으나 `reference_calc`에 일정 검증을 통합한 것은 아닙니다.
 
