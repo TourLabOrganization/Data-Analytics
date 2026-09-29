@@ -1,5 +1,5 @@
 {
-  "version": "branch-survey-6.1-proposal",
+  "version": "branch-survey-6.2-proposal",
   "types": {
     "C1": {
       "name": "트렌드 탐색형",
@@ -261,9 +261,9 @@
           "id": "E",
           "label": "바다",
           "scores": {
-            "C2": 2,
-            "C3": 2,
-            "C9": 2
+            "C2": 1,
+            "C3": 1,
+            "C9": 4
           },
           "branch": "B3"
         },
