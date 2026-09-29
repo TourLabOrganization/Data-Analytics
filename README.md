@@ -38,6 +38,7 @@ Tour Navigator는 여행자가 짧은 설문에 답하면 성향 유형을 판�
 | 노트북 설명·세션 실행기 | 노트북 설명 셀을 최신 규칙으로 정리, `run_session.py`가 최신 설문 추천도 함께 저장 | 코드 셀과 분석 결과는 그대로 |
 | 위치 지도 | 지역 구성 R, 관광지 G, 코스 T, 코사인 GC·TC 군집을 지도로 표시 | 군집이 전국에 퍼지는지 특정 지역에 모이는지 확인 |
 | 설문 로직·유형별 매칭 설명 | README에 문항 구성·판정 6단계·계산 예와 유형별 시티투어 매칭(히트맵, `reference_calc/type_course_matching.py`) 추가 | C1·C2·C7·C8이 모두 음식 군집에 몰리는 점 확인 |
+| 코사인 CSV 점검 | 코사인 관련 CSV 전부를 특징값에서 다시 계산해 대조(94개 항목), 직접 선호 순위의 동점 판정을 반올림한 점수로 변경 | 같은 점수가 부동소수점 오차로 다른 순위를 받던 문제 수정, 점수 값과 다른 결과는 그대로 |
 | 저장소 정리 | 모듈마다 따로 두던 같은 파일 사본을 지우고 한 곳만 읽도록 변경(설문 엔진은 `survey/implementation`, 앱 데이터는 `tour_scoring/data`) | 중복 파일 11개 삭제, 모든 결과는 바이트 단위로 같음 |
 
 항목별 상세 수치와 변경 파일은 [이관 기록](docs/RELEASE_NOTES.md)에 있습니다.
@@ -73,7 +74,7 @@ flowchart LR
 | CSV → PCA·코사인 군집·표·그림 | [Jupyter Notebook](analysis/Tour_Navigator_Integrated.ipynb) · [동일 분석 Python](analysis/run_analysis.py) |
 | 신규 설문 → 유형 → 테마·지역 시티투어 | [추천 코드](reference_calc/recommend_reference.py) · [설문 엔진](survey/implementation/score_survey.py) |
 | 유형별 시티투어 매칭 표 | [계산 코드](reference_calc/type_course_matching.py) · [유형별 대표 5개](reference_calc/type_course_top5.csv) · [유형×군집 평균](reference_calc/type_T_cluster_fit.csv) |
-| 주 분석 PNG 44개·결과 CSV 92개 | [결과 폴더](analysis/outputs_cosine/run_20260929_041803_474997/) |
+| 주 분석 PNG 44개·결과 CSV 92개 | [결과 폴더](analysis/outputs_cosine/run_20260929_052711_993598/) |
 | 입력 데이터의 위치·행 수·해시 | [입력 목록](docs/INPUT_DATA_INDEX.md) · [전체 파일 SHA256](verification/release_manifest.csv) |
 | 기존 앱·확장 산식 비교와 체류 코드 | [Node.js 코드집](tour_scoring/) · [원본 추적 정보](tour_scoring/PROVENANCE.json) |
 
@@ -185,7 +186,7 @@ S4의 답에 따라 후속 문항이 하나로 정해집니다.
 
 ## 분석 결과 둘러보기
 
-아래 그림은 모두 저장소에 있는 결과 파일입니다. 주 분석 그림 44개 전체는 [plots 폴더](analysis/outputs_cosine/run_20260929_041803_474997/plots/)에 있습니다. 그림의 레이블은 칼럼명이나 내부 코드 대신 아래 설명과 같은 이름(적격, 조건부 경유지, 관광지 수 등)으로 표기했습니다.
+아래 그림은 모두 저장소에 있는 결과 파일입니다. 주 분석 그림 44개 전체는 [plots 폴더](analysis/outputs_cosine/run_20260929_052711_993598/plots/)에 있습니다. 그림의 레이블은 칼럼명이나 내부 코드 대신 아래 설명과 같은 이름(적격, 조건부 경유지, 관광지 수 등)으로 표기했습니다.
 
 ### 1. 설문 분기 흐름
 
@@ -203,9 +204,9 @@ S4의 답에 따라 후속 문항이 하나로 정해집니다.
 
 ### 3. 관광지 군집 G: PCA 투영과 범주 구성
 
-![G PCA 투영](analysis/outputs_cosine/run_20260929_041803_474997/plots/04_G_pca_clusters.png)
+![G PCA 투영](analysis/outputs_cosine/run_20260929_052711_993598/plots/04_G_pca_clusters.png)
 
-![G 군집별 범주 구성](analysis/outputs_cosine/run_20260929_041803_474997/plots/07_G_category_profiles.png)
+![G 군집별 범주 구성](analysis/outputs_cosine/run_20260929_052711_993598/plots/07_G_category_profiles.png)
 
 전국 관광지 3,118곳 중 숙박 569곳을 빼고 2,549곳을 군집했습니다. 특징은 범주(원핫), 기준 체류시간, 유네스코 표식입니다. PCA 5축이 분산의 99.4%를 담고, 탐색 범위 k=2~10에서 k=10이 선택됐습니다(실루엣 0.719).
 
@@ -215,13 +216,13 @@ S4의 답에 따라 후속 문항이 하나로 정해집니다.
 
 ### 4. 관광지 군집별 규모와 체류시간
 
-![G 군집 규모와 체류시간](analysis/outputs_cosine/run_20260929_041803_474997/plots/06_G_sizes_and_stay.png)
+![G 군집 규모와 체류시간](analysis/outputs_cosine/run_20260929_052711_993598/plots/06_G_sizes_and_stay.png)
 
 가장 큰 군집은 자연 G07(523곳), 역사 G10(516곳), 음식 G03(459곳)입니다. 체류시간(오른쪽)은 대부분 40~90분에 모입니다. G08(76곳)만 중앙값 180분으로 길며, 자연·체험·바다가 섞인 장시간 방문지 묶음입니다.
 
 ### 5. 관광지 군집의 위치
 
-![G 군집별 관광지 위치](analysis/outputs_cosine/run_20260929_041803_474997/plots/08_G_coordinate_scatter.png)
+![G 군집별 관광지 위치](analysis/outputs_cosine/run_20260929_052711_993598/plots/08_G_coordinate_scatter.png)
 
 군집마다 작은 지도 한 장을 그렸습니다. 회색은 좌표가 있는 전체 관광지, 색 점은 해당 군집이고 색은 주 범주입니다(3절 범주 구성 그림과 같은 색). 제목에는 주 범주, 체류시간 중앙값, 관광지 수를 적었습니다. 울릉·독도 등 24곳은 지도 범위 밖입니다.
 
@@ -234,7 +235,7 @@ S4의 답에 따라 후속 문항이 하나로 정해집니다.
 
 ### 6. 시티투어 코스 정제와 장소 연결
 
-![코스 적격성과 경유지 연결 상태](analysis/outputs_cosine/run_20260929_041803_474997/plots/14_citytour_quality_and_linking.png)
+![코스 적격성과 경유지 연결 상태](analysis/outputs_cosine/run_20260929_052711_993598/plots/14_citytour_quality_and_linking.png)
 
 시티투어 280코스 중 234코스가 분석 조건을 통과했습니다. 조건은 방문 후보 2곳 이상, 범주 분류 커버리지 0.5 이상, 경로 해석 가능, 조건부 경유지 없음입니다. 탈락 46코스는 조건부 경유지 25, 경로 해석 불가 14, 방문지 부족 7입니다.
 
@@ -261,7 +262,7 @@ S4의 답에 따라 후속 문항이 하나로 정해집니다.
 
 ### 7. 코스 군집 T: 범주 구성
 
-![T 군집별 범주 구성](analysis/outputs_cosine/run_20260929_041803_474997/plots/13_T_category_profiles.png)
+![T 군집별 범주 구성](analysis/outputs_cosine/run_20260929_052711_993598/plots/13_T_category_profiles.png)
 
 234코스를 일곱 가지 구성으로 나눴습니다. T01은 바다(0.58), T02는 체험(0.61), T04는 음식(0.29), T05는 자연(0.58), T07은 역사(0.74) 비중이 두드러집니다. T03(14코스)은 야경 코스이고, T06(43코스)은 평균 방문지가 8.5곳인 긴 혼합 코스입니다. 막대 위쪽 회색(범주 미확인)은 두 차례 재분류로 군집마다 2% 이하가 됐습니다.
 
@@ -269,7 +270,7 @@ S4의 답에 따라 후속 문항이 하나로 정해집니다.
 
 ### 8. 코스 군집의 위치
 
-![T 군집별 시티투어 코스 위치](analysis/outputs_cosine/run_20260929_041803_474997/plots/16_T_course_map.png)
+![T 군집별 시티투어 코스 위치](analysis/outputs_cosine/run_20260929_052711_993598/plots/16_T_course_map.png)
 
 T 군집마다 적격 코스의 위치를 지도에 찍었습니다. 연한 회색은 전체 관광지로 국토 윤곽을 보여 주고, 색 점이 해당 군집의 코스입니다. 제목에는 주 범주와 그 비중(군집 평균), 코스 수, 평균 방문지 수를 적었습니다.
 
@@ -283,21 +284,21 @@ T 군집마다 적격 코스의 위치를 지도에 찍었습니다. 연한 회�
 
 ### 9. 기존 T와 코사인 TC 비교
 
-![T에서 TC로의 배정 전이](analysis/outputs_cosine/run_20260929_041803_474997/plots/C_T_04_transition.png)
+![T에서 TC로의 배정 전이](analysis/outputs_cosine/run_20260929_052711_993598/plots/C_T_04_transition.png)
 
 행은 기존 PCA 군집(T), 열은 구면 코사인 군집(TC)입니다. 두 모델 모두 7군집이고 대부분 대응합니다. 체험 T02는 36코스 모두 TC01, 야경 T03은 TC04, 역사 T07은 TC07로 그대로 옮겨 가고, 바다 T01은 16코스 중 15코스가 TC03, 자연 T05는 42코스 중 41코스가 TC06에 남습니다. 음식 T04는 38코스 중 26코스가 음식 TC02에 남고 나머지 12코스는 긴 혼합(4)·역사(4)·바다(2)·체험·자연으로 흩어집니다. 긴 혼합 T06(43코스)은 31코스가 TC05에 남고 12코스는 역사 TC07로 갑니다(기존 대비 ARI 0.749).
 
 ### 10. 기존 군집과 코사인 군집의 분리 정도
 
-![공통 거리에서 비교한 실루엣](analysis/outputs_cosine/run_20260929_041803_474997/plots/C_all_metrics_comparison.png)
+![공통 거리에서 비교한 실루엣](analysis/outputs_cosine/run_20260929_052711_993598/plots/C_all_metrics_comparison.png)
 
 두 모델을 같은 거리로 평가했습니다. 코사인 거리(왼쪽)에서는 G가 0.787에서 0.834로, T가 0.419에서 0.453으로 코사인 군집이 더 잘 나뉩니다. 유클리드 거리(오른쪽)에서는 기존 군집이 약간 높습니다. 평가 거리마다 유리한 모델이 다르므로, 한쪽 수치만으로 어느 모델이 낫다고 판단하지 않습니다.
 
 ### 11. 코사인 군집의 위치 (GC·TC)
 
-![GC 코사인 군집별 관광지 위치](analysis/outputs_cosine/run_20260929_041803_474997/plots/C_G_06_map.png)
+![GC 코사인 군집별 관광지 위치](analysis/outputs_cosine/run_20260929_052711_993598/plots/C_G_06_map.png)
 
-![TC 코사인 군집별 시티투어 코스 위치](analysis/outputs_cosine/run_20260929_041803_474997/plots/C_T_06_map.png)
+![TC 코사인 군집별 시티투어 코스 위치](analysis/outputs_cosine/run_20260929_052711_993598/plots/C_T_06_map.png)
 
 구면 코사인 군집(GC·TC)을 5절·8절과 같은 방식으로 지도에 찍었습니다. 제목과 색 규칙도 같습니다(주 범주, 체류시간 중앙값 또는 방문지 수, 개수). 관광지는 원자료 좌표, 코스는 T 지도와 같은 잠정 위치입니다.
 
@@ -310,23 +311,23 @@ T 군집마다 적격 코스의 위치를 지도에 찍었습니다. 연한 회�
 
 ### 12. 코스 점수가 만들어지는 방식
 
-![코스 점수 범주별 기여](analysis/outputs_cosine/run_20260929_041803_474997/plots/C_survey_course_contributions.png)
+![코스 점수 범주별 기여](analysis/outputs_cosine/run_20260929_052711_993598/plots/C_survey_course_contributions.png)
 
 코스의 범주 적합 점수 `100 × cosine(선호, 코스 범주 비중) × 커버리지`를 범주별 기여로 나눠 보여 줍니다(노트북의 직접 선호 시연이라 관심사·야경·속도 가산은 없습니다). 이 그림은 역사를 강하게 선호하는 **가상 응답**(`DEMO_CULTURE`)의 예입니다. 공동 1위인 세종 천안연계투어와 양산 역사문화코스(98.0점)는 그중 약 70점이 역사에서 옵니다. 실제 서비스에서도 이렇게 "왜 이 코스인지"를 범주별로 설명할 수 있습니다.
 
 ### 13. 해양 관광: 월별 추이와 지역별 분포
 
-![해양 관광 월별 평균 방문자](analysis/outputs_cosine/run_20260929_041803_474997/plots/28_marine_monthly_means.png)
+![해양 관광 월별 평균 방문자](analysis/outputs_cosine/run_20260929_052711_993598/plots/28_marine_monthly_means.png)
 
 2025년 9월부터 2026년 8월까지 행정구역당 평균 방문자 추정치입니다. 연안 도시가 늘 가장 많고 연안 어촌이 가장 적습니다. 모든 집단이 10월과 5월에 오르고, 연안은 여름(7~8월)에 다시 크게 늡니다.
 
-![시도별·연안 구분별 방문자 중앙값](analysis/outputs_cosine/run_20260929_041803_474997/plots/36_marine_province_class_heatmap.png)
+![시도별·연안 구분별 방문자 중앙값](analysis/outputs_cosine/run_20260929_052711_993598/plots/36_marine_province_class_heatmap.png)
 
 시도와 연안 구분별 읍면동 방문자 추정치의 중앙값(백만 명)입니다. 부산(8.81)과 제주(7.13)의 연안 어촌이 가장 높습니다. N/A는 해당 구분의 지역이 없다는 뜻입니다. 해양 자료는 설명용이며 추천 가산점(0)이나 체류 배율(1)에는 반영하지 않습니다.
 
 ### 14. 지역 지출과 관광 공급의 관계
 
-![지역 지출 Ridge 회귀 계수](analysis/outputs_cosine/run_20260929_041803_474997/plots/26_spend_regression_coefficients.png)
+![지역 지출 Ridge 회귀 계수](analysis/outputs_cosine/run_20260929_052711_993598/plots/26_spend_regression_coefficients.png)
 
 111개 지역의 내국인 지출 비중을 관광 공급 특징으로 설명한 Ridge 회귀입니다. 관광지 수가 많을수록 지출 비중이 크고(+0.47), 바다 비중이 클수록 작습니다(−0.26). 다만 교차검증 로그 R²가 0.14로 설명력이 낮고, 계수는 인과가 아닌 연관입니다.
 
@@ -410,6 +411,8 @@ python demographic_upgrade/analyze_demographics.py
 npm test --prefix tour_scoring
 python run_session.py examples/full_session.json
 ```
+
+코사인 관련 CSV(GC·TC 군집, 직접 선호 순위, 세션·추천 참조 점수)는 `python verification/audit_cosine_csvs.py`로 특징값에서 다시 계산해 대조할 수 있습니다(94개 항목, 결과는 `verification/cosine_csv_audit.json`).
 
 마지막 두 명령과 `tour_scoring`, `survey_legacy`, `session_results`는 **기존 v1~v4 비교용**입니다. 최신 설문은 `reference_calc`를 사용합니다. `run_session.py`는 세션 입력에 `branchSurvey`(설문 6.3 응답)가 있으면 `reference_calc`의 추천도 실행해 `session_results/branch_survey_recommendation.json`에 나란히 저장합니다. 세 결과의 점수는 서로 더하지 않습니다. 성별·연령 구성비는 교차분포가 아닌 주변비율입니다. 한류 자료는 개인 응답 원자료가 아닌 집계 통계입니다.
 

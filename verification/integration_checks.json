@@ -15,9 +15,9 @@
     "method": "All code cells executed sequentially in one fresh Python process with captured tables and plots; not a socket-backed Jupyter kernel test",
     "python": "3.12.3",
     "code_cells": 19,
-    "elapsed_seconds": 61.3
+    "elapsed_seconds": 63.6
   },
-  "analysis_run": "run_20260929_041803_474997",
+  "analysis_run": "run_20260929_052711_993598",
   "scope": "computational reproduction; not satisfaction or live availability validation",
   "t_block_balance_revision": {
     "date": "2026-09-29",
@@ -345,5 +345,38 @@
       "cosine": 0.4528
     },
     "unchanged": "G/GC, spending and marine regional outputs byte-identical to the previous run; marine course links 163 courses / 378 slots"
+  },
+  "cosine_csv_audit": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_052711_993598",
+    "previous_run": "run_20260929_041803_474997",
+    "scope": "audit of every cosine-similarity CSV against an independent recomputation from the stored features",
+    "checks_passed": 94,
+    "checked": [
+      "G/T unit features = features / L2 norm; eligibility norms",
+      "GC/TC centers unit length and equal to the normalized mean of member unit vectors",
+      "assigned_cosine = max over centers, margin = best - second, cluster = argmax",
+      "baseline->cosine transition = crosstab of assignments",
+      "silhouette samples and cosine/euclidean comparison silhouettes recomputed",
+      "selected k = best candidate passing the gates; objective non-decreasing",
+      "representatives = top 3 per cluster; profile sizes and means",
+      "*_with_cosine_all columns equal the assignments",
+      "direct-preference rankings: cosine, coverage, adjusted score and category contributions recomputed for the 4 synthetic respondents",
+      "session_results cosine files and reference_calc demo_courses / type_course_matching recomputed"
+    ],
+    "defect_fixed": "rank_courses_cosine ranked and ordered on raw floats, so mathematically equal scores differing by ~1e-14 got different score_rank values and broke the course_id tie order (e.g. DEMO_CULTURE: four courses at 91.018205 ranked 30 and 32). Ranking and ordering now use scores rounded to 9 decimals (cosine and coverage to 12).",
+    "files_changed": [
+      "analysis/run_analysis.py",
+      "analysis/Tour_Navigator_Integrated.ipynb",
+      "analysis/cosine_scoring.py"
+    ],
+    "outputs_changed": {
+      "cosine_course_rankings_all.csv": "score_rank changed on 65 rows and display_order on 109 of 936; all score values identical",
+      "session_results/cosine_all_courses.csv": "score_rank/display_order only; distinct-region top 5 unchanged",
+      "cosine_course_rankings_top10.csv": "unchanged"
+    },
+    "unchanged": "all other result CSVs, models and plots byte-identical to the previous run; reference_calc outputs unchanged",
+    "script": "verification/audit_cosine_csvs.py",
+    "report": "verification/cosine_csv_audit.json"
   }
 }

@@ -98,6 +98,6 @@
   },
   "score_fusion": false,
   "input": "examples/full_session.json",
-  "analysis_run": "analysis/outputs_cosine/run_20260929_041803_474997",
+  "analysis_run": "analysis/outputs_cosine/run_20260929_052711_993598",
   "data_status": "SYNTHETIC_DEMONSTRATION"
 }

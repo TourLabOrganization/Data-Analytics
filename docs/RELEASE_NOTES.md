@@ -164,3 +164,12 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 
 - `reference_calc/type_course_matching.py`(표준 라이브러리)를 추가했다. 유형 C1~C10을 각각 단독 결과로 보고 적격 234코스의 범주 적합(100 × cosine × 분류 커버리지)을 계산해 전체표, 지역별 대표 5개, 코스 군집 T별 평균을 CSV로 남긴다. 가산이 붙지 않는 단일 유형 응답의 `recommend_reference` 결과와 같음을 확인했다.
 - 히트맵 `docs/spec_assets/type_course_matching.png`(그림 코드 `plot_type_course_matching.py`)와 README "여행자 유형별 시티투어 매칭" 절을 추가했다. C4는 역사 T07(88), C3는 체험 T02(86), C9는 바다 T01(85), C5는 자연 T05(83)와 가장 잘 맞고, C1·C2·C7·C8은 모두 음식 T04가 가장 높다.
+
+## 2026-09-29 코사인 유사도 CSV 점검
+
+- 점검: 코사인 관련 CSV를 저장된 특징값에서 독립적으로 다시 계산해 94개 항목을 대조했다. 대상은 GC·TC 단위 특징·중심·배정 코사인·차이·전이표·실루엣·후보 선택·대표·프로필, 직접 선호 순위표, `session_results`, `reference_calc`의 `demo_courses`·`type_course_matching`이다.
+- 발견: 직접 선호 순위표(`cosine_course_rankings_all`, `session_results/cosine_all_courses.csv`)에서 수학적으로 같은 점수가 부동소수점 오차(약 10⁻¹⁴) 때문에 서로 다른 순위를 받고 course_id 동점 규칙이 깨졌다(예: DEMO_CULTURE의 91.018205점 네 코스가 30위와 32위로 갈림).
+- 수정: `rank_courses_cosine`(`analysis/run_analysis.py`, 노트북, `analysis/cosine_scoring.py`)이 점수를 소수 9자리로 반올림한 값으로 정렬·순위를 정한다. 점수 값 자체는 바꾸지 않는다.
+- 재실행: 결과 폴더를 `analysis/outputs_cosine/run_20260929_052711_993598/`로 교체했다. 바뀐 것은 `cosine_course_rankings_all.csv`의 score_rank(65행)·display_order(109행)뿐이고, 상위 10개 표와 나머지 결과·모델·그림은 바이트 단위로 같다. `session_results`도 순위 열만 바뀌었고 지역 대표 5개는 같다. 새 결과에서 94개 항목이 모두 통과한다.
+- 점검 스크립트 `verification/audit_cosine_csvs.py`(결과 `verification/cosine_csv_audit.json`)를 추가했다. 이전 실행에서는 순위표 4개가 동점 규칙에서 실패한다.
+- 명세서 26장에 동점 규칙 문단, 40장에 실행 폴더 문장을 반영했다.
