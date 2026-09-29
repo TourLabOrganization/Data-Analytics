@@ -1,6 +1,6 @@
 {
-  "analysis_run": "run_20260929_015104_463809",
-  "course_rows": 179,
-  "source_file": "analysis/outputs_cosine/run_20260929_015104_463809/tables/T_citytour_assignments_all.csv",
-  "status": "retrained_T_block_variance_balanced; only analysis_T_cluster changed, course shares and coverage unchanged"
+  "analysis_run": "run_20260929_021855_281961",
+  "course_rows": 229,
+  "source_file": "analysis/outputs_cosine/run_20260929_021855_281961/tables/T_citytour_assignments_all.csv",
+  "status": "rebuilt after course parser review (2026-09-29): \"/\" lists split, explicit alternatives only as conditional, meal/transport stops excluded, keyword fixes; 229 eligible courses"
 }
