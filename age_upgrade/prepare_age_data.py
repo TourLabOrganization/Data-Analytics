@@ -49,6 +49,6 @@ for _,r in link.query("place_id!=''").iterrows():
  byplace[r.place_id]={'datalabId':r.datalab_id,'name':r.datalab_name,'matchStatus':r.match_status,'matchWeight':float(r.match_weight),'verified':False,
  'ages':{x.age_band:{'rank':int(x.source_rank),'sharePct':float(x.share_pct),'relativeIntensity':float(x.within_age_relative_intensity)} for _,x in rows.iterrows()}}
 config={'version':'datalab-202509-202608-top30-v1','beta':.03,'period':['2025-09','2026-08'],'ageBands':age,'byPlace':byplace,'scope':'top30_exposure_only','defaultMatchMode':'provisional_damped'}
-(P/'data/age-popularity.json').write_text(json.dumps(config,ensure_ascii=False,indent=2))
+(P.parent/'tour_scoring/data/age-popularity.json').write_text(json.dumps(config,ensure_ascii=False,indent=2))
 audit={'rows':len(long),'unique_datalab_places':len(meta),'rows_per_age':long.groupby('age_band').size().to_dict(),'share_sums':long.groupby('age_band').share_pct.sum().to_dict(),'match_counts':link.match_status.value_counts().to_dict(),'app_matched_places':int((link.place_id!='').sum()),'app_coverage_pct':float((link.place_id!='').sum()/len(master)*100),'complete_age_profiles':int(share[age].notna().all(axis=1).sum()),'period_from_filename':True,'share_denominator':'not specified in CSV; each top30 sum about 100','verified_crosswalk':0}
 (P/'results/data_audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2));print(json.dumps(audit,ensure_ascii=False,indent=2))

@@ -36,7 +36,7 @@ def run():
  bench_age={a:float((df['age_'+a]/df.age_sum).median()) for a in AGES}
  bench_sex={s:float((df['sex_'+s]/df.sex_sum).median()) for s in ['male','female']}
  regs={r.source_region:{'sido':r.sido,'sigungu':r.sigungu,'age':{a:r['age_'+a]/r.age_sum for a in AGES},'sex':{s:r['sex_'+s]/r.sex_sum for s in ['male','female']}} for _,r in df.iterrows()}
- master=pd.read_csv(ROOT/'data/master_age_v3.csv');courses=json.loads((ROOT/'data/citytour.json').read_text());app_regions=set(master.region_name)|{x[0] for x in courses}
+ master=pd.read_csv(ROOT.parent/'age_upgrade/results/nationwide_places_age_clustered.csv');courses=json.loads((ROOT.parent/'tour_scoring/data/citytour_app_zip.json').read_text());app_regions=set(master.region_name)|{x[0] for x in courses}
  coarse={'서울','부산','대구','대전','울산','인천','광주','제주','세종'};matches=[];region_map={}
  for ar in sorted(app_regions):
   if ar in coarse:cands=[];status='COARSE_REGION_NO_WEIGHTED_AGGREGATE'
@@ -50,7 +50,7 @@ def run():
   matches.append({'app_region':ar,'candidate_source_regions':';'.join('|'.join(x) for x in cands),'source_region':rkey,'match_status':status,'usable':eligible,'weight':.5 if eligible else 0})
  pd.DataFrame(matches).to_csv(ROOT/'data/app_region_crosswalk.csv',index=False,encoding='utf-8-sig')
  config={'version':'regional-marginals-v1','period':['2025-09','2026-08'],'sourceSha256':hashlib.sha256(src.read_bytes()).hexdigest(),'regionalGamma':.02,'ageWeight':.75,'sexWeight':.25,'combinedPlaceCityCap':.02,'referenceScope':'90 complete profiles selected by male-composition Top100; NOT nationwide population baseline','upperAgeLabel':'70대 (70+ interpretation unverified)','benchmarkAge':bench_age,'benchmarkSex':bench_sex,'regions':regs,'appRegions':region_map,'placeRegion':dict(zip(master.place_id,master.region_name))}
- (ROOT/'data/region-demographics.json').write_text(json.dumps(config,ensure_ascii=False,indent=2))
+ (ROOT.parent/'tour_scoring/data/region-demographics.json').write_text(json.dumps(config,ensure_ascii=False,indent=2))
  mapping=pd.DataFrame(matches).rename(columns={'app_region':'region_name','source_region':'demographic_source_region','usable':'demographic_usable','weight':'demographic_weight','match_status':'demographic_match_status'})
  full=master.merge(mapping.drop(columns='candidate_source_regions'),on='region_name',how='left')
  fcols=['source_region']+[x for x in df.columns if x.startswith(('age_','sex_'))]
