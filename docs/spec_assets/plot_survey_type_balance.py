@@ -15,7 +15,7 @@ font = next((f for f in ['Malgun Gothic', 'AppleGothic', 'Noto Sans CJK KR', 'Na
 plt.rcParams.update({'font.family': font or 'sans-serif', 'axes.unicode_minus': False})
 rv = json.load(open(R + 'verification/release_validation.json', encoding='utf-8'))['survey_6_3_recommendation_6_4_revision']
 before, after = rv['before'], rv['after']
-names = {c: v['name'] for c, v in json.load(open(R + 'reference_calc/survey_config.json', encoding='utf-8'))['types'].items()}
+names = {c: v['name'] for c, v in json.load(open(R + 'survey/implementation/survey_config.json', encoding='utf-8'))['types'].items()}
 order = sorted(names, key=lambda c: -before['type_share'][c])
 fig, (a1, a2) = plt.subplots(1, 2, figsize=(12, 5.2), gridspec_kw={'width_ratios': [1.35, 1]})
 y = range(len(order)); h = 0.38

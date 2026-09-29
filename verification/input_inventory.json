@@ -46,6 +46,18 @@
     "sha256": "cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324"
   },
   {
+    "file": "analysis/stop_category_review.csv",
+    "rows": 30,
+    "columns": [
+      "region",
+      "name",
+      "category",
+      "basis"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "3cd2219d4290dcac5204adb865a4677f030182ae05e020778dbe4785f45dc70b"
+  },
+  {
     "file": "analysis/spending_csv/spend_region.csv",
     "rows": 233,
     "columns": [
@@ -409,6 +421,6 @@
       "analysis_night_flag"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "3e9c227066f14d61e8a63e7b82d01c8235433b6d343e64925af116aed9e38b90"
+    "sha256": "2ae3d5ff26b3a6d431c66c3963e15aa76951f8e4d815e77471c603258b03f7d4"
   }
 ]

@@ -31,7 +31,7 @@ D1은 선택형 성별 질문입니다. male/female/unspecified/null 허용, 기
 - agePlaceRanking은 기존 장소연령 보정만 보여주는 진단 목록입니다. v4 전체 장소 순위가 아닙니다.
 - 체류와 일정은 v2 estimateStay/validateTimeline을 사용하며 성별로 체류·속도를 변경하지 않습니다.
 
-테마 프로필은 기준 커밋의 페이지 비숙박 장소 고정 스냅샷입니다. 테마·코스를 바꾸면 data/age-candidate-profiles.json 및 data/region-demographics.json을 함께 갱신하세요. 지역 세분 코드 없는 코스를 자동으로 구 단위에 배정하지 않습니다.
+테마 프로필은 기준 커밋의 페이지 비숙박 장소 고정 스냅샷입니다. `data/age-popularity.json`은 `age_upgrade/prepare_age_data.py`, `data/region-demographics.json`은 `demographic_upgrade/prepare_demographics.py`가 이 폴더에 바로 씁니다. 테마·코스를 바꾸면 data/age-candidate-profiles.json 및 data/region-demographics.json을 함께 갱신하세요. 지역 세분 코드 없는 코스를 자동으로 구 단위에 배정하지 않습니다.
 
 ## 검증
 

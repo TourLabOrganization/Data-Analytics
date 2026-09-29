@@ -75,6 +75,11 @@
         "score": 81.179956
       },
       {
+        "region": "대전",
+        "name": "생태교육",
+        "score": 81.179956
+      },
+      {
         "region": "아산",
         "name": "역사기행 코스",
         "score": 81.179956
@@ -85,11 +90,6 @@
         "score": 81.179956
       },
       {
-        "region": "대전",
-        "name": "역사문화(동춘당)",
-        "score": 80.51904
-      },
-      {
         "region": "천안",
         "name": "목요일",
         "score": 80.51904
@@ -98,6 +98,6 @@
   },
   "score_fusion": false,
   "input": "examples/full_session.json",
-  "analysis_run": "analysis/outputs_cosine/run_20260929_040247_185905",
+  "analysis_run": "analysis/outputs_cosine/run_20260929_041803_474997",
   "data_status": "SYNTHETIC_DEMONSTRATION"
 }

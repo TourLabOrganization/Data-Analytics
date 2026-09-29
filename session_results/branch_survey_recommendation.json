@@ -200,6 +200,18 @@
       "route_text": "일요일코스(산이정원 → 대흥사)"
     },
     {
+      "course_id": "ct_c59f7d050e72e0",
+      "region": "대전",
+      "name": "생태교육",
+      "category_fit_score": 94.88792947293629,
+      "bonus_points": {
+        "interest": 15.625,
+        "pace": 6.25
+      },
+      "adjusted_score": 81.17995592058519,
+      "route_text": "대전역 → 대전복합터미널(경유) → 대청호(대청댐물문화관) → 대청호자연생태관(대청호자연수변생태공원) → 대전역"
+    },
+    {
       "course_id": "ct_f558345dd00dbf",
       "region": "아산",
       "name": "역사기행 코스",
@@ -222,18 +234,6 @@
       },
       "adjusted_score": 81.17995592058519,
       "route_text": "순천역 → 철도관사마을 → 순천만국가정원(시크릿어드벤처, 정원드림호, 스페이스브릿지) → 순천역"
-    },
-    {
-      "course_id": "ct_0d96bb8740671d",
-      "region": "대전",
-      "name": "역사문화(동춘당)",
-      "category_fit_score": 85.49713141970781,
-      "bonus_points": {
-        "interest": 20.83333333333333,
-        "pace": 6.25
-      },
-      "adjusted_score": 80.51904047065071,
-      "route_text": "대전역 → 대전복합터미널(경유) → 동춘당 → 우암사적공원(남간정사) → 옛충남도청(근현대사전시관) → (으능정이거리 경유) 대전역"
     },
     {
       "course_id": "ct_6bfb1cb10f19bb",

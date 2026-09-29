@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,csv,sys,math
-root=Path(__file__).resolve().parent;sys.path.insert(0,str(root))
+root=Path(__file__).resolve().parent;sys.path.insert(0,str(root));sys.path.insert(0,str(root.parent/'survey/implementation'))
 from recommend_reference import recommend,normalize,CFG
 from score_survey import evaluate,CONFIG
 CFG_S=CONFIG['scoring']

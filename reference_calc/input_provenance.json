@@ -1,6 +1,6 @@
 {
-  "analysis_run": "run_20260929_040247_185905",
+  "analysis_run": "run_20260929_041803_474997",
   "course_rows": 234,
-  "source_file": "analysis/outputs_cosine/run_20260929_040247_185905/tables/T_citytour_assignments_all.csv",
-  "status": "rebuilt after reclassifying unknown-category stops (2026-09-29): non-visit leftovers excluded, keyword dictionary extended; 234 eligible courses. Earlier: course parser review (179 -> 229), stop-place link review (229 -> 223)."
+  "source_file": "analysis/outputs_cosine/run_20260929_041803_474997/tables/T_citytour_assignments_all.csv",
+  "status": "rebuilt after the second pass over unknown-category stops (2026-09-29): parenthesised notes, catalogue consensus and the reviewed table analysis/stop_category_review.csv; 234 eligible courses (화성 바다와 하루 in, one 화순적벽 course out). Earlier: course parser review (179 -> 229), stop-place link review (229 -> 223), first reclassification (223 -> 234)."
 }

@@ -57,7 +57,7 @@ def main():
             branch_summary={'status':'INCOMPLETE','next_question':rec['survey']['next_question']['id']};branch_file.unlink(missing_ok=True)
         else:
             sv=rec['survey']
-            # Compact record: the full 229-course ranking stays reproducible from reference_calc.
+            # Compact record: the full 234-course ranking stays reproducible from reference_calc.
             keep={'version':rec['version'],'survey_version':sv['version'],'answers':branch,'scores':sv['scores'],'ledger':sv['ledger'],
                   'result_types':sv['result_types'],'mode':sv['mode'],'mix_weights':rec['mix_weights'],'preference_vector':rec['preference_vector'],
                   'theme_top3':rec['theme_top3'],'course_bonus_terms':rec['course_bonus_terms'],

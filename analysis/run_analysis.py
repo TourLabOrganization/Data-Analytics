@@ -7,6 +7,7 @@ os.chdir(Path(__file__).resolve().parent)
 from pathlib import Path
 PLACES_CSV = Path("tour-places.csv")  # 여행장소 파일 또는 None
 CITYTOUR_CSV = Path("citytour.csv")  # 시티투어 파일 또는 None
+STOP_REVIEW_CSV = Path("stop_category_review.csv")  # 이름만으로 범주를 정할 수 없는 경유지의 검토 범주와 근거, 없으면 None
 OUTPUT_ROOT = Path("outputs_cosine")
 AUTO_INSTALL = False
 PCA_TARGET = 0.95
@@ -139,6 +140,7 @@ def robust_log(values):
 
 places_raw = read_csv_input(PLACES_CSV, "places")
 cities_raw = read_csv_input(CITYTOUR_CSV, "citytour")
+stop_review_raw = read_csv_input(STOP_REVIEW_CSV, "stop_category_review") if cities_raw is not None else None
 if places_raw is None and cities_raw is None and (SPENDING_INPUT is None or not Path(SPENDING_INPUT).exists()) and (MARINE_INPUT is None or not Path(MARINE_INPUT).exists()):
     raise FileNotFoundError("장소·코스 CSV, 지출 입력, 해양 입력 중 하나 이상을 첫 설정 셀에서 지정하세요.")
 print("Python", platform.python_version(), "| scikit-learn", sklearn.__version__)
@@ -388,10 +390,10 @@ def parse_route(text):
 def strip_number(text):
     return re.sub(r"^\s*(?:[①-⑳]|\d{1,2}[.)])\s*","",text).strip()
 
-KW={"herit":r"궁$|궁궐|왕궁|성곽|읍성|산성|사찰|[가-힣]사$(?<!공사)(?<!청사)(?<!회사)(?<!식사)|향교|서원|박물관|유적|고분|릉|역사|문화재|한옥|민속|전통|사지|기념관|고택|석굴|석빙고|석불|성지|성당|문학관|생가|당간지주|감영|근현대|국악|순교|위령|현충원|현충사|[가-힣]총$|총 터|묘$|묘역|가옥|형무소|옛[가-힣]|원도심|시간여행|관사마을|하숙마을|기록관|태실|선소|주둔지|발상지|원불교|수녀회|DMZ|JSA|[가-힣]{2}당$(?<!식당)",
-    "heal":r"산$|숲|수목원|공원|호수|저수지|계곡|습지|정원|폭포|자연|생태|휴양림|둘레길|농원|수변|동산|산림|댐|물문화관|두물머리|온천|식물원|식물권|온실|걷기|산책|트래킹|트레킹|[가-힣]길$|구곡|적벽|담악|육백마지기|캠핑|화석산지|[가-힣]봉$",
-    "activity":r"체험|테마파크|랜드|케이블카|(?<!코)레일|짚|루지|월드|과학관|전망대|스카이|목장|놀이|곤돌라|출렁다리|아울렛|서커스|요트|웨이브파크|동굴|아트밸리|미술관|세트장|촬영지|도예|카누|워크$|템플스테이|공연|문화단지|기차마을|홍보관|전시관|체험관|견학|(?<!물)문화관|아트벙커|갤러리|공방|책방|도서관|상상|플렉스|엔터테인먼트|리조트|파라다이스|백화점|IKEA|아쿠아|관광지$|관광단지|광장$|분수|축제|투어$|컨벤션|명품관|체육관|경기장|카리용|G타워|산업|산단|발전소|발전단지|회수시설|매립지|만들기|라베니체|우체국",
-    "food":r"시장|먹거리|맛|음식|카페|막걸리|와이너리|양조|빵|맥주|(?<![예미기])술|냉면|쌀밥|쌀면|로컬푸드|와인|젓갈|장터|마켓|먹자골목|갓김치|새우젓|과메기|닭갈비|과자|김치|주류",
+KW={"herit":r"궁$|궁궐|왕궁|성곽|읍성|산성|사찰|[가-힣]사$(?<!공사)(?<!청사)(?<!회사)(?<!식사)|향교|서원|박물관|유적|고분|릉|역사|문화재|한옥|민속|전통|사지|기념관|고택|석굴|석빙고|석불|성지|성당|문학관|생가|당간지주|감영|근현대|국악|순교|위령|현충원|현충사|[가-힣]총$|총 터|묘$|묘역|가옥|형무소|옛[가-힣]|원도심|시간여행|관사마을|하숙마을|기록관|태실|선소|주둔지|발상지|원불교|수녀회|DMZ|JSA|[가-힣]{2}당$(?<!식당)|발원지|나루",
+    "heal":r"산$|숲|수목원|공원|호수|저수지|계곡|습지|정원|폭포|자연|생태|휴양림|둘레길|농원|수변|동산|산림|댐|물문화관|두물머리|온천|식물원|식물권|온실|걷기|산책|트래킹|트레킹|[가-힣]길$|구곡|적벽|담악|육백마지기|캠핑|화석산지|[가-힣]봉$|에코",
+    "activity":r"체험|테마파크|랜드|케이블카|(?<!코)레일|짚|루지|월드|과학관|전망대|스카이|목장|놀이|곤돌라|출렁다리|아울렛|서커스|요트|웨이브파크|동굴|아트밸리|미술관|세트장|촬영지|도예|카누|워크$|템플스테이|공연|문화단지|기차마을|홍보관|전시관|체험관|견학|(?<!물)문화관|아트벙커|갤러리|공방|책방|도서관|상상|플렉스|엔터테인먼트|리조트|파라다이스|백화점|IKEA|아쿠아|관광지$|관광단지|광장$|분수|축제|투어$|컨벤션|명품관|체육관|경기장|카리용|G타워|산업|산단|발전소|발전단지|회수시설|매립지|만들기|라베니체|우체국|문화제|창작|돛배|유람선",
+    "food":r"시장|먹거리|맛|음식|카페|막걸리|와이너리|양조|빵|맥주|(?<![예미기])술|냉면|쌀밥|쌀면|로컬푸드|와인|젓갈|장터|마켓|먹자골목|갓김치|새우젓|과메기|닭갈비|과자|김치|주류|농산물",
     "sea":r"해수욕장|해변|[가-힣]항$(?<!공항)|바다|섬(?!진강)|포구|해안|등대|해상|해양|방조제|대교|곶|해비치|해오름|[가-힣]{1,3}도(?:\s*입구)?$|군도|갯벌|갯골|어촌|요트|선착장|해녀|[가-힣]리포$|울돌목"}
 # Explicit alternatives only; "/" lists stops that are all visited and is split below
 CONDITIONAL_RE=r"또는|선택|택\s*1|계절별|상이|\(or |\sor\s|\([^)]*(?:봄|여름|가을|겨울|하계|동계|계절)[^)]*\)"
@@ -431,6 +433,29 @@ def nearby_place(region,name):
     distance=km_between(region_centroid[key],(p.lat,p.lon))
     return (pid,distance) if distance<=50 else None
 
+def fallback_category(region,name,base,pid):
+    """Category for a visit stop that neither the catalogue link nor the name keywords classify.
+    Returns (vector, category_source, role); role changes when the stop turns out not to be a visit."""
+    notes=[n.strip() for n in re.findall(r"\(([^()]*)\)",name)]
+    if pid and place_lookup[pid].category=="stay":return np.zeros(5),"UNKNOWN","TRANSPORT_OR_PLACEHOLDER"
+    if any(re.fullmatch(r"(?:자율)?중식|석식",n) for n in notes):return np.zeros(5),"UNKNOWN","MEAL_BREAK"
+    if any(re.search(r"호텔$|앞$",n) for n in notes):return np.zeros(5),"UNKNOWN","TRANSPORT_OR_PLACEHOLDER"
+    # 1) the note in parentheses: "대청호(대청댐물문화관)", "계룡산(동학사) 탐방"
+    vector=np.array([any(re.search(KW[c],n) for n in notes) for c in CATEGORIES],float)
+    if vector.sum():return vector/vector.sum(),"KEYWORD_IN_NOTE","VISIT_CANDIDATE"
+    # 2) every non-lodging catalogue place in the region whose name contains the stop shares one category (둔병 -> 둔병대교)
+    key=norm_name(base);region_key=norm_region(region)
+    if len(key)>=2 and places is not None:
+        cats={p.category for p in place_lookup.values() if norm_region(p.region)==region_key and p.category in CATEGORIES and key in norm_name(p["name"])}
+        if len(cats)==1:
+            vector=np.zeros(5);vector[CATEGORIES.index(next(iter(cats)))]=1;return vector,"CATALOGUE_CONSENSUS","VISIT_CANDIDATE"
+    # 3) reviewed category with its basis in stop_category_review.csv
+    reviewed=STOP_REVIEW.get((region_key,key))
+    if reviewed=="NON_VISIT":return np.zeros(5),"MANUAL_REVIEW","TRANSPORT_OR_PLACEHOLDER"
+    if reviewed in CATEGORIES:
+        vector=np.zeros(5);vector[CATEGORIES.index(reviewed)]=1;return vector,"MANUAL_REVIEW","VISIT_CANDIDATE"
+    return np.zeros(5),"UNKNOWN","VISIT_CANDIDATE"
+
 def match_place(region,name,conditional=False):
     if conditional:return "CONDITIONAL_STOP_REVIEW",None
     if places is None:return "NO_PLACE_MASTER",None
@@ -453,6 +478,12 @@ if cities_raw is not None:
              "notes":["운행 요일·비고","notes_raw"],"reference_date":["데이터 기준일","reference_date"]}
     city=standard_columns(cities_raw,mapping,{"region","name","route"})
     city["course_id"]=["ct_"+hashlib.sha256((str(i)+"|"+r.region+"|"+r["name"]+"|"+r.route).encode()).hexdigest()[:14] for i,r in city.iterrows()]
+    STOP_REVIEW={}
+    if stop_review_raw is not None:
+        review=standard_columns(stop_review_raw,{"region":["region","지역"],"name":["name","경유지"],"category":["category","범주"],"basis":["basis","근거"]},{"region","name","category","basis"})
+        bad=set(review.category)-set(CATEGORIES)-{"NON_VISIT","UNKNOWN"}
+        if bad:raise ValueError(f"stop_category_review.csv의 범주 값이 올바르지 않습니다: {sorted(bad)}")
+        STOP_REVIEW={(norm_region(x.region),norm_name(x["name"])):x.category for _,x in review.iterrows()}
     records=[];course_records=[]
     for index,r in city.iterrows():
         parts,parser=parse_route(r.route);parsed=parser in ["EXPLICIT_SEPARATOR","NUMBERED_ORDER","UNORDERED_LIST"]
@@ -489,15 +520,19 @@ if cities_raw is not None:
             seq,raw,name,base,conditional,role,status,pid=(s[k] for k in ["seq","raw","name","base","conditional","role","status","pid"])
             vector=np.zeros(5);category_source="UNKNOWN";cluster=""
             if role=="VISIT_CANDIDATE":
-                visit_n+=1;conditional_count+=int(conditional)
-                if pid:
-                    p=place_lookup[pid];matched+=1
-                    if p.category in CATEGORIES:
-                        vector[CATEGORIES.index(p.category)]=1;category_source="PROVISIONAL_PLACE_CATEGORY"
-                    if pd.notna(p.get("G_cluster")):cluster=p.G_cluster;cluster_counter[cluster]+=1
+                if pid and place_lookup[pid].category in CATEGORIES:
+                    vector[CATEGORIES.index(place_lookup[pid].category)]=1;category_source="PROVISIONAL_PLACE_CATEGORY"
                 if not vector.any() and not conditional:
                     vector=np.array([bool(re.search(KW[c],base)) for c in CATEGORIES],float)
                     if vector.sum():vector/=vector.sum();category_source="KEYWORD_ESTIMATE"
+                if not vector.any() and not conditional:
+                    vector,category_source,role=fallback_category(r.region,name,base,pid)
+                    if role!="VISIT_CANDIDATE":status,pid="NON_VISIT_STOP",None
+            if role=="VISIT_CANDIDATE":
+                visit_n+=1;conditional_count+=int(conditional)
+                if pid:
+                    p=place_lookup[pid];matched+=1
+                    if pd.notna(p.get("G_cluster")):cluster=p.G_cluster;cluster_counter[cluster]+=1
                 known+=int(vector.any());visit_vectors.append(vector)
             records.append({"course_id":r.course_id,"source_row":index+2,"region":r.region,"course_name":r["name"],"sequence":seq,
                             "stop_raw":raw,"name_candidate":base,"parser_status":parser,"role":role,"conditional":conditional,

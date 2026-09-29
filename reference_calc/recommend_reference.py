@@ -4,8 +4,9 @@ Python 3.10+, standard library only. python recommend_reference.py demo_answers.
 """
 from pathlib import Path
 import json,csv,math,sys
-from score_survey import evaluate
 ROOT=Path(__file__).resolve().parent
+sys.path.insert(0,str(ROOT.parent/'survey/implementation'))  # survey engine and survey_config.json live there
+from score_survey import evaluate
 CFG=json.loads((ROOT/'recommendation_config.json').read_text(encoding='utf-8'))
 
 def normalize(v):
