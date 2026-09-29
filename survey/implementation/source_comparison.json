@@ -53,7 +53,7 @@
     "All ten candidate types",
     "Experience-focused labels",
     "Branch and clarification scores",
-    "Final mixed margin of two points"
+    "Type scores on a 100-point scale per type; final mixed margin of 12 points"
   ],
   "legacy_file_sha256": "f95ef143df1b12a9c7130f816dfd467275a743382cfb480b3996b295be5b4167",
   "version_6_1_changes": {
@@ -89,5 +89,40 @@
     },
     "option_total_points_unchanged": true,
     "branch_options_unchanged": true
+  },
+  "version_6_3_changes": {
+    "option_raw_points_unchanged": true,
+    "type_names_unchanged": true,
+    "score_unit": "type_percent (raw points x 100 / type_max_raw)",
+    "type_max_raw": {
+      "C1": 18,
+      "C2": 15,
+      "C3": 16,
+      "C4": 17,
+      "C5": 18,
+      "C6": 10,
+      "C7": 14,
+      "C8": 11,
+      "C9": 9,
+      "C10": 9
+    },
+    "clarification_margin": {
+      "old": 2,
+      "new": 12
+    },
+    "clarification_points": {
+      "old": 4,
+      "new": 20
+    },
+    "final_mixed_margin": {
+      "old": 2,
+      "new": 12
+    },
+    "weight_halving_points": {
+      "old": 2,
+      "new": 12
+    },
+    "version": "branch-survey-6.3-proposal",
+    "reason": "유형별 최대 원점수 차이로 결과가 몇몇 유형에 몰리던 문제 완화"
   }
 }

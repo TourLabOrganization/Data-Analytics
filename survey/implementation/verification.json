@@ -1,10 +1,29 @@
 {
   "status": "passed",
+  "score_unit": "type_percent",
+  "type_full_score": 100,
+  "type_max_raw": {
+    "C1": 18,
+    "C2": 15,
+    "C3": 16,
+    "C4": 17,
+    "C5": 18,
+    "C6": 10,
+    "C7": 14,
+    "C8": 11,
+    "C9": 9,
+    "C10": 9
+  },
+  "clarification_margin": 12,
+  "clarification_points": 20,
+  "final_mixed_margin": 12,
+  "weight_halving_points": 12,
   "fixed_options": 60,
   "common_questions": 6,
   "branch_questions": 7,
   "base_paths": 47628,
-  "completed_paths_including_clarification": 141897,
+  "clarification_paths": 23409,
+  "completed_paths_including_clarification": 109552,
   "answer_counts": [
     7,
     8
@@ -25,7 +44,8 @@
   "checks": [
     "Common and branch A/B/C choices add to eligible types",
     "Every branch D is answered with zero contribution and leaves all previous scores unchanged",
-    "Branch A/B/C contribute 4 points; D contributes zero without redistribution",
+    "Branch A/B/C contribute 4 raw points; D contributes zero without redistribution",
+    "Each raw point becomes 100/type_max_raw points; every type reaches 100 on its best route and never exceeds it before F1",
     "All routes finish in 7 or 8 answers",
     "Every type can be a sole result",
     "Stale branch and invalid answers rejected",

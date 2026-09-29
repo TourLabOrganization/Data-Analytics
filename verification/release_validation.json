@@ -3,11 +3,30 @@
   "verified_at_utc": "2026-09-28T22:30:51.311856+00:00",
   "survey": {
     "status": "passed",
+    "score_unit": "type_percent",
+    "type_full_score": 100,
+    "type_max_raw": {
+      "C1": 18,
+      "C2": 15,
+      "C3": 16,
+      "C4": 17,
+      "C5": 18,
+      "C6": 10,
+      "C7": 14,
+      "C8": 11,
+      "C9": 9,
+      "C10": 9
+    },
+    "clarification_margin": 12,
+    "clarification_points": 20,
+    "final_mixed_margin": 12,
+    "weight_halving_points": 12,
     "fixed_options": 60,
     "common_questions": 6,
     "branch_questions": 7,
     "base_paths": 47628,
-    "completed_paths_including_clarification": 141897,
+    "clarification_paths": 23409,
+    "completed_paths_including_clarification": 109552,
     "answer_counts": [
       7,
       8
@@ -28,7 +47,8 @@
     "checks": [
       "Common and branch A/B/C choices add to eligible types",
       "Every branch D is answered with zero contribution and leaves all previous scores unchanged",
-      "Branch A/B/C contribute 4 points; D contributes zero without redistribution",
+      "Branch A/B/C contribute 4 raw points; D contributes zero without redistribution",
+      "Each raw point becomes 100/type_max_raw points; every type reaches 100 on its best route and never exceeds it before F1",
       "All routes finish in 7 or 8 answers",
       "Every type can be a sole result",
       "Stale branch and invalid answers rejected",
@@ -38,10 +58,15 @@
   },
   "reference_recommendation": {
     "status": "passed",
+    "survey_score_unit": "type_percent",
     "mixed_types": [
       "C4",
       "C5"
     ],
+    "mix_weights": {
+      "C4": 0.5517248216535149,
+      "C5": 0.44827517834648506
+    },
     "course_count": 229,
     "distinct_region_count": 5,
     "course_bonus_terms_demo": [
@@ -50,7 +75,7 @@
     ],
     "no_bonus_equals_category_fit": true,
     "night_interest_top3_night_courses": true,
-    "type_profile_L1": 1.0,
+    "type_profile_L1": 0.9999999999999999,
     "D_preserves_previous_scores": true,
     "empirical_validation": false,
     "deployment": false
@@ -205,5 +230,187 @@
       }
     },
     "simulation_matches_recommend_top5_on_400_random_paths": true
+  },
+  "survey_6_3_recommendation_6_4_revision": {
+    "date": "2026-09-29",
+    "survey_version": "branch-survey-6.3-proposal",
+    "recommendation_version": "integrated-6.4-reference",
+    "changes": [
+      "type score = raw points x 100 / type_max_raw (each type out of 100)",
+      "clarification margin 2 -> 12, clarification points 4 -> 20, final mixed margin 2 -> 12, weight halving 2 -> 12 (100-point scale)",
+      "recommend_reference mixes result types by the survey relative weights"
+    ],
+    "method": "every complete survey path, uniform over options; structural check, not user distribution",
+    "candidates_compared": [
+      {
+        "M": 10,
+        "F1": 25,
+        "H": 10,
+        "max_min_ratio": 2.69,
+        "f1_rate": 0.428,
+        "single_rate": 0.793,
+        "interest_top1": {
+          "C": 0.943,
+          "D": 0.669,
+          "E": 0.746,
+          "F": 0.806,
+          "G": 0.502
+        }
+      },
+      {
+        "M": 12,
+        "F1": 25,
+        "H": 12,
+        "max_min_ratio": 2.58,
+        "f1_rate": 0.491,
+        "single_rate": 0.786,
+        "interest_top1": {
+          "C": 0.932,
+          "D": 0.665,
+          "E": 0.742,
+          "F": 0.774,
+          "G": 0.494
+        }
+      },
+      {
+        "M": 15,
+        "F1": 25,
+        "H": 15,
+        "max_min_ratio": 2.76,
+        "f1_rate": 0.563,
+        "single_rate": 0.626,
+        "interest_top1": {
+          "C": 0.946,
+          "D": 0.695,
+          "E": 0.734,
+          "F": 0.768,
+          "G": 0.495
+        }
+      },
+      {
+        "M": 12,
+        "F1": 20,
+        "H": 12,
+        "max_min_ratio": 2.53,
+        "f1_rate": 0.491,
+        "single_rate": 0.643,
+        "interest_top1": {
+          "C": 0.948,
+          "D": 0.705,
+          "E": 0.749,
+          "F": 0.792,
+          "G": 0.505
+        }
+      },
+      {
+        "M": 12,
+        "F1": 30,
+        "H": 12,
+        "max_min_ratio": 2.58,
+        "f1_rate": 0.491,
+        "single_rate": 0.786,
+        "interest_top1": {
+          "C": 0.932,
+          "D": 0.665,
+          "E": 0.742,
+          "F": 0.774,
+          "G": 0.494
+        }
+      }
+    ],
+    "before": {
+      "paths": 141897,
+      "f1_paths": 31783,
+      "f1_rate": 0.667,
+      "single_rate": 0.572,
+      "max_mix": 10,
+      "type_share": {
+        "C4": 0.212,
+        "C1": 0.199,
+        "C5": 0.138,
+        "C2": 0.115,
+        "C7": 0.094,
+        "C3": 0.091,
+        "C8": 0.044,
+        "C9": 0.04,
+        "C6": 0.035,
+        "C10": 0.033
+      },
+      "max_min_ratio": 6.42,
+      "interest_top1": {
+        "C": 0.907,
+        "D": 0.678,
+        "E": 0.521,
+        "F": 0.598,
+        "G": 0.547
+      },
+      "interest_top5share": {
+        "C": 0.677,
+        "D": 0.535,
+        "E": 0.425,
+        "F": 0.344,
+        "G": 0.47
+      },
+      "pace_mean_visits": {
+        "A": 4.81,
+        "B": 4.29,
+        "C": 3.77
+      },
+      "night_share_top5": {
+        "H": 0.907,
+        "S6C": 0.124,
+        "other": 0.05
+      },
+      "C9_in_S4E": 0.401
+    },
+    "after": {
+      "paths": 109552,
+      "f1_paths": 23409,
+      "f1_rate": 0.491,
+      "single_rate": 0.643,
+      "max_mix": 9,
+      "type_share": {
+        "C4": 0.149,
+        "C1": 0.143,
+        "C7": 0.127,
+        "C2": 0.113,
+        "C5": 0.099,
+        "C10": 0.091,
+        "C9": 0.086,
+        "C3": 0.069,
+        "C6": 0.064,
+        "C8": 0.059
+      },
+      "max_min_ratio": 2.53,
+      "interest_top1": {
+        "C": 0.948,
+        "D": 0.705,
+        "E": 0.749,
+        "F": 0.792,
+        "G": 0.505
+      },
+      "interest_top5share": {
+        "C": 0.771,
+        "D": 0.517,
+        "E": 0.577,
+        "F": 0.378,
+        "G": 0.47
+      },
+      "pace_mean_visits": {
+        "A": 4.81,
+        "B": 4.27,
+        "C": 3.79
+      },
+      "night_share_top5": {
+        "H": 0.909,
+        "S6C": 0.118,
+        "other": 0.048
+      },
+      "C9_in_S4E": 0.8
+    },
+    "simulation_matches_recommend_top5_on_400_random_paths": true,
+    "recommendation_scores_changed": true,
+    "theme_scores_changed": true,
+    "option_raw_points_changed": false
   }
 }

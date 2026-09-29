@@ -147,7 +147,7 @@
   ],
   "source_commit": "96db458ed63b3e34a1c3d63a8ad444ea67ab6b77",
   "profile_status": "legacy_design_prior_not_reestimated; C9 revised 2026-09-29 (sea 0.36->0.50, heal 0.33->0.30, food 0.21->0.11)",
-  "version": "integrated-6.3-reference",
+  "version": "integrated-6.4-reference",
   "course_score": {
     "interest_weight": 0.5,
     "night_weight": 0.1,
