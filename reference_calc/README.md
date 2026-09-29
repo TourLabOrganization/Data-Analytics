@@ -14,4 +14,6 @@ python reference_calc/verify_reference.py
 
 추천 벡터는 `q_source=type_profile_prior`인 간접 선호입니다. 직접 코사인 평점 5문항은 신규 설문에 포함되지 않습니다. 코스 점수는 범주 적합(코사인 × 분류 커버리지)에 S4 관심사(0.5)·S6 저녁·밤 야경(0.1)·S3 여행 속도(0.1) 가산을 더하고, 적용된 항의 가중치 합으로 나눠 0~100으로 만듭니다. 결과의 `category_fit_score`는 가산 전 점수, `bonus_points`는 항별 가산 점수입니다. 테마 점수와 코스 점수는 합산하지 않습니다. 기본 흐름의 지역·한류·연령·성별 추가 가산은 0입니다. 체류·일정 검증은 이 참조 코드에 통합하지 않았습니다.
 
+`python reference_calc/type_course_matching.py`는 유형 C1~C10 각각을 단독 결과로 보고 234코스와의 범주 적합을 계산해 `type_course_matching.csv`(전체), `type_course_top5.csv`(지역별 대표 5개), `type_T_cluster_fit.csv`(코스 군집별 평균)를 만듭니다. 관심사·야경·속도 가산은 넣지 않습니다. 히트맵은 `docs/spec_assets/plot_type_course_matching.py`로 그립니다.
+
 전체 [명세서](../docs/Tour_Navigator_Integrated_Specification.md)와 [설문지](../survey/Tour_Navigator_Branching_Questionnaire.md)를 참고하세요. 원자료 전처리·PCA·군집 재학습은 [analysis](../analysis/)에서 수행합니다. 재학습 후 이 폴더의 코스 스냅숏이 자동 교체되는 것은 아닙니다.

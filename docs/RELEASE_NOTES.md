@@ -159,3 +159,8 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
   - `demographic_upgrade/data/master_age_v3.csv` → `age_upgrade/results/nationwide_places_age_clustered.csv`를 읽는다.
   - `verification/node_tests.log`(`release_node_tests.log`와 동일), 낡은 `FILE_MANIFEST.csv`(`verification/release_manifest.csv`가 대신함)를 지웠다.
 - 명세서 39장(MD·Word·JSON)과 README의 실행 명령을 새 경로로 고쳤다.
+
+## 2026-09-29 여행자 유형별 시티투어 매칭
+
+- `reference_calc/type_course_matching.py`(표준 라이브러리)를 추가했다. 유형 C1~C10을 각각 단독 결과로 보고 적격 234코스의 범주 적합(100 × cosine × 분류 커버리지)을 계산해 전체표, 지역별 대표 5개, 코스 군집 T별 평균을 CSV로 남긴다. 가산이 붙지 않는 단일 유형 응답의 `recommend_reference` 결과와 같음을 확인했다.
+- 히트맵 `docs/spec_assets/type_course_matching.png`(그림 코드 `plot_type_course_matching.py`)와 README "여행자 유형별 시티투어 매칭" 절을 추가했다. C4는 역사 T07(88), C3는 체험 T02(86), C9는 바다 T01(85), C5는 자연 T05(83)와 가장 잘 맞고, C1·C2·C7·C8은 모두 음식 T04가 가장 높다.
