@@ -15,9 +15,9 @@
     "method": "All code cells executed sequentially in one fresh Python process with captured tables and plots; not a socket-backed Jupyter kernel test",
     "python": "3.12.3",
     "code_cells": 19,
-    "elapsed_seconds": 60.2
+    "elapsed_seconds": 60.0
   },
-  "analysis_run": "run_20260929_034626_310365",
+  "analysis_run": "run_20260929_040247_185905",
   "scope": "computational reproduction; not satisfaction or live availability validation",
   "t_block_balance_revision": {
     "date": "2026-09-29",
@@ -178,5 +178,75 @@
         "slots": 378
       }
     }
+  },
+  "category_reclassification_revision": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_040247_185905",
+    "previous_run": "run_20260929_034626_310365",
+    "scope": "reclassification of visit stops with unknown category, using only the supplied citytour.csv",
+    "rules": [
+      "non-visit points: city halls, 오거리/로터리/주차장, \"○○앞\", text ending in 코스, \"<6\"/\"8월\" leftovers, station times, 탑승, 석식",
+      "keyword additions for herit, heal, activity, food and sea (see run_analysis.py KW); 문화관 excludes 물문화관, 당 excludes 식당"
+    ],
+    "unknown_visit_stops": {
+      "before": 285,
+      "after": 104,
+      "conditional_included": {
+        "before": 28,
+        "after": 27
+      }
+    },
+    "moved_to_non_visit": 25,
+    "already_classified_with_extra_category": 13,
+    "mean_category_coverage_eligible": {
+      "before": 0.84,
+      "after": 0.946
+    },
+    "eligible_courses": {
+      "before": 223,
+      "after": 234,
+      "newly_eligible": 11,
+      "dropped": 0
+    },
+    "exclusions_after": {
+      "CONDITIONAL_STOPS": 25,
+      "ROUTE_UNRESOLVED": 14,
+      "TOO_FEW_VISITS": 6,
+      "LOW_CATEGORY_COVERAGE": 1
+    },
+    "share_ge_0_3_courses": {
+      "herit": [
+        84,
+        99
+      ],
+      "heal": [
+        91,
+        108
+      ],
+      "activity": [
+        50,
+        73
+      ],
+      "food": [
+        21,
+        24
+      ],
+      "sea": [
+        20,
+        21
+      ]
+    },
+    "T_model": {
+      "k": 7,
+      "silhouette_mean": 0.2468,
+      "seed_ari_min": 0.807
+    },
+    "TC_model": {
+      "k": 7,
+      "cosine_silhouette_mean": 0.4497,
+      "ari_vs_T": 0.6326,
+      "negative_silhouette_share": 0.0214
+    },
+    "unchanged": "G/GC, spending and marine regional outputs byte-identical to the previous run"
   }
 }
