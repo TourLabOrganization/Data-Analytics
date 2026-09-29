@@ -4,7 +4,7 @@
 
 ## 재현
 
-Python3.12 및 requirements.txt의 패키지를 사용합니다. `python prepare_demographics.py` → `python analyze_demographics.py`로 원자료부터 대응표·군집·CSV·PNG를 재생성합니다. 한글 그래프에는 Noto Sans CJK KR 또는 Windows 맑은 고딕을 설치하세요. Linux에서는 분석 스크립트의 font 경로를 설치 위치로 조정할 수 있습니다. 점수표는 함께 제공되는 형제 폴더 tour_scoring이 있는 상태에서 `node export_score_examples.cjs`로 재생성합니다.
+Python3.12 및 requirements.txt의 패키지를 사용합니다. `python prepare_demographics.py` → `python analyze_demographics.py`로 원자료부터 대응표·군집·CSV·PNG를 재생성합니다. 장소 원장은 `../age_upgrade/results/nationwide_places_age_clustered.csv`, 코스 목록은 `../tour_scoring/data/citytour_app_zip.json`을 읽고, 앱 설정 `region-demographics.json`은 `../tour_scoring/data/`에 씁니다. 한글 그래프에는 Noto Sans CJK KR 또는 Windows 맑은 고딕을 설치하세요. Linux에서는 분석 스크립트의 font 경로를 설치 위치로 조정할 수 있습니다. 점수표는 함께 제공되는 형제 폴더 tour_scoring이 있는 상태에서 `node export_score_examples.cjs`로 재생성합니다.
 
 ## 검사와 적용
 

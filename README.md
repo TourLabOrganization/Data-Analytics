@@ -65,7 +65,7 @@ flowchart LR
 | 최신 설문과 선택지별 가산점 | [설문 MD](survey/Tour_Navigator_Branching_Questionnaire.md) · [점수 사전 CSV](survey/implementation/question_score_map.csv) |
 | 응답자용 설문지 | [Word](survey/Tour_Navigator_Survey_Form.docx) · [PNG 6장](survey/survey_png/) |
 | CSV → PCA·코사인 군집·표·그림 | [Jupyter Notebook](analysis/Tour_Navigator_Integrated.ipynb) · [동일 분석 Python](analysis/run_analysis.py) |
-| 신규 설문 → 유형 → 테마·지역 시티투어 | [추천 코드](reference_calc/recommend_reference.py) · [설문 엔진](reference_calc/score_survey.py) |
+| 신규 설문 → 유형 → 테마·지역 시티투어 | [추천 코드](reference_calc/recommend_reference.py) · [설문 엔진](survey/implementation/score_survey.py) |
 | 주 분석 PNG 44개·결과 CSV 92개 | [결과 폴더](analysis/outputs_cosine/run_20260929_041803_474997/) |
 | 입력 데이터의 위치·행 수·해시 | [입력 목록](docs/INPUT_DATA_INDEX.md) · [전체 파일 SHA256](verification/release_manifest.csv) |
 | 기존 앱·확장 산식 비교와 체류 코드 | [Node.js 코드집](tour_scoring/) · [원본 추적 정보](tour_scoring/PROVENANCE.json) |
@@ -270,7 +270,7 @@ T 군집마다 적격 코스의 위치를 지도에 찍었습니다. 연한 회�
 Python 3.10 이상 표준 라이브러리만 필요합니다. 저장소 최상위에서 실행하세요.
 
 ```bash
-python reference_calc/score_survey.py reference_calc/demo_answers.json
+python survey/implementation/score_survey.py reference_calc/demo_answers.json
 python reference_calc/recommend_reference.py reference_calc/demo_answers.json
 python reference_calc/verify_reference.py
 ```

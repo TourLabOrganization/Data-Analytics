@@ -1048,18 +1048,18 @@ citytour.csv의 운행 시작·종료·요일·전화·홈페이지를 원문으
 
 | 파일 / 함수 | 입력 → 출력 |
 | --- | --- |
-| survey_config.json | 문항·선택값·C 점수표와 분기 규칙. 버전 branch-survey-6.3-proposal. 유형별 최대 원점수 type_max_raw와 경계값 포함 |
-| score_survey.evaluate | answers JSON → complete 또는 incomplete, 100점 환산 점수·ledger(원점수 포함)·결과 유형·R |
+| survey/implementation/survey_config.json | 문항·선택값·C 점수표와 분기 규칙. 버전 branch-survey-6.3-proposal. 유형별 최대 원점수 type_max_raw와 경계값 포함 |
+| survey/implementation/score_survey.evaluate | answers JSON → complete 또는 incomplete, 100점 환산 점수·ledger(원점수 포함)·결과 유형·R |
 | recommend_reference.recommend | 완료 응답 → α·u·테마 순위·적용 가산 항·234코스 순위와 가산 점수·대표 지역5 |
 | recommendation_config.json | 기존 W(C9는 6.3 개정값)·테마 구성표·코스 가산 설정 course_score, profile_status, source commit |
 | eligible_courses.csv | 분석 적격 코스의 id·지역·비중·coverage·경유지·T 라벨·방문 후보 수·야경 표식 |
 | demo_*.json / csv | 가상 혼합 응답과 D 비교 결과, 전체 코스 및 지역 대표표 |
-| verification.json | 설문 6.3 전수 검증 결과 |
+| survey/implementation/verification.json | 설문 6.3 전수 검증 결과 |
 | integration_verification.json | 6.4 연결 예제의 산식·범위·기여와 가산 합·가산 적용 조건 검사 결과 |
 
 ```bash
 cd reference_calc
-python score_survey.py demo_answers.json
+python ../survey/implementation/score_survey.py demo_answers.json
 python recommend_reference.py demo_answers.json > result.json
 python verify_reference.py
 ```

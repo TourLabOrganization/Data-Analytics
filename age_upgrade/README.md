@@ -4,7 +4,7 @@
 
 ## 재현
 
-Python3.11+ 환경에서 `pip install -r requirements.txt` 후 이 폴더의 `python prepare_age_data.py`, `python run_age_clustering.py` 순서로 실행합니다. 원본 ZIP은 data/source/datalab_age_source.zip, 이름은 바뀌었지만 바이트는 업로드와 같습니다. prepare_age_data는 원본 CSV를 재파싱하고 공백 제거 명칭 매칭을 재생성합니다. 후보 테마/코스 프로필은 기준 커밋의 고정 스냅샷이며 자동 최신화하지 않습니다. 군집 학습은 네트워크를 사용하지 않습니다.
+Python3.11+ 환경에서 `pip install -r requirements.txt` 후 이 폴더의 `python prepare_age_data.py`, `python run_age_clustering.py` 순서로 실행합니다. 원본 ZIP은 data/source/datalab_age_source.zip, 이름은 바뀌었지만 바이트는 업로드와 같습니다. prepare_age_data는 원본 CSV를 재파싱하고 공백 제거 명칭 매칭을 재생성하며, 앱 설정 age-popularity.json은 ../tour_scoring/data/에 씁니다. 후보 프로필 age-candidate-profiles.json도 tour_scoring/data/에 한 부만 둡니다. 후보 테마/코스 프로필은 기준 커밋의 고정 스냅샷이며 자동 최신화하지 않습니다. 군집 학습은 네트워크를 사용하지 않습니다.
 
 통합 Notebook은 별도 pca_notebook 폴더에 있으며 CSV/모듈 데이터를 내장했습니다. 기존 장소 G군집 9개 그래프와 신규 연령 A군집 6개 그래프를 생성합니다. 모든23개 코드 셀을 IPython에서 순서대로 실행한 출력이 저장되어 있습니다. 이 환경에서 Jupyter 커널 소켓이 제한되어 IPython 순차 실행으로 검증했습니다.
 

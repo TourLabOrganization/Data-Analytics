@@ -3273,11 +3273,11 @@
         ],
         [
           [
-            "survey_config.json",
+            "survey/implementation/survey_config.json",
             "문항·선택값·C 점수표와 분기 규칙. 버전 branch-survey-6.3-proposal. 유형별 최대 원점수 type_max_raw와 경계값 포함"
           ],
           [
-            "score_survey.evaluate",
+            "survey/implementation/score_survey.evaluate",
             "answers JSON → complete 또는 incomplete, 100점 환산 점수·ledger(원점수 포함)·결과 유형·R"
           ],
           [
@@ -3297,7 +3297,7 @@
             "가상 혼합 응답과 D 비교 결과, 전체 코스 및 지역 대표표"
           ],
           [
-            "verification.json",
+            "survey/implementation/verification.json",
             "설문 6.3 전수 검증 결과"
           ],
           [
@@ -3312,7 +3312,7 @@
       ],
       [
         "code",
-        "cd reference_calc\npython score_survey.py demo_answers.json\npython recommend_reference.py demo_answers.json > result.json\npython verify_reference.py",
+        "cd reference_calc\npython ../survey/implementation/score_survey.py demo_answers.json\npython recommend_reference.py demo_answers.json > result.json\npython verify_reference.py",
         "bash"
       ],
       [

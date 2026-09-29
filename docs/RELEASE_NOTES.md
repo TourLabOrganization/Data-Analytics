@@ -149,3 +149,13 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 - 재학습: 결과 폴더를 `analysis/outputs_cosine/run_20260929_041803_474997/`로 교체했다. T는 7군집(실루엣 0.247 → 0.260), TC는 7군집(코사인 실루엣 0.450, T 대비 ARI 0.633 → 0.749)이다. G·GC·지출·해양 지역 결과는 바이트 단위로 같다.
 - 추천: `reference_calc/eligible_courses.csv`를 다시 만들었다. 데모 상위 5개는 해남·대전 생태교육·아산 역사기행·순천 나이트가든투어(81.18 동점)와 천안 목요일(80.52)이다. 관심사 1위 코스 일치율은 역사 0.911→0.910, 자연 0.735→0.693, 체험 0.545→0.552, 음식 0.805 유지, 바다 0.678→0.693(구조 점검).
 - 명세서 MD·Word·JSON(22장 새 문단, T 결과표, TC 지표, 17장 예제, 40장 실행 폴더), README, 입력 목록, 검증 기록, 세션·예제 출력, 매니페스트를 갱신했다.
+
+## 2026-09-29 저장소 검증과 중복 파일 정리
+
+- 검증: 모든 JSON·CSV·노트북 파싱, 노트북 코드 셀과 `run_analysis.py` 일치, 문서 링크, 설문 전수 검증, 추천 참조 검증, `run_session.py`, Node 테스트, 연령·지역 구성 파이프라인 재실행(데이터 결과 바이트 동일)을 확인했다.
+- 같은 내용의 사본을 지우고 한 곳만 읽도록 바꿨다.
+  - `reference_calc/score_survey.py`·`survey_config.json`·`question_score_map.csv`·`verification.json` → `survey/implementation/`의 원본을 불러 쓴다.
+  - `age_upgrade/data/age-popularity.json`·`age-candidate-profiles.json`, `demographic_upgrade/data/citytour.json`·`region-demographics.json` → `tour_scoring/data/` 한 부만 둔다. 전처리 스크립트가 그 위치에 바로 쓴다.
+  - `demographic_upgrade/data/master_age_v3.csv` → `age_upgrade/results/nationwide_places_age_clustered.csv`를 읽는다.
+  - `verification/node_tests.log`(`release_node_tests.log`와 동일), 낡은 `FILE_MANIFEST.csv`(`verification/release_manifest.csv`가 대신함)를 지웠다.
+- 명세서 39장(MD·Word·JSON)과 README의 실행 명령을 새 경로로 고쳤다.
