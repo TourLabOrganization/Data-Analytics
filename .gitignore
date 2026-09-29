@@ -12,3 +12,4 @@ analysis/outputs_cosine/run_*/
 !analysis/outputs_cosine/run_20260929_021855_281961/
 analysis/survey_responses.csv
 verification/local_*/
+demographic_upgrade/data/boundaries/

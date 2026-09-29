@@ -85,3 +85,9 @@ CSV 입력, 처리 결과, 학습 모델, 노트북 출력, PNG, 설정 JSON, Wo
 - 최근 개정 다섯 가지를 한 표로 요약하고, 처리 흐름도에 유형별 100점 환산 단계를 넣었다.
 - 설문 유형 쏠림 보정 그림(`docs/spec_assets/survey_type_balance.png`)과 그 생성 코드(`plot_survey_type_balance.py`)를 추가했다. 수치는 `verification/release_validation.json`에서 읽는다.
 - 해석 주의점에 유형 프로필의 한계(C1·C7, C2·C8 코사인 유사도 0.95·0.94)와 파일럿 응답으로 프로필·배점을 다시 추정하는 절차를 적었다.
+
+## 2026-09-29 지역 군집 지도
+
+- `demographic_upgrade/plot_regional_map.py`로 R 군집(90개 시군구)을 시군구 지도에 칠한 `plots/04_regional_cluster_map.png`를 추가하고 README 12절에 설명을 넣었다.
+- 경계는 통계청 센서스용 행정구역경계 2013(southkorea-maps, 커밋 fe65e05)을 실행할 때 받아 SHA-256을 확인하며 저장소에는 넣지 않는다(`.gitignore`).
+- 2013년 이후 바뀐 이름의 대응 규칙과 결과를 `results/regional_map_matches.csv`에 남겼다(이름 일치 88, 구로 나뉜 시 1, 2023년 이관 1). 군집 결과와 점수는 바뀌지 않았다.
