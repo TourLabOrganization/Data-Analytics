@@ -404,9 +404,11 @@
       "analysis_share_sea",
       "코스(경유지)",
       "analysis_T_cluster",
-      "analysis_operational_flags"
+      "analysis_operational_flags",
+      "analysis_visit_candidate_count",
+      "analysis_night_flag"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "efeb6660ced79271e1de8bff97d664ab151e98e86a71cda49870ec11a71c1dd2"
+    "sha256": "e37f59fdd458ce56995d5790f24b82470757763a9320176c084851f8b1f13087"
   }
 ]
