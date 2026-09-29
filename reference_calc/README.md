@@ -1,4 +1,4 @@
-# 신규 설문 추천 참조 계산 — integrated 6.4
+# 신규 설문 추천 참조 계산 — integrated 6.5
 
 Python 3.10 이상 표준 라이브러리만 사용합니다. 저장소 최상위에서:
 
@@ -8,11 +8,11 @@ python reference_calc/recommend_reference.py reference_calc/demo_answers.json
 python reference_calc/verify_reference.py
 ```
 
-설문 6.3의 S1~S6, 해당 B 하나, 필요한 경우 F1을 입력합니다. B1~B7의 D 없음은 0점이며 기존 점수를 유지합니다. 미완료 입력은 다음 문항을 반환합니다. 유형 점수는 유형마다 `원점수 × 100 / 최대 원점수`로 환산한 100점 만점 점수이고(`survey_config.json`의 `scoring.type_max_raw`), 결과 원장에는 원점수(`raw_points`)와 환산 점수(`contribution`)가 함께 남습니다. 추천의 유형 혼합 비중은 설문 결과의 상대 가중치(12점 차이마다 2배)를 결과 유형 안에서 다시 정규화한 값입니다.
+설문 6.4의 S1~S6, 두 관심사에 해당하는 B 1~2개, 필요한 경우 F1을 입력합니다. S4는 서로 다른 두 값의 목록입니다(예: `["C", "D"]`). 두 관심사가 같은 B로 이어지면 그 B는 한 번만 답합니다. B1~B7의 D 없음은 0점이며 기존 점수를 유지합니다. 미완료 입력은 다음 문항을 반환합니다. 유형 점수는 유형마다 `원점수 × 100 / 최대 원점수`로 환산한 100점 만점 점수이고(`survey_config.json`의 `scoring.type_max_raw`), 결과 원장에는 원점수(`raw_points`)와 환산 점수(`contribution`)가 함께 남습니다. 추천의 유형 혼합 비중은 설문 결과의 상대 가중치(12점 차이마다 2배)를 결과 유형 안에서 다시 정규화한 값입니다.
 
 설문 엔진(`score_survey.py`)과 `survey_config.json`은 따로 두지 않고 [`survey/implementation`](../survey/implementation/)의 것을 불러 씁니다. `survey_config.json`은 문항과 선택지별 점수, `recommendation_config.json`은 유형별 5범주 프로필과 테마 정보를 담습니다. `recommendation_config.json`의 `course_score`에는 코스 가산 설정이 있습니다. `eligible_courses.csv`는 주 분석에서 가져온 적격 234코스 스냅숏이며(2026-09-29 코스 재점검, 경유지–관광지 연결 재점검, 범주 미확인 경유지 재분류 반영), 6.3에서 방문 후보 수와 야경 표식 열을 추가했습니다. `input_provenance.json`에 출처가 있습니다. 예제 응답·결과는 가상 검증 자료입니다.
 
-추천 벡터는 `q_source=type_profile_prior`인 간접 선호입니다. 직접 코사인 평점 5문항은 신규 설문에 포함되지 않습니다. 코스 점수는 범주 적합(코사인 × 분류 커버리지)에 S4 관심사(0.5)·S6 저녁·밤 야경(0.1)·S3 여행 속도(0.1) 가산을 더하고, 적용된 항의 가중치 합으로 나눠 0~100으로 만듭니다. 결과의 `category_fit_score`는 가산 전 점수, `bonus_points`는 항별 가산 점수입니다. 테마 점수와 코스 점수는 합산하지 않습니다. 기본 흐름의 지역·한류·연령·성별 추가 가산은 0입니다. 체류·일정 검증은 이 참조 코드에 통합하지 않았습니다.
+추천 벡터는 `q_source=type_profile_prior`인 간접 선호입니다. 직접 코사인 평점 5문항은 신규 설문에 포함되지 않습니다. 코스 점수는 범주 적합(코사인 × 분류 커버리지)에 S4 관심사(0.5)·S6 저녁·밤 야경(0.1)·S3 여행 속도(0.1) 가산을 더하고, 적용된 항의 가중치 합으로 나눠 0~100으로 만듭니다. 관심사 항은 두 관심사 중 자료가 있는 것(역사·자연·체험·음식·바다는 그 범주 비중, 야경은 야경 표식)의 평균이고, 둘 다 자료가 없으면 넣지 않습니다. 테마 지수의 관심사 항도 같은 평균입니다. 야경 가산은 S6가 저녁·밤까지이고 S4에 야경이 없을 때만 붙습니다. 지역 대표 5개(`course_distinct_region_top5`)는 자료가 있는 관심사마다 그 범주가 가장 큰 코스(최댓값이 같으면 모두 해당, 야경은 야경 코스) 중 가장 높은 코스로 한 자리를 먼저 채우고(`reserved_for_interest`), 남은 자리를 순위대로 채운 뒤 순위 순서로 보여 줍니다. 결과의 `category_fit_score`는 가산 전 점수, `bonus_points`는 항별 가산 점수입니다. 테마 점수와 코스 점수는 합산하지 않습니다. 기본 흐름의 지역·한류·연령·성별 추가 가산은 0입니다. 체류·일정 검증은 이 참조 코드에 통합하지 않았습니다.
 
 `python reference_calc/type_course_matching.py`는 유형 C1~C10 각각을 단독 결과로 보고 234코스와의 범주 적합을 계산해 `type_course_matching.csv`(전체), `type_course_top5.csv`(지역별 대표 5개), `type_T_cluster_fit.csv`(코스 군집별 평균)를 만듭니다. 관심사·야경·속도 가산은 넣지 않습니다. 히트맵은 `docs/spec_assets/plot_type_course_matching.py`로 그립니다.
 
