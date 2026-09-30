@@ -17,7 +17,7 @@ Python3.11+ 환경에서 `pip install -r requirements.txt` 후 이 폴더의 `py
 - 점수 입력 age_intensity_[연령]=비율/동일연령 최대비율. 누락은 빈값으로 보존하고 엔진에서 가산 없음 처리합니다.
 - place_id는 앱ID, datalab_id는 원자료 관광지ID로 서로 다른 식별체계입니다. match_weight=0.5는 잠정 명칭 연결 감쇠계수입니다.
 - age_cluster=A01/A02/A03은 장소의 관측 연령 패턴이며 여행자의 C1~C10이나 기존 장소 G군집과 다릅니다. A번호에는 순위 의미가 없습니다.
-- results/nationwide_places_age_clustered.csv는 3,118행 전체를 보존하고 기존 정보+연령 비율·강도·매칭상태·A군집을 추가했습니다. 숙박569행도 원장 유지용으로 남기며 eligible_cluster=0을 확인하세요.
+- results/nationwide_places_age_clustered.csv는 3,109행(2026-09-29 맥도날드 9곳 제외) 전체를 보존하고 기존 정보+연령 비율·강도·매칭상태·A군집을 추가했습니다. 숙박569행도 원장 유지용으로 남기며 eligible_cluster=0을 확인하세요.
 - age_data_status=no_linked_top30_data는 인기 없음이 아니라 연계 자료 없음입니다. 44잠정 연결 중 숙박1곳을 포함합니다.
 
 ## 결과와 적용 범위

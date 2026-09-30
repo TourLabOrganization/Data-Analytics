@@ -1,16 +1,16 @@
 Executed code cell 1: 0.0s, 0 outputs
-Executed code cell 2: 2.0s, 1 outputs
-places: 3,118행 × 17열 / utf-8-sig
+Executed code cell 2: 1.2s, 1 outputs
+places: 3,109행 × 17열 / utf-8-sig
 citytour: 280행 × 13열 / utf-8-sig
 stop_category_review: 30행 × 4열 / utf-8-sig
 Python 3.12.3 | scikit-learn 1.8.0
-저장 폴더: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_052711_993598
+저장 폴더: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_234547_706228
 
-Executed code cell 3: 0.7s, 2 outputs
+Executed code cell 3: 0.4s, 2 outputs
 Executed code cell 4: 0.0s, 0 outputs
-Executed code cell 5: 10.5s, 9 outputs
+Executed code cell 5: 5.4s, 9 outputs
 G {
-  "rows": 2549,
+  "rows": 2540,
   "features": [
     "cat_herit",
     "cat_heal",
@@ -22,25 +22,24 @@ G {
   ],
   "removed_constant_features": [],
   "pca_components": 5,
-  "pca_retained_variance": 0.9938328397309512,
-  "plot_2pc_variance": 0.6410566545500307,
-  "k": 10,
-  "silhouette_mean": 0.7189323946808236,
-  "seed_ari_min": 0.8659235807860657,
+  "pca_retained_variance": 0.9938144423321387,
+  "plot_2pc_variance": 0.6418358420794752,
+  "k": 8,
+  "silhouette_mean": 0.7181812092270962,
+  "seed_ari_min": 0.9517335111248034,
   "passes_gates": true,
   "silhouette_sample_size": 1200,
   "numbering": "run-specific, no persona assignment"
 }
-PC1 negative: {'cat_food': -0.1543, 'cat_sea': -0.1075} positive: {'cat_activity': 0.2512, 'log_stay_robust': 0.9395}
-PC2 negative: {'cat_herit': -0.6076, 'cat_activity': -0.1902} positive: {'cat_food': 0.0177, 'cat_heal': 0.7653}
+PC1 negative: {'cat_food': -0.1502, 'cat_sea': -0.1084} positive: {'cat_activity': 0.2513, 'log_stay_robust': 0.94}
+PC2 negative: {'cat_herit': -0.6065, 'cat_activity': -0.1907} positive: {'cat_food': 0.0162, 'cat_heal': 0.7661}
 축 해석: PC1 계수의 절댓값이 가장 큰 변수는 log_stay_robust입니다. 단일 변수의 영향이 크므로 테마 성향이나 여행자 유형으로 바로 해석하지 마세요.
-군집 수 해석: k=10는 이번 탐색의 상한입니다. 전역 최적 군집 수가 확정된 것은 아닙니다.
 
-Executed code cell 6: 2.1s, 2 outputs
+Executed code cell 6: 1.2s, 2 outputs
 코스 / 분석 가능: 280 / 234
-잠정 장소 후보 연결 슬롯: 749 | 확인된 장소 연결: 0
+잠정 장소 후보 연결 슬롯: 748 | 확인된 장소 연결: 0
 
-Executed code cell 7: 10.0s, 10 outputs
+Executed code cell 7: 5.3s, 10 outputs
 T 묶음 총표준편차: {'category': 0.466868, 'stop_count': 1.008398, 'night': 0.23717} | 분산 기여: {'category': 0.75, 'stop_count': 0.15, 'night': 0.1}
 T {
   "rows": 234,
@@ -77,8 +76,8 @@ Executed code cell 8: 0.0s, 1 outputs
   "region_share_denominator": "hierarchical denominator inferred from sums; not verified from UI metadata"
 }
 
-Executed code cell 9: 0.9s, 2 outputs
-Executed code cell 10: 3.5s, 5 outputs
+Executed code cell 9: 0.6s, 2 outputs
+Executed code cell 10: 2.0s, 5 outputs
 지역 설명 모델 OOF 결과
 
 Executed code cell 11: 0.0s, 1 outputs
@@ -110,18 +109,18 @@ Executed code cell 11: 0.0s, 1 outputs
     {
       "model": "M1_catalog_count",
       "n_regions": 111,
-      "mae_log": 0.8617415547470375,
-      "rmse_log": 1.0792184944838519,
-      "r2_log": 0.1241978269228935,
-      "mae_share_pp": 0.2318124422257654
+      "mae_log": 0.8627482274953436,
+      "rmse_log": 1.0802206235412208,
+      "r2_log": 0.12257058591874304,
+      "mae_share_pp": 0.23201587825987746
     },
     {
       "model": "M2_composition",
       "n_regions": 111,
-      "mae_log": 0.8396957244624829,
-      "rmse_log": 1.0718437553423688,
-      "r2_log": 0.13612635622739788,
-      "mae_share_pp": 0.2327004216806318
+      "mae_log": 0.8404837296930515,
+      "rmse_log": 1.0738464940023853,
+      "r2_log": 0.13289504664109208,
+      "mae_share_pp": 0.23297490799449516
     }
   ],
   "final_alpha": 10.0,
@@ -237,9 +236,9 @@ Executed code cell 12: 0.1s, 2 outputs
     "서산시",
     "서천군",
     "서초구"
-Executed code cell 13: 6.9s, 7 outputs
-Executed code cell 14: 1.0s, 2 outputs
-Executed code cell 15: 3.8s, 4 outputs
+Executed code cell 13: 3.8s, 7 outputs
+Executed code cell 14: 0.6s, 2 outputs
+Executed code cell 15: 2.2s, 4 outputs
 검색순위 적용 {
   "status": "loaded",
   "score_bonus": 0.0,
@@ -259,7 +258,7 @@ Executed code cell 15: 3.8s, 4 outputs
     "NO_EXACT_NAME": 44,
     "NAME_FOUND_REGION_REJECTED": 3
   },
-  "unlinked_catalogue_rows": 3065,
+  "unlinked_catalogue_rows": 3056,
   "course_candidates": 20,
   "course_stop_candidate_rows": 23
 }
@@ -371,9 +370,9 @@ Executed code cell 16: 0.0s, 1 outputs
     "서산시",
     "서천군",
     "서초구",
-Executed code cell 17: 21.1s, 15 outputs
+Executed code cell 17: 11.3s, 15 outputs
 G {
-  "rows": 2549,
+  "rows": 2540,
   "excluded_zero_vectors": 0,
   "features": [
     "cat_herit",
@@ -384,21 +383,21 @@ G {
     "log_stay_robust",
     "unesco_mark"
   ],
-  "k": 10,
+  "k": 7,
   "search_max_k": 10,
-  "at_search_upper_bound": true,
-  "cosine_silhouette_mean": 0.829579482096141,
-  "cosine_silhouette_final_seed": 0.8342157070246453,
-  "negative_silhouette_share": 0.0,
-  "seed_ari_min": 0.9781027633160397,
-  "min_cluster_share_across_seeds": 0.023538642604943115,
+  "at_search_upper_bound": false,
+  "cosine_silhouette_mean": 0.8160930997526431,
+  "cosine_silhouette_final_seed": 0.8260157230606384,
+  "negative_silhouette_share": 0.025,
+  "seed_ari_min": 0.9842478532728616,
+  "min_cluster_share_across_seeds": 0.03346456692913386,
   "passes_gates": true,
   "min_share_required": 0.02,
   "sample_n": 1200,
-  "ari_vs_baseline": 0.8315432423494977,
-  "mean_assigned_cosine": 0.9738419589306415,
-  "mean_assignment_margin": 0.32008738794016794,
-  "iterations": 3,
+  "ari_vs_baseline": 0.950544592076825,
+  "mean_assigned_cosine": 0.9517947214231184,
+  "mean_assignment_margin": 0.5833375305961805,
+  "iterations": 1,
   "final_seed": 42,
   "fit_space": "L2-normalized baseline weighted features; no PCA centering",
   "status": "QUALIFIED_EXPLORATORY"
@@ -422,12 +421,12 @@ T {
   "cosine_silhouette_final_seed": 0.4528177944467696,
   "negative_silhouette_share": 0.029914529914529916,
   "seed_ar
-Executed code cell 18: 0.6s, 3 outputs
+Executed code cell 18: 0.4s, 3 outputs
 실제 설문 CSV 없음: 명시적 가상 응답 4개로 계산 구조만 시연합니다.
 코사인 수학·수렴·영벡터·설문 범위·기여도 합 검증 완료
 
-Executed code cell 19: 0.1s, 2 outputs
-완료: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_052711_993598
+Executed code cell 19: 0.0s, 2 outputs
+완료: /home/user/Data-Analytics/analysis/outputs_cosine/run_20260929_234547_706228
 PNG 44 개 / CSV 92 개
 
-SAVED /home/user/Data-Analytics/analysis/_exec_copy.ipynb seconds 63.6
+SAVED /home/user/Data-Analytics/analysis/Tour_Navigator_Integrated.ipynb seconds 34.5

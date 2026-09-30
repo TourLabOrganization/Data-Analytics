@@ -17,7 +17,7 @@
     "code_cells": 19,
     "elapsed_seconds": 63.6
   },
-  "analysis_run": "run_20260929_052711_993598",
+  "analysis_run": "run_20260929_234547_706228",
   "scope": "computational reproduction; not satisfaction or live availability validation",
   "t_block_balance_revision": {
     "date": "2026-09-29",
@@ -385,6 +385,33 @@
       "verify_survey.py exhaustive over 36 S4 pairs: 1,756,396 complete paths, 7-9 answers",
       "verify_reference.py demo and interest cases (plain A+I, night A+H, sea D+E) pass",
       "audit_cosine_csvs.py 94 checks pass",
+      "legacy Node tests pass",
+      "spec MD/JSON/Word text consistent"
+    ]
+  },
+  "mcdonalds_removal_rerun": {
+    "date": "2026-09-29",
+    "analysis_run": "run_20260929_234547_706228",
+    "previous_run": "run_20260929_052711_993598",
+    "input_change": "9 McDonald's drive-thru places (ro466, ro467, ro524, ro532, ro536, ro540, ro684, ro780, ro857; all food) removed from analysis/tour-places.csv and age_upgrade/data/source/nationwide_places_all_3118.csv: 3,118 -> 3,109 rows, 2,549 -> 2,540 clustered places",
+    "reproducibility": "the previous input rerun in the pinned environment (Python 3.12, requirements-tested.txt) reproduces the previous snapshot byte for byte (CSV, models, plots), so every difference comes from the input change",
+    "G": {
+      "k": "10 -> 8",
+      "silhouette": "0.7189 -> 0.7182",
+      "seed_ari_min": "0.8659 -> 0.9517"
+    },
+    "GC": {
+      "k": "10 -> 7",
+      "cosine_silhouette_mean": "0.8296 -> 0.8161",
+      "ari_vs_G": "0.8315 -> 0.9505",
+      "negative_silhouette_share": "0.000 -> 0.025 (all 30 in GC06)"
+    },
+    "T_TC": "clusters, eligible 234 courses and category shares unchanged; one nearby-region link lost (서울 EG투어버스 H코스 화성행궁) because the Seoul place centroid moved: linked visit stops 749 -> 748, nearby links 22 -> 21",
+    "spending": "M2 log R2 0.1361 -> 0.1329",
+    "downstream": "reference_calc/eligible_courses.csv, demo outputs and session_results scores unchanged; age A and regional R clusters unchanged; age app coverage and regional proxy place count 952 -> 951; tour_scoring/data/region-demographics.json drops the 9 places",
+    "checks": [
+      "audit_cosine_csvs.py 94 checks pass (expected G rows 3,109)",
+      "verify_reference.py passes",
       "legacy Node tests pass",
       "spec MD/JSON/Word text consistent"
     ]

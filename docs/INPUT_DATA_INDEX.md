@@ -2,9 +2,14 @@
 
 CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집계치 전처리, 추천용 처리 결과를 구분합니다.
 
+2026-09-29: 앱 장소 원본(Tour-Navigator-App)에서 맥도날드 드라이브스루 9곳(`ro466` · `ro467` · `ro524` · `ro532` · `ro536` · `ro540` · `ro684` · `ro780` · `ro857`, 모두 `food`)을 삭제한 데 맞춰
+`analysis/tour-places.csv`와 `age_upgrade/data/source/nationwide_places_all_3118.csv`(파일 이름은 스크립트 경로 때문에 그대로)에서도 뺐습니다(3,118 → 3,109행).
+분석 결과(`analysis/outputs_cosine/run_20260929_234547_706228/` · `age_upgrade/results/` · `demographic_upgrade/results/` · `tour_scoring/data/region-demographics.json` 등)는
+3,109행으로 다시 계산했습니다. 관광지 군집은 G 10 → 8군집, GC 10 → 7군집으로 바뀌었고, 9곳은 시티투어 경유지가 아니라 T·TC 군집 · 적격 234코스 · 시티투어 점수 · 테마 추천 결과는 그대로입니다(자세한 내용은 [이관 기록](RELEASE_NOTES.md)).
+
 | 파일 | 행 수 | 열 수 | SHA256 |
 |---|---:|---:|---|
-| [analysis/tour-places.csv](../analysis/tour-places.csv) | 3,118 | 17 | `f795d16aa192f9a1e771b27f2eca3483b3342826db925c6ee20038b30a0f79c7` |
+| [analysis/tour-places.csv](../analysis/tour-places.csv) | 3,109 | 17 | `0d38c196bc4f3276cbef6e64fc8b22a91558034cc258d949dc40abee5691f4c6` |
 | [analysis/citytour.csv](../analysis/citytour.csv) | 280 | 13 | `cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324` |
 | [analysis/stop_category_review.csv](../analysis/stop_category_review.csv) | 30 | 4 | `3cd2219d4290dcac5204adb865a4677f030182ae05e020778dbe4785f45dc70b` |
 | [analysis/spending_csv/spend_region.csv](../analysis/spending_csv/spend_region.csv) | 233 | 4 | `b57eaea72fa6b060347393748e00676c160326921375b048af2486e6d632a31c` |
