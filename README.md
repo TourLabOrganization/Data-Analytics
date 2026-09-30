@@ -42,6 +42,7 @@ Tour Navigator는 여행자가 짧은 설문에 답하면 성향 유형을 판�
 | 코사인 CSV 점검 | 코사인 관련 CSV 전부를 특징값에서 다시 계산해 대조(94개 항목), 직접 선호 순위의 동점 판정을 반올림한 점수로 변경 | 같은 점수가 부동소수점 오차로 다른 순위를 받던 문제 수정, 점수 값과 다른 결과는 그대로 |
 | 저장소 정리 | 모듈마다 따로 두던 같은 파일 사본을 지우고 한 곳만 읽도록 변경(설문 엔진은 `survey/implementation`, 앱 데이터는 `tour_scoring/data`) | 중복 파일 11개 삭제, 모든 결과는 바이트 단위로 같음 |
 | 맥도날드 9곳 제외 재분석 | 앱 장소 목록에서 지운 맥도날드 드라이브스루 9곳을 입력 CSV에서도 빼고 전체 분석을 다시 실행 | 관광지 2,549 → 2,540곳, G 10 → 8군집(실루엣 0.719 → 0.718), GC 10 → 7군집. T·TC 군집, 적격 234코스, 추천 결과는 그대로 |
+| 군집 모델 재점검 | 90% 부분표본으로 군집 수 선택과 배정의 안정성 점검 | 관광지 G·GC는 군집 수만 흔들리고(k=6~10 실루엣 차 0.016) 배정은 안정(ARI 0.96·0.98), 코스 T·TC는 안정. 추천 영향 없음. [보고서](docs/MODEL_RECHECK_2026-09-30.md) |
 
 항목별 상세 수치와 변경 파일은 [이관 기록](docs/RELEASE_NOTES.md)에 있습니다.
 
@@ -78,6 +79,7 @@ flowchart LR
 | 유형별 시티투어 매칭 표 | [계산 코드](reference_calc/type_course_matching.py) · [유형별 대표 5개](reference_calc/type_course_top5.csv) · [유형×군집 평균](reference_calc/type_T_cluster_fit.csv) |
 | 주 분석 PNG 44개·결과 CSV 92개 | [결과 폴더](analysis/outputs_cosine/run_20260929_234547_706228/) |
 | 입력 데이터의 위치·행 수·해시 | [입력 목록](docs/INPUT_DATA_INDEX.md) · [전체 파일 SHA256](verification/release_manifest.csv) |
+| 군집 모델 안정성 점검 | [보고서](docs/MODEL_RECHECK_2026-09-30.md) · [스크립트](verification/k_selection_stability.py) · [수치](verification/k_selection_stability.json) |
 | 기존 앱·확장 산식 비교와 체류 코드 | [Node.js 코드집](tour_scoring/) · [원본 추적 정보](tour_scoring/PROVENANCE.json) |
 
 ## 설문지 구성과 판정 로직
