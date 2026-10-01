@@ -191,3 +191,8 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 - T · TC · 적격 234코스 · 코스 범주 비중은 그대로다. 코스 지역 중심(관광지 좌표 평균)이 옮겨 가 서울 EG투어버스 H코스의 화성행궁 인접 지역 연결 1건이 빠졌다(방문 경유지 연결 749 → 748건). 범주는 키워드로 같게 정해져 `reference_calc/eligible_courses.csv`, 추천 예제, 세션 결과의 점수는 바뀌지 않았다.
 - 지출 회귀(관광지 수 특징)는 로그 R² 0.136 → 0.133으로 조금 바뀌었다. 연령 A · 지역 R 군집은 그대로이고, 앱 장소 연결 비율과 지역 보정 장소 수(952 → 951)만 바뀌었다. `tour_scoring/data/region-demographics.json`에서 9곳의 지역 항목이 빠졌다.
 - 연쇄 갱신: README(3 · 4 · 5 · 6 · 8 · 10 · 11절, 배정 품질 표), 명세서 MD · Word · JSON(20 · 21 · 24 · 25 · 40 · 41장), 명세서 그림 2개, 입력 목록, 연령 · 지역 README, 검증 기록(`verification/audit_cosine_csvs.py`의 행 수 기대값 3,109), 전체 파일 목록.
+
+## 2026-10-01 인기 관광지 추가 도구
+
+- `tools/add_popular_places.py`: 앱 홈 "지금 인기 관광지"가 부르는 한국관광공사 집중률 API(`TatsCnctrRateService/tatsCnctrRatedList`)의 도시별 상위 10곳을 받아 `analysis/tour-places.csv`에 없는 곳을 새 장소(`pop` id)로 만든다. 시군구 선택·기준 날짜·이름 점수·위치 매칭·범주 판정 규칙은 앱 `src/lib/tour-popular.ts`·`tour-api.ts`를 그대로 옮겼다. 기본은 후보 판정표만 쓰고 `--apply`로 붙인다. 받아 둔 응답 JSON으로도 돌릴 수 있어(`--from-json`) 네트워크 없이 점검한다(`tools/test_add_popular_places.py`, 6건).
+- 장소 표와 분석 결과는 바꾸지 않았다. 이 도구로 장소를 붙이면 분석을 다시 돌리고 스냅숏을 교체해야 한다.
