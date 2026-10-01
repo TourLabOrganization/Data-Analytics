@@ -202,3 +202,4 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 - `tools/add_popular_places.py`의 기본 범위를 앱 홈 칩 8개 도시에서 장소 표의 124개 지역 전부로 넓혔다(`--scope all`). 장소(숙박 제외)가 있는 시군구 211곳을 모두 부르고, 한 시군구가 두 지역에 걸치면(기장군: 부산·양산 등) 장소가 많은 지역에 붙인다. 앱과 같은 8개 도시만 보려면 `--scope home`.
 - 장소 id → 법정동 시군구 코드 파일 `analysis/place_signgu.json`(3,109곳, 앱 `src/features/planner/data/signgu.json`과 같은 값)을 더했다. `--apply`로 새 장소를 붙이면 그 장소의 코드(관광정보 법정동 코드)도 여기에 넣어 다음 실행의 조회 대상이 된다.
 - 새 장소의 권역은 그 지역 기존 행의 권역 값(경주는 '경주', 나머지는 '전국'). 점검 8건.
+- 새 장소 id를 순번(`pop1, pop2, …`)에서 `pop<관광정보 contentid>`로 바꿨다. 앱(frontend) `scripts/add-popular-places.mjs` · `lib/tour-collect.ts`가 같은 규칙으로 `added-places.json`에 누적하는 추가 장소와 id가 같아, 두 저장소의 장소 표가 같게 늘어난다.

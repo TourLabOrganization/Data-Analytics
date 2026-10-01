@@ -80,14 +80,14 @@ class EndToEnd(unittest.TestCase):
         self.assertEqual(cand[1]["장소 id"], tower["id"])
         self.assertEqual(len(new), 1)
         row = new[0]
-        self.assertEqual((row["id"], row["권역"], row["지역"], row["카테고리"], row["추천 체류(분)"]), ("pop1", "경주", "경주", "heal", "60"))
+        self.assertEqual((row["id"], row["권역"], row["지역"], row["카테고리"], row["추천 체류(분)"]), ("pop2002", "경주", "경주", "heal", "60"))
         self.assertIn("contentid 2002", row["출처"])
         self.assertEqual(len(row), len(m.COLUMNS))
 
         # 붙이고 다시 읽으면 3,110행 · 17열 · CRLF, 다시 돌리면 contentid로 걸러 신규 0
         m.append_rows(self.places, new)
         raw = self.places.read_bytes()
-        self.assertTrue(raw.startswith(b"\xef\xbb\xbf") and raw.endswith(b"\r\n") and b"\r\npop1,\xea\xb2\xbd\xec\xa3\xbc" in raw)
+        self.assertTrue(raw.startswith(b"\xef\xbb\xbf") and raw.endswith(b"\r\n") and b"\r\npop2002,\xea\xb2\xbd\xec\xa3\xbc" in raw)
         with open(self.places, encoding="utf-8-sig", newline="") as f:
             rows = list(csv.reader(f))
         self.assertEqual((len(rows), {len(r) for r in rows}), (3111, {17}))
@@ -95,7 +95,7 @@ class EndToEnd(unittest.TestCase):
         cand2, new2 = m.collect(api, again, m.targets_home(again, ["경주"]), "2026-10-01", 10, log=lambda *_: None)
         self.assertEqual(new2, [])
         self.assertEqual(cand2[2]["판정"], "기존(이름)")  # 이제 이름으로 바로 맞는다
-        self.assertEqual(m.next_id(again), 2)
+        self.assertEqual([p["id"] for p in again if p["id"].startswith("pop")], ["pop2002"])
 
     def test_old_code_fallback_and_top(self):
         # 강릉(51150): 새 코드로 그 시군구 행이 없으면 옛 코드 42150으로 받고, 상위 top만 본다

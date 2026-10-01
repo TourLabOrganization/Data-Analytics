@@ -16,7 +16,7 @@
   3. 같은 지역의 기존 장소와 이름 점수 2 이상이면 이미 있는 장소다(추가하지 않는다).
   4. 못 맞춘 후보는 국문 관광정보 KorService2/searchKeyword2로 찾아(같은 시군구 · 이름 점수 2 이상 · 관광지 타입 우선) 좌표를 얻고,
      250m 안의 기존 장소(또는 1km 안에서 이름이 절반 이상 겹치는 곳)가 있으면 그 장소로 본다.
-  5. 남은 후보가 새 장소다. id는 pop1, pop2, …(이미 있는 pop 번호 다음부터), 범주는 관광정보 분류로(ktoCategory),
+  5. 남은 후보가 새 장소다. id는 pop<관광정보 contentid>(앱 frontend scripts/add-popular-places.mjs와 같은 id), 범주는 관광정보 분류로(ktoCategory),
      추천 체류는 그 범주의 기존 중앙값, 출처에 관광정보 contentid를 적어 두어 다시 돌려도 같은 곳을 두 번 넣지 않는다.
      --apply 때 새 장소의 시군구 코드(관광정보 법정동 코드)도 analysis/place_signgu.json에 넣어 다음 실행의 조회 대상이 된다.
 
@@ -319,11 +319,6 @@ def known_contentids(places: list[dict]) -> dict[str, str]:
     return out
 
 
-def next_id(places: list[dict]) -> int:
-    nums = [int(p["id"][len(ID_PREFIX):]) for p in places if re.fullmatch(ID_PREFIX + r"\d+", p["id"])]
-    return max(nums, default=0) + 1
-
-
 def stay_medians(places: list[dict]) -> dict[str, int]:
     by: dict[str, list[int]] = {}
     for p in places:
@@ -395,7 +390,7 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
     """(후보 판정표, 새 행). places에는 새 행을 바로 더해 같은 실행 안에서도 중복이 없다. signgu를 주면 새 장소의 코드를 넣는다."""
     candidates, new_rows = [], []
     seen = known_contentids(places)
-    n = next_id(places)
+    ids = {p["id"] for p in places}
     stays = stay_medians(places)
     for t in targets:
         city, codes, pool = t["region"], t["codes"], t["pool"]
@@ -439,8 +434,8 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
                 continue
             cid = str(item.get("contentid", "")).strip()
             row["contentid"] = cid
-            if cid in seen:
-                row.update(판정="기존(contentid)", **{"장소 id": seen[cid]})
+            if cid in seen or f"{ID_PREFIX}{cid}" in ids:
+                row.update(판정="기존(contentid)", **{"장소 id": seen.get(cid, f"{ID_PREFIX}{cid}")})
                 candidates.append(row)
                 continue
             lat, lng = coords
@@ -453,7 +448,7 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
             addr = " ".join(x for x in (str(item.get("addr1", "")).strip(), str(item.get("addr2", "")).strip()) if x)
             new = {c: "" for c in COLUMNS}
             new.update({
-                "id": f"{ID_PREFIX}{n}", "권역": region_macro(places, city), "지역": city,
+                "id": f"{ID_PREFIX}{cid}", "권역": region_macro(places, city), "지역": city,
                 "이름(한국어)": str(item.get("title", "")).strip() or s["name"],
                 "English": str(item.get("title", "")).strip() or s["name"],  # 영문 관광정보로 바꾸기 전까지 한국어 그대로(연관 관광지 행과 같다)
                 "카테고리": cat, "위도": f"{lat:.5f}", "경도": f"{lng:.5f}",
@@ -465,10 +460,10 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
             places.append(new)
             pool.append(new)
             seen[cid] = new["id"]
+            ids.add(new["id"])
             if signgu is not None:
                 code = f"{item.get('lDongRegnCd', '')}{item.get('lDongSignguCd', '')}"
                 signgu[new["id"]] = code if re.fullmatch(r"\d{5}", code) else s["signgu"]
-            n += 1
             added += 1
             row.update(판정="신규", **{"장소 id": new["id"], "장소 이름": new["이름(한국어)"]})
             candidates.append(row)
