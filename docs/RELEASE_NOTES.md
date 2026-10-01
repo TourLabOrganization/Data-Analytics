@@ -196,3 +196,10 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 
 - `tools/add_popular_places.py`: 앱 홈 "지금 인기 관광지"가 부르는 한국관광공사 집중률 API(`TatsCnctrRateService/tatsCnctrRatedList`)의 도시별 상위 10곳을 받아 `analysis/tour-places.csv`에 없는 곳을 새 장소(`pop` id)로 만든다. 시군구 선택·기준 날짜·이름 점수·위치 매칭·범주 판정 규칙은 앱 `src/lib/tour-popular.ts`·`tour-api.ts`를 그대로 옮겼다. 기본은 후보 판정표만 쓰고 `--apply`로 붙인다. 받아 둔 응답 JSON으로도 돌릴 수 있어(`--from-json`) 네트워크 없이 점검한다(`tools/test_add_popular_places.py`, 6건).
 - 장소 표와 분석 결과는 바꾸지 않았다. 이 도구로 장소를 붙이면 분석을 다시 돌리고 스냅숏을 교체해야 한다.
+
+## 2026-10-01 인기 관광지 추가 도구: 전국 범위
+
+- `tools/add_popular_places.py`의 기본 범위를 앱 홈 칩 8개 도시에서 장소 표의 124개 지역 전부로 넓혔다(`--scope all`). 장소(숙박 제외)가 있는 시군구 211곳을 모두 부르고, 한 시군구가 두 지역에 걸치면(기장군: 부산·양산 등) 장소가 많은 지역에 붙인다. 앱과 같은 8개 도시만 보려면 `--scope home`.
+- 장소 id → 법정동 시군구 코드 파일 `analysis/place_signgu.json`(3,109곳, 앱 `src/features/planner/data/signgu.json`과 같은 값)을 더했다. `--apply`로 새 장소를 붙이면 그 장소의 코드(관광정보 법정동 코드)도 여기에 넣어 다음 실행의 조회 대상이 된다.
+- 새 장소의 권역은 그 지역 기존 행의 권역 값(경주는 '경주', 나머지는 '전국'). 점검 8건.
+- 새 장소 id를 순번(`pop1, pop2, …`)에서 `pop<관광정보 contentid>`로 바꿨다. 앱(frontend) `scripts/add-popular-places.mjs` · `lib/tour-collect.ts`가 같은 규칙으로 `added-places.json`에 누적하는 추가 장소와 id가 같아, 두 저장소의 장소 표가 같게 늘어난다.
