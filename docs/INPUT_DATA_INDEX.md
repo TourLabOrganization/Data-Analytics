@@ -9,8 +9,8 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 
 | 파일 | 행 수 | 열 수 | SHA256 |
 |---|---:|---:|---|
-| [analysis/tour-places.csv](../analysis/tour-places.csv) | 3,109 | 17 | `8886d60fe6511f7fdb29f21e9bedb706a6bcf687ff6709c44e76f552c8bb6ddb` |
-| [analysis/place_signgu.json](../analysis/place_signgu.json) | 3,109 | 2 (id, 코드) | `56a8250a62970d719d78273b0d5a9de0007b76708b39f702c065ec9608a3568d` |
+| [analysis/tour-places.csv](../analysis/tour-places.csv) | 3,109 | 17 | `d325ebb41f550d3457905d8d3dada3a9a955b76033395c0eda9c16a8581b312c` |
+| [analysis/place_signgu.json](../analysis/place_signgu.json) | 3,109 | 2 (id, 코드) | `222e8094480928750f247d6366f83f4764020ea3f11436bb1398632bf88836aa` |
 | [analysis/citytour.csv](../analysis/citytour.csv) | 280 | 13 | `cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324` |
 | [analysis/stop_category_review.csv](../analysis/stop_category_review.csv) | 30 | 4 | `3cd2219d4290dcac5204adb865a4677f030182ae05e020778dbe4785f45dc70b` |
 | [analysis/spending_csv/spend_region.csv](../analysis/spending_csv/spend_region.csv) | 233 | 4 | `b57eaea72fa6b060347393748e00676c160326921375b048af2486e6d632a31c` |
