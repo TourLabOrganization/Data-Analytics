@@ -448,6 +448,10 @@ Jupyter에서는 `analysis` 폴더에서 [Tour_Navigator_Integrated.ipynb](analy
 
 한국관광공사 집중률 API(앱 홈 "지금 인기 관광지"가 쓰는 자료)에 나오는 관광지 가운데 장소 표에 없는 곳은 [`tools/add_popular_places.py`](tools/add_popular_places.py)로 `analysis/tour-places.csv`에 더할 수 있습니다. 기본(`--scope all`)은 장소 표의 124개 지역 전부를 대상으로, 장소(숙박 제외)가 있는 시군구 211곳([`analysis/place_signgu.json`](analysis/place_signgu.json)의 법정동 코드, 앱 `signgu.json`과 같음)의 집중률을 받아 지역마다 상위 10곳을 후보로 삼습니다. `--scope home`은 앱 홈 칩 8개 도시(서울·부산·제주·경주·강릉·전주·인천·속초)만 앱과 같은 시군구 선택으로 봅니다. 후보는 같은 지역 장소와 이름(점수 2 이상)·위치(관광정보 좌표 250m 안)로 맞춰 보고 남는 곳만 `pop<관광정보 contentid>` id의 새 행으로 만듭니다(앱 `scripts/add-popular-places.mjs`가 만드는 추가 장소와 같은 id)(범주는 관광정보 분류, 추천 체류는 그 범주의 기존 중앙값, 출처에 관광정보 contentid, 시군구 코드는 `place_signgu.json`에 추가). 기본은 후보 판정표와 새 행 CSV만 `analysis/popular_added/`에 쓰고, `--apply`를 주어야 장소 표에 붙입니다. 인증키는 환경변수 `DATA_GO_KR_KEY`로만 받습니다. 붙인 뒤에는 분석을 다시 실행해야 군집과 코스 연결에 반영됩니다. 점검은 `python -m unittest tools.test_add_popular_places`입니다.
 
+관광지 오디오 가이드(오디) 해설이 있는 관광지는 [`tools/add_odii_places.py`](tools/add_odii_places.py)로 더합니다. 오디 한국어 관광지 목록(`Odii/themeBasedList`) 전부를 받아 주소로 지역을 정하고(없으면 30km 안 가장 가까운 장소의 지역), 같은 지역 장소와 이름·위치로 맞춰 본 뒤 남는 곳만 새 행으로 만듭니다. 국문 관광정보에서 같은 이름·1km 안 항목을 찾으면 그 분류와 `pop<contentid>` id, 못 찾으면 이름 낱말 분류와 `odii<tid>` id입니다. 앱 `scripts/add-popular-places.mjs --source odii`와 같은 규칙입니다. 점검은 `python -m unittest tools.test_add_odii_places`입니다.
+
+장소 표 전체의 좌표는 [`tools/verify_coords.py`](tools/verify_coords.py)로 한국관광공사 관광정보와 대조할 수 있습니다. 장소마다 이름으로 관광정보를 검색해 같은 시군구·이름 점수 2 이상인 항목의 좌표와 거리를 재고, 300m를 넘는 곳을 `analysis/coord_check/coord_fix_<날짜>.csv`에 모읍니다(좌표를 바꾸지는 않습니다). 점검은 `python -m unittest tools.test_verify_coords`입니다.
+
 지출 **업종 분류 S/SC 및 업종·월별 지출 입력은 제거**했습니다. 지역 지출 회귀는 유지합니다. 해양 월별 방문자는 지출 월별 입력과 다른 자료입니다.
 
 주 노트북의 직접 5범주 평점 CSV는 코사인 계산을 검증하는 별도 선택 입력이며 최신 분기 설문에 포함되지 않습니다. 파일이 없으면 `SYNTHETIC_DEMONSTRATION`으로 표시한 가상 응답 4개로 계산을 시연합니다.
@@ -482,7 +486,7 @@ python run_session.py examples/full_session.json
 | `hallyu_preprocessed_csv/` | 2026 해외한류실태조사 전처리 CSV | 보조 자료 |
 | `tour_scoring/`, `survey_legacy/`, `session_results/`, `examples/`, `run_session.py` | 기존 v1~v4 산식과 세션 예제. 세션 실행기는 최신 설문 추천도 나란히 저장. 연령·지역 구성 분석이 만든 앱 데이터는 `tour_scoring/data`에 둠 | 비교용 |
 | `verification/` | 실행 로그, 검증 결과, 전체 파일 SHA256 | 검증 기록 |
-| `tools/` | 인기 관광지 추가 도구(`add_popular_places.py`)와 점검 | 입력 갱신 |
+| `tools/` | 인기 관광지 추가(`add_popular_places.py`) · 오디 해설 관광지 추가(`add_odii_places.py`) · 좌표 대조(`verify_coords.py`) 도구와 점검 | 입력 갱신 |
 | `archive/` | 이전 버전 안내 | 보관 |
 
 ## 해석할 때 주의할 점
