@@ -452,6 +452,8 @@ Jupyter에서는 `analysis` 폴더에서 [Tour_Navigator_Integrated.ipynb](analy
 
 장소 표 전체의 좌표는 [`tools/verify_coords.py`](tools/verify_coords.py)로 한국관광공사 관광정보와 대조할 수 있습니다. 장소마다 이름으로 관광정보를 검색해 같은 시군구·이름 점수 2 이상인 항목의 좌표와 거리를 재고, 300m를 넘는 곳을 `analysis/coord_check/coord_fix_<날짜>.csv`에 모읍니다(좌표를 바꾸지는 않습니다). 점검은 `python -m unittest tools.test_verify_coords`입니다.
 
+한국관광공사 관광지별 연관 관광지(「함께 많이 가는 관광지」, 장소 표의 `ro*` · `rs*` 행 1,509곳이 처음 들어온 자료)는 [`tools/add_related_places.py`](tools/add_related_places.py)로 전수 재조사합니다(`python -m tools.add_related_places --apply`). 장소가 있는 시군구 전부마다 시군구 전체 연관 관광지 목록(`TarRlteTarService1/areaBasedList1`, 기준월 2개월 전)을 받아 연관 관광지로 나오는 모든 곳을 시군구 · 이름으로 모으고(연계 수 · 최고 순위 · 기준 관광지, 주차장 · 화장실 · 전국 체인 브랜드 제외), 같은 지역 장소와 이름 · 위치로 맞춰 본 뒤 남는 곳을 국문 관광정보 좌표로 새 행(`pop<contentid>`, 숙박은 `stay`)으로 만듭니다. 관광정보에 없는 곳은 좌표가 없어 후보 표(`analysis/related_added/related_candidates_<날짜>.csv`)에 「못 찾음」으로만 남습니다. 앱 `scripts/add-popular-places.mjs --source related`와 같은 규칙 · 같은 id입니다. 점검은 `python -m unittest tools.test_add_related_places`입니다. 인증키가 없는 환경에서 미리 뽑아 둔 참고표 [`analysis/related_added/related_mentioned_missing_2026-10-03.csv`](analysis/related_added/related_mentioned_missing_2026-10-03.csv)는 기존 연관 관광지 행의 설명(「A, B 등과 함께 많이 찾는 곳」)에 이름이 나오지만 장소 표에 없는 842곳(지역 · 언급 수 · 언급한 장소)입니다.
+
 인증키가 없는 환경에서 사람이 좌표를 적은 장소는 [`tools/add_manual_places.py`](tools/add_manual_places.py)로 더합니다(`python -m tools.add_manual_places --apply`). 입력은 [`analysis/citytour_manual_places.csv`](analysis/citytour_manual_places.csv)(시티투어 280노선의 경유지 중 앱 장소와 맞지 않는 곳을 사람이 고르고 좌표·범주·설명을 적은 표, 앱 `scripts/data/citytour-manual-places.csv`와 같은 파일)입니다. id는 `ctm<sha1(지역|이름) 앞 8자리>`라 다시 돌려도 같은 곳을 두 번 넣지 않고, 기존 장소와 250m 안(또는 1km 안에서 이름이 절반 넘게 겹침)이면 넣지 않습니다. 출처에 「좌표 수기 입력(지도 검증 필요)」을 적어 두었으니 인증키가 있는 곳에서 `tools/verify_coords.py`로 관광정보 좌표와 대조하는 것이 좋습니다. 2026-10-03에 124행 중 기존 장소와 겹치는 27곳을 빼고 97곳을 붙였습니다(3,109 → 3,206행. 앱 `added-places.json`과 같은 97곳. `nearOk=1` 열은 기존 장소 250m 안이어도 사람이 다른 곳으로 확인한 이웃 장소라 넣습니다. 서울 출발 EG투어버스가 들르는 김포 · 부천 · 광명은 장소가 없던 지역이라 권역은 전국으로 둡니다). 분석 결과(군집·코스 연결)는 3,109행 기준 그대로이며, 새 장소를 반영하려면 분석을 다시 실행해야 합니다. 점검은 `python -m unittest tools.test_add_manual_places`입니다.
 
 
@@ -490,7 +492,7 @@ python run_session.py examples/full_session.json
 | `hallyu_preprocessed_csv/` | 2026 해외한류실태조사 전처리 CSV | 보조 자료 |
 | `tour_scoring/`, `survey_legacy/`, `session_results/`, `examples/`, `run_session.py` | 기존 v1~v4 산식과 세션 예제. 세션 실행기는 최신 설문 추천도 나란히 저장. 연령·지역 구성 분석이 만든 앱 데이터는 `tour_scoring/data`에 둠 | 비교용 |
 | `verification/` | 실행 로그, 검증 결과, 전체 파일 SHA256 | 검증 기록 |
-| `tools/` | 인기 관광지 추가(`add_popular_places.py`) · 오디 해설 관광지 추가(`add_odii_places.py`) · 수기 장소 추가(`add_manual_places.py`) · 좌표 대조(`verify_coords.py`) 도구와 점검 | 입력 갱신 |
+| `tools/` | 인기 관광지 추가(`add_popular_places.py`) · 오디 해설 관광지 추가(`add_odii_places.py`) · 연관 관광지 전수 재조사(`add_related_places.py`) · 수기 장소 추가(`add_manual_places.py`) · 좌표 대조(`verify_coords.py`) 도구와 점검 | 입력 갱신 |
 | `archive/` | 이전 버전 안내 | 보관 |
 
 ## 해석할 때 주의할 점
