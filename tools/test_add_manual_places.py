@@ -66,6 +66,10 @@ class ManualRows(unittest.TestCase):
         self.assertEqual(verdicts[0]["장소 id"], "gj2")
         self.assertEqual(verdicts[4]["장소 이름"], "새정원")
 
+    def test_source_column(self):
+        new, _ = m.manual_rows([row(source="한국관광공사 연관 관광지(기존 장소 설명에 3회 언급)")], POOL, date="2026-10-03")
+        self.assertEqual(new[0]["출처"], "한국관광공사 연관 관광지(기존 장소 설명에 3회 언급) · 좌표 수기 입력(지도 검증 필요, 2026-10-03)")
+
     def test_near_ok(self):
         near = row(ko="첨성대 옆", lat="35.8348", lng="129.2195")
         self.assertEqual(m.manual_rows([near], POOL)[0], [])
