@@ -84,13 +84,14 @@ class EndToEnd(unittest.TestCase):
         self.assertIn("contentid 2002", row["출처"])
         self.assertEqual(len(row), len(m.COLUMNS))
 
-        # 붙이고 다시 읽으면 3,110행 · 17열 · CRLF, 다시 돌리면 contentid로 걸러 신규 0
+        # 붙이고 다시 읽으면 (collect가 새 행을 붙인 장소 수 + 머리글)행 · 17열 · CRLF, 다시 돌리면 contentid로 걸러 신규 0
+        before = len(places)
         m.append_rows(self.places, new)
         raw = self.places.read_bytes()
         self.assertTrue(raw.startswith(b"\xef\xbb\xbf") and raw.endswith(b"\r\n") and b"\r\npop2002,\xea\xb2\xbd\xec\xa3\xbc" in raw)
         with open(self.places, encoding="utf-8-sig", newline="") as f:
             rows = list(csv.reader(f))
-        self.assertEqual((len(rows), {len(r) for r in rows}), (3111, {17}))
+        self.assertEqual((len(rows), {len(r) for r in rows}), (before + 1, {17}))
         again = m.read_places(self.places)
         cand2, new2 = m.collect(api, again, m.targets_home(again, ["경주"]), "2026-10-01", 10, log=lambda *_: None)
         self.assertEqual(new2, [])
