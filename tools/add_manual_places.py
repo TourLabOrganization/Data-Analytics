@@ -6,7 +6,7 @@
     python -m tools.add_manual_places --csv <표.csv> --apply
 
 입력 표(기본 analysis/citytour_manual_places.csv, 앱 frontend scripts/data/citytour-manual-places.csv와 같은 파일)의 열:
-    region(지역) · stopName(시티투어 노선 표기) · tours(노선 수) · ko · en · cat · lat · lng · signgu(법정동 시군구 코드) · muni(시군구 이름) · desc · descEn
+    region(지역) · stopName(시티투어 노선 표기) · tours(노선 수) · ko · en · cat · lat · lng · signgu(법정동 시군구 코드) · muni(시군구 이름) · desc · descEn\n    · nearOk(1이면 기존 장소 250m 안이어도 다른 곳으로 보고 넣는다. 사람이 확인한 이웃 장소)
 
 규칙은 앱 frontend scripts/add-manual-places.mjs와 같다(두 저장소의 장소 표가 같게 늘어난다).
   1. id는 ctm<sha1("지역|이름") 앞 8자리>: 같은 지역 · 같은 이름이면 다시 돌려도 같은 id라 두 번 들어가지 않는다.
@@ -79,7 +79,7 @@ def manual_rows(rows: list[dict], places: list[dict], date: str = DATE) -> tuple
             verdict.update(판정="기존(id)", **{"장소 id": pid})
             verdicts.append(verdict)
             continue
-        near = match_by_location(ko, lat, lng, pool)
+        near = None if (r.get("nearOk") or "").strip() == "1" else match_by_location(ko, lat, lng, pool)
         if near:
             verdict.update(판정="기존(위치)", **{"장소 id": near["id"], "장소 이름": near["이름(한국어)"]})
             verdicts.append(verdict)
