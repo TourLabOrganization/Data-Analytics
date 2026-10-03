@@ -88,6 +88,7 @@ class EndToEnd(unittest.TestCase):
         self.assertEqual(len(new[0]), len(m.COLUMNS))
 
         # 붙이고 다시 돌리면 tid로 걸러 신규 0
+        before = len(m.read_places(self.places))
         m.append_rows(self.places, new)
         again = m.read_places(self.places)
         cand2, new2 = m.collect(api, again, log=lambda *_: None)
@@ -95,7 +96,7 @@ class EndToEnd(unittest.TestCase):
         self.assertEqual([c["판정"] for c in cand2][2:5], ["기존(tid)"] * 3)
         with open(self.places, encoding="utf-8-sig", newline="") as f:
             rows = list(csv.reader(f))
-        self.assertEqual((len(rows), {len(r) for r in rows}), (3113, {17}))
+        self.assertEqual((len(rows), {len(r) for r in rows}), (before + len(new) + 1, {17}))
 
     def test_cli_without_apply(self):
         self.put("odii_ko_p1.json", [theme("2", "경주 불국사", 35.7923, 129.3317, "경상북도", "경주시")])
