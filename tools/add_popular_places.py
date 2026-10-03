@@ -178,7 +178,8 @@ class Api:
 
 
 class JsonDirApi:
-    """받아 둔 응답으로 돌린다(테스트 · 네트워크 없는 곳). 파일 이름: crowd_<signguCd>_p<쪽>.json, odii_<langCode>_p<쪽>.json, search_<검색어>.json"""
+    """받아 둔 응답으로 돌린다(테스트 · 네트워크 없는 곳). 파일 이름: crowd_<signguCd>_p<쪽>.json, odii_<langCode>_p<쪽>.json,
+    related_<signguCd>_<baseYm>_p<쪽>.json, search_<검색어>.json"""
 
     def __init__(self, folder: Path):
         self.folder = Path(folder)
@@ -188,6 +189,8 @@ class JsonDirApi:
             name = f"crowd_{params['signguCd']}_p{params['pageNo']}.json"
         elif path.startswith("Odii/themeBasedList"):
             name = f"odii_{params['langCode']}_p{params['pageNo']}.json"
+        elif path.startswith("TarRlteTarService1/areaBasedList1"):
+            name = f"related_{params['signguCd']}_{params['baseYm']}_p{params['pageNo']}.json"
         else:
             name = f"search_{params['keyword']}.json"
         f = self.folder / name
