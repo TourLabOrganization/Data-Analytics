@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 3189,
+    "rows": 3199,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "05885663777f229d9aa06110ead2d3becaa024191c198e18e1803c1a35606c89"
+    "sha256": "0420228787721d64f0415af23331c6047b72373556fb514a0e1c204c463030c8"
   },
   {
     "file": "analysis/citytour.csv",
