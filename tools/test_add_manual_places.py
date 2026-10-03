@@ -66,6 +66,13 @@ class ManualRows(unittest.TestCase):
         self.assertEqual(verdicts[0]["장소 id"], "gj2")
         self.assertEqual(verdicts[4]["장소 이름"], "새정원")
 
+    def test_near_ok(self):
+        near = row(ko="첨성대 옆", lat="35.8348", lng="129.2195")
+        self.assertEqual(m.manual_rows([near], POOL)[0], [])
+        new, verdicts = m.manual_rows([dict(near, nearOk="1")], POOL)
+        self.assertEqual([n["이름(한국어)"] for n in new], ["첨성대 옆"])
+        self.assertEqual(verdicts[0]["판정"], "신규")
+
     def test_near_with_name_overlap(self):
         new, verdicts = m.manual_rows([row(ko="경주 첨성대", lat="35.8397", lng="129.219")], POOL)  # 약 550m · 이름 겹침
         self.assertEqual(new, [])
