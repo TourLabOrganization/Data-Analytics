@@ -25,7 +25,7 @@ b9231d0c3387a56154e033c670363024,대천해수욕장,nax649,nax649,name_unique_pr
 9aaf6c471f653b9f7f48f1bf52c02fad,국립경주박물관,gjx4,gjx4,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
 664bcb8aaae12fcedf6b388e569532d8,벡스코제1전시장,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
 8ae23fba3b339ba52d411e548e8dcbbe,송도컨벤시아,ro553,ro553,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
-c63b5b337225ae746ba52eb7f398aac1,광안리해수욕장,ro4,ro4,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+c63b5b337225ae746ba52eb7f398aac1,광안리해수욕장,bc4,bc4,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
 d68c2c6af7cf6cb1092154f35a52c1c7,해동용궁사,bcx22,bcx22,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
 5deaf67168dab528b8659e4ccbacc3b2,인천대공원,nax181,nax181,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
 8d94308013411d55408018a58c07cbb3,화담숲,nax423,nax423,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
@@ -66,6 +66,6 @@ f7a7a4fbfde355e7e635e8bbb1e07b53,소래포구,nax169,nax169,name_unique_provisio
 98208837d388bedf7689ff65b59cff90,연안부두,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
 864b1d08573642d8a9cf9c5b22556a17,남한산성,nax422,nax422,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
 fde3c07733ea24446563afd36ed34d7c,산정호수,nax611,nax611,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
-776e7e89353e146a00645ecb2456c971,월정사,ro31,ro31,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
+776e7e89353e146a00645ecb2456c971,월정사,nax521,nax521,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
 d7e4f4a3f8e8e1fcb0e2a317ba7973f3,물왕호수,ctt197,ctt197,name_unique_provisional,0.5,False,좌표 주소 미제공 · 공백 제거 명칭 매칭 · 현장 동일성 미확인
 61d37e87ec160394e32a41dd674a3b91,국립수목원,,,unmatched,0.0,False,별칭 시설 범위 및 주소 검토 필요
