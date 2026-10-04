@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 3270,
+    "rows": 3783,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "169aed28ccfbf7644c439498dbe42bbe69ac2d800624153e3274b543e4adb807"
+    "sha256": "fede1bd4986feea66dfc93325e1f9d3131ca00a9dd97656a382969e3486a29c3"
   },
   {
     "file": "analysis/citytour.csv",
@@ -523,5 +523,44 @@
     ],
     "encoding": "utf-8-sig",
     "sha256": "2520e708dea7959fa59dedefcb505848b76411178ec75b2a319f2fca66b71b0f"
+  },
+  {
+    "file": "analysis/treasure_sites.csv",
+    "rows": 577,
+    "columns": [
+      "region",
+      "site",
+      "ko",
+      "kind",
+      "cat",
+      "count",
+      "items",
+      "address"
+    ],
+    "encoding": "utf-8",
+    "sha256": "ef3e90098af8f6a9757ec0fa5100839bff31a690ec83db31c0d9f9db90ded2a6"
+  },
+  {
+    "file": "analysis/treasure_places.csv",
+    "rows": 559,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "f78d44aea496201b6ade4b6bcfaacb9e54850476789b74e5a1f078131ef3956b"
   }
 ]

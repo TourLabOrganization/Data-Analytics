@@ -409,7 +409,8 @@ def targets_home(places: list[dict], cities: list[str]) -> list[dict]:
 
 
 def targets_all(places: list[dict], signgu: dict[str, str], min_places: int = 1, regions: list[str] | None = None) -> list[dict]:
-    """전국: 장소(숙박 제외)가 있는 시군구 전부. 한 시군구가 두 지역에 걸치면 장소가 많은 지역(같으면 이름 순)에 붙인다.
+    """전국: 장소(숙박 제외)가 있는 시군구 전부. 한 시군구가 두 지역에 걸치면 장소가 많은 지역(같으면 시군구가 적은 지역, 그다음 이름 순)에 붙인다.
+    옥천 2곳 = 대전 시티투어 경유지 2곳이면 옥천에(대전은 제 구가 따로 있다). 앱 lib/tour-collect.ts allTargets와 같다.
     매칭 풀은 그 지역의 장소 + 그 시군구 코드의 장소(지역이 달라도)"""
     count: dict[tuple[str, str], int] = {}
     for p in places:
@@ -417,13 +418,16 @@ def targets_all(places: list[dict], signgu: dict[str, str], min_places: int = 1,
         if p["카테고리"] == "stay" or not re.fullmatch(r"\d{5}", code):
             continue
         count[(p["지역"], code)] = count.get((p["지역"], code), 0) + 1
-    claims: dict[str, list[tuple[int, str]]] = {}
+    spread: dict[str, int] = {}
+    for region, _ in count:
+        spread[region] = spread.get(region, 0) + 1
+    claims: dict[str, list[tuple[int, int, str]]] = {}
     for (region, code), n in count.items():
         if n >= min_places:
-            claims.setdefault(code, []).append((-n, region))
+            claims.setdefault(code, []).append((-n, spread[region], region))
     by_region: dict[str, list[str]] = {}
     for code, who in claims.items():
-        by_region.setdefault(min(who)[1], []).append(code)
+        by_region.setdefault(min(who)[2], []).append(code)
     out = []
     for region in sorted(by_region):
         if regions and region not in regions:

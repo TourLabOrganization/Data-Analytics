@@ -161,7 +161,7 @@ class EndToEnd(unittest.TestCase):
         signgu = m.read_signgu(ROOT / "analysis" / "place_signgu.json")
         targets = m.targets_all(places, signgu)
         regions = {p["지역"] for p in places if p["카테고리"] != "stay"}
-        self.assertEqual({t["region"] for t in targets}, regions)  # 숙박만 있는 지역은 없으므로 124곳 전부
+        self.assertEqual({t["region"] for t in targets}, regions)  # 숙박만 있는 지역은 없으므로 154곳 전부(2026-10-04 보물 소재지까지)
         codes = [c for t in targets for c in t["codes"]]
         self.assertEqual(len(codes), len(set(codes)))  # 한 시군구는 한 지역에만
         gj = next(t for t in targets if t["region"] == "경주")
