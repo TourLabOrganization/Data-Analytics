@@ -70,6 +70,13 @@ class ManualRows(unittest.TestCase):
         new, _ = m.manual_rows([row(source="한국관광공사 연관 관광지(기존 장소 설명에 3회 언급)")], POOL, date="2026-10-03")
         self.assertEqual(new[0]["출처"], "한국관광공사 연관 관광지(기존 장소 설명에 3회 언급) · 좌표 수기 입력(지도 검증 필요, 2026-10-03)")
 
+    def test_coord_column(self):
+        # coord 열이 있으면 출처의 좌표 근거가 그 문구(앱 add-manual-places.mjs와 같다)
+        places = [place("gj1", "경주", "불국사", 35.79, 129.33)]
+        new, _ = m.manual_rows([row(coord="카카오 로컬 좌표(주소 · 장소 검색, 2026-10-04)")], places)
+        self.assertIn("카카오 로컬 좌표", new[0]["출처"])
+        self.assertNotIn("좌표 수기 입력", new[0]["출처"])
+
     def test_near_ok(self):
         near = row(ko="첨성대 옆", lat="35.8348", lng="129.2195")
         self.assertEqual(m.manual_rows([near], POOL)[0], [])

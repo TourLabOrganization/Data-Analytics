@@ -6,7 +6,7 @@
     python -m tools.add_manual_places --csv <표.csv> --apply
 
 입력 표(기본 analysis/citytour_manual_places.csv, 앱 frontend scripts/data/citytour-manual-places.csv와 같은 파일)의 열:
-    region(지역) · stopName(시티투어 노선 표기) · tours(노선 수) · ko · en · cat · lat · lng · signgu(법정동 시군구 코드) · muni(시군구 이름) · desc · descEn\n    · nearOk(1이면 기존 장소 250m 안이어도 다른 곳으로 보고 넣는다. 사람이 확인한 이웃 장소)\n    · source(출처 앞 문구. 비면 「시티투어 경유지(n개 노선, 노선 표기 「…」)」. 연관 관광지 표 analysis/related_manual_places.csv는 「한국관광공사 연관 관광지(… 언급)」)
+    region(지역) · stopName(시티투어 노선 표기) · tours(노선 수) · ko · en · cat · lat · lng · signgu(법정동 시군구 코드) · muni(시군구 이름) · desc · descEn\n    · nearOk(1이면 기존 장소 250m 안이어도 다른 곳으로 보고 넣는다. 사람이 확인한 이웃 장소)\n    · coord(좌표 근거. 비면 「좌표 수기 입력(지도 검증 필요, 날짜)」, 지오코딩한 표는 「카카오 로컬 좌표 …」)\n    · source(출처 앞 문구. 비면 「시티투어 경유지(n개 노선, 노선 표기 「…」)」. 연관 관광지 표 analysis/related_manual_places.csv는 「한국관광공사 연관 관광지(… 언급)」)
 
 규칙은 앱 frontend scripts/add-manual-places.mjs와 같다(두 저장소의 장소 표가 같게 늘어난다).
   1. id는 ctm<sha1("지역|이름") 앞 8자리>: 같은 지역 · 같은 이름이면 다시 돌려도 같은 id라 두 번 들어가지 않는다.
@@ -93,7 +93,7 @@ def manual_rows(rows: list[dict], places: list[dict], date: str = DATE) -> tuple
             "이름(한국어)": ko, "English": (r.get("en") or "").strip() or ko,
             "카테고리": cat, "위도": f"{lat:.5f}", "경도": f"{lng:.5f}",
             "추천 체류(분)": str(stays.get(cat, 60)),
-            "출처": f"{(r.get('source') or '').strip() or f'시티투어 경유지({tours}개 노선, 노선 표기 「{stop}」)'} · 좌표 수기 입력(지도 검증 필요, {date})",
+            "출처": f"{(r.get('source') or '').strip() or f'시티투어 경유지({tours}개 노선, 노선 표기 「{stop}」)'} · {(r.get('coord') or '').strip() or f'좌표 수기 입력(지도 검증 필요, {date})'}",
             "설명": (r.get("desc") or "").strip() or f"{region} 시티투어 경유지({tours}개 노선)",
         })
         new_rows.append(new)
