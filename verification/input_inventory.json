@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4307,
+    "rows": 4316,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "0fd8b5e78f224a3d796a5953daee4c8d9f73bc27b5e54de132bc7020f95afdd1"
+    "sha256": "b79daf2a99e47fcddd534352f23169e46e11f76c1984860a377d935643d46a85"
   },
   {
     "file": "analysis/citytour.csv",
@@ -780,5 +780,28 @@
     ],
     "encoding": "utf-8",
     "sha256": "58b3d129eb34da3c88dcebf706eaf70013ae52a87c9eb5191fb150ae60bab003"
+  },
+  {
+    "file": "analysis/aquarium_places.csv",
+    "rows": 9,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "3069f4c43e32053daa236811053db00bd82f4420b8eee4725979d80076a16877"
   }
 ]
