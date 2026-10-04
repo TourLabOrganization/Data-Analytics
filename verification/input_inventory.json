@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 3866,
+    "rows": 4067,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "aedb4cc9989bf903fe526b6c60ed2aee343e18c64e3e664a1dd46f4126fb512a"
+    "sha256": "a993898d9dee7f98c88cbc59cb2f6b6a0eb84eb77ae9482694c9ce0159c0eec5"
   },
   {
     "file": "analysis/citytour.csv",
@@ -663,5 +663,28 @@
     ],
     "encoding": "utf-8",
     "sha256": "9905c65dd65b67dbc79beb6f2b621adaed642c8cb3a21a349b79126085b75346"
+  },
+  {
+    "file": "analysis/beach_valley_places.csv",
+    "rows": 202,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "843a2a24d94d4075a329e9af95f7fccce67ed11788fcf469a2d6a715a2e57ad0"
   }
 ]

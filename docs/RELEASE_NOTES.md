@@ -327,3 +327,8 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 
 - `analysis/leisure_places.csv`(앱 `scripts/data/leisure-places.csv`와 같은 파일): 테마파크 · 워터파크 · 아쿠아리움 14곳, 2025/26 운영 스키장 9곳(베어스타운 · 양지파인 · 스타힐은 폐장), 전시컨벤션센터 11곳. 3,832 → 3,866행, 앱 id와 같다.
 - `tools/clean_place_sources.py`: 출처 칸의 작업 기록(날짜 · 사용자 요청 · 지도 검증 메모 · 노선 표기 · 언급 횟수)을 지웠다(800행). `tools/add_manual_places.py`도 같은 규칙으로 적는다(앱 `scripts/clean-place-sources.mjs`와 같다). 점검 1건 추가.
+
+## 2026-10-04 해수욕장 · 계곡 추가, 충주 라이트월드 삭제
+
+- `analysis/beach_valley_places.csv`(앱 `scripts/data/beach-valley-places.csv`와 같은 파일): 지정 해수욕장과 대조해 빠진 166곳(강원 57 · 경북 · 울산 · 부산 18 · 경남 13 · 전남 48 · 인천 · 전북 · 충남 26 · 제주 4)과 계곡 36곳. 좌표는 대부분 대략 위치.
+- 충주 라이트월드(`nax40`, 2020년 임대 종료 · 2022년 철거)를 `tour-places.csv` · `place_signgu.json`에서 뺐다(앱 `build-planner.mjs` `CLOSED_IDS`). 3,866 → 3,865 → 4,067행, 앱 id와 같다.
