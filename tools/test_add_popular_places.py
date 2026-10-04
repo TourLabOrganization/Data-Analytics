@@ -50,6 +50,18 @@ class NameRules(unittest.TestCase):
         self.assertEqual((date, [s["name"] for s in spots]), ("2026-10-01", ["d"]))
 
 
+class CompanyMarkAndStays(unittest.TestCase):
+    def test_company_mark_and_exact_stay(self):
+        self.assertEqual(m.spot_name("㈜금호리조트 설악"), "금호리조트설악")
+        self.assertEqual(m.spot_name("주식회사 금호리조트 설악"), "금호리조트설악")
+        stay = {"id": "rs9", "이름(한국어)": "금호리조트 설악", "카테고리": "stay"}
+        sea = {"id": "t", "이름(한국어)": "속초 등대", "카테고리": "sea"}
+        for name in ("(주)금호리조트 설악", "㈜금호리조트 설악"):
+            self.assertEqual(m.match_by_name({"name": name, "city": "속초"}, [sea], None, [stay])["id"], "rs9")
+        self.assertIsNone(m.match_by_name({"name": "금호리조트", "city": "속초"}, [sea], None, [stay]))  # 품는 이름은 숙박에 잇지 않는다
+        self.assertEqual(m.match_by_name({"name": "속초등대", "city": "속초"}, [sea], None, [dict(stay, **{"이름(한국어)": "속초 등대"})])["id"], "t")
+
+
 class EndToEnd(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())

@@ -85,8 +85,12 @@ def crowd_score(name, me: str) -> int:
     return 2 if (me in n or n in me) else 0
 
 
+# 회사 · 법인 표기(㈜ · 주식회사 · 재단법인 …). 괄호 표기 「(주)」는 crowd_name이 괄호째 뺀다(앱 tour-popular.ts COMPANY_MARK와 같다)
+COMPANY_MARK = re.compile(r"[㈜㈔㈐㈕]|주식회사|유한회사|재단법인|사단법인")
+
+
 def spot_name(v) -> str:
-    n = re.sub(r"(해수욕장|해안)$", "해변", crowd_name(v))
+    n = re.sub(r"(해수욕장|해안)$", "해변", crowd_name(COMPANY_MARK.sub("", str(v or ""))))
     return re.sub(r"(전통시장|재래시장)$", "시장", n)
 
 
@@ -314,11 +318,12 @@ def read_match(path: Path = MATCH_CSV) -> dict[str, str]:
         return {f"{r['city'].strip()}|{crowd_name(r['name'])}": r["id"].strip() for r in csv.DictReader(f) if r.get("id", "").strip()}
 
 
-def match_by_name(spot: dict, pool: list[dict], pins: dict[str, str] | None = None) -> dict | None:
-    """수기 대조표(pins)에 있으면 그 장소, 아니면 이름 점수 2 이상 중 가장 높은 곳(앱 matchPlace와 같다)"""
+def match_by_name(spot: dict, pool: list[dict], pins: dict[str, str] | None = None, stays: list[dict] | None = None) -> dict | None:
+    """수기 대조표(pins)에 있으면 그 장소, 아니면 이름 점수 2 이상 중 가장 높은 곳(앱 matchPlace와 같다).
+    stays(그 도시 숙박 장소)는 이름이 같을(3점) 때만 잇고, 같은 점수면 숙박이 아닌 장소가 먼저(금호리조트 설악처럼 리조트가 인기 관광지로 나온다)"""
     pinned = (pins or {}).get(f"{spot.get('city', '')}|{crowd_name(spot['name'])}")
     if pinned:
-        for p in pool:
+        for p in [*pool, *(stays or [])]:
             if p["id"] == pinned:
                 return p
     best, best_score = None, 1
@@ -326,6 +331,10 @@ def match_by_name(spot: dict, pool: list[dict], pins: dict[str, str] | None = No
         s = name_score(spot["name"], p["이름(한국어)"], spot["city"])
         if s > best_score:
             best, best_score = p, s
+    if best_score < 3:
+        for p in stays or []:
+            if name_score(spot["name"], p["이름(한국어)"], spot["city"]) == 3:
+                return p
     return best
 
 
@@ -473,7 +482,7 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
             spot = dict(s, city=city)
             row = {"지역": city, "순위": rank, "관광지": s["name"], "시군구": s["district"], "시군구 코드": s["signgu"],
                    "집중률": s["rate"], "기준 날짜": date, "판정": "", "장소 id": "", "장소 이름": "", "contentid": ""}
-            hit = match_by_name(spot, pool, pins)
+            hit = match_by_name(spot, pool, pins, [p for p in places if p["지역"] == city and p["카테고리"] == "stay"])
             if hit:
                 row.update(판정="기존(이름)", **{"장소 id": hit["id"], "장소 이름": hit["이름(한국어)"]})
                 candidates.append(row)
