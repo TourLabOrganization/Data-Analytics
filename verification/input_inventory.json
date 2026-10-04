@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 3815,
+    "rows": 3832,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "bb3b320e577247f74cc21e3fc927fd4c0effea4ad30d27eaa33fa5d3335723f6"
+    "sha256": "9ed05fc60ffb7fe3f225206b5a8f6525779cb873cedf8d0c5cdcae9e923377bc"
   },
   {
     "file": "analysis/citytour.csv",
@@ -617,5 +617,28 @@
     ],
     "encoding": "utf-8",
     "sha256": "0d1de70ffbd52870c34771868a8685d2ae99d9fa3cdb21e4a4ec481b6cbf48f0"
+  },
+  {
+    "file": "analysis/uiryeong_places.csv",
+    "rows": 17,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "500b9e3405bb5df1124acf8d7653ef4aebe3483efd0f1fe26aa20ced72dbb472"
   }
 ]
