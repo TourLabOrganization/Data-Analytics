@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4386,
+    "rows": 4457,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "a2689fdeb213663776a8a29d063e7631ddb19992329f204cf45ba4b2a195da04"
+    "sha256": "f8c76e962d09cb41961d76ce093361d435c3477dc71dd0ac1a1aceb5f433c69e"
   },
   {
     "file": "analysis/citytour.csv",
@@ -826,5 +826,28 @@
     ],
     "encoding": "utf-8",
     "sha256": "31f33793e4d5377d892518cf058e21e0b91b625c9d52e8b031949d18f17d8709"
+  },
+  {
+    "file": "analysis/gangneung_places.csv",
+    "rows": 71,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "2c9dcbf9955660fd6a8a4b6acbeb65013002b4783fe8bb616275ccaa1826c1eb"
   }
 ]

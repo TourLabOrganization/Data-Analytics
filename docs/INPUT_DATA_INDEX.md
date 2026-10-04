@@ -9,7 +9,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 
 | 파일 | 행 수 | 열 수 | SHA256 |
 |---|---:|---:|---|
-| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,386 | 17 | `a2689fdeb213663776a8a29d063e7631ddb19992329f204cf45ba4b2a195da04` |
+| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,457 | 17 | `f8c76e962d09cb41961d76ce093361d435c3477dc71dd0ac1a1aceb5f433c69e` |
 | [analysis/citytour_manual_places.csv](../analysis/citytour_manual_places.csv) | 124 | 13 | `26951dc66690823d300413eb04cd7b1edb5d2b1c6e6ce2e12e2ccfd962664b4b` |
 | [analysis/popular_manual_places.csv](../analysis/popular_manual_places.csv) | 100 | 4 | `edf5921644302b646fd3d6ff043f26817846ffaa9a6293fd4d9b7ad07a43b010` |
 | [analysis/related_manual_places.csv](../analysis/related_manual_places.csv) | 67 | 14 | `e02fba63c491dee30bd09543d16984cdeff15aa72ac58309fd3c6872ab9007f3` |
@@ -35,8 +35,9 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/unesco_places.csv](../analysis/unesco_places.csv) | 13 | 15 | `58b3d129eb34da3c88dcebf706eaf70013ae52a87c9eb5191fb150ae60bab003` |
 | [analysis/aquarium_places.csv](../analysis/aquarium_places.csv) | 9 | 15 | `3069f4c43e32053daa236811053db00bd82f4420b8eee4725979d80076a16877` |
 | [analysis/sokcho_places.csv](../analysis/sokcho_places.csv) | 70 | 15 | `31f33793e4d5377d892518cf058e21e0b91b625c9d52e8b031949d18f17d8709` |
+| [analysis/gangneung_places.csv](../analysis/gangneung_places.csv) | 71 | 15 | `2c9dcbf9955660fd6a8a4b6acbeb65013002b4783fe8bb616275ccaa1826c1eb` |
 | [analysis/related_added/related_mentioned_missing_2026-10-03.csv](../analysis/related_added/related_mentioned_missing_2026-10-03.csv) | 842 | 4 | `c0920fb295ed1f7b4266d7f22b223393a74ddfc2eefcd3978003c5d7e620fea2` |
-| [analysis/place_signgu.json](../analysis/place_signgu.json) | 4,386 | 2 (id, 코드) | `8c0738362e86dbdb05fd99b2d27e05f9731a7d52ff0ff118934ad11f07513f04` |
+| [analysis/place_signgu.json](../analysis/place_signgu.json) | 4,457 | 2 (id, 코드) | `b9f202e16b7b4dfbc0f0078d639209d270f5b73cba945441517c38e9b0334261` |
 | [analysis/citytour.csv](../analysis/citytour.csv) | 280 | 13 | `cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324` |
 | [analysis/stop_category_review.csv](../analysis/stop_category_review.csv) | 30 | 4 | `3cd2219d4290dcac5204adb865a4677f030182ae05e020778dbe4785f45dc70b` |
 | [analysis/spending_csv/spend_region.csv](../analysis/spending_csv/spend_region.csv) | 233 | 4 | `b57eaea72fa6b060347393748e00676c160326921375b048af2486e6d632a31c` |

@@ -480,7 +480,7 @@ Jupyter에서는 `analysis` 폴더에서 [Tour_Navigator_Integrated.ipynb](analy
 
 유네스코 세계유산 표시는 공식 명단 표 [`analysis/unesco_list.csv`](analysis/unesco_list.csv)(한국의 세계유산 17건과 구성요소 장소 95곳, 2025 「반구천의 암각화」 = 반구대 암각화 · 천전리 각석 포함)로 맞춥니다. 장소 표에 없던 구성요소 13곳(태릉 · 의릉 · 정릉 · 서삼릉 · 파주 장릉 · 김포 장릉 · 사릉 · 광릉 · 고창갯벌 · 가야고분군 2곳 · 명활산성 · 관북리 유적)은 [`analysis/unesco_places.csv`](analysis/unesco_places.csv)로 붙였고, 세계유산이 아닌 오대산 월정사의 표시는 지웠습니다. 도시 · 좌표가 틀린 장소는 [`analysis/place_fixes.csv`](analysis/place_fixes.csv)와 `tools/apply_place_fixes.py`로 고칩니다(대전 시티투어 경유지로 「대전」이던 영동 · 금산 · 옥천 6곳, 제부도 해상케이블카, 여차몽돌해변 · 비진도 · 벽송사 · 삼성궁 · 최참판댁 · 김해롯데워터파크 등 좌표). 화성 융건릉 중복을 합쳤고(같은 장소 73쌍), 롯데프리미엄아울렛 김해점을 더했습니다(4,294 → 4,307행). 아쿠아리움 9곳은 [`analysis/aquarium_places.csv`](analysis/aquarium_places.csv)로 붙였습니다(4,307 → 4,316행).
 
-속초는 숙소 21곳 · 관광지 23곳 · 로컬 상권(식당 · 카페 · 먹자골목 · 서점) 26곳을 [`analysis/sokcho_places.csv`](analysis/sokcho_places.csv)로 한꺼번에 채웠습니다(2026년 영업 확인, 속초 장소 38 → 108곳, 4,316 → 4,386행).
+속초는 숙소 21곳 · 관광지 23곳 · 로컬 상권(식당 · 카페 · 먹자골목 · 서점) 26곳을 [`analysis/sokcho_places.csv`](analysis/sokcho_places.csv)로 한꺼번에 채웠습니다(2026년 영업 확인, 속초 장소 38 → 108곳, 4,316 → 4,386행). 강릉도 같은 방식으로 숙소 21곳 · 관광지 23곳 · 로컬 상권 27곳을 [`analysis/gangneung_places.csv`](analysis/gangneung_places.csv)로 붙였습니다(강릉 장소 63 → 134곳, 4,386 → 4,457행).
 
 앱 홈 「지금 인기 관광지」 수기 목록([`analysis/popular_manual_places.csv`](analysis/popular_manual_places.csv), 앱 `scripts/data/popular-manual.csv`와 같은 파일)에 2026-10-04 대구 · 춘천 10곳씩을 더했습니다(8 → 10개 도시, 100행). 둘은 데이터랩 전국 30위 안에 없어 근거는 「수기(집중률 상위 상례)」이고 한국관광 100선(서문시장 · 사유원 · 남이섬)을 적었습니다.
 

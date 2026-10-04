@@ -352,3 +352,4 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 ## 2026-10-04 속초 숙소 · 관광지 · 로컬 상권
 
 - `analysis/sokcho_places.csv`(앱 `scripts/data/sokcho-places.csv`와 같은 파일): 숙소 21 · 관광지 23 · 로컬 상권 26곳. 4,316 → 4,386행, 앱 id와 같다.
+- `analysis/gangneung_places.csv`(앱 `scripts/data/gangneung-places.csv`와 같은 파일): 강릉 숙소 21 · 관광지 23 · 로컬 상권 27곳. 4,386 → 4,457행.
