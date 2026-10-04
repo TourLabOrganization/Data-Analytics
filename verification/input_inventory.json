@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4316,
+    "rows": 4386,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "b79daf2a99e47fcddd534352f23169e46e11f76c1984860a377d935643d46a85"
+    "sha256": "a2689fdeb213663776a8a29d063e7631ddb19992329f204cf45ba4b2a195da04"
   },
   {
     "file": "analysis/citytour.csv",
@@ -803,5 +803,28 @@
     ],
     "encoding": "utf-8",
     "sha256": "3069f4c43e32053daa236811053db00bd82f4420b8eee4725979d80076a16877"
+  },
+  {
+    "file": "analysis/sokcho_places.csv",
+    "rows": 70,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "31f33793e4d5377d892518cf058e21e0b91b625c9d52e8b031949d18f17d8709"
   }
 ]

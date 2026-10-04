@@ -348,3 +348,7 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 - `analysis/unesco_list.csv`: 세계유산 17건 → 95곳(반구천의 암각화 2025 포함, 월정사 해제). 빠진 구성요소 13곳은 `analysis/unesco_places.csv`.
 - `same_places.csv` 73쌍(화성융릉과건릉 ← 융건릉), `user_manual_places.csv`에 롯데프리미엄아울렛 김해점. 4,294 → 4,307행, 앱과 같다.
 - `analysis/aquarium_places.csv`: 아쿠아리움 9곳(충주 · 충북 · 섬진강어류생태관 · 국립수산과학관 · 화천 · 양평 · 김포 몬스터리움 · 플레이아쿠아리움 부천 · 울산 고래생태체험관). 4,307 → 4,316행.
+
+## 2026-10-04 속초 숙소 · 관광지 · 로컬 상권
+
+- `analysis/sokcho_places.csv`(앱 `scripts/data/sokcho-places.csv`와 같은 파일): 숙소 21 · 관광지 23 · 로컬 상권 26곳. 4,316 → 4,386행, 앱 id와 같다.
