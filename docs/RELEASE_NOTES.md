@@ -365,3 +365,4 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 - 큰 시설 안의 다른 볼거리(수원화성 장안문 · 이월드 83타워 · 청와대 사랑채 …), 따로 운영되는 시설(사천 항공우주박물관 ↔ 사천항공우주과학관, 대성동 고분군 ↔ 대성동고분박물관)은 합치지 않았다.
 - `k100_list.csv`(임진각&파주 DMZ)와 `open_tourism_list.csv`(임진각 관광지)의 ctt192를 nax601로 바꿨다. 100선 장소 154 → 153곳.
 - `python -m tools.merge_same_places --apply`: 4,457 → 4,441행, `place_aliases.csv` 89행. 앱과 id · 좌표 · 도시가 같다.
+- `place_fixes.csv`에 이름 열(ko · en · zh · ja · es)을 더하고 `tools/apply_place_fixes.py`가 이름(한국어) · English · 中文 · 日本語를 고친다. rs284 주왕산관광호텔 → 주왕산온천관광호텔(공식 이름, 청송솔기온천 함께 운영). 앱 `scripts/apply-place-fixes.mjs`와 같다.

@@ -15,6 +15,12 @@ class ApplyFixes(unittest.TestCase):
         self.assertEqual(rows[0]["유네스코"], "")
         self.assertEqual((rows[1]["위도"], rows[1]["유네스코"]), ("35.60505", "Y"))
 
+    def test_names(self):
+        rows = [{"id": "a", "지역": "청송", "위도": "1", "경도": "2", "유네스코": "", "이름(한국어)": "옛", "English": "Old", "中文": "旧", "日本語": "旧"}]
+        n = apply(rows, [{"id": "a", "city": "", "lat": "", "lng": "", "ko": "새", "en": "New", "zh": "", "ja": None, "es": "Nuevo"}], set())
+        self.assertEqual(n, 1)
+        self.assertEqual([rows[0][c] for c in ("이름(한국어)", "English", "中文", "日本語")], ["새", "New", "旧", "旧"])
+
     def test_unknown_id(self):
         with self.assertRaises(SystemExit):
             apply([{"id": "a", "지역": "x", "위도": "1", "경도": "2", "유네스코": ""}], [{"id": "zz", "city": "y"}], set())

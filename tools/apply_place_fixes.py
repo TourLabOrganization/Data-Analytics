@@ -1,9 +1,10 @@
-"""장소 표의 도시 · 좌표 수정과 유네스코 표시를 표대로 맞춘다(앱 frontend scripts/apply-place-fixes.mjs · apply-badge-lists.mjs의 un과 같은 규칙).
+"""장소 표의 도시 · 좌표 · 이름 수정과 유네스코 표시를 표대로 맞춘다(앱 frontend scripts/apply-place-fixes.mjs · apply-badge-lists.mjs의 un과 같은 규칙).
 
     python -m tools.apply_place_fixes            # 바뀔 행 수만 찍는다
     python -m tools.apply_place_fixes --apply    # analysis/tour-places.csv를 고친다
 
   analysis/place_fixes.csv  열: id · city(새 지역, 비면 그대로) · lat · lng(새 좌표, 비면 그대로) · reason
+                            · ko · en · zh · ja(새 이름 → 이름(한국어) · English · 中文 · 日本語, 비면 그대로) · es(앱 전용)
   analysis/unesco_list.csv  열: site · year · placeIds(공백으로 여럿) · names — 한국의 유네스코 세계유산 17건과 구성요소 장소.
                             표에 든 장소만 「유네스코」 칸이 Y, 나머지는 빈칸
 """
@@ -17,6 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PLACES = ROOT / "analysis" / "tour-places.csv"
 FIXES = ROOT / "analysis" / "place_fixes.csv"
 UNESCO = ROOT / "analysis" / "unesco_list.csv"
+NAME_COLUMNS = {"ko": "이름(한국어)", "en": "English", "zh": "中文", "ja": "日本語"}
 
 
 def read(path: Path) -> list[dict]:
@@ -33,10 +35,13 @@ def apply(rows: list[dict], fixes: list[dict], unesco: set[str]) -> int:
     for f in fixes:
         r = by_id[f["id"]]
         before = dict(r)
-        if f.get("city", "").strip():
+        if (f.get("city") or "").strip():
             r["지역"] = f["city"].strip()
-        if f.get("lat", "").strip() and f.get("lng", "").strip():
+        if (f.get("lat") or "").strip() and (f.get("lng") or "").strip():
             r["위도"], r["경도"] = f"{float(f['lat']):.5f}", f"{float(f['lng']):.5f}"
+        for key, col in NAME_COLUMNS.items():
+            if (f.get(key) or "").strip():
+                r[col] = f[key].strip()
         changed += r != before
     for r in rows:
         flag = "Y" if r["id"] in unesco else ""
