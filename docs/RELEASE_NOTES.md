@@ -337,3 +337,7 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 
 - `analysis/art_literature_places.csv`(앱 `scripts/data/art-literature-places.csv`와 같은 파일): 미술관 88곳 · 문학관 58곳. 인천시립 · 충남도립 · 이중섭미술관 · 국립한국문학관 · 이주홍문학관은 공사 · 휴관으로 뺐다.
 - `same_places.csv` 71 → 72쌍: 전북특별자치도립미술관(`ro622`) ← 전북도립미술관(`ctmf81bd2bb`). `tools/merge_same_places.py --apply`. 4,067 → 4,213 → 4,212행, 앱 id와 같다.
+
+## 2026-10-04 전국 주요 시장 추가
+
+- `analysis/market_places.csv`(앱 `scripts/data/market-places.csv`와 같은 파일): 수도권 · 강원 24 · 충청 · 전라 · 제주 30 · 경상 28곳. 4,212 → 4,294행, 앱 id와 같다.

@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4212,
+    "rows": 4294,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "73549663e94fc696549611a43a47d117e624c79a5afd8d6b27739c14db76fda5"
+    "sha256": "cfb8ac2f14200e9e027deea32a264af2856ad73f87470ef15f53516c49c6b1a8"
   },
   {
     "file": "analysis/citytour.csv",
@@ -709,5 +709,28 @@
     ],
     "encoding": "utf-8",
     "sha256": "ddd42975074c6571e9a855e808826bb2c581186988f9f97b8ef7e450cec91627"
+  },
+  {
+    "file": "analysis/market_places.csv",
+    "rows": 82,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "28e639bcac060ea4d34782d78721ad44af222a67c39549c9442dfc4c1e22c080"
   }
 ]

@@ -476,6 +476,8 @@ Jupyter에서는 `analysis` 폴더에서 [Tour_Navigator_Integrated.ipynb](analy
 
 미술관 88곳(국립현대미술관 과천 · 덕수궁 · 청주, 시 · 도립 미술관, 이름난 사립 · 대학 미술관)과 문학관 58곳을 [`analysis/art_literature_places.csv`](analysis/art_literature_places.csv)로 붙였고(2026년 운영 확인, 공사 중 · 휴관인 곳은 제외), 전북도립미술관이 두 번 들어 있던 쌍을 `same_places.csv`에 더해 합쳤습니다(2026-10-04, 4,067 → 4,213 → 4,212행, 같은 장소 72쌍).
 
+전국 주요 시장(문화관광형 · 특성화 시장, 이름난 야시장 · 수산시장 · 5일장) 중 빠진 82곳을 [`analysis/market_places.csv`](analysis/market_places.csv)로 붙였습니다(2026-10-04, 4,212 → 4,294행, 좌표는 대략 위치).
+
 앱 홈 「지금 인기 관광지」 수기 목록([`analysis/popular_manual_places.csv`](analysis/popular_manual_places.csv), 앱 `scripts/data/popular-manual.csv`와 같은 파일)에 2026-10-04 대구 · 춘천 10곳씩을 더했습니다(8 → 10개 도시, 100행). 둘은 데이터랩 전국 30위 안에 없어 근거는 「수기(집중률 상위 상례)」이고 한국관광 100선(서문시장 · 사유원 · 남이섬)을 적었습니다.
 
 인기 관광지(집중률 · 데이터랩 명단)와 장소 표의 연결은 세 층으로 관리합니다. ① 수기 대조표 [`analysis/popular_match.csv`](analysis/popular_match.csv)(도시 · 이름 · 장소 id, 앱 `src/lib/popular-match.ts`와 같은 짝): 이름 규칙으로 못 잇는 이름(팔각정북악스카이 → 북악스카이웨이 팔각정, 헌릉과 인릉 → 헌인릉, 롯데월드잠실점 → 잠실 롯데월드 어드벤처)을 적고 `tools/add_popular_places.py`가 규칙보다 먼저 봅니다(`read_match` · `match_by_name`). ② 이름 규칙(`name_score`, 앱과 같음). ③ 데이터랩 교차표 [`age_upgrade/data/datalab_place_crosswalk.csv`](age_upgrade/data/datalab_place_crosswalk.csv): 2026-10-04에 장소가 생긴 미연결 16행(킨텍스 · 삽교호관광지 · 동탄호수공원 · 헌릉과 인릉 · 궁평항 · 대명포구 · 연안부두 · 국립수목원 …)을 `name_manual_2026-10-04`로 채웠습니다(남은 미연결 8행은 영화관 · 골프장, 동음이의 2행은 그대로). 연령 분석 결과는 다시 실행해야 반영됩니다. 시군구 경계에 걸친 장소(1100고지 습지: 집중률은 제주시, 관광정보는 서귀포시)는 같은 시군구 관광정보가 없을 때 같은 시도의 이름 같은 관광정보 좌표 1km 안에서 이름도 맞는 기존 장소만 찾습니다(`pick_spot_item_loose` · `match_by_location_named`, 2026-10-04).
