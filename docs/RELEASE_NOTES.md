@@ -341,3 +341,9 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 ## 2026-10-04 전국 주요 시장 추가
 
 - `analysis/market_places.csv`(앱 `scripts/data/market-places.csv`와 같은 파일): 수도권 · 강원 24 · 충청 · 전라 · 제주 30 · 경상 28곳. 4,212 → 4,294행, 앱 id와 같다.
+
+## 2026-10-04 도시 · 좌표 정리, 유네스코 표시 재점검
+
+- `analysis/place_fixes.csv` + `tools/apply_place_fixes.py`(점검 2건): 영동 · 금산 · 옥천 6곳과 제부도 해상케이블카의 지역, 11곳 좌표(여차몽돌해변 · 비진도 · 벽송사 · 삼성궁 · 오색리 삼층석탑 · 최참판댁 · 장회나루 · 정암사 · 설악해맞이공원 · 파주 공릉관광지 · 김해롯데워터파크).
+- `analysis/unesco_list.csv`: 세계유산 17건 → 95곳(반구천의 암각화 2025 포함, 월정사 해제). 빠진 구성요소 13곳은 `analysis/unesco_places.csv`.
+- `same_places.csv` 73쌍(화성융릉과건릉 ← 융건릉), `user_manual_places.csv`에 롯데프리미엄아울렛 김해점. 4,294 → 4,307행, 앱과 같다.

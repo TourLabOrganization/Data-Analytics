@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4294,
+    "rows": 4307,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "cfb8ac2f14200e9e027deea32a264af2856ad73f87470ef15f53516c49c6b1a8"
+    "sha256": "0fd8b5e78f224a3d796a5953daee4c8d9f73bc27b5e54de132bc7020f95afdd1"
   },
   {
     "file": "analysis/citytour.csv",
@@ -425,29 +425,29 @@
   },
   {
     "file": "analysis/same_places.csv",
-    "rows": 72,
+    "rows": 73,
     "columns": [
       "keep",
       "drop",
       "reason"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "08c07d276735885af10608e371bbb50552ebc1f29089e54eb86699d562497d73"
+    "sha256": "418966fb9f5015da1fa7c77cc0146b32ef1e66f02b3f03406a758cff0982fc81"
   },
   {
     "file": "analysis/place_aliases.csv",
-    "rows": 72,
+    "rows": 73,
     "columns": [
       "drop",
       "keep",
       "reason"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "1a34d3c983f3722d018e8a71a04566114776c1ddb5305362a922a8d1ddbb1352"
+    "sha256": "10737b5cff9157f84141b7fa2293139d1768b42c345bb239b9be5abc4a3eb4d1"
   },
   {
     "file": "analysis/user_manual_places.csv",
-    "rows": 2,
+    "rows": 3,
     "columns": [
       "region",
       "stopName",
@@ -465,7 +465,7 @@
       "source"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "7652843f9ed50f227dc433f88c2dd86482ea59da42302c97038933b81b17155a"
+    "sha256": "69b734d7dd0f1313e5a50c70a0e0a0f30475abdeae476cd548432a6194c5b7d7"
   },
   {
     "file": "analysis/popular_match.csv",
@@ -732,5 +732,53 @@
     ],
     "encoding": "utf-8",
     "sha256": "28e639bcac060ea4d34782d78721ad44af222a67c39549c9442dfc4c1e22c080"
+  },
+  {
+    "file": "analysis/place_fixes.csv",
+    "rows": 18,
+    "columns": [
+      "id",
+      "city",
+      "lat",
+      "lng",
+      "reason"
+    ],
+    "encoding": "utf-8",
+    "sha256": "cfcd7fda8c40a8e6fbbe9d13a8f5c321999b852b08eb9205c276e8c24a517865"
+  },
+  {
+    "file": "analysis/unesco_list.csv",
+    "rows": 17,
+    "columns": [
+      "site",
+      "year",
+      "placeIds",
+      "names"
+    ],
+    "encoding": "utf-8",
+    "sha256": "ea964c658c2f7bd380d6a0941410b0116abaa5b638fc061c1b7358d3f51445bb"
+  },
+  {
+    "file": "analysis/unesco_places.csv",
+    "rows": 13,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "58b3d129eb34da3c88dcebf706eaf70013ae52a87c9eb5191fb150ae60bab003"
   }
 ]
