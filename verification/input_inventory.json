@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4568,
+    "rows": 4567,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "ba3c26597d3cea957204e99e82306fb00313d0746938cc9dedbd934f52f3b1dd"
+    "sha256": "3d5b057d59f0bd1f648b379070dea00744d575a6445cea2bc34772c8af32a4c8"
   },
   {
     "file": "analysis/citytour.csv",
@@ -425,25 +425,25 @@
   },
   {
     "file": "analysis/same_places.csv",
-    "rows": 89,
+    "rows": 90,
     "columns": [
       "keep",
       "drop",
       "reason"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "e882c9c2345be10bc2ae99a7021f47ee389b7dd3e2cda307ee24ed228584e1ad"
+    "sha256": "147f40121214ed96ac20422c045d9e5827db055b88168895cf6157175401fd55"
   },
   {
     "file": "analysis/place_aliases.csv",
-    "rows": 89,
+    "rows": 90,
     "columns": [
       "drop",
       "keep",
       "reason"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "42da28207dbfa9d2e2025d98511c0fd7d40bfaec1ce7d6444d7121c90e396ad0"
+    "sha256": "da6d1c3343c559fc26cb4fecc19d9e80d6a83a4d091b1377b84a0f3282387aeb"
   },
   {
     "file": "analysis/user_manual_places.csv",
@@ -735,7 +735,7 @@
   },
   {
     "file": "analysis/place_fixes.csv",
-    "rows": 19,
+    "rows": 20,
     "columns": [
       "id",
       "city",
@@ -749,7 +749,7 @@
       "es"
     ],
     "encoding": "utf-8",
-    "sha256": "afbb49337d0f22c79a1feee5591306ea6f7fd0c440567d382f1730ce645df074"
+    "sha256": "86942a88f607a88b45024b286417705ceb0ebd5f633a63fc667ddb8bafeab648"
   },
   {
     "file": "analysis/unesco_list.csv",
