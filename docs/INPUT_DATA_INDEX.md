@@ -17,7 +17,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/same_places.csv](../analysis/same_places.csv) | 65 | 3 | `96cb1f73ecb73da1c16ae0cab52d35e47bc6d24997a07f63169602b4c1aa5460` |
 | [analysis/place_aliases.csv](../analysis/place_aliases.csv) | 65 | 3 | `a1bbdd6ed7bf41f086acae8b45f19889ba08c3d4a4e246087dceab66bbafd167` |
 | [analysis/user_manual_places.csv](../analysis/user_manual_places.csv) | 2 | 14 | `7652843f9ed50f227dc433f88c2dd86482ea59da42302c97038933b81b17155a` |
-| [analysis/popular_match.csv](../analysis/popular_match.csv) | 3 | 4 | `46ad5448890de432a13b6c278c934e2a6b038953156023c2668ac1925ef69d25` |
+| [analysis/popular_match.csv](../analysis/popular_match.csv) | 4 | 4 | `00391b88a0526e0cbb04e0ab5f1688950564884d2139e5085a3156e8f0247463` |
 | [analysis/related_added/related_mentioned_missing_2026-10-03.csv](../analysis/related_added/related_mentioned_missing_2026-10-03.csv) | 842 | 4 | `c0920fb295ed1f7b4266d7f22b223393a74ddfc2eefcd3978003c5d7e620fea2` |
 | [analysis/place_signgu.json](../analysis/place_signgu.json) | 3,213 | 2 (id, 코드) | `319d49fe3d23d77942d2bc5ee51c53cc80d7041a26c900c4f421bf200fc89792` |
 | [analysis/citytour.csv](../analysis/citytour.csv) | 280 | 13 | `cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324` |
