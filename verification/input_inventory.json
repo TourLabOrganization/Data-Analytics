@@ -466,5 +466,17 @@
     ],
     "encoding": "utf-8-sig",
     "sha256": "7652843f9ed50f227dc433f88c2dd86482ea59da42302c97038933b81b17155a"
+  },
+  {
+    "file": "analysis/popular_match.csv",
+    "rows": 3,
+    "columns": [
+      "city",
+      "name",
+      "id",
+      "note"
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "46ad5448890de432a13b6c278c934e2a6b038953156023c2668ac1925ef69d25"
   }
 ]

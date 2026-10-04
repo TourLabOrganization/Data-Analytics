@@ -64,6 +64,21 @@ class EndToEnd(unittest.TestCase):
     def put(self, name, items, total=None):
         (self.fx / name).write_text(json.dumps(body(items, total), ensure_ascii=False), encoding="utf-8")
 
+    def test_pinned_name_beats_rule(self):
+        # 수기 대조표: 규칙으로 못 잇는 이름(팔각정북악스카이)을 적힌 장소로. 다른 도시 키는 무시
+        places = m.read_places(self.places)
+        pins = {"서울|팔각정북악스카이": "kdx35"}
+        hit = m.match_by_name({"name": "팔각정 북악스카이", "city": "서울"}, places, pins)
+        self.assertEqual(hit["id"], "kdx35")
+        self.assertIsNone(m.match_by_name({"name": "팔각정 북악스카이", "city": "부산"}, places, pins))
+        pins_file = m.read_match()
+        for key, pid in pins_file.items():
+            city = key.split("|")[0]
+            place = next((p for p in places if p["id"] == pid), None)
+            self.assertIsNotNone(place, key)
+            self.assertEqual(place["지역"], city, key)
+            self.assertNotEqual(place["카테고리"], "stay", key)
+
     def test_match_existing_new_and_missing(self):
         # 경주시 집중률: 불국사(기존 이름), 월정교 야경(월정교와 250m 안 → 위치), 가상의 새 관광지(신규), 아무 데도 없는 곳(못 찾음)
         self.put("crowd_47130_p1.json", [crowd("불국사", "47130", 50), crowd("신라의 밤 야경", "47130", 40),

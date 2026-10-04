@@ -45,6 +45,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PLACES_CSV = ROOT / "analysis" / "tour-places.csv"
 SIGNGU_JSON = ROOT / "analysis" / "place_signgu.json"  # 장소 id → 법정동 시군구 코드(앱 signgu.json과 같다)
 OUT_DIR = ROOT / "analysis" / "popular_added"
+MATCH_CSV = ROOT / "analysis" / "popular_match.csv"  # 수기 대조표(앱 lib/popular-match.ts와 같은 짝): 규칙으로 못 잇는 이름 → 장소 id
 BASE = "https://apis.data.go.kr/B551011"
 ID_PREFIX = "pop"
 
@@ -293,7 +294,21 @@ def city_places(places: list[dict], city: str) -> list[dict]:
     return [p for p in places if p["지역"] == city and p["카테고리"] != "stay"]
 
 
-def match_by_name(spot: dict, pool: list[dict]) -> dict | None:
+def read_match(path: Path = MATCH_CSV) -> dict[str, str]:
+    """수기 대조표: '도시|정규화 이름' → 장소 id. 파일이 없으면 빈 표"""
+    if not path.is_file():
+        return {}
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        return {f"{r['city'].strip()}|{crowd_name(r['name'])}": r["id"].strip() for r in csv.DictReader(f) if r.get("id", "").strip()}
+
+
+def match_by_name(spot: dict, pool: list[dict], pins: dict[str, str] | None = None) -> dict | None:
+    """수기 대조표(pins)에 있으면 그 장소, 아니면 이름 점수 2 이상 중 가장 높은 곳(앱 matchPlace와 같다)"""
+    pinned = (pins or {}).get(f"{spot.get('city', '')}|{crowd_name(spot['name'])}")
+    if pinned:
+        for p in pool:
+            if p["id"] == pinned:
+                return p
     best, best_score = None, 1
     for p in pool:
         s = name_score(spot["name"], p["이름(한국어)"], spot["city"])
@@ -393,8 +408,11 @@ def targets_all(places: list[dict], signgu: dict[str, str], min_places: int = 1,
 
 # ---------- 본 작업 ----------
 def collect(api, places: list[dict], targets: list[dict], today: str, top: int, log=print,
-            signgu: dict[str, str] | None = None) -> tuple[list[dict], list[dict]]:
-    """(후보 판정표, 새 행). places에는 새 행을 바로 더해 같은 실행 안에서도 중복이 없다. signgu를 주면 새 장소의 코드를 넣는다."""
+            signgu: dict[str, str] | None = None, pins: dict[str, str] | None = None) -> tuple[list[dict], list[dict]]:
+    """(후보 판정표, 새 행). places에는 새 행을 바로 더해 같은 실행 안에서도 중복이 없다. signgu를 주면 새 장소의 코드를 넣는다.
+    pins(수기 대조표 read_match)를 주지 않으면 analysis/popular_match.csv를 읽는다."""
+    if pins is None:
+        pins = read_match()
     candidates, new_rows = [], []
     seen = known_contentids(places)
     ids = {p["id"] for p in places}
@@ -423,7 +441,7 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
             spot = dict(s, city=city)
             row = {"지역": city, "순위": rank, "관광지": s["name"], "시군구": s["district"], "시군구 코드": s["signgu"],
                    "집중률": s["rate"], "기준 날짜": date, "판정": "", "장소 id": "", "장소 이름": "", "contentid": ""}
-            hit = match_by_name(spot, pool)
+            hit = match_by_name(spot, pool, pins)
             if hit:
                 row.update(판정="기존(이름)", **{"장소 id": hit["id"], "장소 이름": hit["이름(한국어)"]})
                 candidates.append(row)
