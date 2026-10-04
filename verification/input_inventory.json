@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 3213,
+    "rows": 3242,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "3f3a9bd7c7309c80f3c429c60e4bf5f2f92ff3c244acd227c09213913a6715e1"
+    "sha256": "6f546988d7f15e9cbdc91beb9d7433bd5e03fb3a5cf9b8763e588c7c9fb6dbdb"
   },
   {
     "file": "analysis/citytour.csv",
@@ -478,5 +478,28 @@
     ],
     "encoding": "utf-8-sig",
     "sha256": "00391b88a0526e0cbb04e0ab5f1688950564884d2139e5085a3156e8f0247463"
+  },
+  {
+    "file": "analysis/national_treasure_places.csv",
+    "rows": 29,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      ""
+    ],
+    "encoding": "utf-8-sig",
+    "sha256": "6fb223b1e3f02001b7bbcf56f61192cf3614fcfbbd3f8d55f5f028d7988bb01c"
   }
 ]
