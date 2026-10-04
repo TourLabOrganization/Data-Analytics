@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4457,
+    "rows": 4441,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "f8c76e962d09cb41961d76ce093361d435c3477dc71dd0ac1a1aceb5f433c69e"
+    "sha256": "6815ed11da07002c2da3216c94740fe7d6e4d1243dbc7864b74b36b33d6f2048"
   },
   {
     "file": "analysis/citytour.csv",
@@ -425,25 +425,25 @@
   },
   {
     "file": "analysis/same_places.csv",
-    "rows": 73,
+    "rows": 89,
     "columns": [
       "keep",
       "drop",
       "reason"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "418966fb9f5015da1fa7c77cc0146b32ef1e66f02b3f03406a758cff0982fc81"
+    "sha256": "e882c9c2345be10bc2ae99a7021f47ee389b7dd3e2cda307ee24ed228584e1ad"
   },
   {
     "file": "analysis/place_aliases.csv",
-    "rows": 73,
+    "rows": 89,
     "columns": [
       "drop",
       "keep",
       "reason"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "10737b5cff9157f84141b7fa2293139d1768b42c345bb239b9be5abc4a3eb4d1"
+    "sha256": "42da28207dbfa9d2e2025d98511c0fd7d40bfaec1ce7d6444d7121c90e396ad0"
   },
   {
     "file": "analysis/user_manual_places.csv",
@@ -578,7 +578,7 @@
       "source"
     ],
     "encoding": "utf-8",
-    "sha256": "05a5ff62bd5f0fa8f2e81a08cccf8871eef392c4b587c7b0b78f4eaa26eefaab"
+    "sha256": "c92d79b7c544daeb73fe27b783e7cccd0f55458dce3418c91d76b5c2ac71f12c"
   },
   {
     "file": "analysis/open_tourism_list.csv",
@@ -593,7 +593,7 @@
       "source"
     ],
     "encoding": "utf-8",
-    "sha256": "41b0d7d0dfeddbaaba60df74456ae5e6564711d24b25f4e7ae0b74f7712586d3"
+    "sha256": "c6a65f9a885602ac0e752adf6e1de73ad10cbc857ef5796dce4c08a38b1a956c"
   },
   {
     "file": "analysis/open_tourism_places.csv",
