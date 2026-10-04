@@ -322,3 +322,8 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 ## 2026-10-04 의령 관광지 추가
 
 - 사용자 요청으로 의령 관광지 17곳을 `analysis/uiryeong_places.csv`(앱 `scripts/data/uiryeong-places.csv`와 같은 파일)로 붙였다. 의령군 문화관광 · 의령9경 검색으로 실재를 확인했고 좌표는 주소 기준 대략 위치다. 3,815 → 3,832행, 앱 id와 같다.
+
+## 2026-10-04 테마파크 · 스키장 · 전시장 추가, 출처 칸 정리
+
+- `analysis/leisure_places.csv`(앱 `scripts/data/leisure-places.csv`와 같은 파일): 테마파크 · 워터파크 · 아쿠아리움 14곳, 2025/26 운영 스키장 9곳(베어스타운 · 양지파인 · 스타힐은 폐장), 전시컨벤션센터 11곳. 3,832 → 3,866행, 앱 id와 같다.
+- `tools/clean_place_sources.py`: 출처 칸의 작업 기록(날짜 · 사용자 요청 · 지도 검증 메모 · 노선 표기 · 언급 횟수)을 지웠다(800행). `tools/add_manual_places.py`도 같은 규칙으로 적는다(앱 `scripts/clean-place-sources.mjs`와 같다). 점검 1건 추가.

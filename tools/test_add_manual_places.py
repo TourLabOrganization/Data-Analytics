@@ -43,7 +43,7 @@ class ManualRows(unittest.TestCase):
         self.assertEqual(n["id"], m.manual_id("경주", "새정원"))
         self.assertEqual((n["권역"], n["지역"], n["이름(한국어)"], n["English"], n["카테고리"]), ("경주", "경주", "새정원", "Sae Garden", "heal"))
         self.assertEqual((n["위도"], n["경도"], n["추천 체류(분)"]), ("35.90000", "129.30000", "60"))
-        self.assertEqual(n["출처"], "시티투어 경유지(2개 노선, 노선 표기 「새정원」) · 좌표 수기 입력(지도 검증 필요, 2026-10-03)")
+        self.assertEqual(n["출처"], "시티투어 경유지(2개 노선) · 주소 기준 좌표")  # 작업 기록은 지운다(clean_place_sources)
         self.assertEqual(n["설명"], "새로 적은 정원")
         self.assertEqual(list(n), COLUMNS)
 
@@ -68,7 +68,7 @@ class ManualRows(unittest.TestCase):
 
     def test_source_column(self):
         new, _ = m.manual_rows([row(source="한국관광공사 연관 관광지(기존 장소 설명에 3회 언급)")], POOL, date="2026-10-03")
-        self.assertEqual(new[0]["출처"], "한국관광공사 연관 관광지(기존 장소 설명에 3회 언급) · 좌표 수기 입력(지도 검증 필요, 2026-10-03)")
+        self.assertEqual(new[0]["출처"], "한국관광공사 연관 관광지 · 주소 기준 좌표")
 
     def test_coord_column(self):
         # coord 열이 있으면 출처의 좌표 근거가 그 문구(앱 add-manual-places.mjs와 같다)

@@ -24,6 +24,7 @@ import re
 import sys
 from pathlib import Path
 
+from tools.clean_place_sources import clean_source
 from tools.add_popular_places import (
     COLUMNS,
     PLACES_CSV,
@@ -93,7 +94,8 @@ def manual_rows(rows: list[dict], places: list[dict], date: str = DATE) -> tuple
             "이름(한국어)": ko, "English": (r.get("en") or "").strip() or ko,
             "카테고리": cat, "위도": f"{lat:.5f}", "경도": f"{lng:.5f}",
             "추천 체류(분)": str(stays.get(cat, 60)),
-            "출처": f"{(r.get('source') or '').strip() or f'시티투어 경유지({tours}개 노선, 노선 표기 「{stop}」)'} · {(r.get('coord') or '').strip() or f'좌표 수기 입력(지도 검증 필요, {date})'}",
+            # 출처 칸에는 작업 기록(날짜 · 사용자 요청 · 검증 메모)을 남기지 않는다(tools/clean_place_sources.py)
+            "출처": clean_source(f"{(r.get('source') or '').strip() or f'시티투어 경유지({tours}개 노선, 노선 표기 「{stop}」)'} · {(r.get('coord') or '').strip() or f'좌표 수기 입력(지도 검증 필요, {date})'}"),
             "설명": (r.get("desc") or "").strip() or f"{region} 시티투어 경유지({tours}개 노선)",
         })
         new_rows.append(new)
