@@ -148,7 +148,8 @@ class EndToEnd(unittest.TestCase):
         self.put("crowd_51150_p1.json", [crowd("우도", "50130", 90, nm="서귀포시")])  # 다른 시군구 행만 → 무시
         self.put("crowd_42150_p1.json", [crowd(f"가상관광지{i}", "42150", 10 + i, nm="강릉시") for i in range(12)])
         for i in range(12):
-            self.put(f"search_가상관광지{i}.json", [search(f"가상관광지{i}", str(3000 + i), 37.75 + i * 0.01, 128.90, regn="51", sgg="150")])
+            # 앱 장소와 1km 넘게 떨어진 가상 지점(동해 앞바다). 128.90은 강릉 장소가 늘어 기존 장소 옆이 됐다(2026-10-04)
+            self.put(f"search_가상관광지{i}.json", [search(f"가상관광지{i}", str(3000 + i), 37.75 + i * 0.01, 129.30, regn="51", sgg="150")])
         places = m.read_places(self.places)
         cand, new = m.collect(m.JsonDirApi(self.fx), places, m.targets_home(places, ["강릉"]), "2026-10-01", 10, log=lambda *_: None)
         self.assertEqual(len(cand), 10)
