@@ -312,3 +312,9 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 - 카카오 로컬 API가 이 작업 환경에서 계속 막혀 있어, `treasure_sites.csv` 577곳의 좌표를 소재지 주소로 수기 입력했다(시군구 경계 폴리곤 안 확인, 면 · 마을 수준만 아는 곳은 출처에 「대략 위치」). 결과는 `analysis/treasure_places.csv`(앱 `scripts/data/treasure-places.csv`와 같은 파일, 559행).
 - 뺀 행: 관광지가 아닌 소장처 14곳(회사 · 문중 · 관청 · 연구소 · 대학 도서관, 주소가 시군 이름뿐인 곳)과 같은 향교 건물 · 같은 주소 중복 4곳. 소장처 이름은 찾아갈 곳 이름으로 바꿨다(인천광역시 강화군청 → 강화 장정리 석조여래입상 …). 경기 광주 · 강원 고성 · 서귀포 소재지는 경기광주 · 고성(강원) · 제주로 적었다.
 - `tools/add_manual_places.py --csv analysis/treasure_places.csv --apply`: 신규 513곳, 같은 경내 · 같은 유적 46곳은 기존 장소(위치). 호텔 · 시장 · 옆 유적과 250m 안이라 걸린 40곳은 `nearOk=1`. 3,270 → 3,783행, `place_signgu.json`도 같다. 앱 장소 id와 3,783곳 모두 같다.
+
+## 2026-10-04 한국관광 100선 · 열린관광지 명단 재점검
+
+- 앱 배지(옛 PoC 플래그)가 100선 98곳 · 열린관광지 99곳으로 공식 명단과 맞지 않았다(지난 판 100선 잔존, 2023년 이후 열린관광지 누락).
+- `analysis/k100_list.csv`(2025~2026 100선 100건 → 장소 154곳), `analysis/open_tourism_list.csv`(열린관광지 2015~2026 210건 → 장소 202곳)를 두었다. 앱 `scripts/data/k100-list.csv` · `open-tourism-list.csv`와 같은 파일.
+- 장소 표에 없던 열린관광지 32곳을 `analysis/open_tourism_places.csv`로 붙였다(`tools/add_manual_places.py --apply`, 3,783 → 3,815행, 앱 id와 같다). 25곳 안팎은 대략 위치다.

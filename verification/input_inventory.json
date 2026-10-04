@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 3783,
+    "rows": 3815,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "fede1bd4986feea66dfc93325e1f9d3131ca00a9dd97656a382969e3486a29c3"
+    "sha256": "bb3b320e577247f74cc21e3fc927fd4c0effea4ad30d27eaa33fa5d3335723f6"
   },
   {
     "file": "analysis/citytour.csv",
@@ -562,5 +562,59 @@
     ],
     "encoding": "utf-8",
     "sha256": "f78d44aea496201b6ade4b6bcfaacb9e54850476789b74e5a1f078131ef3956b"
+  },
+  {
+    "file": "analysis/k100_list.csv",
+    "rows": 100,
+    "columns": [
+      "no",
+      "sido",
+      "sigungu",
+      "name",
+      "status",
+      "placeIds",
+      "note",
+      "source"
+    ],
+    "encoding": "utf-8",
+    "sha256": "97e4002d0e30b26eec1c66098c39a67de1d0c6e1c32f726016daa10ff1cd37ba"
+  },
+  {
+    "file": "analysis/open_tourism_list.csv",
+    "rows": 210,
+    "columns": [
+      "year",
+      "sido",
+      "sigungu",
+      "name",
+      "placeIds",
+      "note",
+      "source"
+    ],
+    "encoding": "utf-8",
+    "sha256": "23712fc9880441c9dcb32343bc97d1c9a9acdcf2c6f22b24250bfc21277e737e"
+  },
+  {
+    "file": "analysis/open_tourism_places.csv",
+    "rows": 32,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "0d1de70ffbd52870c34771868a8685d2ae99d9fa3cdb21e4a4ec481b6cbf48f0"
   }
 ]
