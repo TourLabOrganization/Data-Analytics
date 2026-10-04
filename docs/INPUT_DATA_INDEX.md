@@ -22,7 +22,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/national_treasure_places_2.csv](../analysis/national_treasure_places_2.csv) | 34 | 14 | `2520e708dea7959fa59dedefcb505848b76411178ec75b2a319f2fca66b71b0f` |
 | [analysis/treasure_sites.csv](../analysis/treasure_sites.csv) | 577 | 8 | `ef3e90098af8f6a9757ec0fa5100839bff31a690ec83db31c0d9f9db90ded2a6` |
 | [analysis/treasure_places.csv](../analysis/treasure_places.csv) | 559 | 15 | `f78d44aea496201b6ade4b6bcfaacb9e54850476789b74e5a1f078131ef3956b` |
-| [analysis/k100_list.csv](../analysis/k100_list.csv) | 100 | 8 | `97e4002d0e30b26eec1c66098c39a67de1d0c6e1c32f726016daa10ff1cd37ba` |
+| [analysis/k100_list.csv](../analysis/k100_list.csv) | 100 | 9 | `05a5ff62bd5f0fa8f2e81a08cccf8871eef392c4b587c7b0b78f4eaa26eefaab` |
 | [analysis/open_tourism_list.csv](../analysis/open_tourism_list.csv) | 211 | 7 | `41b0d7d0dfeddbaaba60df74456ae5e6564711d24b25f4e7ae0b74f7712586d3` |
 | [analysis/open_tourism_places.csv](../analysis/open_tourism_places.csv) | 32 | 15 | `0d1de70ffbd52870c34771868a8685d2ae99d9fa3cdb21e4a4ec481b6cbf48f0` |
 | [analysis/related_added/related_mentioned_missing_2026-10-03.csv](../analysis/related_added/related_mentioned_missing_2026-10-03.csv) | 842 | 4 | `c0920fb295ed1f7b4266d7f22b223393a74ddfc2eefcd3978003c5d7e620fea2` |

@@ -568,6 +568,7 @@
     "rows": 100,
     "columns": [
       "no",
+      "edition",
       "sido",
       "sigungu",
       "name",
@@ -577,7 +578,7 @@
       "source"
     ],
     "encoding": "utf-8",
-    "sha256": "97e4002d0e30b26eec1c66098c39a67de1d0c6e1c32f726016daa10ff1cd37ba"
+    "sha256": "05a5ff62bd5f0fa8f2e81a08cccf8871eef392c4b587c7b0b78f4eaa26eefaab"
   },
   {
     "file": "analysis/open_tourism_list.csv",
