@@ -272,6 +272,18 @@ def pick_spot_item(items: list[dict], spot: dict) -> dict | None:
     return min(scored)[3] if scored else None
 
 
+def pick_spot_item_loose(items: list[dict], spot: dict) -> dict | None:
+    """같은 시군구에 없을 때의 예비 후보(앱 pickSpotItemLoose): 같은 시도(코드 앞 두 자리) · 이름이 같은(3점) 관광정보.
+    시군구 경계에 걸친 장소(1100고지 습지: 집중률 제주시, 관광정보 서귀포시). 위치로 기존 장소를 찾는 데만 쓰고 새 장소로 만들지 않는다"""
+    if not re.fullmatch(r"\d{5}", spot.get("signgu", "")):
+        return None
+    sido = spot["signgu"][:2]
+    in_sido = [x for x in items
+               if (not str(x.get("lDongRegnCd", "")) or str(x.get("lDongRegnCd", "")) == sido)
+               and name_score(spot["name"], str(x.get("title", "")), "") == 3]
+    return pick_spot_item(in_sido, {"name": spot["name"], "signgu": ""})
+
+
 def kto_coords(item: dict) -> tuple[float, float] | None:
     try:
         lat, lng = float(item.get("mapy")), float(item.get("mapx"))
@@ -452,6 +464,15 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
                 found = []
                 log(f"{city} {s['name']}: 검색 실패 {e}")
             item = pick_spot_item(found, spot)
+            if not item:
+                # 경계 장소: 같은 시도의 이름 같은 관광정보 좌표로 기존 장소만 찾는다
+                loose = pick_spot_item_loose(found, spot)
+                lc = kto_coords(loose) if loose else None
+                near = match_by_location(s["name"], lc[0], lc[1], pool) if lc else None
+                if near:
+                    row.update(판정="기존(위치)", **{"장소 id": near["id"], "장소 이름": near["이름(한국어)"]})
+                    candidates.append(row)
+                    continue
             coords = kto_coords(item) if item else None
             if not item or not coords:
                 row["판정"] = "못 찾음(관광정보에 없음)"

@@ -79,6 +79,16 @@ class EndToEnd(unittest.TestCase):
             self.assertEqual(place["지역"], city, key)
             self.assertNotEqual(place["카테고리"], "stay", key)
 
+    def test_boundary_place_loose_pick(self):
+        # 같은 시군구 관광정보가 없으면 같은 시도 · 이름 같은 것만(품는 이름은 안 됨). 다른 시도는 뺀다
+        items = [{"contentid": "1", "title": "1100고지 습지", "contenttypeid": "12", "lDongRegnCd": "50", "lDongSignguCd": "130"},
+                 {"contentid": "2", "title": "1100고지 휴게소", "contenttypeid": "39", "lDongRegnCd": "50", "lDongSignguCd": "130"},
+                 {"contentid": "3", "title": "1100고지 습지", "contenttypeid": "12", "lDongRegnCd": "47", "lDongSignguCd": "130"}]
+        self.assertIsNone(m.pick_spot_item(items, {"name": "1100고지습지", "signgu": "50110"}))
+        self.assertEqual(m.pick_spot_item_loose(items, {"name": "1100고지습지", "signgu": "50110"})["contentid"], "1")
+        self.assertIsNone(m.pick_spot_item_loose(items, {"name": "1100고지", "signgu": "50110"}))
+        self.assertIsNone(m.pick_spot_item_loose(items, {"name": "1100고지습지", "signgu": ""}))
+
     def test_match_existing_new_and_missing(self):
         # 경주시 집중률: 불국사(기존 이름), 월정교 야경(월정교와 250m 안 → 위치), 가상의 새 관광지(신규), 아무 데도 없는 곳(못 찾음)
         self.put("crowd_47130_p1.json", [crowd("불국사", "47130", 50), crowd("신라의 밤 야경", "47130", 40),
