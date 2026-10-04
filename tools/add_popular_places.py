@@ -344,6 +344,22 @@ def match_by_location(name: str, lat: float, lng: float, pool: list[dict]) -> di
     return best
 
 
+def match_by_location_named(name: str, lat: float, lng: float, pool: list[dict], city: str) -> dict | None:
+    """경계 장소의 위치 대조(앱 matchByLocationNamed): 1km 안에서 이름도 맞는(점수 2 이상 또는 글자쌍 절반 겹침) 가장 가까운 장소"""
+    best, best_d = None, math.inf
+    for p in pool:
+        try:
+            d = meters(lat, lng, float(p["위도"]), float(p["경도"]))
+        except ValueError:
+            continue
+        if d > NEAR_SPOT_M or d >= best_d:
+            continue
+        if name_score(name, p["이름(한국어)"], city) < 2 and name_overlap(name, p["이름(한국어)"]) < NEAR_SPOT_OVERLAP:
+            continue
+        best, best_d = p, d
+    return best
+
+
 def known_contentids(places: list[dict]) -> dict[str, str]:
     out = {}
     for p in places:
@@ -465,10 +481,11 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
                 log(f"{city} {s['name']}: 검색 실패 {e}")
             item = pick_spot_item(found, spot)
             if not item:
-                # 경계 장소: 같은 시도의 이름 같은 관광정보 좌표로 기존 장소만 찾는다
+                # 경계 장소: 같은 시도의 이름 같은 관광정보 좌표 1km 안에서 이름도 맞는 기존 장소만 찾는다(새 장소로 만들지 않는다).
+                # 이름 없는 250m 규칙은 쓰지 않는다(다른 구의 같은 이름 관광정보 옆의 다른 장소에 잇지 않게, 앱 matchByLocationNamed와 같다)
                 loose = pick_spot_item_loose(found, spot)
                 lc = kto_coords(loose) if loose else None
-                near = match_by_location(s["name"], lc[0], lc[1], pool) if lc else None
+                near = match_by_location_named(s["name"], lc[0], lc[1], pool, city) if lc else None
                 if near:
                     row.update(판정="기존(위치)", **{"장소 id": near["id"], "장소 이름": near["이름(한국어)"]})
                     candidates.append(row)

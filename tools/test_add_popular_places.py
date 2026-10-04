@@ -88,6 +88,26 @@ class EndToEnd(unittest.TestCase):
         self.assertEqual(m.pick_spot_item_loose(items, {"name": "1100고지습지", "signgu": "50110"})["contentid"], "1")
         self.assertIsNone(m.pick_spot_item_loose(items, {"name": "1100고지", "signgu": "50110"}))
         self.assertIsNone(m.pick_spot_item_loose(items, {"name": "1100고지습지", "signgu": ""}))
+        # 다른 시도(47)만 남으면 없음, 시도 코드가 빈 항목은 받는다
+        self.assertIsNone(m.pick_spot_item_loose(items[2:], {"name": "1100고지습지", "signgu": "50110"}))
+        blank = [dict(items[0], contentid="4", lDongRegnCd="")]
+        self.assertEqual(m.pick_spot_item_loose(blank, {"name": "1100고지습지", "signgu": "50110"})["contentid"], "4")
+
+    def test_boundary_collect_requires_name_near(self):
+        # 같은 시군구 관광정보가 없을 때: 시도 안 같은 이름 관광정보 좌표 1km 안에서 이름도 맞는(글자쌍 절반 겹침) 장소만.
+        # 「동궁월지」는 이름 점수로는 「동궁과 월지」와 안 맞아(0점) 이름 대조를 지나고, 위치 + 글자 겹침(0.57)으로 gj3에 잇는다.
+        # 「다른구 시장」은 동궁과 월지 바로 옆이지만 이름이 안 맞아 잇지 않고, 새 장소로도 만들지 않는다
+        places = m.read_places(self.places)
+        pond = next(p for p in places if p["id"] == "gj3")  # 동궁과 월지
+        lat, lng = float(pond["위도"]), float(pond["경도"])
+        self.put("crowd_47130_p1.json", [crowd("동궁월지", "47130", 40), crowd("다른구 시장", "47130", 30)])
+        self.put("search_동궁월지.json", [search("동궁월지", "1001", lat + 0.001, lng, sgg="111")])
+        self.put("search_다른구 시장.json", [search("다른구 시장", "2002", lat + 0.0005, lng, sgg="111")])
+        api = m.JsonDirApi(self.fx)
+        cand, new = m.collect(api, places, m.targets_home(places, ["경주"]), "2026-10-01", 10, log=lambda *_: None)
+        self.assertEqual([(c["판정"], c["장소 id"]) for c in cand],
+                         [("기존(위치)", "gj3"), ("못 찾음(관광정보에 없음)", "")])
+        self.assertEqual(new, [])
 
     def test_match_existing_new_and_missing(self):
         # 경주시 집중률: 불국사(기존 이름), 월정교 야경(월정교와 250m 안 → 위치), 가상의 새 관광지(신규), 아무 데도 없는 곳(못 찾음)
