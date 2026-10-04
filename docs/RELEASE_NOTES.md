@@ -316,5 +316,5 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 ## 2026-10-04 한국관광 100선 · 열린관광지 명단 재점검
 
 - 앱 배지(옛 PoC 플래그)가 100선 98곳 · 열린관광지 99곳으로 공식 명단과 맞지 않았다(지난 판 100선 잔존, 2023년 이후 열린관광지 누락).
-- `analysis/k100_list.csv`(2025~2026 100선 100건 → 장소 154곳), `analysis/open_tourism_list.csv`(열린관광지 2015~2026 210건 → 장소 202곳)를 두었다. 앱 `scripts/data/k100-list.csv` · `open-tourism-list.csv`와 같은 파일.
+- `analysis/k100_list.csv`(2025~2026 100선 100건 → 장소 154곳), `analysis/open_tourism_list.csv`(열린관광지 2015~2026 211건 → 장소 203곳)를 두었다. 앱 `scripts/data/k100-list.csv` · `open-tourism-list.csv`와 같은 파일.
 - 장소 표에 없던 열린관광지 32곳을 `analysis/open_tourism_places.csv`로 붙였다(`tools/add_manual_places.py --apply`, 3,783 → 3,815행, 앱 id와 같다). 25곳 안팎은 대략 위치다.

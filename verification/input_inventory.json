@@ -581,7 +581,7 @@
   },
   {
     "file": "analysis/open_tourism_list.csv",
-    "rows": 210,
+    "rows": 211,
     "columns": [
       "year",
       "sido",
@@ -592,7 +592,7 @@
       "source"
     ],
     "encoding": "utf-8",
-    "sha256": "23712fc9880441c9dcb32343bc97d1c9a9acdcf2c6f22b24250bfc21277e737e"
+    "sha256": "41b0d7d0dfeddbaaba60df74456ae5e6564711d24b25f4e7ae0b74f7712586d3"
   },
   {
     "file": "analysis/open_tourism_places.csv",
