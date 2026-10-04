@@ -11,7 +11,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 |---|---:|---:|---|
 | [analysis/tour-places.csv](../analysis/tour-places.csv) | 3,213 | 17 | `3f3a9bd7c7309c80f3c429c60e4bf5f2f92ff3c244acd227c09213913a6715e1` |
 | [analysis/citytour_manual_places.csv](../analysis/citytour_manual_places.csv) | 124 | 13 | `26951dc66690823d300413eb04cd7b1edb5d2b1c6e6ce2e12e2ccfd962664b4b` |
-| [analysis/popular_manual_places.csv](../analysis/popular_manual_places.csv) | 80 | 4 | `4a4d654ecd3921784f5495a85cb479227c6d4a1fad6ceb97c9605635fed4db47` |
+| [analysis/popular_manual_places.csv](../analysis/popular_manual_places.csv) | 100 | 4 | `edf5921644302b646fd3d6ff043f26817846ffaa9a6293fd4d9b7ad07a43b010` |
 | [analysis/related_manual_places.csv](../analysis/related_manual_places.csv) | 67 | 14 | `e02fba63c491dee30bd09543d16984cdeff15aa72ac58309fd3c6872ab9007f3` |
 | [analysis/crowd_manual_places.csv](../analysis/crowd_manual_places.csv) | 7 | 14 | `e4b0f9d62ce97e177d56c184d3e7dcf229d15fb663e1e1e4c586070e943dbfca` |
 | [analysis/same_places.csv](../analysis/same_places.csv) | 65 | 3 | `96cb1f73ecb73da1c16ae0cab52d35e47bc6d24997a07f63169602b4c1aa5460` |

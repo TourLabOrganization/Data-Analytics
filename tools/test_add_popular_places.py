@@ -126,7 +126,9 @@ class EndToEnd(unittest.TestCase):
         self.assertNotIn("26710", next(t for t in targets if t["region"] == "양산")["codes"])
         self.assertEqual(m.targets_all(places, signgu, regions=["속초"])[0]["codes"], ["51210"])
         home = m.targets_home(places, ["서울"])[0]
-        self.assertEqual(home["codes"], ["11110", "11710", "11170", "11440"])
+        self.assertEqual(home["codes"], ["11110", "11440", "11560", "11170"])  # 종로 · 마포 · 영등포 · 용산(같은 장소 통합 뒤)
+        self.assertEqual(m.targets_home(places, ["대구"])[0]["codes"], ["27710", "27260", "27720", "27290"])
+        self.assertEqual(m.targets_home(places, ["춘천"])[0]["codes"], ["51110"])
 
     def test_all_scope_adds_signgu_code_and_region_macro(self):
         # 전국 범위: 양평(ro 행, 권역 전국)에 새 장소가 생기면 권역은 그 지역 값, 코드는 관광정보 법정동 코드로 place_signgu에 들어간다

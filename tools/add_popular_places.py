@@ -3,7 +3,7 @@
 
     DATA_GO_KR_KEY=<공공데이터포털 인증키> python tools/add_popular_places.py            # 전국: 후보만 만든다(파일은 바꾸지 않는다)
     DATA_GO_KR_KEY=<키> python tools/add_popular_places.py --apply                    # 새 장소를 tour-places.csv 끝에 붙인다
-    DATA_GO_KR_KEY=<키> python tools/add_popular_places.py --scope home               # 앱 홈 칩 8개 도시만(앱과 같은 시군구 선택)
+    DATA_GO_KR_KEY=<키> python tools/add_popular_places.py --scope home               # 앱 홈 칩 10개 도시만(앱과 같은 시군구 선택)
     python tools/add_popular_places.py --from-json <폴더> --apply                      # 받아 둔 응답 JSON으로(네트워크 없이)
 
 규칙은 앱(frontend src/lib/tour-popular.ts · tour-api.ts)과 같다.
@@ -11,7 +11,7 @@
      강원 51·전북 52로 그 시군구 행이 없으면 옛 코드 42·45로 한 번 더 부른다. 어느 시군구를 부르느냐는 --scope로 정한다.
        all(기본): 장소 표의 124개 지역 전부. 장소(숙박 제외)가 있는 시군구(analysis/place_signgu.json의 법정동 코드, --min-places 이상)를
                  모두 부르고, 한 시군구가 두 지역에 걸치면 장소가 많은 지역에 붙인다.
-       home: 앱 홈 칩 8개 도시만, 앱이 고른 시군구(CITY_DISTRICTS: 장소 5곳 이상 · 많은 순 · 최대 4곳).
+       home: 앱 홈 칩 10개 도시만, 앱이 고른 시군구(CITY_DISTRICTS: 장소 5곳 이상 · 많은 순 · 최대 4곳).
   2. 지역마다 기준 날짜(서울 오늘, 없으면 그 뒤 가장 이른 날)의 집중률 높은 순으로 상위 10곳(--top, 0이면 전부)이 후보다.
   3. 같은 지역의 기존 장소와 이름 점수 2 이상이면 이미 있는 장소다(추가하지 않는다).
   4. 못 맞춘 후보는 국문 관광정보 KorService2/searchKeyword2로 찾아(같은 시군구 · 이름 점수 2 이상 · 관광지 타입 우선) 좌표를 얻고,
@@ -48,9 +48,9 @@ OUT_DIR = ROOT / "analysis" / "popular_added"
 BASE = "https://apis.data.go.kr/B551011"
 ID_PREFIX = "pop"
 
-# 앱 tour-popular.ts citySigngu(): 도시마다 플래너 장소(숙박 제외) 5곳 이상인 시군구를 장소 수 순으로 최대 4곳(2026-10-01 장소 데이터 기준)
+# 앱 tour-popular.ts citySigngu(): 도시마다 플래너 장소(숙박 제외) 5곳 이상인 시군구를 장소 수 순으로 최대 4곳(2026-10-04 장소 데이터 기준)
 CITY_DISTRICTS: dict[str, list[str]] = {
-    "서울": ["11110", "11710", "11170", "11440"],  # 종로 · 송파 · 용산 · 마포
+    "서울": ["11110", "11440", "11560", "11170"],  # 종로 · 마포 · 영등포 · 용산(같은 장소 통합으로 송파가 12곳이 되어 빠짐)
     "부산": ["26350", "26710", "26200", "26230"],  # 해운대 · 기장 · 영도 · 부산진
     "제주": ["50110", "50130"],
     "경주": ["47130"],
@@ -58,6 +58,8 @@ CITY_DISTRICTS: dict[str, list[str]] = {
     "전주": ["52111", "52113"],
     "인천": ["28125", "28710", "28185", "28200"],  # 중구 · 강화 · 연수 · 남동
     "속초": ["51210"],
+    "대구": ["27710", "27260", "27720", "27290"],  # 달성 · 수성 · 군위 · 달서(2026-10-04 추가)
+    "춘천": ["51110"],
 }
 HOME_CITIES = list(CITY_DISTRICTS)
 ROWS, MAX_PAGES, TOP = 1000, 5, 10
@@ -507,7 +509,7 @@ def main(argv=None) -> int:
     ap.add_argument("--places", type=Path, default=PLACES_CSV)
     ap.add_argument("--out", type=Path, default=OUT_DIR)
     ap.add_argument("--signgu", type=Path, default=SIGNGU_JSON, help="장소 id → 시군구 코드 JSON")
-    ap.add_argument("--scope", choices=["all", "home"], default="all", help="all: 장소 표의 모든 지역(기본) · home: 앱 홈 칩 8개 도시")
+    ap.add_argument("--scope", choices=["all", "home"], default="all", help="all: 장소 표의 모든 지역(기본) · home: 앱 홈 칩 10개 도시")
     ap.add_argument("--regions", nargs="*", help="이 지역(도시)만")
     ap.add_argument("--min-places", type=int, default=1, help="all: 부를 시군구의 최소 장소 수(숙박 제외)")
     ap.add_argument("--top", type=int, default=TOP, help="지역마다 볼 상위 관광지 수(앱 화면과 같은 10, 0이면 전부)")
