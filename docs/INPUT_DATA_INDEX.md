@@ -9,13 +9,13 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 
 | 파일 | 행 수 | 열 수 | SHA256 |
 |---|---:|---:|---|
-| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,067 | 17 | `a993898d9dee7f98c88cbc59cb2f6b6a0eb84eb77ae9482694c9ce0159c0eec5` |
+| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,212 | 17 | `73549663e94fc696549611a43a47d117e624c79a5afd8d6b27739c14db76fda5` |
 | [analysis/citytour_manual_places.csv](../analysis/citytour_manual_places.csv) | 124 | 13 | `26951dc66690823d300413eb04cd7b1edb5d2b1c6e6ce2e12e2ccfd962664b4b` |
 | [analysis/popular_manual_places.csv](../analysis/popular_manual_places.csv) | 100 | 4 | `edf5921644302b646fd3d6ff043f26817846ffaa9a6293fd4d9b7ad07a43b010` |
 | [analysis/related_manual_places.csv](../analysis/related_manual_places.csv) | 67 | 14 | `e02fba63c491dee30bd09543d16984cdeff15aa72ac58309fd3c6872ab9007f3` |
 | [analysis/crowd_manual_places.csv](../analysis/crowd_manual_places.csv) | 7 | 14 | `e4b0f9d62ce97e177d56c184d3e7dcf229d15fb663e1e1e4c586070e943dbfca` |
-| [analysis/same_places.csv](../analysis/same_places.csv) | 71 | 3 | `d8887b7a0c82cfbd6fada77c23a5721bbdd37e4c06481003b64b06d4001d2665` |
-| [analysis/place_aliases.csv](../analysis/place_aliases.csv) | 71 | 3 | `b9206b81e811d970a148d818644ee0ac52897055bd78192a9c47acec68babebc` |
+| [analysis/same_places.csv](../analysis/same_places.csv) | 72 | 3 | `08c07d276735885af10608e371bbb50552ebc1f29089e54eb86699d562497d73` |
+| [analysis/place_aliases.csv](../analysis/place_aliases.csv) | 72 | 3 | `1a34d3c983f3722d018e8a71a04566114776c1ddb5305362a922a8d1ddbb1352` |
 | [analysis/user_manual_places.csv](../analysis/user_manual_places.csv) | 2 | 14 | `7652843f9ed50f227dc433f88c2dd86482ea59da42302c97038933b81b17155a` |
 | [analysis/popular_match.csv](../analysis/popular_match.csv) | 4 | 4 | `00391b88a0526e0cbb04e0ab5f1688950564884d2139e5085a3156e8f0247463` |
 | [analysis/national_treasure_places.csv](../analysis/national_treasure_places.csv) | 29 | 15 | `6fb223b1e3f02001b7bbcf56f61192cf3614fcfbbd3f8d55f5f028d7988bb01c` |
@@ -28,8 +28,9 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/uiryeong_places.csv](../analysis/uiryeong_places.csv) | 17 | 15 | `500b9e3405bb5df1124acf8d7653ef4aebe3483efd0f1fe26aa20ced72dbb472` |
 | [analysis/leisure_places.csv](../analysis/leisure_places.csv) | 34 | 15 | `9905c65dd65b67dbc79beb6f2b621adaed642c8cb3a21a349b79126085b75346` |
 | [analysis/beach_valley_places.csv](../analysis/beach_valley_places.csv) | 202 | 15 | `843a2a24d94d4075a329e9af95f7fccce67ed11788fcf469a2d6a715a2e57ad0` |
+| [analysis/art_literature_places.csv](../analysis/art_literature_places.csv) | 146 | 15 | `ddd42975074c6571e9a855e808826bb2c581186988f9f97b8ef7e450cec91627` |
 | [analysis/related_added/related_mentioned_missing_2026-10-03.csv](../analysis/related_added/related_mentioned_missing_2026-10-03.csv) | 842 | 4 | `c0920fb295ed1f7b4266d7f22b223393a74ddfc2eefcd3978003c5d7e620fea2` |
-| [analysis/place_signgu.json](../analysis/place_signgu.json) | 4,067 | 2 (id, 코드) | `9aa95f3a58554018de6cf968fbfb6a899b596614578df9c05276184782d20e23` |
+| [analysis/place_signgu.json](../analysis/place_signgu.json) | 4,212 | 2 (id, 코드) | `eaf8e244ad4fb623222edc17bd6e6ebecfd95f487f5e6fff6f94d41347d8a505` |
 | [analysis/citytour.csv](../analysis/citytour.csv) | 280 | 13 | `cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324` |
 | [analysis/stop_category_review.csv](../analysis/stop_category_review.csv) | 30 | 4 | `3cd2219d4290dcac5204adb865a4677f030182ae05e020778dbe4785f45dc70b` |
 | [analysis/spending_csv/spend_region.csv](../analysis/spending_csv/spend_region.csv) | 233 | 4 | `b57eaea72fa6b060347393748e00676c160326921375b048af2486e6d632a31c` |

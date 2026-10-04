@@ -332,3 +332,8 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 
 - `analysis/beach_valley_places.csv`(앱 `scripts/data/beach-valley-places.csv`와 같은 파일): 지정 해수욕장과 대조해 빠진 166곳(강원 57 · 경북 · 울산 · 부산 18 · 경남 13 · 전남 48 · 인천 · 전북 · 충남 26 · 제주 4)과 계곡 36곳. 좌표는 대부분 대략 위치.
 - 충주 라이트월드(`nax40`, 2020년 임대 종료 · 2022년 철거)를 `tour-places.csv` · `place_signgu.json`에서 뺐다(앱 `build-planner.mjs` `CLOSED_IDS`). 3,866 → 3,865 → 4,067행, 앱 id와 같다.
+
+## 2026-10-04 미술관 · 문학관 추가
+
+- `analysis/art_literature_places.csv`(앱 `scripts/data/art-literature-places.csv`와 같은 파일): 미술관 88곳 · 문학관 58곳. 인천시립 · 충남도립 · 이중섭미술관 · 국립한국문학관 · 이주홍문학관은 공사 · 휴관으로 뺐다.
+- `same_places.csv` 71 → 72쌍: 전북특별자치도립미술관(`ro622`) ← 전북도립미술관(`ctmf81bd2bb`). `tools/merge_same_places.py --apply`. 4,067 → 4,213 → 4,212행, 앱 id와 같다.
