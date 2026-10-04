@@ -263,3 +263,7 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 - keep 행의 빈 칸(中文 · 日本語 · 유네스코 · 지정구역 · 설명 · 링크)은 drop 값으로 채웠다(54행). `analysis/place_signgu.json`에서 drop을 지웠다(3,211). 지운 id → 남긴 id는 `analysis/place_aliases.csv`(65행). `age_upgrade/data/datalab_place_crosswalk.csv`의 광안리해수욕장(`ro4` → `bc4`) · 월정사(`ro31` → `nax521`)를 바꿨다.
 - 안에 든 시설 · 행사(이월드 · 83타워, 코엑스 · 별마당도서관, 서문시장 · 서문시장 야시장, 태화강국가정원 · 십리대숲, 낙안읍성 · 김소아가옥 …)와 이름이 비슷한 다른 숙소는 합치지 않았다. 좌표가 이상한 쌍 2건은 따로 확인이 필요하다(여차몽돌해변 `nax785`가 학동 흑진주 몽돌해변 88m 옆, 함덕 서우봉 `nax805`가 함덕해수욕장 24m 옆).
 - 분석 결과(군집 · 코스 연결 · 연령 점수 · `age_upgrade/data/source/nationwide_places_all_3118.csv`)는 그대로다. 다시 실행하면 3,211행 기준이 된다.
+
+## 2026-10-04 사용자 요청 장소 2곳 추가
+
+- 요청 4곳 가운데 이중섭 문화거리(`jdx57` 서귀포 이중섭거리) · 1100고지습지(`jdx74`)는 이미 있어, 없던 속초 설악해맞이공원 · 쇠머리오름(우도봉)만 `analysis/user_manual_places.csv`로 붙였다(`tools/add_manual_places.py --csv … --apply`, 3,211 → 3,213행). 설악해맞이공원은 175m 옆 호텔과 다른 곳이라 `nearOk=1`. 좌표는 수기 값이라 `tools/verify_coords.py` 대조 대상이다.
