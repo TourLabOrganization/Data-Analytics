@@ -64,6 +64,51 @@ class EndToEnd(unittest.TestCase):
     def put(self, name, items, total=None):
         (self.fx / name).write_text(json.dumps(body(items, total), ensure_ascii=False), encoding="utf-8")
 
+    def test_pinned_name_beats_rule(self):
+        # 수기 대조표: 규칙으로 못 잇는 이름(팔각정북악스카이)을 적힌 장소로. 다른 도시 키는 무시
+        places = m.read_places(self.places)
+        pins = {"서울|팔각정북악스카이": "kdx35"}
+        hit = m.match_by_name({"name": "팔각정 북악스카이", "city": "서울"}, places, pins)
+        self.assertEqual(hit["id"], "kdx35")
+        self.assertIsNone(m.match_by_name({"name": "팔각정 북악스카이", "city": "부산"}, places, pins))
+        pins_file = m.read_match()
+        for key, pid in pins_file.items():
+            city = key.split("|")[0]
+            place = next((p for p in places if p["id"] == pid), None)
+            self.assertIsNotNone(place, key)
+            self.assertEqual(place["지역"], city, key)
+            self.assertNotEqual(place["카테고리"], "stay", key)
+
+    def test_boundary_place_loose_pick(self):
+        # 같은 시군구 관광정보가 없으면 같은 시도 · 이름 같은 것만(품는 이름은 안 됨). 다른 시도는 뺀다
+        items = [{"contentid": "1", "title": "1100고지 습지", "contenttypeid": "12", "lDongRegnCd": "50", "lDongSignguCd": "130"},
+                 {"contentid": "2", "title": "1100고지 휴게소", "contenttypeid": "39", "lDongRegnCd": "50", "lDongSignguCd": "130"},
+                 {"contentid": "3", "title": "1100고지 습지", "contenttypeid": "12", "lDongRegnCd": "47", "lDongSignguCd": "130"}]
+        self.assertIsNone(m.pick_spot_item(items, {"name": "1100고지습지", "signgu": "50110"}))
+        self.assertEqual(m.pick_spot_item_loose(items, {"name": "1100고지습지", "signgu": "50110"})["contentid"], "1")
+        self.assertIsNone(m.pick_spot_item_loose(items, {"name": "1100고지", "signgu": "50110"}))
+        self.assertIsNone(m.pick_spot_item_loose(items, {"name": "1100고지습지", "signgu": ""}))
+        # 다른 시도(47)만 남으면 없음, 시도 코드가 빈 항목은 받는다
+        self.assertIsNone(m.pick_spot_item_loose(items[2:], {"name": "1100고지습지", "signgu": "50110"}))
+        blank = [dict(items[0], contentid="4", lDongRegnCd="")]
+        self.assertEqual(m.pick_spot_item_loose(blank, {"name": "1100고지습지", "signgu": "50110"})["contentid"], "4")
+
+    def test_boundary_collect_requires_name_near(self):
+        # 같은 시군구 관광정보가 없을 때: 시도 안 같은 이름 관광정보 좌표 1km 안에서 이름도 맞는(글자쌍 절반 겹침) 장소만.
+        # 「동궁월지」는 이름 점수로는 「동궁과 월지」와 안 맞아(0점) 이름 대조를 지나고, 위치 + 글자 겹침(0.57)으로 gj3에 잇는다.
+        # 「다른구 시장」은 동궁과 월지 바로 옆이지만 이름이 안 맞아 잇지 않고, 새 장소로도 만들지 않는다
+        places = m.read_places(self.places)
+        pond = next(p for p in places if p["id"] == "gj3")  # 동궁과 월지
+        lat, lng = float(pond["위도"]), float(pond["경도"])
+        self.put("crowd_47130_p1.json", [crowd("동궁월지", "47130", 40), crowd("다른구 시장", "47130", 30)])
+        self.put("search_동궁월지.json", [search("동궁월지", "1001", lat + 0.001, lng, sgg="111")])
+        self.put("search_다른구 시장.json", [search("다른구 시장", "2002", lat + 0.0005, lng, sgg="111")])
+        api = m.JsonDirApi(self.fx)
+        cand, new = m.collect(api, places, m.targets_home(places, ["경주"]), "2026-10-01", 10, log=lambda *_: None)
+        self.assertEqual([(c["판정"], c["장소 id"]) for c in cand],
+                         [("기존(위치)", "gj3"), ("못 찾음(관광정보에 없음)", "")])
+        self.assertEqual(new, [])
+
     def test_match_existing_new_and_missing(self):
         # 경주시 집중률: 불국사(기존 이름), 월정교 야경(월정교와 250m 안 → 위치), 가상의 새 관광지(신규), 아무 데도 없는 곳(못 찾음)
         self.put("crowd_47130_p1.json", [crowd("불국사", "47130", 50), crowd("신라의 밤 야경", "47130", 40),
@@ -116,7 +161,7 @@ class EndToEnd(unittest.TestCase):
         signgu = m.read_signgu(ROOT / "analysis" / "place_signgu.json")
         targets = m.targets_all(places, signgu)
         regions = {p["지역"] for p in places if p["카테고리"] != "stay"}
-        self.assertEqual({t["region"] for t in targets}, regions)  # 숙박만 있는 지역은 없으므로 124곳 전부
+        self.assertEqual({t["region"] for t in targets}, regions)  # 숙박만 있는 지역은 없으므로 154곳 전부(2026-10-04 보물 소재지까지)
         codes = [c for t in targets for c in t["codes"]]
         self.assertEqual(len(codes), len(set(codes)))  # 한 시군구는 한 지역에만
         gj = next(t for t in targets if t["region"] == "경주")
@@ -126,7 +171,9 @@ class EndToEnd(unittest.TestCase):
         self.assertNotIn("26710", next(t for t in targets if t["region"] == "양산")["codes"])
         self.assertEqual(m.targets_all(places, signgu, regions=["속초"])[0]["codes"], ["51210"])
         home = m.targets_home(places, ["서울"])[0]
-        self.assertEqual(home["codes"], ["11110", "11710", "11170", "11440"])
+        self.assertEqual(home["codes"], ["11110", "11440", "11560", "11140"])  # 종로 · 마포 · 영등포 · 중구(국보 소재지 추가 뒤)
+        self.assertEqual(m.targets_home(places, ["대구"])[0]["codes"], ["27710", "27260", "27720", "27290"])
+        self.assertEqual(m.targets_home(places, ["춘천"])[0]["codes"], ["51110"])
 
     def test_all_scope_adds_signgu_code_and_region_macro(self):
         # 전국 범위: 양평(ro 행, 권역 전국)에 새 장소가 생기면 권역은 그 지역 값, 코드는 관광정보 법정동 코드로 place_signgu에 들어간다

@@ -3,7 +3,7 @@
 
     DATA_GO_KR_KEY=<공공데이터포털 인증키> python tools/add_popular_places.py            # 전국: 후보만 만든다(파일은 바꾸지 않는다)
     DATA_GO_KR_KEY=<키> python tools/add_popular_places.py --apply                    # 새 장소를 tour-places.csv 끝에 붙인다
-    DATA_GO_KR_KEY=<키> python tools/add_popular_places.py --scope home               # 앱 홈 칩 8개 도시만(앱과 같은 시군구 선택)
+    DATA_GO_KR_KEY=<키> python tools/add_popular_places.py --scope home               # 앱 홈 칩 10개 도시만(앱과 같은 시군구 선택)
     python tools/add_popular_places.py --from-json <폴더> --apply                      # 받아 둔 응답 JSON으로(네트워크 없이)
 
 규칙은 앱(frontend src/lib/tour-popular.ts · tour-api.ts)과 같다.
@@ -11,7 +11,7 @@
      강원 51·전북 52로 그 시군구 행이 없으면 옛 코드 42·45로 한 번 더 부른다. 어느 시군구를 부르느냐는 --scope로 정한다.
        all(기본): 장소 표의 124개 지역 전부. 장소(숙박 제외)가 있는 시군구(analysis/place_signgu.json의 법정동 코드, --min-places 이상)를
                  모두 부르고, 한 시군구가 두 지역에 걸치면 장소가 많은 지역에 붙인다.
-       home: 앱 홈 칩 8개 도시만, 앱이 고른 시군구(CITY_DISTRICTS: 장소 5곳 이상 · 많은 순 · 최대 4곳).
+       home: 앱 홈 칩 10개 도시만, 앱이 고른 시군구(CITY_DISTRICTS: 장소 5곳 이상 · 많은 순 · 최대 4곳).
   2. 지역마다 기준 날짜(서울 오늘, 없으면 그 뒤 가장 이른 날)의 집중률 높은 순으로 상위 10곳(--top, 0이면 전부)이 후보다.
   3. 같은 지역의 기존 장소와 이름 점수 2 이상이면 이미 있는 장소다(추가하지 않는다).
   4. 못 맞춘 후보는 국문 관광정보 KorService2/searchKeyword2로 찾아(같은 시군구 · 이름 점수 2 이상 · 관광지 타입 우선) 좌표를 얻고,
@@ -45,12 +45,13 @@ ROOT = Path(__file__).resolve().parents[1]
 PLACES_CSV = ROOT / "analysis" / "tour-places.csv"
 SIGNGU_JSON = ROOT / "analysis" / "place_signgu.json"  # 장소 id → 법정동 시군구 코드(앱 signgu.json과 같다)
 OUT_DIR = ROOT / "analysis" / "popular_added"
+MATCH_CSV = ROOT / "analysis" / "popular_match.csv"  # 수기 대조표(앱 lib/popular-match.ts와 같은 짝): 규칙으로 못 잇는 이름 → 장소 id
 BASE = "https://apis.data.go.kr/B551011"
 ID_PREFIX = "pop"
 
-# 앱 tour-popular.ts citySigngu(): 도시마다 플래너 장소(숙박 제외) 5곳 이상인 시군구를 장소 수 순으로 최대 4곳(2026-10-01 장소 데이터 기준)
+# 앱 tour-popular.ts citySigngu(): 도시마다 플래너 장소(숙박 제외) 5곳 이상인 시군구를 장소 수 순으로 최대 4곳(2026-10-04 장소 데이터 기준)
 CITY_DISTRICTS: dict[str, list[str]] = {
-    "서울": ["11110", "11710", "11170", "11440"],  # 종로 · 송파 · 용산 · 마포
+    "서울": ["11110", "11440", "11560", "11140"],  # 종로 · 마포 · 영등포 · 중구(국보 소재지 추가로 중구가 용산과 같은 12곳, 코드 순)
     "부산": ["26350", "26710", "26200", "26230"],  # 해운대 · 기장 · 영도 · 부산진
     "제주": ["50110", "50130"],
     "경주": ["47130"],
@@ -58,6 +59,8 @@ CITY_DISTRICTS: dict[str, list[str]] = {
     "전주": ["52111", "52113"],
     "인천": ["28125", "28710", "28185", "28200"],  # 중구 · 강화 · 연수 · 남동
     "속초": ["51210"],
+    "대구": ["27710", "27260", "27720", "27290"],  # 달성 · 수성 · 군위 · 달서(2026-10-04 추가)
+    "춘천": ["51110"],
 }
 HOME_CITIES = list(CITY_DISTRICTS)
 ROWS, MAX_PAGES, TOP = 1000, 5, 10
@@ -269,6 +272,18 @@ def pick_spot_item(items: list[dict], spot: dict) -> dict | None:
     return min(scored)[3] if scored else None
 
 
+def pick_spot_item_loose(items: list[dict], spot: dict) -> dict | None:
+    """같은 시군구에 없을 때의 예비 후보(앱 pickSpotItemLoose): 같은 시도(코드 앞 두 자리) · 이름이 같은(3점) 관광정보.
+    시군구 경계에 걸친 장소(1100고지 습지: 집중률 제주시, 관광정보 서귀포시). 위치로 기존 장소를 찾는 데만 쓰고 새 장소로 만들지 않는다"""
+    if not re.fullmatch(r"\d{5}", spot.get("signgu", "")):
+        return None
+    sido = spot["signgu"][:2]
+    in_sido = [x for x in items
+               if (not str(x.get("lDongRegnCd", "")) or str(x.get("lDongRegnCd", "")) == sido)
+               and name_score(spot["name"], str(x.get("title", "")), "") == 3]
+    return pick_spot_item(in_sido, {"name": spot["name"], "signgu": ""})
+
+
 def kto_coords(item: dict) -> tuple[float, float] | None:
     try:
         lat, lng = float(item.get("mapy")), float(item.get("mapx"))
@@ -291,7 +306,21 @@ def city_places(places: list[dict], city: str) -> list[dict]:
     return [p for p in places if p["지역"] == city and p["카테고리"] != "stay"]
 
 
-def match_by_name(spot: dict, pool: list[dict]) -> dict | None:
+def read_match(path: Path = MATCH_CSV) -> dict[str, str]:
+    """수기 대조표: '도시|정규화 이름' → 장소 id. 파일이 없으면 빈 표"""
+    if not path.is_file():
+        return {}
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        return {f"{r['city'].strip()}|{crowd_name(r['name'])}": r["id"].strip() for r in csv.DictReader(f) if r.get("id", "").strip()}
+
+
+def match_by_name(spot: dict, pool: list[dict], pins: dict[str, str] | None = None) -> dict | None:
+    """수기 대조표(pins)에 있으면 그 장소, 아니면 이름 점수 2 이상 중 가장 높은 곳(앱 matchPlace와 같다)"""
+    pinned = (pins or {}).get(f"{spot.get('city', '')}|{crowd_name(spot['name'])}")
+    if pinned:
+        for p in pool:
+            if p["id"] == pinned:
+                return p
     best, best_score = None, 1
     for p in pool:
         s = name_score(spot["name"], p["이름(한국어)"], spot["city"])
@@ -310,6 +339,22 @@ def match_by_location(name: str, lat: float, lng: float, pool: list[dict]) -> di
         if d > NEAR_SPOT_M or d >= best_d:
             continue
         if d > SAME_SPOT_M and name_overlap(name, p["이름(한국어)"]) < NEAR_SPOT_OVERLAP:
+            continue
+        best, best_d = p, d
+    return best
+
+
+def match_by_location_named(name: str, lat: float, lng: float, pool: list[dict], city: str) -> dict | None:
+    """경계 장소의 위치 대조(앱 matchByLocationNamed): 1km 안에서 이름도 맞는(점수 2 이상 또는 글자쌍 절반 겹침) 가장 가까운 장소"""
+    best, best_d = None, math.inf
+    for p in pool:
+        try:
+            d = meters(lat, lng, float(p["위도"]), float(p["경도"]))
+        except ValueError:
+            continue
+        if d > NEAR_SPOT_M or d >= best_d:
+            continue
+        if name_score(name, p["이름(한국어)"], city) < 2 and name_overlap(name, p["이름(한국어)"]) < NEAR_SPOT_OVERLAP:
             continue
         best, best_d = p, d
     return best
@@ -364,7 +409,8 @@ def targets_home(places: list[dict], cities: list[str]) -> list[dict]:
 
 
 def targets_all(places: list[dict], signgu: dict[str, str], min_places: int = 1, regions: list[str] | None = None) -> list[dict]:
-    """전국: 장소(숙박 제외)가 있는 시군구 전부. 한 시군구가 두 지역에 걸치면 장소가 많은 지역(같으면 이름 순)에 붙인다.
+    """전국: 장소(숙박 제외)가 있는 시군구 전부. 한 시군구가 두 지역에 걸치면 장소가 많은 지역(같으면 시군구가 적은 지역, 그다음 이름 순)에 붙인다.
+    옥천 2곳 = 대전 시티투어 경유지 2곳이면 옥천에(대전은 제 구가 따로 있다). 앱 lib/tour-collect.ts allTargets와 같다.
     매칭 풀은 그 지역의 장소 + 그 시군구 코드의 장소(지역이 달라도)"""
     count: dict[tuple[str, str], int] = {}
     for p in places:
@@ -372,13 +418,16 @@ def targets_all(places: list[dict], signgu: dict[str, str], min_places: int = 1,
         if p["카테고리"] == "stay" or not re.fullmatch(r"\d{5}", code):
             continue
         count[(p["지역"], code)] = count.get((p["지역"], code), 0) + 1
-    claims: dict[str, list[tuple[int, str]]] = {}
+    spread: dict[str, int] = {}
+    for region, _ in count:
+        spread[region] = spread.get(region, 0) + 1
+    claims: dict[str, list[tuple[int, int, str]]] = {}
     for (region, code), n in count.items():
         if n >= min_places:
-            claims.setdefault(code, []).append((-n, region))
+            claims.setdefault(code, []).append((-n, spread[region], region))
     by_region: dict[str, list[str]] = {}
     for code, who in claims.items():
-        by_region.setdefault(min(who)[1], []).append(code)
+        by_region.setdefault(min(who)[2], []).append(code)
     out = []
     for region in sorted(by_region):
         if regions and region not in regions:
@@ -391,8 +440,11 @@ def targets_all(places: list[dict], signgu: dict[str, str], min_places: int = 1,
 
 # ---------- 본 작업 ----------
 def collect(api, places: list[dict], targets: list[dict], today: str, top: int, log=print,
-            signgu: dict[str, str] | None = None) -> tuple[list[dict], list[dict]]:
-    """(후보 판정표, 새 행). places에는 새 행을 바로 더해 같은 실행 안에서도 중복이 없다. signgu를 주면 새 장소의 코드를 넣는다."""
+            signgu: dict[str, str] | None = None, pins: dict[str, str] | None = None) -> tuple[list[dict], list[dict]]:
+    """(후보 판정표, 새 행). places에는 새 행을 바로 더해 같은 실행 안에서도 중복이 없다. signgu를 주면 새 장소의 코드를 넣는다.
+    pins(수기 대조표 read_match)를 주지 않으면 analysis/popular_match.csv를 읽는다."""
+    if pins is None:
+        pins = read_match()
     candidates, new_rows = [], []
     seen = known_contentids(places)
     ids = {p["id"] for p in places}
@@ -421,7 +473,7 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
             spot = dict(s, city=city)
             row = {"지역": city, "순위": rank, "관광지": s["name"], "시군구": s["district"], "시군구 코드": s["signgu"],
                    "집중률": s["rate"], "기준 날짜": date, "판정": "", "장소 id": "", "장소 이름": "", "contentid": ""}
-            hit = match_by_name(spot, pool)
+            hit = match_by_name(spot, pool, pins)
             if hit:
                 row.update(판정="기존(이름)", **{"장소 id": hit["id"], "장소 이름": hit["이름(한국어)"]})
                 candidates.append(row)
@@ -432,6 +484,16 @@ def collect(api, places: list[dict], targets: list[dict], today: str, top: int, 
                 found = []
                 log(f"{city} {s['name']}: 검색 실패 {e}")
             item = pick_spot_item(found, spot)
+            if not item:
+                # 경계 장소: 같은 시도의 이름 같은 관광정보 좌표 1km 안에서 이름도 맞는 기존 장소만 찾는다(새 장소로 만들지 않는다).
+                # 이름 없는 250m 규칙은 쓰지 않는다(다른 구의 같은 이름 관광정보 옆의 다른 장소에 잇지 않게, 앱 matchByLocationNamed와 같다)
+                loose = pick_spot_item_loose(found, spot)
+                lc = kto_coords(loose) if loose else None
+                near = match_by_location_named(s["name"], lc[0], lc[1], pool, city) if lc else None
+                if near:
+                    row.update(판정="기존(위치)", **{"장소 id": near["id"], "장소 이름": near["이름(한국어)"]})
+                    candidates.append(row)
+                    continue
             coords = kto_coords(item) if item else None
             if not item or not coords:
                 row["판정"] = "못 찾음(관광정보에 없음)"
@@ -507,7 +569,7 @@ def main(argv=None) -> int:
     ap.add_argument("--places", type=Path, default=PLACES_CSV)
     ap.add_argument("--out", type=Path, default=OUT_DIR)
     ap.add_argument("--signgu", type=Path, default=SIGNGU_JSON, help="장소 id → 시군구 코드 JSON")
-    ap.add_argument("--scope", choices=["all", "home"], default="all", help="all: 장소 표의 모든 지역(기본) · home: 앱 홈 칩 8개 도시")
+    ap.add_argument("--scope", choices=["all", "home"], default="all", help="all: 장소 표의 모든 지역(기본) · home: 앱 홈 칩 10개 도시")
     ap.add_argument("--regions", nargs="*", help="이 지역(도시)만")
     ap.add_argument("--min-places", type=int, default=1, help="all: 부를 시군구의 최소 장소 수(숙박 제외)")
     ap.add_argument("--top", type=int, default=TOP, help="지역마다 볼 상위 관광지 수(앱 화면과 같은 10, 0이면 전부)")
