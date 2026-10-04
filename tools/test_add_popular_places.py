@@ -171,7 +171,7 @@ class EndToEnd(unittest.TestCase):
         self.assertNotIn("26710", next(t for t in targets if t["region"] == "양산")["codes"])
         self.assertEqual(m.targets_all(places, signgu, regions=["속초"])[0]["codes"], ["51210"])
         home = m.targets_home(places, ["서울"])[0]
-        self.assertEqual(home["codes"], ["11110", "11440", "11560", "11170"])  # 종로 · 마포 · 영등포 · 용산(같은 장소 통합 뒤)
+        self.assertEqual(home["codes"], ["11110", "11440", "11560", "11140"])  # 종로 · 마포 · 영등포 · 중구(국보 소재지 추가 뒤)
         self.assertEqual(m.targets_home(places, ["대구"])[0]["codes"], ["27710", "27260", "27720", "27290"])
         self.assertEqual(m.targets_home(places, ["춘천"])[0]["codes"], ["51110"])
 
