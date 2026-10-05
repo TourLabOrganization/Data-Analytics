@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4763,
+    "rows": 4762,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "b973e7ed64827958cf807f5d5111e42ac6b37516bb3f84748d7b45680f2a06b7"
+    "sha256": "e275fb116f6d0c025fb3ae80c63e0a3fdf1d787ebeec588edc5d596eac747c8a"
   },
   {
     "file": "analysis/citytour.csv",
@@ -915,7 +915,7 @@
   },
   {
     "file": "analysis/bakery_places.csv",
-    "rows": 91,
+    "rows": 90,
     "columns": [
       "region",
       "stopName",
@@ -934,6 +934,6 @@
       "coord"
     ],
     "encoding": "utf-8",
-    "sha256": "ee99a6483b858a2b2df30730e4c53659d61f86e9bf30db5e39b13b6fd7ffb3f3"
+    "sha256": "e46e5473ffff7efba20fdf9ed10b0e893f0f60d8a5f7b3885852ac9404724469"
   }
 ]
