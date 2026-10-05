@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "29819a8aa89a69aef8e20cfcb1d1ef3aa1e232f6b327ba9da3be6c0e5799a880"
+    "sha256": "bb7b86b7340a90c1a092a945205b2ef2958a2a527da9dfa0fc243d1341eb0261"
   },
   {
     "file": "analysis/citytour.csv",
@@ -735,7 +735,7 @@
   },
   {
     "file": "analysis/place_fixes.csv",
-    "rows": 198,
+    "rows": 291,
     "columns": [
       "id",
       "city",
@@ -749,7 +749,7 @@
       "es"
     ],
     "encoding": "utf-8",
-    "sha256": "a8cdd74af03c83e924956ae1d4d66239e0b5b8499eaefffe88f97ba04c864770"
+    "sha256": "8ef3c67e03ea2da18af431d09f2709f688ece102f813dc4e7e00efa01698eb77"
   },
   {
     "file": "analysis/unesco_list.csv",
