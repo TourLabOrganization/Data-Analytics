@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4671,
+    "rows": 4672,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "0f03fc181392a97369c131add9ebae7d5b41e1dbac0194ef128eeff4346ee93d"
+    "sha256": "521daa1247a4799248e0fde9f1b1aac738ff20dbd8023663d81796f7f7adfc96"
   },
   {
     "file": "analysis/citytour.csv",
@@ -880,7 +880,7 @@
   },
   {
     "file": "analysis/food_list_places.csv",
-    "rows": 104,
+    "rows": 105,
     "columns": [
       "region",
       "stopName",
@@ -899,7 +899,7 @@
       "coord"
     ],
     "encoding": "utf-8",
-    "sha256": "8a26359aa50bcda4c229ebee335ae3229f9d5f516e69b1307b43e0297ab098e9"
+    "sha256": "a99b739cd193f3ae56d762a574da628e8e3ad15443cc0035c4610246c1d18c76"
   },
   {
     "file": "analysis/place_notes.csv",
@@ -911,6 +911,6 @@
       "list"
     ],
     "encoding": "utf-8",
-    "sha256": "2d9e32e7cb9ce3f615c769faf4bd7618f2c76b0f0a2130a05f9b77e4ef64a9d5"
+    "sha256": "7181b85fdf0d94e56c33c08721dd13267030f9209891b88c3e39e6a59038f691"
   }
 ]
