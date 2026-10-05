@@ -9,7 +9,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 
 | 파일 | 행 수 | 열 수 | SHA256 |
 |---|---:|---:|---|
-| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,831 | 17 | `b2e299bd2c3801ec7314be0a7f60c54e1da88621d69bc4d36fc0c459f785ff43` |
+| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,831 | 17 | `c0535e6519a7bd15c27e33b675e9d7c08dacd67bafca5e3299cc72faf5c52f25` |
 | [analysis/citytour_manual_places.csv](../analysis/citytour_manual_places.csv) | 124 | 13 | `26951dc66690823d300413eb04cd7b1edb5d2b1c6e6ce2e12e2ccfd962664b4b` |
 | [analysis/popular_manual_places.csv](../analysis/popular_manual_places.csv) | 100 | 4 | `edf5921644302b646fd3d6ff043f26817846ffaa9a6293fd4d9b7ad07a43b010` |
 | [analysis/related_manual_places.csv](../analysis/related_manual_places.csv) | 67 | 14 | `e02fba63c491dee30bd09543d16984cdeff15aa72ac58309fd3c6872ab9007f3` |
@@ -30,7 +30,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/beach_valley_places.csv](../analysis/beach_valley_places.csv) | 202 | 15 | `843a2a24d94d4075a329e9af95f7fccce67ed11788fcf469a2d6a715a2e57ad0` |
 | [analysis/art_literature_places.csv](../analysis/art_literature_places.csv) | 146 | 15 | `ddd42975074c6571e9a855e808826bb2c581186988f9f97b8ef7e450cec91627` |
 | [analysis/market_places.csv](../analysis/market_places.csv) | 82 | 15 | `28e639bcac060ea4d34782d78721ad44af222a67c39549c9442dfc4c1e22c080` |
-| [analysis/place_fixes.csv](../analysis/place_fixes.csv) | 291 | 10 | `8ef3c67e03ea2da18af431d09f2709f688ece102f813dc4e7e00efa01698eb77` |
+| [analysis/place_fixes.csv](../analysis/place_fixes.csv) | 295 | 10 | `45cc326d51491dcd45ae7d5d95e499f67a1a72e4d3282162873faf3a4b92a504` |
 | [analysis/unesco_list.csv](../analysis/unesco_list.csv) | 17 | 4 | `ea964c658c2f7bd380d6a0941410b0116abaa5b638fc061c1b7358d3f51445bb` |
 | [analysis/unesco_places.csv](../analysis/unesco_places.csv) | 13 | 15 | `58b3d129eb34da3c88dcebf706eaf70013ae52a87c9eb5191fb150ae60bab003` |
 | [analysis/aquarium_places.csv](../analysis/aquarium_places.csv) | 9 | 15 | `3069f4c43e32053daa236811053db00bd82f4420b8eee4725979d80076a16877` |
