@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4762,
+    "rows": 4831,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "bb7b86b7340a90c1a092a945205b2ef2958a2a527da9dfa0fc243d1341eb0261"
+    "sha256": "b2e299bd2c3801ec7314be0a7f60c54e1da88621d69bc4d36fc0c459f785ff43"
   },
   {
     "file": "analysis/citytour.csv",
@@ -854,6 +854,29 @@
     ],
     "encoding": "utf-8",
     "sha256": "2c9dcbf9955660fd6a8a4b6acbeb65013002b4783fe8bb616275ccaa1826c1eb"
+  },
+  {
+    "file": "analysis/jeonju_places.csv",
+    "rows": 69,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "bd1fc2c01b337b6bb889aeb84f11ded06804437230856a1d2234021e10662070"
   },
   {
     "file": "analysis/resort_places.csv",
