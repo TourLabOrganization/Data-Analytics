@@ -174,8 +174,14 @@ class EndToEnd(unittest.TestCase):
         signgu = m.read_signgu(ROOT / "analysis" / "place_signgu.json")
         targets = m.targets_all(places, signgu)
         regions = {p["지역"] for p in places if p["카테고리"] != "stay"}
-        self.assertEqual({t["region"] for t in targets}, regions)  # 숙박만 있는 지역은 없으므로 154곳 전부(2026-10-04 보물 소재지까지)
         codes = [c for t in targets for c in t["codes"]]
+        # 지역은 모두 조회 대상이거나, 그 지역 장소의 시군구가 다른 대상에 들어 있다
+        # (옹진군 28720은 인천 · 백령도 · 연평도가 나눠 쓴다: 장소가 가장 많은 지역 한 곳에서 한 번만 조회한다. 앱 tour-collect.test.ts와 같다)
+        got = {t["region"] for t in targets}
+        self.assertLessEqual(got, regions)
+        for p in places:
+            if p["카테고리"] != "stay" and p["지역"] not in got:
+                self.assertIn(signgu.get(p["id"]), codes, p["id"])
         self.assertEqual(len(codes), len(set(codes)))  # 한 시군구는 한 지역에만
         gj = next(t for t in targets if t["region"] == "경주")
         self.assertEqual(gj["codes"], ["47130"])

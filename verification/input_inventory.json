@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4831,
+    "rows": 4868,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "c0535e6519a7bd15c27e33b675e9d7c08dacd67bafca5e3299cc72faf5c52f25"
+    "sha256": "6b85d430b926c599d16a5b38b740821bce1b8023d0465463dc9c0bc3c594cee7"
   },
   {
     "file": "analysis/citytour.csv",
@@ -877,6 +877,29 @@
     ],
     "encoding": "utf-8",
     "sha256": "bd1fc2c01b337b6bb889aeb84f11ded06804437230856a1d2234021e10662070"
+  },
+  {
+    "file": "analysis/island_places.csv",
+    "rows": 37,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "fd66b37de8ef5e799a719758c371701006db04f7e9cfee4e11bc7a2b207d0619"
   },
   {
     "file": "analysis/resort_places.csv",

@@ -9,7 +9,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 
 | 파일 | 행 수 | 열 수 | SHA256 |
 |---|---:|---:|---|
-| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,831 | 17 | `c0535e6519a7bd15c27e33b675e9d7c08dacd67bafca5e3299cc72faf5c52f25` |
+| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,868 | 17 | `6b85d430b926c599d16a5b38b740821bce1b8023d0465463dc9c0bc3c594cee7` |
 | [analysis/citytour_manual_places.csv](../analysis/citytour_manual_places.csv) | 124 | 13 | `26951dc66690823d300413eb04cd7b1edb5d2b1c6e6ce2e12e2ccfd962664b4b` |
 | [analysis/popular_manual_places.csv](../analysis/popular_manual_places.csv) | 100 | 4 | `edf5921644302b646fd3d6ff043f26817846ffaa9a6293fd4d9b7ad07a43b010` |
 | [analysis/related_manual_places.csv](../analysis/related_manual_places.csv) | 67 | 14 | `e02fba63c491dee30bd09543d16984cdeff15aa72ac58309fd3c6872ab9007f3` |
@@ -37,12 +37,13 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/sokcho_places.csv](../analysis/sokcho_places.csv) | 70 | 15 | `31f33793e4d5377d892518cf058e21e0b91b625c9d52e8b031949d18f17d8709` |
 | [analysis/gangneung_places.csv](../analysis/gangneung_places.csv) | 71 | 15 | `2c9dcbf9955660fd6a8a4b6acbeb65013002b4783fe8bb616275ccaa1826c1eb` |
 | [analysis/jeonju_places.csv](../analysis/jeonju_places.csv) | 69 | 15 | `bd1fc2c01b337b6bb889aeb84f11ded06804437230856a1d2234021e10662070` |
+| [analysis/island_places.csv](../analysis/island_places.csv) | 37 | 15 | `fd66b37de8ef5e799a719758c371701006db04f7e9cfee4e11bc7a2b207d0619` |
 | [analysis/resort_places.csv](../analysis/resort_places.csv) | 127 | 15 | `d9386cef46adda75c2c6d65115b47da81905f25e286ecaf23a26d4bc16e225cd` |
 | [analysis/food_list_places.csv](../analysis/food_list_places.csv) | 105 | 15 | `a99b739cd193f3ae56d762a574da628e8e3ad15443cc0035c4610246c1d18c76` |
 | [analysis/place_notes.csv](../analysis/place_notes.csv) | 11 | 4 | `e1270bdd01aa6d84cafade579c6c6c848f0dba8f23c3f54e9099a53fc665b9ba` |
 | [analysis/bakery_places.csv](../analysis/bakery_places.csv) | 90 | 15 | `e46e5473ffff7efba20fdf9ed10b0e893f0f60d8a5f7b3885852ac9404724469` |
 | [analysis/related_added/related_mentioned_missing_2026-10-03.csv](../analysis/related_added/related_mentioned_missing_2026-10-03.csv) | 842 | 4 | `c0920fb295ed1f7b4266d7f22b223393a74ddfc2eefcd3978003c5d7e620fea2` |
-| [analysis/place_signgu.json](../analysis/place_signgu.json) | 4,831 | 2 (id, 코드) | `5bc7f26fdd460477429ef27a718d0759538fcd85daac22bfe12aae48157fb34b` |
+| [analysis/place_signgu.json](../analysis/place_signgu.json) | 4,868 | 2 (id, 코드) | `ad23d29757a08125cb8b39f9bda8a871672825e19e143e293bb47931f18b326a` |
 | [analysis/citytour.csv](../analysis/citytour.csv) | 280 | 13 | `cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324` |
 | [analysis/stop_category_review.csv](../analysis/stop_category_review.csv) | 30 | 4 | `3cd2219d4290dcac5204adb865a4677f030182ae05e020778dbe4785f45dc70b` |
 | [analysis/spending_csv/spend_region.csv](../analysis/spending_csv/spend_region.csv) | 233 | 4 | `b57eaea72fa6b060347393748e00676c160326921375b048af2486e6d632a31c` |
