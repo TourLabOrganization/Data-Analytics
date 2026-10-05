@@ -408,3 +408,4 @@ T 범주 구성 그림의 회색(범주 미확인) 부분을 줄이기 위해, �
 - `analysis/jeonju_places.csv`(앱 `scripts/data/jeonju-places.csv`와 같은 파일): 전주 관광지 25 · 숙소 19 · 로컬 상권 25곳. 4,762 → 4,831행.
 - 손으로 붙인 장소 1,800곳(`id`가 `ctm`으로 시작)의 `中文` · `日本語` 칸을 앱 번역 표(`translations/data/place-names.zh/ja.json`, 앱이 옮긴 비공식 이름)와 같게 채웠다. 확실한 한자어만 한자로 쓰고 나머지는 로마자 · 가타카나다. 전라감영(위키백과) · 남고산성 · 문화공간 양사재(관광공사) 좌표를 고치고, `ctm766d7959` 이름 「안동시 외」를 「안동 안기동 석조여래좌상」으로 바로잡았다(`place_fixes.csv` 295행).
 - `analysis/island_places.csv`(앱 `scripts/data/island-places.csv`와 같은 파일): 백령도 22 · 연평도 15곳, 새 지역 「백령도」 · 「연평도」(옹진군 28720). 4,831 → 4,868행. `中文` · `日本語`도 앱 번역 표와 같게 채웠다. `tools/test_add_popular_places.py`: 여러 지역이 나눠 쓰는 시군구는 한 지역에서만 조회하는 것을 허용.
+- 다국어 지명 관리(앱 `scripts/data/city-names.csv` · `scripts/names-sheet.mjs`): 동해 대진해수욕장(`ctmc325d17a`)의 `中文` · `日本語`를 영덕 대진해수욕장과 같은 한자 표기에 도시를 붙인 이름(大津海水浴场（东海） · 大津海水浴場（東海）)으로 맞췄다(`place_fixes.csv` 296행).
