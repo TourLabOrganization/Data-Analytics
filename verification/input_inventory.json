@@ -1,7 +1,7 @@
 [
   {
     "file": "analysis/tour-places.csv",
-    "rows": 4841,
+    "rows": 4855,
     "columns": [
       "id",
       "권역",
@@ -22,7 +22,7 @@
       "링크"
     ],
     "encoding": "utf-8-sig",
-    "sha256": "490d3689174f0e3c0f6e34346fd610886f5241dd2348ee50daa07b1b0765dcc4"
+    "sha256": "b29dd6f8d835ca3fd8990ecf6d2ec85c832467a29eb32b3fb96b0d388da66c12"
   },
   {
     "file": "analysis/citytour.csv",
@@ -981,5 +981,28 @@
     ],
     "encoding": "utf-8",
     "sha256": "e46e5473ffff7efba20fdf9ed10b0e893f0f60d8a5f7b3885852ac9404724469"
+  },
+  {
+    "file": "analysis/popular_missing_places.csv",
+    "rows": 14,
+    "columns": [
+      "region",
+      "stopName",
+      "tours",
+      "ko",
+      "en",
+      "cat",
+      "lat",
+      "lng",
+      "signgu",
+      "muni",
+      "desc",
+      "descEn",
+      "nearOk",
+      "source",
+      "coord"
+    ],
+    "encoding": "utf-8",
+    "sha256": "9819674421c6f3262c10ef684902887ee8b289c631c86ba7e81f319568c4ec82"
   }
 ]
