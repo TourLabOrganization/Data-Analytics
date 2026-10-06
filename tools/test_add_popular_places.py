@@ -190,8 +190,8 @@ class EndToEnd(unittest.TestCase):
         self.assertNotIn("26710", next(t for t in targets if t["region"] == "양산")["codes"])
         self.assertEqual(m.targets_all(places, signgu, regions=["속초"])[0]["codes"], ["51210"])
         home = m.targets_home(places, ["서울"])[0]
-        self.assertEqual(home["codes"], ["11110", "11440", "11560", "11140"])  # 종로 · 마포 · 영등포 · 중구(국보 소재지 추가 뒤)
-        self.assertEqual(m.targets_home(places, ["대구"])[0]["codes"], ["27710", "27260", "27720", "27290"])
+        self.assertEqual(len(home["codes"]), 25)  # 서울 25개 구 전부(2026-10-06)
+        self.assertEqual(m.targets_home(places, ["대구"])[0]["codes"], ["27110", "27140", "27170", "27200", "27230", "27260", "27290", "27710", "27720"])
         self.assertEqual(m.targets_home(places, ["춘천"])[0]["codes"], ["51110"])
 
     def test_all_scope_adds_signgu_code_and_region_macro(self):
