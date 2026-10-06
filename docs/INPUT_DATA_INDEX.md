@@ -9,7 +9,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 
 | 파일 | 행 수 | 열 수 | SHA256 |
 |---|---:|---:|---|
-| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,868 | 17 | `f8e0269b417d44c34edc5b9cbe3a2393bd45cbc0b31180392c9bbbf5cf071c4f` |
+| [analysis/tour-places.csv](../analysis/tour-places.csv) | 4,841 | 17 | `022fe69ca785a47d83bc3de5d8a1fe303e464e061131b7fe84e391bd78da639d` |
 | [analysis/citytour_manual_places.csv](../analysis/citytour_manual_places.csv) | 124 | 13 | `26951dc66690823d300413eb04cd7b1edb5d2b1c6e6ce2e12e2ccfd962664b4b` |
 | [analysis/popular_manual_places.csv](../analysis/popular_manual_places.csv) | 100 | 4 | `edf5921644302b646fd3d6ff043f26817846ffaa9a6293fd4d9b7ad07a43b010` |
 | [analysis/related_manual_places.csv](../analysis/related_manual_places.csv) | 67 | 14 | `e02fba63c491dee30bd09543d16984cdeff15aa72ac58309fd3c6872ab9007f3` |
@@ -21,7 +21,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/national_treasure_places.csv](../analysis/national_treasure_places.csv) | 29 | 15 | `6fb223b1e3f02001b7bbcf56f61192cf3614fcfbbd3f8d55f5f028d7988bb01c` |
 | [analysis/national_treasure_places_2.csv](../analysis/national_treasure_places_2.csv) | 34 | 14 | `2520e708dea7959fa59dedefcb505848b76411178ec75b2a319f2fca66b71b0f` |
 | [analysis/treasure_sites.csv](../analysis/treasure_sites.csv) | 577 | 8 | `ef3e90098af8f6a9757ec0fa5100839bff31a690ec83db31c0d9f9db90ded2a6` |
-| [analysis/treasure_places.csv](../analysis/treasure_places.csv) | 559 | 15 | `f78d44aea496201b6ade4b6bcfaacb9e54850476789b74e5a1f078131ef3956b` |
+| [analysis/treasure_places.csv](../analysis/treasure_places.csv) | 532 | 15 | `5fe35404ff46f136228b5900152c47edf7bc90675dddffb0b5873aaf4217cc1b` |
 | [analysis/k100_list.csv](../analysis/k100_list.csv) | 100 | 9 | `c92d79b7c544daeb73fe27b783e7cccd0f55458dce3418c91d76b5c2ac71f12c` |
 | [analysis/open_tourism_list.csv](../analysis/open_tourism_list.csv) | 211 | 7 | `c6a65f9a885602ac0e752adf6e1de73ad10cbc857ef5796dce4c08a38b1a956c` |
 | [analysis/open_tourism_places.csv](../analysis/open_tourism_places.csv) | 32 | 15 | `0d1de70ffbd52870c34771868a8685d2ae99d9fa3cdb21e4a4ec481b6cbf48f0` |
@@ -30,7 +30,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/beach_valley_places.csv](../analysis/beach_valley_places.csv) | 202 | 15 | `843a2a24d94d4075a329e9af95f7fccce67ed11788fcf469a2d6a715a2e57ad0` |
 | [analysis/art_literature_places.csv](../analysis/art_literature_places.csv) | 146 | 15 | `ddd42975074c6571e9a855e808826bb2c581186988f9f97b8ef7e450cec91627` |
 | [analysis/market_places.csv](../analysis/market_places.csv) | 82 | 15 | `28e639bcac060ea4d34782d78721ad44af222a67c39549c9442dfc4c1e22c080` |
-| [analysis/place_fixes.csv](../analysis/place_fixes.csv) | 296 | 10 | `7540a3f04c1fbeee9217916965fc544f6a430d1b45c5bf913c8aee9affbd49d6` |
+| [analysis/place_fixes.csv](../analysis/place_fixes.csv) | 290 | 10 | `54e468939ee47b4fa6dec345dc3345a4bc44de602507d7f6f4794860286a7354` |
 | [analysis/unesco_list.csv](../analysis/unesco_list.csv) | 17 | 4 | `ea964c658c2f7bd380d6a0941410b0116abaa5b638fc061c1b7358d3f51445bb` |
 | [analysis/unesco_places.csv](../analysis/unesco_places.csv) | 13 | 15 | `58b3d129eb34da3c88dcebf706eaf70013ae52a87c9eb5191fb150ae60bab003` |
 | [analysis/aquarium_places.csv](../analysis/aquarium_places.csv) | 9 | 15 | `3069f4c43e32053daa236811053db00bd82f4420b8eee4725979d80076a16877` |
@@ -43,7 +43,7 @@ CSV 행 수는 헤더를 제외한 실제 레코드 수입니다. 원자료, 집
 | [analysis/place_notes.csv](../analysis/place_notes.csv) | 11 | 4 | `e1270bdd01aa6d84cafade579c6c6c848f0dba8f23c3f54e9099a53fc665b9ba` |
 | [analysis/bakery_places.csv](../analysis/bakery_places.csv) | 90 | 15 | `e46e5473ffff7efba20fdf9ed10b0e893f0f60d8a5f7b3885852ac9404724469` |
 | [analysis/related_added/related_mentioned_missing_2026-10-03.csv](../analysis/related_added/related_mentioned_missing_2026-10-03.csv) | 842 | 4 | `c0920fb295ed1f7b4266d7f22b223393a74ddfc2eefcd3978003c5d7e620fea2` |
-| [analysis/place_signgu.json](../analysis/place_signgu.json) | 4,868 | 2 (id, 코드) | `ad23d29757a08125cb8b39f9bda8a871672825e19e143e293bb47931f18b326a` |
+| [analysis/place_signgu.json](../analysis/place_signgu.json) | 4,841 | 2 (id, 코드) | `feee819dddf1508aa051471fe823a26f242bbf0f7ddb396e08362084dc17d80b` |
 | [analysis/citytour.csv](../analysis/citytour.csv) | 280 | 13 | `cea012bccbeb03bc8abc841e1be6b6e5310df547dcd8d6ade9c51c638d865324` |
 | [analysis/stop_category_review.csv](../analysis/stop_category_review.csv) | 30 | 4 | `3cd2219d4290dcac5204adb865a4677f030182ae05e020778dbe4785f45dc70b` |
 | [analysis/spending_csv/spend_region.csv](../analysis/spending_csv/spend_region.csv) | 233 | 4 | `b57eaea72fa6b060347393748e00676c160326921375b048af2486e6d632a31c` |
