@@ -50,6 +50,18 @@ class NameRules(unittest.TestCase):
         self.assertEqual((date, [s["name"] for s in spots]), ("2026-10-01", ["d"]))
 
 
+class CompanyMarkAndStays(unittest.TestCase):
+    def test_company_mark_and_exact_stay(self):
+        self.assertEqual(m.spot_name("㈜금호리조트 설악"), "금호리조트설악")
+        self.assertEqual(m.spot_name("주식회사 금호리조트 설악"), "금호리조트설악")
+        stay = {"id": "rs9", "이름(한국어)": "금호리조트 설악", "카테고리": "stay"}
+        sea = {"id": "t", "이름(한국어)": "속초 등대", "카테고리": "sea"}
+        for name in ("(주)금호리조트 설악", "㈜금호리조트 설악"):
+            self.assertEqual(m.match_by_name({"name": name, "city": "속초"}, [sea], None, [stay])["id"], "rs9")
+        self.assertIsNone(m.match_by_name({"name": "금호리조트", "city": "속초"}, [sea], None, [stay]))  # 품는 이름은 숙박에 잇지 않는다
+        self.assertEqual(m.match_by_name({"name": "속초등대", "city": "속초"}, [sea], None, [dict(stay, **{"이름(한국어)": "속초 등대"})])["id"], "t")
+
+
 class EndToEnd(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
@@ -148,7 +160,8 @@ class EndToEnd(unittest.TestCase):
         self.put("crowd_51150_p1.json", [crowd("우도", "50130", 90, nm="서귀포시")])  # 다른 시군구 행만 → 무시
         self.put("crowd_42150_p1.json", [crowd(f"가상관광지{i}", "42150", 10 + i, nm="강릉시") for i in range(12)])
         for i in range(12):
-            self.put(f"search_가상관광지{i}.json", [search(f"가상관광지{i}", str(3000 + i), 37.75 + i * 0.01, 128.90, regn="51", sgg="150")])
+            # 앱 장소와 1km 넘게 떨어진 가상 지점(동해 앞바다). 128.90은 강릉 장소가 늘어 기존 장소 옆이 됐다(2026-10-04)
+            self.put(f"search_가상관광지{i}.json", [search(f"가상관광지{i}", str(3000 + i), 37.75 + i * 0.01, 129.30, regn="51", sgg="150")])
         places = m.read_places(self.places)
         cand, new = m.collect(m.JsonDirApi(self.fx), places, m.targets_home(places, ["강릉"]), "2026-10-01", 10, log=lambda *_: None)
         self.assertEqual(len(cand), 10)
@@ -161,8 +174,14 @@ class EndToEnd(unittest.TestCase):
         signgu = m.read_signgu(ROOT / "analysis" / "place_signgu.json")
         targets = m.targets_all(places, signgu)
         regions = {p["지역"] for p in places if p["카테고리"] != "stay"}
-        self.assertEqual({t["region"] for t in targets}, regions)  # 숙박만 있는 지역은 없으므로 154곳 전부(2026-10-04 보물 소재지까지)
         codes = [c for t in targets for c in t["codes"]]
+        # 지역은 모두 조회 대상이거나, 그 지역 장소의 시군구가 다른 대상에 들어 있다
+        # (옹진군 28720은 인천 · 백령도 · 연평도가 나눠 쓴다: 장소가 가장 많은 지역 한 곳에서 한 번만 조회한다. 앱 tour-collect.test.ts와 같다)
+        got = {t["region"] for t in targets}
+        self.assertLessEqual(got, regions)
+        for p in places:
+            if p["카테고리"] != "stay" and p["지역"] not in got:
+                self.assertIn(signgu.get(p["id"]), codes, p["id"])
         self.assertEqual(len(codes), len(set(codes)))  # 한 시군구는 한 지역에만
         gj = next(t for t in targets if t["region"] == "경주")
         self.assertEqual(gj["codes"], ["47130"])
@@ -170,9 +189,16 @@ class EndToEnd(unittest.TestCase):
         self.assertIn("26710", busan["codes"])  # 기장군은 부산(17곳)에, 양산이 아니라
         self.assertNotIn("26710", next(t for t in targets if t["region"] == "양산")["codes"])
         self.assertEqual(m.targets_all(places, signgu, regions=["속초"])[0]["codes"], ["51210"])
+        # 광역 도시는 장소가 없는 구 · 군도 조회한다(2026-10-06): 대구 서구 27170 · 인천 부평 28237 · 계양 28245
+        by_region = {t["region"]: set(t["codes"]) for t in targets}
+        for region, metro in m.METRO_DISTRICTS.items():
+            for code in metro:
+                self.assertTrue(code in by_region.get(region, set()) or code in codes, (region, code))
+        self.assertIn("27170", by_region["대구"])
+        self.assertIn("28237", by_region["인천"])
         home = m.targets_home(places, ["서울"])[0]
-        self.assertEqual(home["codes"], ["11110", "11440", "11560", "11140"])  # 종로 · 마포 · 영등포 · 중구(국보 소재지 추가 뒤)
-        self.assertEqual(m.targets_home(places, ["대구"])[0]["codes"], ["27710", "27260", "27720", "27290"])
+        self.assertEqual(len(home["codes"]), 25)  # 서울 25개 구 전부(2026-10-06)
+        self.assertEqual(m.targets_home(places, ["대구"])[0]["codes"], ["27110", "27140", "27170", "27200", "27230", "27260", "27290", "27710", "27720"])
         self.assertEqual(m.targets_home(places, ["춘천"])[0]["codes"], ["51110"])
 
     def test_all_scope_adds_signgu_code_and_region_macro(self):
