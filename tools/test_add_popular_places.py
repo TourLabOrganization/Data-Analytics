@@ -189,6 +189,13 @@ class EndToEnd(unittest.TestCase):
         self.assertIn("26710", busan["codes"])  # 기장군은 부산(17곳)에, 양산이 아니라
         self.assertNotIn("26710", next(t for t in targets if t["region"] == "양산")["codes"])
         self.assertEqual(m.targets_all(places, signgu, regions=["속초"])[0]["codes"], ["51210"])
+        # 광역 도시는 장소가 없는 구 · 군도 조회한다(2026-10-06): 대구 서구 27170 · 인천 부평 28237 · 계양 28245
+        by_region = {t["region"]: set(t["codes"]) for t in targets}
+        for region, metro in m.METRO_DISTRICTS.items():
+            for code in metro:
+                self.assertTrue(code in by_region.get(region, set()) or code in codes, (region, code))
+        self.assertIn("27170", by_region["대구"])
+        self.assertIn("28237", by_region["인천"])
         home = m.targets_home(places, ["서울"])[0]
         self.assertEqual(len(home["codes"]), 25)  # 서울 25개 구 전부(2026-10-06)
         self.assertEqual(m.targets_home(places, ["대구"])[0]["codes"], ["27110", "27140", "27170", "27200", "27230", "27260", "27290", "27710", "27720"])

@@ -10,7 +10,8 @@
   1. 시군구마다 집중률 행을 받는다(TatsCnctrRateService/tatsCnctrRatedList, areaCd·signguCd만, 쪽당 1,000행 · 최대 5쪽).
      강원 51·전북 52로 그 시군구 행이 없으면 옛 코드 42·45로 한 번 더 부른다. 어느 시군구를 부르느냐는 --scope로 정한다.
        all(기본): 장소 표의 124개 지역 전부. 장소(숙박 제외)가 있는 시군구(analysis/place_signgu.json의 법정동 코드, --min-places 이상)를
-                 모두 부르고, 한 시군구가 두 지역에 걸치면 장소가 많은 지역에 붙인다.
+                 모두 부르고, 한 시군구가 두 지역에 걸치면 장소가 많은 지역에 붙인다. 서울 · 부산 · 대구 · 인천 · 대전 · 울산 · 창원은
+                 장소가 없는 구 · 군까지 모두 부른다(METRO_DISTRICTS, 2026-10-06).
        home: 앱 홈 칩 10개 도시만, 앱이 고른 시군구(CITY_DISTRICTS: 장소 5곳 이상 · 많은 순 · 최대 4곳).
   2. 지역마다 기준 날짜(서울 오늘, 없으면 그 뒤 가장 이른 날)의 집중률 높은 순으로 상위 10곳(--top, 0이면 전부)이 후보다.
   3. 같은 지역의 기존 장소와 이름 점수 2 이상이면 이미 있는 장소다(추가하지 않는다).
@@ -64,6 +65,17 @@ CITY_DISTRICTS: dict[str, list[str]] = {
     "춘천": ["51110"],
 }
 HOME_CITIES = list(CITY_DISTRICTS)
+# 전수조사(--scope all)에서 장소가 없는 구 · 군까지 부르는 광역 도시(2026-10-06 요청, 앱 lib/tour-popular.ts POPULAR_DISTRICTS와 같다).
+# 장소 표에 그 구의 장소가 하나도 없어도(대구 서구 · 인천 부평 · 계양 등) 집중률 상위 관광지를 찾는다
+METRO_DISTRICTS: dict[str, list[str]] = {
+    "서울": CITY_DISTRICTS["서울"],
+    "부산": CITY_DISTRICTS["부산"],
+    "대구": CITY_DISTRICTS["대구"],
+    "인천": CITY_DISTRICTS["인천"],
+    "대전": ["30110", "30140", "30170", "30200", "30230"],
+    "울산": ["31110", "31140", "31170", "31200", "31710"],
+    "창원": ["48121", "48123", "48125", "48127", "48129"],
+}
 ROWS, MAX_PAGES, TOP = 1000, 5, 10
 SAME_SPOT_M, NEAR_SPOT_M, NEAR_SPOT_OVERLAP = 250, 1000, 0.5
 SKIP_TYPES, SPOT_TYPES = {"25", "32"}, {"12", "14", "28", "38"}
@@ -438,11 +450,16 @@ def targets_all(places: list[dict], signgu: dict[str, str], min_places: int = 1,
     by_region: dict[str, list[str]] = {}
     for code, who in claims.items():
         by_region.setdefault(min(who)[2], []).append(code)
+    # 광역 도시는 장소가 없는 구 · 군도 부른다(다른 지역이 이미 가져간 코드는 그대로 둔다)
+    for region, codes in METRO_DISTRICTS.items():
+        for code in codes:
+            if code not in claims:
+                by_region.setdefault(region, []).append(code)
     out = []
     for region in sorted(by_region):
         if regions and region not in regions:
             continue
-        codes = sorted(by_region[region], key=lambda c: (-count[(region, c)], c))
+        codes = sorted(by_region[region], key=lambda c: (-count.get((region, c), 0), c))
         pool = [p for p in places if p["카테고리"] != "stay" and (p["지역"] == region or signgu.get(p["id"], "") in codes)]
         out.append({"region": region, "codes": codes, "pool": pool})
     return out
